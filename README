@@ -1,50 +1,45 @@
+Perldoc-проект направлен на разработку версии
+на испанском языке документации, сопровождающей стандартную поставку
+Perl языка, традиционно называют Perldoc.
 
-El proyecto perldoc-es tiene como objetivo desarrollar una versi�n 
-en espa�ol de la documentaci�n que acompa�a a la distribuci�n est�ndar 
-del lenguaje Perl, tradicionalmente llamada perldoc.
 
-
-Resumen
+резюме
 =======
 
-Los participantes pueden tener uno o varios roles:
+Участники могут иметь одну или несколько ролей:
 
- - L�der de la parte de traducci�n, que vigilar� por el estilo y 
-   la forma y sem�ntica del texto
- - L�der de la parte t�cnica, que resolver� las dudas sobre la parte 
-   de c�digo y la sem�ntica t�cnica
- - Responsable del empaquetado de los archivos que se publicar�n en CPAN
- - Traductor
- - Revisor
- - Lector
+  - Лидер перевода, которые следят за стилем и
+   Форма и семантика текста
+  - Лидер техника, которая разрешила сомнения относительно
+    семантических кодов и технических
+  - Ответственный за упаковку файлов, которые будут опубликованы в CPAN
+  - Переводчик
+  - отзывов
+  - Читатель
 
-Se parte de una determinada versi�n de la distribuci�n est�ndar de Perl, 
-igual para todo el equipo.
+Она является частью определенной версии в стандартный дистрибутив Perl,
+одинаковой для всей команды.
 
-Se intentar� siempre traducir la versi�n m�s moderna de la documentaci�n.
+Они всегда пытаются перевести последнюю версию документации.
 
-Se usa Github para almacenar todos los ficheros (los de intercambio de los 
-ficheros de apoyo, los traducidos, los revisados, y los que forman parte 
-de la distribuci�n).
+Github используется для хранения всех файлов (обмен
+Поддержка файлов, переведенных, пересмотренная, а также в рамках
+распределение).
 
-Se usa OmegaT como software de traducci�n.
+OmegaT используется как перевод программного обеспечения.
 
-Se usa hojas de c�lculo en Google Docs para el control de tareas pendientes, 
-estad�sticas de desarrollo, glosario problem�tico, segmentos problem�ticos, etc.
+Он использует электронные таблицы Google Docs для управления DOS,
+развития статистики, Глоссарий проблематично проблематично сегменты, и т.д..
 
-Se usan scripts que facilitan la gesti�n y publicaci�n de los resultados.
-
-
-Para obtener m�s informaci�n, consulte:
-
-- El wiki del proyecto: 
-
-https://github.com/zipf/perldoc-es/wiki
-
-- La p�gina de presentaci�n de la distribuci�n: 
-
-http://search.cpan.org/dist/POD2-ES/lib/POD2/ES.pm
+Сценарии используются для облегчения управления и публикации результатов.
 
 
+Для получения дополнительной информации см.:
 
+- Проект вики:
 
+https://github.com/zipf/perldoc-ru/wiki
+
+- На главной странице дистрибутива:
+
+http://search.cpan.org/dist/POD2-RU/lib/POD2/ES.pm
