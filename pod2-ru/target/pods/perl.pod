@@ -1,3 +1,5 @@
+=encoding utf8
+
 =head1 Имя
 
 perl - интерпретатор языка Perl5
