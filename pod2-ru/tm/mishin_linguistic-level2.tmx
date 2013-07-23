@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.4" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Computer-assisted translation</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="ira" changedate="20130723T195117Z" creationid="ira" creationdate="20130723T195117Z">
+        <seg>Автоматизированный перевод</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Computer-assisted translation - Wikipedia, the free encyclopedia</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="ira" changedate="20130723T194143Z" creationid="ira" creationdate="20130723T194143Z">
+        <seg>Компьютерный перевод Википедии - свободной энциклопедии</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Edit this page</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="ira" changedate="20130723T194836Z" creationid="ira" creationdate="20130723T194836Z">
+        <seg>Редактировать эту страницу</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>From Wikipedia, the free encyclopedia</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="ira" changedate="20130723T195306Z" creationid="ira" creationdate="20130723T195155Z">
+        <seg>От Википедии - свободной энциклопедии</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Jump to: <bpt i="0" x="0">&lt;a0&gt;</bpt>navigation<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>search<ept i="1">&lt;/a1&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="ira" changedate="20130723T195228Z" creationid="ira" creationdate="20130723T195228Z">
+        <seg>Перейти к : <bpt i="0" x="0">&lt;a0&gt;</bpt>навигация<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>поиск<ept i="1">&lt;/a1&gt;</ept></seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

@@ -1,0 +1,2793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header
+    creationtool="org.omegat.OmegaT"
+    creationtoolversion="1"
+    segtype="paragraph"
+    o-tmf="org.omegat.OmegaT TMX"
+    adminlang="EN-US"
+    srclang="EN-US"
+    datatype="plaintext"
+  >
+  </header>
+  <body>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Editing functions</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Функции редактирования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Table of contents</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Содержание</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;The translation process</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Процесс перевода</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Navigating text</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Перемещение по тексту</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT&apos;s editing functions apply to the editor field, which is the target text of the active segment. Editing operations are restricted to this field, i.e. only the target text of the active segment may be edited at any time. Text in any text field outside the editor field can however be marked and copied for pasting.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Функции редактирования OmegaT применяются в поле редактора, которым является целевой текст активного сегмента. Операции редактирования ограничены этим полем, т.е. в любой момент времени можно редактировать только целевой текст в активном сегменте. Текст в любом текстовом поле вне поля редактора, однако, можно выделить и скопировать в буфер для последующей вставки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT supports the usual mouse operations, cursor keys and cursor key shortcuts, and shortcuts for mark, cut and paste operations. These are likely to vary between operating systems.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT поддерживает обычные операции мышью, клавиши управления курсором и сочетания клавиш управления курсором, а также сочетания клавиш для операций выделения, вырезания и вставки. Они, скорее всего, будут различаться в разных операционных системах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Undo and Redo operations are possible with &lt;i0&gt;Ctrl-Z&lt;/i0&gt; and &lt;i1&gt;Ctrl-Y&lt;/i1&gt; respectively.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Операции отмены и повтора действия можно выполнить посредством &lt;i0&gt;Ctrl-Z&lt;/i0&gt; и &lt;i1&gt;Ctrl-Y&lt;/i1&gt; соответственно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You cannot &lt;b0&gt;add&lt;/b0&gt; any formatting to the text you are translating. The formatting of a formatted file (at present, StarOffice/OpenOffice.org and HTML are the supported formats), is retained, and you have a limited degree of control over it. (Refer to &lt;a1&gt;Tags&lt;/a1&gt; for details.) To add formatting, insert a marker such as &quot;##&quot; and format the text in another application such as OpenOffice.org after compiling.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>К переводимому тексту &lt;b0&gt;нельзя&lt;/b0&gt; применять форматирование. Форматирование файла с форматированием (в настоящее время поддерживаются форматы StarOffice/OpenOffice.org и HTML), сохраняется, и существует ограниченная степень его контроля. (Подробности — в разделе &lt;a1&gt;Редактирование текстов с тэгами (разметкой)&lt;/a1&gt;) Чтобы применить форматирование, вставьте метку, например, &quot;##&quot; и отформатируйте текст в другом приложении, например, OpenOffice.org после компиляции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project files and directories</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы и директории проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Translation memory and glossary file formats</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Форматы файлов памяти переводов и глоссария</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Keyboard shortcuts</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Сочетания клавиш</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Summary of project files and directories</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Описание файлов и директорий проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An OmegaT project comprises the following files and directories:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Проект OmegaT включает следующие файлы и директории.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;i0&gt;main project directory&lt;/i0&gt;. This directory is created when the project is created.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>&lt;i0&gt;Главная директория проекта&lt;/i0&gt;. Эта директория создаётся, когда создаётся проект.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It has the name given to it by the user.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Её имя задаётся пользователем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>omegat.project.&lt;/i0&gt; When the project is created, OmegaT automatically creates this file and places it in this directory. To open a project in OmegaT, you must open its &lt;i1&gt;omegat.project&lt;/i1&gt; file.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>omegat.project.&lt;/i0&gt; Когда создаётся проект, OmegaT автоматически создаёт этот файл и помещает его в эту директорию. Чтобы открыть проект в OmegaT, следует открыть его файл &lt;i1&gt;omegat.project&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;projectname&gt;.tmx&lt;/i0&gt;. This is the translation memory exported by the project. OmegaT creates it automatically and places it in this directory each time you compile the project. Note that this translation memory only contains segments from the project at the time it was last compiled. It does not import segments from any translation memory files in the &lt;i1&gt;/tm&lt;/i1&gt; directory.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>&lt;projectname&gt;.tmx&lt;/i0&gt;. Это файл памяти переводов, экспортированный проектом. OmegaT создаёт его автоматически и помещает в данной директории при каждой компиляции проекта. Следует помнить, что этот файл памяти переводов содержит только сегменты из проекта на момент его последней компиляции. В него не импортируются сегменты из других файлов памяти переводов в директории &lt;i1&gt;/tm&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Directory &lt;i0&gt;/source&lt;/i0&gt;. Place any files you wish to translate in this directory after creating your project and before opening it. Any files in this directory and subdirectories below it are included in the project for translation, provided their format is supported and they have the corresponding file extension.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Директория &lt;i0&gt;/source&lt;/i0&gt;. Разместите файлы для перевода в этой директории после создания проекта и перед его открытием. Любые файлы в этой директории и её поддиректориях включаются в проект для перевода, если поддерживается их формат, и они имеют соответствующее расширение имени файла.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Files with other extensions can also be imported if their extensions are mapped to the default extensions.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы с другими расширениями могут также быть импортированы, если их расширения сопоставлены расширениям, заданным по умолчанию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Files in &lt;i0&gt;/source&lt;/i0&gt; which are not imported into the project are transferred unchanged to &lt;i1&gt;/target&lt;/i1&gt; when you compile the project. This enables complete web sites in &lt;i2&gt;/source&lt;/i2&gt; to be mirrored in &lt;i3&gt;/target&lt;/i3&gt;, together with their image files in formats such as GIF or JPEG.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы в &lt;i0&gt;/source&lt;/i0&gt;, которые не импортированы в проект, передаются без изменений в &lt;i1&gt;/target&lt;/i1&gt; при компиляции проекта. Это дает возможность создавать зеркала целых узлов web из &lt;i2&gt;/source&lt;/i2&gt; в &lt;i3&gt;/target&lt;/i3&gt; вместе с загружаемыми ими изображениями в таких форматах как GIF или JPEG</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Directory &lt;i0&gt;/glossary&lt;/i0&gt;. Place a &lt;a1&gt;glossary&lt;/a1&gt; which you wish to use in this directory after creating the project.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Директория &lt;i0&gt;/glossary&lt;/i0&gt;. После создания проекта поместите в эту директорию &lt;a1&gt;глоссарий&lt;/a1&gt;, который Вы желаете использовать..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*.tab&lt;/i0&gt;: glossary files.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>*.tab&lt;/i0&gt;: файлы глоссария.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Directory &lt;i0&gt;/omegat&lt;/i0&gt;. OmegaT automatically places the following files in this directory at creation:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Директория &lt;i0&gt;/omegat&lt;/i0&gt;. OmegaT автоматически помещает в эту директорию следующие файлы при создании:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>file_extension_mapping:&lt;/i0&gt; OmegaT detects file types on the basis of their extensions; StarOffice files, for example, must have the extension .sxw in order to be recognized. You can force OmegaT to recognize files with different extensions (but not formats!) by editing this file.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>file_extension_mapping:&lt;/i0&gt; OmegaT определяет типы файлов типа по их расширениям; файлы StarOffice, например, должны иметь расширение .sxw, чтобы быть распознанными. Можно принудить OmegaT распознавать файлы с различными расширениями (но не форматами!), редактируя этот файл.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>project_save.tmx:&lt;/i0&gt; this file is created when the project is saved for the first time. It is in TMX format and is the working translation memory for the project.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>project_save.tmx:&lt;/i0&gt; этот файл создаётся при первом сохранении проекта. Он имеет формат TMX и является рабочей памятью переводов проекта.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>word_counts: &lt;/i0&gt;this file contains two word counts of the complete project: one including and one excluding 100% matches.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>word_counts: &lt;/i0&gt;этот файл содержит два счётчика слов законченного проекта: один, включающий 100%-ные совпадения, и один, их исключающий.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Directory &lt;i0&gt;/target&lt;/i0&gt;. OmegaT places the translated files into this directory at compilation.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Директория &lt;i0&gt;/target&lt;/i0&gt;. OmegaT при компиляции помещает в эту директорию файлы с переводами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*.txt, *.xhtml, *.html, *.sxw&lt;/i0&gt;: translated files</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>*.txt, *.xhtml, *.html, *.sxw&lt;/i0&gt;: переведённые файлы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Non-translated files transferred from &lt;i0&gt;/source&lt;/i0&gt; at compilation</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Непереведённые файлы передаются из &lt;i0&gt;/source&lt;/i0&gt; при компиляции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Directory &lt;i0&gt;/tm&lt;/i0&gt;. Place any &lt;a1&gt;translation memories&lt;/a1&gt; you wish to use in this directory after creating/before loading the project. Note: regardless of whether you use previous memories or not, OmegaT creates a working translation memory for the project, &lt;i2&gt;project_save.tmx&lt;/i2&gt;, in &lt;i3&gt;/omegat&lt;/i3&gt; when the project is saved, and also places an export translation memory in the root directory when the project is compiled.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Директория &lt;i0&gt;/tm&lt;/i0&gt;. После создания и перед загрузкой проекта поместите в эту директорию &lt;a1&gt;файл(ы) памяти переводов&lt;/a1&gt; , который(е) вы желаете использовать. Помните: независимо от того, используются или нет ранее созданные файлы памяти переводов, OmegaT создаёт рабочую память переводов для проекта, &lt;i2&gt;project_save.tmx&lt;/i2&gt;, in &lt;i3&gt;/omegat&lt;/i3&gt; при сохранении проекта, а также помещает экспортированную память переводов в корневую директорию при компиляции проекта.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*.tmx&lt;/i0&gt;: translation memory files created during previous projects. &lt;i1&gt;*.tmx&lt;/i1&gt; files must be in TMX Level 1 format.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>*.tmx&lt;/i0&gt;: файлы памяти переводов, созданные в предыдущих проектах. Файлы &lt;i1&gt;*.tmx&lt;/i1&gt; должны быть в формате TMX Уровень 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Changing the location of project files and directories</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Изменение размещения файлов и директорий проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The project directories are created when you create a project. By default, they are all grouped under the project root directory, but you can choose alternative locations for them by clicking on the &lt;i0&gt;Browse&lt;/i0&gt; button. You can therefore keep translation memories in a particular directories, for example, and select the desired directory when you create each new project rather than having to copy the translation memory file into the newly created &lt;i1&gt;/tm&lt;/i1&gt; directory.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Директории проекта создаются при создании проекта. По умолчанию они группируются в корневой директории проекта, но для них можно выбрать другие местоположения, щёлкнув по кнопке &lt;i0&gt;Просмотр&lt;/i0&gt;. Таким образом, можно держать translation memories в определённых директориях, например, и выбирать желаемую директорию при создании нового проекта, вместо того, чтобы копировать файл памяти переводов во вновь созданную директорию &lt;i1&gt;/tm&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To change the location of directories retrospectively, i.e. those of an existing project, delete the directory concerned. (Do not do this whilst the project is open.) When the project is next opened, OmegaT detects that some directories are missing, and presents you with the directory selection dialog in which you can select the new locations.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы изменить расположение директорий ретроспективно, т.е., для существующего проекта, удалите соответствующую директорию (Этого нельзя делать, когда проект открыт.) При следующем открытии проекта OmegaT определяет, что отсутствуют некоторые директории, и выводит диалог выбора директорий, в котором можно выбрать новые местоположения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using different fonts and alphabets</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Использование различных шрифтов и алфавитов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Editing tagged texts</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Редактирование текстов с тэгами (разметкой)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Working with OpenOffice.org</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Работа с файлами OpenOffice.org и StarOffice</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Select a different display font with &lt;i0&gt;Configuration&lt;/i0&gt; &gt; &lt;i1&gt;Font&lt;/i1&gt;. The font type and size can be selected. The font selected applies to the display only; it has no effect upon fonts used in formatted documents. The fonts available for selection are those available on your system.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Изменить экранный шрифт можно посредством &lt;i0&gt;Настройка&lt;/i0&gt; &gt; &lt;i1&gt;Выбор шрифта&lt;/i1&gt;. Можно выбрать гарнитуру и кегль. Выбранный шрифт применяет только для вывода на экран, шрифты, использованные в документах с форматированием, не затрагиваются. Для выбора доступны шрифты, установленные в системе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In order to permit translation between two languages which employ different alphabets, select a font which contains the characters of &lt;b0&gt;both&lt;/b0&gt; alphabets. Install an additional font if necessary.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы сделать возможным перевод между двумя языками, использующими различные алфавиты, выберите шрифт, содержащий символы &lt;b0&gt;both&lt;/b0&gt; алфавитов. Установите дополнительный шрифт в случае необходимости.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If no single font contains the characters of both alphabets, you can select a virtual Java font (such as &quot;Serif&quot;), and define this font such that it uses multiple real fonts. Refer to the instructions on the OmegaT web site for customizing and modifying OmegaT in this case.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если ни один отдельный шрифт не содержит знаки обоих алфавитов, можно выбрать виртуальный шрифт Java (например, «Serif»), и определить этот шрифт таким образом, чтобы он использовал множественные реальные шрифты. В этом случае обратитесь к инструкциям на сайте OmegaT по настройке и изменению OmegaT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Getting started - an example project</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Приступая к работе — примерный проект</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Important</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Важные замечания</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;The user interface</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Пользовательский интерфейс</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The procedure here is for the purposes of explanation; it need not be followed rigidly in practice.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Приведённая ниже процедура служит для пояснений, не обязательно строго следовать ей на практике.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Launch OmegaT.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Запустите OmegaT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create a new project by selecting &lt;i0&gt;File&lt;/i0&gt;&gt; &lt;i1&gt;Create New Project&lt;/i1&gt; from the menu bar.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Создайте новый проект, выбрав меню &lt;i0&gt;Проект&lt;/i0&gt;&gt; &lt;i1&gt;Создание проекта&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A file navigation dialog is displayed. In this dialog, select a suitable directory into which to place your project.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Появится навигационный диалог. В этом диалоге выберите подходящую директорию, для размещения проекта.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the File name field, enter a name (e.g. &lt;i0&gt;ABC&lt;/i0&gt;) for your project, and confirm.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>В поле Имя файла, введите имя (например, &lt;i0&gt;ABC&lt;/i0&gt;) проекта и подтвердите.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another dialog is called up, this time indicating the directories for the project. As you can see from the dialog, OmegaT is proposing to create a new directory with the name you selected (e.g. &lt;i0&gt;ABC&lt;/i0&gt;), and below that a further five subdirectories. You can modify the locations of these default directories, but for the sake of the example, confirm the defaults. (The project files and directories are explained in detail &lt;a1&gt;here&lt;/a1&gt;.)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Вызывается другой диалог, на этот раз с перечислением директорий проекта. В этом диалоге OmegaT предлагает создать новую директорию с именем, выбранным Вами, (например, &lt;i0&gt;ABC&lt;/i0&gt;), и пять поддиректорий в ней. Расположение этих директорий, задаваемое по умолчанию, можно изменить, но для примера, подтвердите умолчания. (Подробная информация о файлах и директориях проекта — &lt;a1&gt;здесь&lt;/a1&gt;.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enter the language and locale codes for your source and target languages, e.g. DE-CH for German (Switzerland), EN-UK for English (United Kingdom). The actual codes are not particularly important unless you intend to exchange translation memories with customers or colleagues, in which case you should be careful to follow the standard required (usually ISO).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Введите коды языка и локали для исходного и целевого языков, например, DE-CH для немецкого(Швейцария), EN-UK для английского(Великобритания). Коды не имеют особого значения, если только не предполагается обмен файлами памяти переводов с клиентами или коллегами, в случае чего следует тщательно следовать требуемому стандарту (обычно ISO).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT now creates a main directory (also referred to as the &quot;project root directory&quot;) with the name you selected previously (e.g. &lt;i0&gt;ABC&lt;/i0&gt;). Below the project root directory are five subdirectories: &lt;i1&gt;/glossary&lt;/i1&gt;, &lt;i2&gt;/source&lt;/i2&gt;, &lt;i3&gt;/omegat&lt;/i3&gt;, &lt;i4&gt;/target&lt;/i4&gt; and &lt;i5&gt;/tm&lt;/i5&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT теперь создаст главную директорию (также называемую «корневой директорией проекта») с ранее выбранным именем (например, &lt;i0&gt;ABC&lt;/i0&gt;). В директории проекта находятся пять поддиректорий: &lt;i1&gt;/glossary&lt;/i1&gt;, &lt;i2&gt;/source&lt;/i2&gt;, &lt;i3&gt;/omegat&lt;/i3&gt;, &lt;i4&gt;/target&lt;/i4&gt; и &lt;i5&gt;/tm&lt;/i5&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Find a file to translate. Save it as a text file with the extension &lt;i0&gt;*.txt&lt;/i0&gt;, and place it in &lt;i1&gt;/source&lt;/i1&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Найдите файл для перевода. Сохраните его как текстовый файл с расширением &lt;i0&gt;*.txt&lt;/i0&gt; и поместите в &lt;i1&gt;/source&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Open the project you have just created with &lt;i0&gt;File&lt;/i0&gt; &gt; &lt;i1&gt;Open&lt;/i1&gt;. OmegaT automatically looks in the directory you last opened. Your project root directory is displayed with the OmegaT icon, indicating that it is a project.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Откройте созданный проект через &lt;i0&gt;Проект&lt;/i0&gt; &gt; &lt;i1&gt;Открыть&lt;/i1&gt;. OmegaT автоматически обращается к директории, открытой в предыдущий раз. Корневая директория проекта отображается со значком OmegaT, указывающим, что это — проект.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Open the project by selecting first the project directory marked with the icon (double-click or select and confirm with &quot;Open&quot;), then the file &lt;i0&gt;omegat.project&lt;/i0&gt;. Do not try to open any other file, such as your source text file - it won&apos;t work!</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Откройте проект, выбрав сначала директорию проекта, обозначенную значком (двойным щелчком или выделив и нажав на «Открыть»), затем файл &lt;i0&gt;omegat.project&lt;/i0&gt;. Не пытайтесь открыть иной файл, например, исходный текстовый файл — не получится!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT opens the project, displaying the text of your file in the main OmegaT window.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT откроет проект и покажет текст файла в главном окне OmegaT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Place the cursor in the target field of the first segment, between the tags &lt;segment 0001&gt; and &lt;end segment&gt;. Type in your translation and delete the original text. Hit &lt;i0&gt;Enter&lt;/i0&gt; to confirm.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Поместите курсор в целевое поле первого сегмента, между тэгами &lt;сегмент 0001&gt; и &lt;конец сегмента&gt;. Впечатайте перевод и удалите оригинальный текст. Нажмите &lt;i0&gt;Enter&lt;/i0&gt;, чтобы подтвердить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Repeat this process with each segment until you have translated the complete text.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Повторите эту процедуру для каждого сегмента, пока не будет переведён весь текст.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now select &lt;i0&gt;File&lt;/i0&gt; &gt; &lt;i1&gt;Save&lt;/i1&gt;, then &lt;i2&gt;File&lt;/i2&gt; &gt; &lt;i3&gt;Compile&lt;/i3&gt;. You can then close OmegaT &lt;i4&gt;(File&lt;/i4&gt; &gt; &lt;i5&gt;Quit&lt;/i5&gt;)&lt;i6&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Теперь выберите &lt;i0&gt;Проект&lt;/i0&gt; &gt; &lt;i1&gt;Сохранить память перевода&lt;/i1&gt;, затем &lt;i2&gt;Проект&lt;/i2&gt; &gt; &lt;i3&gt;Компилировать перевод&lt;/i3&gt;. Затем можно закрыть OmegaT &lt;i4&gt;(Проект&lt;/i4&gt; &gt; &lt;i5&gt;Выход из OmegaT&lt;/i5&gt;)&lt;i6&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You will find your translated file in the directory &lt;i0&gt;/target&lt;/i0&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файл с переводом находится в &lt;i0&gt;/target&lt;/i0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Glossary</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Глоссарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Saving, revising and compiling</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Сохранение, проверка и компиляция перевода</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Translation file formats</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Форматы переводимых файлов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The glossary function is automatic. To use an existing glossary, simply place it in the &lt;i0&gt;/glossary&lt;/i0&gt; directory after creating the project. (See &lt;a1&gt;here&lt;/a1&gt; for glossary file formats.) OmegaT automatically detects glossary files in this directory when a project is opened. Terms in the active segment which OmegaT finds in the glossary file(s) are displayed in the Match and Glossary Viewer window.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Функция глоссария работает автоматически. Для использования существующего глоссария, просто поместите его в директорию &lt;i0&gt;/glossary&lt;/i0&gt; после создания проекта. (Информация о форматах файла глоссария &lt;a1&gt;здесь&lt;/a1&gt;.) OmegaT автоматически распознаёт файлы глоссария в этой директории при открытии проекта. Термины в активном сегменте, которые OmegaT находит в файле(файлах) глоссария, отображаются в окне просмотра совпадений и глоссария.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The glossary function only finds exact matches with the glossary entry (i.e. not inflected forms etc.).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Функция глоссария ищет только точные совпадения со статьёй глоссария (т.е., не учитывая словоформы и т.п.).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New terms can be added manually to the glossary file(s) during translation (for example in a text editor), but newly added terms will not be recognized until the project is next opened.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Новые термины можно вручную внести в файл(ы) глоссария во время перевода (например, в текстовом редакторе), но вновь добавленные термины будут распознаваться только при последующем открытии проекта.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Important</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Важные замечания</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Installation and Configuration</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Установка и настройка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Getting started</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Приступая к работе — примерный проект</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT is a robust application. It is not prone to crashing or to loss or corruption of data. However, you should take precautions against data loss when using OmegaT, just as with any other application.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT — надёжная программа, не склонная к сбоям и потере или повреждению данных. Однако при использовании OmegaT следует заботиться о сохранности данных — как и при использовании любого другого приложения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use OmegaT on short texts until you are familiar with it.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Используйте OmegaT для перевода коротких текстов, пока не освоитесь.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Read &lt;a0&gt;Saving, revising and compiling your translation&lt;/a0&gt; carefully.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Внимательно прочитайте раздел &lt;a0&gt;Сохранение, проверка и компиляция перевода&lt;/a0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most users will be able to get started with the aid of these Help texts. Should you run into problems, post a message in the OmegaT user forum located at http://groups.yahoo.com/group/omegat.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Большинство пользователей смогут начать работу с помощью этих текстов справки. Если же возникнут проблемы, сообщите в форум пользователей OmegaT на http://groups.yahoo.com/group/omegat.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installation and configuration</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Установка и настройка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;System requirements</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Системные требования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Important</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Важные замечания</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installation</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Установка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installation involves three stages. One, install the J2RE (if it isn&apos;t already installed). Two, install OmegaT. Three, configure (only necessary for Linux). You can install the J2RE and OmegaT in either order. Configuration isn&apos;t essential, but makes launching the application more user-friendly.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Установка включает три стадии. Во-первых, установить J2RE (если ещё не установлена). В-вторых, установить OmegaT. В-третьих, настроить. J2RE OmegaT можно устанавливать в любом порядке. Настройка не особенно важна, но облегчает запуск приложения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>About the Java Runtime Environment</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>О Java Runtime Environment (среде выполнения Java)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Java Runtime Environment (J2RE) enables you to run any Java program on your system. It is available both as a standalone product, and as part of the Java developer&apos;s kit.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Java Runtime Environment (J2RE) позволяет запускать в системе программы, написанные на Java. Её можно загрузить как отдельный продукт и в составе инструментария разработчика Java.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java is also available as a plug-in for web browsers. This form of Java will &lt;b0&gt;not&lt;/b0&gt; enable you to run OmegaT.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Java также доступна в виде подключаемого модуля к браузерам. Эта форма Java &lt;b0&gt;не&lt;/b0&gt; позволит запустить OmegaT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JavaScript is a different product altogether and is not related technically to Java at all.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>JavaScript — совсем иной продукт, технически совершенно не связанный с Java.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to use OmegaT, the J2RE &lt;b0&gt;must&lt;/b0&gt; be installed on your system. OmegaT will not work without it. Please do not try getting OmegaT to work without the J2RE. You will only be wasting your time!</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если вы хотите использовать OmegaT, &lt;b0&gt;обязательно&lt;/b0&gt; нужно установить J2RE в вашей системе. Без неё OmegaT не будет работать. Не следует запускать OmegaT без J2RE. Это напрасная трата времени!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are not sure whether the J2RE is installed on your system, simply try installing OmegaT to see whether it works (see below for installation of OmegaT). If nothing happens, or you receive error messages, the Java Runtime Environment is almost certainly not installed. In this case, please obtain it and install it.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если вы не знаете, установлена ли J2RE в вашей системе, просто попробуйте установить и запустить OmegaT (указания по установке OmegaT приведены ниже). Если ничего не происходит или появляются сообщения об ошибках, среда выполнения Java, вероятнее всего, не установлена. В этом случае следует её получить и установить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Note: in order to confuse its customers, Sun regularly changes the names of its products. So, all versions of the JRE above 1 are known as &quot;Java 2&quot;, hence the Java Runtime Environment is now the J2RE. The Java Runtime Environment may also be known as the Java Virtual Machine, or JVM, and on Macintosh, it may be known as the MRJ. The developer&apos;s kit has been known as the Java Developer&apos;s Kit (JDK), Software Developer&apos;s Kit (SDK), and now also J2SE, J2EE and J2ME, according to the version. At least, I think so. But I&apos;m among the confused.)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>(Примечание: чтобы запутать клиентов, Sun постоянно меняет названия продуктов. Так, все версии JRE выше 1 известны как «Java 2», поэтому Java Runtime Environment теперь называется J2RE. Java Runtime Environment может также называться Java Virtual Machine или JVM, а на Macintosh она может быть известна как MRJ. Инструментарий разработчика известен как Java Developer&apos;s Kit (JDK), Software Developer&apos;s Kit (SDK), а теперь также J2SE, J2EE и J2ME, в зависимости от версии. По крайней мере, я так думаю. Но я сам запутался.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installing the Java Runtime Environment</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Установка Java Runtime Environment (среды выполнения Java)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The only platform that does not require a Java Runtime Environment install is MacOSX. On MacOSX, JRE comes pre-installed and preconfigured.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Единственная платформа, не требующая Java Runtime Environment, — это MacOSX. MacOSX поставляется с предварительно установленной и сконфигурированной JRE.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Windows users: you can check which version of the Java Runtime Environment, if any, is installed with Start button/Windows key &gt; &lt;i0&gt;Settings&lt;/i0&gt; &gt; &lt;i1&gt;Control Panel&lt;/i1&gt;. If the J2RE is already installed, you will see a control panel labelled &quot;Java(TM)2 Runtime Environment, Standard Edition 1.3.0_01&quot; or similar.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Пользователям Windows: узнать, какая версия Java Runtime Environment установлена, можно, щёлкнув по кнопке Пуск / нажав клавишу Windows и выбрав &lt;i0&gt;Настройка&lt;/i0&gt; &gt; &lt;i1&gt;Панель управления&lt;/i1&gt;. Если J2RE уже установлена, будет видна панель управления с подписью  «Java(TM)2 Runtime Environment, Standard Edition 1.3.0_01» или сходной.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Linux users: simply type &lt;i0&gt;Java -version&lt;/i0&gt; at the command line. The version installed will be returned (assuming of course that it is installed at system level).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Пользователям Linux: просто введите &lt;i0&gt;Java -version&lt;/i0&gt; в командной строке. Будет возвращена установленная версия (конечно, если она установлена на системном уровне).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can download the J2RE from the links below. It is free (note the licence conditions), but the naming conventions may make finding the right version a little confusing. You will need the version for your platform (Linux, Windows, etc.). The size of the J2RE is around 14 MB.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>J2RE можно загрузить по ссылке ниже. Она бесплатна (обратите внимания на условия лицензии), но правила именования могут несколько затруднить поиск нужной версии. Понадобится версия для вышей платформы (Linux, Windows, и т.п.). Размер J2RE — около 14 Mб.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT 1.4.0 should work with any version of the J2RE from 1.2 upwards. However, we recommend that you obtain the latest version of the J2RE, since older versions of Java may not support certain features.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT 1.4.0 должна работать с любой версией J2RE от 1.2 и позднее. Однако мы рекомендуем получить последнюю версию J2RE, поскольку предыдущие версии Java могут не поддерживать определённые функции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As an alternative to the J2RE, you can install the developer&apos;s kit. The developer&apos;s kit contains its own copy of the J2RE, and also enables you to modify OmegaT.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>В качестве альтернативы J2REможно установить инструментарий разработчика. Инструментарий разработчика содержит собственную копию J2RE, а также позволяет изменять OmegaT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Windows and Linux users can download the Java Runtime Environment from:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Пользователи Windows и Linux могут загрузить Java Runtime Environment с сайтов:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sun&lt;/a0&gt; (all platforms)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Sun&lt;/a0&gt; (все платформы)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Earlier versions of OmegaT are known to run on the MRJ for Macintosh OS 9. Version 1.4.0 &lt;i0&gt;may&lt;/i0&gt; work but has not been tested on this platform. You can download the MRJ from the Apple site.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Предыдущие версии OmegaT работают в MRJ для Macintosh OS 9. Версия 1.4.4 &lt;i0&gt;может&lt;/i0&gt; работать, но она не тестировалась на этой платформе. Загрузить MRJ  можно с сайта Apple.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Install the J2RE by following the accompanying instructions.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Установите J2RE согласно прилагаемым указаниям.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installing OmegaT</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Установка OmegaT</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simply extract the contents of the archive into a directory of your choice. The archive may be in *.zip or *.tar.gzip form. Linux and Mac (Stuffit) users should have no problems with either; Windows users may not necessarily have a utility for the latter.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Просто распакуйте содержимое архива в директорию по выбору. Архив может быть в формате *.zip или *.tar.gzip. Пользователи Linux и Mac (Stuffit) не должны испытывать проблем в любом случае; пользователи же Windows могут не иметь утилиты для последнего.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration (Linux only)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Настройка (только Linux)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are using Linux but are not very familiar with it, this is how to make launching of OmegaT more user-friendly:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если вы используете Linux, но не очень хорошо его знаете, вот совет, как можно сделать более лёгким запуск OmegaT:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create a shell script by creating a text file with the following content:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Создайте shell-скрипт, написав текстовый файл следующего содержания:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>where &lt;i0&gt;&lt;OmegaT&gt;&lt;/i0&gt; is the directory containing the file &lt;i1&gt;OmegaT.jar&lt;/i1&gt; and &lt;i2&gt;&lt;java&gt;&lt;/i2&gt; is the directory containing the J2RE binary (the file named &lt;i3&gt;java&lt;/i3&gt;). If you have set the Java path variable, you don&apos;t need to specify this directory, and &lt;i4&gt;java -jar OmegaT.jar&lt;/i4&gt; is sufficient. Specifying the directory is necessary if you have not set the Java path variable, and also if your system has more than one version of Java installed and you need to ensure that OmegaT is launched by the correct version.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>где &lt;i0&gt;&lt;OmegaT&gt;&lt;/i0&gt; — директория, содержащая файл &lt;i1&gt;OmegaT.jar&lt;/i1&gt;, а &lt;i2&gt;&lt;java&gt;&lt;/i2&gt; — директория, содержащая исполняемый файл J2RE (который называется &lt;i3&gt;java&lt;/i3&gt;). Если установлена переменная пути Java, эту директорию не нужно указывать, достаточно &lt;i4&gt;java -jar OmegaT.jar&lt;/i4&gt;. Указывать директорию нужно, если не определена переменная пути Java, а также если в системе установлено несколько версий  Java, и нужно обеспечить, чтобы OmegaT запускалась с нужной версией.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Save the text file as &lt;i0&gt;OmegaT&lt;/i0&gt;, and set the permissions to executable (e.g. in Konqueror, context menu &gt; &lt;i1&gt;Properties&lt;/i1&gt; &gt; &lt;i2&gt;Permissions&lt;/i2&gt; &gt; &lt;i3&gt;Exec&lt;/i3&gt;). You can now launch OmegaT simply by typing &lt;i4&gt;OmegaT&lt;/i4&gt; at the command line. If you want to put an icon on your desktop, set it to execute the shell script file.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Сохраните текстовый файл как &lt;i0&gt;OmegaT&lt;/i0&gt; и сделайте его исполняемым (напр., в Konqueror контекстное меню &gt; &lt;i1&gt;Properties&lt;/i1&gt; &gt; &lt;i2&gt;Permissions&lt;/i2&gt; &gt; &lt;i3&gt;Exec&lt;/i3&gt;). Теперь для запуска OmegaT можно просто ввести &lt;i4&gt;OmegaT&lt;/i4&gt; в командной строке. При желании можно поместить значок на рабочий стол, назначив ему исполнение файла скрипта.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Launching the application</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Запуск приложения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Windows and Macintosh OS X</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Windows и Macintosh OS X</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Click on the file &lt;i0&gt;OmegaT.jar&lt;/i0&gt; in the file manager.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Щёлкните по файлу &lt;i0&gt;OmegaT.jar&lt;/i0&gt; в программе управления файлами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Execute &lt;i0&gt;java -jar OmegaT.jar&lt;/i0&gt; from the command line. Observe the typography of OmegaT - the capitals are important.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Введите &lt;i0&gt;java -jar OmegaT.jar&lt;/i0&gt; в командной строке. Соблюдайте регистр буке в OmegaT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have not configured Java to detect the location of your OmegaT files, you must first change directories to the directory containing the file OmegaT.jar.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если Java не настроена на определение местонахождения файлов OmegaT, сначала следует перейти в директорию, содержащую файл OmegaT.jar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have not set the Java path variable, you must specify the full path. If you have done neither of the above, your launch routine might therefore look something like this:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если не установлена переменная пути Java, следует указать полный путь. Если не сделано ничего из перечисленного выше, запуск должен происходить примерно следующим образом:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Введение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Table of contents</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Содержание</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;System requirements</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Системные требования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT is the work of &lt;b0&gt;Keith Godfrey&lt;/b0&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Создатель OmegaT — &lt;b0&gt;Keith Godfrey&lt;/b0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>About this manual</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Об этом руководстве</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This manual is a work in progress. For further information about OmegaT, please visit the &lt;a0&gt;OmegaT home page&lt;/a0&gt;. Should you have any questions or comments on the manual, positive or negative, please send them to the &lt;a1&gt;author&lt;/a1&gt;. Feedback is welcome!</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Это руководство пока не закончено. Дополнительная информация об OmegaT находится на &lt;a0&gt;сайте OmegaT&lt;/a0&gt;. Если есть вопросы или комментарии по данному руководству, положительные или отрицательные, их следует направить &lt;a1&gt;автору&lt;/a1&gt;. Обратная связь приветствуется!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT was developed on the Linux platform, and the development/documentation team does not use Windows. Although this documentation is intended for OmegaT users on all platforms, some terminology may therefore be a little unfamiliar. So, when you see the Linux forward slash /, think &quot;\&quot;, and do a mental translation to &quot;folder&quot;; whenever you read &quot;directory&quot;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT разработана на платформе Linux, и команда по разработке / документированию не пользуется Windows. Хотя данная документация предназначена для пользователей OmegaT на всех платформах, часть терминологии может быть незнакомой. Например, если знак косой черты / в Linux соответствует &quot;\&quot; в Windows, а «директория» — то же, что «папка».</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What is translation memory?</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Что такое память переводов (translation memory)?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Translation memory is used during the translation of documents from one language to another. It assists you by storing pieces of text in a database (the &quot;translation memory&quot;) so that when you next encounter the same piece of text (a &quot;segment&quot;), or part of it, you can see immediately how you translated it in the past. For translation memory to be really useful, you must use it for long enough to build up a database of segments and their corresponding translations.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Память переводов используется во время перевода документов с одного языка на другой. Она помогает переводчику, сохраняя отрывки текста в базе данных («память переводов») так, чтобы если такой же отрывок («сегмент») или часть его встретится снова, можно было сразу увидеть, как он был переведён ранее. Для извлечения реальной пользы из памяти переводов, её необходимо использовать в течение долгого времени, чтобы накопить базу сегментов и их переводов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What&apos;s special about OmegaT?</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Что особенного в OmegaT?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are many translation memory programs on the market. OmegaT&apos;s particular features are:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>На рынке сегодня много программ, использующих память переводов. Особенности OmegaT следующие:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>it runs on the Java Runtime Environment, and can therefore be used on a number of platforms, including Windows, Linux, and Mac OS X;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>она работает в Java Runtime Environment, и может быть использована на множестве платформ, включая Windows, Linux, и Mac OS X;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>it is free;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>она бесплатна;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>it is open-source, meaning that users are free to distribute and modify it;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>она поставляется с открытым исходным кодом, и её можно без ограничений распространять и изменять;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>it is designed with speed in mind, rather than support for complex data formatting and multiple file formats;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>при её разработке во главу угла ставилась скорость переводов, а не поддержка сложного форматирования текстов или множества форматов файлов;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>it supports the OpenOffice.org file format directly.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>она непосредственно поддерживает формат файлов OpenOffice.org.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Full and fuzzy matches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Полные и нечёткие совпадения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Navigating text</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Перемещение по тексту</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Keyword and exact searches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следущее: &lt;a0&gt;Поиск по ключевым словам и точный поиск</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When a segment is opened, OmegaT scans both the current project, and any translation memories in the &lt;i0&gt;/tm&lt;/i0&gt; directory for matches. A 100% match, if found, is inserted automatically into the target text field of the active segment. Any fuzzy matches are displayed in the Match and Glossary Viewer window.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>При открытии сегмента, OmegaT производит поиск совпадений в текущем проекте, а также в файлах памяти переводов в директории&lt;i0&gt;/tm&lt;/i0&gt;. Если найдено 100%-ное совпадение, оно автоматически вставляется в целевое текстовое поле активного сегмента. Нечёткие совпадения отображаются в окне просмотра совпадений и глоссария.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Up to five full and/or fuzzy matches may be displayed in the Match and Glossary Viewer window. Hit &lt;i0&gt;Ctrl+1&lt;/i0&gt;, to select the first match, &lt;i1&gt;Ctrl+2 &lt;/i1&gt;to select the second, etc. The selected match is displayed in bold. The name of the translation memory file containing the match shown is also displayed (unless the match is part of the current project).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>В окне просмотра совпадений и глоссария отображается до пяти полных и нечётких совпадений. Нажмите &lt;i0&gt;Ctrl+1&lt;/i0&gt;, чтобы выбрать первое совпадение, &lt;i1&gt;Ctrl+2 &lt;/i1&gt;, чтобы выбрать второе, и т.д. Выбранное совпадение выделяется полужирным начертанием. Отображается также имя файла с памятью переводов, содержащего совпадение (если совпадение найдено не в текущем проекте).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once a match has been selected, it can be pasted into the active segment. &lt;i0&gt;Ctrl-I&lt;/i0&gt; inserts the match at the cursor position, &lt;i1&gt;Ctrl-R&lt;/i1&gt; substitutes it for the active segment text.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Когда совпадение выбрано, его можно вставить в активный сегмент. &lt;i0&gt;Ctrl-I&lt;/i0&gt; позволяет вставить совпадение в позицию курсора, &lt;i1&gt;Ctrl-R&lt;/i1&gt; заменяет совпадением текст активного сегмента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The percentage match indicated OmegaT is of technical interest only. It does not pretend to indicate how much work has already been done for you!</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Процент совпадения, показываемый OmegaT, представляет интерес чисто с технической точки зрения. Он не может показать, сколько работы уже сделано за вас!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The differences between the active source segment and the fuzzy match are not indicated.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Различия между активным сегментом исходного текста и нечётким совпадением не показываются.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Navigating text</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Перемещение по тексту</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Editing functions</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Функции редактирования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Full and fuzzy matches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Полные и нечёткие совпадения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To move to:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы перейти в:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the next segment, hit &lt;i0&gt;Enter&lt;/i0&gt;, &lt;i1&gt;Ctrl+N&lt;/i1&gt; or &lt;i2&gt;Tab&lt;/i2&gt; as selected in the &lt;i3&gt;configuration&lt;/i3&gt; menu</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующий сегмент, нажмите &lt;i0&gt;Enter&lt;/i0&gt;, &lt;i1&gt;Ctrl+N&lt;/i1&gt; или &lt;i2&gt;Tab&lt;/i2&gt;, если сделан соответствующий выбор в меню &lt;i3&gt;настройки&lt;/i3&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the previous segment, hit &lt;i0&gt;Ctrl+P</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущий сегмент, нажмите &lt;i0&gt;Ctrl+P</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the next untranslated segment, hit &lt;i0&gt;Ctrl-U.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующий непереведённый сегмент, нажмите &lt;i0&gt;Ctrl+U</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To move to a different segment within the same file, drag the vertical slider bar up or down, then click in the desired segment.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы перейти в другой сегмент в этом же файле, перетащите ползунок на вертикальной полосе прокрутки вверх или вниз, затем щёлкните по желаемому сегменту.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To move to a different file within the same project, call up the Project Files window (&lt;i0&gt;File&lt;/i0&gt; &gt; &lt;i1&gt;Show File List&lt;/i1&gt;) to display a list of the files. Click on the name of the desired file to move to the beginning of that file.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы перейти к другому файлу в том же проекте, вызовите список файлов проекта (&lt;i0&gt;Проект&lt;/i0&gt; &gt; &lt;i1&gt;Показать список файлов&lt;/i1&gt;). Щёлкните по имени желаемого файла, чтобы перейти к его началу.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See also &lt;a0&gt;General hints and tips&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>См. также &lt;a0&gt;Общие советы и подсказки&lt;/a0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the omegat user manual</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Руководство пользователя OmegaT</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: </seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Introduction</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Введение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The OmegaT User Manual</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Руководство пользователя OmegaT</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For OmegaT version: 1.4.4</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Для OmegaT версии: 1.4.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Author: Marc Prior</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Автор: Marc Prior</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Last edited: December 08, 2004 by Dmitri Gabinski</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Последняя редакция: 06 декабря 2004, Дмитрий Габинский</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML workaround: Jean-Christophe Helary</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Улучшение HTML-кода: Jean-Christophe Helary</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What&apos;s new in v. 1.4.4</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Что нового в версии 1.4.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Easy Help system localization (and Belarusian, French, German, Russian and Spanish l10ns)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Лёгкая локализация системы справки (есть на английском, белорусском, испанском, немецком и французском)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Separate source distribution of OmegaT</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Исходный код распространяется отдельно от OmegaT</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ability to jump to next not yet translated segment by Henry Pijffers (for details look at &lt;a0&gt;The translation process&lt;/a0&gt;)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Возможность найти последний непереведённый сегмент благодаря Henry Pijffers (подробности — в разделе &lt;a0&gt;Процесс перевода&lt;/a0&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New Fuzzy Matching Engine:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Новая система подбора соответствий:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>enhanced matching for Japanese</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>улучшенный подбор соответствий для японского</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>increased number of fuzzy matches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>большее количество нечётких совпадений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Refactored HTML and XML file handlers to improve speed and stability</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Обработчики HTML и XML подверглись рефакторингу для увеличения скорости и стабильности работы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some refactorings of file handlers</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Некоторый рефакторинг обработчиков файлов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Changes in glossary file encodings (for details look at &lt;a0&gt;Translation memory and glossary file formats</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Изменения в кодировках файлов глоссариев (подробности — в разделе &lt;a0&gt;Форматы файлов памяти переводов и глоссария</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Better HTML handling, including better encoding recognition and meta-data transfer to target files</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Улучшенная обработка HTML-файлов, включая улучшение распознавания кодировок и передачи мета-данных в файлы перевода</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No more multiple help file viewers</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы справки открываются в единственном окне</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Empty segments are not displayed</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Пустые сегменты не отображаются</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reliable font change</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Надёжная настройка шрифта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Contents</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Содержание</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Before starting</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Перед тем, как начать</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>System requirements</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Системные требования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Your first steps into OmegaT</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Первые шаги в OmegaT</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user interface</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Пользовательский интерфейс</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Segmentation</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Сегментирование</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The translation process</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Процесс перевода</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A little further</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Овладеваем мастерством</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keyword and exact searches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Поиск по ключевым словам и точный поиск</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Saving, revising and compiling your translation</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Сохранение, проверка и компиляция перевода</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Glossaries, translation memories and project structure</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Глоссарии, память переводов и структура проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Translation file formats</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Форматы переводимых файлов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Translation memory and glossary file formats</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Форматы файлов памяти переводов и глоссария</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Slightly advanced usage</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Немного продвинутости</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keyboard shortcuts</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Сочетания клавиш</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Editing tagged (formatted) texts</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Редактирование текстов с тэгами (разметкой)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Working with OpenOffice.org and StarOffice files</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Работа с файлами OpenOffice.org и StarOffice</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>General hints and tips</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Общие советы и подсказки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Этот документ распространяется в надежде, что он будет полезен, но НЕ ДАЁТСЯ НИКАКОЙ ГАРАНТИИ, в том числе подразумеваемой гарантии ГОДНОСТИ ДЛЯ ПРОДАЖИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОГО НАЗНАЧЕНИЯ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Разрешается копировать, распространять и/или изменять этот документ в соответствии с условиями GNU Free Documentation License, версии 1.2 или любой последующей версии, опубликованной Free Software Foundation; без неизменных разделов, без текстов передней или задней страницы обложки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A copy of the GNU Free Documentation license can be obtained from the OmegaT home page, from Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA, or from &lt;a0&gt;http://www.gnu.org&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Копию GNU Free Documentation license можно получить на странице OmegaT в Интернете, в Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA, или на &lt;a0&gt;http://www.gnu.org&lt;/a0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All trade marks referred to in this manual are the property of their respective owners.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Все торговые марки, упомянутые в данном руководстве, являются собственностью их владельцев.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Keyword and exact searches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Поиск по ключевым словам и точный поиск</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Glossary</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Глоссарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Saving</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Сохранение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To save your work at any time, Select &lt;i0&gt;File&lt;/i0&gt; &gt; &lt;i1&gt;Save&lt;/i1&gt;, or simply hit &lt;i2&gt;Ctrl+S&lt;/i2&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы сохранить работу в любой момент, выберите &lt;i0&gt;Проект&lt;/i0&gt; &gt; &lt;i1&gt;Сохранить&lt;/i1&gt; или просто нажмите &lt;i2&gt;Ctrl+S&lt;/i2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This saves your translation not as a document, but as an intermediate translation memory, in the file &lt;i0&gt;/omegat/project_save.tmx&lt;/i0&gt;. .</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Таким образом перевод сохраняется не как документ, а как промежуточная память переводов в файле &lt;i0&gt;/omegat/project_save.tmx&lt;/i0&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Revising</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Проверка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To revise your text by comparing your translation against the original, simply walk through it segment by segment with &lt;i0&gt;Enter&lt;/i0&gt;. Translators familiar with other translation memory applications will appreciate this convenient method of revising drafts.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы проверить текст, сравнивая перевод и оригинал, просто переходите от сегмента к сегменту, нажимая &lt;i0&gt;Enter или Ctrl+N&lt;/i0&gt;. Переводчики, знакомые с другими приложениями, основанными на памяти переводов,  оценят этот удобный метод проверки проектов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Compiling</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Компиляция</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don&apos;t be intimidated by the the computerese!</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Не пугайтесь компьютерного жаргона!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you translate in OmegaT, you are not overwriting the original text, but producing translations of each paragraph in a separate file. Compiling is simply the process whereby OmegaT replaces the segments in the original text with the translations in this file. It also generates a translation memory in its final, reusable form. You needn&apos;t wait until the translation is finished to compile; you can compile as many times as you like.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>При переводе в OmegaT не происходит замены исходного текста, переводы каждого абзаца сохранятся в отдельный файл. Компиляция — это просто процесс, при котором OmegaT заменяет сегменты текста оригинала переводами в этом файле. Программа также создаёт память переводов в окончательной форме, пригодной для повторного использования. Для компиляции не обязательно ждать, пока будет переведён весть текст; компиляцию можно проводить сколько угодно раз.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Avoiding disasters</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы не случилась катастрофа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make regular copies of the file &lt;i0&gt;/omegat/project_save.tmx&lt;/i0&gt;. Add a serial number or the date to the copy, e.g. &lt;i1&gt;/omegat/project_save.tmx-01&lt;/i1&gt; or &lt;i2&gt;/omegat/project_save.tmx-04-05-04&lt;/i2&gt;. This file can also be transferred to other media such as a diskette as a convenient way of making quick backups. When you are translating formatted (StarOffice/OpenOffice.org, XHTML or HTML) files, in particular, you are likely to find that the file &lt;i3&gt;project_save.tmx&lt;/i3&gt; is much smaller than the original or final texts.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Регулярно делайте копии файла &lt;i0&gt;/omegat/project_save.tmx&lt;/i0&gt;. К имени копии добавляйте серийный номер или дату, напр., &lt;i1&gt;/omegat/project_save.tmx-01&lt;/i1&gt; или &lt;i2&gt;/omegat/project_save.tmx-04-05-04&lt;/i2&gt;. Этот файл затем можно перенести на другой носитель, например, на дискету, что является удобным способом резервного копирования. В частности, при переводе файлов с форматированием (StarOffice/OpenOffice.org, XHTML или HTML), скорее всего, файл &lt;i3&gt;project_save.tmx&lt;/i3&gt; будет намного меньше текста оригинала или перевода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Until you are familiar with OmegaT, compile at regular intervals and check that the compiled file contains the latest version of your translation.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Пока не освоитесь с OmegaT, делайте компиляцию регулярно и проверяйте, чтобы скомпилированный файл содержал последнюю версию перевода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Take particular care when making any changes to the files in &lt;i0&gt;/source&lt;/i0&gt; whilst in the middle of a project. Sometimes, you will want to make changes to source files, for example to remove hard line breaks from the middle of sentences. However, if the source file is modified after you have begun translating, OmegaT may be unable to find a segment that you have already translated. Always back up either the source file itself, or the whole project, before making any changes to the source file(s).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Будьте особенно осторожны при внесении изменений в файлы в директории &lt;i0&gt;/source&lt;/i0&gt; в ходе проекта. Иногда нужно изменить исходные файлы, например, чтобы удалить разрывы строк в середине предложения. Однако если исходный файл изменён, когда уже начат перевод, OmegaT может не найти уже переведённый сегмент. Всегда делайте резервную копию либо самого исходного файла, либо всего проекта, прежде чем вносить изменения в исходный(ые) файл(ы).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don&apos;t try to create a new project or open another project whilst a project is open. Close the open project, and if necessary relaunch OmegaT, before opening another project.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если открыт какой-либо проект, не следует создавать новый или открывать другой. Закройте открытый проект и при необходимости перезапустите OmegaT, прежде чем открыть другой проект.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Full and fuzzy matches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Полные и нечёткие совпадения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Saving, revising and compiling</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Сохранение, проверка и компиляция перевода</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT provides a powerful range of search functions.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT обладает мощной функцией поиска.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Call up the Search function with &lt;i0&gt;Ctrl+F&lt;/i0&gt; and enter the word or phrase you wish to search for in the &quot;Search for&quot; box.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Вызовите функцию поиска, нажав &lt;i0&gt;Ctrl+F&lt;/i0&gt;, и введите искомое слово или фразу в поле «Найти».</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternatively, mark a word or phrase in the editing field (target text of the active segment) and hit &lt;i0&gt;Ctrl+F&lt;/i0&gt;. The word or phrase is entered in the &quot;Search for&quot; box automatically in this case.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Другой способ — выделить слово или фразу в поле редактирования (текст перевода активного сегмента) и нажать &lt;i0&gt;Ctrl+F&lt;/i0&gt; . В этом случае слово или фраза автоматически вставляется в поле «Найти».</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Select the type of search using the radio buttons (keyword and exact searches) and check boxes (search TMs/search files).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Выберите тип поиска с помощью селективной кнопки (поиск по ключевым словам и точный поиск фразы) и включите необходимые опции (поиск в памяти переводов/поиск в файлах).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All types of search are non-case-sensitive, i.e. a search for &quot;abc&quot; finds instances of abc, ABC, Abc, etc.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>При любом типе поиска регистр букв не учитывается, т.е., поиск &quot;abc&quot; позволит найти abc, ABC, Abc и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keyword searches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Поиск по ключевым словам</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Select &quot;Keyword search&quot; and enter any number of individual words, in any order, and OmegaT displays a list of all segments in which all the words occur. Keyword searches are similar to a search &quot;with all of the words&quot; in an Internet search engine such as Google (AND logic).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Выберите «Поиск по ключевым словам» и введите любое количество слов в любом порядке, и OmegaT покажет список всех сегметов, в которых встречаются все слова. Поиск по ключевым словам аналогичен опции «искать все слова» в поисковых системах в Интернете, таких как Google (логический оператор AND).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keyword searches can only find whole words, not parts of words or incomplete words.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Поиск по ключевым словам позволяет находить только целые слова, а не части слова или незаконченные слова.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keyword searches only search the &lt;b0&gt;source text of the project itself&lt;/b0&gt;, i.e. they do not search translation memories in &lt;i1&gt;/tm&lt;/i1&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Поиск по ключевым словам просматривает только &lt;b0&gt;исходный текст самого проекта&lt;/b0&gt;, т.е., не производится поиск в файлах памяти переводов в директории &lt;i1&gt;/tm&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exact searches</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Точный поиск</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An exact search looks for a phrase, i.e. if several words are entered, they are found only if they occur in exactly the same sequence. Exact searches are similar to an &quot;exact phrase&quot; search in an Internet search engine such as Google.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Точный поиск позволяет найти фразу, т.е., если введены несколько слов, они будут найдены только в случае, если они располагаются точно в указанной последовательности. Точный поиск аналогичен опции «искать точную фразу» в поисковых системах в Интернете, таких как Google.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exact searches can search for the search term:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Точный поиск можно проводить:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>in source and target segments in the current project;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>в сегментах исходного текста и перевода текущего проекта;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>in source and target segments in the current project and in translation memories (files in &lt;s0&gt;&lt;i1&gt;/tm&lt;/i1&gt;);</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>в сегментах исходного текста и перевода текущего проекта и в файлах памяти переводов (файлах в директории &lt;s0&gt;&lt;i1&gt;/tm&lt;/i1&gt;);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>in any files in a format which OmegaT can read (.txt, .html, .xhtml or .sxw), in any selected directory and (if desired) subdirectories.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>в любых файлах в форматах, которые OmegaT может прочесть (.txt, .html, .xhtml или .sxw), в любой выбранной директории и (по желанию) в поддиректориях.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The wildcard search characters &apos;*&apos; and &apos;?&apos; can be used in exact searches.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>При точном поиске можно использовать символы подстановки &apos;*&apos; и &apos;?&apos;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The character &apos;?&apos; matches any single character,i.e. &apos;b?d&apos; finds instances of &apos;bad&apos; and &apos;bid&apos;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Символ &apos;?&apos; заменяет один любой символ, т.е. по запросу &apos;б?л&apos; будут найдены &apos;бел&apos; и &apos;был&apos;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The character &apos;*&apos; matches any character or number of characters, i.e. &apos;b*d&apos; finds instances of &apos;bad&apos;, &apos;bid&apos;, &apos;bold&apos; and &apos;band&apos;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Символ &apos;*&apos; заменяет любой символ или последовательность символов, т.е., по запросу &apos;б*л&apos; будут найдены &apos;бел&apos;, &apos;был&apos;, &apos;баул&apos; и &apos;барабанил&apos;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;The user interface</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Пользовательский интерфейс</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;The translation process</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Процесс перевода</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT segments texts for translation by the paragraph.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT сегментирует переводимый текст по абзацам.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT presegments the text when the project is opened. You cannot move segment boundaries from within OmegaT. If you suspect that your text might contain manual line breaks in inconvenient places, it is therefore worth editing it before opening the project. If you are confronted with bad segmenting (e.g. a line break in the middle of a sentence) whilst you are working in OmegaT, you can remove the break from the source text (for example in a text editor or word processor). You will not see the change in OmegaT until you reload the project, however.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT разбивает текст на сегменты при открытии проекта. Работая в OmegaT, нельзя изменять границы сегментов. Если вы предполагаете, что в тексте есть ненужные разрывы строк, есть смысл отредактировать текст, прежде чем открывать проект. Если во время работы в OmegaT встретится неверное сегментирование (напр., разрыв строки в середине предложения), можно удалить разрыв из исходного текста (например, в текстовом редакторе). Изменения появятся в OmegaT, однако, только после перезагрузки проекта.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To use sentence-level segmentation in OmegaT, use the OpenOffice.org conversion macros. These macros convert sentences in OpenOffice.org files to paragraphs so that when the file is opened in OmegaT, it is segmented by the sentence rather than by the paragraph. The macros can be downloaded from the OmegaT web site.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Чтобы использовать в OmegaT сегментирование на уровне отдельных предложений, можно воспользоваться макросами преобразований для OpenOffice.org. Эти макросы преобразуют предложения в файлах OpenOffice.org в отдельные абзацы, и при открытии файла в OmegaT он сегментируется по предложениям, а не по абзацам. Макросы можно загрузить с сайта OmegaT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Project files and directories</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Файлы и директории проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Editing tagged texts</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Редактирование текстов с тэгами (разметкой)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Open existing project</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Открыть существующий проект</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Save translation memory</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Что такое память переводов (translation memory)?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exit OmegaT</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Выйти из программы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Jump to next segment</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Перейти к следующему сегменту</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Jump to previous segment</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Перейти к предыдущему сегменту</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Search translation memory</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Поиск в памяти переводов?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Overwrite translation (replace text in active segment with selected fuzzy match)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Заменить текст в активном сегменте выбранным нечётким соответствием</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Insert translation (insert selected fuzzy match into active segment at cursor position)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Вставить выбранное нечёткое соответствие в активный сегмент в позицию курсора</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ctr+1, 2, etc.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Ctr+1, 2, и т. п.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Compare segment fuzzy match 1, fuzzy match 2, etc.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Выбрать нечёткое соответствие №1, нечёткое соответствие №2 и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Display list of project source files</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Показать список файлов проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Jump to next untranslated segment</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Перейти к следующему непереведённому сегменту</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Using &lt;i0&gt;Tab&lt;/i0&gt; is an option that should be activated by clicking on the &lt;i1&gt;Preferences&lt;/i1&gt; &gt; &lt;i2&gt;Use TAB to advance&lt;/i2&gt; menu item.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>*Использование &lt;i0&gt;Tab&lt;/i0&gt; возможно, если включить соответствующую опцию, выбрав меню &lt;i1&gt;Настройка&lt;/i1&gt; &gt; &lt;i2&gt;Использовать TAB для перехода далее&lt;/i2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Using different fonts and alphabets</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Использование различных шрифтов и алфавитов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;General hints and tips</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следущее: &lt;a0&gt;Общие советы и подсказки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See also &lt;a0&gt;Editing tagged (formatted) texts</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>См. также &lt;a0&gt;Редактирование текстов с тэгами (разметкой)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenOffice.org and StarOffice: the difference</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Различия между OpenOffice.org и StarOffice</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenOffice.org and StarOffice are, broadly speaking, the same program. OpenOffice.org is open-source, meaning essentially that it is free, and can be copied freely. StarOffice is a commercial product: you must buy a licence for each system on which you intend to use it. StarOffice contains certain components which are not present in OpenOffice.org; purchasing a licence also entitles you to technical support. For the purpose of this manual, all references to OpenOffice.org apply equally to StarOffice.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>В широком смысле OpenOffice.org и StarOffice — одна и та же программа. OpenOffice.org — программа с открытым исходным кодом, что означает, в основном, что она бесплатна и может свободно копироваться. StarOffice — коммерческий продукт: нужно приобретать лицензию для каждой системы, на которой планируется его использование. StarOffice содержит определённые компоненты, отсутствующие в OpenOffice.org; приобретение лицензии также даёт право на техническую поддержку. В данном руководстве все ссылки на OpenOffice.org равным образом применимы к StarOffice.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenOffice.org and OmegaT</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OpenOffice.org и OmegaT</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT is a standalone application. It does not require OpenOffice.org or StarOffice, MS Word, or any other word processor.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT — самостоятельное приложение, не требующее для работы OpenOffice.org или StarOffice, MS Word, или иного текстового редактора.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenOffice.org/StarOffice do however extend OmegaT&apos;s functionality considerably, as they enable it to handle files in formats which it does not support directly. In particular, these include MS Word, MS Excel, MS Powerpoint and RTF. To prepare files in these formats for processing in OmegaT, simply open them in OpenOffice.org and save them in the native OpenOffice.org format. When you have finished your translation, open them in OpenOffice.org again and save them in the original format.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Однако OpenOffice.org/StarOffice значительно расширяют возможности OmegaT, позволяя работать с файлами в форматах, которые не поддерживаются непосредственно. В частности, этот MS Word, MS Excel, MS Powerpoint и RTF. Для подготовки файлов в этих форматах к переводу в OmegaT просто откройте их в OpenOffice.org и сохраните в собственном формате OpenOffice.org. Закончив перевод, откройте текст перевода в OpenOffice.org и сохраните в формате оригинала.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenOffice.org/StarOffice also add further functionality to the core functions of OmegaT. Spellchecking and sentence-level rather than paragraph-level segmenting are two functions not provided in OmegaT itself but made possible with OpenOffice.org.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OpenOffice.org/StarOffice расширяют возможности OmegaT. Проверка правописания и сегментирование по предложениям, а не по абзацам — вот две функции, отсутствующие непосредственно в OmegaT, но доступные с помощью OpenOffice.org.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use OpenOffice.org 1.0/StarOffice 6.0 or later in conjunction with OmegaT. Earlier builds/versions (e.g. the OpenOffice.org Beta) may not work. StarOffice 5.2 will certainly &lt;b0&gt;not&lt;/b0&gt; work.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Используйте с OmegaT OpenOffice.org 1.0/StarOffice 6.0 или более поздней версии. Более ранние версии (напр., OpenOffice.org Beta) могут не работать. StarOffice 5.2 &lt;b0&gt;не&lt;/b0&gt; будет работать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hints and tips</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Советы и подсказки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make sure that MS Word files have not been saved with the &quot;Fast Save&quot; option, or OpenOffice.org will probably be unable to read them.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Убедитесь, что при сохранении файлов MS Word не была выбрана опция «быстрое сохранение», иначе OpenOffice.org скорее всего не сможет их прочитать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don&apos;t attempt to load OpenOffice.org files saved with the &quot;Revision&quot; function (i.e. &quot;Record changes&quot;) active into OmegaT. Disable the function and accept all the changes first. This problem is most likely to occur when you receive MS Word files which have been saved with the &quot;Revision&quot; function enabled, and you are not aware of the fact. OpenOffice.org supports this function (which is in fact very useful), but it should not be used in conjunction with OmegaT.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Не следует загружать в OmegaT файлы OpenOffice.org, сохранённые с включённой функцией записи изменений. Сперва выключите эту функцию и примите все изменения. Эта проблема весьма вероятна, когда вы получаете файлы MS Word, сохранённые с включённой записью изменений, о чём вы не знаете. OpenOffice.org поддерживает эту функцию (на самом деле очень полезную), но её нельзя использовать при работе с OmegaT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Obtain and install the spellcheck tools OpenOffice.org for your target language(s). Then, before loading a project containing OpenOffice.org files for the first time, open these files in OpenOffice.org and change the language of the text to your target language by marking the whole text with &lt;i0&gt;Ctrl-A&lt;/i0&gt;, then &lt;i1&gt;Format&lt;/i1&gt; &gt; &lt;i2&gt;Character&lt;/i2&gt; &gt; &lt;i3&gt;Language&lt;/i3&gt;. You can then use OpenOffice.org to spellcheck your finished translation after compilation. You can change the language after compiling, but if you compile more than once the language will revert to that of the source text file each time.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Получите и установите средства проверки правописания для OpenOffice.org для языков, с которыми работаете. Затем, прежде чем в первый раз загрузить проект, содержащий файлы OpenOffice.org, откройте эти файлы в OpenOffice.org и измените язык текста на целевой язык, выделив весь текст и нажав  &lt;i0&gt;Ctrl-A&lt;/i0&gt;, затем &lt;i1&gt;Format&lt;/i1&gt; &gt; &lt;i2&gt;Character&lt;/i2&gt; &gt; &lt;i3&gt;Language&lt;/i3&gt;. После этого можно использовать OpenOffice.org для проверки правописания в тексте перевода после компиляции. Язык можно изменить и после компиляции, но если компиляция осуществляется несколько раз, каждый раз после компиляции языком текста перевода будет язык исходного текста.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After compiling an OpenOffice.org-format text for the last time, check that everything has been translated. You will probably want to open the file in OpenOffice.org in any case, in order to spell-check it. You may also find however that OmegaT may miss parts of the text, such as headers and footers.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>После компиляции текста в формате OpenOffice.org в последний раз проверьте, всё ли переведено. В любом случае, скорее всего, понадобится открыть файл в OpenOffice.org, чтобы проверить правописание. Может, однако, обнаружиться, что OmegaT пропустила какие-то части текста, например, колонтитулы страниц.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Should OpenOffice.org fail to open a translated file and return an error, you have probably damaged tags by mistake during the translation process. In this case, open the project again and use the Validate tags function to locate the affected segment(s).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если OpenOffice.org не может открыть файл перевода и сообщает об ошибке, вероятно, тэги были случайно повреждены во время перевода. В этом случае откройте проект снова и используйте функцию проверки тэгов, чтобы найти затронутые сегменты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Introduction</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Введение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Installation and configuration</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Установка и настройка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT requires the Java Runtime Environment. Essentially, if your system will run the Java Runtime Environment (also known as the J2RE), it will run OmegaT. The Java Runtime Environment is available for the following platforms: Windows 95/98/2000/ME/XP, UNIX, Linux, Solaris (both x86 and Sun SPARC) and Mac OS 9. It comes pre-installed on Macintosh OS X.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Для работы OmegaT требуется Java Runtime Environment (среда исполнения Java). Как правило, если в системе есть Java Runtime Environment (также называемая J2RE), OmegaT может функционировать. Java Runtime Environment реализована на следующих платформах: Windows 95/98/2000/ME/XP, UNIX, Linux, Solaris (для x86 и Sun SPARC), и Macintosh OS X.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As far as we are aware, OmegaT does &lt;b0&gt;not&lt;/b0&gt; run on Windows NT owing to a bug in the NT Java implementation.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>По нашим сведениям, OmegaT &lt;b0&gt;не&lt;/b0&gt; работает в Windows NT из-за дефекта в реализации Java для NT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Keyboard shortcuts</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Сочетания клавиш</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Using different fonts and alphabets</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Использование различных шрифтов и алфавитов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Working with tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Работа с тэгами</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT displays the in-line formatting information of supported formats (at present HTML, XHTML and OpenOffice.org/StarOffice) as tags. The tags you see in OmegaT are not the same as those used by the original applications; OmegaT converts them internally, and converts them back at compilation.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT отображает форматирование текста в файлах поддерживаемых форматов (в настоящее время HTML, XHTML и OpenOffice.org/StarOffice) в виде тэгов. Тэги, показываемые в OmegaT, отличаются от используемых исходными приложениями; OmegaT производит внутреннюю конвертацию, а затем обратную конвертацию при компиляции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Care must be taken with tags. If they are changed accidentally, the formatting of the final file may be corrupted. In worst cases, the file may refuse to open altogether: this is particularly the case with OpenOffice.org files.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>С тэгами следует обращаться осторожно. Если их случайно изменить, может быть нарушено форматирование конечного файла. В худшем случае файл вообще не будет открываться, в частности, это случается с файлами OpenOffice.org.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Although you cannot add formatting of your own in OmegaT, you do have some degree of control over the existing formatting.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Хотя с помощью OmegaT невозможно добавлять форматирование, существуют определённые возможности управления существующим форматированием.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tag manipulation in OpenOffice.org files</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Манипуляция тэгами в файлах OpenOffice.org</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenOffice.org tags must be retained unchanged. You cannot delete these tags, duplicate them, or change the sequence. You can &lt;i0&gt;move&lt;/i0&gt; or &lt;i1&gt;cancel&lt;/i1&gt; the tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Тэги в файлах OpenOffice.org нельзя изменять. Эти тэги нельзя удалять, размножать, нельзя изменять их последовательность. Можно &lt;i0&gt;перемещать&lt;/i0&gt; или &lt;i1&gt;аннулировать&lt;/i1&gt; тэги.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moving the tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Перемещение тэгов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can move the tags to a different part of the segment; they must, however, remain in the same order;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Можно перемещать тэги в другую часть сегмента; однако должен оставаться неизменным их порядок;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cancelling the tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Аннулирование тэгов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By placing the tags next to each other you effectively cancel them.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Помещая тэги друг за другом можно таким образом их аннулировать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, if you change:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Например, если заменить:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This text is in &lt;f0&gt;italics&lt;/f0&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Текст набран &lt;f0&gt;курсивом&lt;/f0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>to</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>на</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This text is in &lt;f0&gt;&lt;/f0&gt;italics</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Текст набран &lt;f0&gt;&lt;/f0&gt;курсивом</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>you effectively remove the italic formatting.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>фактически, это устранит форматирование курсивом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tag manipulation in HTML files</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Манипуляция тэгами в файлах HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The start of formatting is marked by an opening tag of the form &lt;&lt;i0&gt;xx&lt;/i0&gt;&gt;, and the end of formatting by a corresponding closing tag &lt;/&lt;i1&gt;xx&lt;/i1&gt;&gt;. Any changes made to formatting tags must be made to both tags in the pair.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Начало форматирования отмечается открывающим тэгом в форме &lt;&lt;i0&gt;xx&lt;/i0&gt;&gt;, а конец форматирования — соответствующим закрывающим тэгом &lt;/&lt;i1&gt;xx&lt;/i1&gt;&gt;. Любые изменения форматирующих тэгов должны производиться с обоими тэгами в паре.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can &lt;i0&gt;delete&lt;/i0&gt;, &lt;i1&gt;duplicate&lt;/i1&gt;, &lt;i2&gt;change the order&lt;/i2&gt; or &lt;i3&gt;nest&lt;/i3&gt; the tags.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Можно &lt;i0&gt;удалать&lt;/i0&gt;, &lt;i1&gt;дублировать&lt;/i1&gt; тэги, &lt;i2&gt;менять их порядок&lt;/i2&gt; или &lt;i3&gt;вкладывать друг в друга&lt;/i3&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Deleting the tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Удаление тэгов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, to remove the italics from</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Например, чтобы удалить курсивное начертание из</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>simply delete the tags &lt;f0&gt; and &lt;/f0&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>просто удалите тэги &lt;f0&gt; и &lt;/f0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Duplicating the tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Дублирование тэгов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example,</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Например,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This text is in &lt;f0&gt;italics&lt;/f0&gt;, and so is &lt;f0&gt;this&lt;/f0&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Этот текст набран &lt;f0&gt;курсивом &lt;/f0&gt;, и &lt;f0&gt;этот&lt;/f0&gt; тоже</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>applies the formatting of the word &quot;italics&quot;; to the word &quot;this&quot;;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>здесь форматирование применено к слову «курсивом» и к слову «этот»;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Changing the order of tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Изменение порядка тэгов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This text is in &lt;f0&gt;italics&lt;/f0&gt;, this text is &lt;f1&gt;underlined&lt;/f1&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Этот текст набран &lt;f0&gt;курсивом&lt;/f0&gt;, этот текст &lt;f1&gt;с подчёркиванием&lt;/f1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>can be changed to</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>можно изменить на</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This text is &lt;f1&gt;underlined&lt;/f1&gt;, this text is in &lt;f0&gt;italics&lt;/f0&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Этот текст &lt;f1&gt;с подчёркиванием&lt;/f1&gt;, этот текст набран &lt;f0&gt;курсивом&lt;/f0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nesting tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Вложение тэгов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Например,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This text is in &lt;f0&gt;italics and &lt;f1&gt;this text is also underlined&lt;/f1&gt;&lt;/f0&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Текст набран &lt;f0&gt;курсивом, а &lt;f1&gt;этот текст также с подчёркиванием&lt;/f1&gt;&lt;/f0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You must &lt;b0&gt;not&lt;/b0&gt; &lt;i1&gt;overlap&lt;/i1&gt; tags.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Тэги &lt;b0&gt;не должны&lt;/b0&gt; &lt;i1&gt;перекрываться&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This text is in &lt;f0&gt;italics, this text is also &lt;f1&gt;underlined&lt;/f0&gt;, this text is underlined but not in italics&lt;/f1&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Этот текст набран &lt;f0&gt;курсивом, этот текст также &lt;f1&gt;с подчёркиванием&lt;/f0&gt;, этот текст с подчёркиванием, но не курсивом&lt;/f1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>is not permitted and will corrupt your file if you try it. If you insert an opening tag and then open a second opening tag, you must insert the closing tag of the &lt;b0&gt;second&lt;/b0&gt; opening tag &lt;b1&gt;before&lt;/b1&gt; the closing tag of the first.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>недопустимо и приведёт к повреждению файла. Если вставить открывающий тэг, а затем ещё один открывающий тэг, закрывающий тэг к &lt;b0&gt;второму&lt;/b0&gt; открывающему тэгу должен быть вставлен &lt;b1&gt;до&lt;/b1&gt; закрывающего тэга к первому.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Validating tags</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Проверка тэгов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The validate tags function (&lt;i0&gt;Tools&lt;/i0&gt; &gt; &lt;i1&gt;Validate tags&lt;/i1&gt;) detects tags to which changes have been made (whether deliberately or by accident), and indicates the affected segments.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Функция проверки тэгов (&lt;i0&gt;Сервис&lt;/i0&gt; &gt; &lt;i1&gt;Проверка тэгов&lt;/i1&gt;) выявляет тэги, которые были изменены (случайно или намеренно), и показывает затронутые сегменты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Working with OpenOffice.org</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Работа с OpenOffice.org</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: </seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Microsoft Office files</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы Microsoft Office</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When handling MS Office files, remember to convert to OpenOffice.org format and place the converted file in &lt;i0&gt;/source&lt;/i0&gt;. Do not, however, place the original MS Office file in &lt;i1&gt;/source&lt;/i1&gt;. If necessary, create a new directory for it such as &lt;i2&gt;/original&lt;/i2&gt;. When the translation is over, convert the files you have in the &lt;i3&gt;/target&lt;/i3&gt; directory back to MS office file format with OpenOffice.org. (To work with OpenOffice.org and StarOffice, see &lt;a4&gt;Working with OpenOffice.org&lt;/a4&gt;).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>При работе с файлами MS Office сначала преобразовуйте их в формат OpenOffice.org и поместите преобразованные файлы в директорию &lt;i0&gt;/source&lt;/i0&gt;. Не следует, однако, размещать в &lt;i1&gt;/source&lt;/i1&gt; исходные файлы в формате MS Office. Если необходимо, создайте новую директорию для них, например, &lt;i2&gt;/original&lt;/i2&gt;. Когда перевод закончен, преобразуйте файлы из директории &lt;i3&gt;/target&lt;/i3&gt; назад в формат MS Office с помощью OpenOffice.org. (Сведения о работе с OpenOffice.org и StarOffice — в разделе &lt;a4&gt;Работа с файлами OpenOffice.org и StarOffice&lt;/a4&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Empty project ? (Microsoft Office files II)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Пустой проект? (Файлы Microsoft Office II)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have created a new project and copied the files for translation into the &lt;i0&gt;/source&lt;/i0&gt; directory, but OmegaT tells you that the project is empty, then the files are probably MS Word files and you have forgotten to convert them to OpenOffice.org format.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если создан новый проект, и файлы для перевода скопированы в директорию &lt;i0&gt;/source&lt;/i0&gt;, но появляется сообщение, что проект пустой, то, вероятно, исходные файлы в формате MS Word не были преобразованы в формат OpenOffice.org.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Displaying the layout while you translate</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Просмотр макета переводимого документа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you feel the need to see the layout of your text whilst you translate, simply keep a copy of the original file open in a word processor in a separate window.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если нужно видеть макет текста во время перевода, просто держите копию оригинального файла открытой в текстовом процессоре в отдельном окне.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One project at once !</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Только один проект!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don&apos;t try to create a new project or open an existing project from within an open OmegaT project. This can cause the internal translation memory of the active project to be transferred to the &apos;new&apos; project.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Не создавайте новый проект и не открывайте существующий проект, если ещё один проект уже открыт в OmegaT. Это может привести к тому, что внутренняя память переводов активного проекта будет передана новому проекту.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Can&apos;t open translation memory</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Не открывается файл память переводов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you can&apos;t open a translation memory sent to you by a colleague or customer, it may be in an unsupported format. If it is a &lt;i0&gt;*.tmx&lt;/i0&gt; file, it is probably a higher level of TMX. OmegaT version 1.4.0 only supports TMX Level 1.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если не получается открыть файл памяти переводов, присланный коллегой или клиентом, возможно, этот файл в формате, который не поддерживается. Если это — файл &lt;i0&gt; *.tmx &lt;/i0&gt;, вероятно, у него более высокий уровень TMX. OmegaT версии 1.4.4 поддерживает только TMX Уровень 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lost segment...</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Потерялся сегмент...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may find that after moving to a segment in a different part of a large project, you are unable to locate the segment in which you were working in order to return to it. To enable you to find your place again, enter a marker (such as &apos;###&apos;) in the segment, then hit &lt;i0&gt;Enter&lt;/i0&gt; (to confirm the the change to the segment) before moving to a different part of the project. Better still, add the segment number to the marker, since if your segment is one of several identical segments, you may otherwise find when you try to find your place again that your marker is now found in several segments.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Может оказаться, что после перемещения в сегмент в другой части большого проекта станет невозможным определить местонахождение сегмента, переводимого ранее, чтобы к нему вернутся. Чтобы без проблем найти сегмент, следует ввести метку (скажем, ###&apos;) в этом сегменте и нажать &lt;i0&gt;Enter&lt;/i0&gt; (чтобы подтвердить изменение сегмента) перед тем, как перейти в другую часть проекта. Еще лучше добавить  к метке номер сегмента, поскольку если сегмент — один из нескольких одинаковых, может оказаться, что при попытке поиска метка появится в нескольких сегментах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inserting a marker</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Вставка метки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wish to insert a marker in your translation, for example to indicate an unresolved query, don&apos;t use &apos;?&apos; or &apos;*&apos;. These characters are used as search wildcards and are therefore impossible to find with &lt;i0&gt;Ctrl-F&lt;/i0&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Если нужно вставить метку в перевод, например, чтобы отметить нерешённый вопрос, не следует использовать символы «?» или «*», которые используются при поиске в качестве символов подстановки, и поэтому их нельзя найти с помощью &lt;i0&gt;Ctrl-F&lt;/i0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Translation file formats</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Форматы переводимых файлов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Project files and directories</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Файлы и директории проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Translation memory files imported, exported and used internally by OmegaT are in the industry-standard TMX format (Level 1). This enables the translation memories produced by OmegaT to be read by other CAT tools that support the standard. OmegaT can also import and read memories produced by these applications, provided they are first saved in TMX format (Level 1).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы памяти переводов, импортируемые, экспортируемые и используемые OmegaT, соответствуют стандартному формату TMX (уровень 1). Благодаря этому, файлы памяти переводов, созданные OmegaT, могут использовать другие программы CAT, поддерживающие этот стандарт. OmegaT в свою очередь может импортировать и использовать файлы памяти, созданные этими приложениями, если они сохранены в формате TMX (уровень 1).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT cannot read translation memories in proprietary formats used by other CAT tools.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT не может использовать файлы памяти переводов, созданные другими программами CAT в проприетарных форматах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Glossary files are simply plain text files containing three-column, tab-delimited lists with the source and target terms in the first and second columns respectively. The third column can be used for additional information.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы глоссария — это текстовые файлы с расширением *.tab , содержащие списки из трёх колонок, разделённых табуляторами, где в первой колонке находятся исходные термины, а во второй — их переводы. Третья колонка может содержать дополнительную информацию.
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Glossary files can be either in system default encoding (in that case, the files must have &lt;i0&gt;.tab&lt;/i0&gt; name extensions) or in UTF-8 (in that case, they must have &lt;i1&gt;.utf8&lt;/i1&gt; name extensions).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы глоссария могут быть как в системной кодировке (в этом случае, файлы должны иметь расширения имени &lt;i0&gt;.tab&lt;/i0&gt;), так и в UTF-8 (в этом случае, они должны иметь расширения имени &lt;i1&gt;.utf8&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Glossaries created using Trados Multiterm&apos;s text export function can be used as OmegaT glossaries without further modification, provided they are given the file extension &lt;i0&gt;*.tab&lt;/i0&gt; and the source and target term fields are the first two fields respectively.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Глоссарии, созданные приложением Multiterm из пакета Trados с помощью функции экспорта текста, можно использовать в качестве глоссариев для OmegaT без дополнительных изменений, если им дать расширение имени файла &lt;i0&gt;*.tab&lt;/i0&gt;, при этом исходные термины и переводы должны быть в первых двух полях соответственно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Segmentation</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Сегментирование</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Editing functions</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Функции редактирования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Open a project and translate by overwriting the text in the active segment.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Откройте проект и печатайте текст перевода поверх исходного текста в активном сегменте.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(The “overwrite” mode of your keyboard may not in fact work, and even if it does, you will probably not want to overwrite the text. Either delete the text in the target text cell and translate whilst looking at the source cell, or begin typing at the end of the target text, or insert a soft line break (&lt;/i0&gt;Shift&lt;i1&gt;+&lt;/i1&gt;Enter&lt;i2&gt;) at the beginning of the target text and begin typing there. If you didn&apos;t delete the target text before you began translating the segment, delete it when you&apos;ve finished.)</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>(Режим замены текста на клавиатуре может не работать, и даже если он работает, возможно, будет предпочтительнее им не пользоваться. Тогда следует или удалить текст в целевом сегменте и вводить перевод, глядя на исходный текст, или вводить текст в конце целевого сегмента , или вставить разрыв строки (&lt;/i0&gt;Shift&lt;i1&gt;+&lt;/i1&gt;Enter&lt;i2&gt;) в начале целевого текста и начать набор. Если целевой текст не был удалён до начала перевода, его следует удалить, закончив работу.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hit &lt;i0&gt;Enter&lt;/i0&gt; or &lt;i1&gt;Ctrl+N&lt;/i1&gt; to confirm your translation and proceed to the next segment. If you need to keep &lt;i2&gt;Enter&lt;/i2&gt; for other use, for example, to engage it in a tool for input of complex characters, you can alternatively use &lt;i3&gt;Tab&lt;/i3&gt;. Using &lt;i4&gt;Tab&lt;/i4&gt; is an option that should be activated by clicking on the &lt;i5&gt;Preferences&lt;/i5&gt; &gt; &lt;i6&gt;Use TAB to advance&lt;/i6&gt; menu item.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Нажмите &lt;i0&gt;Enter&lt;/i0&gt; или &lt;i1&gt;Ctrl+N&lt;/i1&gt;, чтобы подтвердить перевод и перейти к следующему сегменту. Если нужно использовать &lt;i2&gt;Enter&lt;/i2&gt; для других целей, например, в системах ввода сложных знаков, вместо него можно использовать &lt;i3&gt;Tab&lt;/i3&gt;. Для использования &lt;i4&gt;Tab&lt;/i4&gt; нужно активировать соответствующую опцию через меню &lt;i5&gt;Настройка&lt;/i5&gt; &gt; &lt;i6&gt;Использовать TAB для перехода далее&lt;/i6&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Upon opening a project, the first segment of it automatically becomes active. To quickly jump to the next untranslated segment of the project, hit &lt;i0&gt;Ctrl+U&lt;/i0&gt; or choose &lt;i1&gt;Edit &gt; Next untranslated&lt;/i1&gt; menu item.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>При открытии проекта автоматически активизируется первый сегмент. Чтобы быстро найти следующий непереведённый сегмент проекта, нажмите &lt;i0&gt;Ctrl+U&lt;/i0&gt; или выберите пункт меню &lt;i1&gt;Правка &gt; Следующий непереведённый сегмент&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After translating all the segments, compile the project by choosing the &lt;i0&gt;File&lt;/i0&gt; &gt; &lt;i1&gt;Compile translation&lt;/i1&gt; menu item.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Переведя все сегменты, сделайте компиляцию, выбрав пункт меню &lt;i0&gt;Проект&lt;/i0&gt; &gt; &lt;i1&gt;Компилировать перевод&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After compilation, you can review the results checking the files in the &lt;i0&gt;/source&lt;/i0&gt; subdirectory of your project (for details on files and directories see &lt;a1&gt;Project files and directories&lt;/a1&gt;). If you are not satisfied with the results, just renew translation according to the described procedure (see also &lt;a2&gt;Saving, revising and compiling your translation&lt;/a2&gt;, &lt;a3&gt;General hints and tips&lt;/a3&gt; and &lt;a4&gt;Keyboard shortcuts&lt;/a4&gt;).</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Файлы, полученные в результате компиляции, помещаются в поддиректорию &lt;i0&gt;/source&lt;/i0&gt; проекта, где их можно просмотреть (более подробная информация о файлах и директориях — в разделе &lt;a1&gt;Файлы и директории проекта&lt;/a1&gt;). Если результаты неудовлетворительные, просто повторите перевод по указанной процедуре (см. также разделы &lt;a2&gt;Сохранение, проверка и компиляция перевода&lt;/a2&gt;, &lt;a3&gt;Общие советы и подсказки&lt;/a3&gt; и &lt;a4&gt;Сочетания клавиш&lt;/a4&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Getting started</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Приступая к работе — примерный проект</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Segmentation</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Сегментирование</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user interface of OmegaT consists chiefly of the main OmegaT window and the Match and Glossary Viewer window.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Пользовательский интерфейс OmegaT состоит в основном из главного окна OmegaT и окна просмотра совпадений и глоссария.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The main OmegaT window displays the text currently being translated. The target or source texts of each segment are displayed, depending upon whether they have been translated or not. The exception is the active segment, of which both source and target text is displayed: the source text in bold, the target text bracketed by &lt;segment number&gt; and &lt;end segment&gt; tags.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>В главном окне OmegaT отображается переводимый текст. Для каждого сегмента отображается либо исходный текст, либо перевод, в зависимости от того, переведён сегмент, или нет. Исключением является активный сегмент, для которого отображаются и исходный текст, выделяемый полужирным начертанием, и перевод, помещаемый между тэгами &lt;сегмент номер...&gt; и &lt;конец сегмента&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Match and Glossary Viewer window is divided into two panes. The Match pane displays fuzzy matches (previously translated segments with a certain degree of similarity to the active segment). The Glossary pane displays information from the glossary file, if there is one.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Окно просмотра совпадений и глоссария разделено на две панели. Панель совпадений показывает нечёткие совпадения (ранее переведённые сегменты, имеющие достаточное сходство с активным сегментом). Панель глоссария отображает информацию из файла глоссария, если он есть.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No other windows need normally be open. The Project Files window, which contains a list of files for translation within the current project together with the number of segments in each file, can be left open if desired.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Обычно нет необходимости открывать другие окна. При желании можно оставить открытым окно со списком файлов проекта вместе с количеством сегментов в них.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All functions are available through the menu bar at the top of the main OmegaT window. Most functions are also available through keyboard shortcuts.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Все функции доступны через меню вверху главного окна OmegaT. Большинство функций также можно вызвать с помощью сочетаний клавиш.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>previous: &lt;a0&gt;Glossary</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>предыдущее: &lt;a0&gt;Глоссарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next: &lt;a0&gt;Translation memory and glossary file formats</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>следующее: &lt;a0&gt;Форматы файлов памяти переводов и глоссария</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT supports the following formats of files for translation:</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT поддерживает перевод в файлах следующих форматов:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>plain text;</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>неформатированный текст;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenOffice.org 1.0/StarOffice 6.0 or higher.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OpenOffice.org 1.0/StarOffice 6.0 или выше.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OmegaT detects the file format automatically based upon the file&apos;s extension, so make sure that your files have the extensions &lt;i0&gt;.txt&lt;/i0&gt;, &lt;i1&gt;.html&lt;/i1&gt; and &lt;i2&gt;.sxw&lt;/i2&gt; for plain text, html and OpenOffice.org/StarOffice respectively.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OmegaT автоматически определяет формат файла на основании расширения имени файла, поэтому файлы должны иметь расширения &lt;i0&gt;.txt&lt;/i0&gt;, &lt;i1&gt;.html&lt;/i1&gt; и &lt;i2&gt;.sxw&lt;/i2&gt; для неформатированного текста, html и OpenOffice.org/StarOffice соответственно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenOffice.org has excellent import/export filters for conversion of other file formats, including MS Word, Excel and Powerpoint. Files in these formats can therefore be processed by conversion in OpenOffice.org to the latter&apos;s native format, translation in OmegaT, and conversion back again following translation.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>OpenOffice.org располагает прекрасными фильтрами для экспорта в другие форматы файлов, включая MS Word, Excel и Powerpoint. Файлы в этих форматах могут таким образом быть обработаны путём преобразования в OpenOffice.org в собственный формат последнего, перевода в OmegaT и обратного преобразования после перевода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User Manual for OmegaT version 1.4.4. Open the file en_OmegaT.html in your </seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>Руководство пользователя OmegaT версии 1.4.4. Откройте файл en_OmegaT.html в</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>browser.</seg>
+      </tuv>
+      <tuv lang="RU-RU">
+        <seg>браузере.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

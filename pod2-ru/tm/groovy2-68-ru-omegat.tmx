@@ -1,0 +1,4006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header
+    creationtool="OmegaT"
+    creationtoolversion="1.8.1_2"
+    segtype="sentence"
+    o-tmf="OmegaT TMX"
+    adminlang="EN-US"
+    srclang="EN-US"
+    datatype="plaintext"
+  >
+  </header>
+  <body>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Editor</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Редактор Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Support for editing Groovy files</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поддержка редактирования файлов Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Files</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Файлы Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Quoted Strings</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строки Groovy в двойных кавычках</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Strings</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строки Groovy в одинарных кавычках</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Comments</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Комментарии Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reformat Paragraph</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Переформатировать параграф</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot rename this symbol; only parameters, local and dynamic variables are allowed</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Невозможно переименовать этот символ; можно переименовывать только параметры, локальные и динамические переменные</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot rename when source contains errors</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Переименование невозможно, если источник содержит ошибки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Syntax error, unexpected {0}</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ошибка синтаксиса, неожиданный символ {0}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Only a-z, A-Z, digits and underscore are safe in Groovy names</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Только символы a-z, A-Z, цифры и знак подчеркивания допустимы в именах Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Error</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ошибка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Class Variable</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Переменная класса</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Regular Expression</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Регулярное выражение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Line Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строчный комментарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constant</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Константа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Число</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Identifier</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Идентификатор</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keyword</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ключевое слово</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whitespace</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пробел</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Floating point number</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Число с плавающей точкой</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operator</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Оператор</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instance</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Экземпляр</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Invalid String</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Неверная строка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Global Variable</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Глобальная переменная</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Todo Item</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Задача (элемент TODO)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>String</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Block Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Многострочный комментарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Quoted String</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строка в кавычках</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>String Escape</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Последовательность спецсимволов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Character Literal</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Литерал символа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Documentation</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Документация</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comment Text</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Текст комментария</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comment TODO Text</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Текст комментария TODO</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>RDoc Comment Tag</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Тег комментария RDoc</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comment HTML Tag</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Тег комментария HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comment Link</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ссылка комментария</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Bold Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Полужирный комментарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Italic Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Наклонный комментарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type Symbol</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Символ типа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Regular Expression Metachar</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Метасимвол регулярного выражения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Invalid Regular Expression</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Неверное регулярное выражение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unused Element</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Неиспользуемый элемент</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Abstract Element</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Абстрактный элемент</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Field</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поле</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Local Variable</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Локальная переменная</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Parameter</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Параметр</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Method</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Метод</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constructor</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Конструктор</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Class</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Класс</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interface</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Интерфейс</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Annotation</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Аннотация</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enum</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Перечисление</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Deprecated Element</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Нерекомендуемый элемент</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Static Member</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Статический член</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Private Member</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Приватный член</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Package Private Member</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Частный член пакета</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Protected Member</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Защищенный член</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Public Member</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Публичный член</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type Parameter</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Параметр типа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type Parameter Use</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Использование параметра типа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Undefined Element</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Неопределённый элемент</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Mark Occurrences</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Отметить вхождения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>import Java class</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>импорт класса Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create Several Columns</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать несколько столбцов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Add Column</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Добавить столбец</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create Table</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать таблицу</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This method is generated dynamically by Rails, and will search your model for matches of the given column.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Данный метод динамически создаётся Rails, и выполняет поиск выбранного столбца в модели.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also search by combinations of columns by concatenating them with &lt;code&gt;_and_&lt;/code&gt;.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Также можно выполнять поиск по нескольким столбцам, объединяя их &lt;code&gt;_and_&lt;/code&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No comment found</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Комментариев не найдено</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(documented)</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>(документировано)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(:nodoc:)</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>(:недокументировано:)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>in</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>в</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The file cannot be found.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Файл не найден.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perhaps it has been deleted outside the IDE?</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Возможно он был удалён вне среды?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can force an update of the index by removing the var/cache/gsf-index
+directory in your user directory.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Вы можете выполнить принудительное обновление индекса, удалив каталог 
+var/cache/gsf-index из пользовательского каталога.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We only rename Variables at the moment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>В настоящее время поддерживается переименование только переменных</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fix Imports</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Исправить выражения импорта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fix all Imports</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Исправить все выражения импорта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Choose appropriate fully qualified name</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выберите одно из подходящих полных имён</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fully Qualified Names</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Полные имена</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;nothing to fix&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;нечего исправлять&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Select the fully qualified name to use in the import statement.&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Выделите полное имя для использования в выражении импорта.&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Import Statements:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выражения импорта:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;h2&gt;Unable to find the doc for JDK/GDK.&lt;/h2&gt;&lt;br&gt;You can configure GDK 1.6.4 doc folder in Tools/Options/Miscellaneous/Groovy.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;h2&gt;Невозможно найти документацию JDK/GDK.&lt;/h2&gt;&lt;br&gt;Настройте расположение документации GDK 1.6.4 в меню Сервис | Инструменты, на вкладке Различное | Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Surround with ...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Окружить...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Surround with /*selection*/</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Окружить /* комментарием */</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Surround with if (exp) {...|}</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Окружить выражением if (exp) {...|}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fix all imports ...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Исправить все выражения импорта...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Add import for</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Добавить импорт для</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Quoted String Literal</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строковый литерал с двойными кавычками</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starting of Grails failed, check whether the {0} script is executable.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Не удалось запустить Grails, проверьте выполним ли скрипт {0}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interface to Grails platform</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Интерфейс для платформы Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Platform</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Платформа Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Jetty (Grails {0})</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Jetty (Grails {0})</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unknown Ver.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Неизвестная версия</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Jetty</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Jetty</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{0} on {1}</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>{0} на {1}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Stop</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Остановить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails runtime settings</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Параметры выполнения Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Get Grails at</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Загрузите Grails с сайта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails &amp;Home:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Папка &amp;установки Grails:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Bro&amp;wse...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Об&amp;зор...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Browse</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Обзор</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Browse for Grails</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор папки Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Home</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Папка установки Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Location of Grails Home</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Папка установки Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Select Directory</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор папки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This directory does not seem to be the Grails home directory</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Данная папка не является папкой, в которую установлен Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Generate...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuration</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Конфигурация</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Controllers</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Контроллеры</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Domain Classes</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Доменные классы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Message Bundles</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Наборы сообщений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Services</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Сервисы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tag Libraries</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Библиотеки тегов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Utility Classes</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Служебные классы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Views and Layouts</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Представления и макеты</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Web Application</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Веб-приложение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Libraries</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Библиотеки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Integration Tests</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Интеграционные тесты</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unit Tests</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Модульные тесты</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{0} Tests</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>{0} тестов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Source Packages</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Исходные файлы Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GWT Source Packages</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Исходные файлы GWT</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Source Packages</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Исходные файлы Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Плагины</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Scripts</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Скрипты</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cancel</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Отмена</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Navigate</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Переход</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Go to Grails Con&amp;troller</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>П&amp;ерейти к контроллеру Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Go to Grails Domain class</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Перейти к доменному классу Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Go to Grails Vi&amp;ew</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Перейти к &amp;представлению Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There was a problem creating the grails process:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>При создании процесса grails произошла ошибка:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Generate All</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать всё</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Generate Views</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать представления</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Plugins...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Плагины Grails...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Close</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Закрыть</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Плагины Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;The Grails Home has not been set.&lt;br&gt;Use menu &lt;b&gt;Tools/Options/Groovy&lt;/b&gt; to set the environment.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Не установлено расположение Grails.&lt;br&gt;Используйте меню &lt;b&gt;Инструменты | Настройки | Groovy&lt;/b&gt; для установки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Resolve Plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Определить плагины</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Run Grails Command...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выполнить команду Grails...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Resolving Project Plugins ...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Определение плагинов проекта...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Resolving Project Plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Определение плагинов проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Command Chooser</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор команды Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Debug</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Отла&amp;дить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Matching Tasks:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Подходящие &amp;команды:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;There is no command matching the current filter&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;Не найдено ни одной команды, удовлетворяющей фильтру&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(part of command name, wildcards: &quot;?&quot;, &quot;*&quot;)</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>(часть имени команды, спецсимволы: &quot;?&quot;, &quot;*&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Filter:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Фильтр:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Refreshes Grails commands</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Обновляет список команд Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Refresh Commands</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Обновить команды</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reloading Grails commands...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Перезагрузка команд Grails...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Runs selected Grails command</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выполняет выбранную команду Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Run</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выполнить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Parameters:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Параметры:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Run Grails Command ({0})</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выполнение команды Grails ({0})</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installing {0} plugin</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Установка плагина {0}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Uninstalling {0} plugin</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Удаление плагина {0}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installing plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Установка плагинов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Uninstalling plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Удаление плагинов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Plugin</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Плагин</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GotoControllerAction</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>GotoControllerAction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GotoDomainClassAction</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>GotoDomainClassAction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GotoViewAction</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>GotoViewAction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This module allows to open any existing Grails application in NetBeans.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Данный модуль позволяет открыть существующее приложение Grails в NetBeans.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also allows to create new one.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Он также позволяет создать новое приложение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It has support for creation of all Grails elements together with support for running the application.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Он содержит поддержку создания всех элементов Grails,  а также поддержку выполнения приложения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No NetBeans metadata is written into application directory.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Никакие метаданные NetBeans не записываются в папку приложения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Project</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Проект Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Support for Grails projects</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поддержка проектов Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new controller.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт контроллер.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Grails Projects.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Проекты Grails.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new domain class.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт доменный класс.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new and empty Grails application by running &quot;grails create-app&quot; in the IDE and opening the application that is generated as a result.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт пустое приложение Grails с помощью команды &quot;grails create-app&quot; и открывает созданное приложение в интегрированной среде.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a Grails Gant Script.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт скрипт Grails Gant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new Grails integration test which loads the whole Grails environment when run.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт интеграционный тест Grails, который загружает полное окружение Grails при выполнении.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new service class.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт сервис.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new tag library.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт библиотеку тегов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new Grails unit test.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт модульный тест Grails.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A unit test requires that you mock out access to dynamic methods, but executes a lot quicker.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>В модульном тесте вам необходимо будет имитировать динамические методы, однако модульный тест выполняется намного быстрее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Name and Location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя и расположение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Pac&amp;kage:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пак&amp;ет:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Artifact &amp;Name:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя &amp;артефакта:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Package &amp;Name:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Имя пакета:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please Wait...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Подождите, пожалуйста...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Created File:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Созданный файл:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Created Folder:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Созданная папка:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Project:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Проект:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Package Name is not valid</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя пакета неверно</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Artifact Name is not valid</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя артефакта неверно</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Warning: It is highly recommended that you do NOT place Java classes in the default package.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Внимание: Настойчиво рекомендуется НЕ помещать классы Java в пакет по умолчанию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Package is not a folder</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Данный пакет не является папкой</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Provide valid Artifact name</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Введите допустимое имя артефакта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The target folder does not exist.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Целевая папка не существует.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The target folder is read-only.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Целевая папка доступна только для чтения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The file {0} already exists.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Файл {0} уже существует.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;File {0} already exists.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Файл {0} уже существует.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do you want to overwrite it?&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Перезаписать?&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>N/A</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>не доступно</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Unexpected error occurred while creating the artifact.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;При создании артефакта возникла неожиданная ошибка!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See output window for more details.&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Детали находятся в окне вывода.&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please wait...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Подождите, пожалуйста...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fetching list of plugins from server</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Получение списка плагинов с сервера</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Reload Plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Перезагрузить список плагинов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Uninstall</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>У&amp;далить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Install</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Установить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Browse...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Обзор...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Plugin &amp;Location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Расположение плагина</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installed Plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Установленные плагины</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Available Plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Доступные плагины</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reload Plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Перезагрузить список плагинов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Plugin Location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Расположение плагина</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Plugins installed in the project</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Плагины, установленные в проекте</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Plugins available for the project</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Плагины, доступные проекту</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reload installed plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Обновить список установленных плагинов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reload available plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Обновить список доступных плагинов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Browse for plugin</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор плагина на диске</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Plugin file location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Расположение файла плагина</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New plugins</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Новые плагины</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installed</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Установленный</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Build</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Построить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Debug</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Отладка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Test</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Тестирование</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Clean</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Очистить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Shell</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Командная строка Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Compile</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Компилировать</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Statistics</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Статистика</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Upgrade</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Обновить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Browse Plugin Location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор расположения плагина</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OK</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>OK</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create new controller</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать контроллер</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create new Domain Class</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать доменный класс</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create a new Command Script</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать командный скрипт</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create a new Service</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать сервис</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create new Tag Library</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать библиотеку тегов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Name is not a valid Java package.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя не является правильным пакетом Java.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Firefox</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Firefox</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Internet Explorer (Windows only)</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Internet Explorer (только для Windows)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No supported client-side debugging browsers are configured in the IDE</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>В интегрированной среде не установлено ни одного браузера, поддерживающего отладку на стороне клиента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Debug Grails Application (Client Side)</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Отладить приложение Grails (на стороне клиента)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Server Port:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Порт сервера:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Active Grails Environment:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Активное окружение Grails:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project Folder:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Папка проекта:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Development</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Разработка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Java Platform:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Платф&amp;орма Java:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Manage Platforms...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Управление платформами...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Opens the Java Platform Manager.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Открывает менеджер платформ Java.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>General Settings</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Общие параметры</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Available on Windows only</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Доступно только для Windows</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Display &amp;Browser on Run</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Открывать &amp;браузер при выполнении</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;VM Options:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пара&amp;метры VM:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(e.g. -Xms10m)</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>(например, -Xms10m)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Application</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Приложение Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Domain Class</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Доменный класс Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Controller</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Контроллер Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Integration Test</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Интеграционный тест Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Gant Script</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Скрипт Grails Gant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Service</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Сервис Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Tag Library</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Библиотека тегов Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Unit Test</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Модульный тест Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Choose File Type</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор типа файла</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create Skeleton Project</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создать скелет проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{0} of {1}</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>{0} из {1}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Unexpected error occurred while creating the application.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;При создании приложения возникла неожиданная ошибка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Select Project Location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор расположения проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grails Server Output:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Вывод сервера Grails:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please setup your Grails Home in IDE Options</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Укажите папку установки Grails в настройках интегрированной среды</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project Location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Расположение проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project Name</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project Folder</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Папка проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Browse Project Location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор расположения проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set as Main Project</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Сделать главным проектом</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New Project Location</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Расположение нового проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Проект</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Created file</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Созданный файл</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Class name</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя класса</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creating artifact</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создание артефакта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Created File</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Созданный файл</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Class Name</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя класса</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project Name is empty</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пустое имя проекта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project Location is not a directory</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Расположение проекта не является папкой</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Folder already exists</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Папка проекта уже существует</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Provide valid class name</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Введите допустимое имя класса</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>File already exists</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Файл уже существует</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project &amp;Location:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Расположение проекта:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project &amp;Name:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Имя проекта:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project Fol&amp;der:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Папка проекта:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Br&amp;owse...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Об&amp;зор...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configure &amp;Grails...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Настроить Grails...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set as &amp;Main Project</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Сделать &amp;главным проектом</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GSP Editor</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Редактор GSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Embedded Groovy (GSP) Files</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Файлы серверных страниц Groovy (GSP)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This module adds support for Groovy Server Pages (GSP) like syntax highlighting, formatting.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Данный модуль добавляет поддержку серверных страниц Groovy (GSP) и поддерживает подсветку синтаксиса, форматирование,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>etc...</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>и т. п.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Server Pages</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Серверные страницы Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unfinished tag.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Незаконченный тег.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unpaired end tag.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Конечный тег без пары.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unexpected character.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Неожиданный символ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Support for Groovy Server Pages (GSP)</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поддержка серверных страниц Groovy (GSP)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Gsp Files</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Файлы GSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GSP File</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Файл GSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Server Pages (GSP)</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Серверные страницы Groovy (GSP)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Delimiter</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ограничитель Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Комментарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GSP Tag</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Тег GSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Whitespace</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пробел в коде HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Tag</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Тег HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Attribute of a Tag</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Атрибут тега HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Комментарий HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Text</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Текст HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Character Reference</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ссылка на символ HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Operator</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Оператор HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Error</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ошибка HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTML Attribute Value</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Значение атрибута HTML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SGML Declaration</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Объявление SGML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SGML Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Комментарий SGML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Scripting language</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Скриптовый язык</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Whitespace</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пробел в коде Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Error</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ошибка в коде Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Identifier</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Идентификатор Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Line Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Однострочный комментарий Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Block Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Блочный комментарий Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Operator</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Оператор Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Char</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Символ Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Annotation</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Аннотация Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java String</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строка Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Number</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Число Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Keyword</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ключевое слово Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Method Call</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Вызов метода Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Text</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Текст</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tag</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Тег</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Symbol</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Символ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tag Directive</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Директива тега</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Scriptlet</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Скриптлет JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expression Language</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Язык выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Attribute Name</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя атрибута</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Attribute Value</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Значение атрибута</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Attribute Whitespace</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пробел в атрибуте</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Scriptlet Delimiter</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ограничитель скриптлета JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java keyword</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ключевое слово Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Java Character Literal</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Символьный литерал Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Attribute Value</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Значение атрибута JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Комментарий JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Tag Error</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ошибка в теге JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Whitespace</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пробел в коде JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Text</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Текст JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Symbol</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Символ JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Attribute Name</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Имя атрибута JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Tag/Directive</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Тег/директива JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Scriptlet Delimiter</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ограничитель скриптлета</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML DOCTYPE Declaration</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Декларация XML DOCTYPE</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Operator</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Оператор XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML EOL</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Конец строки XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML CDATA Section</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Секция XML CDATA</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Markup Whitespace</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пробел разметки XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Value</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Значение атрибута XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Reference</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ссылка XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Error</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ошибка XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Attribute</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Атрибут XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Tag</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Тег XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Комментарий XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Text</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Текст XML</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML PI Start</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Начало XML PI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML PI Content</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Содержимое XML PI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML PI Target</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Цель XML PI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML PI End</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Конец XML PI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>JSP Formated Text</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Форматированный текст JSP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL EOL</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Конец строки языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Whitespace</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пробел языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Scriptlet Delimiter</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ограничитель скриптлета языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Error In Sources</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ошибка языка выражений в исходном тексте</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Identifier</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Идентификатор языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL function call</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Вызов функции языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Keyword</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ключевое слово языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Operator</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Оператор языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Tag Library Prefix</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Префикс библиотеки тегов языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL String Literal</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строковый литерал языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Numeric Literal</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Числовой литерал языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Character Literal</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Литерал символа языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>EL Operators</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Операторы языка выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Error</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ошибка Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Class Variable</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Переменная класса Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Regular Expression</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Регулярное выражение Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Line Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Однострочный комментарий Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Constant</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Константа Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Number</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Число Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Identifier</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Идентификатор Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Keyword</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ключевое слово Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Whitespace</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пробел в коде Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Floating point number</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Число с плавающей точкой Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Operator</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Оператор Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Instance</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Экземпляр Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Invalid String</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Неверная строка Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Global Variable</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Глобальная переменная Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Todo Item</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Задача (элемент TODO) Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby String</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строка Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Double</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Число с плавающей точкой двойной точности Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Block Comment</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Блочный комментарий Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Quoted String</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Строка в кавычках Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Long</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Длинное целое Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby String Escape</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Последовательность спецсимволов Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Character Literal</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Символьный литерал Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ruby Documentation</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Документация Ruby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new GSP (GroovyServer Pages) file.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт новую серверную страницу Groovy (GSP).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This module provides all Groovy and Grails functionality available in NetBeans.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Данный модуль предоставляет поддержку всей функциональности Groovy и Grails, доступную в NetBeans.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is wrapper for all single modules in this area.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Это обёртка всех модулей данной функциональности.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy and Grails</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Groovy и Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Wrapper module for all Groovy and Grails functionality</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Модуль обёртка для всей функциональности Groovy и Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Refactoring</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Реорганизация кода Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy refactorings</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Возможности реорганизации кода Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot rename here</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Невозможно переименовать здесь</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find usages here</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Невозможно найти использования здесь</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Find Usages</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поиск использований</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Method &lt;b&gt;{0}&lt;/b&gt; of class &lt;b&gt;{1}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Метод &lt;b&gt;{0}&lt;/b&gt; класса &lt;b&gt;{1}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Search from Base Class [{0}]</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поиск, начиная с &amp;базового класса [{0}]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Class &lt;b&gt;{0}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Класс &lt;b&gt;{0}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Constructor &lt;b&gt;{0}&lt;/b&gt; of class &lt;b&gt;{1}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Конструктор &lt;b&gt;{0}&lt;/b&gt; класса &lt;b&gt;{1}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Field &lt;b&gt;{0}&lt;/b&gt; of class &lt;b&gt;{1}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Поле &lt;b&gt;{0}&lt;/b&gt; класса &lt;b&gt;{1}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Variable &lt;b&gt;{0}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Переменная &lt;b&gt;{0}&lt;/b&gt;:&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy refactoring is approximate.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Реорганизация кода Groovy является приблизительной.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Review all changes.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Всегда проверяйте предлагаемые изменения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Find &amp;Overriding Methods</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поиск переопределяю&amp;щих методов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Find &amp;Usages</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поиск &amp;использований</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Find &amp;All Subtypes</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поиск &amp;всех подтипов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Find &amp;Direct Subtypes Only</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поиск &amp;только прямых подтипов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Search in &amp;Comments</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поиск в &amp;комментариях</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Find All SubTypes of &lt;b&gt;{0}&lt;/b&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Найти все подтипы &lt;b&gt;{0}&lt;/b&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Find Direct SubTypes of &lt;b&gt;{0}&lt;/b&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Найти прямые подтипы &lt;b&gt;{0}&lt;/b&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usages</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Использования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>и</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Overriding Methods</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Переопределяющие методы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>of &lt;b&gt;{0}&lt;/b&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;b&gt;{0}&lt;/b&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usages of &lt;b&gt;{0}&lt;/b&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Использования &lt;b&gt;{0}&lt;/b&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Samples</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Примеры Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy and Grails sample projects</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Примеры проектов Groovy и Grails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy-Java Demo</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Пример совместного использования Groovy и Java</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>NB Project Generators</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создатели проектов NB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Project &amp;Folder:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Папка проекта:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simple Groovy example that provides a JDialog created in the Matisse GUI Builder, with a JTextField that shows a text retrieved from a Groovy class.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Простой пример Groovy, содержащий диалог JDialog (созданный в конструкторе форм Matisse) с текстовым полем. Текстовое поле выводит текст из класса Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Two simple Groovy scripts.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Два простых скрипта Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One generates the source structure of a skeleton NetBeans Platform application, the other generates the source structure of a skeleton NetBeans module.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Один создаёт структуру исходных файлов скелета приложения на основе платформы NetBeans, а другой -- скелета модуля NetBeans.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Home</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Папка установки Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy installation directory.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Папка установки Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Objects</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Объекты Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy home is not set.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Не установлено расположение Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Go to Tools -&gt; Options -&gt; Advanced Options -&gt; Building -&gt; Groovy and specify where Groovy is installed.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Используйте меню Инструменты | Настройки | Дополнительные свойства | Построение | Groovy для указания расположения установки Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After finishing the &quot;Create new...&quot; wizard, go to Tools -&gt; Options -&gt; Building -&gt; Groovy
+and specify where Groovy is installed.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>После завершения мастера создания, перейдите в меню Инструменты | Настройки | Дополнительные свойства | Построение | Groovy 
+и укажите расположение установки Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then run Tools -&gt; Make WebApp Groovy Compliant action to correct your web application.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Затем выполните действие Инструменты -&gt; Сделать веб-приложение Groovy-совместимым для настройки вашего веб-приложения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Coyote - Groovy Support</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Coyote - поддержка Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tools</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Инструменты</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enables editing and running of scripts written in Groovy language.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Позволяет редактировать и выполнять скрипты, написанные на языке Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Groovy Support module enables editing and running of user application files written in Groovy language.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Модуль поддержки Groovy позволяет редактировать и выполнять пользовательские приложения, написанные на языке Groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This module requires groovy installation on the computer.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Данному модулю необходим установленный groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy home page: http://groovy.codehaus.org/</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Домашняя страница Groovy: http://groovy.codehaus.org/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make WebApp Groovy Compliant</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Сделать веб-приложение Groovy-совместимым</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unsupported web.xml version: {0}</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Неподдерживаемая версия web.xml: {0}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do you want to make {0} web application Groovy compliant?</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Хотите ли вы сделать веб-приложение {0} Groovy-совместимым?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Several elements will be added WEB-INF/web.xml deployment descriptor
+and a few required libraries will be added to the project.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Несколько элементов будут добавлены в описатель развёртывания WEB-INF/web.xml, 
+и несколько библиотек будут добавлены в проект.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Confirm web.xml update</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Подтверждение обновления web.xml</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Script {0} started.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Скрипт {0} запущен.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Script {0} finished.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выполнение скрипта {0} завершено.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Script {0} failed.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выполнение скрипта {0} завершилось неудачно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cannot find {0} library in {1}.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Невозможно найти библиотеку {0} в {1}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The project does not have a build script.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>У проекта отсутствует сценарий построения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Run File</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выполнить файл</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Compile File</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Компилировать файл</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Debug File</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Отладить файл</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Class &quot;{0}&quot; does not have a main method.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>У класса &quot;{0}&quot; нет метода main.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy configuration</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Настройки Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;Enable Groovy</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Включить Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enable Groovy</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Включить Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enables Groovy support</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Включает поддержку Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;html&gt;Adds the groovy-all JAR file to the classpath, modifies the build script with groovyc, and excludes .groovy files from the resulting JAR file.&lt;/html&gt;</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&lt;html&gt;Добавляет архив JAR groovy-all к пути к классам, добавляет компилятор groovyc в скрипт построения и исключает файлы .groovy из конечного архива JAR.&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Breakpoint reached at line {lineNumber} in {jspName} by thread {threadName}.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Достигнута точка останова на строке {lineNumber} в {jspName} потоком {threadName}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Go to Source</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Перейти к исходному коду</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Customize</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Настроить</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Get Groovy at</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Загрузите Groovy с сайта</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Not Groovy Home</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Не является папкой установки Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No Groovy Documentation found</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Документация Groovy не найдена.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Browse for documentation</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Выбор папки с документацией</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy &amp;Doc:</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>&amp;Документация Groovy:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Doc</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Документация Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Location of Groovy docs</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Расположение документации Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Your projects will use groovy-all.jar set in Library Manager</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Ваши проекты будут использовать библиотеку groovy-all.jar, установленную в Менеджере библиотек</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This module takes care of some supportive tasks for Groovy</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Данный модуль выполняет некоторые административные задачи по поддержке Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Support</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поддержка Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy script execution support</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поддержка выполнения скриптов Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Script</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Скрипт Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy Class</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Класс Groovy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new groovy class.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт класс groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy is a scripting language.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Groovy является скриптовым языком.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a new groovy script.</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Создаёт скрипт groovy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Groovy will be enabled for this project</seg>
+      </tuv>
+      <tuv lang="RU">
+        <seg>Поддержка Groovy будет включена для данного проекта</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
