@@ -98,7 +98,7 @@ aux a2p c2ph h2ph h2xs perlbug pl2pm pod2html pod2man s2p splain xsubpp
     perllexwarn 	Perl предупреждения и управление ими
     perldebug		Perl отладка
     perlvar		Perl предопределенные переменные
-    perlre		Perl  регулярные выражения, остальная часть истории
+    perlre		Perl регулярные выражения, остальная часть истории
     perlrebackslash	Perl регулярные выражения  последовательности с обратным слэшем
     perlrecharclass	Perl регулярные выражения классы символов
     perlreref		Perl регулярные выражения краткий справочник
