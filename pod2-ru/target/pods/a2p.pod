@@ -6,7 +6,7 @@ a2p - Awk to Perl translator
 
 B<a2p> [I<options>] [I<filename>]
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 I<A2p> takes an awk script specified on the command line (or from
 standard input) and produces a comparable I<perl> script on the
@@ -151,25 +151,25 @@ subtler cases.
 ARGV[0] translates to $ARGV0, but ARGV[n] translates to $ARGV[$n-1].  A
 loop that tries to iterate over ARGV[0] won't find it.
 
-=head1 ENVIRONMENT
+=head1 ОКРУЖЕНИЕ
 
 A2p uses no environment variables.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Larry Wall E<lt>F<larry@wall.org>E<gt>
 
-=head1 FILES
+=head1 ФАЙЛЫ
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
  perl	The perl compiler/interpreter
 
  s2p	sed to perl translator
 
-=head1 DIAGNOSTICS
+=head1 ДИАГНОСТИКА
 
-=head1 BUGS
+=head1 ОШИБКИ
 
 It would be possible to emulate awk's behavior in selecting string
 versus numeric operations at run time by inspection of the operands,

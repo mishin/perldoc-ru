@@ -6,7 +6,7 @@ designed to be readable as is.
 
 perlos400 - Perl version 5 on OS/400
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes various features of IBM's OS/400 operating
 system that will affect how Perl version 5 (hereafter just Perl) is

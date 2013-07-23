@@ -12,7 +12,7 @@ perlbs2000 - building and installing Perl for BS2000.
 This document will help you Configure, build, test and install Perl
 on BS2000 in the POSIX subsystem.
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This is a ported perl for the POSIX subsystem in BS2000 VERSION OSD
 V3.1A or later.  It may work on other versions, but we started porting
@@ -212,7 +212,7 @@ for further possibilities.
 
 Thomas Dorner
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<INSTALL>, L<perlport>.
 

@@ -7,7 +7,7 @@
 
 perltoc - perl documentation table of contents
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This page provides a brief table of contents for the rest of the Perl
 documentation set.  It is meant to be scanned quickly or grepped
@@ -37888,7 +37888,7 @@ don't all have manual pages yet:
 
 =back
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Larry Wall <F<larry@wall.org>>, with the help of oodles
 of other folks.

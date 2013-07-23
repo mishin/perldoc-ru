@@ -2,7 +2,7 @@
 
 perl561delta - what's new for perl v5.6.1
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes differences between the 5.005 release and the 5.6.1
 release.
@@ -287,7 +287,7 @@ untie() will now call an UNTIE() hook if it exists.  See L<perltie>
 for details.
 
 The C<-DT> command line switch outputs copious tokenizing information.
-See L<perlrun>.
+См. L<perlrun>.
 
 Arrays are now always interpolated in double-quotish strings.  Previously,
 C<"foo@bar.com"> used to be a fatal error at compile time, if an array
@@ -1639,7 +1639,7 @@ messages. For example:
 
     =back
 
-    =head1 DESCRIPTION
+    =head1 ОПИСАНИЕ
 
     B<This program> will read the given input file(s) and do something
     useful with the contents thereof.
@@ -3640,7 +3640,7 @@ to a tiny but sufficient test case.  Your bug report, along with the
 output of C<perl -V>, will be sent off to perlbug@perl.org to be
 analysed by the Perl porting team.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 The F<Changes> file for exhaustive details on what changed.
 

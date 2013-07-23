@@ -2,7 +2,7 @@
 
 perlbook - Books about and related to Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 There are many books on Perl and Perl-related. A few of these are
 good, some are OK, but many aren't worth your money. There is a list

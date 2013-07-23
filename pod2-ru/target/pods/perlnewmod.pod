@@ -2,7 +2,7 @@
 
 perlnewmod - preparing a new module for distribution
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document gives you some suggestions about how to go about writing
 Perl modules, preparing them for distribution, and making them available
@@ -265,13 +265,13 @@ maintaining a software project...
 
 =back
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Simon Cozens, C<simon@cpan.org>
 
 Updated by Kirrily "Skud" Robert, C<skud@cpan.org>
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlmod>, L<perlmodlib>, L<perlmodinstall>, L<h2xs>, L<strict>,
 L<Carp>, L<Exporter>, L<perlpod>, L<Test::Simple>, L<Test::More>

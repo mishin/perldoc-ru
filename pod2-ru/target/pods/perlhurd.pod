@@ -6,7 +6,7 @@ designed to be readable as is.
 
 perlhurd - Perl version 5 on Hurd
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 If you want to use Perl on the Hurd, I recommend using the Debian
 GNU/Hurd distribution ( see http://www.debian.org/ ), even if an
@@ -46,7 +46,7 @@ In any way, if you're seeing failures beyond those mentioned in this
 document, please consider upgrading to the latest Hurd before reporting
 the failure as a bug. 
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Mark Kettenis <kettenis@gnu.org>
 

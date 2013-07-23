@@ -6,7 +6,7 @@ designed to be readable as is.
 
 perlqnx - Perl version 5 on QNX
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 As of perl5.7.2 all tests pass under:
 
@@ -137,7 +137,7 @@ This is due to a bug in the C library's printf routine.
 printf("'%e'", 0. ) produces '0.000000e+0', but ANSI requires
 '0.000000e+00'. QNX has acknowledged the bug.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Norton T. Allen (allen@huarp.harvard.edu)
 

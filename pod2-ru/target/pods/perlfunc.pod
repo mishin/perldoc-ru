@@ -3,7 +3,7 @@ X<function>
 
 perlfunc - Perl builtin functions
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The functions in this section can serve as terms in an expression.
 They fall into two major categories: list operators and named unary
@@ -1835,7 +1835,7 @@ the die operator is used to raise exceptions.
 
 If you want to trap errors when loading an XS module, some problems with
 the binary interface (such as Perl version skew) may be fatal even with
-C<eval> unless C<$ENV{PERL_DL_NONLAZY}> is set.  See L<perlrun>.
+C<eval> unless C<$ENV{PERL_DL_NONLAZY}> is set.  См. L<perlrun>.
 
 If the code to be executed doesn't vary, you may use the eval-BLOCK
 form to trap run-time errors without incurring the penalty of

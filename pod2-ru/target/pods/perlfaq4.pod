@@ -2,7 +2,7 @@
 
 perlfaq4 - Data Manipulation
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This section of the FAQ answers questions related to manipulating
 numbers, dates, strings, arrays, hashes, and miscellaneous data issues.

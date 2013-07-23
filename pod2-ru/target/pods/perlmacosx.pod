@@ -18,7 +18,7 @@ This document briefly describes Perl under Mac OS X.
   make test
   sudo make install
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The latest Perl release (5.18.0 as of this writing) builds without changes
 under all versions of Mac OS X from 10.3 "Panther" onwards. 
@@ -262,7 +262,7 @@ way to extract the Perl binaries from the OS media, without having to
 reinstall the entire OS.
 
 
-=head1 AUTHOR
+=head1 АВТОР
 
 This README was written by Sherm Pendley E<lt>sherm@dot-app.orgE<gt>,
 and subsequently updated by Dominic Dunlop E<lt>domo@computer.orgE<gt>

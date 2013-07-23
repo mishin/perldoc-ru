@@ -18,7 +18,7 @@ of the art has changed. We recommend you start by reading the perlootut
 document in the latest stable release of Perl, rather than this
 version.
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document provides an introduction to object-oriented programming
 in Perl. It begins with a brief overview of the concepts behind object

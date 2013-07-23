@@ -6,7 +6,7 @@ specifically designed to be readable as is.
 
 perllinux - Perl version 5 on Linux systems
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes various features of Linux that will affect how Perl
 version 5 (hereafter just Perl) is compiled and/or runs.
@@ -31,7 +31,7 @@ C<ExtUtil::MakeMaker> causing the problem, the most likely cause is an
 incomplete understanding of Sun Studio by this author.  Further investigation
 is needed to get this working better.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Steve Peters <steve@fisharerojo.org>
 

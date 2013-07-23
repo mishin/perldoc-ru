@@ -2,7 +2,7 @@
 
 perlintro -- a brief introduction and overview of Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document is intended to give you a quick overview of the Perl
 programming language, along with pointers to further documentation.  It
@@ -48,8 +48,7 @@ text manipulation and now used for a wide range of tasks including
 system administration, web development, network programming, GUI
 development, and more.
 
-The language is intended to be practical (easy to use, efficient,
-complete) rather than beautiful (tiny, elegant, minimal).  Its major
+Язык больше предназначен для практических (простота в использовании, эффективность, полнота), чем для красивых решений (крошечность, элегантность, минимализм).  Its major
 features are that it's easy to use, supports both procedural and
 object-oriented (OO) programming, has powerful built-in support for text
 processing, and has one of the world's most impressive collections of
@@ -699,6 +698,6 @@ modules which came with your Perl installation.
 If you feel the urge to write Perl modules, L<perlnewmod> will give you
 good advice.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Kirrily "Skud" Robert <skud@cpan.org>

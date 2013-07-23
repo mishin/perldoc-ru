@@ -2,7 +2,7 @@
 
 perlsec - Perl security
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Perl is designed to make it easy to program securely even when running
 with extra privileges, like setuid or setgid programs.  Unlike most
@@ -557,6 +557,6 @@ misbehave on any input.
 See L<http://www.cs.rice.edu/~scrosby/hash/> for more information,
 and any computer science textbook on algorithmic complexity.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlrun> for its description of cleaning up environment variables.

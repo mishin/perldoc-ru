@@ -21,7 +21,7 @@ perldtrace - Perl's support for DTrace
       0  75922      Perl_pp_leavesub:sub-return   inner
       0  75922      Perl_pp_leavesub:sub-return   outer
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 DTrace is a framework for comprehensive system- and application-level
 tracing. Perl is a DTrace I<provider>, meaning it exposes several
@@ -218,7 +218,7 @@ L<http://www.amazon.com/DTrace-Dynamic-Tracing-Solaris-FreeBSD/dp/0132091518/>
 
 =back
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 =over 4
 

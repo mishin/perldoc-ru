@@ -6,7 +6,7 @@ designed to be readable as is.
 
 perlhpux - Perl version 5 on Hewlett-Packard Unix (HP-UX) systems
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes various features of HP's Unix operating system
 (HP-UX) that will affect how Perl version 5 (hereafter just Perl) is
@@ -671,7 +671,7 @@ break utime() so that over NFS the timestamps do not get changed
 (on local filesystems utime() still works). This has probably been
 fixed on your system by now.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 H.Merijn Brand <h.m.brand@xs4all.nl>
 Jeff Okamoto <okamoto@corp.hp.com>

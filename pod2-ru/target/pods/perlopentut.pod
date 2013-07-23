@@ -2,7 +2,7 @@
 
 perlopentut - tutorial on opening things in Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Perl has two simple, built-in ways to open files: the shell way for
 convenience, and the C way for precision.  The shell way also has 2- and
@@ -974,7 +974,7 @@ The two-argument form of C<binmode> is being used, for example
 For more detailed discussion about PerlIO see L<PerlIO>;
 for more detailed discussion about Unicode and I/O see L<perluniintro>.
 
-=head1 SEE ALSO 
+=head1 СМОТРИТЕ ТАКЖЕ 
 
 The C<open> and C<sysopen> functions in perlfunc(1);
 the system open(2), dup(2), fopen(3), and fdopen(3) manpages;

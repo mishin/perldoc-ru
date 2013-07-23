@@ -2,7 +2,7 @@
 
 perltrap - Perl traps for the unwary
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The biggest trap of all is forgetting to C<use warnings> or use the B<-w>
 switch; see L<perllexwarn> and L<perlrun>. The second biggest trap is not

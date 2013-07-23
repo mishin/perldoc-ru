@@ -2,7 +2,7 @@
 
 perlmodinstall - Installing CPAN Modules
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 You can think of a module as the fundamental unit of reusable Perl
 code; see L<perlmod> for details.  Whenever anyone creates a chunk of
@@ -418,7 +418,7 @@ answer or even acknowledge all your questions.  Contact the module
 author instead, or post to comp.lang.perl.modules, or ask someone
 familiar with Perl on your operating system.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Jon Orwant
 

@@ -9,7 +9,7 @@ X<object> X<OOP>
 
 perlobj - Perl object reference
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document provides a reference for Perl's object orientation
 features. If you're looking for an introduction to object-oriented
@@ -1039,7 +1039,7 @@ array reference which can be accessed using named keys like a hash. You
 may run in to some code in the wild which uses it. See the L<fields>
 pragma for more information.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 A kinder, gentler tutorial on object-oriented programming in Perl can
 be found in L<perlootut>. You should also check out L<perlmodlib> for

@@ -5,7 +5,7 @@
 
 perlglossary - Perl Glossary
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 A glossary of terms (technical and otherwise) used in the Perl
 documentation, derived from the Glossary of I<Programming

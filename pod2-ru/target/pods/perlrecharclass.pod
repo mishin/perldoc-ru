@@ -3,7 +3,7 @@ X<character class>
 
 perlrecharclass - Perl Regular Expression Character Classes
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The top level documentation about Perl regular expressions
 is found in L<perlre>.

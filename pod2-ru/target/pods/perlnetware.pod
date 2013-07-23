@@ -6,7 +6,7 @@ specifically designed to be readable as is.
 
 perlnetware - Perl for NetWare
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This file gives instructions for building Perl 5.7 and above, and also 
 Perl modules for NetWare. Before you start, you may want to read the

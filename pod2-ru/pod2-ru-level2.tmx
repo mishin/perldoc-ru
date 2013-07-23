@@ -1,15 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx14.dtd">
 <tmx version="1.4">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_3" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.4" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>"@INC"			locations of perl libraries</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231042Z" creationid="ira" creationdate="20130723T231042Z">
+        <seg>"@INC"			место расположение Perl библиотек</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg># This section is parsed by Porting/pod_lib.pl for use by pod/buildtoc etc</seg>
       </tuv>
-      <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T031450Z">
-        <seg># Этот паздел парсится  Porting/pod_lib.pl  для использования  pod/buildtoc и т.д.</seg>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T210746Z">
+        <seg># Этот раздел парсится  Porting/pod_lib.pl  для использования  pod/buildtoc и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>(In a script passed to Perl via B&lt;-e&gt; switches, each
+B&lt;-e&gt; is counted as one line.)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231920Z" creationid="ira" creationdate="20130723T231920Z">
+        <seg>(В скрипте Perl передается через B&lt;-e&gt; ключи, каждый
+B&lt;-e&gt; считается одной линией.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>(This doesn't apply to sysread()
+and syswrite().)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232550Z" creationid="ira" creationdate="20130723T232550Z">
+        <seg>(Это не относится к sysread()
+и syswrite().)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head1 AUTHOR</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230843Z" creationid="ira" creationdate="20130723T230843Z">
+        <seg>=head1 АВТОР</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head1 AVAILABILITY</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230505Z" creationid="ira" creationdate="20130723T230505Z">
+        <seg>=head1 НАЛИЧИЕ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head1 BUGS</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232039Z" creationid="ira" creationdate="20130723T232039Z">
+        <seg>=head1 ОШИБКИ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head1 DESCRIPTION</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223537Z" creationid="ira" creationdate="20130723T223537Z">
+        <seg>=head1 ОПИСАНИЕ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head1 DIAGNOSTICS</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231232Z" creationid="ira" creationdate="20130723T231232Z">
+        <seg>=head1 ДИАГНОСТИКА</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head1 ENVIRONMENT</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230827Z" creationid="ira" creationdate="20130723T230827Z">
+        <seg>=head1 ОКРУЖЕНИЕ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head1 FILES</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231014Z" creationid="ira" creationdate="20130723T231014Z">
+        <seg>=head1 ФАЙЛЫ</seg>
       </tuv>
     </tu>
     <tu>
@@ -30,6 +114,22 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>=head1 NOTES</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T233050Z" creationid="ira" creationdate="20130723T233050Z">
+        <seg>=head1 ПРИМЕЧАНИЯ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head1 SEE ALSO</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231049Z" creationid="ira" creationdate="20130723T231049Z">
+        <seg>=head1 СМОТРИТЕ ТАКЖЕ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>=head1 SYNOPSIS</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T025225Z">
@@ -46,6 +146,22 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>=head2 Language-Specific</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222055Z" creationid="ira" creationdate="20130723T222055Z">
+        <seg>=head2 Для разных языков</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head2 Miscellaneous</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220624Z" creationid="ira" creationdate="20130723T220624Z">
+        <seg>=head2 Разное</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>=head2 Overview</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T031539Z">
@@ -54,10 +170,26 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>=head2 Platform-Specific</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222255Z" creationid="ira" creationdate="20130723T222255Z">
+        <seg>=head2 Для отдельных платформ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>=head2 Reference Manual</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T043053Z">
         <seg>=head2 Справочное руководство</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>=head2 Stubs for Deleted Documents</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222655Z" creationid="ira" creationdate="20130723T222655Z">
+        <seg>=head2 Заглушки для удаленных документов</seg>
       </tuv>
     </tu>
     <tu>
@@ -96,6 +228,24 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Compilation errors will tell you the line number of the error, with an
+indication of the next token or token type that was to be examined.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231825Z" creationid="ira" creationdate="20130723T231732Z">
+        <seg>Ошибки компиляции скажут вам номер строки ошибки, с указанием следующей лексемы(оператора) или тип маркера(оператора), который должен был быть рассмотрен.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Did we mention that you should definitely consider using the B&lt;use warnings&gt;
+pragma?</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232034Z" creationid="ira" creationdate="20130723T232034Z">
+        <seg>Мы упомянули, что вам обязательно надо рассмотреть возможность использования прагмы B&lt;use warnings&gt; ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>For ease of access, the Perl manual has been split up into several sections.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T034335Z">
@@ -122,11 +272,316 @@ you navigate the rest of Perl's extensive documentation.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>If you've succeeded
+in compiling perl, the L&lt;perlbug&gt; script in the F&lt;utils/&gt; subdirectory
+can be used to help mail in a bug report.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T233015Z" creationid="ira" creationdate="20130723T233015Z">
+        <seg>Если вы преуспели в компиляции perl, the L&lt;perlbug&gt; сценарий в F&lt;utils/&gt; подкаталоге может быть использован, чтобы помочь для написания письма с отчетом об ошибке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If your Perl success stories and testimonials may be of help to others 
+who wish to advocate the use of Perl in their applications, 
+or if you wish to simply express your gratitude to Larry and the 
+Perl developers, please write to perl-thanks@perl.org .</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231007Z" creationid="ira" creationdate="20130723T231007Z">
+        <seg>Если ваша Perl история успеха и отзывы могут быть полезны тем, кто стремиться к поддержке использования Perl в своих приложениях, или если вы хотите просто выразить свою благодарность Ларри и Perl разработчикам, пожалуйста, напишите perl-thanks@perl.org .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If your stdio requires a seek or eof between reads and writes on a
+particular stream, so does Perl.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232533Z" creationid="ira" creationdate="20130723T232458Z">
+        <seg>Если ваш stdio требует искать eof(символ конца файла) между чтением и записью соответствующего потока, то это делает Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In general, if something strange has gone wrong with your program and you're
+not sure where you should look for help, try making your code comply with
+B&lt;use strict&gt; and B&lt;use warnings&gt;.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223508Z" creationid="ira" creationdate="20130723T223508Z">
+        <seg>В общем, если что-то странное пошло не так с вашей программой, и вы не уверены, где вы должны искать помощи, попробуйте  поставить в начале программы 
+B&lt;use strict&gt; и B&lt;use warnings&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It
+handles all kinds of structured text, too, through an extensive
+collection of extensions.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230235Z" creationid="ira" creationdate="20130723T230235Z">
+        <seg>Он обрабатывает все виды структурированного текста, также, через обширную коллекцию расширений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It combines
+(in the author's opinion, anyway) some of the best features of B&lt;sed&gt;,
+B&lt;awk&gt;, and B&lt;sh&gt;, making it familiar and easy to use for Unix users to
+whip up quick solutions to annoying problems.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T225601Z" creationid="ira" creationdate="20130723T224354Z">
+        <seg>Он сочетает в себе
+(по мнению автора, во всяком случае) некоторые из лучших особенностей B&lt;sed&gt;,
+B&lt;awk&gt;, и B&lt;sh&gt;, что делает его знакомым и простым, быстрым и удобным для пользователей Unix при решении досадных проблем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It quickly became a good language
+for many system management tasks.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223852Z" creationid="ira" creationdate="20130723T223852Z">
+        <seg>Он быстро стал хорошим языком для многих систем управления задачами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It still boasts some of the most powerful regular expressions to be
+found anywhere, and its support for Unicode text is world-class.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230217Z" creationid="ira" creationdate="20130723T230105Z">
+        <seg>Он по-прежнему может похвастаться одними из самых мощных регулярных выражений, которые можно найти для любого текста, и поддержкой кодировки Unicode мирового класса.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It's widely used for everything
+from quick "one-liners" to full-scale application development.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T224121Z" creationid="ira" creationdate="20130723T224040Z">
+        <seg>Он широко используется для всего, от быстрых "однострочников" до полномасштабной разработки приложений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Its general-purpose
+programming facilities support procedural, functional, and
+object-oriented programming paradigms, making Perl a comfortable
+language for the long haul on major projects, whatever your bent.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230003Z" creationid="ira" creationdate="20130723T225528Z">
+        <seg>Его обще-целевые программистские возможности поддерживают процедурные, функциональные и объектно-ориентированных парадигмы программирования, что делает Perl удобным языком для долгого пути по крупным проектам, независимо от извилистости пути.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Larry Wall &lt;larry@wall.org&gt;, with the help of oodles of other folks.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230911Z" creationid="ira" creationdate="20130723T230911Z">
+        <seg>Ларри Уолл &lt;larry@wall.org&gt;, с помощью кучи других людей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Line numbers
+displayed by diagnostics are internally stored as short integers,
+so they are limited to a maximum of 65535 (higher numbers usually being
+affected by wraparound).</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232637Z" creationid="ira" creationdate="20130723T232637Z">
+        <seg>Номера строк отображаются диагностики внутренней памяти как короткие целые, поэтому они ограничиваются максимум 65535 (большие числа обычно под воздействием запахом).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>On a Unix-like system, these documentation files will usually also be
+available as manpages for use with the F&lt;man&gt; program.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222830Z" creationid="ira" creationdate="20130723T222830Z">
+        <seg>На Unix-подобных системах, эти файлы документов, как правило, также будет доступны как страницы руководств для использования с программой F&lt;man&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>One can
+also use the B&lt;-w&gt; flag, but its use is normally discouraged, because
+it gets applied to all executed Perl code, including that not under
+your control.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231535Z" creationid="ira" creationdate="20130723T231535Z">
+        <seg>Можно также использовать B&lt;-w&gt; флаг, о его использование, как правило, не рекомендуется, потому что он будет применяться ко всему исполняемуму коду Perl, в том числе, который не под вашим контролем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Over the years, Perl has grown into
+a general-purpose programming language.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T224022Z" creationid="ira" creationdate="20130723T224003Z">
+        <seg>По прошествии многих лет, Perl вырос в язык программирования общего назначения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Perl actually stands for Pathologically Eclectic Rubbish Lister, but
+don't tell anyone I said that.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T233044Z" creationid="ira" creationdate="20130723T233044Z">
+        <seg>Perl на самом деле обозначает Паталогически Эклектичный Мусорный Листер, но никому не говорите, что я сказал.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Perl is at the mercy of your machine's definitions of various
+operations such as type casting, atof(), and floating-point
+output with sprintf().</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232304Z" creationid="ira" creationdate="20130723T232229Z">
+        <seg>Perl отдает на милость определения вашей машины различных операций, таких как приведение типов, atof(), и с плавающей точкой 
+вывод с sprintf().</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Perl is available for most operating systems, including virtually
+all Unix-like platforms.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230539Z" creationid="ira" creationdate="20130723T230513Z">
+        <seg>Perl доступен для большинства операционных систем, в том числе практически для всех Unix-подобных платформ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Perl officially stands for Practical Extraction and Report Language,
+except when it doesn't.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223717Z" creationid="ira" creationdate="20130723T223717Z">
+        <seg>Perl официально предназначается как Язык для Практического Извлечения и Создания отчетов, кроме случаев, когда это не так.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Perl was originally a language optimized for scanning arbitrary
+text files, extracting information from those text files, and printing
+reports based on that information.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223754Z" creationid="ira" creationdate="20130723T223738Z">
+        <seg>Perl был первоначально язык, оптимизированный для анализа произвольных текстовых файлов, извлечения информации из этих текстовых файлов и печати отчетов на основе этой информации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Perl's roots in text processing haven't been forgotten over the years.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230032Z" creationid="ira" creationdate="20130723T230032Z">
+        <seg>Корни Perl в обработке текста не были забыты на протяжении многих лет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Perldoc can
+also take you directly to documentation for functions (with the B&lt;-f&gt;
+switch).</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223208Z" creationid="ira" creationdate="20130723T223134Z">
+        <seg>Perldoc также предоставляет документацию по функциям (с опцией B&lt;-f&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Run C&lt;perldoc
 perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T031042Z">
         <seg>Запустите С&lt;perldoc perldoc&gt; чтобы узнать больше возможностей, которые вы можете сделать с F&lt;perldoc&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See C&lt;perldoc --help&gt; (or C&lt;perldoc perldoc&gt; or C&lt;man perldoc&gt;)
+for other helpful options L&lt;perldoc&gt; has to offer.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223310Z" creationid="ira" creationdate="20130723T223310Z">
+        <seg>См. C&lt;perldoc --help&gt; (или C&lt;perldoc perldoc&gt; или C&lt;man perldoc&gt;)
+для других полезных вариантов, которые L&lt;perldoc&gt; может предложить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See L&lt;perldiag&gt; for explanations of all Perl's diagnostics.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231625Z" creationid="ira" creationdate="20130723T231625Z">
+        <seg>См. L&lt;perldiag&gt; за разъяснениями всех сообщений диагностики Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See L&lt;perlport/"Supported Platforms"&gt;
+for a listing.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230747Z" creationid="ira" creationdate="20130723T230747Z">
+        <seg>См.  L&lt;perlport/"Supported Platforms"&gt;
+для ознакомления с перечнем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See L&lt;perlrun&gt;.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230834Z" creationid="ira" creationdate="20130723T230834Z">
+        <seg>См. L&lt;perlrun&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See L&lt;perlsec&gt;.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232006Z" creationid="ira" creationdate="20130723T232006Z">
+        <seg>См. L&lt;perlsec&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See the Camel Book for why.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T233256Z" creationid="ira" creationdate="20130723T233256Z">
+        <seg>См. Camel Book почему.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Setuid scripts have additional constraints that can produce error
+messages such as "Insecure dependency".</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231958Z" creationid="ira" creationdate="20130723T231958Z">
+        <seg>Setuid сценарии имеют дополнительные ограничения, которые могут производить сообщения об ошибках, такие как  "небезопасная зависимость".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Some documentation is not available as man pages, so if a
+cross-reference is not found by man, try it with L&lt;perldoc&gt;.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223031Z" creationid="ira" creationdate="20130723T222952Z">
+        <seg>Некоторая документация не доступна в виде man страниц, так что, если перекрестные ссылки не найдены в мане, то попробуйте их с помощью L&lt;perldoc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The C&lt;use
+diagnostics&gt; pragma automatically turns Perl's normally terse warnings
+and errors into these longer forms.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231722Z" creationid="ira" creationdate="20130723T231710Z">
+        <seg>Прагма C&lt;use
+diagnostics&gt;  автоматически включается в Perl обычно краткие предупреждения и ошибки в длинные формы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The C&lt;use warnings&gt; pragma produces some lovely diagnostics.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231430Z" creationid="ira" creationdate="20130723T231430Z">
+        <seg>Прагма C&lt;use warnings&gt;  сообщает некоторые замечательную диагностику.</seg>
       </tuv>
     </tu>
     <tu>
@@ -140,11 +595,128 @@ with Perl.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The Perl motto is "There's more than one way to do it."  Divining
+how many more is left as an exercise to the reader.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T233203Z" creationid="ira" creationdate="20130723T233203Z">
+        <seg>Perl девиз: "Есть больше чем один способ сделать это." "There's more than one way to do it." Пророчества, сколько еще остается в качестве упражнения для читателя.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The behavior implied by the B&lt;use warnings&gt; pragma is not mandatory.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232120Z" creationid="ira" creationdate="20130723T232120Z">
+        <seg>Поведение, подразумеваемое прагмой B&lt;use warnings&gt; не является обязательным.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The language is intended to be practical (easy to use, efficient,
+complete) rather than beautiful (tiny, elegant, minimal).</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T224334Z" creationid="ira" creationdate="20130723T224133Z">
+        <seg>Язык больше предназначен для практических (простота в использовании, эффективность, полнота), чем для красивых решений (крошечность, элегантность, минимализм).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The three principal virtues of a programmer are Laziness,
+Impatience, and Hubris.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T233230Z" creationid="ira" creationdate="20130723T233227Z">
+        <seg>Тремя основные достоинства программиста: лень, нетерпение, и высокомерие.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>These will often point out exactly
+where the trouble is.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T223527Z" creationid="ira" creationdate="20130723T223527Z">
+        <seg>Они будут часто указывают именно там, где беда.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Those libraries, collected in the CPAN,
+provide ready-made solutions to an astounding array of problems.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230329Z" creationid="ira" creationdate="20130723T230329Z">
+        <seg>Те библиотеки, которые лежат на CPAN, дают готовые решения поразительному множеству проблем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Using the C&lt;use strict&gt; pragma ensures that all variables are properly
+declared and prevents other misuses of legacy Perl features.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231335Z" creationid="ira" creationdate="20130723T231335Z">
+        <seg>Использование прагмы C&lt;use strict&gt;  гарантирует, что все переменные объявлены правильно и предотвращает другие злоупотребления от наследия функций Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>When
+they haven't set the standard themselves, they steal from the best
+-- just like Perl itself.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T230456Z" creationid="ira" creationdate="20130723T230456Z">
+        <seg>Когда они не ставят стандартные библиотеки, они крадут из лучших 
+-- точно так же, как сам Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>While none of the built-in data types have any arbitrary size limits
+(apart from memory size), there are still a few arbitrary limits:  a
+given variable name may not be longer than 251 characters.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232627Z" creationid="ira" creationdate="20130723T232601Z">
+        <seg>Хотя ни один из встроенных типов данных не имеет любые произвольные ограничения на размер (кроме памяти), есть еще несколько произвольных ограничений: данное имя переменной не может быть длиннее 251 символов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>You can get more documentation, tutorials and community support
 online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T030813Z">
         <seg>Вы можете получить более подробную документацию, руководства и интернет-сообщество поддержки на L&lt;http://www.perl.org/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may mail your bug reports (be sure to include full configuration
+information as output by the myconfig program in the perl source
+tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T232845Z" creationid="ira" creationdate="20130723T232845Z">
+        <seg>Вы можете отправить ваши сообщения об ошибке (не забудьте включить полную информацию о конфигурации в качестве вывода myconfig программы в Perl дереве исходных текстов, или посредством C&lt;perl -V&gt;) на perlbug@perl.org .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>http://www.cpan.org/       the Comprehensive Perl Archive</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231211Z" creationid="ira" creationdate="20130723T231211Z">
+        <seg>http://www.cpan.org/       the Comprehensive Perl Archive (Всеобъемлющий Perl Архив)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>http://www.perl.com/       Perl articles (O'Reilly)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231126Z" creationid="ira" creationdate="20130723T231126Z">
+        <seg>http://www.perl.com/       статьи Perl (O'Reilly)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>http://www.perl.org/       the Perl homepage</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T231113Z" creationid="ira" creationdate="20130723T231113Z">
+        <seg>http://www.perl.org/      домашняя страница Perl</seg>
       </tuv>
     </tu>
     <tu>
@@ -165,10 +737,330 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perl5004delta	Perl changes in version 5.004</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221432Z" creationid="ira" creationdate="20130723T221432Z">
+        <seg>perl5004delta	Perl изменения в версии 5.004</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5005delta	Perl changes in version 5.005</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221427Z" creationid="ira" creationdate="20130723T221427Z">
+        <seg>perl5005delta	Perl изменения в версии 5.005</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5100delta	Perl changes in version 5.10.0</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221324Z" creationid="ira" creationdate="20130723T221324Z">
+        <seg>perl5100delta	Perl изменения в версии 5.10.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5101delta	Perl changes in version 5.10.1</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221320Z" creationid="ira" creationdate="20130723T221320Z">
+        <seg>perl5101delta	Perl изменения в версии 5.10.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5120delta	Perl changes in version 5.12.0</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221316Z" creationid="ira" creationdate="20130723T221316Z">
+        <seg>perl5120delta	Perl изменения в версии 5.12.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5121delta	Perl changes in version 5.12.1</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221312Z" creationid="ira" creationdate="20130723T221312Z">
+        <seg>perl5121delta	Perl изменения в версии 5.12.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5122delta	Perl changes in version 5.12.2</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221308Z" creationid="ira" creationdate="20130723T221308Z">
+        <seg>perl5122delta	Perl изменения в версии 5.12.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5123delta	Perl changes in version 5.12.3</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221304Z" creationid="ira" creationdate="20130723T221304Z">
+        <seg>perl5123delta	Perl изменения в версии 5.12.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5124delta	Perl changes in version 5.12.4</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221300Z" creationid="ira" creationdate="20130723T221300Z">
+        <seg>perl5124delta	Perl изменения в версии 5.12.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5125delta	Perl changes in version 5.12.5</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221256Z" creationid="ira" creationdate="20130723T221256Z">
+        <seg>perl5125delta	Perl изменения в версии 5.12.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5140delta	Perl changes in version 5.14.0</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221249Z" creationid="ira" creationdate="20130723T221249Z">
+        <seg>perl5140delta	Perl изменения в версии 5.14.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5141delta	Perl changes in version 5.14.1</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221244Z" creationid="ira" creationdate="20130723T221244Z">
+        <seg>perl5141delta	Perl изменения в версии 5.14.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5142delta	Perl changes in version 5.14.2</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221240Z" creationid="ira" creationdate="20130723T221240Z">
+        <seg>perl5142delta	Perl изменения в версии 5.14.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5143delta	Perl changes in version 5.14.3</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221235Z" creationid="ira" creationdate="20130723T221235Z">
+        <seg>perl5143delta	Perl изменения в версии 5.14.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5144delta	Perl changes in version 5.14.4</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221216Z" creationid="ira" creationdate="20130723T221216Z">
+        <seg>perl5144delta	Perl изменения в версии 5.14.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5160delta	Perl changes in version 5.16.0</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221211Z" creationid="ira" creationdate="20130723T221211Z">
+        <seg>perl5160delta	Perl изменения в версии 5.16.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5161delta	Perl changes in version 5.16.1</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221146Z" creationid="ira" creationdate="20130723T221146Z">
+        <seg>perl5161delta	Perl изменения в версии 5.16.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5162delta	Perl changes in version 5.16.2</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221159Z" creationid="ira" creationdate="20130723T221159Z">
+        <seg>perl5162delta	Perl изменения в версии 5.16.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5163delta	Perl changes in version 5.16.3</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221206Z" creationid="ira" creationdate="20130723T221206Z">
+        <seg>perl5163delta	Perl изменения в версии 5.16.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl5180delta	Perl changes in version 5.18.0</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221026Z" creationid="ira" creationdate="20130723T221020Z">
+        <seg>perl5180delta	Perl изменения в версии 5.18.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl561delta	Perl changes in version 5.6.1</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221418Z" creationid="ira" creationdate="20130723T221418Z">
+        <seg>perl561delta	Perl изменения в версии 5.6.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl56delta 	Perl changes in version 5.6</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221422Z" creationid="ira" creationdate="20130723T221422Z">
+        <seg>perl56delta 	Perl изменения в версии 5.6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl581delta	Perl changes in version 5.8.1</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221408Z" creationid="ira" creationdate="20130723T221408Z">
+        <seg>perl581delta	Perl изменения в версии 5.8.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl582delta	Perl changes in version 5.8.2</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221404Z" creationid="ira" creationdate="20130723T221404Z">
+        <seg>perl582delta	Perl изменения в версии 5.8.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl583delta	Perl changes in version 5.8.3</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221401Z" creationid="ira" creationdate="20130723T221401Z">
+        <seg>perl583delta	Perl изменения в версии 5.8.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl584delta	Perl changes in version 5.8.4</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221357Z" creationid="ira" creationdate="20130723T221357Z">
+        <seg>perl584delta	Perl изменения в версии 5.8.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl585delta	Perl changes in version 5.8.5</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221353Z" creationid="ira" creationdate="20130723T221353Z">
+        <seg>perl585delta	Perl изменения в версии 5.8.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl586delta	Perl changes in version 5.8.6</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221349Z" creationid="ira" creationdate="20130723T221349Z">
+        <seg>perl586delta	Perl изменения в версии 5.8.6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl587delta	Perl changes in version 5.8.7</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221344Z" creationid="ira" creationdate="20130723T221344Z">
+        <seg>perl587delta	Perl изменения в версии 5.8.7</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl588delta	Perl changes in version 5.8.8</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221338Z" creationid="ira" creationdate="20130723T221338Z">
+        <seg>perl588delta	Perl изменения в версии 5.8.8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl589delta	Perl changes in version 5.8.9</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221328Z" creationid="ira" creationdate="20130723T221328Z">
+        <seg>perl589delta	Perl изменения в версии 5.8.9</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perl58delta 	Perl changes in version 5.8.0</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221413Z" creationid="ira" creationdate="20130723T221413Z">
+        <seg>perl58delta 	Perl изменения в версии 5.8.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlaix		Perl notes for AIX</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222319Z" creationid="ira" creationdate="20130723T222319Z">
+        <seg>perlaix		Perl заметки для AIX</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlamiga		Perl notes for AmigaOS</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222324Z" creationid="ira" creationdate="20130723T222324Z">
+        <seg>perlamiga		Perl заметки для AmigaOS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlapi		Perl API listing (autogenerated)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T213946Z" creationid="ira" creationdate="20130723T213946Z">
+        <seg>perlapi		Perl API объявления (автоматически сгенерированные)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlapio		Perl internal IO abstraction interface</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T214613Z" creationid="ira" creationdate="20130723T214304Z">
+        <seg>perlapio		Perl внутренний интерфейс ввода-вывода абстрактный интерфейс</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlartistic	Perl Artistic License</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221939Z" creationid="ira" creationdate="20130723T221939Z">
+        <seg>perlartistic	Perl Лицензия Художников (Artistic License)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlbook		Perl book information</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220708Z" creationid="ira" creationdate="20130723T220642Z">
+        <seg>perlbook		Perl информация о книгах</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlbs2000		Perl notes for POSIX-BC BS2000</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222330Z" creationid="ira" creationdate="20130723T222330Z">
+        <seg>perlbs2000		Perl заметки для POSIX-BC BS2000</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlcall		Perl calling conventions from C</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T052035Z">
         <seg>perlcall		Perl соглашения о вызове из C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlce		Perl notes for WinCE</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222336Z" creationid="ira" creationdate="20130723T222336Z">
+        <seg>perlce		Perl заметки для WinCE</seg>
       </tuv>
     </tu>
     <tu>
@@ -185,6 +1077,30 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T051951Z">
         <seg>perlclib		Внутренние замены для стандартных библиотечных функций C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlcn		Perl for Simplified Chinese (in EUC-CN)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222124Z" creationid="ira" creationdate="20130723T222124Z">
+        <seg>perlcn		Perl для упрощенного китайского  (в EUC-CN)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlcommunity	Perl community information</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220831Z" creationid="ira" creationdate="20130723T220831Z">
+        <seg>perlcommunity	Информация о Perl сообществе</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlcygwin		Perl notes for Cygwin</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222340Z" creationid="ira" creationdate="20130723T222340Z">
+        <seg>perlcygwin		Perl заметки для Cygwin</seg>
       </tuv>
     </tu>
     <tu>
@@ -207,8 +1123,8 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       <tuv xml:lang="EN-US">
         <seg>perldebguts 	Perl debugging guts and tips</seg>
       </tuv>
-      <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T051731Z">
-        <seg>perldebguts 	Perl внутренности отлидки и советы</seg>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T215132Z">
+        <seg>perldebguts 	Perl внутренности отладки и советы</seg>
       </tuv>
     </tu>
     <tu>
@@ -229,10 +1145,42 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perldelta		Perl changes since previous version</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220953Z" creationid="ira" creationdate="20130723T220953Z">
+        <seg>perldelta		Perl  изменения с предыдущей версии</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perldgux		Perl notes for DG/UX</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222347Z" creationid="ira" creationdate="20130723T222347Z">
+        <seg>perldgux		Perl заметки для DG/UX</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perldiag		Perl diagnostic messages</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T043949Z">
         <seg>perldiag		Perl диагностические сообщения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perldoc		Look up Perl documentation in Pod format</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220917Z" creationid="ira" creationdate="20130723T220917Z">
+        <seg>perldoc		Посмотрите Perl документацию в формате Pod</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perldos		Perl notes for DOS</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222351Z" creationid="ira" creationdate="20130723T222351Z">
+        <seg>perldos		Perl заметки для DOS</seg>
       </tuv>
     </tu>
     <tu>
@@ -247,8 +1195,8 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       <tuv xml:lang="EN-US">
         <seg>perldtrace		Perl's support for DTrace</seg>
       </tuv>
-      <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T051435Z">
-        <seg>perldtrace		Perl's поддержка для DTrace</seg>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T215557Z">
+        <seg>perldtrace		Perl поддержка для DTrace</seg>
       </tuv>
     </tu>
     <tu>
@@ -265,6 +1213,14 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T051626Z">
         <seg>perlembed		Perl пути для встраивания perl в ваши C или C++ приложения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlexperiment	A listing of experimental features in Perl</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T221519Z" creationid="ira" creationdate="20130723T221519Z">
+        <seg>perlexperiment	Cписок экспериментальных функций в Perl</seg>
       </tuv>
     </tu>
     <tu>
@@ -373,10 +1329,26 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlfreebsd 	Perl notes for FreeBSD</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222354Z" creationid="ira" creationdate="20130723T222354Z">
+        <seg>perlfreebsd 	Perl заметки для FreeBSD</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlfunc		Perl built-in functions</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T043304Z">
         <seg>perlfunc		Perl встроенные функции</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlgit		Using git with the Perl repository</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220612Z" creationid="ira" creationdate="20130723T220612Z">
+        <seg>perlgit		Использование Git с Perl репозиторием</seg>
       </tuv>
     </tu>
     <tu>
@@ -389,10 +1361,90 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlgpl		GNU General Public License</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222006Z" creationid="ira" creationdate="20130723T222006Z">
+        <seg>perlgpl		Универсальная Общественная Лицензия GNU</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlguts		Perl internal functions for those doing extensions</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T052020Z">
         <seg>perlguts		Perl внутренние функции для тех, кто делает расширения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlhack		Perl hackers guide</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T215745Z" creationid="ira" creationdate="20130723T214839Z">
+        <seg>perlhack		Руководство хакера Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlhacktips	Tips for Perl core C code hacking</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220356Z" creationid="ira" creationdate="20130723T220149Z">
+        <seg>perlhacktips	Советы как хачить(взламывать) код ядра Perl на С</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlhacktut 	Walk through the creation of a simple C code patch</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T215958Z" creationid="ira" creationdate="20130723T215958Z">
+        <seg>perlhacktut 	Прогулка по созданию простого патча кода на C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlhaiku		Perl notes for Haiku</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222358Z" creationid="ira" creationdate="20130723T222358Z">
+        <seg>perlhaiku		Perl заметки для Haiku</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlhist		Perl history records</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220934Z" creationid="ira" creationdate="20130723T220934Z">
+        <seg>perlhist		Записи истории Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlhpux		Perl notes for HP-UX</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222402Z" creationid="ira" creationdate="20130723T222402Z">
+        <seg>perlhpux		Perl заметки для HP-UX</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlhurd		Perl notes for Hurd</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222406Z" creationid="ira" creationdate="20130723T222406Z">
+        <seg>perlhurd		Perl заметки для Hurd</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlintern		Perl internal functions (autogenerated)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T214030Z" creationid="ira" creationdate="20130723T214030Z">
+        <seg>perlintern		Perl внутренние функции (автоматически сгенерированные)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlinterp		Overview of the Perl interpreter source and how it works</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T215928Z" creationid="ira" creationdate="20130723T215928Z">
+        <seg>perlinterp		Обзор исходного кода интерпретатора Perl и как он работает</seg>
       </tuv>
     </tu>
     <tu>
@@ -405,6 +1457,14 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perliol		C API for Perl's implementation of IO in Layers</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T214401Z" creationid="ira" creationdate="20130723T214155Z">
+        <seg>perliol		C API для Perl реализации ввода-вывода в слоях</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlipc		Perl interprocess communication</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T044830Z">
@@ -413,10 +1473,42 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlirix		Perl notes for Irix</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222410Z" creationid="ira" creationdate="20130723T222410Z">
+        <seg>perlirix		Perl заметки для Irix</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perljp		Perl for Japanese (in EUC-JP)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222142Z" creationid="ira" creationdate="20130723T222142Z">
+        <seg>perljp		Perl  для японского (в EUC-JP)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlko		Perl for Korean (in EUC-KR)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222202Z" creationid="ira" creationdate="20130723T222202Z">
+        <seg>perlko		Perl для корейского (в EUC-KR)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perllexwarn 	Perl warnings and their control</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T044026Z">
         <seg>perllexwarn 	Perl  предупреждения и управление ими</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perllinux		Perl notes for Linux</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222415Z" creationid="ira" creationdate="20130723T222415Z">
+        <seg>perllinux		Perl заметки для Linux</seg>
       </tuv>
     </tu>
     <tu>
@@ -437,10 +1529,26 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlmacos		Perl notes for Mac OS (Classic)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222420Z" creationid="ira" creationdate="20130723T222420Z">
+        <seg>perlmacos		Perl заметки для Mac OS (Classic)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlmacosx		Perl notes for Mac OS X</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222426Z" creationid="ira" creationdate="20130723T222426Z">
+        <seg>perlmacosx		Perl заметки для Mac OS X</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlmod		Perl modules: how they work</seg>
       </tuv>
-      <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T050625Z">
-        <seg>perlmod		Perl модули:как они работают</seg>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T215443Z">
+        <seg>perlmod		Perl модули: как они работают</seg>
       </tuv>
     </tu>
     <tu>
@@ -465,6 +1573,22 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T050823Z">
         <seg>perlmodstyle	Perl модули: правильный стиль написания модулей</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlmroapi		Perl method resolution plugin interface</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T213735Z" creationid="ira" creationdate="20130723T213735Z">
+        <seg>perlmroapi		Perl метод резолюции интерфейса плагинов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlnetware 	Perl notes for NetWare</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222452Z" creationid="ira" creationdate="20130723T222452Z">
+        <seg>perlnetware 	Perl заметки для NetWare</seg>
       </tuv>
     </tu>
     <tu>
@@ -509,10 +1633,42 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlopenbsd 	Perl notes for OpenBSD</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222542Z" creationid="ira" creationdate="20130723T222542Z">
+        <seg>perlopenbsd 	Perl заметки для OpenBSD</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlopentut	Perl open() tutorial</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T043417Z">
         <seg>perlopentut	Perl open() учебник</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlos2		Perl notes for OS/2</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222545Z" creationid="ira" creationdate="20130723T222545Z">
+        <seg>perlos2		Perl заметки для OS/2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlos390		Perl notes for OS/390</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222548Z" creationid="ira" creationdate="20130723T222548Z">
+        <seg>perlos390		Perl заметки для OS/390</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlos400		Perl notes for OS/400</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222551Z" creationid="ira" creationdate="20130723T222551Z">
+        <seg>perlos400		Perl заметки для OS/400</seg>
       </tuv>
     </tu>
     <tu>
@@ -529,6 +1685,14 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T032507Z">
         <seg>perlperf		Perl Производительность и Методы оптимизации</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlplan9		Perl notes for Plan 9</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222555Z" creationid="ira" creationdate="20130723T222555Z">
+        <seg>perlplan9		Perl заметки для Plan 9</seg>
       </tuv>
     </tu>
     <tu>
@@ -557,6 +1721,14 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlpolicy		Perl development policies</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T220506Z" creationid="ira" creationdate="20130723T220506Z">
+        <seg>perlpolicy		Perl политики(установки) разработки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlport		Perl portability guide</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T045730Z">
@@ -573,10 +1745,26 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlqnx		Perl notes for QNX</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222558Z" creationid="ira" creationdate="20130723T222558Z">
+        <seg>perlqnx		Perl заметки для QNX</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlre		Perl regular expressions, the rest of the story</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T044111Z">
         <seg>perlre		Perl  регулярные выражения, остальная часть истории</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlreapi		Perl regular expression plugin interface</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T213832Z" creationid="ira" creationdate="20130723T213832Z">
+        <seg>perlreapi		Perl регулярные выражения интерфейс плагина</seg>
       </tuv>
     </tu>
     <tu>
@@ -613,6 +1801,14 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlreguts		Perl regular expression engine internals</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T213912Z" creationid="ira" creationdate="20130723T213912Z">
+        <seg>perlreguts		Perl регулярные внутренние внутренности движка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlrequick 	Perl regular expressions quick start</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T032243Z">
@@ -637,6 +1833,14 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlriscos		Perl notes for RISC OS</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222602Z" creationid="ira" creationdate="20130723T222602Z">
+        <seg>perlriscos		Perl заметки для RISC OS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlrun		Perl execution and options</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T031833Z">
@@ -653,6 +1857,22 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>perlsolaris 	Perl notes for Solaris</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222605Z" creationid="ira" creationdate="20130723T222605Z">
+        <seg>perlsolaris 	Perl заметки для Solaris</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlsource		Guide to the Perl source tree</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T215711Z" creationid="ira" creationdate="20130723T215711Z">
+        <seg>perlsource		Руководство по дереву исходного кода Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>perlstyle		Perl style guide</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T032529Z">
@@ -665,6 +1885,14 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T043253Z">
         <seg>perlsub		Perl подпрограммы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlsymbian 	Perl notes for Symbian</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222609Z" creationid="ira" creationdate="20130723T222609Z">
+        <seg>perlsymbian 	Perl заметки для Symbian</seg>
       </tuv>
     </tu>
     <tu>
@@ -705,6 +1933,22 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T032637Z">
         <seg>perltrap		Perl ловушки для неосторожных</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perltru64		Perl notes for Tru64</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222613Z" creationid="ira" creationdate="20130723T222613Z">
+        <seg>perltru64		Perl заметки для Tru64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perltw		Perl for Traditional Chinese (in Big5)</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222214Z" creationid="ira" creationdate="20130723T222214Z">
+        <seg>perltw		Perl для традиционного китайского (в Big5)</seg>
       </tuv>
     </tu>
     <tu>
@@ -753,6 +1997,30 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="Мишин" changedate="20130723T044050Z">
         <seg>perlvar		Perl предопределенные переменные</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlvms		Perl notes for VMS</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222616Z" creationid="ira" creationdate="20130723T222616Z">
+        <seg>perlvms		Perl заметки для VMS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlvos		Perl notes for Stratus VOS</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222620Z" creationid="ira" creationdate="20130723T222620Z">
+        <seg>perlvos		Perl заметки для Stratus VOS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>perlwin32		Perl notes for Windows</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="ira" changedate="20130723T222624Z" creationid="ira" creationdate="20130723T222624Z">
+        <seg>perlwin32		Perl заметки для Windows</seg>
       </tuv>
     </tu>
     <tu>

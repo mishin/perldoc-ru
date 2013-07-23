@@ -13,7 +13,7 @@ To change this file, edit mktables instead.
 
 perluniprops - Index of Unicode Version 6.2.0 character properties in Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document provides information about the portion of the Unicode database
 that deals with character properties, that is the portion that is defined on
@@ -4328,7 +4328,7 @@ Documentation of status and cross reference of proposals for encoding by Unicode
 
 =back
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<http://www.unicode.org/reports/tr44/>
 

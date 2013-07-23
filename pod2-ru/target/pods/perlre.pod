@@ -3,7 +3,7 @@ X<regular expression> X<regex> X<regexp>
 
 perlre - Perl regular expressions
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This page describes the syntax of regular expressions in Perl.
 
@@ -2578,7 +2578,7 @@ Subroutine call to a named capture group. Equivalent to C<< (?&NAME) >>.
 
 =back
 
-=head1 BUGS
+=head1 ОШИБКИ
 
 Many regular expression constructs don't work on EBCDIC platforms.
 
@@ -2592,7 +2592,7 @@ hard to fathom in several places.
 This document needs a rewrite that separates the tutorial content
 from the reference content.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlrequick>.
 

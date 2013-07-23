@@ -2,7 +2,7 @@
 
 perlpolicy - Various and sundry policies and commitments related to the Perl core
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document is the master document which records all written
 policies about how the Perl 5 Porters collectively develop and maintain

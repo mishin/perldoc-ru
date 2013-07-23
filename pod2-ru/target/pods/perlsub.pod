@@ -39,7 +39,7 @@ X<subroutine, call> X<call>
     &NAME(LIST);   # Circumvent prototypes.
     &NAME;	   # Makes current @_ visible to called subroutine.
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Like many languages, Perl provides for user-defined subroutines.
 These may be located anywhere in the main program, loaded in from
@@ -1643,7 +1643,7 @@ parsed and invoked:
 For further details on attribute lists and their manipulation,
 see L<attributes> and L<Attribute::Handlers>.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 See L<perlref/"Function Templates"> for more about references and closures.
 See L<perlxs> if you'd like to learn about calling C subroutines from Perl.  

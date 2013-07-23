@@ -2,7 +2,7 @@
 
 perlexperiment - A listing of experimental features in Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document lists the current and past experimental features in the perl
 core. Although all of these are documented with their appropriate topics,

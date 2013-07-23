@@ -6,7 +6,7 @@ specifically designed to be readable as is.
 
 perlriscos - Perl version 5 for RISC OS
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document gives instructions for building Perl for RISC OS. It is
 complicated by the need to cross compile. There is a binary version of
@@ -62,6 +62,6 @@ This will use miniperl to complete the rest of the build.
 
 =back
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Alex Waugh <alex@alexwaugh.com>

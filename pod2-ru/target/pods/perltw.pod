@@ -8,7 +8,7 @@
 
 perltw - 正體中文 Perl 指南
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 歡迎來到 Perl 的天地!
 
@@ -153,7 +153,7 @@ L<http://www.linux.org.tw/CLDP/>
 
 =back
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<Encode>, L<Encode::TW>, L<encoding>, L<perluniintro>, L<perlunicode>
 

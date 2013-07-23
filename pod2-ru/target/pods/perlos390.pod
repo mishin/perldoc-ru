@@ -12,7 +12,7 @@ perlos390 - building and installing Perl for OS/390 and z/OS
 This document will help you Configure, build, test and install Perl
 on OS/390 (aka z/OS) Unix System Services.
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This is a fully ported Perl for OS/390 Version 2 Release 3, 5, 6, 7,
 8, and 9.  It may work on other versions or releases, but those are
@@ -392,7 +392,7 @@ Thanks to Mike MacIsaac and Egon Terwedow for SG24-5944-00.
 Thanks to Ignasi Roca for pointing out the floating point problems.
 Thanks to John Goodyear for dynamic loading help.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<INSTALL>, L<perlport>, L<perlebcdic>, L<ExtUtils::MakeMaker>.
 

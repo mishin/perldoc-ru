@@ -6,7 +6,7 @@ designed to be readable as is.
 
 perlsymbian - Perl version 5 on Symbian OS
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes various features of the Symbian operating
 system that will affect how Perl version 5 (hereafter just Perl)
@@ -325,7 +325,7 @@ names are trademarks or registered trademarks of Nokia.  Other product
 and company names mentioned herein may be trademarks or trade names of
 their respective owners.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Jarkko Hietaniemi
 

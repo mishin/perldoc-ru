@@ -2,7 +2,7 @@
 
 perlreapi - Perl regular expression plugin interface
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 As of Perl 5.9.5 there is a new interface for plugging and using
 regular expression engines other than the default one.

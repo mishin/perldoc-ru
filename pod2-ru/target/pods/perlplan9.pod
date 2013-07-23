@@ -6,7 +6,7 @@ designed to be readable as is.
 
 perlplan9 - Plan 9-specific documentation for Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 These are a few notes describing features peculiar to
 Plan 9 Perl. As such, it is not intended to be a replacement
@@ -128,7 +128,7 @@ pages that may interest you.
 
 (Note: "mk man" may produce some extraneous noise. Fear not.)
 
-=head1 BUGS
+=head1 ОШИБКИ
 
 "As many as there are grains of sand on all the beaches of the 
 world . . ." - Carl Sagan
@@ -137,7 +137,7 @@ world . . ." - Carl Sagan
 
 This document was revised 09-October-1996 for Perl 5.003_7.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Direct questions, comments, and the unlikely bug report (ahem) direct
 comments toward:

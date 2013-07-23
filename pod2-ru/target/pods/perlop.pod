@@ -3,7 +3,7 @@ X<operator>
 
 perlop - Perl operators and precedence
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 =head2 Operator Precedence and Associativity
 X<operator, precedence> X<precedence> X<associativity>

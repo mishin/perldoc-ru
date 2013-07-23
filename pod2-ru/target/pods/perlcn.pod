@@ -8,7 +8,7 @@
 
 perlcn - 简体中文 Perl 指南
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 欢迎来到 Perl 的天地!
 
@@ -131,7 +131,7 @@ Unix/Linux 上的 UTF-8 及 Unicode 答客问
 
 =back
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<Encode>, L<Encode::CN>, L<encoding>, L<perluniintro>, L<perlunicode>
 

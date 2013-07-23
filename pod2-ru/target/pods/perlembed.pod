@@ -2,7 +2,7 @@
 
 perlembed - how to embed perl in your C program
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 =head2 PREAMBLE
 
@@ -1094,7 +1094,7 @@ you can always I<write code faster> in Perl.  Because you can use
 each from the other, combine them as you wish.
 
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Jon Orwant <F<orwant@media.mit.edu>> and Doug MacEachern
 <F<dougm@covalent.net>>, with small contributions from Tim Bunce, Tom

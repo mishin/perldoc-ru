@@ -8,7 +8,7 @@ X<POD> X<plain old documentation>
 
 perlpod - the Plain Old Documentation format
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Pod is a simple-to-use markup language used for writing documentation
 for Perl, Perl programs, and Perl modules.
@@ -723,12 +723,12 @@ wrapped by some formatters.
 
 =back
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlpodspec>, L<perlsyn/"PODs: Embedded Documentation">,
 L<perlnewmod>, L<perldoc>, L<pod2html>, L<pod2man>, L<podchecker>.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Larry Wall, Sean M. Burke
 

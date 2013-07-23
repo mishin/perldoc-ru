@@ -4,7 +4,7 @@
 
 perlebcdic - Considerations for running Perl on EBCDIC platforms
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 An exploration of some of the issues facing Perl programmers
 on EBCDIC based computers.  We do not cover localization,
@@ -1387,7 +1387,7 @@ or z/OS.
 
 XXX.
 
-=head1 BUGS
+=head1 ОШИБКИ
 
 This pod document contains literal Latin 1 characters and may encounter
 translation difficulties.  In particular one popular nroff implementation
@@ -1401,7 +1401,7 @@ Not all shells will allow multiple C<-e> string arguments to perl to
 be concatenated together properly as recipes 0, 2, 4, 5, and 6 might
 seem to imply.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perllocale>, L<perlfunc>, L<perlunicode>, L<utf8>.
 
@@ -1438,7 +1438,7 @@ B<IBM - EBCDIC and the P-bit; The biggest Computer Goof Ever> Robert Bemer.
 
 15 April 2001: added UTF-8 and UTF-EBCDIC to main table, pvhp.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Peter Prymmer pvhp@best.com wrote this in 1999 and 2000
 with CCSID 0819 and 0037 help from Chris Leach and

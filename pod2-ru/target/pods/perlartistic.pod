@@ -8,7 +8,7 @@ perlartistic - the Perl Artistic License
  You can refer to this document in Pod via "L<perlartistic>"
  Or you can see this document by entering "perldoc perlartistic"
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Perl is free software; you can redistribute it and/or modify
 it under the terms of either:

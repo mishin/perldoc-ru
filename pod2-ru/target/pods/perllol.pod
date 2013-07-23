@@ -2,7 +2,7 @@
 
 perllol - Manipulating Arrays of Arrays in Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 =head2 Declaration and Access of Arrays of Arrays
 
@@ -377,11 +377,11 @@ If I were you, I'd put that in a function:
     }
 
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perldata>, L<perlref>, L<perldsc>
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Tom Christiansen <F<tchrist@perl.com>>
 

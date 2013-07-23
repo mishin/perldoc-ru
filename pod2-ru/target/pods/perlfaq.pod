@@ -2,7 +2,7 @@
 
 perlfaq - frequently asked questions about Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The perlfaq comprises several documents that answer the most commonly
 asked questions about Perl and Perl programming. It's divided by topic

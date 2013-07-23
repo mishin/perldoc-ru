@@ -10,7 +10,7 @@ perlwin32 - Perl under Windows
 
 These are instructions for building Perl under Windows 2000 and later.
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Before you start, you should glance through the README file
 found in the top-level directory to which the Perl distribution
@@ -435,7 +435,7 @@ to look for libraries.  Look for descriptions of other environment
 variables you can set in L<perlrun>.
 
 You can also control the shell that perl uses to run system() and
-backtick commands via PERL5SHELL.  See L<perlrun>.
+backtick commands via PERL5SHELL.  См. L<perlrun>.
 
 Perl does not depend on the registry, but it can look up certain default
 values if you choose to put them there.  Perl attempts to read entries from
@@ -869,7 +869,7 @@ of O'Reilly and Associates, Inc. Used with permission.
 
 This document is maintained by Jan Dubois.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perl>
 

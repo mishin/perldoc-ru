@@ -6,7 +6,7 @@ designed to be readable as is.
 
 perlhaiku - Perl version 5.10+ on Haiku
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This file contains instructions how to build Perl for Haiku and lists
 known problems.

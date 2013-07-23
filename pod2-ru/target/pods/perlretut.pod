@@ -2,7 +2,7 @@
 
 perlretut - Perl regular expressions tutorial
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This page provides a basic tutorial on understanding, creating and
 using regular expressions in Perl.  It serves as a complement to the
@@ -2890,12 +2890,12 @@ prints
     t2
     Done at position 4
 
-=head1 BUGS
+=head1 ОШИБКИ
 
 Code expressions, conditional expressions, and independent expressions
 are I<experimental>.  Don't use them in production code.  Yet.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 This is just a tutorial.  For the full story on Perl regular
 expressions, see the L<perlre> regular expressions reference page.

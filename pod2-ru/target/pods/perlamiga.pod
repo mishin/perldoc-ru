@@ -56,7 +56,7 @@ Contents
        AUTHOR 
        SEE ALSO 
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 =head2 Prerequisites for Compiling Perl on AmigaOS
 
@@ -271,7 +271,7 @@ without fork().>
 Norbert Pueschel, pueschel@imsdd.meb.uni-bonn.de
 Jan-Erik Karlsson, trg@privat.utfors.se
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 perl(1).
 

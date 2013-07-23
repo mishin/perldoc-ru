@@ -9,6 +9,8 @@
         <dictionary_dir>__DEFAULT__</dictionary_dir>
         <source_lang>EN-US</source_lang>
         <target_lang>RU-RU</target_lang>
+        <source_tok>org.omegat.tokenizer.LuceneEnglishTokenizer</source_tok>
+        <target_tok>org.omegat.tokenizer.LuceneRussianTokenizer</target_tok>
         <sentence_seg>true</sentence_seg>
         <support_default_translations>true</support_default_translations>
         <remove_tags>false</remove_tags>

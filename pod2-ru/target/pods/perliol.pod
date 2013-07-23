@@ -7,7 +7,7 @@ perliol - C API for Perl's implementation of IO in Layers.
     /* Defining a layer ... */
     #include <perliol.h>
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes the behavior and implementation of the PerlIO
 abstraction described in L<perlapio> when C<USE_PERLIO> is defined (and

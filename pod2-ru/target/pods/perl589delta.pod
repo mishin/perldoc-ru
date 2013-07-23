@@ -2,7 +2,7 @@
 
 perl589delta - what is new for perl v5.8.9
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes differences between the 5.8.8 release and
 the 5.8.9 release.
@@ -2324,7 +2324,7 @@ co-ordinate the release of patches to mitigate or fix the problem across all
 platforms on which Perl is supported. Please only use this address for security
 issues in the Perl core, not for modules independently distributed on CPAN.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 The F<Changes> file for exhaustive details on what changed.
 

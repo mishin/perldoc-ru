@@ -4,7 +4,7 @@
 
 perltoot - This document has been deleted
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 For information on OO programming with Perl, please see L<perlootut>
 and L<perlobj>.

@@ -8,7 +8,7 @@ Consistent formatting of this file is achieved with:
 
 perlhacktut - Walk through the creation of a simple C code patch
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document takes you through a simple patch example.
 
@@ -182,7 +182,7 @@ insert this text in the description of C<pack>:
 
 See L<perlhack> for details on how to submit this patch.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 This document was originally written by Nathan Torkington, and is
 maintained by the perl5-porters mailing list.

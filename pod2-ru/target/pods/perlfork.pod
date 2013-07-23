@@ -26,7 +26,7 @@ limitations of the fork() emulation.  Note that the issues discussed here
 are not applicable to platforms where a real fork() is available and Perl
 has been configured to use it.
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The fork() emulation is implemented at the level of the Perl interpreter.
 What this means in general is that running fork() will actually clone the
@@ -315,7 +315,7 @@ In portable Perl code, C<kill(9, $child)> must not be used on forked processes.
 Killing a forked process is unsafe and has unpredictable results.
 See L</kill()>, above.
 
-=head1 BUGS
+=head1 ОШИБКИ
 
 =over 8
 
@@ -342,7 +342,7 @@ This document may be incomplete in some respects.
 
 =back
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Support for concurrent interpreters and the fork() emulation was implemented
 by ActiveState, with funding from Microsoft Corporation.
@@ -350,7 +350,7 @@ by ActiveState, with funding from Microsoft Corporation.
 This document is authored and maintained by Gurusamy Sarathy
 E<lt>gsar@activestate.comE<gt>.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlfunc/"fork">, L<perlipc>
 

@@ -3,7 +3,7 @@ X<syntax>
 
 perlsyn - Perl syntax
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 A Perl program consists of a sequence of declarations and statements
 which run from the top to the bottom.  Loops, subroutines, and other

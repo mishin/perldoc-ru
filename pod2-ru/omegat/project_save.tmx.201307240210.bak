@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.4" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg># This section is parsed by Porting/pod_lib.pl for use by pod/buildtoc etc</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T210746Z">
+        <seg># Этот раздел парсится  Porting/pod_lib.pl  для использования  pod/buildtoc и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head1 GETTING HELP</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T034232Z">
+        <seg>=head1 ПОЛУЧЕНИЕ ПОМОЩИ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head1 NAME</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T024918Z">
+        <seg>=head1 Имя</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head1 SYNOPSIS</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T025225Z">
+        <seg>=head1 СИНТАКСИС</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 Internals and C Language Interface</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051533Z">
+        <seg>=head2 Внутренности и Язык интерфейса для C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 Miscellaneous</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220624Z" creationid="ira" creationdate="20130723T220624Z">
+        <seg>=head2 Разное</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 Overview</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031539Z">
+        <seg>=head2 Обзор</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 Reference Manual</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043053Z">
+        <seg>=head2 Справочное руководство</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 Tutorials</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031937Z">
+        <seg>=head2 Учебники</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>B&lt;perl&gt;	S&lt;[ B&lt;-sTtuUWX&gt; ]&gt;
+	S&lt;[ B&lt;-hv&gt; ] [ B&lt;-V&gt;[:I&lt;configvar&gt;] ]&gt;
+	S&lt;[ B&lt;-cw&gt; ] [ B&lt;-d&gt;[B&lt;t&gt;][:I&lt;debugger&gt;] ] [ B&lt;-D&gt;[I&lt;number/list&gt;] ]&gt;
+	S&lt;[ B&lt;-pna&gt; ] [ B&lt;-F&gt;I&lt;pattern&gt; ] [ B&lt;-l&gt;[I&lt;octal&gt;] ] [ B&lt;-0&gt;[I&lt;octal/hexadecimal&gt;] ]&gt;
+	S&lt;[ B&lt;-I&gt;I&lt;dir&gt; ] [ B&lt;-m&gt;[B&lt;-&gt;]I&lt;module&gt; ] [ B&lt;-M&gt;[B&lt;-&gt;]I&lt;'module...'&gt; ] [ B&lt;-f&gt; ]&gt;
+	S&lt;[ B&lt;-C [I&lt;number/list&gt;] &gt;]&gt;
+	S&lt;[ B&lt;-S&gt; ]&gt;
+	S&lt;[ B&lt;-x&gt;[I&lt;dir&gt;] ]&gt;
+	S&lt;[ B&lt;-i&gt;[I&lt;extension&gt;] ]&gt;
+	S&lt;[ [B&lt;-e&gt;|B&lt;-E&gt;] I&lt;'command'&gt; ] [ B&lt;--&gt; ] [ I&lt;programfile&gt; ] [ I&lt;argument&gt; ]...&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T034151Z">
+        <seg>B&lt;perl&gt;	S&lt;[ B&lt;-sTtuUWX&gt; ]&gt;
+	S&lt;[ B&lt;-hv&gt; ] [ B&lt;-V&gt;[:I&lt;configvar&gt;] ]&gt;
+	S&lt;[ B&lt;-cw&gt; ] [ B&lt;-d&gt;[B&lt;t&gt;][:I&lt;отладчик&gt;] ] [ B&lt;-D&gt;[I&lt;кол-во/список&gt;] ]&gt;
+	S&lt;[ B&lt;-pna&gt; ] [ B&lt;-F&gt;I&lt;шаблон&gt; ] [ B&lt;-l&gt;[I&lt;восьмеричный&gt;] ] [ B&lt;-0&gt;[I&lt;восьмеричный/шестнадцатеричный&gt;] ]&gt;
+	S&lt;[ B&lt;-I&gt;I&lt;dir&gt; ] [ B&lt;-m&gt;[B&lt;-&gt;]I&lt;модуль&gt; ] [ B&lt;-M&gt;[B&lt;-&gt;]I&lt;'модуль...'&gt; ] [ B&lt;-f&gt; ]&gt;
+	S&lt;[ B&lt;-C [I&lt;кол-во/список&gt;] &gt;]&gt;
+	S&lt;[ B&lt;-S&gt; ]&gt;
+	S&lt;[ B&lt;-x&gt;[I&lt;dir&gt;] ]&gt;
+	S&lt;[ B&lt;-i&gt;[I&lt;расширение&gt;] ]&gt;
+	S&lt;[ [B&lt;-e&gt;|B&lt;-E&gt;] I&lt;'команда'&gt; ] [ B&lt;--&gt; ] [ I&lt;файл программы&gt; ] [ I&lt;аргумент&gt; ]...&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For ease of access, the Perl manual has been split up into several sections.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T034335Z">
+        <seg>Для удобства чтения руководство Perl был разделено на несколько частей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more information on these options, you can run C&lt;perldoc perlrun&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T034205Z">
+        <seg>Для получения дополнительной информации на эти параметры, можно запустить C&lt;perldoc perlrun&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you're new to Perl, you should start by running C&lt;perldoc perlintro&gt;,
+which is a general intro for beginners and provides some background to help
+you navigate the rest of Perl's extensive documentation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T030943Z">
+        <seg>Если вы новичок в Perl, вы должны начать, запустив C&lt;perldoc perlintro&gt;, которая представляет собой общее введение для новичков и дает некоторые базовые навыки, чтобы помочь вам ориентироваться в остальной обширной документации Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Run C&lt;perldoc
+perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031042Z">
+        <seg>Запустите С&lt;perldoc perldoc&gt; чтобы узнать больше возможностей, которые вы можете сделать с F&lt;perldoc&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The F&lt;perldoc&gt; program gives you access to all the documentation that comes
+with Perl.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T030548Z">
+        <seg>F&lt;perldoc&gt; Программа дает вам доступ ко всей документации, которая поставляется с Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can get more documentation, tutorials and community support
+online at L&lt;http://www.perl.org/&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T030813Z">
+        <seg>Вы можете получить более подробную документацию, руководства и интернет-сообщество поддержки на L&lt;http://www.perl.org/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perl		Perl overview (this section)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031602Z">
+        <seg>perl		Perl обзор (этот раздел)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perl - The Perl 5 language interpreter</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T025053Z">
+        <seg>perl - интерпретатор языка Perl5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perl5180delta	Perl changes in version 5.18.0</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T221026Z" creationid="ira" creationdate="20130723T221020Z">
+        <seg>perl5180delta	Perl изменения в версии 5.18.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlapi		Perl API listing (autogenerated)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T213946Z" creationid="ira" creationdate="20130723T213946Z">
+        <seg>perlapi		Perl API объявления (автоматически сгенерированные)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlapio		Perl internal IO abstraction interface</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T214613Z" creationid="ira" creationdate="20130723T214304Z">
+        <seg>perlapio		Perl внутренний интерфейс ввода-вывода абстрактный интерфейс</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlbook		Perl book information</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220708Z" creationid="ira" creationdate="20130723T220642Z">
+        <seg>perlbook		Perl информация о книгах</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlcall		Perl calling conventions from C</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T052035Z">
+        <seg>perlcall		Perl соглашения о вызове из C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlcheat		Perl cheat sheet</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032621Z">
+        <seg>perlcheat		Perl шпаргалка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlclib		Internal replacements for standard C library functions</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051951Z">
+        <seg>perlclib		Внутренние замены для стандартных библиотечных функций C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlcommunity	Perl community information</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220831Z" creationid="ira" creationdate="20130723T220831Z">
+        <seg>perlcommunity	Информация о Perl сообществе</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldata		Perl data structures</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043155Z">
+        <seg>perldata		Структуры данных Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldbmfilter	Perl DBM filters</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044812Z">
+        <seg>perldbmfilter	Perl DBM фильтры</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldebguts 	Perl debugging guts and tips</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T215132Z">
+        <seg>perldebguts 	Perl внутренности отладки и советы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldebtut		Perl debugging tutorial</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032739Z">
+        <seg>perldebtut		Perl Учебник отладки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldebug		Perl debugging</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044036Z">
+        <seg>perldebug		Perl отладка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldelta		Perl changes since previous version</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220953Z" creationid="ira" creationdate="20130723T220953Z">
+        <seg>perldelta		Perl  изменения с предыдущей версии</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldiag		Perl diagnostic messages</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043949Z">
+        <seg>perldiag		Perl диагностические сообщения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldoc		Look up Perl documentation in Pod format</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220917Z" creationid="ira" creationdate="20130723T220917Z">
+        <seg>perldoc		Посмотрите Perl документацию в формате Pod</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldsc		Perl data structures intro</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032049Z">
+        <seg>perldsc		Perl введение в структуры данных</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldtrace		Perl's support for DTrace</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T215557Z">
+        <seg>perldtrace		Perl поддержка для DTrace</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlebcdic		Considerations for running Perl on EBCDIC platforms</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050601Z">
+        <seg>perlebcdic		Соображения для запуска Perl на EBCDIC платформах</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlembed		Perl ways to embed perl in your C or C++ application</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051626Z">
+        <seg>perlembed		Perl пути для встраивания perl в ваши C или C++ приложения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq		Perl frequently asked questions</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032757Z">
+        <seg>perlfaq		Perl часто задаваемые вопросы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq1		General Questions About Perl</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032817Z">
+        <seg>perlfaq1		Общие вопросы о Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq2		Obtaining and Learning about Perl</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032835Z">
+        <seg>perlfaq2		Получение и изучение Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq3		Programming Tools</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032907Z">
+        <seg>perlfaq3		Инструменты программирования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq4		Data Manipulation</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T033026Z">
+        <seg>perlfaq4		Манипуляция данными</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq5		Files and Formats</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T033038Z">
+        <seg>perlfaq5		Файлы и форматы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq6		Regexes</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T033047Z">
+        <seg>perlfaq6		Регулярные выражения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq7		Perl Language Issues</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T033836Z">
+        <seg>perlfaq7		Проблемы языка Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq8		System Interaction</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T034607Z">
+        <seg>perlfaq8		Взаимодействие с системой</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfaq9		Networking</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043042Z">
+        <seg>perlfaq9		Сети</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfilter		Perl source filters</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051356Z">
+        <seg>perlfilter		Perl исходные файлы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfork		Perl fork() information</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044840Z">
+        <seg>perlfork		Perl fork() информация</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlform		Perl formats</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044716Z">
+        <seg>perlform		Perl форматы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlfunc		Perl built-in functions</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043304Z">
+        <seg>perlfunc		Perl встроенные функции</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlgit		Using git with the Perl repository</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220612Z" creationid="ira" creationdate="20130723T220612Z">
+        <seg>perlgit		Использование Git с Perl репозиторием</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlglossary	Perl Glossary</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051442Z">
+        <seg>perlglossary	Perl Глоссарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlguts		Perl internal functions for those doing extensions</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T052020Z">
+        <seg>perlguts		Perl внутренние функции для тех, кто делает расширения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlhack		Perl hackers guide</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T215745Z" creationid="ira" creationdate="20130723T214839Z">
+        <seg>perlhack		Руководство хакера Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlhacktips	Tips for Perl core C code hacking</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220356Z" creationid="ira" creationdate="20130723T220149Z">
+        <seg>perlhacktips	Советы как хачить(взламывать) код ядра Perl на С</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlhacktut 	Walk through the creation of a simple C code patch</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T215958Z" creationid="ira" creationdate="20130723T215958Z">
+        <seg>perlhacktut 	Прогулка по созданию простого патча кода на C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlhist		Perl history records</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220934Z" creationid="ira" creationdate="20130723T220934Z">
+        <seg>perlhist		Записи истории Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlintern		Perl internal functions (autogenerated)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T214030Z" creationid="ira" creationdate="20130723T214030Z">
+        <seg>perlintern		Perl внутренние функции (автоматически сгенерированные)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlinterp		Overview of the Perl interpreter source and how it works</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T215928Z" creationid="ira" creationdate="20130723T215928Z">
+        <seg>perlinterp		Обзор исходного кода интерпретатора Perl и как он работает</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlintro		Perl introduction for beginners</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031650Z">
+        <seg>perlintro		Введение в Perl для начинающих</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perliol		C API for Perl's implementation of IO in Layers</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T214401Z" creationid="ira" creationdate="20130723T214155Z">
+        <seg>perliol		C API для Perl реализации ввода-вывода в слоях</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlipc		Perl interprocess communication</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044830Z">
+        <seg>perlipc		Perl  межпроцессное взаимодействие</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perllexwarn 	Perl warnings and their control</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044026Z">
+        <seg>perllexwarn 	Perl  предупреждения и управление ими</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perllocale		Perl locale support</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T045818Z">
+        <seg>perllocale		Perl языковая поддержка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perllol		Perl data structures: arrays of arrays</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032157Z">
+        <seg>perllol		Структуры данных Perl: массивы массивов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlmod		Perl modules: how they work</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T215443Z">
+        <seg>perlmod		Perl модули: как они работают</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlmodinstall	Perl modules: how to install from CPAN</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050858Z">
+        <seg>perlmodinstall	Perl  модули: как установить из CPAN</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlmodlib		Perl modules: how to write and use</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050654Z">
+        <seg>perlmodlib		Perl модули: как писать и использовать</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlmodstyle	Perl modules: how to write modules with style</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050823Z">
+        <seg>perlmodstyle	Perl модули: правильный стиль написания модулей</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlmroapi		Perl method resolution plugin interface</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T213735Z" creationid="ira" creationdate="20130723T213735Z">
+        <seg>perlmroapi		Perl метод резолюции интерфейса плагинов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlnewmod		Perl modules: preparing a new module for distribution</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050936Z">
+        <seg>perlnewmod		Perl модули: подготовка нового модуля для опубликования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlnumber		Perl number semantics</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044902Z">
+        <seg>perlnumber		Perl семантики числа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlobj		Perl objects</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044722Z">
+        <seg>perlobj		Perl объекты</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlootut		Perl OO tutorial for beginners</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032400Z">
+        <seg>perlootut		Perl OO учебник для начинающих</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlop		Perl operators and precedence</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043241Z">
+        <seg>perlop		Perl операторы и их приоритет</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlopentut	Perl open() tutorial</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043417Z">
+        <seg>perlopentut	Perl open() учебник</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlpacktut	Perl pack() and unpack() tutorial</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043430Z">
+        <seg>perlpacktut	Perl pack() и unpack() учебник</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlperf		Perl Performance and Optimization Techniques</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032507Z">
+        <seg>perlperf		Perl Производительность и Методы оптимизации</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlpod		Perl plain old documentation</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043617Z">
+        <seg>perlpod		Perl простая старая документация</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlpodspec 	Perl plain old documentation format specification</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043656Z">
+        <seg>perlpodspec 	Perl простая старая документация спецификация формата</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlpodstyle	Perl POD style guide</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043936Z">
+        <seg>perlpodstyle	Perl POD руководство по стилю</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlpolicy		Perl development policies</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T220506Z" creationid="ira" creationdate="20130723T220506Z">
+        <seg>perlpolicy		Perl политики(установки) разработки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlport		Perl portability guide</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T045730Z">
+        <seg>perlport		Perl руководство по переносимости</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlpragma		Perl modules: writing a user pragma</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051305Z">
+        <seg>perlpragma		Perl модули: написание пользовательской pragma (директивы компилятору)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlre		Perl regular expressions, the rest of the story</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044111Z">
+        <seg>perlre		Perl  регулярные выражения, остальная часть истории</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlreapi		Perl regular expression plugin interface</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T213832Z" creationid="ira" creationdate="20130723T213832Z">
+        <seg>perlreapi		Perl регулярные выражения интерфейс плагина</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlrebackslash	Perl regular expression backslash sequences</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044415Z">
+        <seg>perlrebackslash	Perl регулярные выражения  последовательности с обратным слэшем</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlrecharclass	Perl regular expression character classes</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044620Z">
+        <seg>perlrecharclass	Perl  регулярные выражения классы символов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlref		Perl references, the rest of the story</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044704Z">
+        <seg>perlref		Perl ссылки, остальная часть истории</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlreftut		Perl references short introduction</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032059Z">
+        <seg>perlreftut		Perl краткое введение в ссылки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlreguts		Perl regular expression engine internals</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T213912Z" creationid="ira" creationdate="20130723T213912Z">
+        <seg>perlreguts		Perl регулярные внутренние внутренности движка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlrequick 	Perl regular expressions quick start</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032243Z">
+        <seg>perlrequick 	Регулярные выражения Perl быстрый старт</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlreref		Perl regular expressions quick reference</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044644Z">
+        <seg>perlreref		Perl регулярные выражения краткий справочник</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlretut		Perl regular expressions tutorial</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032338Z">
+        <seg>perlretut		Perl регулярные выражения учебник</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlrun		Perl execution and options</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031833Z">
+        <seg>perlrun		Выполнение программы на Perl и его опции</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlsec		Perl security</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050611Z">
+        <seg>perlsec		Perl безопасность</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlsource		Guide to the Perl source tree</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130723T215711Z" creationid="ira" creationdate="20130723T215711Z">
+        <seg>perlsource		Руководство по дереву исходного кода Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlstyle		Perl style guide</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032529Z">
+        <seg>perlstyle		Perl руководство по стилю программирования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlsub		Perl subroutines</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043253Z">
+        <seg>perlsub		Perl подпрограммы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlsyn		Perl syntax</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T043135Z">
+        <seg>perlsyn		Синтаксис Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlthrtut		Perl threads tutorial</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T045715Z">
+        <seg>perlthrtut		Perl потоки учебник</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perltie		Perl objects hidden behind simple variables</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044801Z">
+        <seg>perltie		Perl объекты скрытые за простыми переменными</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perltoc		Perl documentation table of contents</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031911Z">
+        <seg>perltoc		Perl документация Оглавление</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perltrap		Perl traps for the unwary</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032637Z">
+        <seg>perltrap		Perl ловушки для неосторожных</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlunicode 	Perl Unicode support</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T045857Z">
+        <seg>perlunicode 	Perl  поддержка юникода</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perluniintro	Perl Unicode introduction</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T045829Z">
+        <seg>perluniintro	Perl введение в Unicode</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perluniprops	Index of Unicode properties in Perl</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050530Z">
+        <seg>perluniprops	Каталог свойств Unicode в Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlunitut		Perl Unicode tutorial</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050538Z">
+        <seg>perlunitut		Perl Unicode учебник</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlutil		utilities packaged with the Perl distribution</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051339Z">
+        <seg>perlutil		утилиты, идущие в комплекте с поставкой Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlvar		Perl predefined variables</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T044050Z">
+        <seg>perlvar		Perl предопределенные переменные</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlxs		Perl XS application programming interface</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051815Z">
+        <seg>perlxs		Perl XS интерфейс прикладного программирования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlxstut		Perl XS tutorial</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051737Z">
+        <seg>perlxstut		Perl XS учебник</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlxstypemap	Perl XS C/Perl type conversion tools</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051837Z">
+        <seg>perlxstypemap	Perl XS C/Perl инструменты преобразования типов</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

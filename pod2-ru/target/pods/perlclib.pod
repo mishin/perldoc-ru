@@ -2,7 +2,7 @@
 
 perlclib - Internal replacements for standard C library functions
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 One thing Perl porters should note is that F<perl> doesn't tend to use that
 much of the C standard library internally; you'll see very little use of, 
@@ -206,7 +206,7 @@ think you do, use the C<JMPENV> stack in F<scope.h> instead.
 
 For C<signal>/C<sigaction>, use C<rsignal(signo, handler)>.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlapi>, L<perlapio>, L<perlguts>
 

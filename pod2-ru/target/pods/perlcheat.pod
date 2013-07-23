@@ -2,7 +2,7 @@
 
 perlcheat - Perl 5 Cheat Sheet
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This 'cheat sheet' is a handy reference, meant for beginning Perl
 programmers. Not everything is mentioned, but 195 features may
@@ -85,11 +85,11 @@ A special thanks to Damian Conway, who didn't only suggest important changes,
 but also took the time to count the number of listed features and make a
 Perl 6 version to show that Perl will stay Perl.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Juerd Waalboer <#####@juerd.nl>, with the help of many Perl Monks.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 =over 4
 

@@ -2,7 +2,7 @@
 
 perlstyle - Perl style guide
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Each programmer will, of course, have his or her own preferences in
 regards to formatting, but there are some general guidelines that will

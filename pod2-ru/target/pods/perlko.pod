@@ -10,7 +10,7 @@
 
 perlko - Perl과 한국어 인코딩
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Perl의 세계에 오신 것을 환영합니다 !
 
@@ -188,7 +188,7 @@ Character Set)을 만드는  ISO/IEC JTC1/SC2/WG2의 웹 페이지.
 
 =back
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<Encode>, L<Encode::KR>, L<encoding>, L<perluniintro>, L<perlunicode>
 

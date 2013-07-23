@@ -2,7 +2,7 @@
 
 perluniintro - Perl Unicode introduction
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document gives a general idea of Unicode and how to use Unicode
 in Perl.  See L</Further Resources> for references to more in-depth
@@ -586,7 +586,7 @@ L<http://www.unicode.org/unicode/reports/tr10/>
 
 =back
 
-=head2 Miscellaneous
+=head2 Разное
 
 =over 4
 
@@ -927,7 +927,7 @@ to UTF-8 bytes and back, the code works even with older Perl 5 versions.
     # UTF-8 to ISO 8859-1
     s/([\xC2\xC3])([\x80-\xBF])/chr(ord($1)<<6&0xC0|ord($2)&0x3F)/eg;
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlunitut>, L<perlunicode>, L<Encode>, L<open>, L<utf8>, L<bytes>,
 L<perlretut>, L<perlrun>, L<Unicode::Collate>, L<Unicode::Normalize>,

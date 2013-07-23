@@ -2,7 +2,7 @@
 
 perlfaq5 - Files and Formats
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This section deals with I/O and the "f" issues: filehandles, flushing,
 formats, and footers.

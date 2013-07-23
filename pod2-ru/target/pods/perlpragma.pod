@@ -2,7 +2,7 @@
 
 perlpragma - how to write a user pragma
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 A pragma is a module which influences some aspect of the compile time or run
 time behaviour of Perl, such as C<strict> or C<warnings>. With Perl 5.10 you

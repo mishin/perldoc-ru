@@ -2,7 +2,7 @@
 
 perlmroapi - Perl method resolution plugin interface
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 As of Perl 5.10.1 there is a new interface for plugging and using method
 resolution orders other than the default (linear depth first search).

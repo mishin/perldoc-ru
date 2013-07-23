@@ -8,7 +8,7 @@ Consistent formatting of this file is achieved with:
 
 perlsource - A guide to the Perl source tree
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes the layout of the Perl source tree. If you're
 hacking on the Perl core, this will help you find what you're looking

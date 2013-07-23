@@ -2,7 +2,7 @@
 
 perlguts - Introduction to the Perl API
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document attempts to describe how to use the Perl API, as well as
 to provide some info on the basic workings of the Perl core. It is far
@@ -2930,6 +2930,6 @@ Andreas Koenig, Paul Hudson, Ilya Zakharevich, Paul Marquess, Neil
 Bowers, Matthew Green, Tim Bunce, Spider Boardman, Ulrich Pfeifer,
 Stephen McCamant, and Gurusamy Sarathy.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlapi>, L<perlintern>, L<perlxs>, L<perlembed>

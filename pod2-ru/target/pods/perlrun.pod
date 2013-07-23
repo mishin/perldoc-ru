@@ -15,7 +15,7 @@ B<perl>	S<[ B<-sTtuUWX> ]>
 	S<[ B<-i>[I<расширение>] ]>
 	S<[ [B<-e>|B<-E>] I<'команда'> ] [ B<--> ] [ I<файл программы> ] [ I<аргумент> ]...>
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The normal way to run a Perl program is by making it directly
 executable, or else by passing the name of the source file as an

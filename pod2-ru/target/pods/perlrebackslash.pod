@@ -2,7 +2,7 @@
 
 perlrebackslash - Perl Regular Expression Backslash Sequences and Escapes
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The top level documentation about Perl regular expressions
 is found in L<perlre>.

@@ -2,7 +2,7 @@
 
 perlxstut - Tutorial for writing XSUBs
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This tutorial will educate the reader on the steps involved in creating
 a Perl extension.  The reader is assumed to have access to L<perlguts>,

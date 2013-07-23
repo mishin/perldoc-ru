@@ -2,7 +2,7 @@
 
 perlunitut - Perl Unicode Tutorial
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The days of just flinging strings around are over. It's well established that
 modern programs need to be capable of communicating funny accented letters, and
@@ -198,11 +198,11 @@ Thanks to the people who reviewed this document for me, before it went public.
 They are: Benjamin Smith, Jan-Pieter Cornet, Johan Vromans, Lukas Mai, Nathan
 Gray.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Juerd Waalboer <#####@juerd.nl>
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlunifaq>, L<perlunicode>, L<perluniintro>, L<Encode>
 

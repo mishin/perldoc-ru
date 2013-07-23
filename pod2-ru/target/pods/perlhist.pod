@@ -4,7 +4,7 @@
 
 perlhist - the Perl history records
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document aims to record the Perl source code releases.
 

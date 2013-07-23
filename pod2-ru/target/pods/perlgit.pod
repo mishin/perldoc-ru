@@ -8,7 +8,7 @@ Consistent formatting of this file is achieved with:
 
 perlgit - Detailed information about git and the Perl repository
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document provides details on using git to develop Perl. If you are
 just interested in working on a quick patch, see L<perlhack> first.

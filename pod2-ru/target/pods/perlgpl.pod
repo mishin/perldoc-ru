@@ -8,7 +8,7 @@ perlgpl - the GNU General Public License, version 1
  You can refer to this document in Pod via "L<perlgpl>"
  Or you can see this document by entering "perldoc perlgpl"
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Perl is free software; you can redistribute it and/or modify
 it under the terms of either:

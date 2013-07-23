@@ -2,7 +2,7 @@
 
 perlxstypemap - Perl XS C/Perl type mapping
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The more you think about interfacing between two languages, the more
 you'll realize that the majority of programmer effort has to go into

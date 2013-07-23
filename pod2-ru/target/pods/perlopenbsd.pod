@@ -6,7 +6,7 @@ specifically designed to be readable as is.
 
 perlopenbsd - Perl version 5 on OpenBSD systems
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document describes various features of OpenBSD that will affect how Perl
 version 5 (hereafter just Perl) is compiled and/or runs.
@@ -22,7 +22,7 @@ should handle this problem correctly.  Older threaded Perls (5.8.6 or earlier)
 will run into this problem.  If you want to run a threaded Perl on OpenBSD
 3.7 or higher, you will need to upgrade to at least Perl 5.8.7.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Steve Peters <steve@fisharerojo.org>
 

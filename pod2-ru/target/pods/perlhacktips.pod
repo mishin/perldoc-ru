@@ -9,7 +9,7 @@ Consistent formatting of this file is achieved with:
 
 perlhacktips - Tips for Perl core C code hacking
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document will help you learn the best way to go about hacking on
 the Perl core C code. It covers common problems, debugging, profiling,
@@ -1479,7 +1479,7 @@ You can expand the macros in a F<foo.c> file by saying
 which will expand the macros using cpp.  Don't be scared by the
 results.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 This document was originally written by Nathan Torkington, and is
 maintained by the perl5-porters mailing list.

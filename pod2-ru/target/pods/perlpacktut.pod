@@ -2,7 +2,7 @@
 
 perlpacktut - tutorial on C<pack> and C<unpack>
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 C<pack> and C<unpack> are two functions for transforming data according
 to a user-defined template, between the guarded way Perl stores values

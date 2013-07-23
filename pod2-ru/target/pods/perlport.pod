@@ -2,7 +2,7 @@
 
 perlport - Writing portable Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Perl runs on numerous operating systems.  While most of them share
 much in common, they also have their own unique features.
@@ -2306,7 +2306,7 @@ the source code, both for maximal configurability and for security,
 in case you are in a hurry you can check
 L<http://www.cpan.org/ports/index.html> for binary distributions.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlaix>, L<perlamiga>, L<perlbs2000>,
 L<perlce>, L<perlcygwin>, L<perldgux>, L<perldos>,

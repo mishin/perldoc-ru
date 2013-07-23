@@ -2,7 +2,7 @@
 
 perlrequick - Perl regular expressions quick start
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This page covers the very basics of understanding, creating and
 using regular expressions ('regexes') in Perl.
@@ -493,11 +493,11 @@ the matched substrings from the groupings as well:
 Since the first character of $x matched the regex, C<split> prepended
 an empty initial element to the list.
 
-=head1 BUGS
+=head1 ОШИБКИ
 
 None.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 This is just a quick start guide.  For a more in-depth tutorial on
 regexes, see L<perlretut> and for the reference page, see L<perlre>.

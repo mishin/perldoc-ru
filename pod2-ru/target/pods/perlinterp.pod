@@ -8,7 +8,7 @@ Consistent formatting of this file is achieved with:
 
 perlinterp - An overview of the Perl interpreter
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document provides an overview of how the Perl interpreter works at
 the level of C code, along with pointers to the relevant C source code

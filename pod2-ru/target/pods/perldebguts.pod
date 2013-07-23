@@ -2,7 +2,7 @@
 
 perldebguts - Guts of Perl debugging 
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This is not L<perldebug>, which tells you how to use
 the debugger.  This manpage describes low-level details concerning
@@ -1011,7 +1011,7 @@ never touched.
 
 =back
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perldebug>,
 L<perlguts>,

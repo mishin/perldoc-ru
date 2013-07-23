@@ -2,7 +2,7 @@
 
 perlfaq8 - System Interaction
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This section of the Perl FAQ covers questions involving operating
 system interaction. Topics include interprocess communication (IPC),

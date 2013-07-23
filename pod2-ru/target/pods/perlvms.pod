@@ -2,7 +2,7 @@
 
 perlvms - VMS-specific documentation for Perl
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Gathered below are notes describing details of Perl 5's 
 behavior on VMS.  They are a supplement to the regular Perl 5 
@@ -1217,7 +1217,7 @@ problems.
 
 Please see the git repository for revision history.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Charles Bailey  bailey@cor.newman.upenn.edu
 Craig Berry  craigberry@mac.com

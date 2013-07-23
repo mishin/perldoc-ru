@@ -2,7 +2,7 @@
 
 perlfilter - Source Filters
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This article is about a little-known feature of Perl called
 I<source filters>. Source filters alter the program text of a module
@@ -575,7 +575,7 @@ Source Filters distribution) is part of the standard Perl distribution.
 Also included is a friendlier interface called Filter::Simple, by
 Damian Conway.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Paul Marquess E<lt>Paul.Marquess@btinternet.comE<gt>
 

@@ -11,7 +11,7 @@ perldbmfilter - Perl DBM Filters
     $old_filter = $db->filter_fetch_key  ( sub { ... } );
     $old_filter = $db->filter_fetch_value( sub { ... } );
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 The four C<filter_*> methods shown above are available in all the DBM
 modules that ship with Perl, namely DB_File, GDBM_File, NDBM_File,
@@ -157,11 +157,11 @@ This time only two filters have been used; we only need to manipulate
 the contents of the key, so it wasn't necessary to install any value
 filters.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<DB_File>, L<GDBM_File>, L<NDBM_File>, L<ODBM_File> and L<SDBM_File>.
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Paul Marquess
 

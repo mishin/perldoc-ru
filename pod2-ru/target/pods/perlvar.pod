@@ -2,7 +2,7 @@
 
 perlvar - Perl predefined variables
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 =head2 The Syntax of Variable Names
 

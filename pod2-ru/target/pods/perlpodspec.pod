@@ -4,7 +4,7 @@
 
 perlpodspec - Plain Old Documentation: format specification and notes
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This document is detailed notes on the Pod markup language.  Most
 people will only have to read L<perlpod|perlpod> to know how to write
@@ -113,7 +113,7 @@ A command paragraph (also called a "directive").  The first line of
 this paragraph must match C<m/\A=[a-zA-Z]/>.  Command paragraphs are
 typically one line, as in:
 
-  =head1 NOTES
+  =head1 ПРИМЕЧАНИЯ
 
   =item *
 
@@ -1902,12 +1902,12 @@ This is also invalid:
 This is invalid because every "=end" command must have a formatname
 parameter.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlpod>, L<perlsyn/"PODs: Embedded Documentation">,
 L<podchecker>
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Sean M. Burke
 

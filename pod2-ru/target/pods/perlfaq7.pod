@@ -2,7 +2,7 @@
 
 perlfaq7 - General Perl Language Issues
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 This section deals with general Perl language issues that don't
 clearly fit into any of the other sections.

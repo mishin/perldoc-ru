@@ -65,7 +65,7 @@ perlapio - perl's IO abstraction interface.
     int     PerlIO_binmode(PerlIO *f, int ptype, int imode, const char *layers);
     void    PerlIO_debug(const char *fmt,...)
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Perl's source code, and extensions that want maximum portability,
 should use the above functions instead of those defined in ANSI C's

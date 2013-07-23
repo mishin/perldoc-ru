@@ -35,7 +35,7 @@ Contents
       AUTHOR
       SEE ALSO
 
-=head1 DESCRIPTION
+=head1 ОПИСАНИЕ
 
 Perl 5.7/8.x for DG/UX ix86 R4.20MU0x
 
@@ -99,7 +99,7 @@ Then rerun the tests. This time all must be OK.
 
 Run the command "make install"
 
-=head1 AUTHOR
+=head1 АВТОР
 
 Takis Psarogiannakopoulos
 University of Cambridge
@@ -109,7 +109,7 @@ Wilberforce road
 Cambridge CB3 0WB , UK
 email <takis@XFree86.Org>
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 perl(1).
 

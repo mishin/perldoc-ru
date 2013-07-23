@@ -2453,7 +2453,7 @@ The autodocumentation system was originally added to the Perl core by
 Benjamin Stuhl. Documentation is by whoever was kind enough to
 document their functions.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 L<perlguts>, L<perlapi>
 
