@@ -117,7 +117,7 @@ aux a2p c2ph h2ph h2xs perlbug pl2pm pod2html pod2man s2p splain xsubpp
     perlport		Perl руководство по переносимости
     perllocale		Perl языковая поддержка
     perluniintro	Perl введение в Unicode
-    perlunicode 	Perl  поддержка юникода
+    perlunicode 	Perl поддержка юникода
     perlunifaq		Perl Unicode FAQ
     perluniprops	Каталог свойств Unicode в Perl
     perlunitut		Perl Unicode учебник
@@ -128,7 +128,7 @@ aux a2p c2ph h2ph h2xs perlbug pl2pm pod2html pod2man s2p splain xsubpp
     perlmod		Perl модули:как они работают
     perlmodlib		Perl модули: как писать и использовать
     perlmodstyle	Perl модули: правильный стиль написания модулей
-    perlmodinstall	Perl  модули: как установить из CPAN
+    perlmodinstall	Perl модули: как установить из CPAN
     perlnewmod		Perl модули: подготовка нового модуля для опубликования
     perlpragma		Perl модули: написание пользовательской pragma (директивы компилятору)
 
