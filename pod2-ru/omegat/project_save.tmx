@@ -756,6 +756,14 @@ tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>causes a2p to assume that input will always have that many fields.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T134437Z" creationid="rdtex1" creationdate="20130724T134437Z">
+        <seg>вызов a2p предполагает, что входящие данные будут всегда содержать много полей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>http://www.cpan.org/       the Comprehensive Perl Archive</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231211Z" creationid="ira" creationdate="20130723T231211Z">
@@ -2131,6 +2139,14 @@ switch.</seg>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122830Z" creationid="rdtex1" creationdate="20130724T122830Z">
         <seg>говорит a2p то этот сценарий AWK всегда вызывается с этой B&lt;-F&gt;
 опцией.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>tells a2p to use old awk behavior.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T134531Z" creationid="rdtex1" creationdate="20130724T134531Z">
+        <seg>вызовите a2p для использования старого поведения awk.</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
