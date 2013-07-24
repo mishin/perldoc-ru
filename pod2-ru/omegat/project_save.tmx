@@ -697,6 +697,14 @@ tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>a2p - Awk to Perl translator</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122159Z" creationid="rdtex1" creationdate="20130724T122159Z">
+        <seg>a2p - преобразование кода Awk в Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>http://www.cpan.org/       the Comprehensive Perl Archive</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231211Z" creationid="ira" creationdate="20130723T231211Z">
