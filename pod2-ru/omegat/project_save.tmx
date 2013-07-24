@@ -436,6 +436,15 @@ affected by wraparound).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Old awk always has a line loop, even if there are no line
+actions, whereas new awk does not.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T140649Z" creationid="rdtex1" creationdate="20130724T140649Z">
+        <seg>Старый AWK всегда имеет шлейф, даже если нет никаких действий линию, в то время как новые AWK нет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>On a Unix-like system, these documentation files will usually also be
 available as manpages for use with the F&lt;man&gt; program.</seg>
       </tuv>
