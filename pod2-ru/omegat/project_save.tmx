@@ -672,6 +672,14 @@ complete) rather than beautiful (tiny, elegant, minimal).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The only current differences are:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T134549Z" creationid="rdtex1" creationdate="20130724T134549Z">
+        <seg>Только текущей отличия:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The three principal virtues of a programmer are Laziness,
 Impatience, and Hubris.</seg>
       </tuv>
