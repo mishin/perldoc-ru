@@ -162,6 +162,14 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 OPTIONS</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122531Z" creationid="rdtex1" creationdate="20130724T122531Z">
+        <seg>=head2 Параметры</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Overview</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031539Z">
@@ -198,6 +206,22 @@ and syswrite().)</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031937Z">
         <seg>=head2 Учебники</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any delimiter can be used to separate the field names.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T124222Z" creationid="rdtex1" creationdate="20130724T124222Z">
+        <seg>Любой разделитель может быть использован для отделения имен полей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>B&lt;a2p&gt; [I&lt;options&gt;] [I&lt;filename&gt;]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122359Z" creationid="rdtex1" creationdate="20130724T122359Z">
+        <seg>B&lt;a2p&gt; [I&lt;опции&gt;] [I&lt;имя файла&gt;]</seg>
       </tuv>
     </tu>
     <tu>
@@ -258,6 +282,25 @@ pragma?</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T034205Z">
         <seg>Для получения дополнительной информации на эти параметры, можно запустить C&lt;perldoc perlrun&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I&lt;A2p&gt; takes an awk script specified on the command line (or from
+standard input) and produces a comparable I&lt;perl&gt; script on the
+standard output.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122506Z" creationid="rdtex1" creationdate="20130724T122506Z">
+        <seg>I&lt;A2p&gt; принимает AWK скрипт, указанный в командной строке (или со стандартного ввода) и производит сравнимых I&lt;perl&gt; скрипт   стандартный вывод.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you were translating an awk script that
+processes the password file, you might say:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T124121Z" creationid="rdtex1" creationdate="20130724T124121Z">
+        <seg>Если вы переводите сценарий AWK, который обрабатывает файл пароля, вы можете сказать:</seg>
       </tuv>
     </tu>
     <tu>
@@ -409,6 +452,14 @@ your control.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231535Z" creationid="ira" creationdate="20130723T231535Z">
         <seg>Можно также использовать B&lt;-w&gt; флаг, о его использование, как правило, не рекомендуется, потому что он будет применяться ко всему исполняемуму коду Perl, в том числе, который не под вашим контролем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Options include:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122707Z" creationid="rdtex1" creationdate="20130724T122541Z">
+        <seg>Параметры включают в себя:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2053,6 +2104,33 @@ tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051837Z">
         <seg>perlxstypemap	Perl XS C/Perl инструменты преобразования типов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sets debugging flags.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122740Z" creationid="rdtex1" creationdate="20130724T122740Z">
+        <seg>устанавливает флаги отладки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>specifies the names of the input fields if input does not have to be
+split into an array.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122907Z" creationid="rdtex1" creationdate="20130724T122907Z">
+        <seg>указывает имена полей ввода, если ввод не должен быть разделен на массив.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>tells a2p that this awk script is always invoked with this B&lt;-F&gt;
+switch.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122830Z" creationid="rdtex1" creationdate="20130724T122830Z">
+        <seg>говорит a2p то этот сценарий AWK всегда вызывается с этой B&lt;-F&gt;
+опцией.</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
