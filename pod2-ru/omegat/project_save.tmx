@@ -1488,6 +1488,15 @@ awk's semantics regarding getline and print.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The special variable C&lt;$#array&gt; tells you the index of the last element
+of an array:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233112Z" creationid="ira" creationdate="20130725T233112Z">
+        <seg>Специальная переменная C&lt;$#array&gt; говорит вам, индекс последнего элемента массива:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The three principal virtues of a programmer are Laziness,
 Impatience, and Hubris.</seg>
       </tuv>
