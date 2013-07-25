@@ -218,6 +218,15 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A
+loop that tries to iterate over ARGV[0] won't find it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084126Z" creationid="rdtex1" creationdate="20130725T084126Z">
+        <seg>Цикл, который пытается перебрать ARGV[0] не найдет его.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A2p
 catches the most common case, but doesn't analyze embedded blocks for
 subtler cases.</seg>
