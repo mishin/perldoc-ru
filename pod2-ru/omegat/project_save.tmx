@@ -416,6 +416,16 @@ pragma?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Do not consider one style to be better than others - "There's
+More Than One Way To Do It" is one of Perl's mottos.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225902Z" creationid="ira" creationdate="20130725T225902Z">
+        <seg>Не считайте один стиль лучше, чем другие - "Есть более чем один способ сделать это" ("There's
+More Than One Way To Do It" ) является одним из девизов Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do note that the examples have been written by many different authors over
 a period of several decades.</seg>
       </tuv>
