@@ -327,6 +327,15 @@ from the perl script.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Be sure to change all
+operations the variable is involved in to match.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083415Z" creationid="rdtex1" creationdate="20130725T083415Z">
+        <seg>Будьте тогда намерены изменить все операционные переменные, которые участвуют в поиске.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Compilation errors will tell you the line number of the error, with an
 indication of the next token or token type that was to be examined.</seg>
       </tuv>
@@ -341,6 +350,15 @@ pragma?</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T232034Z" creationid="ira" creationdate="20130723T232034Z">
         <seg>Мы упомянули, что вам обязательно надо рассмотреть возможность использования прагмы B&lt;use warnings&gt; ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For aesthetic reasons you may wish to change index variables from being
+1-based (awk style) to 0-based (Perl style).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083245Z" creationid="rdtex1" creationdate="20130725T083245Z">
+        <seg>По эстетическим соображениям вы можете пожелать изменить индексных переменных от того, начинается с 1 (AWK стилю) до 0 на основе (Perl стиль).</seg>
       </tuv>
     </tu>
     <tu>
