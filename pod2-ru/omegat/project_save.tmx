@@ -264,6 +264,16 @@ do.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Awk arrays are usually
+translated to hashes, but if you happen to know that the index is
+always going to be numeric you could change the {...} to [...].</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082012Z" creationid="rdtex1" creationdate="20130725T082012Z">
+        <seg>Awk массивы, как правило, переводятся в хэши, но если вы ожидаете, что индекс всегда собирается быть числовыми вы могли бы изменить {...}, в [...].</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Awk scripts that do contortions within the END
 block to bypass the block under such circumstances can be simplified
 by removing the conditional in the END block and just exiting directly
