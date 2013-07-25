@@ -455,6 +455,16 @@ give a warning (like the command-line switch B&lt;-w&gt;) and let your code run.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A list of
+them is given at the start of L&lt;perlfunc&gt; and you can easily read
+about any given function by using C&lt;perldoc -f I&lt;functionname&gt;&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235604Z" creationid="ira" creationdate="20130725T235604Z">
+        <seg>Их список приведен в начале L&lt;perlfunc&gt; и вы можете легко прочитать о любой функции с помощью C&lt;perldoc -f I&lt;functionname&gt;&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A reference is a scalar value and can refer to any other Perl data
 type.</seg>
       </tuv>
