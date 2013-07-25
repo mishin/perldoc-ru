@@ -218,6 +218,14 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 What is Perl?</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230013Z" creationid="ira" creationdate="20130725T230013Z">
+        <seg>=head2 Что такое Perl?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A
 loop that tries to iterate over ARGV[0] won't find it.</seg>
       </tuv>
