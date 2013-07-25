@@ -68,12 +68,12 @@ sub copy_pods_dir {
     my @source_dir = read_dir($source_dir);           #, prefix => 1 );
     my @pod_files = grep { /$regexp/ } @source_dir;
     foreach my $file (@pod_files) {
-        my ( $atime, $mtime ) = ( stat($file) )[ 8, 9 ];
+        my ( $atime, $mtime ) = ( stat("$source_dir/$file") )[ 8, 9 ];
         copy( "$source_dir/$file", $target_dir );
         utime $atime, $mtime, "$target_dir/$file";
         $number_files++;
     }
     return $number_files;
-}    
+}
 
 __END__
