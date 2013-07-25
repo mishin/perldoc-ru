@@ -164,9 +164,8 @@ and syswrite().)</seg>
       <tuv lang="EN-US">
         <seg>=head2 Basic syntax overview</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231639Z" creationid="ira" creationdate="20130725T231639Z">
-        <seg>=head2 Основной обзор синтаксиса
-&lt;Google Translate v2&gt;</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231646Z" creationid="ira" creationdate="20130725T231639Z">
+        <seg>=head2 Основной обзор синтаксиса</seg>
       </tuv>
     </tu>
     <tu>
