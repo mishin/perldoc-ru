@@ -278,6 +278,14 @@ pragma?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, given the statement</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063510Z" creationid="rdtex1" creationdate="20130725T063510Z">
+        <seg>Например, возьмем выражение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For more information on these options, you can run C&lt;perldoc perlrun&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T034205Z">
@@ -352,6 +360,14 @@ B&lt;use strict&gt; and B&lt;use warnings&gt;.</seg>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T223508Z" creationid="ira" creationdate="20130723T223508Z">
         <seg>В общем, если что-то странное пошло не так с вашей программой, и вы не уверены, где вы должны искать помощи, попробуйте  поставить в начале программы 
 B&lt;use strict&gt; и B&lt;use warnings&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In old awk, sprintf is extremely greedy about its arguments.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063443Z" creationid="rdtex1" creationdate="20130725T063443Z">
+        <seg>В старых awk sprintf является очень жадным в своих аргументав.</seg>
       </tuv>
     </tu>
     <tu>
