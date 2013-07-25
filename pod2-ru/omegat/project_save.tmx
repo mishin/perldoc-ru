@@ -62,6 +62,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># you don't have to use the default $_ either...</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235319Z" creationid="ira" creationdate="20130725T235319Z">
+        <seg># вы не обязаны использовать переменную по умолчанию $ _ либо ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$fruit_color{"apple"};           # gives "red"</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233628Z" creationid="ira" creationdate="20130725T233628Z">
