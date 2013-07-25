@@ -1544,6 +1544,14 @@ same sections.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The C&lt;my&gt; is actually not required; you could just use:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234101Z" creationid="ira" creationdate="20130725T234101Z">
+        <seg>C&lt;my&gt; на самом деле не требуется, вы можете использовать только:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The C&lt;use
 diagnostics&gt; pragma automatically turns Perl's normally terse warnings
 and errors into these longer forms.</seg>
