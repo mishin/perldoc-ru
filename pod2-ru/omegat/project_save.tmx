@@ -162,6 +162,15 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Basic syntax overview</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231639Z" creationid="ira" creationdate="20130725T231639Z">
+        <seg>=head2 Основной обзор синтаксиса
+&lt;Google Translate v2&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Internals and C Language Interface</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051533Z">
