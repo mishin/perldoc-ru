@@ -958,6 +958,14 @@ implicit in the awk script.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Numbers don't need quotes around them:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232305Z" creationid="ira" creationdate="20130725T232305Z">
+        <seg>Числа не нуждаются в кавычках вокруг них:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Of course, it'll need
 to be executable first, so C&lt;chmod 755 script.pl&gt; (under Unix).</seg>
       </tuv>
@@ -3077,10 +3085,26 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>print "Hello, $name\n";     # works fine</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232231Z" creationid="ira" creationdate="20130725T232231Z">
+        <seg>print "Hello, $name\n";     # работает отлично</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>print "Hello, world";</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232129Z" creationid="ira" creationdate="20130725T232129Z">
         <seg>print "Привет, мир";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>print 'Hello, $name\n';     # prints $name\n literally</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232248Z" creationid="ira" creationdate="20130725T232248Z">
+        <seg>print 'Hello, $name\n';     # печатает $name\n буквально</seg>
       </tuv>
     </tu>
     <tu>
