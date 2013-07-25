@@ -1349,6 +1349,15 @@ of them are code fragments rather than complete programs.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Read all about it (and other special variables) in
+L&lt;perlvar&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233806Z" creationid="ira" creationdate="20130725T233806Z">
+        <seg>Читайте об этом (и других специальных переменных) в L&lt;perlvar&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Run C&lt;perldoc
 perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
       </tuv>
