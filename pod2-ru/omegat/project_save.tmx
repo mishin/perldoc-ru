@@ -964,8 +964,8 @@ complete) rather than beautiful (tiny, elegant, minimal).</seg>
         <seg>The produced perl script may have subroutines defined to deal with
 awk's semantics regarding getline and print.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083912Z" creationid="rdtex1" creationdate="20130725T083912Z">
-        <seg>Полученный Perl скрипт может иметь подпрограммы, которые определены иметь дело с семантикой AWK относительно GetLine и печать.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083933Z" creationid="rdtex1" creationdate="20130725T083912Z">
+        <seg>Полученный Perl скрипт может иметь подпрограммы, которые определены иметь дело с семантикой AWK относительно getline и print.</seg>
       </tuv>
     </tu>
     <tu>
