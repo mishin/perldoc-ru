@@ -1902,6 +1902,15 @@ according to your personal taste.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can use whitespace and the C&lt;&lt; =&gt; &gt;&gt; operator to lay them out more
+nicely:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233617Z" creationid="ira" creationdate="20130725T233617Z">
+        <seg>Можно использовать пробелы и  оператору C&lt;&lt; =&gt; &gt;&gt;, чтобы выложить их для более наглядного представления:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You may mail your bug reports (be sure to include full configuration
 information as output by the myconfig program in the perl source
 tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
