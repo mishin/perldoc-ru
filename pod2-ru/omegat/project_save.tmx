@@ -285,6 +285,14 @@ from the perl script.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Awk starts by assuming OFMT has the value %.6g.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082201Z" creationid="rdtex1" creationdate="20130725T082201Z">
+        <seg>Awk начинает, предполагая OFMT имеет значение %.6g.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>B&lt;a2p&gt; [I&lt;options&gt;] [I&lt;filename&gt;]</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122359Z" creationid="rdtex1" creationdate="20130724T122359Z">
@@ -1007,6 +1015,15 @@ warn you if you use == where you should have used eq.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T071918Z" creationid="rdtex1" creationdate="20130725T071824Z">
         <seg>Возможно, вы захотите запустить по крайней мере один раз с B&lt;-w&gt; опцией to perl, которая предупредит вас если вы используете == где вы должны были использовать eq.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You might need to modify any loop that iterates
+over such an array.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082144Z" creationid="rdtex1" creationdate="20130725T082144Z">
+        <seg>Возможно, вам придется изменить любой цикл, который перебирает такой массив.</seg>
       </tuv>
     </tu>
     <tu>
