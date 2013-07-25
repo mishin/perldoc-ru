@@ -1384,6 +1384,14 @@ will automatically convert between them as required.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Scalars, arrays and hashes are documented more fully in L&lt;perldata&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233814Z" creationid="ira" creationdate="20130725T233814Z">
+        <seg>Скаляры, массивы и хэши описаны более полно в L&lt;perldata&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Scripts that refer to the special variables RSTART and RLENGTH can
 often be simplified by referring to the variables $`, $&amp; and $', as
 long as they are within the scope of the pattern match that sets them.</seg>
