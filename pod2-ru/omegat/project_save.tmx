@@ -236,6 +236,15 @@ point.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All such guesses are marked with the
+comment "C&lt;#???&gt;".</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T065208Z" creationid="rdtex1" creationdate="20130725T065208Z">
+        <seg>Все эти домыслы, помечены комментарием "C&lt;#???&gt;".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any delimiter can be used to separate the field names.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T124222Z" creationid="rdtex1" creationdate="20130724T124222Z">
