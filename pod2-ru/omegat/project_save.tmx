@@ -380,6 +380,15 @@ operations the variable is involved in to match.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Besides, a2p almost always
+guesses right.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084259Z" creationid="rdtex1" creationdate="20130725T084259Z">
+        <seg>Кроме того, A2P почти всегда угадывает правильно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Compilation errors will tell you the line number of the error, with an
 indication of the next token or token type that was to be examined.</seg>
       </tuv>
@@ -610,6 +619,16 @@ found anywhere, and its support for Unicode text is world-class.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230217Z" creationid="ira" creationdate="20130723T230105Z">
         <seg>Он по-прежнему может похвастаться одними из самых мощных регулярных выражений, которые можно найти для любого текста, и поддержкой кодировки Unicode мирового класса.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It would be possible to emulate awk's behavior in selecting string
+versus numeric operations at run time by inspection of the operands,
+but it would be gross and inefficient.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084251Z" creationid="rdtex1" creationdate="20130725T084251Z">
+        <seg>Можно было бы подражать поведению AWK в выборе строки сравнении числовых операций во время выполнения проверки операнда, но это было бы грубым и неэффективным.</seg>
       </tuv>
     </tu>
     <tu>
@@ -947,6 +966,14 @@ cross-reference is not found by man, try it with L&lt;perldoc&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T223031Z" creationid="ira" creationdate="20130723T222952Z">
         <seg>Некоторая документация не доступна в виде man страниц, так что, если перекрестные ссылки не найдены в мане, то попробуйте их с помощью L&lt;perldoc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Storage for the awk syntax tree is currently static, and can run out.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084314Z" creationid="rdtex1" creationdate="20130725T084314Z">
+        <seg>Память для синтаксического дерева AWK в настоящее время является статической, и может не хватить.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2589,6 +2616,14 @@ considers them arguments to C&lt;print&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051837Z">
         <seg>perlxstypemap	Perl XS C/Perl инструменты преобразования типов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>s2p	sed to perl translator</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084240Z" creationid="rdtex1" creationdate="20130725T084240Z">
+        <seg>s2p	перевод sed в perl</seg>
       </tuv>
     </tu>
     <tu>
