@@ -807,6 +807,15 @@ how many more is left as an exercise to the reader.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The exit statement in awk doesn't necessarily exit; it goes to the END
+block if there is one.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081531Z" creationid="rdtex1" creationdate="20130725T081531Z">
+        <seg>Для выхода из программы не обязательно ставить оператор EXIT, в AWK программа идет до конца блока, если он есть.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The language is intended to be practical (easy to use, efficient,
 complete) rather than beautiful (tiny, elegant, minimal).</seg>
       </tuv>
