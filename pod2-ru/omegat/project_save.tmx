@@ -1854,6 +1854,14 @@ that kind.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There's also a negated version of it:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234730Z" creationid="ira" creationdate="20130725T234730Z">
+        <seg>Здесь даже есть негативная версия этого оператора:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These
 statements are simply written in the script in a straightforward
 fashion.</seg>
