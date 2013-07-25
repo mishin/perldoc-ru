@@ -227,10 +227,30 @@ usually does pretty well.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A2p does not try to do a complete job of awk emulation at this
+point.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064937Z" creationid="rdtex1" creationdate="20130725T064937Z">
+        <seg>A2p не пытается сделать полную работу по эмуляции AWK в этой точке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any delimiter can be used to separate the field names.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T124222Z" creationid="rdtex1" creationdate="20130724T124222Z">
         <seg>Любой разделитель может быть использован для отделения имен полей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Awk
+has one operator for both that decides at run time which comparison to
+do.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064921Z" creationid="rdtex1" creationdate="20130725T064816Z">
+        <seg>Awk
+ имеет один оператор для обеих операций, который решает что делать во время выполнения.</seg>
       </tuv>
     </tu>
     <tu>
