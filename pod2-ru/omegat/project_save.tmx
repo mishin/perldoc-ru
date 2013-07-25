@@ -709,6 +709,15 @@ except when it doesn't.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl starts by
+assuming its equivalent, $#, to have the value %.20g.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082242Z" creationid="rdtex1" creationdate="20130725T082242Z">
+        <seg>Perl начинается, предполагая, что его эквивалент, $# должен иметь значение %.20g.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl was originally a language optimized for scanning arbitrary
 text files, extracting information from those text files, and printing
 reports based on that information.</seg>
