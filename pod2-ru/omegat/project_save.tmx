@@ -277,8 +277,8 @@ always going to be numeric you could change the {...} to [...].</seg>
         <seg>Awk scripts are often embedded in a shell script that pipes stuff into
 and out of awk.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083548Z" creationid="rdtex1" creationdate="20130725T083548Z">
-        <seg>Awk скрипты часто встроены в шелл скрипты, которые трубы вещи в и из AWK.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083707Z" creationid="rdtex1" creationdate="20130725T083548Z">
+        <seg>Awk скрипты часто встроены в шелл скрипты, которые участвую в конвейере (pipe) на входе и выходе из AWK.</seg>
       </tuv>
     </tu>
     <tu>
