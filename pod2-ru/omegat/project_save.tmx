@@ -389,6 +389,15 @@ pragma?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For efficiency, you may wish to remove the keyword from any return
+statement that is the last statement executed in a subroutine.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084035Z" creationid="rdtex1" creationdate="20130725T084035Z">
+        <seg>Для эффективности, вы можете удалить ключевое слово из любого возвращенного выражения, что является последним оператором выполненным в подпрограмме.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, given the statement</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063510Z" creationid="rdtex1" creationdate="20130725T063510Z">
@@ -881,6 +890,15 @@ messages such as "Insecure dependency".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since a2p usually picks
+correctness over efficiency.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083941Z" creationid="rdtex1" creationdate="20130725T083941Z">
+        <seg>С a2p обычно выбирает правильности над эффективностью.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some documentation is not available as man pages, so if a
 cross-reference is not found by man, try it with L&lt;perldoc&gt;.</seg>
       </tuv>
@@ -1174,6 +1192,15 @@ set $# explicitly if you use the default value of OFMT.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231113Z" creationid="ira" creationdate="20130723T231113Z">
         <seg>http://www.perl.org/      домашняя страница Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>it is almost always possible to rewrite
+such code to be more efficient by discarding the semantic sugar.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083958Z" creationid="rdtex1" creationdate="20130725T083958Z">
+        <seg>почти всегда можно переписать такой код, чтобы быть более эффективным путем отбрасывания семантического сахара.</seg>
       </tuv>
     </tu>
     <tu>
