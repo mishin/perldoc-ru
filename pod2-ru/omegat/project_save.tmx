@@ -587,6 +587,16 @@ don't tell anyone I said that.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl does not attempt to emulate the behavior of awk in which
+nonexistent array elements spring into existence simply by being
+referenced.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T072006Z" creationid="rdtex1" creationdate="20130725T072006Z">
+        <seg>Perl не пытается эмулировать поведение AWK, в котором несуществующие элементы массива начинают существовать просто по созданию на них ссылки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl is at the mercy of your machine's definitions of various
 operations such as type casting, atof(), and floating-point
 output with sprintf().</seg>
