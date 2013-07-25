@@ -821,6 +821,15 @@ tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>old awk considers I&lt;extra_args&gt; to be arguments to C&lt;sprintf&gt;; new awk
+considers them arguments to C&lt;print&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063618Z" creationid="rdtex1" creationdate="20130725T063618Z">
+        <seg>Старый awk считает I&lt;extra_args&gt; будут аргументы C&lt;sprintf&gt;; новый awk считает их аргументами C&lt;print&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>perl		Perl overview (this section)</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031602Z">
