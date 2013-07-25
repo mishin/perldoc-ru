@@ -306,6 +306,14 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Scalars</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232430Z" creationid="ira" creationdate="20130725T232430Z">
+        <seg>=item Скаляры</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A
 loop that tries to iterate over ARGV[0] won't find it.</seg>
       </tuv>
@@ -330,6 +338,14 @@ give a warning (like the command-line switch B&lt;-w&gt;) and let your code run.
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231706Z" creationid="ira" creationdate="20130725T231706Z">
         <seg>Perl скрипт или программа состоит из одного или нескольких операторов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A scalar represents a single value:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232441Z" creationid="ira" creationdate="20130725T232441Z">
+        <seg>Скаляр представляет одно значение:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1090,6 +1106,14 @@ referenced.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl has three main variable types: scalars, arrays, and hashes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232422Z" creationid="ira" creationdate="20130725T232422Z">
+        <seg>Perl имеет три основных типа переменных: скаляры, массивы и хэши.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl has two kinds of array, numerically-indexed and associative.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081908Z" creationid="rdtex1" creationdate="20130725T081908Z">
@@ -1197,6 +1221,15 @@ perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031042Z">
         <seg>Запустите С&lt;perldoc perldoc&gt; чтобы узнать больше возможностей, которые вы можете сделать с F&lt;perldoc&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Scalar values can be strings, integers or floating point numbers, and Perl
+will automatically convert between them as required.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232457Z" creationid="ira" creationdate="20130725T232457Z">
+        <seg>Скалярные значения могут быть строки, целые числа или числа с плавающей точкой, а также Perl автоматически преобразует между ними по мере необходимости.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1431,6 +1464,16 @@ integer anyway.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064454Z" creationid="rdtex1" creationdate="20130725T064454Z">
         <seg>Существует идиома awk ставить int()  вокруг строкового выражения, чтобы сделать преобразование к числу, хотя аргумент всегда целое так или иначе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is no need
+to pre-declare your variable types, but you have to declare them using
+the C&lt;my&gt; keyword the first time you use them.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232520Z" creationid="ira" creationdate="20130725T232520Z">
+        <seg>Там нет необходимости предварительно объявить переменную типа, но вы должны объявить их с помощью C&lt;my&gt; Ключевое слово в первый раз вы их используете.</seg>
       </tuv>
     </tu>
     <tu>
