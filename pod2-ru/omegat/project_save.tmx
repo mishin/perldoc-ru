@@ -949,6 +949,14 @@ affected by wraparound).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More detailed information about Perl syntax can be found in L&lt;perlsyn&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232353Z" creationid="ira" creationdate="20130725T232353Z">
+        <seg>Более подробные сведения о синтаксисе Perl можно найти в L&lt;perlsyn&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Near the top of the line loop will be the split operation that is
 implicit in the awk script.</seg>
       </tuv>
