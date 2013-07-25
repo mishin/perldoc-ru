@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+п»ї#!/usr/bin/env perl
 #
 # Copy files from Perl distribution to source/ directory in OmegaT project.
 #
@@ -6,9 +6,9 @@ use v5.12;
 use autodie;
 use File::Copy;
 
-#дело в том, что перед переводом perl.pod
-#их нужно предварительно обработать, например добавить в начало utf8
-#или это в скрипте postprocess.pl, похоже
+#РґРµР»Рѕ РІ С‚РѕРј, С‡С‚Рѕ РїРµСЂРµРґ РїРµСЂРµРІРѕРґРѕРј perl.pod
+#РёС… РЅСѓР¶РЅРѕ РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ, РЅР°РїСЂРёРјРµСЂ РґРѕР±Р°РІРёС‚СЊ РІ РЅР°С‡Р°Р»Рѕ utf8
+#РёР»Рё СЌС‚Рѕ РІ СЃРєСЂРёРїС‚Рµ postprocess.pl, РїРѕС…РѕР¶Рµ
 ### Configuration ###
 my $SOURCE_DIR = '/home/explorer/perl5/perlbrew/build/perl-5.16.2';	# Distribution directory
 my $TARGET_DIR = '/home/explorer/perlspanish/source';			# source/ OmegaT directory
