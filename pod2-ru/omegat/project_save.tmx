@@ -38,6 +38,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># the Perlish post-condition way</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234934Z" creationid="ira" creationdate="20130725T234934Z">
+        <seg># Perlish постусловный путь</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># the traditional way</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234917Z" creationid="ira" creationdate="20130725T234917Z">
+        <seg># Традиционным способом</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># this would print with a linebreak in the middle</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232032Z" creationid="ira" creationdate="20130725T232032Z">
