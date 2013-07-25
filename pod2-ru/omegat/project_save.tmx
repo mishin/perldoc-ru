@@ -461,6 +461,16 @@ comment "C&lt;#???&gt;".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As it happens, using C&lt;@array&gt; where Perl
+expects to find a scalar value ("in scalar context") will give you the number
+of elements in the array:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233223Z" creationid="ira" creationdate="20130725T233223Z">
+        <seg>Как это происходит, используя C&lt;@array&gt;, где Perl ожидает найти скалярное значение ("в скалярном контексте") даст вам количество элементов в массиве:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Awk
 has one operator for both that decides at run time which comparison to
 do.</seg>
@@ -621,6 +631,14 @@ a period of several decades.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T225652Z" creationid="ira" creationdate="20130725T225652Z">
         <seg>Нельзя не отметить, что примеры были написаны многими разными авторами в течение нескольких десятилетий.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don't bother.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233157Z" creationid="ira" creationdate="20130725T233157Z">
+        <seg>Не беспокойтесь.</seg>
       </tuv>
     </tu>
     <tu>
