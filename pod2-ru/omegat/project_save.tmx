@@ -898,6 +898,24 @@ tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You might
+want to run at least once with the B&lt;-w&gt; switch to perl, which will
+warn you if you use == where you should have used eq.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T071824Z" creationid="rdtex1" creationdate="20130725T071824Z">
+        <seg>Возможно, вы захотите запустить по крайней мере один раз с B&lt;-w&gt; опцией to perl, которая предупредит вас если вы используете == where you should have used eq.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You should go through and check them.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T071714Z" creationid="rdtex1" creationdate="20130725T071714Z">
+        <seg>Вы должны пройти через них и проверить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a2p - Awk to Perl translator</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122159Z" creationid="rdtex1" creationdate="20130724T122159Z">
