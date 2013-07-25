@@ -218,6 +218,15 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A2p cannot do as good a job translating as a human would, but it
+usually does pretty well.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063722Z" creationid="rdtex1" creationdate="20130725T063722Z">
+        <seg>A2p  не как хорошо работу перевод как бы человека, но он обычно делает довольно хорошо.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any delimiter can be used to separate the field names.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T124222Z" creationid="rdtex1" creationdate="20130724T124222Z">
