@@ -836,8 +836,8 @@ characters such as newlines (C&lt;\n&gt;):</seg>
         <seg>However, the above usage will create global variables throughout your
 program, which is bad programming practice.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234118Z" creationid="ira" creationdate="20130725T234118Z">
-        <seg>Однако, указанное использование будет создавать глобальные переменные на протяжении всей программы, которая является плохой практикой программирования.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234139Z" creationid="ira" creationdate="20130725T234118Z">
+        <seg>Однако, указанное использование будет создавать глобальные переменные на протяжении всей программы и это является плохой практикой программирования.</seg>
       </tuv>
     </tu>
     <tu>
