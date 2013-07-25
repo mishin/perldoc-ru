@@ -772,6 +772,15 @@ worth writing about.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hashes have no particular internal order, though you can sort the keys
+and loop through them.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233728Z" creationid="ira" creationdate="20130725T233728Z">
+        <seg>Хэш не имеют особого внутреннего порядка, хотя вы можете отсортировать ключи и делать через них циклы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here are some of
 them, in no particular order.</seg>
       </tuv>
