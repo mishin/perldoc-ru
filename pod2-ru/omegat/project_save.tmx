@@ -1891,6 +1891,15 @@ directly the path to your perl executable, like in C&lt;#!/usr/bin/perl&gt;).</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can get at lists of keys and values with C&lt;keys()&gt; and
+C&lt;values()&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233642Z" creationid="ira" creationdate="20130725T233642Z">
+        <seg>Вы можете получить в списки ключей и значений с C&lt;keys()&gt; и C&lt;values()&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can get more documentation, tutorials and community support
 online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
