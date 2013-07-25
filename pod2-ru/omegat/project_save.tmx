@@ -1685,8 +1685,8 @@ cross-reference is not found by man, try it with L&lt;perldoc&gt;.</seg>
         <seg>Some of the ones
 we've already seen include C&lt;print&gt;, C&lt;sort&gt; and C&lt;reverse&gt;.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235516Z" creationid="ira" creationdate="20130725T235516Z">
-        <seg>Некоторые из них мы уже видели включают C&lt;print&gt;, C&lt;sort&gt; and C&lt;reverse&gt;.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235534Z" creationid="ira" creationdate="20130725T235516Z">
+        <seg>Некоторые из них, которые мы уже видели, включают C&lt;print&gt;, C&lt;sort&gt; and C&lt;reverse&gt;.</seg>
       </tuv>
     </tu>
     <tu>
