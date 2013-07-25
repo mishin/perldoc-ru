@@ -2261,6 +2261,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>if ( condition ) {</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234658Z" creationid="ira" creationdate="20130725T234658Z">
+        <seg>if ( условие ) {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>it is almost always possible to rewrite
 such code to be more efficient by discarding the semantic sugar.</seg>
       </tuv>
@@ -3766,6 +3774,14 @@ switch.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232054Z" creationid="ira" creationdate="20130725T232054Z">
         <seg>мир";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>} elsif ( other condition ) {</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234705Z" creationid="ira" creationdate="20130725T234705Z">
+        <seg>} elsif ( другое условие ) {</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
