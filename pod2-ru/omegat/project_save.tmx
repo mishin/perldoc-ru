@@ -1242,8 +1242,8 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
         <seg>You can read that documentation using the C&lt;perldoc&gt;
 command or whatever method you're using to read this document.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T224221Z" creationid="ira" creationdate="20130725T224221Z">
-        <seg>Вы можете прочитать эту документацию с помощью C&lt;perldoc&gt; команды или любой метод вы используете для чтения этого документа.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T224329Z" creationid="ira" creationdate="20130725T224221Z">
+        <seg>Вы можете прочитать эту документацию с помощью команды C&lt;perldoc&gt; или любым другим методом, который вы используете для чтения этого документа.</seg>
       </tuv>
     </tu>
     <tu>
