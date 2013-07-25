@@ -1462,6 +1462,16 @@ how many more is left as an exercise to the reader.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The elements we're getting from the array start with a C&lt;$&gt; because
+we're getting just a single value out of the array; you ask for a scalar,
+you get a scalar.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233342Z" creationid="ira" creationdate="20130725T233342Z">
+        <seg>Элементы, которые мы получаем из массива начинаются с C&lt;$&gt;, потому что мы получаем только одно значение из массива, вы спросите запрашиваете в скалярном контексте и таким образом получаете скаляр.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The exit statement in awk doesn't necessarily exit; it goes to the END
 block if there is one.</seg>
       </tuv>
