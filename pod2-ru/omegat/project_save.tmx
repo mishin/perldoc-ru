@@ -533,6 +533,14 @@ don't tell anyone I said that.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl differentiates numeric comparison from string comparison.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064724Z" creationid="rdtex1" creationdate="20130725T064724Z">
+        <seg>Perl отличает числовое сравнение от сравнения строк.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl is at the mercy of your machine's definitions of various
 operations such as type casting, atof(), and floating-point
 output with sprintf().</seg>
