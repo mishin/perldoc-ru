@@ -1714,6 +1714,16 @@ problems in your code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The variables are scoped to the block
+(i.e. a bunch of statements surrounded by curly-braces) in which they
+are defined.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234218Z" creationid="ira" creationdate="20130725T234218Z">
+        <seg>Переменные находятся в области видимости блока (то есть куча операторов, заключенная в фигурные скобки), в котором они определены.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are a couple of special arrays too, such as C&lt;@ARGV&gt; (the command
 line arguments to your script) and C&lt;@_&gt; (the arguments passed to a
 subroutine).</seg>
@@ -3584,6 +3594,22 @@ considers them arguments to C&lt;print&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233125Z" creationid="ira" creationdate="20130725T233125Z">
         <seg>print $mixed[$#mixed];       # последний элемент, печатает 1.23</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>print $x;               # prints "foo"</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234228Z" creationid="ira" creationdate="20130725T234228Z">
+        <seg>print $x;               # печатает "foo"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>print $y;               # prints nothing; $y has fallen out of scope</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234258Z" creationid="ira" creationdate="20130725T234258Z">
+        <seg>print $y;               # ничего не печатает; $y выпал из сферы видимости переменной</seg>
       </tuv>
     </tu>
     <tu>
