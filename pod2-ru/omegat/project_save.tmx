@@ -731,6 +731,15 @@ Impatience, and Hubris.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are some areas where you may want to
+examine the perl script produced and tweak it some.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063920Z" creationid="rdtex1" creationdate="20130725T063920Z">
+        <seg>Есть некоторые области, где вы можете изучать perl-скрипт, который создает программа и донастроить его при необходимости.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These will often point out exactly
 where the trouble is.</seg>
       </tuv>
