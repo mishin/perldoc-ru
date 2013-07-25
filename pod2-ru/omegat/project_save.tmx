@@ -221,8 +221,8 @@ and syswrite().)</seg>
         <seg>A2p cannot do as good a job translating as a human would, but it
 usually does pretty well.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063722Z" creationid="rdtex1" creationdate="20130725T063722Z">
-        <seg>A2p  не как хорошо работу перевод как бы человека, но он обычно делает довольно хорошо.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063824Z" creationid="rdtex1" creationdate="20130725T063722Z">
+        <seg>A2p  не может делать работу по переводу так же хорошо, как человек, но он обычно делает  свою работу довольно хорошо.</seg>
       </tuv>
     </tu>
     <tu>
