@@ -19,13 +19,7 @@ my $POD_FAQS_DIR = catdir( $SOURCE_DIR, 'lib' );
 
 my $TARGET_DIR = 'c:\Users\ira\Documents\GitHub\perldoc-ru\pod2-ru\source\pods'
   ;    # source/ OmegaT directory
-my @EXCEPTIONS = qw(
-  README.cn
-  README.ko
-  README.jp
-  README.tw
-  perltoc.pod
-);
+
 #####################
 
 ### Check ###
