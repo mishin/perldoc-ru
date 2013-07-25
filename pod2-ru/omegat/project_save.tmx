@@ -1644,6 +1644,14 @@ fashion.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These are documented in L&lt;perlvar&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233527Z" creationid="ira" creationdate="20130725T233527Z">
+        <seg>Они описаны в L&lt;perlvar&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These examples often reflect the style and preference of the author of
 that piece of the documentation, and may be briefer than a corresponding
 line of code in a real program.</seg>
