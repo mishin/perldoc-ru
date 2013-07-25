@@ -768,6 +768,16 @@ where the trouble is.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is generally unneeded in perl, but a2p can't
+tell if the argument is always going to be integer, so it leaves it
+in.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064516Z" creationid="rdtex1" creationdate="20130725T064516Z">
+        <seg>Это, как правило, ненужные в Perl, но a2p не могу сказать, если аргумент всегда будет целое, так что он оставляет его дюйма.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Those libraries, collected in the CPAN,
 provide ready-made solutions to an astounding array of problems.</seg>
       </tuv>
