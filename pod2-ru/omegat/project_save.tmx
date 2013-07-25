@@ -1533,6 +1533,15 @@ line of code in a real program.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These special variables are used for all
+kinds of purposes, and are documented in L&lt;perlvar&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232735Z" creationid="ira" creationdate="20130725T232735Z">
+        <seg>Эти переменные используются для всех видов целей, и документированы в L&lt;perlvar&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These will often point out exactly
 where the trouble is.</seg>
       </tuv>
