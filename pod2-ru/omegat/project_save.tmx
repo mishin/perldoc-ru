@@ -2502,6 +2502,22 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>eq  equality</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235859Z" creationid="ira" creationdate="20130725T235859Z">
+        <seg>eq  равенство</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>gt  greater than</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235920Z" creationid="ira" creationdate="20130725T235920Z">
+        <seg>gt  больше</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>http://www.cpan.org/       the Comprehensive Perl Archive</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231211Z" creationid="ira" creationdate="20130723T231211Z">
@@ -2539,6 +2555,22 @@ such code to be more efficient by discarding the semantic sugar.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083958Z" creationid="rdtex1" creationdate="20130725T083958Z">
         <seg>почти всегда можно переписать такой код, чтобы быть более эффективным путем отбрасывания семантического сахара.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>lt  less than</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235914Z" creationid="ira" creationdate="20130725T235914Z">
+        <seg>lt  меньше</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ne  inequality</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235908Z" creationid="ira" creationdate="20130725T235908Z">
+        <seg>ne  неравенство</seg>
       </tuv>
     </tu>
     <tu>
