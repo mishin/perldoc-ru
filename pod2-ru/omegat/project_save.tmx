@@ -2163,6 +2163,14 @@ directly the path to your perl executable, like in C&lt;#!/usr/bin/perl&gt;).</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also use C&lt;while&gt; in a post-condition:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235102Z" creationid="ira" creationdate="20130725T235102Z">
+        <seg>Вы также можете использовать C&lt;while&gt; в пост-условии:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can do various useful things to lists:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233448Z" creationid="ira" creationdate="20130725T233448Z">
