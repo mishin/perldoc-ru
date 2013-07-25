@@ -1660,6 +1660,14 @@ how many more is left as an exercise to the reader.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The conditions can be any Perl expression.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234625Z" creationid="ira" creationdate="20130725T234625Z">
+        <seg>Условием может быть любое Perl выражение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The elements we're getting from the array start with a C&lt;$&gt; because
 we're getting just a single value out of the array; you ask for a scalar,
 you get a scalar.</seg>
