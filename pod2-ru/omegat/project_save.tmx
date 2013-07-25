@@ -1045,6 +1045,15 @@ over such an array.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You'll want to
+set $# explicitly if you use the default value of OFMT.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082308Z" creationid="rdtex1" creationdate="20130725T082308Z">
+        <seg>Вы хотите, чтобы установить $ # явно, если вы используете значение по умолчанию OFMT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a2p - Awk to Perl translator</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122159Z" creationid="rdtex1" creationdate="20130724T122159Z">
