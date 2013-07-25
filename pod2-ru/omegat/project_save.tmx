@@ -1407,6 +1407,15 @@ in L&lt;perltoc&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also put
+directly the path to your perl executable, like in C&lt;#!/usr/bin/perl&gt;).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231001Z" creationid="ira" creationdate="20130725T231001Z">
+        <seg>Вы также можете поместить непосредственно путь к исполняемому файлу perl, например, C&lt;#!/usr/bin/perl&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can get more documentation, tutorials and community support
 online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
