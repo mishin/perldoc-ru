@@ -3263,6 +3263,22 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>print $animals[0];              # prints "camel"</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233049Z" creationid="ira" creationdate="20130725T233049Z">
+        <seg>print $animals[0];              # печатает "camel"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>print $animals[1];              # prints "llama"</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233052Z" creationid="ira" creationdate="20130725T233052Z">
+        <seg>print $animals[1];              # печатает "llama"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>print 'Hello, $name\n';     # prints $name\n literally</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232248Z" creationid="ira" creationdate="20130725T232248Z">
