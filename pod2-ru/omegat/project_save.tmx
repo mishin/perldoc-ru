@@ -274,6 +274,15 @@ always going to be numeric you could change the {...} to [...].</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Awk scripts are often embedded in a shell script that pipes stuff into
+and out of awk.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083548Z" creationid="rdtex1" creationdate="20130725T083548Z">
+        <seg>Awk скрипты часто встроены в шелл скрипты, которые трубы вещи в и из AWK.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Awk scripts that do contortions within the END
 block to bypass the block under such circumstances can be simplified
 by removing the conditional in the END block and just exiting directly
