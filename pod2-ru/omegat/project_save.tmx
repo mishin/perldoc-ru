@@ -1552,6 +1552,16 @@ for a listing.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See the list of operators in
+the next section for information on comparison and boolean logic operators,
+which are commonly used in conditional statements.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234647Z" creationid="ira" creationdate="20130725T234647Z">
+        <seg>См. список операторов в следующем разделе для получения информации о сравнениях и логических операторах, которые обычно используются в условных операторах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Setuid scripts have additional constraints that can produce error
 messages such as "Insecure dependency".</seg>
       </tuv>
