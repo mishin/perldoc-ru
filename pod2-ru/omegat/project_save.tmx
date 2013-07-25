@@ -14,6 +14,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># This is a comment</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231931Z" creationid="ira" creationdate="20130725T231931Z">
+        <seg># Это комментарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># This section is parsed by Porting/pod_lib.pl for use by pod/buildtoc etc</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T210746Z">
@@ -475,8 +483,8 @@ guesses right.</seg>
       <tuv lang="EN-US">
         <seg>Comments start with a hash symbol and run to the end of the line</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231920Z" creationid="ira" creationdate="20130725T231908Z">
-        <seg>Комментарии начинаются с хэш-символа  '#' и продолжаются до конца строки</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231927Z" creationid="ira" creationdate="20130725T231908Z">
+        <seg>Комментарии начинаются с хэш-символа '#' и продолжаются до конца строки</seg>
       </tuv>
     </tu>
     <tu>
@@ -1514,6 +1522,14 @@ given variable name may not be longer than 251 characters.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T232627Z" creationid="ira" creationdate="20130723T232601Z">
         <seg>Хотя ни один из встроенных типов данных не имеет любые произвольные ограничения на размер (кроме памяти), есть еще несколько произвольных ограничений: данное имя переменной не может быть длиннее 251 символов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whitespace is irrelevant:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231938Z" creationid="ira" creationdate="20130725T231938Z">
+        <seg>Пробелы не имеют значения:</seg>
       </tuv>
     </tu>
     <tu>
