@@ -1265,6 +1265,14 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>perl	The perl compiler/interpreter</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084219Z" creationid="rdtex1" creationdate="20130725T084219Z">
+        <seg>perl	The perl компилятор/интерпретатор</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>perl - The Perl 5 language interpreter</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T025053Z">
