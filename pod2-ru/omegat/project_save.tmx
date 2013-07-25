@@ -749,6 +749,18 @@ language for the long haul on major projects, whatever your bent.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Its major
+features are that it's easy to use, supports both procedural and
+object-oriented (OO) programming, has powerful built-in support for text
+processing, and has one of the world's most impressive collections of
+third-party modules.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230355Z" creationid="ira" creationdate="20130725T230355Z">
+        <seg>Основными функциями языка являются то, что он прост в использовании, поддерживает процедурные и объектно-ориентированных (ОО) парадигмы программирования, имеет мощную встроенную поддержку для обработки текста, и имеет одну из самых впечатляющих в мире коллекций сторонних модулей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Larry Wall &lt;larry@wall.org&gt;, with the help of oodles of other folks.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230911Z" creationid="ira" creationdate="20130723T230911Z">
