@@ -439,8 +439,8 @@ affected by wraparound).</seg>
         <seg>Old awk always has a line loop, even if there are no line
 actions, whereas new awk does not.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T140649Z" creationid="rdtex1" creationdate="20130724T140649Z">
-        <seg>Старый AWK всегда имеет шлейф, даже если нет никаких действий линию, в то время как новые AWK нет.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063402Z" creationid="rdtex1" creationdate="20130724T140649Z">
+        <seg>Старый AWK всегда имеет цикл по строкам, даже если нет никаких действий, в то время как новый AWK нет.</seg>
       </tuv>
     </tu>
     <tu>
