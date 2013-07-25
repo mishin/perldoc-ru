@@ -46,6 +46,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$fruit_color{"apple"};           # gives "red"</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233628Z" creationid="ira" creationdate="20130725T233628Z">
+        <seg>$fruit_color{"apple"};           # дает "red"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(In a script passed to Perl via B&lt;-e&gt; switches, each
 B&lt;-e&gt; is counted as one line.)</seg>
       </tuv>
@@ -1780,6 +1788,14 @@ Perl documentation.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T224159Z" creationid="ira" creationdate="20130725T224159Z">
         <seg>В этом документе вы увидите ссылки на другие части документации Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To get at hash elements:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233624Z" creationid="ira" creationdate="20130725T233624Z">
+        <seg>Чтобы добраться до элементов хеша:</seg>
       </tuv>
     </tu>
     <tu>
