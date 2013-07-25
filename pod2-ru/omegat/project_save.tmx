@@ -636,6 +636,16 @@ implicit in the awk script.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Often the shell script wrapper can be incorporated
+into the perl script, since perl can start up pipes into and out of
+itself, and can do other things that awk can't do by itself.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083759Z" creationid="rdtex1" creationdate="20130725T083759Z">
+        <seg>Часто обертка скрипта может быть включена в сценарий Perl, так как Perl может начаться до конвейера (pipe - "|" ) в и из себя, и делать другие вещи, которые AWK не может сделать сам по себе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Old awk always has a line loop, even if there are no line
 actions, whereas new awk does not.</seg>
       </tuv>
