@@ -515,6 +515,16 @@ statement that is the last statement executed in a subroutine.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>From this we can determine that Perl is different
+things to different people, but that lots of people think it's at least
+worth writing about.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230555Z" creationid="ira" creationdate="20130725T230555Z">
+        <seg>Из этого мы можем определить, что Perl предоставляет разные возможности для разных людей, но, что многие люди думают, что об этом по крайней мере стоит писать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here are some of
 them, in no particular order.</seg>
       </tuv>
