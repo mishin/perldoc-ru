@@ -1420,6 +1420,15 @@ Perl documentation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To read more about them check their respective manual pages at L&lt;strict&gt;
+and L&lt;warnings&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231627Z" creationid="ira" creationdate="20130725T231627Z">
+        <seg>Чтобы узнать больше об этом - посмотрите соответствующие страницы руководства на L&lt;strict&gt; и L&lt;warnings&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To run a Perl program from the Unix command line:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230625Z" creationid="ira" creationdate="20130725T230625Z">
