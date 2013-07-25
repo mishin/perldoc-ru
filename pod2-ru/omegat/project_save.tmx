@@ -3288,6 +3288,14 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>print $mixed[$#mixed];       # last element, prints 1.23</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233125Z" creationid="ira" creationdate="20130725T233125Z">
+        <seg>print $mixed[$#mixed];       # последний элемент, печатает 1.23</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>print 'Hello, $name\n';     # prints $name\n literally</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232248Z" creationid="ira" creationdate="20130725T232248Z">
