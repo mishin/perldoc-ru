@@ -961,6 +961,15 @@ complete) rather than beautiful (tiny, elegant, minimal).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The produced perl script may have subroutines defined to deal with
+awk's semantics regarding getline and print.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083912Z" creationid="rdtex1" creationdate="20130725T083912Z">
+        <seg>Полученный Perl скрипт может иметь подпрограммы, которые определены иметь дело с семантикой AWK относительно GetLine и печать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The three principal virtues of a programmer are Laziness,
 Impatience, and Hubris.</seg>
       </tuv>
