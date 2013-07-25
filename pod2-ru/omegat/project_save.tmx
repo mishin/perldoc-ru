@@ -836,6 +836,14 @@ tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You may wish to remove it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064705Z" creationid="rdtex1" creationdate="20130725T064705Z">
+        <seg>Вы можете удалить его.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a2p - Awk to Perl translator</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122159Z" creationid="rdtex1" creationdate="20130724T122159Z">
