@@ -690,6 +690,15 @@ B&lt;use strict&gt; и B&lt;use warnings&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In order to make it more robust
+it is recommended to start every program with the following lines:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231115Z" creationid="ira" creationdate="20130725T231115Z">
+        <seg>Для того, чтобы сделать его более надежным, рекомендуется начинать каждый программу со следующих строк:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In some cases perfection has been
 sacrificed in the goal of getting the general idea across.</seg>
       </tuv>
