@@ -66,6 +66,15 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(This is one of the
+requirements of C&lt;use strict;&gt;.)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232639Z" creationid="ira" creationdate="20130725T232639Z">
+        <seg>(Это одно из требований C&lt;use strict;&gt; ).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(This start line assumes you have the B&lt;env&gt; program.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230905Z" creationid="ira" creationdate="20130725T230905Z">
