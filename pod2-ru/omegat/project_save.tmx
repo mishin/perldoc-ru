@@ -433,6 +433,15 @@ pragma?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Different definitions of Perl are given in L&lt;perl&gt;, L&lt;perlfaq1&gt; and
+no doubt other places.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230424Z" creationid="ira" creationdate="20130725T230424Z">
+        <seg>Различные определения Perl приведены в L&lt;perl&gt;, L&lt;perlfaq1&gt; не и несомненно в других местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do not consider one style to be better than others - "There's
 More Than One Way To Do It" is one of Perl's mottos.</seg>
       </tuv>
