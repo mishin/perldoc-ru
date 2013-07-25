@@ -568,6 +568,14 @@ a period of several decades.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Double quotes or single quotes may be used around literal strings:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232109Z" creationid="ira" creationdate="20130725T232109Z">
+        <seg>Двойные или одинарные кавычки могут быть использованы вокруг символьных строк:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Except where otherwise noted, you
 should assume that C&lt;use strict&gt; and C&lt;use warnings&gt; statements
 appear earlier in the "program", and that any variables used have
@@ -646,6 +654,15 @@ them, in no particular order.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064258Z" creationid="rdtex1" creationdate="20130725T064254Z">
         <seg>Вот некоторые из них, без особого порядка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, only double quotes "interpolate" variables and special
+characters such as newlines (C&lt;\n&gt;):</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232204Z" creationid="ira" creationdate="20130725T232204Z">
+        <seg>Однако, только двойные кавычки "интерполируют" переменные и специальные символы, такие как символы новой строки (C&lt;\n&gt;):</seg>
       </tuv>
     </tu>
     <tu>
@@ -3052,6 +3069,30 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>print "Hello</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232046Z" creationid="ira" creationdate="20130725T232046Z">
+        <seg>print "Привет</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>print "Hello, world";</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232129Z" creationid="ira" creationdate="20130725T232129Z">
+        <seg>print "Привет, мир";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>print 'Hello, world';</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232139Z" creationid="ira" creationdate="20130725T232139Z">
+        <seg>print 'Привет, мир';</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>s2p	sed to perl translator</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084240Z" creationid="rdtex1" creationdate="20130725T084240Z">
@@ -3091,6 +3132,14 @@ switch.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T134531Z" creationid="rdtex1" creationdate="20130724T134531Z">
         <seg>вызовите a2p для использования старого поведения awk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>world";</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232054Z" creationid="ira" creationdate="20130725T232054Z">
+        <seg>мир";</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
