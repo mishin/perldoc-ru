@@ -42,6 +42,14 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>... and run the script as F&lt;/path/to/script.pl&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230732Z" creationid="ira" creationdate="20130725T230732Z">
+        <seg>... и запустить скрипт как F&lt;/path/to/script.pl&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head1 AUTHOR</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230843Z" creationid="ira" creationdate="20130723T230843Z">
@@ -301,6 +309,14 @@ comment "C&lt;#???&gt;".</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T065208Z" creationid="rdtex1" creationdate="20130725T065208Z">
         <seg>Все эти домыслы, помечены комментарием "C&lt;#???&gt;".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternatively, put this as the first line of your script:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230716Z" creationid="ira" creationdate="20130725T230716Z">
+        <seg>Кроме того, вставьте это в первую строку вашего скрипта:</seg>
       </tuv>
     </tu>
     <tu>
@@ -824,6 +840,15 @@ implicit in the awk script.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Of course, it'll need
+to be executable first, so C&lt;chmod 755 script.pl&gt; (under Unix).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230810Z" creationid="ira" creationdate="20130725T230810Z">
+        <seg>Конечно файлу нужно дать права на исполнение, поэтому C&lt;chmod 755 script.pl&gt; (under Unix).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Often the shell script wrapper can be incorporated
 into the perl script, since perl can start up pipes into and out of
 itself, and can do other things that awk can't do by itself.</seg>
@@ -1321,6 +1346,14 @@ Perl documentation.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T224159Z" creationid="ira" creationdate="20130725T224159Z">
         <seg>В этом документе вы увидите ссылки на другие части документации Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To run a Perl program from the Unix command line:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230625Z" creationid="ira" creationdate="20130725T230625Z">
+        <seg>Чтобы запустить программу Perl из командной строки Unix:</seg>
       </tuv>
     </tu>
     <tu>
