@@ -927,8 +927,8 @@ examine the perl script produced and tweak it some.</seg>
 down past some conditionals that test the entire record so that the
 split is not done as often.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082520Z" creationid="rdtex1" creationdate="20130725T082520Z">
-        <seg>Есть моменты, когда вы можете двигаться вниз мимо этого некоторые условные, которые проверяют всю запись так, что раскол не будет сделано, как часто.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083225Z" creationid="rdtex1" creationdate="20130725T082520Z">
+        <seg>Есть моменты, когда вы можете двигаться вниз после некоторых условий, которые проверяют всю запись так, что разбиения не будет сделано, как обычно.</seg>
       </tuv>
     </tu>
     <tu>
