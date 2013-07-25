@@ -1071,6 +1071,14 @@ third-party modules.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Just like special scalars and arrays, there are also special hashes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233742Z" creationid="ira" creationdate="20130725T233742Z">
+        <seg>Так же, как специальные скаляры и массивы, существуют также специальные хэши.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Larry Wall &lt;larry@wall.org&gt;, with the help of oodles of other folks.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230911Z" creationid="ira" creationdate="20130723T230911Z">
@@ -1543,6 +1551,15 @@ complete) rather than beautiful (tiny, elegant, minimal).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T224334Z" creationid="ira" creationdate="20130723T224133Z">
         <seg>Язык больше предназначен для практических (простота в использовании, эффективность, полнота), чем для красивых решений (крошечность, элегантность, минимализм).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most well known of these is C&lt;%ENV&gt; which contains environment
+variables.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233755Z" creationid="ira" creationdate="20130725T233755Z">
+        <seg>Наиболее известным из них является C&lt;%ENV&gt;, который содержит переменные окружения.</seg>
       </tuv>
     </tu>
     <tu>
