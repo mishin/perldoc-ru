@@ -1243,6 +1243,14 @@ will automatically convert between them as required.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Scalar values can be used in various ways:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232649Z" creationid="ira" creationdate="20130725T232649Z">
+        <seg>Скалярные значения могут быть использованы в различных формах:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Scripts that refer to the special variables RSTART and RLENGTH can
 often be simplified by referring to the variables $`, $&amp; and $', as
 long as they are within the scope of the pattern match that sets them.</seg>
