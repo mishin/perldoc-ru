@@ -637,6 +637,15 @@ guesses right.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>C&lt;my&gt; creates lexically
+scoped variables instead.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234201Z" creationid="ira" creationdate="20130725T234201Z">
+        <seg>C&lt;my&gt; создает вместо этого лексическую область видимости переменных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Comments start with a hash symbol and run to the end of the line</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231927Z" creationid="ira" creationdate="20130725T231908Z">
