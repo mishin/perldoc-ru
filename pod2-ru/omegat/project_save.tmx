@@ -544,6 +544,15 @@ from quick "one-liners" to full-scale application development.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Iteration over a hash is done using the keys() function, but iteration
+over an array is NOT.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082133Z" creationid="rdtex1" creationdate="20130725T082133Z">
+        <seg>Перебор хэша может быть с помощью комбинации функции keys(), но это не подходит для перебора массива.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Its general-purpose
 programming facilities support procedural, functional, and
 object-oriented programming paradigms, making Perl a comfortable
