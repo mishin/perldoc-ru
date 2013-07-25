@@ -2,180 +2,124 @@
 
 =head1 Имя
 
-a2p - Awk to Perl translator
+a2p - преобразование кода Awk в Perl
 
 =head1 СИНТАКСИС
 
-B<a2p> [I<options>] [I<filename>]
+B<a2p> [I<опции>] [I<имя файла>]
 
 =head1 ОПИСАНИЕ
 
-I<A2p> takes an awk script specified on the command line (or from
-standard input) and produces a comparable I<perl> script on the
-standard output.
+I<A2p> принимает AWK скрипт, указанный в командной строке (или со стандартного ввода) и производит сравнимых I<perl> скрипт   стандартный вывод.
 
-=head2 OPTIONS
+=head2 Параметры
 
-Options include:
+Параметры включают в себя:
 
 =over 5
 
 =item B<-DE<lt>numberE<gt>>
 
-sets debugging flags.
+устанавливает флаги отладки.
 
 =item B<-FE<lt>characterE<gt>>
 
-tells a2p that this awk script is always invoked with this B<-F>
-switch.
+говорит a2p то этот сценарий AWK всегда вызывается с этой B<-F>
+опцией.
 
 =item B<-nE<lt>fieldlistE<gt>>
 
-specifies the names of the input fields if input does not have to be
-split into an array.  If you were translating an awk script that
-processes the password file, you might say:
+указывает имена полей ввода, если ввод не должен быть разделен на массив.  Если вы переводите сценарий AWK, который обрабатывает файл пароля, вы можете сказать:
 
 	a2p -7 -nlogin.password.uid.gid.gcos.shell.home
 
-Any delimiter can be used to separate the field names.
+Любой разделитель может быть использован для отделения имен полей.
 
 =item B<-E<lt>numberE<gt>>
 
-causes a2p to assume that input will always have that many fields.
+вызов a2p предполагает, что входящие данные будут всегда содержать много полей.
 
 =item B<-o>
 
-tells a2p to use old awk behavior.  The only current differences are:
+вызовите a2p для использования старого поведения awk.  Только текущей отличия:
 
 =over 5
 
 =item *
 
-Old awk always has a line loop, even if there are no line
-actions, whereas new awk does not.
+Старый AWK всегда имеет цикл по строкам, даже если нет никаких действий, в то время как новый AWK нет.
 
 =item *
 
-In old awk, sprintf is extremely greedy about its arguments.
-For example, given the statement
+В старых awk sprintf является очень жадным в своих аргументав.
+Например, возьмем выражение
 
 	print sprintf(some_args), extra_args;
 
-old awk considers I<extra_args> to be arguments to C<sprintf>; new awk
-considers them arguments to C<print>.
+Старый awk считает I<extra_args> будут аргументы C<sprintf>; новый awk считает их аргументами C<print>.
 
 =back
 
 =back
 
-=head2 "Considerations"
+=head2 "Соображения"
 
-A2p cannot do as good a job translating as a human would, but it
-usually does pretty well.  There are some areas where you may want to
-examine the perl script produced and tweak it some.  Here are some of
-them, in no particular order.
+A2p  не может делать работу по переводу так же хорошо, как человек, но он обычно делает  свою работу довольно хорошо.  Есть некоторые области, где вы можете изучать perl-скрипт, который создает программа и донастроить его при необходимости.  Вот некоторые из них, без особого порядка.
 
-There is an awk idiom of putting int() around a string expression to
-force numeric interpretation, even though the argument is always
-integer anyway.  This is generally unneeded in perl, but a2p can't
-tell if the argument is always going to be integer, so it leaves it
-in.  You may wish to remove it.
+Существует идиома awk ставить int()  вокруг строкового выражения, чтобы сделать преобразование к числу, хотя аргумент всегда целое так или иначе.  Это, как правило, не нужно в Perl, но a2p не может сказать, если аргумент всегда будет целое, то он оставляет его целым.  Вы можете удалить его.
 
-Perl differentiates numeric comparison from string comparison.  Awk
-has one operator for both that decides at run time which comparison to
-do.  A2p does not try to do a complete job of awk emulation at this
-point.  Instead it guesses which one you want.  It's almost always
-right, but it can be spoofed.  All such guesses are marked with the
-comment "C<#???>".  You should go through and check them.  You might
-want to run at least once with the B<-w> switch to perl, which will
-warn you if you use == where you should have used eq.
+Perl отличает числовое сравнение от сравнения строк.  Awk
+ имеет один оператор для обеих операций, который решает что делать во время выполнения.  A2p не пытается сделать полную работу по эмуляции AWK в этой точке.  Вместо этого он предлагает то, что вы хотите.  Это почти всегда верно, но иногда можно впасть в обман (это может быть подделано).  Все эти домыслы, помечены комментарием "C<#???>".  Вы должны пройти через них и проверить.  Возможно, вы захотите запустить по крайней мере один раз с B<-w> опцией to perl, которая предупредит вас если вы используете == где вы должны были использовать eq.
 
-Perl does not attempt to emulate the behavior of awk in which
-nonexistent array elements spring into existence simply by being
-referenced.  If somehow you are relying on this mechanism to create
-null entries for a subsequent for...in, they won't be there in perl.
+Perl не пытается эмулировать поведение AWK, в котором несуществующие элементы массива начинают существовать просто по созданию на них ссылки.  Если каким-то образом вы полагаетесь на этот механизм для создания пустых записей для последующего для ..., их там не будет в Perl.
 
-If a2p makes a split line that assigns to a list of variables that
-looks like (Fld1, Fld2, Fld3...) you may want to rerun a2p using the
-B<-n> option mentioned above.  This will let you name the fields
-throughout the script.  If it splits to an array instead, the script
-is probably referring to the number of fields somewhere.
+Если a2p делает разбор строки, которая представляет собой список переменных, который выглядит как (Fld1, Fld2, Fld3...) вы можете повторно запустить a2p используя опцию
+B<-n> , упомянутую выше.  Это позволит вам переименовывать поля во всем сценарии.  Вместо этого он разбивает на массив, вероятно, ссылаясь на число полей где-нибудь.
 
-The exit statement in awk doesn't necessarily exit; it goes to the END
-block if there is one.  Awk scripts that do contortions within the END
-block to bypass the block under such circumstances can be simplified
-by removing the conditional in the END block and just exiting directly
-from the perl script.
+Для выхода из программы не обязательно ставить оператор EXIT, в AWK программа идет до конца блока, если он есть.  Awk сценарии, которые делают искажения до END блока в обход блока при таких обстоятельствах может быть упрощена путем удаления условия в блоке END и просто выходом непосредственно из perl скрипта.
 
-Perl has two kinds of array, numerically-indexed and associative.
-Perl associative arrays are called "hashes".  Awk arrays are usually
-translated to hashes, but if you happen to know that the index is
-always going to be numeric you could change the {...} to [...].
-Iteration over a hash is done using the keys() function, but iteration
-over an array is NOT.  You might need to modify any loop that iterates
-over such an array.
+Perl имеет два вида массивов, численно-индексированных и ассоциативно.
+Perl ассоциативные массивы называются "хэшами".  Awk массивы, как правило, переводятся в хэши, но если вы ожидаете, что индекс всегда собирается быть числовыми вы могли бы изменить {...}, в [...].
+Перебор хэша может быть с помощью комбинации функции keys(), но это не подходит для перебора массива.  Возможно, вам придется изменить любой цикл, который перебирает такой массив.
 
-Awk starts by assuming OFMT has the value %.6g.  Perl starts by
-assuming its equivalent, $#, to have the value %.20g.  You'll want to
-set $# explicitly if you use the default value of OFMT.
+Awk начинает, предполагая OFMT имеет значение %.6g.  Perl начинается, предполагая, что его эквивалент, $# должен иметь значение %.20g.  Вам придется установить $# явно, если вы используете значение по умолчанию OFMT.
 
-Near the top of the line loop will be the split operation that is
-implicit in the awk script.  There are times when you can move this
-down past some conditionals that test the entire record so that the
-split is not done as often.
+В верхней части линии цикла будет операция разбиения по частям (split), которая подразумевается в сценарий AWK.  Есть моменты, когда вы можете двигаться вниз после некоторых условий, которые проверяют всю запись так, что разбиения не будет сделано, как обычно.
 
-For aesthetic reasons you may wish to change index variables from being
-1-based (awk style) to 0-based (Perl style).  Be sure to change all
-operations the variable is involved in to match.
+По эстетическим соображениям вы можете пожелать изменить индексных переменных от того, начинается с 1 (AWK стилю) до 0 на основе (Perl стиль).  Будьте тогда намерены изменить все операционные переменные, которые участвуют в поиске.
 
-Cute comments that say "# Here is a workaround because awk is dumb"
-are passed through unmodified.
+Симпатичные комментарии, которые выглядят как "# Это обходной путь, потому что AWK является немым" и пропускает их без изменений.
 
-Awk scripts are often embedded in a shell script that pipes stuff into
-and out of awk.  Often the shell script wrapper can be incorporated
-into the perl script, since perl can start up pipes into and out of
-itself, and can do other things that awk can't do by itself.
+Awk скрипты часто встроены в шелл скрипты, которые участвую в конвейере (pipe) на входе и выходе из AWK.  Часто обертка скрипта может быть включена в сценарий Perl, так как Perl может начаться до конвейера (pipe - "|" ) в и из себя, и делать другие вещи, которые AWK не может сделать сам по себе.
 
-Scripts that refer to the special variables RSTART and RLENGTH can
-often be simplified by referring to the variables $`, $& and $', as
-long as they are within the scope of the pattern match that sets them.
+Сценарии, которые относятся к специальным переменным RSTART и RLENGTH часто могут быть упрощены путем ссылки на переменные $ `, $ & и $ ', пока они находятся в пределах поиска по шаблону, который устанавливает их.
 
-The produced perl script may have subroutines defined to deal with
-awk's semantics regarding getline and print.  Since a2p usually picks
-correctness over efficiency.  it is almost always possible to rewrite
-such code to be more efficient by discarding the semantic sugar.
+Полученный Perl скрипт может иметь подпрограммы, которые определены иметь дело с семантикой AWK относительно getline и print.  С a2p обычно выбирает правильности над эффективностью.  почти всегда можно переписать такой код, чтобы быть более эффективным путем отбрасывания семантического сахара.
 
-For efficiency, you may wish to remove the keyword from any return
-statement that is the last statement executed in a subroutine.  A2p
-catches the most common case, but doesn't analyze embedded blocks for
-subtler cases.
+Для эффективности, вы можете удалить ключевое слово из любого возвращенного выражения, что является последним оператором выполненным в подпрограмме.  А2р ловит самый распространенный случай, но не анализирует встроенные блоки для тонких случаях.
 
-ARGV[0] translates to $ARGV0, but ARGV[n] translates to $ARGV[$n-1].  A
-loop that tries to iterate over ARGV[0] won't find it.
+ARGV[0] переводит к $ARGV0, но ARGV[N] переводит к $ARGV [$n-1].  Цикл, который пытается перебрать ARGV[0] не найдет его.
 
 =head1 ОКРУЖЕНИЕ
 
-A2p uses no environment variables.
+А2р не использует переменные окружения.
 
 =head1 АВТОР
 
-Larry Wall E<lt>F<larry@wall.org>E<gt>
+Лари Волл E<lt>F<larry@wall.org>E<gt>
 
 =head1 ФАЙЛЫ
 
 =head1 СМОТРИТЕ ТАКЖЕ
 
- perl	The perl compiler/interpreter
+ perl	The perl компилятор/интерпретатор
 
- s2p	sed to perl translator
+ s2p	перевод sed в perl
 
 =head1 ДИАГНОСТИКА
 
 =head1 ОШИБКИ
 
-It would be possible to emulate awk's behavior in selecting string
-versus numeric operations at run time by inspection of the operands,
-but it would be gross and inefficient.  Besides, a2p almost always
-guesses right.
+Можно было бы подражать поведению AWK в выборе строки сравнении числовых операций во время выполнения проверки операнда, но это было бы грубым и неэффективным.  Кроме того, A2P почти всегда угадывает правильно.
 
-Storage for the awk syntax tree is currently static, and can run out.
+Память для синтаксического дерева AWK в настоящее время является статической, и может не хватить.
