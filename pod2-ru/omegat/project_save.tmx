@@ -810,6 +810,16 @@ perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Scripts that refer to the special variables RSTART and RLENGTH can
+often be simplified by referring to the variables $`, $&amp; and $', as
+long as they are within the scope of the pattern match that sets them.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083829Z" creationid="rdtex1" creationdate="20130725T083829Z">
+        <seg>Сценарии, которые относятся к специальным переменным RSTART переменных и RLENGTH часто могут быть упрощены путем ссылки на переменные $ `, $ &amp; и $ ', пока они находятся в пределах объема шаблону, который устанавливает их.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See C&lt;perldoc --help&gt; (or C&lt;perldoc perldoc&gt; or C&lt;man perldoc&gt;)
 for other helpful options L&lt;perldoc&gt; has to offer.</seg>
       </tuv>
