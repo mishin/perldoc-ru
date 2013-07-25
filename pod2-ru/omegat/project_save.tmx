@@ -416,6 +416,18 @@ pragma?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Except where otherwise noted, you
+should assume that C&lt;use strict&gt; and C&lt;use warnings&gt; statements
+appear earlier in the "program", and that any variables used have
+already been declared, even if those declarations have been omitted
+to make the example easier to read.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225404Z" creationid="ira" creationdate="20130725T225404Z">
+        <seg>Если не оговорено иное, следует предполагать, что C&lt;use strict&gt; и C&lt;use warnings&gt; заявления появиться раньше, в "программе", и что любые переменные, используемые уже были объявлены, даже если эти заявления были опущены, чтобы сделать пример легче читать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For aesthetic reasons you may wish to change index variables from being
 1-based (awk style) to 0-based (Perl style).</seg>
       </tuv>
