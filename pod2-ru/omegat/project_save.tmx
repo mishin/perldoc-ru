@@ -902,8 +902,8 @@ tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
 want to run at least once with the B&lt;-w&gt; switch to perl, which will
 warn you if you use == where you should have used eq.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T071824Z" creationid="rdtex1" creationdate="20130725T071824Z">
-        <seg>Возможно, вы захотите запустить по крайней мере один раз с B&lt;-w&gt; опцией to perl, которая предупредит вас если вы используете == where you should have used eq.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T071918Z" creationid="rdtex1" creationdate="20130725T071824Z">
+        <seg>Возможно, вы захотите запустить по крайней мере один раз с B&lt;-w&gt; опцией to perl, которая предупредит вас если вы используете == где вы должны были использовать eq.</seg>
       </tuv>
     </tu>
     <tu>
