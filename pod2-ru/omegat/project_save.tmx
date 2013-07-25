@@ -349,8 +349,8 @@ requirements of C&lt;use strict;&gt;.)</seg>
       <tuv lang="EN-US">
         <seg>@animals[1..$#animals];        # gives all except the first element</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233432Z" creationid="ira" creationdate="20130725T233432Z">
-        <seg>@animals[1..$#animals];        # дает все, кроме первого элемента element</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233438Z" creationid="ira" creationdate="20130725T233432Z">
+        <seg>@animals[1..$#animals];        # дает все, кроме первого элемента</seg>
       </tuv>
     </tu>
     <tu>
@@ -1567,6 +1567,16 @@ problems in your code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are a couple of special arrays too, such as C&lt;@ARGV&gt; (the command
+line arguments to your script) and C&lt;@_&gt; (the arguments passed to a
+subroutine).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233517Z" creationid="ira" creationdate="20130725T233517Z">
+        <seg>Есть несколько специальных массивов также, такие как C&lt;@ARGV&gt; (аргументы командной строки в скрипте) и C&lt;@_&gt; (аргументы, передаваемые в подпрограмму).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are a number of "magic" scalars with names that look like
 punctuation or line noise.</seg>
       </tuv>
@@ -1696,6 +1706,14 @@ programming language, along with pointers to further documentation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is called an "array slice".</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233442Z" creationid="ira" creationdate="20130725T233442Z">
+        <seg>Это называется "срез массива".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is generally unneeded in perl, but a2p can't
 tell if the argument is always going to be integer, so it leaves it
 in.</seg>
@@ -1821,6 +1839,14 @@ directly the path to your perl executable, like in C&lt;#!/usr/bin/perl&gt;).</s
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231001Z" creationid="ira" creationdate="20130725T231001Z">
         <seg>Вы также можете поместить непосредственно путь к исполняемому файлу perl, например, C&lt;#!/usr/bin/perl&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can do various useful things to lists:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233448Z" creationid="ira" creationdate="20130725T233448Z">
+        <seg>Вы можете делать различные полезные вещи списках:</seg>
       </tuv>
     </tu>
     <tu>
