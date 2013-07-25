@@ -3721,6 +3721,14 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>print "LA LA LA\n" while 1;          # loops forever</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235124Z" creationid="ira" creationdate="20130725T235124Z">
+        <seg>print "LA LA LA\n" while 1;          #  зацикливается навсегда</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>print "Scalars begin with a $variables-&gt;{'scalar'}-&gt;{'sigil'}\n";</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233942Z" creationid="ira" creationdate="20130725T233942Z">
