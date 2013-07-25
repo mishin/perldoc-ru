@@ -1966,6 +1966,16 @@ and L&lt;warnings&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Using C&lt;my&gt; in combination with a C&lt;use strict;&gt; at the top of
+your Perl scripts means that the interpreter will pick up certain common
+programming errors.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234352Z" creationid="ira" creationdate="20130725T234352Z">
+        <seg>Использование C&lt;my&gt; в комбинации с C&lt;use strict;&gt; в верхней части вашего Perl скрипта означает, что интерпретатор будет находить некоторые общие ошибки программирования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Using the C&lt;use strict&gt; pragma ensures that all variables are properly
 declared and prevents other misuses of legacy Perl features.</seg>
       </tuv>
