@@ -242,6 +242,14 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Perl variable types</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232407Z" creationid="ira" creationdate="20130725T232407Z">
+        <seg>=head2 Perl типы переменных</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Platform-Specific</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T222255Z" creationid="ira" creationdate="20130723T222255Z">
