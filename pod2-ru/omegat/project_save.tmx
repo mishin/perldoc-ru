@@ -422,8 +422,8 @@ appear earlier in the "program", and that any variables used have
 already been declared, even if those declarations have been omitted
 to make the example easier to read.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225404Z" creationid="ira" creationdate="20130725T225404Z">
-        <seg>Если не оговорено иное, следует предполагать, что C&lt;use strict&gt; и C&lt;use warnings&gt; заявления появиться раньше, в "программе", и что любые переменные, используемые уже были объявлены, даже если эти заявления были опущены, чтобы сделать пример легче читать.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225621Z" creationid="ira" creationdate="20130725T225404Z">
+        <seg>Если не оговорено иное, следует предполагать, что объявления C&lt;use strict&gt; и C&lt;use warnings&gt; уже есть в заголовке программы, и что любые переменные, используемые уже были объявлены, даже если эти декларации были опущены, чтобы сделать пример проще для чтения.</seg>
       </tuv>
     </tu>
     <tu>
