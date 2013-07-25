@@ -720,6 +720,15 @@ to make the example easier to read.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Exhaustive information on the topic of references can be found in
+L&lt;perlreftut&gt;, L&lt;perllol&gt;, L&lt;perlref&gt; and L&lt;perldsc&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234013Z" creationid="ira" creationdate="20130725T234013Z">
+        <seg>Исчерпывающую информацию по теме ссылок можно найти в L&lt;perlreftut&gt;, L&lt;perllol&gt;, L&lt;perlref&gt; and L&lt;perldsc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For aesthetic reasons you may wish to change index variables from being
 1-based (awk style) to 0-based (Perl style).</seg>
       </tuv>
