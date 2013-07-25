@@ -36,7 +36,7 @@ OmegaT используется в качестве open-source переводч
 https://github.com/sharifulin/pod2-ru
 
 перевели
-   perlbook.pod
+	 perlbook.pod
 	 perldoc.pod 
 	 perlpragma.pod
 	 perlstyle.pod
