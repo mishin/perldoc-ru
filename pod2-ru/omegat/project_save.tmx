@@ -219,6 +219,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Conditional and looping constructs</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234431Z" creationid="ira" creationdate="20130725T234431Z">
+        <seg>=head2 Условные и циклические конструкции</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Internals and C Language Interface</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051533Z">
@@ -776,6 +784,16 @@ statement that is the last statement executed in a subroutine.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063510Z" creationid="rdtex1" creationdate="20130725T063510Z">
         <seg>Например, возьмем выражение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, in the example above, the final
+C&lt;print $y&gt; would cause a compile-time error and prevent you from
+running the program.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234411Z" creationid="ira" creationdate="20130725T234411Z">
+        <seg>Например, в приведенном выше примере, конечный C&lt;print $y&gt; приведет к ошибке времени компиляции и препятствует запуску программы.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1972,6 +1990,14 @@ programming errors.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234352Z" creationid="ira" creationdate="20130725T234352Z">
         <seg>Использование C&lt;my&gt; в комбинации с C&lt;use strict;&gt; в верхней части вашего Perl скрипта означает, что интерпретатор будет находить некоторые общие ошибки программирования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using C&lt;strict&gt; is highly recommended.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234417Z" creationid="ira" creationdate="20130725T234417Z">
+        <seg>Использование C&lt;strict&gt; настоятельно рекомендуется.</seg>
       </tuv>
     </tu>
     <tu>
