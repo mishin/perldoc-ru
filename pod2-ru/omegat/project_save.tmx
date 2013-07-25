@@ -286,6 +286,14 @@ give a warning (like the command-line switch B&lt;-w&gt;) and let your code run.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A Perl script or program consists of one or more statements.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231706Z" creationid="ira" creationdate="20130725T231706Z">
+        <seg>Perl скрипт или программа состоит из одного или нескольких операторов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A2p
 catches the most common case, but doesn't analyze embedded blocks for
 subtler cases.</seg>
