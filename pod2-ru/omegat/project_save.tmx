@@ -3762,6 +3762,14 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>print "The value of $key is $hash{$key}\n";</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235347Z" creationid="ira" creationdate="20130725T235347Z">
+        <seg>print "Значание $key есть $hash{$key}\n";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>print "This element is $_\n";</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235245Z" creationid="ira" creationdate="20130725T235245Z">
