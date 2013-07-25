@@ -416,6 +416,15 @@ pragma?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Do note that the examples have been written by many different authors over
+a period of several decades.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225652Z" creationid="ira" creationdate="20130725T225652Z">
+        <seg>Нельзя не отметить, что примеры были написаны многими разными авторами в течение нескольких десятилетий.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Except where otherwise noted, you
 should assume that C&lt;use strict&gt; and C&lt;use warnings&gt; statements
 appear earlier in the "program", and that any variables used have
