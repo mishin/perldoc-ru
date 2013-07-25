@@ -359,6 +359,15 @@ standard output.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If somehow you are relying on this mechanism to create
+null entries for a subsequent for...in, they won't be there in perl.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T072038Z" creationid="rdtex1" creationdate="20130725T072038Z">
+        <seg>Если каким-то образом вы полагаетесь на этот механизм для создания пустых записей для последующего для ..., их там не будет в Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you were translating an awk script that
 processes the password file, you might say:</seg>
       </tuv>
