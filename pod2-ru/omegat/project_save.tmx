@@ -331,6 +331,30 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>@animals[0,1];                 # gives ("camel", "llama");</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233419Z" creationid="ira" creationdate="20130725T233419Z">
+        <seg>@animals[0,1];                 # дает ("camel", "llama");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>@animals[0..2];                # gives ("camel", "llama", "owl");</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233424Z" creationid="ira" creationdate="20130725T233424Z">
+        <seg>@animals[0..2];                # дает ("camel", "llama", "owl");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>@animals[1..$#animals];        # gives all except the first element</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233432Z" creationid="ira" creationdate="20130725T233432Z">
+        <seg>@animals[1..$#animals];        # дает все, кроме первого элемента element</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A
 loop that tries to iterate over ARGV[0] won't find it.</seg>
       </tuv>
@@ -1714,6 +1738,14 @@ Perl documentation.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T224159Z" creationid="ira" creationdate="20130725T224159Z">
         <seg>В этом документе вы увидите ссылки на другие части документации Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To get multiple values from an array:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233411Z" creationid="ira" creationdate="20130725T233411Z">
+        <seg>Чтобы получить несколько значений из массива:</seg>
       </tuv>
     </tu>
     <tu>
