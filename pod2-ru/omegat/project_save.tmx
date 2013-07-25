@@ -772,8 +772,8 @@ where the trouble is.</seg>
 tell if the argument is always going to be integer, so it leaves it
 in.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064516Z" creationid="rdtex1" creationdate="20130725T064516Z">
-        <seg>Это, как правило, ненужные в Perl, но a2p не могу сказать, если аргумент всегда будет целое, так что он оставляет его дюйма.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064656Z" creationid="rdtex1" creationdate="20130725T064516Z">
+        <seg>Это, как правило, не нужно в Perl, но a2p не может сказать, если аргумент всегда будет целое, то он оставляет его целым.</seg>
       </tuv>
     </tu>
     <tu>
