@@ -3754,6 +3754,14 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>print "This element is $_\n";</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235245Z" creationid="ira" creationdate="20130725T235245Z">
+        <seg>print "Это элемент $_\n";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>print $animals[0];              # prints "camel"</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233049Z" creationid="ira" creationdate="20130725T233049Z">
