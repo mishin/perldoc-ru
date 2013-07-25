@@ -878,6 +878,15 @@ program, which is bad programming practice.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, there is a clever way of making your one-line
+conditional blocks more English like:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234907Z" creationid="ira" creationdate="20130725T234907Z">
+        <seg>Однако, есть хитрый способ сделать ваши однострочные условные блоки более похожими на английский язык, такие как:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>I&lt;A2p&gt; takes an awk script specified on the command line (or from
 standard input) and produces a comparable I&lt;perl&gt; script on the
 standard output.</seg>
@@ -1199,6 +1208,15 @@ implicit in the awk script.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082455Z" creationid="rdtex1" creationdate="20130725T082455Z">
         <seg>В верхней части линии цикла будет операция разбиения по частям (split), которая подразумевается в сценарий AWK.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that the braces are required in Perl, even if you've only got one
+line in the block.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234837Z" creationid="ira" creationdate="20130725T234837Z">
+        <seg>Обратите внимание, что фигурные скобки необходимы в Perl, даже если у вас только одна строка в блоке.</seg>
       </tuv>
     </tu>
     <tu>
