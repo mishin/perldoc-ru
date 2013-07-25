@@ -2559,6 +2559,14 @@ such code to be more efficient by discarding the semantic sugar.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>le  less than or equal</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235930Z" creationid="ira" creationdate="20130725T235930Z">
+        <seg>le  меньше или равно</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>lt  less than</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235914Z" creationid="ira" creationdate="20130725T235914Z">
