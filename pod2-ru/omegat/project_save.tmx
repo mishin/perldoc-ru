@@ -1472,8 +1472,8 @@ integer anyway.</seg>
 to pre-declare your variable types, but you have to declare them using
 the C&lt;my&gt; keyword the first time you use them.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232617Z" creationid="ira" creationdate="20130725T232520Z">
-        <seg>Здесь нет необходимости предварительно объявить переменную типа, но вы должны объявить их с помощью ключевого слова C&lt;my&gt; ,если вы используете их в первый раз.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232626Z" creationid="ira" creationdate="20130725T232520Z">
+        <seg>Здесь нет необходимости предварительно объявлять переменную типа, но вы должны объявить их с помощью ключевого слова C&lt;my&gt; ,если вы используете их в первый раз.</seg>
       </tuv>
     </tu>
     <tu>
