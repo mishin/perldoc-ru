@@ -437,10 +437,26 @@ comment "C&lt;#???&gt;".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An array represents a list of values:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232954Z" creationid="ira" creationdate="20130725T232954Z">
+        <seg>Массив представляет собой список значений:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any delimiter can be used to separate the field names.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T124222Z" creationid="rdtex1" creationdate="20130724T124222Z">
         <seg>Любой разделитель может быть использован для отделения имен полей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Arrays are zero-indexed.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233010Z" creationid="ira" creationdate="20130725T233010Z">
+        <seg>Массивы индексируются с нуля.</seg>
       </tuv>
     </tu>
     <tu>
