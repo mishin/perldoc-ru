@@ -839,6 +839,15 @@ running the program.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For more detail on looping constructs (and some that weren't mentioned in
+this overview) see L&lt;perlsyn&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235457Z" creationid="ira" creationdate="20130725T235457Z">
+        <seg>Более подробную информацию о конструкции цикла (и некоторые, которые не были упомянуты в этом обзоре) см. L&lt;perlsyn&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For more information on these options, you can run C&lt;perldoc perlrun&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T034205Z">
