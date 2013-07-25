@@ -591,6 +591,15 @@ affected by wraparound).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Near the top of the line loop will be the split operation that is
+implicit in the awk script.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082455Z" creationid="rdtex1" creationdate="20130725T082455Z">
+        <seg>В верхней части линии цикла будет операция разбиения по частям (split), которая подразумевается в сценарий AWK.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Old awk always has a line loop, even if there are no line
 actions, whereas new awk does not.</seg>
       </tuv>
