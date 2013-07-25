@@ -271,6 +271,15 @@ point.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>After all, in your
+journey as a programmer, you are likely to encounter different styles.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225953Z" creationid="ira" creationdate="20130725T225953Z">
+        <seg>В конце концов, в вашем путешествии, как программиста, вы, вероятно, столкнётесь с различными стилями.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All such guesses are marked with the
 comment "C&lt;#???&gt;".</seg>
       </tuv>
