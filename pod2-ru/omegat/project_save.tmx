@@ -902,6 +902,15 @@ switch).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please keep in mind that many
+of them are code fragments rather than complete programs.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225247Z" creationid="ira" creationdate="20130725T225247Z">
+        <seg>Пожалуйста, имейте в виду, что многие из них являются фрагментами кода, а не полными программами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Run C&lt;perldoc
 perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
       </tuv>
@@ -1122,6 +1131,16 @@ integer anyway.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064454Z" creationid="rdtex1" creationdate="20130725T064454Z">
         <seg>Существует идиома awk ставить int()  вокруг строкового выражения, чтобы сделать преобразование к числу, хотя аргумент всегда целое так или иначе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These examples often reflect the style and preference of the author of
+that piece of the documentation, and may be briefer than a corresponding
+line of code in a real program.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225340Z" creationid="ira" creationdate="20130725T225340Z">
+        <seg>Эти примеры часто отражают стиль и предпочтения автора этой части документации и могут быть короче, чем соответствующая строка кода в реальной программе.</seg>
       </tuv>
     </tu>
     <tu>
