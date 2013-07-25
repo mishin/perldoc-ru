@@ -1346,6 +1346,16 @@ integer anyway.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These
+statements are simply written in the script in a straightforward
+fashion.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231751Z" creationid="ira" creationdate="20130725T231718Z">
+        <seg>Эти операторы(statements) просто написаны в сценарии прямым способом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These examples often reflect the style and preference of the author of
 that piece of the documentation, and may be briefer than a corresponding
 line of code in a real program.</seg>
