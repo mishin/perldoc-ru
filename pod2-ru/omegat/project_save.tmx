@@ -359,6 +359,17 @@ standard output.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If a2p makes a split line that assigns to a list of variables that
+looks like (Fld1, Fld2, Fld3...) you may want to rerun a2p using the
+B&lt;-n&gt; option mentioned above.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081158Z" creationid="rdtex1" creationdate="20130725T081158Z">
+        <seg>Если a2p делает разбор строки, которая представляет собой список переменных, который выглядит как (Fld1, Fld2, Fld3...) вы можете повторно запустить a2p используя опцию
+B&lt;-n&gt; , упомянутую выше.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If somehow you are relying on this mechanism to create
 null entries for a subsequent for...in, they won't be there in perl.</seg>
       </tuv>
