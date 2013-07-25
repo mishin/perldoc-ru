@@ -470,8 +470,8 @@ found anywhere, and its support for Unicode text is world-class.</seg>
         <seg>It's almost always
 right, but it can be spoofed.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T065133Z" creationid="rdtex1" creationdate="20130725T065133Z">
-        <seg>Это почти всегда верно, но иногда можно впасть в обман.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T065154Z" creationid="rdtex1" creationdate="20130725T065133Z">
+        <seg>Это почти всегда верно, но иногда можно впасть в обман (это может быть подделано).</seg>
       </tuv>
     </tu>
     <tu>
