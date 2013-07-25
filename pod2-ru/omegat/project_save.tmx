@@ -592,6 +592,18 @@ collection of extensions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It
+is intended as a "bootstrap" guide for those who are new to the
+language, and provides just enough information for you to be able to
+read other peoples' Perl and understand roughly what it's doing, or
+write your own simple scripts.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T223157Z" creationid="ira" creationdate="20130725T223157Z">
+        <seg>Он задуман как "начальная загрузка" (bootstrap) руководство для тех, кто плохо знаком с языком, а также предоставляет достаточно информации для вас, чтобы иметь возможность читать Perl код других людей и понять, примерно то, что он делает, или написать собственный простой сценарий.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It combines
 (in the author's opinion, anyway) some of the best features of B&lt;sed&gt;,
 B&lt;awk&gt;, and B&lt;sh&gt;, making it familiar and easy to use for Unix users to
@@ -601,6 +613,15 @@ whip up quick solutions to annoying problems.</seg>
         <seg>Он сочетает в себе
 (по мнению автора, во всяком случае) некоторые из лучших особенностей B&lt;sed&gt;,
 B&lt;awk&gt;, и B&lt;sh&gt;, что делает его знакомым и простым, быстрым и удобным для пользователей Unix при решении досадных проблем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It does not
+even aim to be entirely accurate.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T223207Z" creationid="ira" creationdate="20130725T223207Z">
+        <seg>Он даже не стремятся быть совсем точным.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1101,6 +1122,23 @@ where the trouble is.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T223527Z" creationid="ira" creationdate="20130723T223527Z">
         <seg>Они будут часто указывают именно там, где беда.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document is intended to give you a quick overview of the Perl
+programming language, along with pointers to further documentation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T223000Z" creationid="ira" creationdate="20130725T223000Z">
+        <seg>Этот документ предназначен, чтобы дать вам краткий обзор языка программирования Perl, а также содержит указатели на дополнительную документацию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This introductory document does not aim to be complete.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T223202Z" creationid="ira" creationdate="20130725T223202Z">
+        <seg>Этот вводный документ не ставит целью быть полным.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2024,6 +2062,14 @@ considers them arguments to C&lt;print&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031650Z">
         <seg>perlintro		Введение в Perl для начинающих</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlintro -- a brief introduction and overview of Perl</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T222923Z" creationid="ira" creationdate="20130725T222923Z">
+        <seg>perlintro -- краткое введение и обзор Perl</seg>
       </tuv>
     </tu>
     <tu>
