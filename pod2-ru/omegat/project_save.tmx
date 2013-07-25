@@ -1180,6 +1180,15 @@ provide ready-made solutions to an astounding array of problems.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Throughout Perl's documentation, you'll find numerous examples intended
+to help explain the discussed features.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225206Z" creationid="ira" creationdate="20130725T225206Z">
+        <seg>На протяжении документации Perl, вы найдете многочисленные примеры, предназначенные, чтобы помочь объяснить обсуждаемые особенности (features).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Throughout this document you'll see references to other parts of the
 Perl documentation.</seg>
       </tuv>
