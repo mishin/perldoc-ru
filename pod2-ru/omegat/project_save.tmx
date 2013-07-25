@@ -914,6 +914,15 @@ right, but it can be spoofed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It's used as the default argument to a number of functions in Perl, and
+it's set implicitly by certain looping constructs.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232919Z" creationid="ira" creationdate="20130725T232919Z">
+        <seg>Она используется как аргумент по умолчанию для ряда функций в Perl, и устанавливается неявно в определенные циклические конструкции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It's widely used for everything
 from quick "one-liners" to full-scale application development.</seg>
       </tuv>
