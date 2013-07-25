@@ -1456,6 +1456,15 @@ problems in your code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are a number of "magic" scalars with names that look like
+punctuation or line noise.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232723Z" creationid="ira" creationdate="20130725T232723Z">
+        <seg>Есть целый ряд "магических" скаляров с именами, которые выглядят как знаки препинания или помехи в линиях.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are some areas where you may want to
 examine the perl script produced and tweak it some.</seg>
       </tuv>
