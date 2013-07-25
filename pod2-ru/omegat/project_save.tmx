@@ -884,6 +884,17 @@ referenced.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl is a general-purpose programming language originally developed for
+text manipulation and now used for a wide range of tasks including
+system administration, web development, network programming, GUI
+development, and more.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T230040Z" creationid="ira" creationdate="20130725T230040Z">
+        <seg>Perl является универсальным языком программирования, первоначально разработанный для манипуляций с текстом и в настоящее время используется для широкого круга задач, включая системное администрирование, веб-разработки, сетевое программирование, разработка графического интерфейса и многое другое.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl is at the mercy of your machine's definitions of various
 operations such as type casting, atof(), and floating-point
 output with sprintf().</seg>
