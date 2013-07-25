@@ -1338,6 +1338,14 @@ where the trouble is.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They check different things so you need both.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231240Z" creationid="ira" creationdate="20130725T231240Z">
+        <seg>Они проверяют разные вещи, так что вам нужны обе строки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document is intended to give you a quick overview of the Perl
 programming language, along with pointers to further documentation.</seg>
       </tuv>
