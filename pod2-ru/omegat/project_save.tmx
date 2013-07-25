@@ -345,6 +345,15 @@ indication of the next token or token type that was to be examined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cute comments that say "# Here is a workaround because awk is dumb"
+are passed through unmodified.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083514Z" creationid="rdtex1" creationdate="20130725T083514Z">
+        <seg>Симпатичные комментарии, которые выглядят как "# Это обходной путь, потому что AWK является немым" и пропускает их без изменений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Did we mention that you should definitely consider using the B&lt;use warnings&gt;
 pragma?</seg>
       </tuv>
