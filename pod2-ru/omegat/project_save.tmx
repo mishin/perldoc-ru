@@ -862,6 +862,15 @@ in.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This will let you name the fields
+throughout the script.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081234Z" creationid="rdtex1" creationdate="20130725T081234Z">
+        <seg>Это позволит вам переименовывать поля во всем сценарии.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Those libraries, collected in the CPAN,
 provide ready-made solutions to an astounding array of problems.</seg>
       </tuv>
