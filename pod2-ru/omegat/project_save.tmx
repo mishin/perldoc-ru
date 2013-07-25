@@ -1960,6 +1960,14 @@ in.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is provided as a more readable version of C&lt;if (!I&lt;condition&gt;)&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234819Z" creationid="ira" creationdate="20130725T234819Z">
+        <seg>Это считается более читаемой версией C&lt;if (!I&lt;condition&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This will let you name the fields
 throughout the script.</seg>
       </tuv>
@@ -3774,6 +3782,14 @@ switch.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T134531Z" creationid="rdtex1" creationdate="20130724T134531Z">
         <seg>вызовите a2p для использования старого поведения awk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>unless ( condition ) {</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234738Z" creationid="ira" creationdate="20130725T234738Z">
+        <seg>unless ( условие ) {</seg>
       </tuv>
     </tu>
     <tu>
