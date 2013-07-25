@@ -637,6 +637,14 @@ referenced.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl has two kinds of array, numerically-indexed and associative.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081908Z" creationid="rdtex1" creationdate="20130725T081908Z">
+        <seg>Perl имеет два вида массивов, численно-индексированных и ассоциативно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl is at the mercy of your machine's definitions of various
 operations such as type casting, atof(), and floating-point
 output with sprintf().</seg>
