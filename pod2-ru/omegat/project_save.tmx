@@ -947,6 +947,14 @@ don't tell anyone I said that.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl by default is very forgiving.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T231059Z" creationid="ira" creationdate="20130725T231059Z">
+        <seg>Perl по умолчанию может очень много простить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl differentiates numeric comparison from string comparison.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064724Z" creationid="rdtex1" creationdate="20130725T064724Z">
