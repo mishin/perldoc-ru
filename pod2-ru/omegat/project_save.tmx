@@ -370,6 +370,15 @@ B&lt;-n&gt; , упомянутую выше.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If it splits to an array instead, the script
+is probably referring to the number of fields somewhere.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081350Z" creationid="rdtex1" creationdate="20130725T081350Z">
+        <seg>Вместо этого он разбивает на массив, вероятно, ссылаясь на число полей где-нибудь.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If somehow you are relying on this mechanism to create
 null entries for a subsequent for...in, they won't be there in perl.</seg>
       </tuv>
