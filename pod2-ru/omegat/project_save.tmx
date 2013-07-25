@@ -3247,6 +3247,14 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>print;          # prints contents of $_ by default</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232943Z" creationid="ira" creationdate="20130725T232943Z">
+        <seg>print;          # Выводит содержимое $_ по умолчанию</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>s2p	sed to perl translator</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084240Z" creationid="rdtex1" creationdate="20130725T084240Z">
