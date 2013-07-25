@@ -218,6 +218,16 @@ and syswrite().)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A2p
+catches the most common case, but doesn't analyze embedded blocks for
+subtler cases.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084045Z" creationid="rdtex1" creationdate="20130725T084045Z">
+        <seg>А2р ловит самый распространенный случай, но не анализирует встроенные блоки для тонких случаях.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A2p cannot do as good a job translating as a human would, but it
 usually does pretty well.</seg>
       </tuv>
@@ -232,6 +242,14 @@ point.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064937Z" creationid="rdtex1" creationdate="20130725T064937Z">
         <seg>A2p не пытается сделать полную работу по эмуляции AWK в этой точке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ARGV[0] translates to $ARGV0, but ARGV[n] translates to $ARGV[$n-1].</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084115Z" creationid="rdtex1" creationdate="20130725T084115Z">
+        <seg>ARGV[0] переводит к $ARGV0, но ARGV[N] переводит к $ARGV [$n-1].</seg>
       </tuv>
     </tu>
     <tu>
