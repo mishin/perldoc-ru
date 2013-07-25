@@ -1676,6 +1676,15 @@ the more friendly list scanning C&lt;foreach&gt; loop.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The C&lt;foreach&gt; keyword is actually a synonym for the C&lt;for&gt;
+keyword.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235428Z" creationid="ira" creationdate="20130725T235428Z">
+        <seg>Ключевое слово C&lt;foreach&gt;  на самом деле является синонимом ключевое слова C&lt;for&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The C&lt;my&gt; is actually not required; you could just use:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234101Z" creationid="ira" creationdate="20130725T234101Z">
