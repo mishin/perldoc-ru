@@ -1621,6 +1621,15 @@ command or whatever method you're using to read this document.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can use parentheses for functions' arguments or omit them
+according to your personal taste.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232322Z" creationid="ira" creationdate="20130725T232322Z">
+        <seg>Вы можете использовать скобки для аргументов функций или опустить их в соответствии с вашим личным вкусом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You may mail your bug reports (be sure to include full configuration
 information as output by the myconfig program in the perl source
 tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
