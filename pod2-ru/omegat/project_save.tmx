@@ -1048,8 +1048,8 @@ over such an array.</seg>
         <seg>You'll want to
 set $# explicitly if you use the default value of OFMT.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082308Z" creationid="rdtex1" creationdate="20130725T082308Z">
-        <seg>Вы хотите, чтобы установить $ # явно, если вы используете значение по умолчанию OFMT.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082400Z" creationid="rdtex1" creationdate="20130725T082308Z">
+        <seg>Вам придется установить $# явно, если вы используете значение по умолчанию OFMT.</seg>
       </tuv>
     </tu>
     <tu>
