@@ -269,8 +269,8 @@ block to bypass the block under such circumstances can be simplified
 by removing the conditional in the END block and just exiting directly
 from the perl script.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081556Z" creationid="rdtex1" creationdate="20130725T081556Z">
-        <seg>Awk сценарии, которые делают искажения в конец блока в обход блока при таких обстоятельствах может быть упрощена путем удаления условного в конец блока и просто выходом непосредственно из Перл.</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081852Z" creationid="rdtex1" creationdate="20130725T081556Z">
+        <seg>Awk сценарии, которые делают искажения до END блока в обход блока при таких обстоятельствах может быть упрощена путем удаления условия в блоке END и просто выходом непосредственно из perl скрипта.</seg>
       </tuv>
     </tu>
     <tu>
