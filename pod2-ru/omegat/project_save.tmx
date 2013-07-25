@@ -544,6 +544,15 @@ of elements in the array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As of Perl
+5.10, it even has a case/switch statement (spelled C&lt;given&gt;/C&lt;when&gt;).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234537Z" creationid="ira" creationdate="20130725T234537Z">
+        <seg>По состоянию на Perl 5.10, у него даже есть оператор case/switch  (пишется C&lt;given&gt;/C&lt;when&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Awk
 has one operator for both that decides at run time which comparison to
 do.</seg>
@@ -1306,6 +1315,14 @@ referenced.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T072006Z" creationid="rdtex1" creationdate="20130725T072006Z">
         <seg>Perl не пытается эмулировать поведение AWK, в котором несуществующие элементы массива начинают существовать просто по созданию на них ссылки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perl has most of the usual conditional and looping constructs.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234437Z" creationid="ira" creationdate="20130725T234437Z">
+        <seg>Perl имеет большинство обычных условных и циклических конструкций.</seg>
       </tuv>
     </tu>
     <tu>
