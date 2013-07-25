@@ -574,6 +574,15 @@ B&lt;use strict&gt; и B&lt;use warnings&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In some cases perfection has been
+sacrificed in the goal of getting the general idea across.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T223356Z" creationid="ira" creationdate="20130725T223356Z">
+        <seg>В некоторых случаях совершенство изложения было принесено в жертву общей идее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Instead it guesses which one you want.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T065025Z" creationid="rdtex1" creationdate="20130725T065025Z">
