@@ -1820,6 +1820,15 @@ warn you if you use == where you should have used eq.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You might be tempted to use C&lt;$#array + 1&gt; to tell you how many items there
+are in an array.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233149Z" creationid="ira" creationdate="20130725T233149Z">
+        <seg>Можно было бы попытаться использовать C&lt;$#array + 1&gt;, чтобы сказать вам, сколько элементов есть в массиве.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You might need to modify any loop that iterates
 over such an array.</seg>
       </tuv>
