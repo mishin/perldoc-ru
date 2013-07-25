@@ -1490,6 +1490,16 @@ long as they are within the scope of the pattern match that sets them.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See
+L&lt;perlsyn/"Switch Statements"&gt; for more details.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234558Z" creationid="ira" creationdate="20130725T234558Z">
+        <seg>См. 
+L&lt;perlsyn/"Switch Statements"&gt;  для более подробной информации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See C&lt;perldoc --help&gt; (or C&lt;perldoc perldoc&gt; or C&lt;man perldoc&gt;)
 for other helpful options L&lt;perldoc&gt; has to offer.</seg>
       </tuv>
