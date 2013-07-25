@@ -6,6 +6,9 @@ use v5.12;
 use autodie;
 use File::Copy;
 
+#дело в том, что перед переводом perl.pod
+#их нужно предварительно обработать, например добавить в начало utf8
+#или это в скрипте postprocess.pl, похоже
 ### Configuration ###
 my $SOURCE_DIR = '/home/explorer/perl5/perlbrew/build/perl-5.16.2';	# Distribution directory
 my $TARGET_DIR = '/home/explorer/perlspanish/source';			# source/ OmegaT directory
