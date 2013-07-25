@@ -243,6 +243,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Builtin operators and functions</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235504Z" creationid="ira" creationdate="20130725T235504Z">
+        <seg>= Head2 Встроенные операторы и функции</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Conditional and looping constructs</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234431Z" creationid="ira" creationdate="20130725T234431Z">
@@ -842,8 +850,8 @@ running the program.</seg>
         <seg>For more detail on looping constructs (and some that weren't mentioned in
 this overview) see L&lt;perlsyn&gt;.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235457Z" creationid="ira" creationdate="20130725T235457Z">
-        <seg>Более подробную информацию о конструкции цикла (и некоторые, которые не были упомянуты в этом обзоре) см. L&lt;perlsyn&gt; .</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235501Z" creationid="ira" creationdate="20130725T235457Z">
+        <seg>Более подробную информацию о конструкции цикла (и некоторые, которые не были упомянуты в этом обзоре) см. L&lt;perlsyn&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1360,6 +1368,14 @@ don't tell anyone I said that.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl comes with a wide selection of builtin functions.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235506Z" creationid="ira" creationdate="20130725T235506Z">
+        <seg>Perl поставляется с широким выбором встроенных функций.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl differentiates numeric comparison from string comparison.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064724Z" creationid="rdtex1" creationdate="20130725T064724Z">
@@ -1662,6 +1678,15 @@ cross-reference is not found by man, try it with L&lt;perldoc&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T223031Z" creationid="ira" creationdate="20130723T222952Z">
         <seg>Некоторая документация не доступна в виде man страниц, так что, если перекрестные ссылки не найдены в мане, то попробуйте их с помощью L&lt;perldoc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some of the ones
+we've already seen include C&lt;print&gt;, C&lt;sort&gt; and C&lt;reverse&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235516Z" creationid="ira" creationdate="20130725T235516Z">
+        <seg>Некоторые из них мы уже видели включают C&lt;print&gt;, C&lt;sort&gt; and C&lt;reverse&gt;.</seg>
       </tuv>
     </tu>
     <tu>
