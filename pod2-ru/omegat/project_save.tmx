@@ -1180,6 +1180,15 @@ provide ready-made solutions to an astounding array of problems.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Throughout this document you'll see references to other parts of the
+Perl documentation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T224159Z" creationid="ira" creationdate="20130725T224159Z">
+        <seg>В этом документе вы увидите ссылки на другие части документации Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Using the C&lt;use strict&gt; pragma ensures that all variables are properly
 declared and prevents other misuses of legacy Perl features.</seg>
       </tuv>
@@ -1226,6 +1235,15 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T030813Z">
         <seg>Вы можете получить более подробную документацию, руководства и интернет-сообщество поддержки на L&lt;http://www.perl.org/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can read that documentation using the C&lt;perldoc&gt;
+command or whatever method you're using to read this document.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T224221Z" creationid="ira" creationdate="20130725T224221Z">
+        <seg>Вы можете прочитать эту документацию с помощью C&lt;perldoc&gt; команды или любой метод вы используете для чтения этого документа.</seg>
       </tuv>
     </tu>
     <tu>
