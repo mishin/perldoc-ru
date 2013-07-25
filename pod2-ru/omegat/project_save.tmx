@@ -311,6 +311,15 @@ pragma?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here are some of
+them, in no particular order.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064254Z" creationid="rdtex1" creationdate="20130725T064254Z">
+        <seg>Вот некоторые из них, без особогопорядка..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>I&lt;A2p&gt; takes an awk script specified on the command line (or from
 standard input) and produces a comparable I&lt;perl&gt; script on the
 standard output.</seg>
