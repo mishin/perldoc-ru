@@ -483,6 +483,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&gt;=  greater than or equal</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235842Z" creationid="ira" creationdate="20130725T235842Z">
+        <seg>&gt;=  больше или равно</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>@animals[0,1];                 # gives ("camel", "llama");</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233419Z" creationid="ira" creationdate="20130725T233419Z">
