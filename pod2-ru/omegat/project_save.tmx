@@ -1457,6 +1457,15 @@ where the trouble is.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They are only required
+occasionally to clarify issues of precedence.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232338Z" creationid="ira" creationdate="20130725T232338Z">
+        <seg>Они требуются лишь иногда для прояснения вопросов старшинства операторов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They check different things so you need both.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231240Z" creationid="ira" creationdate="20130725T231240Z">
