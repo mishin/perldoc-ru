@@ -371,6 +371,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Arithmetic</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235654Z" creationid="ira" creationdate="20130725T235654Z">
+        <seg>=item Арифметические</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Arrays</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232950Z" creationid="ira" creationdate="20130725T232950Z">
