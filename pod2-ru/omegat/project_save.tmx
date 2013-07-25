@@ -1550,6 +1550,14 @@ L&lt;perlsyn/"Switch Statements"&gt;  для более подробной ин�
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See C&lt;L&lt;perlsyn/"Foreach Loops"&gt;&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235435Z" creationid="ira" creationdate="20130725T235435Z">
+        <seg>См. C&lt;L&lt;perlsyn/"Foreach Loops"&gt;&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See C&lt;perldoc --help&gt; (or C&lt;perldoc perldoc&gt; or C&lt;man perldoc&gt;)
 for other helpful options L&lt;perldoc&gt; has to offer.</seg>
       </tuv>
