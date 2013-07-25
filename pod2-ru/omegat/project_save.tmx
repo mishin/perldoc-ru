@@ -418,6 +418,14 @@ B&lt;use strict&gt; и B&lt;use warnings&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Instead it guesses which one you want.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T065025Z" creationid="rdtex1" creationdate="20130725T065025Z">
+        <seg>Вместо этого он предлагает то, что вы хотите.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It
 handles all kinds of structured text, too, through an extensive
 collection of extensions.</seg>
