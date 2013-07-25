@@ -315,6 +315,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Variable scoping</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234030Z" creationid="ira" creationdate="20130725T234030Z">
+        <seg>=head2 Видимость переменной</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 What is Perl?</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230013Z" creationid="ira" creationdate="20130725T230013Z">
@@ -1868,6 +1876,14 @@ to help explain the discussed features.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T225206Z" creationid="ira" creationdate="20130725T225206Z">
         <seg>На протяжении документации Perl, вы найдете многочисленные примеры, предназначенные, чтобы помочь объяснить обсуждаемые особенности (features).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Throughout the previous section all the examples have used the syntax:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T234047Z" creationid="ira" creationdate="20130725T234047Z">
+        <seg>На протяжении предыдущего раздела во всех примерах мы использовали синтаксис:</seg>
       </tuv>
     </tu>
     <tu>
