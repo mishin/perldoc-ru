@@ -1210,6 +1210,17 @@ given variable name may not be longer than 251 characters.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You are
+I&lt;strongly&gt; advised to follow this introduction with more information
+from the full Perl manual, the table of contents to which can be found
+in L&lt;perltoc&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T224143Z" creationid="ira" creationdate="20130725T224143Z">
+        <seg>Я I&lt;строго&gt; рекомендую следовать этому введению, дополнительную информацию о полной Perl документации и ее оглавление можно найти в L&lt;perltoc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can get more documentation, tutorials and community support
 online at L&lt;http://www.perl.org/&gt;.</seg>
       </tuv>
