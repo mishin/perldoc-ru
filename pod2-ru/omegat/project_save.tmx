@@ -314,8 +314,8 @@ pragma?</seg>
         <seg>Here are some of
 them, in no particular order.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064254Z" creationid="rdtex1" creationdate="20130725T064254Z">
-        <seg>Вот некоторые из них, без особогопорядка..</seg>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064258Z" creationid="rdtex1" creationdate="20130725T064254Z">
+        <seg>Вот некоторые из них, без особого порядка.</seg>
       </tuv>
     </tu>
     <tu>
@@ -745,6 +745,16 @@ examine the perl script produced and tweak it some.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063920Z" creationid="rdtex1" creationdate="20130725T063920Z">
         <seg>Есть некоторые области, где вы можете изучать perl-скрипт, который создает программа и донастроить его при необходимости.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is an awk idiom of putting int() around a string expression to
+force numeric interpretation, even though the argument is always
+integer anyway.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064454Z" creationid="rdtex1" creationdate="20130725T064454Z">
+        <seg>Существует идиома awk ставить int()  вокруг строкового выражения, чтобы сделать преобразование к числу, хотя аргумент всегда целое так или иначе.</seg>
       </tuv>
     </tu>
     <tu>
