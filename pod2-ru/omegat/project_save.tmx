@@ -255,6 +255,14 @@ point.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A2p uses no environment variables.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084146Z" creationid="rdtex1" creationdate="20130725T084146Z">
+        <seg>А2р не использует переменные окружения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>ARGV[0] translates to $ARGV0, but ARGV[n] translates to $ARGV[$n-1].</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084115Z" creationid="rdtex1" creationdate="20130725T084115Z">
@@ -648,6 +656,14 @@ language for the long haul on major projects, whatever your bent.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230911Z" creationid="ira" creationdate="20130723T230911Z">
         <seg>Ларри Уолл &lt;larry@wall.org&gt;, с помощью кучи других людей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Larry Wall E&lt;lt&gt;F&lt;larry@wall.org&gt;E&lt;gt&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084159Z" creationid="rdtex1" creationdate="20130725T084159Z">
+        <seg>Лари Волл E&lt;lt&gt;F&lt;larry@wall.org&gt;E&lt;gt&gt;</seg>
       </tuv>
     </tu>
     <tu>
