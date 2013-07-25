@@ -315,6 +315,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Arrays</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T232950Z" creationid="ira" creationdate="20130725T232950Z">
+        <seg>=item Массивы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Scalars</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232430Z" creationid="ira" creationdate="20130725T232430Z">
