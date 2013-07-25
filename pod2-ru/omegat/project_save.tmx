@@ -715,6 +715,14 @@ them, in no particular order.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here's how you get at elements in an array:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T233034Z" creationid="ira" creationdate="20130725T233034Z">
+        <seg>Вот как вы можете вытащить элемент массива:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, only double quotes "interpolate" variables and special
 characters such as newlines (C&lt;\n&gt;):</seg>
       </tuv>
