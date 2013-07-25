@@ -1038,6 +1038,16 @@ cross-reference is not found by man, try it with L&lt;perldoc&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Styles and techniques will therefore differ,
+although some effort has been made to not vary styles too widely in the
+same sections.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T225755Z" creationid="ira" creationdate="20130725T225755Z">
+        <seg>Стили и методы будут таким образом отличаться, хотя некоторые усилия были предприняты, чтобы стили не менялись слишком широко в одном разделе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The C&lt;use
 diagnostics&gt; pragma automatically turns Perl's normally terse warnings
 and errors into these longer forms.</seg>
