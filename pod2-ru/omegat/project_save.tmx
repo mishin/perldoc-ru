@@ -564,6 +564,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Simple matching</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001703Z" creationid="ira" creationdate="20130726T001703Z">
+        <seg>= Простое совпадение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item String comparison</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235854Z" creationid="ira" creationdate="20130725T235854Z">
