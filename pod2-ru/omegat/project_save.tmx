@@ -46,6 +46,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># in $a</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002016Z" creationid="ira" creationdate="20130726T002016Z">
+        <seg># в $a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># the Perlish post-condition way</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234934Z" creationid="ira" creationdate="20130725T234934Z">
