@@ -212,6 +212,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=   assignment</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000528Z" creationid="ira" creationdate="20130726T000528Z">
+        <seg>=   присваивание</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>==  equality</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235750Z" creationid="ira" creationdate="20130725T235750Z">
