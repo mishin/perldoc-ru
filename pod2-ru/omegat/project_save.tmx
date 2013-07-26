@@ -110,6 +110,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$a =~ s/foo/bar/g;        # replaces ALL INSTANCES of foo with bar</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002007Z" creationid="ira" creationdate="20130726T002007Z">
+        <seg>$a =~ s/foo/bar/g;        # заменены ВСЕ ЭКЗЕМПЛЯРЫ foo с bar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$fruit_color{"apple"};           # gives "red"</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233628Z" creationid="ira" creationdate="20130725T233628Z">
