@@ -1323,6 +1323,16 @@ the list:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In fact, you can match
+on just about anything you could dream of by using more complex regular
+expressions.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002208Z" creationid="ira" creationdate="20130726T002208Z">
+        <seg>В самом деле, вы можете сопоставить все что угодно, о чем вы могли бы мечтать, используя более сложные регулярные выражения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In general, if something strange has gone wrong with your program and you're
 not sure where you should look for help, try making your code comply with
 B&lt;use strict&gt; and B&lt;use warnings&gt;.</seg>
