@@ -1998,8 +1998,8 @@ the more friendly list scanning C&lt;foreach&gt; loop.</seg>
       <tuv lang="EN-US">
         <seg>The C&lt;&lt; &lt;&gt; &gt;&gt; operator is most often seen in a C&lt;while&gt; loop:</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001349Z" creationid="ira" creationdate="20130726T001349Z">
-        <seg>Оператор C&lt;&lt; &lt;&gt; &gt;&gt;  чаще всего используется в цикле C&lt;while&gt;:</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001358Z" creationid="ira" creationdate="20130726T001349Z">
+        <seg>Оператор C&lt;&lt; &lt;&gt; &gt;&gt; чаще всего используется в цикле C&lt;while&gt;:</seg>
       </tuv>
     </tu>
     <tu>
