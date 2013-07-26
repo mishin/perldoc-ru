@@ -1772,6 +1772,16 @@ reports based on that information.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl's regular expression support is both broad and deep, and is the
+subject of lengthy documentation in L&lt;perlrequick&gt;, L&lt;perlretut&gt;, and
+elsewhere.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001610Z" creationid="ira" creationdate="20130726T001610Z">
+        <seg>Поддержка регулярных выражений Perl является как широкая и глубокая, и является предметом длительных документации в L&lt;perlrequick&gt;, L&lt;perlretut&gt; , И в других местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl's roots in text processing haven't been forgotten over the years.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230032Z" creationid="ira" creationdate="20130723T230032Z">
