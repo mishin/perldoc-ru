@@ -1504,6 +1504,15 @@ you to build lists and hashes within lists and hashes.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Most text file processing
+can be done a line at a time with Perl's looping constructs.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001305Z" creationid="ira" creationdate="20130726T001305Z">
+        <seg>Большинство средств обработки текстовых файлов можно сделать с помощью циклических конструкций Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Near the top of the line loop will be the split operation that is
 implicit in the awk script.</seg>
       </tuv>
