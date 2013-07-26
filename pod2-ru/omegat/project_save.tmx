@@ -853,6 +853,15 @@ scoped variables instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Check L&lt;perlop&gt; for more
+detail.)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000513Z" creationid="ira" creationdate="20130726T000513Z">
+        <seg>Проверьте L&lt;perlop&gt; для больших подробностей.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Comments start with a hash symbol and run to the end of the line</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231927Z" creationid="ira" creationdate="20130725T231908Z">
