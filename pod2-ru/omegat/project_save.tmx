@@ -921,6 +921,15 @@ comment "C&lt;#???&gt;".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As a beginning Perl programmer, your most common use of OO Perl will be
+in using third-party modules, which are documented below.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003905Z" creationid="ira" creationdate="20130726T003905Z">
+        <seg>Как начинающий программист Perl, ваш самый распространенный способ использования OO Perl будет при помощи сторонних модулей, которые описаны ниже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As it happens, using C&lt;@array&gt; where Perl
 expects to find a scalar value ("in scalar context") will give you the number
 of elements in the array:</seg>
