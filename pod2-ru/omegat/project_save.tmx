@@ -278,8 +278,8 @@ requirements of C&lt;use strict;&gt;.)</seg>
       <tuv lang="EN-US">
         <seg>/^$/                nothing in the string (start and end are</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002927Z" creationid="ira" creationdate="20130726T002927Z">
-        <seg>/^$/                Ничего в строке (начало и конец</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002945Z" creationid="ira" creationdate="20130726T002927Z">
+        <seg>/^$/                ничего в строке (начало и конец</seg>
       </tuv>
     </tu>
     <tu>
@@ -2987,6 +2987,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122159Z" creationid="rdtex1" creationdate="20130724T122159Z">
         <seg>a2p - преобразование кода Awk в Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>adjacent)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002942Z" creationid="ira" creationdate="20130726T002942Z">
+        <seg>смежный)</seg>
       </tuv>
     </tu>
     <tu>
