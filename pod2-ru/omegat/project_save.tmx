@@ -2908,6 +2908,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>^                   start of string</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002510Z" creationid="ira" creationdate="20130726T002510Z">
+        <seg>^                   начало строки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a single character</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002250Z" creationid="ira" creationdate="20130726T002250Z">
