@@ -1925,6 +1925,15 @@ of the most common ones:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl regexps also support backreferences, lookaheads, and all kinds of
+other complex details.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003353Z" creationid="ira" creationdate="20130726T003353Z">
+        <seg>Perl регулярные выражения также поддерживают обратные ссылки, lookaheads, и все виды других сложных деталей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl starts by
 assuming its equivalent, $#, to have the value %.20g.</seg>
       </tuv>
