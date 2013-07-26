@@ -3015,6 +3015,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>character (eg "3 4 5 ")</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003054Z" creationid="ira" creationdate="20130726T003054Z">
+        <seg>символ (например "3 4 5 ")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>eq  equality</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235859Z" creationid="ira" creationdate="20130725T235859Z">
