@@ -668,6 +668,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Other regexp features</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003328Z" creationid="ira" creationdate="20130726T003328Z">
+        <seg>=item Другие функции регулярных выражений</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Parentheses for capturing</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T003218Z" creationid="ira" creationdate="20130726T003218Z">
