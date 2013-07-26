@@ -86,6 +86,23 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&amp;&amp;  and</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000140Z" creationid="ira" creationdate="20130726T000140Z">
+        <seg>&amp;&amp;  и</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(C&lt;and&gt;, C&lt;or&gt; and C&lt;not&gt; aren't just in the above table as descriptions
+of the operators.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000301Z" creationid="ira" creationdate="20130726T000223Z">
+        <seg>(C&lt;and&gt;, C&lt;or&gt; и C&lt;not&gt; не только в приведенной выше таблице,  также смотри описания операторов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(In a script passed to Perl via B&lt;-e&gt; switches, each
 B&lt;-e&gt; is counted as one line.)</seg>
       </tuv>
@@ -2618,6 +2635,14 @@ such code to be more efficient by discarding the semantic sugar.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>not</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000200Z" creationid="ira" creationdate="20130726T000200Z">
+        <seg>отрицание</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>old awk considers I&lt;extra_args&gt; to be arguments to C&lt;sprintf&gt;; new awk
 considers them arguments to C&lt;print&gt;.</seg>
       </tuv>
@@ -4146,6 +4171,14 @@ switch.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232054Z" creationid="ira" creationdate="20130725T232054Z">
         <seg>мир";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>||  or</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000144Z" creationid="ira" creationdate="20130726T000144Z">
+        <seg>||  или</seg>
       </tuv>
     </tu>
     <tu>
