@@ -2542,8 +2542,8 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>You can read from an open filehandle using the C&lt;&lt; &lt;&gt; &gt;&gt; operator.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000911Z" creationid="ira" creationdate="20130726T000901Z">
-        <seg>Вы можете прочитать из открытого файлового манипулятора использованием оператора C&lt;&lt; &lt;&gt; &gt;&gt; .</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000924Z" creationid="ira" creationdate="20130726T000901Z">
+        <seg>Вы можете прочитать из открытого файлового манипулятора используя оператор C&lt;&lt; &lt;&gt; &gt;&gt; .</seg>
       </tuv>
     </tu>
     <tu>
