@@ -1141,6 +1141,14 @@ which filehandle to print to:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, in short:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001646Z" creationid="ira" creationdate="20130726T001646Z">
+        <seg>Тем не менее, коротко:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, only double quotes "interpolate" variables and special
 characters such as newlines (C&lt;\n&gt;):</seg>
       </tuv>
