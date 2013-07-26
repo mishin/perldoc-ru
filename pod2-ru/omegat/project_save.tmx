@@ -228,6 +228,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>+                   one or more of the previous thing</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002650Z" creationid="ira" creationdate="20130726T002650Z">
+        <seg>+                   один или более от предыдущей вещи</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>+   addition</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235702Z" creationid="ira" creationdate="20130725T235702Z">
