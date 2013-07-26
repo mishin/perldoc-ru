@@ -4,9 +4,9 @@
 #  Configure basic git settings
 #
 
-use feature 'say';
+# use feature 'say';
 
-say 'Configuration for global work using git';
+print "Configuration for global work using git\n";
 
 print 'Please write your Github user name: ';
 my $user = readline;
