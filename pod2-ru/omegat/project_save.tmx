@@ -2039,6 +2039,14 @@ the more friendly list scanning C&lt;foreach&gt; loop.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The C&lt;//&gt; matching operator is documented in L&lt;perlop&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001808Z" creationid="ira" creationdate="20130726T001808Z">
+        <seg>Оператор соответствия C&lt;//&gt; описан в L&lt;perlop&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The C&lt;&lt; &lt;&gt; &gt;&gt; operator is most often seen in a C&lt;while&gt; loop:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001358Z" creationid="ira" creationdate="20130726T001349Z">
