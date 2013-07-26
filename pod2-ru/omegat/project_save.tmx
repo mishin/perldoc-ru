@@ -2556,6 +2556,15 @@ occasionally to clarify issues of precedence.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They can be
+used to capture the results of parts of the regexp match for later use.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003242Z" creationid="ira" creationdate="20130726T003242Z">
+        <seg>Они могут быть использованы для захвата результата части матча регулярного выражения для последующего использования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They check different things so you need both.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231240Z" creationid="ira" creationdate="20130725T231240Z">
