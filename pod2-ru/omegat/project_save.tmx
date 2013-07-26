@@ -1965,6 +1965,15 @@ all Unix-like platforms.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl modules provide a range of features to help you avoid reinventing
+the wheel, and can be downloaded from CPAN ( http://www.cpan.org/ ).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003925Z" creationid="ira" creationdate="20130726T003925Z">
+        <seg>Perl модули предоставляют широкий спектр функций, которые помогут вам не изобретать велосипед, их можно загрузить с CPAN (http://www.cpan.org/).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl officially stands for Practical Extraction and Report Language,
 except when it doesn't.</seg>
       </tuv>
