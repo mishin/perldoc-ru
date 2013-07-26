@@ -2844,6 +2844,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>\d                  a digit (0-9)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002325Z" creationid="ira" creationdate="20130726T002325Z">
+        <seg>\d                  цифра (0-9)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>\s                  a whitespace character (space, tab, newline,</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002304Z" creationid="ira" creationdate="20130726T002301Z">
