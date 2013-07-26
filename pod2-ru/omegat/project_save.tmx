@@ -810,6 +810,15 @@ give a warning (like the command-line switch B&lt;-w&gt;) and let your code run.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A categorized list of modules is
+also available from CPAN.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T004038Z" creationid="ira" creationdate="20130726T004038Z">
+        <seg>Классифицированный список модулей также доступен на CPAN.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A hash represents a set of key/value pairs:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233541Z" creationid="ira" creationdate="20130725T233541Z">
