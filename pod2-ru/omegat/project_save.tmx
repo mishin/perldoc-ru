@@ -1773,6 +1773,14 @@ L&lt;perlvar&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Reading in the whole file at one time is called slurping.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001105Z" creationid="ira" creationdate="20130726T001105Z">
+        <seg>Чтение в файла целиком за один раз, называется slurping хлебать (съесть целиком).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Run C&lt;perldoc
 perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
       </tuv>
