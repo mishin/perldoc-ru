@@ -2746,6 +2746,14 @@ nicely:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You don't just have to match on fixed strings.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002135Z" creationid="ira" creationdate="20130726T002135Z">
+        <seg>Вы не просто должны совпадать по фиксированной строке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You may mail your bug reports (be sure to include full configuration
 information as output by the myconfig program in the perl source
 tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
