@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.0.4" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head1 NAME</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T190652Z" creationid="ira" creationdate="20130726T190652Z">
+        <seg>=head1 ИМЯ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head1 SYNOPSIS</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T190749Z" creationid="ira" creationdate="20130726T190749Z">
+        <seg>=head1 СИНТАКСИС</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlrun - how to execute the Perl interpreter</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T190741Z" creationid="ira" creationdate="20130726T190741Z">
+        <seg>perlrun - как запустить интерпретатор Perl</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>
