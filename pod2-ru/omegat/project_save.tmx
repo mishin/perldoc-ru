@@ -4379,6 +4379,14 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>s/foo/bar/;               # replaces foo with bar in $_</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001922Z" creationid="ira" creationdate="20130726T001922Z">
+        <seg>s/foo/bar/;               # заменяет foo с bar в $_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>s2p	sed to perl translator</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084240Z" creationid="rdtex1" creationdate="20130725T084240Z">
