@@ -572,6 +572,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item More complex regular expressions</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002111Z" creationid="ira" creationdate="20130726T002111Z">
+        <seg>=item Более сложные регулярные выражения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Numeric comparison</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235742Z" creationid="ira" creationdate="20130725T235742Z">
