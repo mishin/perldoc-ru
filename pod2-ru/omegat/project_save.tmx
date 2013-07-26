@@ -2805,6 +2805,14 @@ declared and prevents other misuses of legacy Perl features.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What's that C&lt;shift&gt;?</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003454Z" creationid="ira" creationdate="20130726T003454Z">
+        <seg>Что такое C&lt;shift&gt;?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When
 they haven't set the standard themselves, they steal from the best
 -- just like Perl itself.</seg>
