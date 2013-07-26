@@ -1317,6 +1317,15 @@ write your own simple scripts.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It can
+be useful but it may be a memory hog.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001123Z" creationid="ira" creationdate="20130726T001123Z">
+        <seg>Это может быть полезным, но это может иметь память свиньи.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It combines
 (in the author's opinion, anyway) some of the best features of B&lt;sed&gt;,
 B&lt;awk&gt;, and B&lt;sh&gt;, making it familiar and easy to use for Unix users to
