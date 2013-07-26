@@ -1418,6 +1418,14 @@ affected by wraparound).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Many operators can be combined with a C&lt;=&gt; as follows:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000616Z" creationid="ira" creationdate="20130726T000616Z">
+        <seg>Многие операторы могут быть объединены с C&lt;=&gt; следующим образом:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More complex data types can be constructed using references, which allow
 you to build lists and hashes within lists and hashes.</seg>
       </tuv>
@@ -4155,6 +4163,14 @@ considers them arguments to C&lt;print&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232943Z" creationid="ira" creationdate="20130725T232943Z">
         <seg>print;          # Выводит содержимое $_ по умолчанию</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>range operator (creates a list of numbers)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000604Z" creationid="ira" creationdate="20130726T000604Z">
+        <seg>оператор диапазона (создает список чисел)</seg>
       </tuv>
     </tu>
     <tu>
