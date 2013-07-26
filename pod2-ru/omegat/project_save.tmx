@@ -1247,6 +1247,14 @@ this overview) see L&lt;perlsyn&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For more information on writing subroutines, see L&lt;perlsub&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003736Z" creationid="ira" creationdate="20130726T003736Z">
+        <seg>Для получения дополнительной информации о написании подпрограмм см. L&lt;perlsub&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For more information, including instructions for other platforms such as
 Windows and Mac OS, read L&lt;perlrun&gt;.</seg>
       </tuv>
@@ -2257,6 +2265,14 @@ same sections.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Subroutines can also return values:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003721Z" creationid="ira" creationdate="20130726T003721Z">
+        <seg>Подпрограммы могут также возвращать значения:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The C style for loop is rarely needed in Perl since Perl provides
 the more friendly list scanning C&lt;foreach&gt; loop.</seg>
       </tuv>
@@ -2481,6 +2497,14 @@ are defined.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234218Z" creationid="ira" creationdate="20130725T234218Z">
         <seg>Переменные находятся в области видимости блока (то есть куча операторов, заключенная в фигурные скобки), в котором они определены.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then use it like:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003728Z" creationid="ira" creationdate="20130726T003728Z">
+        <seg>Затем использовать его как:</seg>
       </tuv>
     </tu>
     <tu>
