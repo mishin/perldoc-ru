@@ -38,6 +38,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg># This loop reads from STDIN, and prints non-blank lines:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003208Z" creationid="ira" creationdate="20130726T003208Z">
+        <seg># Этот цикл читает со стандартного ввода и печатает без пустых строк:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># This section is parsed by Porting/pod_lib.pl for use by pod/buildtoc etc</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T210746Z">
@@ -652,6 +660,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Parentheses for capturing</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003218Z" creationid="ira" creationdate="20130726T003218Z">
+        <seg>=item Скобки для захвата</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Scalars</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232430Z" creationid="ira" creationdate="20130725T232430Z">
@@ -896,6 +912,14 @@ of elements in the array:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234537Z" creationid="ira" creationdate="20130725T234537Z">
         <seg>По состоянию на Perl 5.10, у него даже есть оператор case/switch  (пишется C&lt;given&gt;/C&lt;when&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As well as grouping, parentheses serve a second purpose.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003234Z" creationid="ira" creationdate="20130726T003234Z">
+        <seg>Так же, как группировка, скобки служат второй цели.</seg>
       </tuv>
     </tu>
     <tu>
