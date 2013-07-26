@@ -461,8 +461,8 @@ requirements of C&lt;use strict;&gt;.)</seg>
       <tuv lang="EN-US">
         <seg>=item Boolean logic</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000023Z" creationid="ira" creationdate="20130726T000023Z">
-        <seg>=item Булева логика</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000133Z" creationid="ira" creationdate="20130726T000023Z">
+        <seg>=item Булева логика (в честь Джорджа Була)</seg>
       </tuv>
     </tu>
     <tu>
