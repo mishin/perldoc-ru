@@ -596,6 +596,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Using Perl modules</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003913Z" creationid="ira" creationdate="20130726T003913Z">
+        <seg>=head2 Использование Perl модулей</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Variable scoping</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234030Z" creationid="ira" creationdate="20130725T234030Z">
