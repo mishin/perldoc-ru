@@ -2395,6 +2395,15 @@ fashion.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These are documented at great length in L&lt;perlre&gt;, but for
+the meantime, here's a quick cheat sheet:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002246Z" creationid="ira" creationdate="20130726T002246Z">
+        <seg>Они описаны в достаточно подробно в L&lt;perlre&gt;, но тем не менее, вот быстрая шпаргалка:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These are documented in L&lt;perlvar&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233527Z" creationid="ira" creationdate="20130725T233527Z">
