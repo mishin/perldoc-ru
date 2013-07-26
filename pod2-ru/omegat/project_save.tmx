@@ -2353,8 +2353,8 @@ how many more is left as an exercise to the reader.</seg>
       <tuv lang="EN-US">
         <seg>The default argument to the C&lt;shift&gt; function just happens to be C&lt;@_&gt;.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003534Z" creationid="ira" creationdate="20130726T003534Z">
-        <seg>Аргумент по умолчанию в C&lt;shift&gt; функцию только, случается, C&lt;@_&gt;.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003609Z" creationid="ira" creationdate="20130726T003534Z">
+        <seg>Аргумент по умолчанию в C&lt;shift&gt; вытаскиеват первый аргумент массива C&lt;@_&gt;.</seg>
       </tuv>
     </tu>
     <tu>
