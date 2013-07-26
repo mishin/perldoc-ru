@@ -1385,8 +1385,8 @@ even aim to be entirely accurate.</seg>
 C&lt;$_&gt; by default, or can be bound to another variable using the C&lt;=~&gt;
 binding operator (also documented in L&lt;perlop&gt;).</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001850Z" creationid="ira" creationdate="20130726T001850Z">
-        <seg>Он работает с C&lt;$_&gt; по умолчанию, или может быть связан с другой переменной с помощью оператора привязки C&lt;=~&gt; (также документированы в L &lt;perlop&gt; ).</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001857Z" creationid="ira" creationdate="20130726T001850Z">
+        <seg>Он работает с C&lt;$_&gt; по умолчанию, или может быть связан с другой переменной с помощью оператора привязки C&lt;=~&gt; (также документированы в L&lt;perlop&gt;).</seg>
       </tuv>
     </tu>
     <tu>
