@@ -2852,6 +2852,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>\W                  a non-word character</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002410Z" creationid="ira" creationdate="20130726T002410Z">
+        <seg>\W                  несловесный символ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>\d                  a digit (0-9)</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002325Z" creationid="ira" creationdate="20130726T002325Z">
