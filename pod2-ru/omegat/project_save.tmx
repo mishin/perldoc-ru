@@ -1735,6 +1735,15 @@ tasks, and often provides suggestions for good CPAN modules to use.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>L&lt;perlmodlib&gt; lists the
+modules which came with your Perl installation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T004405Z" creationid="ira" creationdate="20130726T004405Z">
+        <seg>L&lt;perlmodlib&gt; список модулей, которые поставляются вместе с Perl установкой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Larry Wall &lt;larry@wall.org&gt;, with the help of oodles of other folks.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230911Z" creationid="ira" creationdate="20130723T230911Z">
