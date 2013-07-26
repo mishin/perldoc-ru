@@ -2882,6 +2882,14 @@ L&lt;perlmodinstall&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To learn how to use a particular module, use C&lt;perldoc I&lt;Module::Name&gt;&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T004104Z" creationid="ira" creationdate="20130726T004104Z">
+        <seg>Чтобы узнать, как использовать конкретный модуль, используйте C&lt;perldoc I&lt;Module::Name&gt;&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To read more about them check their respective manual pages at L&lt;strict&gt;
 and L&lt;warnings&gt;.</seg>
       </tuv>
