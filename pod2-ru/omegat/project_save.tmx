@@ -2194,6 +2194,15 @@ correctness over efficiency.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So C&lt;my $logmessage = shift;&gt; shifts the first item off the list of
+arguments and assigns it to C&lt;$logmessage&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003625Z" creationid="ira" creationdate="20130726T003625Z">
+        <seg>So C&lt;my $logmessage = shift;&gt; двигает первый пункт из списка аргументов и присваивает его C&lt;$logmessage&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So by storing a reference as the value of an array or hash
 element, you can easily create lists and hashes within lists and
 hashes.</seg>
