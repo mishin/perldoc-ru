@@ -284,6 +284,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>/(a.)+/             matches a string in which every odd-numbered</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003119Z" creationid="ira" creationdate="20130726T003119Z">
+        <seg>/(a.)+/             соответствует строка, в которой каждый нечетный</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>/^$/                nothing in the string (start and end are</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002945Z" creationid="ira" creationdate="20130726T002927Z">
