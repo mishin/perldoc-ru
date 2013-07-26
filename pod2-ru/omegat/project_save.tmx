@@ -212,6 +212,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>*                   zero or more of the previous thing</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002638Z" creationid="ira" creationdate="20130726T002638Z">
+        <seg>*                   ноль или более от предыдущей вещи</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>*   multiplication</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235714Z" creationid="ira" creationdate="20130725T235714Z">
