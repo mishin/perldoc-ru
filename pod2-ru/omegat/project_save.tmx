@@ -4684,6 +4684,14 @@ switch.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>{3,}                matches 3 or more of the previous thing</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002832Z" creationid="ira" creationdate="20130726T002832Z">
+        <seg>{3,}                соответствует 3 или более от предыдущей вещи</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>{3}                 matches exactly 3 of the previous thing</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002738Z" creationid="ira" creationdate="20130726T002738Z">
