@@ -2805,6 +2805,15 @@ declared and prevents other misuses of legacy Perl features.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Well, the arguments to a subroutine are available
+to us as a special array called C&lt;@_&gt; (see L&lt;perlvar&gt; for more on that).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003512Z" creationid="ira" creationdate="20130726T003512Z">
+        <seg>Ну, аргументы подпрограммы доступны нам как специальный массив C&lt;@_&gt; (см. L&lt;perlvar&gt; более подробно об этом).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>What's that C&lt;shift&gt;?</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T003454Z" creationid="ira" creationdate="20130726T003454Z">
