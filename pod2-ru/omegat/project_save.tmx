@@ -2372,6 +2372,14 @@ awk's semantics regarding getline and print.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The results end up in C&lt;$1&gt;, C&lt;$2&gt; and so on.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003258Z" creationid="ira" creationdate="20130726T003258Z">
+        <seg>Результаты оказались в C&lt;$1&gt;, C&lt;$2&gt; и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The special variable C&lt;$#array&gt; tells you the index of the last element
 of an array:</seg>
       </tuv>
