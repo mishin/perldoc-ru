@@ -4184,6 +4184,14 @@ split into an array.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>string concatenation</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000542Z" creationid="ira" creationdate="20130726T000542Z">
+        <seg>конкатенации строк</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>tells a2p that this awk script is always invoked with this B&lt;-F&gt;
 switch.</seg>
       </tuv>
@@ -4214,6 +4222,14 @@ switch.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232054Z" creationid="ira" creationdate="20130725T232054Z">
         <seg>мир";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x   string multiplication</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000551Z" creationid="ira" creationdate="20130726T000551Z">
+        <seg>x   умножение строк</seg>
       </tuv>
     </tu>
     <tu>
