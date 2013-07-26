@@ -276,6 +276,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>/(\d\s){3}/         three digits, each followed by a whitespace</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003015Z" creationid="ira" creationdate="20130726T003015Z">
+        <seg>/(\d\s){3}/         три цифры, за каждой из которых стоит пробел</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>/^$/                nothing in the string (start and end are</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002945Z" creationid="ira" creationdate="20130726T002927Z">
