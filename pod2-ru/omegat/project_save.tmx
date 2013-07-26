@@ -1239,6 +1239,17 @@ particular stream, so does Perl.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In
+scalar context it reads a single line from the filehandle, and in list
+context it reads the whole file in, assigning each line to an element of
+the list:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001010Z" creationid="ira" creationdate="20130726T000948Z">
+        <seg>В скалярном контексте он читает одну строку из дескриптора файла, а в списочном контексте он читает весь файл в, назначая каждую строку элементу списка:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In general, if something strange has gone wrong with your program and you're
 not sure where you should look for help, try making your code comply with
 B&lt;use strict&gt; and B&lt;use warnings&gt;.</seg>
