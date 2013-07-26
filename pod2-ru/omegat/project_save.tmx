@@ -1096,6 +1096,15 @@ scoped variables instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Categories of modules range from text manipulation to network protocols
+to database integration to graphics.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T004029Z" creationid="ira" creationdate="20130726T004029Z">
+        <seg>Категории модулей варьируются от манипуляций с текстом до сетевых протоколов, модулей для интеграции баз данных, для графики.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Check L&lt;perlop&gt; for more
 detail.)</seg>
       </tuv>
