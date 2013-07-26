@@ -123,6 +123,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Why do we have separate numeric and string comparisons?</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235946Z" creationid="ira" creationdate="20130725T235946Z">
+        <seg>(Почему у нас есть отдельные числовые и строковые сравнения?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>*   multiplication</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235714Z" creationid="ira" creationdate="20130725T235714Z">
@@ -447,6 +455,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232950Z" creationid="ira" creationdate="20130725T232950Z">
         <seg>=item Массивы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item Boolean logic</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000023Z" creationid="ira" creationdate="20130726T000023Z">
+        <seg>=item Булева логика</seg>
       </tuv>
     </tu>
     <tu>
@@ -787,6 +803,17 @@ operations the variable is involved in to match.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083415Z" creationid="rdtex1" creationdate="20130725T083415Z">
         <seg>Будьте тогда намерены изменить все операционные переменные, которые участвуют в поиске.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Because we don't
+have special variable types, and Perl needs to know whether to sort
+numerically (where 99 is less than 100) or alphabetically (where 100 comes
+before 99).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000014Z" creationid="ira" creationdate="20130726T000014Z">
+        <seg>Потому что у нас нет специальных типов переменных и Perl должен знать, нужно ли сортировать численно (где 99 меньше 100) или в алфавитном порядке (100, где идет перед 99).</seg>
       </tuv>
     </tu>
     <tu>
@@ -2506,6 +2533,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235859Z" creationid="ira" creationdate="20130725T235859Z">
         <seg>eq  равенство</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ge  greater than or equal</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130725T235940Z" creationid="ira" creationdate="20130725T235940Z">
+        <seg>ge  больше или равно</seg>
       </tuv>
     </tu>
     <tu>
