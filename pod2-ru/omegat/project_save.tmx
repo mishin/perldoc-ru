@@ -196,6 +196,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(foo|bar|baz)       matches any of the alternatives specified</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002459Z" creationid="ira" creationdate="20130726T002459Z">
+        <seg>(foo|bar|baz)       соответствует любому из указанных альтернатив</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>*   multiplication</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235714Z" creationid="ira" creationdate="20130725T235714Z">
@@ -4530,6 +4538,14 @@ considers them arguments to C&lt;print&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084240Z" creationid="rdtex1" creationdate="20130725T084240Z">
         <seg>s2p	перевод sed в perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>set</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002449Z" creationid="ira" creationdate="20130726T002449Z">
+        <seg>набор</seg>
       </tuv>
     </tu>
     <tu>
