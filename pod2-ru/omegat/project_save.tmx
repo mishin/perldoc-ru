@@ -2836,6 +2836,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[^aeiou]            matches a single character outside the given</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002443Z" creationid="ira" creationdate="20130726T002443Z">
+        <seg>[^aeiou]            соответствует одному символу вне данного набора</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[aeiou]             matches a single character in the given set</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002421Z" creationid="ira" creationdate="20130726T002421Z">
