@@ -4668,6 +4668,14 @@ switch.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>zero or one of the previous thing</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002710Z" creationid="ira" creationdate="20130726T002710Z">
+        <seg>ноль или один от предыдущей вещи</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>||  or</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000144Z" creationid="ira" creationdate="20130726T000144Z">
