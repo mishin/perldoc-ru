@@ -1718,6 +1718,15 @@ third-party modules.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>L&lt;perlfaq&gt; contains questions and answers related to many common
+tasks, and often provides suggestions for good CPAN modules to use.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T004301Z" creationid="ira" creationdate="20130726T004301Z">
+        <seg>L&lt;perlfaq&gt; содержит вопросы и ответы, связанные с большинствомобщих задач, и часто дает хорошие предложения для CPAN модулей в использовании.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Larry Wall &lt;larry@wall.org&gt;, with the help of oodles of other folks.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230911Z" creationid="ira" creationdate="20130723T230911Z">
