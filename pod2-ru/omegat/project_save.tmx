@@ -2907,6 +2907,15 @@ and L&lt;warnings&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Typically you will want to C&lt;use I&lt;Module::Name&gt;&gt;, which will then give
+you access to exported functions or an OO interface to the module.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T004236Z" creationid="ira" creationdate="20130726T004236Z">
+        <seg>Обычно вы можете использовать объявление C&lt;use I&lt;Module::Name&gt;&gt;, которое дает вам доступ к экспортируемым функциям или  OO ориентированный интерфейс к модулю.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Using C&lt;my&gt; in combination with a C&lt;use strict;&gt; at the top of
 your Perl scripts means that the interpreter will pick up certain common
 programming errors.</seg>
