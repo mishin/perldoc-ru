@@ -452,6 +452,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Regular expressions</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001553Z" creationid="ira" creationdate="20130726T001553Z">
+        <seg>=head2 Регулярные выражения</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Running Perl programs</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230609Z" creationid="ira" creationdate="20130725T230609Z">
