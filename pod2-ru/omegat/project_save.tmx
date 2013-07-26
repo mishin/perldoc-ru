@@ -1760,6 +1760,15 @@ line in the block.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>OO Perl is relatively simple and is implemented using references which
+know what sort of object they are based on Perl's concept of packages.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003800Z" creationid="ira" creationdate="20130726T003800Z">
+        <seg>OO Perl относительно проста и осуществляется с помощью ссылок, которые знают на основе какого объекта они основаны на концепции Perl-пакетов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Of course, it'll need
 to be executable first, so C&lt;chmod 755 script.pl&gt; (under Unix).</seg>
       </tuv>
