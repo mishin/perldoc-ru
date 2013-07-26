@@ -2523,6 +2523,14 @@ online at L&lt;http://www.perl.org/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can open a file for input or output using the C&lt;open()&gt; function.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000806Z" creationid="ira" creationdate="20130726T000806Z">
+        <seg>Вы можете открыть файл для ввода или вывода с помощью функции C&lt;open()&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can read that documentation using the C&lt;perldoc&gt;
 command or whatever method you're using to read this document.</seg>
       </tuv>
