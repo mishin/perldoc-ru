@@ -1776,8 +1776,8 @@ reports based on that information.</seg>
 subject of lengthy documentation in L&lt;perlrequick&gt;, L&lt;perlretut&gt;, and
 elsewhere.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001610Z" creationid="ira" creationdate="20130726T001610Z">
-        <seg>Поддержка регулярных выражений Perl является как широкая и глубокая, и является предметом длительных документации в L&lt;perlrequick&gt;, L&lt;perlretut&gt; , И в других местах.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001632Z" creationid="ira" creationdate="20130726T001610Z">
+        <seg>Поддержка регулярных выражений Perl является как широкой и глубокой, и является предметом длинной документации в L&lt;perlrequick&gt;, L&lt;perlretut&gt; , И в других местах.</seg>
       </tuv>
     </tu>
     <tu>
