@@ -278,8 +278,8 @@ requirements of C&lt;use strict;&gt;.)</seg>
       <tuv lang="EN-US">
         <seg>/^\d+/              string starts with one or more digits</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002844Z" creationid="ira" creationdate="20130726T002844Z">
-        <seg>строка начинается с одной или несколькими цифрами/^\d+/              string starts with one or more digits</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002915Z" creationid="ira" creationdate="20130726T002844Z">
+        <seg>/^\d+/              строка начинается с одной или несколькими цифрами</seg>
       </tuv>
     </tu>
     <tu>
