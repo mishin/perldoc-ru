@@ -2814,6 +2814,14 @@ declared and prevents other misuses of legacy Perl features.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We can manipulate C&lt;@_&gt; in other ways too:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003649Z" creationid="ira" creationdate="20130726T003649Z">
+        <seg>Мы можем управлять  C&lt;@_&gt; и в других случаях тоже:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We've already seen how to print to standard output using C&lt;print()&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001433Z" creationid="ira" creationdate="20130726T001433Z">
