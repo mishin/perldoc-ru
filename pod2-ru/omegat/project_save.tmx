@@ -2114,6 +2114,14 @@ keyword.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The C&lt;s///&gt; substitution operator is documented in L&lt;perlop&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002051Z" creationid="ira" creationdate="20130726T002051Z">
+        <seg> Оператор замены C&lt;s///&gt; описан в L&lt;perlop&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The C&lt;use
 diagnostics&gt; pragma automatically turns Perl's normally terse warnings
 and errors into these longer forms.</seg>
