@@ -2836,6 +2836,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>\D                  a non-digit</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002339Z" creationid="ira" creationdate="20130726T002339Z">
+        <seg>\D                  нецифра non-digit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>\S                  non-whitespace character</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002313Z" creationid="ira" creationdate="20130726T002313Z">
@@ -2856,6 +2864,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002304Z" creationid="ira" creationdate="20130726T002301Z">
         <seg>\s                  пробелы (пробел, табуляция, новая строка,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>\w                  a word character (a-z, A-Z, 0-9, _)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002348Z" creationid="ira" creationdate="20130726T002348Z">
+        <seg>\w                  символ слова (a-z, A-Z, 0-9, _)</seg>
       </tuv>
     </tu>
     <tu>
