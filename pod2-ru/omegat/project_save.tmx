@@ -1436,6 +1436,15 @@ null entries for a subsequent for...in, they won't be there in perl.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you feel the urge to write Perl modules, L&lt;perlnewmod&gt; will give you
+good advice.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T004417Z" creationid="ira" creationdate="20130726T004417Z">
+        <seg>Если вы чувствуете желание писать модули на Perl, L&lt;perlnewmod&gt; даст вам хороший совет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you were translating an awk script that
 processes the password file, you might say:</seg>
       </tuv>
