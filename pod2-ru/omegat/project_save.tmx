@@ -2522,6 +2522,15 @@ they haven't set the standard themselves, they steal from the best
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When you're done with your filehandles, you should C&lt;close()&gt; them
+(though to be honest, Perl will clean up after you if you forget):</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001539Z" creationid="ira" creationdate="20130726T001539Z">
+        <seg>Когда вы закончите с вашим дескрипторов файлов, вы должны использовать C&lt;close()&gt; для закрытия (хотя, честно говоря, Perl будет убирать за вами, если вы забыли):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>While none of the built-in data types have any arbitrary size limits
 (apart from memory size), there are still a few arbitrary limits:  a
 given variable name may not be longer than 251 characters.</seg>
