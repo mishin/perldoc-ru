@@ -276,6 +276,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>/^$/                nothing in the string (start and end are</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002927Z" creationid="ira" creationdate="20130726T002927Z">
+        <seg>/^$/                Ничего в строке (начало и конец</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>/^\d+/              string starts with one or more digits</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002915Z" creationid="ira" creationdate="20130726T002844Z">
