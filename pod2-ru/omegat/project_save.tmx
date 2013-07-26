@@ -1727,6 +1727,14 @@ tasks, and often provides suggestions for good CPAN modules to use.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>L&lt;perlmod&gt; describes Perl modules in general.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T004342Z" creationid="ira" creationdate="20130726T004342Z">
+        <seg>L&lt;perlmod&gt; описывает Perl модулей в целом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Larry Wall &lt;larry@wall.org&gt;, with the help of oodles of other folks.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230911Z" creationid="ira" creationdate="20130723T230911Z">
