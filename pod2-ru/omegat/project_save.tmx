@@ -2494,6 +2494,14 @@ declared and prevents other misuses of legacy Perl features.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We've already seen how to print to standard output using C&lt;print()&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001433Z" creationid="ira" creationdate="20130726T001433Z">
+        <seg>Мы уже видели, как печатать на стандартный вывод с помощью C&lt;print()&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When
 they haven't set the standard themselves, they steal from the best
 -- just like Perl itself.</seg>
