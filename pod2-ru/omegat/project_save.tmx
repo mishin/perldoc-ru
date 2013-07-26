@@ -1124,6 +1124,15 @@ them, in no particular order.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, C&lt;print()&gt; can also take an optional first argument specifying
+which filehandle to print to:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001509Z" creationid="ira" creationdate="20130726T001509Z">
+        <seg>Тем не менее, C&lt;print()&gt; может также взять дополнительный первый аргумент, указывающий на дескриптор файла для печати:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, only double quotes "interpolate" variables and special
 characters such as newlines (C&lt;\n&gt;):</seg>
       </tuv>
