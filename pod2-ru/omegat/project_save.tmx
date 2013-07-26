@@ -4635,6 +4635,14 @@ considers them arguments to C&lt;print&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>perlrun - how to execute the Perl interpreter</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T195242Z" creationid="ira" creationdate="20130726T195242Z">
+        <seg>perlrun - как запустить интерпретатор Perl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>perlsec		Perl security</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050611Z">
