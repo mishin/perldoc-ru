@@ -612,6 +612,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Writing subroutines</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003411Z" creationid="ira" creationdate="20130726T003411Z">
+        <seg>=head2 Написание подпрограмм</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Arithmetic</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235654Z" creationid="ira" creationdate="20130725T235654Z">
