@@ -782,6 +782,16 @@ loop that tries to iterate over ARGV[0] won't find it.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>A
+number of popular modules are included with the Perl distribution
+itself.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003944Z" creationid="ira" creationdate="20130726T003944Z">
+        <seg>Ряд популярных модулей уже идет в комплекте с Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A
 potential problem caught by C&lt;use strict;&gt; will cause your code to stop
 immediately when it is encountered, while C&lt;use warnings;&gt; will merely
 give a warning (like the command-line switch B&lt;-w&gt;) and let your code run.</seg>
