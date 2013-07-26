@@ -78,6 +78,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$a += 1;        # same as $a = $a + 1</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000639Z" creationid="ira" creationdate="20130726T000639Z">
+        <seg>$a += 1;        # также как $a = $a + 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$a -= 1;        # same as $a = $a - 1</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000657Z" creationid="ira" creationdate="20130726T000651Z">
+        <seg>$a -= 1;        # также как $a = $a - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$a .= "\n";     # same as $a = $a .</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000731Z" creationid="ira" creationdate="20130726T000731Z">
+        <seg>$a .= "\n";     # также как $a = $a .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$fruit_color{"apple"};           # gives "red"</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233628Z" creationid="ira" creationdate="20130725T233628Z">
@@ -352,6 +376,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234431Z" creationid="ira" creationdate="20130725T234431Z">
         <seg>=head2 Условные и циклические конструкции</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 Files and I/O</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000754Z" creationid="ira" creationdate="20130726T000754Z">
+        <seg>=head2 Файлы и Ввод/Вывод</seg>
       </tuv>
     </tu>
     <tu>
