@@ -276,6 +276,14 @@ requirements of C&lt;use strict;&gt;.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>/^\d+/              string starts with one or more digits</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002844Z" creationid="ira" creationdate="20130726T002844Z">
+        <seg>строка начинается с одной или несколькими цифрами/^\d+/              string starts with one or more digits</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;   less than</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235812Z" creationid="ira" creationdate="20130725T235812Z">
@@ -2093,6 +2101,14 @@ hashes.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233855Z" creationid="ira" creationdate="20130725T233855Z">
         <seg>Так, сохраняя ссылку в качестве значения массива или хэша элемента, вы можете легко создавать списки и хэши внутри списков и хэшей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some brief examples:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002836Z" creationid="ira" creationdate="20130726T002836Z">
+        <seg>Некоторые краткие примеры:</seg>
       </tuv>
     </tu>
     <tu>
