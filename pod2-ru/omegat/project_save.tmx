@@ -1901,6 +1901,17 @@ of them are code fragments rather than complete programs.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Quantifiers can be used to specify how many of the previous thing you
+want to match on, where "thing" means either a literal character, one
+of the metacharacters listed above, or a group of characters or
+metacharacters in parentheses.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T002528Z" creationid="ira" creationdate="20130726T002528Z">
+        <seg>Квантификаторы может быть использован для указания, сколько из предыдущего, что вы хотите, чтобы соответствовать на, где "вещь" означает либо буквенный символ, один из метасимволов, перечисленных выше, или группа символов или метасимволы в круглых скобках.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Read all about it (and other special variables) in
 L&lt;perlvar&gt;.</seg>
       </tuv>
