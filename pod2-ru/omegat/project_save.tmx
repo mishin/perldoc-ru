@@ -1736,6 +1736,14 @@ line in the block.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now we can use the subroutine just as any other built-in function:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003429Z" creationid="ira" creationdate="20130726T003429Z">
+        <seg>Теперь мы можем воспользоваться подпрограммой как и любой другой встроенной функцией:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Numbers don't need quotes around them:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232305Z" creationid="ira" creationdate="20130725T232305Z">
@@ -2831,6 +2839,14 @@ given variable name may not be longer than 251 characters.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231938Z" creationid="ira" creationdate="20130725T231938Z">
         <seg>Пробелы не имеют значения:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Writing subroutines is easy:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T003417Z" creationid="ira" creationdate="20130726T003417Z">
+        <seg>Написание подпрограмм легко:</seg>
       </tuv>
     </tu>
     <tu>
