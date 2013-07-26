@@ -2815,6 +2815,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>if ($a =~ /foo/) { ... }  # true if $a contains "foo"</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001738Z" creationid="ira" creationdate="20130726T001738Z">
+        <seg>if ($a =~ /foo/) { ... }  # верно если $a содержит "foo"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>if (/foo/)       { ... }  # true if $_ contains "foo"</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001721Z" creationid="ira" creationdate="20130726T001721Z">
