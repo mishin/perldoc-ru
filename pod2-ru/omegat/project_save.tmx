@@ -4336,6 +4336,14 @@ switch.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>while (&lt;$in&gt;) {     # assigns each line in turn to $_</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T001419Z" creationid="ira" creationdate="20130726T001419Z">
+        <seg>while (&lt;$in&gt;) {     # присваивает каждой строке $_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>world";</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232054Z" creationid="ira" creationdate="20130725T232054Z">
