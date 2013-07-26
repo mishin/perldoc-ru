@@ -2222,8 +2222,8 @@ right.</seg>
         <seg>They're more readable than the C-style operators, but have
 different precedence to C&lt;&amp;&amp;&gt; and friends.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000410Z" creationid="ira" creationdate="20130726T000410Z">
-        <seg>Они более понятные, чем C-style операторы, но имеют разные предпочтения () C&lt;&amp;&amp;&gt; и друзьями.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130726T000432Z" creationid="ira" creationdate="20130726T000410Z">
+        <seg>Они более понятные, чем C-style операторы, но имеют разные предпочтения (старшинство операторов) C&lt;&amp;&amp;&gt; и друзьями.</seg>
       </tuv>
     </tu>
     <tu>
