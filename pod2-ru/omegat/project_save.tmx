@@ -7893,6 +7893,15 @@ files.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You may also
+give a descriptive name of a page, such as C&lt;perlfunc&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133400Z" creationid="ira" creationdate="20130727T133400Z">
+        <seg>Также вы можете задать имя страницы документации, например С&lt;perlfunc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You may mail your bug reports (be sure to include full configuration
 information as output by the myconfig program in the perl source
 tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
