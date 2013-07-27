@@ -264,6 +264,7 @@ I<Higher-Order Perl>: http://hop.perl.plover.com/
 =over 4
 
 =item I<Programming Pearls> 
+
 =item I<Жемчуг программирования>
 
 	by Jon Bentley
