@@ -2969,6 +2969,22 @@ STDOUT and STDERR.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, C&lt;-oLaTeX&gt; currently tries all of the following classes:
+Pod::Perldoc::ToLaTeX Pod::Perldoc::Tolatex Pod::Perldoc::ToLatex
+Pod::Perldoc::ToLATEX Pod::Simple::LaTeX Pod::Simple::latex
+Pod::Simple::Latex Pod::Simple::LATEX Pod::LaTeX Pod::latex Pod::Latex
+Pod::LATEX.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132232Z" creationid="ira" creationdate="20130727T132232Z">
+        <seg>Например, C&lt;-oLaTeX&gt; currently tries all of the following classes:
+Pod::Perldoc::ToLaTeX Pod::Perldoc::Tolatex Pod::Perldoc::ToLatex
+Pod::Perldoc::ToLATEX Pod::Simple::LaTeX Pod::Simple::latex
+Pod::Simple::Latex Pod::Simple::LATEX Pod::LaTeX Pod::latex Pod::Latex
+Pod::LATEX.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, C&lt;PERL_MEM_LOG=1mst&gt; logs all
 information to stdout.</seg>
       </tuv>
@@ -3010,6 +3026,16 @@ of those suffixes.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T205238Z" creationid="ira" creationdate="20130726T205238Z">
         <seg>Например:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example:
+C&lt;-oman&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132143Z" creationid="ira" creationdate="20130727T132143Z">
+        <seg>Например:
+C&lt;-oman&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6706,6 +6732,17 @@ PerlIO layer.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T001945Z" creationid="ira" creationdate="20130727T001945Z">
         <seg>Это вновь осуществления STDIO-подобный буферизации виде слоя PerlIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is actually just a wrapper around the C&lt;-M&gt; switch;
+using C&lt;-oI&lt;formatname&gt;&gt; just looks for a loadable class by adding
+that format name (with different capitalizations) to the end of
+different classname prefixes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132216Z" creationid="ira" creationdate="20130727T132216Z">
+        <seg>На самом деле, это обертка вокруг переключателя C&lt;-M&gt;; используйте C&lt;-oI&lt;название-формата&gt;&gt; для загрузки класса, имя класса формируется добавлением названия формата в конец имени (без учета регистра).</seg>
       </tuv>
     </tu>
     <tu>
