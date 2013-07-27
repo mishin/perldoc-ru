@@ -2682,6 +2682,14 @@ modules (C&lt;@INC&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Display onB&lt;l&gt;y the file name of the module found.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131638Z" creationid="ira" creationdate="20130727T131638Z">
+        <seg>Отобразить только (onB&lt;l&gt;y), если название модуля найдено.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Display the entire module: both code and unformatted pod documentation.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T131600Z" creationid="ira" creationdate="20130727T131600Z">
@@ -6714,6 +6722,16 @@ but it probably won't look as nice.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T131229Z" creationid="ira" creationdate="20130727T131229Z">
         <seg>Возможно, это быстрей, но, вероятно, будет смотреться хуже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This may be useful if the docs don't explain a function in the detail
+you need, and you'd like to inspect the code directly; perldoc will find
+the file for you and simply hand it off for display.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131623Z" creationid="ira" creationdate="20130727T131623Z">
+        <seg>Это может быть полезно, если документация не достаточно объясняет работу функции и Вы хотите посмотреть непосредственно код; perldoc найдет файл для Вас и просто выведет содержимое.</seg>
       </tuv>
     </tu>
     <tu>
