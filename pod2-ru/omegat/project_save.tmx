@@ -1242,6 +1242,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item B&lt;-m&gt; I&lt;module&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131250Z" creationid="ira" creationdate="20130727T131250Z">
+        <seg>=item B&lt;-m&gt; I&lt;модуль&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Boolean logic</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000133Z" creationid="ira" creationdate="20130726T000023Z">
@@ -5462,6 +5470,14 @@ doesn't need to return a true value.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T223315Z" creationid="ira" creationdate="20130726T223315Z">
         <seg>Поскольку это фактические C&lt;do&gt; (не C&lt;require&gt;), F&lt;sitecustomize.pl&gt; не нужно возвращать истинное значение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Skip the real Pod formatting, and just show the raw Pod source (B&lt;U&gt;nformatted)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131244Z" creationid="ira" creationdate="20130727T131244Z">
+        <seg>Игнорировать POD-форматирование и отобразить исходный код (B&lt;U&gt;nformatted)</seg>
       </tuv>
     </tu>
     <tu>
