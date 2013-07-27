@@ -1240,6 +1240,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item I&lt;Perl Best Practices&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124737Z" creationid="ira" creationdate="20130727T124737Z">
+        <seg>=item I&lt;Perl Best Practices&gt; I&lt;Perl Лучшие Практики&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item I&lt;Programming Perl&gt; (the "Camel Book"):</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T123759Z" creationid="ira" creationdate="20130727T123759Z">
