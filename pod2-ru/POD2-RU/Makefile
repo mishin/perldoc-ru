@@ -65,11 +65,11 @@ DIRFILESEP = \\
 DFSEP = $(DIRFILESEP)
 NAME = POD2::RU
 NAME_SYM = POD2_RU
-VERSION = 5.18.0.1
+VERSION = 5.18.0.1.01
 VERSION_MACRO = VERSION
-VERSION_SYM = 5_18_0_1
+VERSION_SYM = 5_18_0_1_01
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 5.18.0.1
+XS_VERSION = 5.18.0.1.01
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib\arch
@@ -195,6 +195,7 @@ TO_INST_PM = lib/POD2/RU.pm \
 	lib/POD2/RU/a2p.pod \
 	lib/POD2/RU/perl.pod \
 	lib/POD2/RU/perlbook.pod \
+	lib/POD2/RU/perlcheat.pod \
 	lib/POD2/RU/perldoc.pod \
 	lib/POD2/RU/perlintro.pod \
 	lib/POD2/RU/perlnewmod.pod \
@@ -216,6 +217,8 @@ PM_TO_BLIB = lib/POD2/RU/perlintro.pod \
 	blib\lib\POD2\RU\perlnewmod.pod \
 	lib/POD2/RU/perlrun.pod \
 	blib\lib\POD2\RU\perlrun.pod \
+	lib/POD2/RU/perlcheat.pod \
+	blib\lib\POD2\RU\perlcheat.pod \
 	lib/POD2/RU/perlbook.pod \
 	blib\lib\POD2\RU\perlbook.pod \
 	lib/POD2/RU/perldoc.pod \
@@ -288,7 +291,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = POD2-RU
-DISTVNAME = POD2-RU-5.18.0.1
+DISTVNAME = POD2-RU-5.18.0.1.01
 
 
 # --- MakeMaker macro section:
@@ -533,7 +536,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "  Pod::Perldoc: 3.15" >> META_new.yml
 	$(NOECHO) $(ECHO) "  Test::More: 0" >> META_new.yml
 	$(NOECHO) $(ECHO) "  Test::More::UTF8: 0.04" >> META_new.yml
-	$(NOECHO) $(ECHO) "version: v5.18.0.1" >> META_new.yml
+	$(NOECHO) $(ECHO) "version: v5.18.0.1.01" >> META_new.yml
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
 	$(NOECHO) $(ECHO) {{ > META_new.json
@@ -578,7 +581,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "      }}" >> META_new.json
 	$(NOECHO) $(ECHO) "   }}," >> META_new.json
 	$(NOECHO) $(ECHO) "   \"release_status\" : \"stable\"," >> META_new.json
-	$(NOECHO) $(ECHO) "   \"version\" : \"v5.18.0.1\"" >> META_new.json
+	$(NOECHO) $(ECHO) "   \"version\" : \"v5.18.0.1.01\"" >> META_new.json
 	$(NOECHO) $(ECHO) }} >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
 
@@ -903,6 +906,7 @@ pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 	  lib/POD2/RU.pm blib\lib\POD2\RU.pm \
 	  lib/POD2/RU/perlnewmod.pod blib\lib\POD2\RU\perlnewmod.pod \
 	  lib/POD2/RU/perlrun.pod blib\lib\POD2\RU\perlrun.pod \
+	  lib/POD2/RU/perlcheat.pod blib\lib\POD2\RU\perlcheat.pod \
 	  lib/POD2/RU/perlbook.pod blib\lib\POD2\RU\perlbook.pod \
 	  lib/POD2/RU/perldoc.pod blib\lib\POD2\RU\perldoc.pod \
 	  lib/POD2/RU/perlpragma.pod blib\lib\POD2\RU\perlpragma.pod 

@@ -3,6 +3,7 @@ lib/POD2/RU.pm
 lib/POD2/RU/a2p.pod
 lib/POD2/RU/perl.pod
 lib/POD2/RU/perlbook.pod
+lib/POD2/RU/perlcheat.pod
 lib/POD2/RU/perldoc.pod
 lib/POD2/RU/perlintro.pod
 lib/POD2/RU/perlnewmod.pod

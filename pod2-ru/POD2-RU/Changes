@@ -1,5 +1,10 @@
 Revision history for Perl extension POD2::RU
 
+5.18.0.1.01  July 27, 2013
+             * Added 
+	     perlcheat.pod
+	     perlnewmod.pod
+
 5.18.0.1  July 27, 2013
 
            * First version, including 

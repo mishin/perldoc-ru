@@ -2,12 +2,10 @@ package POD2::RU;
 use utf8;
 use strict;
 use warnings;
-# $ENV{LANG} = 'UTF8';
-# use open ':locale';
 use base 'Exporter';
 use base 'POD2::Base';
 
-our $VERSION = '5.18.0.1';
+our $VERSION = '5.18.0.1.01';
 
 our @EXPORT = qw(print_pod print_pods);
 
@@ -22,6 +20,8 @@ sub pod_info {
         perldoc    => '5.18.0.1',
         perlpragma => '5.18.0.1',
         perlstyle  => '5.18.0.1',
+        perlcheat  => '5.18.0.1',
+        perlnewmod  => '5.18.0.1',
     };
 }
 
