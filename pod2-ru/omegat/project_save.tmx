@@ -1778,6 +1778,14 @@ X&lt;SYS$LOGIN&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Write the README</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152537Z" creationid="ira" creationdate="20130727T152537Z">
+        <seg>=item Напишите файл README</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&gt;   greater than</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235819Z" creationid="ira" creationdate="20130725T235819Z">
@@ -2200,6 +2208,16 @@ module: it may include any characters whatsoever.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T141918Z" creationid="ira" creationdate="20130727T141918Z">
         <seg>После этого модуль идентифицирующей префикс, остальная часть ключа полностью зависит от модуля: он может включать любые символы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Again, C&lt;module-starter&gt; and C&lt;h2xs&gt;
+provide a test framework which you can extend - you should do something
+more than just checking your module will compile.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152516Z" creationid="ira" creationdate="20130727T152516Z">
+        <seg>Опять же, C&lt;module-starter&gt; и C&lt;h2xs&gt; обеспечить испытания каркаса которого можно расширить - ты должен делать нечто большее, чем просто проверка ваш модуль будет компилироваться.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5389,6 +5407,15 @@ subroutines from your module into the caller's namespace.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T152328Z" creationid="ira" creationdate="20130727T152328Z">
         <seg>L&lt;Exporter|Exporter&gt; дает стандартный способ экспорта символы и подпрограммы из вашего модуля в пространство имен вызывающего абонента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>L&lt;Test::Simple|Test::Simple&gt; and L&lt;Test::More|Test::More&gt; are good
+places to start when writing a test suite.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152523Z" creationid="ira" creationdate="20130727T152523Z">
+        <seg>L&lt;Test::Simple|Test::Simple&gt; и L&lt;Test::More|Test::More&gt; хорошие места, чтобы начать при написании тестов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9990,6 +10017,17 @@ L&lt;perlmodlib&gt; and L&lt;perlmodinstall&gt; before coming back here.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T151145Z" creationid="ira" creationdate="20130727T151145Z">
         <seg>Вы также пропавших без вести на очень много полезного кода; рассмотреть взгляд на L&lt;perlmod&gt; , L&lt;perlmodlib&gt; и L&lt;perlmodinstall&gt; перед возвращением сюда.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You're encouraged to create self-tests for your module to ensure it's
+working as intended on the myriad platforms Perl supports; if you upload
+your module to CPAN, a host of testers will build your module and send
+you the results of the tests.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152508Z" creationid="ira" creationdate="20130727T152508Z">
+        <seg>Вы рекомендуется создать самотестирования для вашего модуля, чтобы убедиться, что он работает, как предполагалось на множество платформ поддерживает Perl, если вы загрузите модуль CPAN, множество тестеров будет строить ваш модуль и отправить вам результаты испытаний.</seg>
       </tuv>
     </tu>
     <tu>
