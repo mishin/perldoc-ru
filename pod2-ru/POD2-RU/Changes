@@ -1,0 +1,24 @@
+Revision history for Perl extension POD2::RU
+
+5.18.0.1  July 27, 2013
+
+           * First version, including 
+	   perl.pod 
+	   perlintro.pod 
+	   perlrun.pod 
+	   a2p.pod
+	   
+	   perlbook.pod
+	   perldoc.pod 
+	   perlpragma.pod
+	   perlstyle.pod
+	   
+	   * Thanks to Enrique Nell for basic script from POD2::ES
+	   * espesially merge tmx files for OmegaT
+	   
+
+5.18.0.1  July 05, 2013
+          * Anatoliy Sharifullin agreed that i can use already translated code
+	  from https://github.com/sharifulin/pod2-ru/blob/master/RU.pm
+
+	   
