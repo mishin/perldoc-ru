@@ -259,6 +259,15 @@ places:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(C&lt;MANPAGER&gt; is not used if C&lt;perldoc&gt; was told to display
+plain text or unformatted pod.)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134501Z" creationid="ira" creationdate="20130727T134501Z">
+        <seg>(C&lt;MANPAGER&gt; не используется, если C&lt;perldoc&gt; указывает отображать простой текст или неформатированный pod.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(C&lt;and&gt;, C&lt;or&gt; and C&lt;not&gt; aren't just in the above table as descriptions
 of the operators.</seg>
       </tuv>
@@ -2630,6 +2639,16 @@ defined) and C&lt;PATH&gt; environment variables.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>C&lt;perldoc&gt; will use, in order of preference, the pager defined in
+C&lt;PERLDOC_PAGER&gt;, C&lt;MANPAGER&gt;, or C&lt;PAGER&gt; before trying to find a pager
+on its own.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134451Z" creationid="ira" creationdate="20130727T134451Z">
+        <seg>C&lt;perldoc&gt;будет использовать пейджер, в порядке предпочтения, определённый в C&lt;PERLDOC_PAGER&gt;, C&lt;MANPAGER&gt;, или C&lt;PAGER&gt; перед тем как попытается найти собственный.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Categories of modules range from text manipulation to network protocols
 to database integration to graphics.</seg>
       </tuv>
@@ -3988,6 +4007,17 @@ matching the entries in C&lt;$Config{inc_version_list}&gt; are added.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In directories where either C&lt;Makefile.PL&gt; or C&lt;Build.PL&gt; exist, C&lt;perldoc&gt;
+will add C&lt;.&gt; and C&lt;lib&gt; first to its search path, and as long as you're not
+the superuser will add C&lt;blib&gt; too.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134412Z" creationid="ira" creationdate="20130727T134412Z">
+        <seg>В каталогах, где есть либо C&lt;Makefile.PL&gt; либо C&lt;Build.PL&gt;, C&lt;perldoc&gt;
+добавляет C&lt;.&gt; и C&lt;lib&gt; первым его пути поиска, и до тех пор, пока суперпользователь не добавит C&lt;blib&gt; тоже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In fact, you can match
 on just about anything you could dream of by using more complex regular
 expressions.</seg>
@@ -4914,6 +4944,14 @@ your control.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231535Z" creationid="ira" creationdate="20130723T231535Z">
         <seg>Можно также использовать B&lt;-w&gt; флаг, о его использование, как правило, не рекомендуется, потому что он будет применяться ко всему исполняемуму коду Perl, в том числе, который не под вашим контролем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One useful value for C&lt;PERLDOC_PAGER&gt; is C&lt;less -+C -E&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134512Z" creationid="ira" creationdate="20130727T134512Z">
+        <seg>Одно из полезных значений для C&lt;PERLDOC_PAGER&gt; - это C&lt;less -+C -E&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7081,6 +7119,16 @@ features like: C&lt;-w page_numbering&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234819Z" creationid="ira" creationdate="20130725T234819Z">
         <seg>Это считается более читаемой версией C&lt;if (!I&lt;condition&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is really helpful if you're working
+inside of a build directory and want to read through the docs even if you
+have a version of a module previously installed.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134420Z" creationid="ira" creationdate="20130727T134420Z">
+        <seg>Это очень полезно, если вы работаете внутри каталог сборки и хотите прочитать документацию, даже если у вас есть версия модулем, установленным ранее.</seg>
       </tuv>
     </tu>
     <tu>
