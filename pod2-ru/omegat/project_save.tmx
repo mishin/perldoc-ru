@@ -1968,6 +1968,17 @@ point.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Accesses would be to the structure without locking (which is not safe for
+Perl's scalars), and either the structure has to leak, or it has to be
+freed when its creating thread terminates, which may be before the optree
+referencing it is deleted, if other threads outlive it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142305Z" creationid="ira" creationdate="20130727T142305Z">
+        <seg>Доступ к структуре будет неблокирующим (что не безопасно для Perl скаляров). Такие структуры могут давать утечки памяти, либо быть освобождены, когда породивший их поток завершится. Это может произойти до того, как op-дерево удалит ссылки на них, если его поток переживёт их.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Actually, it I&lt;will&gt; execute and C&lt;BEGIN&gt;, C&lt;UNITCHECK&gt;,
 or C&lt;CHECK&gt; blocks and any C&lt;use&gt; statements: these are considered as
 occurring outside the execution of your program.</seg>
@@ -2455,6 +2466,15 @@ don't need to know it.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T004037Z" creationid="ira" creationdate="20130727T004037Z">
         <seg>B &lt;Не разглашайте хэш семян&gt; для людей, которые не нужно это знать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>B&lt;Don't&gt; attempt to store references to data structures as integers which
+are retrieved via C&lt;caller&gt; and converted back, as this will not be threadsafe.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142244Z" creationid="ira" creationdate="20130727T142244Z">
+        <seg>B&lt;Не&gt; пытайтесь хранить указатели на структуры данных как целые числа, которые получены из C&lt;caller&gt; и преобразованы обратно, т.к. это будет не безопасным для потоков.</seg>
       </tuv>
     </tu>
     <tu>
