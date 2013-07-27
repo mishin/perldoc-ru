@@ -4704,6 +4704,14 @@ techniques that are still valid today.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Modules following this convention all play nicely with each other.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141957Z" creationid="ira" creationdate="20130727T141957Z">
+        <seg>Модули следующие этому соглашению все дружат друг с другом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More complex data types can be constructed using references, which allow
 you to build lists and hashes within lists and hashes.</seg>
       </tuv>
