@@ -29,3 +29,20 @@ dmake:  Error code 129, while making 'POD2-RU-5.18.0.1.targz'
 http://www.perlmonks.org/?node_id=128077
 
   module-starter --module=POD2::RU --author="Nikolay Mishin" --email=mishin@cpan.org --verbose
+  
+  Hi guys,
+I translate first 9 pod 
+perlrun.pod
+perlintro.pod
+perl.pod
+perlnewmod.pod
+perlstyle.pod
+perldoc.pod
+a2p.pod
+perlbook.pod
+perlpragma.pod
+to russian language,
+so I want to upload it to CPAN,
+BTW thanks for the Enrique Nell for helping with scripts and OmegaT
+
+Hi I talk with SHARIFULN he is not mind to get this namespace to me
