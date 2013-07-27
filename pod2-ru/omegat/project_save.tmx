@@ -2666,6 +2666,14 @@ modules (C&lt;@INC&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Display docs using plain B&lt;t&gt;ext converter, instead of nroff.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131218Z" creationid="ira" creationdate="20130727T131218Z">
+        <seg>Показывать документацию, используя текстовый конвертер (B&lt;t&gt;ext), а не nroff.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do
 not use it in production.</seg>
       </tuv>
