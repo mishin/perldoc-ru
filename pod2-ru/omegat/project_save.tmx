@@ -2682,6 +2682,14 @@ modules (C&lt;@INC&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Display the entire module: both code and unformatted pod documentation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131600Z" creationid="ira" creationdate="20130727T131600Z">
+        <seg>Показать содержимое модуля: код и неотформатированную POD-документацию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do
 not use it in production.</seg>
       </tuv>
