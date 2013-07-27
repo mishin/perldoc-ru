@@ -3192,6 +3192,15 @@ that construct.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For simple names like 'foo', when the normal search fails to find
+a matching page, a search with the "perl" prefix is tried as well.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133646Z" creationid="ira" creationdate="20130727T133646Z">
+        <seg>Для простых имен, как 'foo', когда нормальный поиск не удался, также пытайтесь найти соответствующую страницу поиска с префиксом "perl" .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For this to be valid, the formatter class
 must provide such a method, and the value you pass should be valid.</seg>
       </tuv>
