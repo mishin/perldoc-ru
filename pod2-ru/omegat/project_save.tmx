@@ -2975,8 +2975,8 @@ Pod::Perldoc::ToLATEX Pod::Simple::LaTeX Pod::Simple::latex
 Pod::Simple::Latex Pod::Simple::LATEX Pod::LaTeX Pod::latex Pod::Latex
 Pod::LATEX.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132232Z" creationid="ira" creationdate="20130727T132232Z">
-        <seg>Например, C&lt;-oLaTeX&gt; currently tries all of the following classes:
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132252Z" creationid="ira" creationdate="20130727T132232Z">
+        <seg>Например, C&lt;-oLaTeX&gt; пытается использовать следующие классы:
 Pod::Perldoc::ToLaTeX Pod::Perldoc::Tolatex Pod::Perldoc::ToLatex
 Pod::Perldoc::ToLATEX Pod::Simple::LaTeX Pod::Simple::latex
 Pod::Simple::Latex Pod::Simple::LATEX Pod::LaTeX Pod::latex Pod::Latex
