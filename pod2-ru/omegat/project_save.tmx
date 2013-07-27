@@ -585,6 +585,14 @@ syntax tree.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>, =&gt;            /a ASCII    /aa safe  {3,7}  repeat in range</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184411Z" creationid="ira" creationdate="20130727T184411Z">
+        <seg>, =&gt;            /a ASCII    /aa безопасно  {3,7}  повторить в диапазоне</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-   subtraction</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235708Z" creationid="ira" creationdate="20130725T235708Z">
@@ -885,6 +893,14 @@ syntax tree.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000528Z" creationid="ira" creationdate="20130726T000528Z">
         <seg>=   присваивание</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>= += last goto  /p preserve           ?</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184346Z" creationid="ira" creationdate="20130727T184346Z">
+        <seg>= += last goto  /p сохранить           ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -1885,6 +1901,14 @@ X&lt;SYS$LOGIN&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235842Z" creationid="ira" creationdate="20130725T235842Z">
         <seg>&gt;=  больше или равно</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>?:              /x ignore wh.space    *      zero or more</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184317Z" creationid="ira" creationdate="20130727T184317Z">
+        <seg>?:              /x игнорировать пробелы    *      ноль или более</seg>
       </tuv>
     </tu>
     <tu>
@@ -10769,6 +10793,14 @@ know when the filename has changed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>includes \n      +      one or more</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184255Z" creationid="ira" creationdate="20130727T184255Z">
+        <seg>включает \n      +      один или более</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>is better than</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T143600Z" creationid="ira" creationdate="20130727T143600Z">
@@ -10822,6 +10854,14 @@ such code to be more efficient by discarding the semantic sugar.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T222110Z" creationid="ira" creationdate="20130726T222110Z">
         <seg>like НАЧАЛО</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>list ops        /l locale   /d  dual  |      alternation</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184431Z" creationid="ira" creationdate="20130727T184431Z">
+        <seg>list ops        /l локаль   /d  dual  |      альтернатива</seg>
       </tuv>
     </tu>
     <tu>
@@ -10905,6 +10945,14 @@ program unless the name of the program contains path separators.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000200Z" creationid="ira" creationdate="20130726T000200Z">
         <seg>отрицание</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>not             /u Unicode            []     character class</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184449Z" creationid="ira" creationdate="20130727T184449Z">
+        <seg>not             /u Юникод            []     класс символов</seg>
       </tuv>
     </tu>
     <tu>
@@ -12813,6 +12861,14 @@ or specific values).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000551Z" creationid="ira" creationdate="20130726T000551Z">
         <seg>x   умножение строк</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>zero or one</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184348Z" creationid="ira" creationdate="20130727T184348Z">
+        <seg>ноль или один</seg>
       </tuv>
     </tu>
     <tu>
