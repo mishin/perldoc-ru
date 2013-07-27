@@ -1251,6 +1251,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Step-by-step: Making the module</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151809Z" creationid="ira" creationdate="20130727T151809Z">
+        <seg>=head2 Шаг за шагом: Создание модуля</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Step-by-step: Preparing the ground</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T151502Z" creationid="ira" creationdate="20130727T151502Z">
@@ -1445,10 +1453,34 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Check again</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151756Z" creationid="ira" creationdate="20130727T151756Z">
+        <seg>=item Проверьте еще раз</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Check it's new</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T151621Z" creationid="ira" creationdate="20130727T151621Z">
         <seg>=item Проверьте, что они самые свежие</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item Choose a name</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151717Z" creationid="ira" creationdate="20130727T151717Z">
+        <seg>=item Выберите имя</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item Discuss the need</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151649Z" creationid="ira" creationdate="20130727T151649Z">
+        <seg>=item Обсудите необходимость</seg>
       </tuv>
     </tu>
     <tu>
@@ -1686,6 +1718,14 @@ X&lt;SYS$LOGIN&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001906Z" creationid="ira" creationdate="20130726T001906Z">
         <seg>=item Простая замена</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item Start with F&lt;module-starter&gt; or F&lt;h2xs&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151829Z" creationid="ira" creationdate="20130727T151829Z">
+        <seg>=item Начните с F&lt;module-starter&gt; или F&lt;h2xs&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2466,6 +2506,16 @@ and interpreted by the C&lt;Devel::I&lt;MOD&gt;::import&gt; routine.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>At the very
+least, remember this: modules should be title capitalised, (This::Thing)
+fit in with a category, and explain their purpose succinctly.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151747Z" creationid="ira" creationdate="20130727T151747Z">
+        <seg>По крайней мере, помните это: модули должно быть название капитализируются (This::Thing) вписывается в категорию, и объяснить их цель кратко.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>At the very least it will let some poor
 schmuck bounce on the % key in B&lt;vi&gt;.</seg>
       </tuv>
@@ -2838,6 +2888,15 @@ environment variable, treats the colon as a separator.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T001456Z" creationid="ira" creationdate="20130727T001456Z">
         <seg>Но код, который анализирует спецификации уровня строк, который также используется для декодирования переменной PERLIO среды, лечится двоеточием в качестве разделителя.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But there
+might not actually be any real demand for it out there.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151658Z" creationid="ira" creationdate="20130727T151658Z">
+        <seg>Но не может быть фактически любой реальный спрос на его там.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3812,6 +3871,16 @@ and loop through them.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Have a good plough
+through the L&lt;http://search.cpan.org&gt; and make sure you're not the one
+reinventing the wheel!</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151635Z" creationid="ira" creationdate="20130727T151635Z">
+        <seg>Иметь хороший плуг через L&lt;http://search.cpan.org&gt; и убедитесь, что вы не тот, изобретать велосипед!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Having PERLDOCDEBUG set to a positive integer will make perldoc emit
 even more descriptive output than the C&lt;-D&gt; switch does; the higher the
 number, the more it emits.</seg>
@@ -4518,6 +4587,17 @@ you navigate the rest of Perl's extensive documentation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you're unsure
+about the demand your module will have, consider sending out feelers
+on the C&lt;comp.lang.perl.modules&gt; newsgroup, or as a last resort, ask the
+modules list at C&lt;modules@perl.org&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151706Z" creationid="ira" creationdate="20130727T151706Z">
+        <seg>Если вы не знаете о вашем спроса модуль будет иметь, рассмотреть вопрос о направлении прощупывать на C&lt;comp.lang.perl.modules&gt; телеконференции, или в крайнем случае, попросите список модулей на C&lt;modules@perl.org&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you've succeeded
 in compiling perl, the L&lt;perlbug&gt; script in the F&lt;utils/&gt; subdirectory
 can be used to help mail in a bug report.</seg>
@@ -4830,6 +4910,17 @@ whip up quick solutions to annoying problems.</seg>
         <seg>Он сочетает в себе
 (по мнению автора, во всяком случае) некоторые из лучших особенностей B&lt;sed&gt;,
 B&lt;awk&gt;, и B&lt;sh&gt;, что делает его знакомым и простым, быстрым и удобным для пользователей Unix при решении досадных проблем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It creates a directory
+with stubs of all the necessary files to start a new module, according
+to recent "best practice" for module development, and is invoked from
+the command line, thus:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151911Z" creationid="ira" creationdate="20130727T151911Z">
+        <seg>Это создает каталог с шаблонами (stubs) все[ необходимые файлы для запуска нового модуля, согласно последним "лучшей практики" для разработки модулей и вызывается из командной строки, таким образом:</seg>
       </tuv>
     </tu>
     <tu>
@@ -6132,6 +6223,15 @@ executed, and passes these along to any child processes it starts.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perl modules included on CPAN have a naming hierarchy you should try to
+fit in with.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151720Z" creationid="ira" creationdate="20130727T151720Z">
+        <seg>Perl модули включены в CPAN есть иерархии имен вы должны попробовать, чтобы вписываться в.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl modules provide a range of features to help you avoid reinventing
 the wheel, and can be downloaded from CPAN ( http://www.cpan.org/ ).</seg>
       </tuv>
@@ -6371,6 +6471,16 @@ references.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remember that this is a closed list
+with a very long turn-around time - be prepared to wait a good while for
+a response from them.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151710Z" creationid="ira" creationdate="20130727T151710Z">
+        <seg>Помните, что это закрытый перечень с очень длинным время оборота - быть подготовленным ждать довольно долгое время для ответа от них.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Repeating letters is just redundant, not cumulative
 nor toggling.</seg>
       </tuv>
@@ -6562,6 +6672,15 @@ L&lt;Pod::Perldoc&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T003404Z" creationid="ira" creationdate="20130727T003404Z">
         <seg>See L&lt;perlhacktips/PERL_DESTRUCT_LEVEL&gt; для получения дополнительной информации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See L&lt;perlmodlib&gt; for more details on how this works, and
+browse around CPAN and the modules list to get a feel of it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151726Z" creationid="ira" creationdate="20130727T151726Z">
+        <seg>См. L&lt;perlmodlib&gt; для более подробной информации о том, как это работает, и просматривать вокруг CPAN и список модулей, чтобы почувствовать его.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7203,6 +7322,15 @@ may also prove useful.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The F&lt;module-starter&gt; utility is distributed as part of the
+L&lt;Module::Starter|Module::Starter&gt; CPAN package.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151849Z" creationid="ira" creationdate="20130727T151849Z">
+        <seg>Утилита F&lt;module-starter&gt; поставляется в составе L&lt;Module::Starter|Module::Starter&gt; CPAN пакета.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The F&lt;perldoc&gt; program gives you access to all the documentation that comes
 with Perl.</seg>
       </tuv>
@@ -7820,6 +7948,15 @@ subroutine).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233517Z" creationid="ira" creationdate="20130725T233517Z">
         <seg>Есть несколько специальных массивов также, такие как C&lt;@ARGV&gt; (аргументы командной строки в скрипте) и C&lt;@_&gt; (аргументы, передаваемые в подпрограмму).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are a lot of modules on CPAN, and it's easy to miss one that's
+similar to what you're planning on contributing.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151624Z" creationid="ira" creationdate="20130727T151624Z">
+        <seg>Есть много модулей на CPAN, и это легко пропустить один, похожий на то, что вы собираетесь участвовать.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9051,6 +9188,15 @@ others can benefit.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When you've got your name sorted out and you're sure that your module is
+wanted and not currently available, it's time to start coding.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151800Z" creationid="ira" creationdate="20130727T151800Z">
+        <seg>Когда у вас есть ваше имя разобрались, и вы уверены, что ваш модуль находится в розыске, а не в настоящее время, пришло время, чтобы начать кодирование.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>While none of the built-in data types have any arbitrary size limits
 (apart from memory size), there are still a few arbitrary limits:  a
 given variable name may not be longer than 251 characters.</seg>
@@ -9066,6 +9212,15 @@ separate words in longer identifiers.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T144243Z" creationid="ira" creationdate="20130727T144243Z">
         <seg>Короткие название для идентификаторов типа C&lt;$gotit&gt; являются понятными. Для длинных названий в качестве разделителя слов используйте символ подчеркивания.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While you're doing that, make really sure you haven't missed a module
+similar to the one you're about to write.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151758Z" creationid="ira" creationdate="20130727T151758Z">
+        <seg>В то время как вы делаете это, убедитесь, что вы действительно не пропустили модуль похож на тот, который вы собираетесь писать.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9484,6 +9639,22 @@ are in an array.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233149Z" creationid="ira" creationdate="20130725T233149Z">
         <seg>Можно было бы попытаться использовать C&lt;$#array + 1&gt;, чтобы сказать вам, сколько элементов есть в массиве.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You might feel that everyone else needs it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151655Z" creationid="ira" creationdate="20130727T151655Z">
+        <seg>Вы можете почувствовать, что все остальное в ней нуждается.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You might love it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151652Z" creationid="ira" creationdate="20130727T151652Z">
+        <seg>Вы можете любить его.</seg>
       </tuv>
     </tu>
     <tu>
