@@ -2143,6 +2143,15 @@ corresponding variable in the Perl program.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Any switches in the C&lt;PERLDOC&gt; environment variable will be used before the
+command line arguments.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134106Z" creationid="ira" creationdate="20130727T134106Z">
+        <seg>Все параметры из переменной окружения C&lt;PERLDOC&gt; будут использованы перед аргументами командной строки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any value 0400 or above will cause Perl to slurp files whole, but by convention
 the value 0777 is the one normally used for this purpose.</seg>
       </tuv>
@@ -2490,8 +2499,8 @@ have security issues, when run as the superuser it will attempt to
 drop privileges by setting the effective and real IDs to nobody's
 or nouser's account, or -2 if unavailable.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133953Z" creationid="ira" creationdate="20130727T133953Z">
-        <seg>Поскольку B&lt;perldoc&gt; не работает должным образом испорчены, и, как известно, вопросы безопасности, при запуске с правами суперпользователя он будет пытаться отказаться от привилегий, установив эффективные и реальные идентификаторы никому или nouser account, либо -2, если недоступны.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134051Z" creationid="ira" creationdate="20130727T133953Z">
+        <seg>Т. к. B&lt;perldoc&gt; не запускается в tainted-режиме, существуют проблемы с безопасностью. Когда программа запускается из-под суперпользователя, она пытается удалить привилегии и сменить настоящий ID на неопределенный или на неопределенный аккаунт, если не получилось, то на -2.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3543,6 +3552,15 @@ B&lt;-n&gt; option mentioned above.</seg>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081158Z" creationid="rdtex1" creationdate="20130725T081158Z">
         <seg>Если a2p делает разбор строки, которая представляет собой список переменных, который выглядит как (Fld1, Fld2, Fld3...) вы можете повторно запустить a2p используя опцию
 B&lt;-n&gt; , упомянутую выше.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it cannot relinquish
+its privileges, it will not run.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134057Z" creationid="ira" creationdate="20130727T134000Z">
+        <seg> Если смена прав не удалась, то программа не запускается.</seg>
       </tuv>
     </tu>
     <tu>
