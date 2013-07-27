@@ -5814,6 +5814,16 @@ value is considered space-separated.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The B&lt;-X&gt; option looks for an entry
+whose basename matches the name given on the command line in the file
+C&lt;$Config{archlib}/pod.idx&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133040Z" creationid="ira" creationdate="20130727T133040Z">
+        <seg>Если присутствует параметр B&lt;-X&gt;, то будет использован индекс для поиска записи, чье имя совпадает с именем, полученным из командной строки в файле C&lt;$config{archlib}/pod.idx&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The B&lt;-f&gt; option followed by the name of a perl built-in function will
 extract the documentation of this function from L&lt;perlfunc&gt;.</seg>
       </tuv>
@@ -5952,6 +5962,15 @@ with Perl.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T030548Z">
         <seg>F&lt;perldoc&gt; Программа дает вам доступ ко всей документации, которая поставляется с Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The F&lt;pod.idx&gt; file should contain fully
+qualified filenames, one per line.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133120Z" creationid="ira" creationdate="20130727T133120Z">
+        <seg>Файл F&lt;pod.idx&gt; должен содержать подходящие имена файлов, по одному имени на строке.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7273,6 +7292,14 @@ binary nature of the stream are also removed or disabled.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T002213Z" creationid="ira" creationdate="20130727T002158Z">
         <seg>В отличие от более ранних версий Perl, C&lt;:raw&gt; I&lt;не&gt; просто обратная C&lt;:crlf&gt;: другие слои, которые будут влиять на двоичный характер потока также удалить или отключить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use an index if it is present.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133100Z" creationid="ira" creationdate="20130727T133100Z">
+        <seg>Используйте индекс, если он присутствует.</seg>
       </tuv>
     </tu>
     <tu>
