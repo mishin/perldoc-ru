@@ -9330,6 +9330,16 @@ declared and prevents other misuses of legacy Perl features.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Visit
+C&lt;http://pause.perl.org/&gt;, select "Request PAUSE Account", and wait for
+your request to be approved by the PAUSE administrators.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T153013Z" creationid="ira" creationdate="20130727T153013Z">
+        <seg>Посетите C&lt;http://pause.perl.org/&gt; Выберите "Форма запроса на аккаунт PAUSE", и ждать вашего запроса должно быть одобрено PAUSE администраторов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We can manipulate C&lt;@_&gt; in other ways too:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T003649Z" creationid="ira" creationdate="20130726T003649Z">
