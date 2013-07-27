@@ -2650,6 +2650,22 @@ it via C&lt;groff -man | $PAGER&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Be consistent.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T145057Z" creationid="ira" creationdate="20130727T145057Z">
+        <seg>Будьте последовательны.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Be nice.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T145104Z" creationid="ira" creationdate="20130727T145104Z">
+        <seg>Пишите красивый код и будьте счастливы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Be sure to change all
 operations the variable is involved in to match.</seg>
       </tuv>
@@ -2770,6 +2786,17 @@ the implicit program loop, just as in I&lt;awk&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T231324Z" creationid="ira" creationdate="20130726T231314Z">
         <seg>C&lt;BEGIN&gt; и C&lt;END&gt; блоки могут быть использованы для захвата управления до или после неявного цикла программы, как и в I&lt;awk&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>C&lt;FE&lt;lt&gt;E&lt;gt&gt;&gt; should
+be the only Pod code for file names, but as most Pod formatters render it
+as italic, Unix and Windows paths with their slashes and backslashes may
+be less readable, and better rendered with C&lt;CE&lt;lt&gt;E&lt;gt&gt;&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T145051Z" creationid="ira" creationdate="20130727T145051Z">
+        <seg>C&lt;FE&lt;lt&gt;E&lt;gt&gt;&gt; должен быть только POD-кодом для имен файлов, но большинство преобразователей POD воспринимают эту конструкцию как курсив. Unix- и Windows-пути со слешами и бекслашами могут быть менее читабельны, поэтому их лучше оформлять с помощью C&lt;CE&lt;lt&gt;E&lt;gt&gt;&gt;.</seg>
       </tuv>
     </tu>
     <tu>
