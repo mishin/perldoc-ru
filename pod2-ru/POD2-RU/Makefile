@@ -65,11 +65,11 @@ DIRFILESEP = \\
 DFSEP = $(DIRFILESEP)
 NAME = POD2::RU
 NAME_SYM = POD2_RU
-VERSION = 5.18.0.1.01
+VERSION = 5.18.0.1.02
 VERSION_MACRO = VERSION
-VERSION_SYM = 5_18_0_1_01
+VERSION_SYM = 5_18_0_1_02
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 5.18.0.1.01
+XS_VERSION = 5.18.0.1.02
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib\arch
@@ -291,7 +291,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = POD2-RU
-DISTVNAME = POD2-RU-5.18.0.1.01
+DISTVNAME = POD2-RU-5.18.0.1.02
 
 
 # --- MakeMaker macro section:
@@ -536,7 +536,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "  Pod::Perldoc: 3.15" >> META_new.yml
 	$(NOECHO) $(ECHO) "  Test::More: 0" >> META_new.yml
 	$(NOECHO) $(ECHO) "  Test::More::UTF8: 0.04" >> META_new.yml
-	$(NOECHO) $(ECHO) "version: v5.18.0.1.01" >> META_new.yml
+	$(NOECHO) $(ECHO) "version: v5.18.0.1.02" >> META_new.yml
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
 	$(NOECHO) $(ECHO) {{ > META_new.json
@@ -581,7 +581,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "      }}" >> META_new.json
 	$(NOECHO) $(ECHO) "   }}," >> META_new.json
 	$(NOECHO) $(ECHO) "   \"release_status\" : \"stable\"," >> META_new.json
-	$(NOECHO) $(ECHO) "   \"version\" : \"v5.18.0.1.01\"" >> META_new.json
+	$(NOECHO) $(ECHO) "   \"version\" : \"v5.18.0.1.02\"" >> META_new.json
 	$(NOECHO) $(ECHO) }} >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
 

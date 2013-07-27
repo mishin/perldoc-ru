@@ -1,5 +1,13 @@
 Revision history for Perl extension POD2::RU
 
+5.18.0.1.04  July 28, 2013
+             * Add link to Makefile.PL git repository 
+	     https://github.com/mishin/perldoc-ru.git 
+5.18.0.1.03  July 28, 2013
+             * Move to Build.PL
+	     http://blogs.perl.org/users/chorny/2011/07/how-to-get-rid-of-withoutworldwriteables.html
+5.18.0.1.01  July 27, 2013
+             * Change retype
 5.18.0.1.01  July 27, 2013
              * Added 
 	     perlcheat.pod

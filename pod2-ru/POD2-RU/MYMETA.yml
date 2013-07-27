@@ -1,25 +1,24 @@
 ---
-abstract: 'ÐÐ¾ÐºÑÐ¼ÐµÐ½ÑÐ°ÑÐ¸Ñ Perl Ð¿Ð¾-ÑÑÑÑÐºÐ¸'
+abstract: 'Документация Perl по-русски'
 author:
-  - 'ÐÐ¾Ð¼Ð°Ð½Ð´Ð° Perl Ð¿Ð¾-ÑÑÑÑÐºÐ¸, Moscow-pm'
-build_requires:
-  ExtUtils::MakeMaker: 0
-configure_requires:
-  ExtUtils::MakeMaker: 0
+  - 'Команда Perl по-русски, Moscow-pm'
+build_requires: {}
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: POD2-RU
-no_index:
-  directory:
-    - t
-    - inc
+provides:
+  POD2::RU:
+    file: lib/POD2/RU.pm
+    version: v5.18.0.1.4
 requires:
   POD2::Base: 0.043
   Pod::Perldoc: 3.15
   Test::More: 0
   Test::More::UTF8: 0.04
-version: v5.18.0.1.01
+resources:
+  license: http://dev.perl.org/licenses/
+version: v5.18.0.1.3

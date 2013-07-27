@@ -1,3 +1,4 @@
+Build.PL
 Changes
 lib/POD2/RU.pm
 lib/POD2/RU/a2p.pod
@@ -12,5 +13,7 @@ lib/POD2/RU/perlrun.pod
 lib/POD2/RU/perlstyle.pod
 Makefile.PL
 MANIFEST			This list of files
+META.json
+META.yml
 README
 t/00base.t

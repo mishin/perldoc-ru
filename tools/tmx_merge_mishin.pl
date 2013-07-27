@@ -17,7 +17,9 @@ use File::Spec::Functions qw(catdir catfile);
 Readonly my $CLEAN_PATH  => catfile('..','memory','clean','omegat_clean-omegat.tmx');
 # Work memory
 # Readonly my $WORK_PATH   => catfile('..','memory','work','pod2-ru-omegat.tmx');
-Readonly my $WORK_PATH   => catfile('..','memory','work','mishin_linguistic-level1.tmx');
+# Readonly my $WORK_PATH   => catfile('..','memory','work','mishin_linguistic-level1.tmx');
+Readonly my $WORK_PATH   => catfile('..','pod2-ru', 'pod2-ru-omegat.tmx');
+# c:\Users\ira\Documents\GitHub\perldoc-ru\pod2-ru\pod2-ru-omegat.tmx 
 #'../memory/work/perlspanish-omegat.explorer.tmx';
 
 # Merged memory

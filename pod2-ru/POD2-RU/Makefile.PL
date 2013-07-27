@@ -2,6 +2,15 @@ use strict;
 use warnings;
 use ExtUtils::MakeMaker;
 
+my $meta_merge = {
+    META_MERGE => {
+        resources => {
+            repository  => 
+                'https://github.com/mishin/perldoc-ru.git',
+        },
+    }
+};
+
 WriteMakefile(
     NAME              => 'POD2::RU',
     AUTHOR            => q{Команда Perl по-русски, Moscow-pm},
@@ -16,7 +25,6 @@ WriteMakefile(
         'POD2::Base' => 0.043,
         'Pod::Perldoc' => 3.15,
 	'Test::More::UTF8' => 0.04,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    },    
     clean               => { FILES => 'POD2-RU-*' },
 );
