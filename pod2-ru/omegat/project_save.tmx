@@ -1283,6 +1283,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item B&lt;-n&gt; I&lt;some-formatter&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133804Z" creationid="ira" creationdate="20130727T133804Z">
+        <seg>=item B&lt;-n&gt; I&lt;форматирование&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item B&lt;-o&gt; I&lt;output-formatname&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T132100Z" creationid="ira" creationdate="20130727T132100Z">
@@ -5811,6 +5819,14 @@ combinations of B&lt;-l&gt; and B&lt;-0&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T195903Z" creationid="ira" creationdate="20130726T195903Z">
         <seg>Выполняется строка (однострочник), если в командной строке указаны параметры B&lt;-e&gt; или B&lt;-E&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Specify replacement for groff</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133841Z" creationid="ira" creationdate="20130727T133841Z">
+        <seg>Укажите замены для groff</seg>
       </tuv>
     </tu>
     <tu>
