@@ -15,6 +15,7 @@ WriteMakefile(
         'Test::More' => 0,
         'POD2::Base' => 0.043,
         'Pod::Perldoc' => 3.15,
+	'Test::More::UTF8' => 0.04,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'POD2-RU-*' },

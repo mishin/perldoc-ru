@@ -1,0 +1,31 @@
+текущие проблемы
+=encoding utf8
+
+=head1 Имя
+
+a2p - преобразование кода Awk в Perl
+
+=head1 СИНТАКСИС
+
+B<a2p> [I<опции>] [I<имя файла>]
+
+=head1 ОПИСАНИЕ
+
+I<A2p> принимает AWK скрипт, указанный в командной строке (или со стандартного ввода) и производит сравнимых I<perl> скрипт   стандартный вывод.
+
+=head2 Параметры
+
+Параметры включают в себя:
+
+=over 5
+ПО ПЕРЕВОДУ
+ПОЖЕРТВОВАНИЕ\
+
+tar cvf POD2-RU-5.18.0.1.tar POD2-RU-5.18.0.1
+'tar' is not recognized as an internal or external command,
+operable program or batch file.
+dmake:  Error code 129, while making 'POD2-RU-5.18.0.1.targz'
+
+http://www.perlmonks.org/?node_id=128077
+
+  module-starter --module=POD2::RU --author="Nikolay Mishin" --email=mishin@cpan.org --verbose

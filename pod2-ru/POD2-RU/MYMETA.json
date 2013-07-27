@@ -1,0 +1,44 @@
+{
+   "abstract" : "ÐÐ¾ÐºÑÐ¼ÐµÐ½ÑÐ°ÑÐ¸Ñ Perl Ð¿Ð¾-ÑÑÑÑÐºÐ¸",
+   "author" : [
+      "ÐÐ¾Ð¼Ð°Ð½Ð´Ð° Perl Ð¿Ð¾-ÑÑÑÑÐºÐ¸, Moscow-pm"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "POD2-RU",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "POD2::Base" : "0.043",
+            "Pod::Perldoc" : "3.15",
+            "Test::More" : "0",
+            "Test::More::UTF8" : "0.04"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "version" : "v5.18.0.1"
+}
