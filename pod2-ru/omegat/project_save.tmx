@@ -2090,6 +2090,15 @@ which may change this).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Along the same lines, just because you I&lt;CAN&gt; omit parentheses in many
+places doesn't mean that you ought to:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143817Z" creationid="ira" creationdate="20130727T143817Z">
+        <seg>Продолжая выше сказанное, если вы I&lt;МОЖЕТЕ&gt; опустить круглые скобки в разных местах, то это не означает, что вы должны делать так:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Also note that C&lt;&lt; &lt;&gt; &gt;&gt; passes command line arguments to
 L&lt;perlfunc/open&gt;, which doesn't necessarily interpret them as file names.</seg>
       </tuv>
@@ -2366,10 +2375,28 @@ and interpreted by the C&lt;Devel::I&lt;MOD&gt;::import&gt; routine.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>At the very least it will let some poor
+schmuck bounce on the % key in B&lt;vi&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143849Z" creationid="ira" creationdate="20130727T143849Z">
+        <seg>В крайнем случае, пусть какой-нибудь дроздик попрыгает на клавише % в редакторе B&lt;vi&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Available in Perls 5.8.1 and later.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T004340Z" creationid="ira" creationdate="20130727T004340Z">
         <seg>Доступный в Perl  5.8.1 и выше.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Avoid using C&lt;grep()&gt; (or C&lt;map()&gt;) or `backticks` in a void context, that is,
+when you just throw away their return values.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144034Z" creationid="ira" creationdate="20130727T144034Z">
+        <seg>Избегайте использование C&lt;grep()&gt; (или C&lt;map()&gt;) или `обратные_кавычки` в void-контексте, т. к. вы пропустите значения, которые они возвращают.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3011,10 +3038,29 @@ a period of several decades.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Don't be afraid to use loop labels--they're there to enhance
+readability as well as to allow multilevel loop breaks.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144012Z" creationid="ira" creationdate="20130727T144012Z">
+        <seg>Не бойтесь использовать метки для циклов -- они предназначены для увеличения читабельности так же, как и для того, чтобы совершать прерывания многоуровневого цикла,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Don't bother.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233157Z" creationid="ira" creationdate="20130725T233157Z">
         <seg>Не беспокойтесь.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don't go through silly contortions to exit a loop at the top or the
+bottom, when Perl provides the C&lt;last&gt; operator so you can exit in
+the middle.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143933Z" creationid="ira" creationdate="20130727T143933Z">
+        <seg>Не идите на поводу у глупостей, искажая выход из цикла в начале или в конце. В Perl есть оператор С&lt;last&gt;, так вы можете выйти из цикла в середине.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3085,6 +3131,16 @@ B&lt;-0&gt;I&lt;digits&gt; by C&lt;BEGIN{ $/ = "\0digits"; }&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T004439Z" creationid="ira" creationdate="20130727T004439Z">
         <seg>Эквивалент B&lt;-C&gt; командной строки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Even if you aren't in doubt, consider the mental welfare of the person
+who has to maintain the code after you, and who will probably put
+parentheses in the wrong place.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143900Z" creationid="ira" creationdate="20130727T143900Z">
+        <seg>Даже если вы не сомневаетесь, подумайте о нервах того, кто будет поддерживать код после вас и, возможно, будет расставлять скобки не в тех местах.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3668,6 +3724,15 @@ obvious and convenient place.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T205937Z" creationid="ira" creationdate="20130726T205906Z">
         <seg>Если это не может быть сделано, системным администраторам настоятельно рекомендуется поставить (символические ссылки) на Perl и сопутствующие утилиты в каталог, который обычно встречаются  в пользовательском PATH (пути), или в некоторых других очевидных и удобных местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If
+you want your program to be readable, consider supplying the argument.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143759Z" creationid="ira" creationdate="20130727T143759Z">
+        <seg>Если вы хотите, чтобы ваша программа была читабельна, задумайтесь об использование аргументов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4649,6 +4714,14 @@ third-party modules.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230355Z" creationid="ira" creationdate="20130725T230355Z">
         <seg>Основными функциями языка являются то, что он прост в использовании, поддерживает процедурные и объектно-ориентированных (ОО) парадигмы программирования, имеет мощную встроенную поддержку для обработки текста, и имеет одну из самых впечатляющих в мире коллекций сторонних модулей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just "outdent" it a little to make it more visible:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143944Z" creationid="ira" creationdate="20130727T143944Z">
+        <seg>Только "вытяните" его, чтобы выход стал заметным:</seg>
       </tuv>
     </tu>
     <tu>
@@ -6078,6 +6151,15 @@ C&lt;key_traversal_mask()&gt; в L&lt;Hash::Util&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T130641Z" creationid="ira" creationdate="20130727T130641Z">
         <seg>Подробная информация о параметрах командной строки ниже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See the
+previous example.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144016Z" creationid="ira" creationdate="20130727T144016Z">
+        <seg>как в предыдущем примере.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7868,6 +7950,15 @@ debugging nondeterministic behaviour caused by hash randomization.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Those functions all
+have return values, so use them.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144042Z" creationid="ira" creationdate="20130727T144042Z">
+        <seg>Все эти функции возвращают значения, так используйте их.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Those libraries, collected in the CPAN,
 provide ready-made solutions to an astounding array of problems.</seg>
       </tuv>
@@ -8271,6 +8362,14 @@ this mode is as close to pre 5.18 behavior as you can get.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T003654Z" creationid="ira" creationdate="20130727T003654Z">
         <seg>В сочетании с установкой PERL_HASH_SEED этот режим как можно ближе к предварительно 5,18 поведения как вы можете получить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When in doubt, parenthesize.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143828Z" creationid="ira" creationdate="20130727T143828Z">
+        <seg>Если сомневаетесь - используйте скобки.</seg>
       </tuv>
     </tu>
     <tu>
