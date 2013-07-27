@@ -2573,6 +2573,14 @@ IO in order to load them!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Consider arguments as file names; no search in directories will be performed.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131656Z" creationid="ira" creationdate="20130727T131656Z">
+        <seg>Рассматривать аргументы как имена файлов; поиск по каталогам производиться не будет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Contained in the file specified by the first filename on the command line.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T200001Z" creationid="ira" creationdate="20130726T200001Z">
@@ -2816,6 +2824,14 @@ fashion.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235133Z" creationid="ira" creationdate="20130725T235133Z">
         <seg>Точно так же как C:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131728Z" creationid="ira" creationdate="20130727T131728Z">
+        <seg>Пример:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4022,6 +4038,16 @@ found anywhere, and its support for Unicode text is world-class.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230217Z" creationid="ira" creationdate="20130723T230105Z">
         <seg>Он по-прежнему может похвастаться одними из самых мощных регулярных выражений, которые можно найти для любого текста, и поддержкой кодировки Unicode мирового класса.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It will search
+the B&lt;q&gt;uestion headings in perlfaq[1-9] and print the entries matching
+the regular expression.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131829Z" creationid="ira" creationdate="20130727T131829Z">
+        <seg>которое позволяет найти вопрос (B&lt;q&gt;uestion) в FAQ по Perl [1-9] и вывести записи, удовлетворяющие этому выражению.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5679,6 +5705,23 @@ value is considered space-separated.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T211502Z" creationid="ira" creationdate="20130726T211502Z">
         <seg>Флаг B&lt;-C&gt; указывает на некоторые из функций Perl Unicode.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The B&lt;-f&gt; option followed by the name of a perl built-in function will
+extract the documentation of this function from L&lt;perlfunc&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131718Z" creationid="ira" creationdate="20130727T131718Z">
+        <seg>Опция B&lt;-f&gt; вместе с названием встроенной Perl-функции позволяет получить документацию по этой функции из L&lt;perlfunc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The B&lt;-q&gt; option takes a regular expression as an argument.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131758Z" creationid="ira" creationdate="20130727T131758Z">
+        <seg>Опция B&lt;-q&gt; задает регулярное выражение в качестве аргумента,</seg>
       </tuv>
     </tu>
     <tu>
