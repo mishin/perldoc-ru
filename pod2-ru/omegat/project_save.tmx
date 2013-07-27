@@ -601,6 +601,22 @@ syntax tree.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-D##            \s  whitespace        (?!p)  ZW neg ahead</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184829Z" creationid="ira" creationdate="20130727T184829Z">
+        <seg>-D##            \s  пробел        (?!p)  ZW  отр впереди</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-MO=Deparse     REGEX CHARCLASSES     (?#t)  comment</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184708Z" creationid="ira" creationdate="20130727T184708Z">
+        <seg>-MO=Deparse     КЛАСССИМВОЛОВ REGEX     (?#t)  комментарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>... and run the script as F&lt;/path/to/script.pl&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230732Z" creationid="ira" creationdate="20130725T230732Z">
@@ -653,6 +669,14 @@ syntax tree.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002915Z" creationid="ira" creationdate="20130726T002844Z">
         <seg>/^\d+/              строка начинается с одной или несколькими цифрами</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>/o compile pat once   ()     capture</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184614Z" creationid="ira" creationdate="20130727T184614Z">
+        <seg>/o компиляции единожды   ()     захват</seg>
       </tuv>
     </tu>
     <tu>
@@ -3398,6 +3422,14 @@ are passed through unmodified.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083514Z" creationid="rdtex1" creationdate="20130725T083514Z">
         <seg>Симпатичные комментарии, которые выглядят как "# Это обходной путь, потому что AWK является немым" и пропускает их без изменений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>DEBUG                                 (?:p)  no capture</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184633Z" creationid="ira" creationdate="20130727T184633Z">
+        <seg>ОТЛАДКА                                 (?:p)  не захватывать</seg>
       </tuv>
     </tu>
     <tu>
@@ -10399,6 +10431,14 @@ which case you can probably just use the man(1) command.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T130442Z" creationid="ira" creationdate="20130727T130404Z">
         <seg>[-w параметрформатирования:значение]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[^\n]             (?=p)  ZW pos ahead</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184808Z" creationid="ira" creationdate="20130727T184808Z">
+        <seg>[^\n]             (?=p)  ZW позиция впереди</seg>
       </tuv>
     </tu>
     <tu>
