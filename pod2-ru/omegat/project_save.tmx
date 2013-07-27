@@ -368,6 +368,15 @@ randomization is in effect at the beginning of execution.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(So if C&lt;textsize&gt; expects an integer, and you do C&lt;-w textsize:big&gt;,
+expect trouble.)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132823Z" creationid="ira" creationdate="20130727T132823Z">
+        <seg>(Так если C&lt;textsize&gt; ожидает целочисленное значение и передана строка C&lt;-w textsize:big&gt;, то будут проблемы).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Still, a "hello world"
 executable comes out to about 200K on my machine.)  If you want to
 execute a portion of your program before dumping, use the dump()
@@ -2976,6 +2985,19 @@ statement that is the last statement executed in a subroutine.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example,
+C&lt;-w textsize:15&gt; will call
+C&lt;&lt; $formatter-&gt;textsize(15) &gt;&gt; on the formatter object before it is
+used to format the object.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132755Z" creationid="ira" creationdate="20130727T132755Z">
+        <seg>Например,
+C&lt;-w textsize:15&gt; вызовет
+C&lt;&lt; $formatter-&gt;textsize(15) &gt;&gt; до использования объекта форматирования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, B&lt;-COE&gt; and B&lt;-C6&gt; will both turn on UTF-8-ness on both
 STDOUT and STDERR.</seg>
       </tuv>
@@ -3131,6 +3153,15 @@ that construct.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T233844Z" creationid="ira" creationdate="20130726T233748Z">
         <seg>По соображениям безопасности, эта опция должна быть определена в Perl как можно раньше, обычно это означает, что он должен появиться на раннем этапе в командной строке или в строке C&lt;#!&gt; для систем, которые поддерживают такую конструкцию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For this to be valid, the formatter class
+must provide such a method, and the value you pass should be valid.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132810Z" creationid="ira" creationdate="20130727T132810Z">
+        <seg>Для корректного выполнения, необходимо чтобы класс форматирования содержал такой метод, как переданный параметр, и значение было верным.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6654,6 +6685,15 @@ different precedence to C&lt;&amp;&amp;&gt; and friends.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This
+might be more (or less) convenient, depending on what shell you use.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132936Z" creationid="ira" creationdate="20130727T132936Z">
+        <seg>Возможно, это намного удобней (или наоборот), все зависит от ваших предпочтений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This allows you to add a prefix to the backup file, instead of (or in
 addition to) a suffix:</seg>
       </tuv>
@@ -6812,6 +6852,15 @@ manipulate streams as usual.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T212734Z" creationid="ira" creationdate="20130726T212723Z">
         <seg>Это просто по умолчанию, с явными слоями (explicit layers) в open() и с binmode () можно управлять потоками, как обычно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is presumably useful in cases of on/off
+features like: C&lt;-w page_numbering&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132907Z" creationid="ira" creationdate="20130727T132907Z">
+        <seg>Предположительно, это удобно в переключателях да/нет таких, как: C&lt;-w номер_страницы&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7659,12 +7708,29 @@ your shell before starting Perl).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can use C&lt;-w optionname&gt; (without a value) as shorthand for
+C&lt;-w optionname:I&lt;TRUE&gt;&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132851Z" creationid="ira" creationdate="20130727T132851Z">
+        <seg>Вы можете использовать C&lt;-w название-параметра&gt; (без значения) в качестве короткой записи C&lt;-w название-параметра:I&lt;TRUE&gt;&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can use C&lt;eof&gt; without parentheses to locate the end of each input
 file, in case you want to append to each file, or reset line numbering
 (see example in L&lt;perlfunc/eof&gt;).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T224951Z" creationid="ira" creationdate="20130726T224951Z">
         <seg>Вы можете использовать C&lt;eof&gt; без скобок, чтобы найти в конце каждого входного файла, в случае, если вы хотите добавить к каждому файлу, или сбросить нумерацию строк (см. пример в L&lt;perlfunc/eof&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use an "=" instead of the ":", as in: C&lt;-w textsize=15&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132924Z" creationid="ira" creationdate="20130727T132924Z">
+        <seg>Можете использовать "=" вместо ":", т. е. C&lt;-w textsize=15&gt;.</seg>
       </tuv>
     </tu>
     <tu>
