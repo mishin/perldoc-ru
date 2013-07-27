@@ -1307,6 +1307,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item B&lt;PageName|ModuleName|ProgramName|URL&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133319Z" creationid="ira" creationdate="20130727T133319Z">
+        <seg>=item B&lt;НазваниеСтраницы|НазваниеМодуля|НазваниеПрограммы|URL&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Boolean logic</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000133Z" creationid="ira" creationdate="20130726T000023Z">
@@ -4502,6 +4510,15 @@ implicit in the awk script.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Nested modules (such as C&lt;File::Basename&gt;)
+are specified either as C&lt;File::Basename&gt; or C&lt;&lt; File/Basename &gt;&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133347Z" creationid="ira" creationdate="20130727T133347Z">
+        <seg>Модули вида C&lt;File::Basename&gt; могут быть определены как C&lt;File::Basename&gt; или C&lt;File/Basename&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Not everything in Perl changes every day.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T125713Z" creationid="ira" creationdate="20130727T125713Z">
@@ -6220,6 +6237,14 @@ if it is invoked with B&lt;-xyz=abc&gt;.</seg>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T232013Z" creationid="ira" creationdate="20130726T232013Z">
         <seg>Следующая программа выводит "1", если программа вызывается с опцией B&lt;-xyz&gt; и "abc"
 если она вызывается с B&lt;-xyz=abc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The item you want to look up.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133332Z" creationid="ira" creationdate="20130727T133332Z">
+        <seg>Название того, чего хотите найти.</seg>
       </tuv>
     </tu>
     <tu>
