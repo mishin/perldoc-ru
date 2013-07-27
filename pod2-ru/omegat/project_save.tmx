@@ -1941,6 +1941,15 @@ use -B&lt;-d:-I&lt;MOD&gt;&gt; to call C&lt;Devel::I&lt;MOD&gt;::unimport&gt; in
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All available translation packages are to be found under the C&lt;POD2::&gt;
+namespace.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133246Z" creationid="ira" creationdate="20130727T133246Z">
+        <seg>Все существующие переводы доступны в пространстве имен C&lt;POD2::*&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All references to line numbers by the program (warnings, errors, ...)
 will treat the C&lt;#!&gt; line as the first line.</seg>
       </tuv>
@@ -3573,6 +3582,15 @@ interpreter.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T202846Z" creationid="ira" creationdate="20130726T202411Z">
         <seg>Если строка C&lt;#!&gt; не содержит слово "perl", ни слово "indir" программа, написанная послеC&lt;#!&gt; будет выполняться вместо интерпретатора Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the C&lt;POD2::E&lt;lt&gt;language_codeE&lt;gt&gt;&gt; package isn't
+installed in your system, the switch is ignored.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133228Z" creationid="ira" creationdate="20130727T133228Z">
+        <seg>Если C&lt;POD2::E&lt;lt&gt;код_языка&lt;gt&gt;&gt; не существует (или не установлен на вашей системе), то параметр игнорируется.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5406,6 +5424,16 @@ lines printed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See L&lt;POD2::IT&gt; (or L&lt;POD2::FR&gt;) to see how to create new
+localized C&lt;POD2::*&gt; documentation packages and integrate them into
+L&lt;Pod::Perldoc&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133304Z" creationid="ira" creationdate="20130727T133304Z">
+        <seg>Смотрите L&lt;POD2::IT&gt; (или L&lt;POD2::FR&gt;, или L&lt;POD2::LT&gt;, или L&lt;POD2::RU&gt;) в порядке появления и интеграции новой локализации C&lt;POD2::*&gt; документации в L&lt;Pod::Perldoc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See L&lt;feature&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T223030Z" creationid="ira" creationdate="20130726T223030Z">
@@ -6717,6 +6745,15 @@ might be more (or less) convenient, depending on what shell you use.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T132936Z" creationid="ira" creationdate="20130727T132936Z">
         <seg>Возможно, это намного удобней (или наоборот), все зависит от ваших предпочтений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This allows one to specify the I&lt;language code&gt; for the desired language
+translation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133210Z" creationid="ira" creationdate="20130727T133210Z">
+        <seg>Этот параметр позволяет использовать перевод документации на том языке, которому соответствует I&lt;код_языка&gt;.</seg>
       </tuv>
     </tu>
     <tu>
