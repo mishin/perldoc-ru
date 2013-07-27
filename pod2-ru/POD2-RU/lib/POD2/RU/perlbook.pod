@@ -54,7 +54,7 @@ Ram представляет собой сборник рецептов с со�
 
 =over 4
 
-=item I<Intermediate Perl> I<Perl на уровне среднего разработчика> ("Alpaca Book")
+=item I<Intermediate Perl> (I<Perl на уровне среднего разработчика>) ("Alpaca Book")
 
 	by Randal L. Schwartz and brian d foy, with Tom Phoenix
 		foreword by Damian Conway
@@ -106,20 +106,20 @@ Ram представляет собой сборник рецептов с со�
 	ISBN 978-0-596-52010-6 [5th edition June 2008]
 	http://oreilly.com/catalog/9780596520106
 
-=item I<Intermediate Perl> I<Perl на уровне среднего разработчика> ("Alpaca Book")
+=item I<Intermediate Perl> (I<Perl на уровне среднего разработчика>) ("Alpaca Book")
 
 	by Randal L. Schwartz and brian d foy, with Tom Phoenix
 		foreword by Damian Conway
 	ISBN 0-596-10206-2 [1st edition March 2006]
 	http://oreilly.com/catalog/9780596102067
 
-=item I<Mastering Perl> I<Освоение Perl>
+=item I<Mastering Perl> (I<Освоение Perl>)
 
 	by brian d foy
 	ISBN 978-0-596-10206-7 [1st edition July 2007]
 	http://www.oreilly.com/catalog/9780596527242
 
-=item I<Effective Perl Programming> I<Эффективное программирование на Perl>
+=item I<Effective Perl Programming> (I<Эффективное программирование на Perl>)
 
 	by Joseph N. Hall, Joshua A. McAdams, brian d foy
 	ISBN 0-321-49694-9 [2nd edition 2010]
@@ -127,11 +127,11 @@ Ram представляет собой сборник рецептов с со�
 
 =back
 
-=head2 Задаче-ориентированные
+=head2 Ориентированные на специальные задачи
 
 =over 4
 
-=item I<Writing Perl Modules for CPAN> I<Написание модулей Perl для CPAN>
+=item I<Writing Perl Modules for CPAN> (I<Написание модулей Perl для CPAN>)
 
 	by Sam Tregar
 	ISBN 1-59059-018-X [1st edition August 2002]
@@ -144,13 +144,13 @@ Ram представляет собой сборник рецептов с со�
 	ISBN 1-56592-243-3 [2nd edition August 2003]
 	http://oreilly.com/catalog/9780596003135
 
-=item I<Automating System Administration with Perl> I<Автоматизация системного администрирования с помощью Perl>
+=item I<Automating System Administration with Perl> (I<Автоматизация системного администрирования с помощью Perl>)
 
 	by David N. Blank-Edelman
 	ISBN 978-0-596-00639-6 [2nd edition May 2009]
 	http://oreilly.com/catalog/9780596006396
 
-=item I<Real World SQL Server Administration with Perl> I<Реальный мир администрирования SQL Server с Perl>
+=item I<Real World SQL Server Administration with Perl> (I<Реальный мир администрирования SQL Server с Perl>)
 
 	by Linchi Shea
 	ISBN 1-59059-097-X [1st edition July 2003]
@@ -162,7 +162,7 @@ Ram представляет собой сборник рецептов с со�
 
 =over 4
 
-=item I<Regular Expressions Cookbook> I<Книга рецептов по регулярным выражениям>
+=item I<Regular Expressions Cookbook> (I<Книга рецептов по регулярным выражениям>)
 
 	by Jan Goyvaerts and Steven Levithan
 	ISBN 978-0-596-52069-4 [May 2009]
@@ -174,26 +174,28 @@ Ram представляет собой сборник рецептов с со�
 	ISBN 978-1-56592-699-8 [February 2000]
 	http://oreilly.com/catalog/9781565926998
 
-=item I<Perl Best Practices> I<Perl Лучшие Практики>
+=item I<Perl Best Practices> (I<Лучшие Практики Perl>)
 
 	by Damian Conway
 	ISBN: 978-0-596-00173-5 [1st edition July 2005]
 	http://oreilly.com/catalog/9780596001735
 
-=item I<Higher-Order Perl> I<Perl Высших порядков, примеры функционального программирования на Perl, там речь идет о функциях, которые могут модифицировать и производить другие функции.>
+=item I<Higher-Order Perl> 
+=item I<Perl Высших порядков, примеры функционального программирования на Perl, там речь идет о функциях, которые могут модифицировать и производить другие функции.>
 
 	by Mark-Jason Dominus
 	ISBN: 1-55860-701-3 [1st edition March 2005]
 	http://hop.perl.plover.com/
 
-=item I<Mastering Regular Expressions> I<Освоение
-регулярных выражений>
+=item I<Mastering Regular Expressions> 
+=item I<Освоение регулярных выражений>
 
 	by Jeffrey E. F. Friedl
 	ISBN 978-0-596-52812-6 [3rd edition August 2006]
 	http://oreilly.com/catalog/9780596528126
 
-=item I<Network Programming with Perl> I<Сетевое программирование в Perl>
+=item I<Network Programming with Perl> 
+=item I<Сетевое программирование в Perl>
 
 	by Lincoln Stein
 	ISBN 0-201-61571-1 [1st edition 2001]
@@ -205,14 +207,16 @@ Ram представляет собой сборник рецептов с со�
 	ISBN 978-0-596-00476-7 [December 2003]
 	http://oreilly.com/catalog/9780596004767
 
-=item I<Object Oriented Perl> I<Объектно-ориентированный Perl>
+=item I<Object Oriented Perl> 
+=item I<Объектно-ориентированный Perl>
 
 	by Damian Conway
 	    with foreword by Randal L. Schwartz
 	ISBN 1-884777-79-1 [1st edition August 1999]
 	http://www.manning.com/conway/
 
-=item I<Data Munging with Perl> I<Манипулирование (Munging) данными в Perl>
+=item I<Data Munging with Perl>
+=item I<Манипулирование (Munging) данными в Perl>
 
 	by Dave Cross
 	ISBN 1-930110-00-6 [1st edition 2001]
@@ -224,13 +228,15 @@ Ram представляет собой сборник рецептов с со�
 	ISBN 978-1-56592-716-2 [1st edition January 2002]
 	http://oreilly.com/catalog/9781565927162
 
-=item I<Extending and Embedding Perl> I<Расширения и встраивания Perl>
+=item I<Extending and Embedding Perl> 
+=item I<Расширения и встраивания Perl>
 
 	by Tim Jenness and Simon Cozens
 	ISBN 1-930110-82-0 [1st edition August 2002]
 	http://www.manning.com/jenness
 
-=item I<Pro Perl Debugging> I<Профессиональная отладка Perl>
+=item I<Pro Perl Debugging> 
+=item I<Профессиональная отладка Perl>
 
 	by Richard Foley with Andy Lester
 	ISBN 1-59059-454-1 [1st edition July 2005]
@@ -238,7 +244,7 @@ Ram представляет собой сборник рецептов с со�
 
 =back
 
-=head2 бесплатно (как в пиве) книги
+=head2 бесплатно (как пиво) книги
 
 Некоторые из этих книг доступны для бесплатной загрузки.
 
@@ -250,7 +256,8 @@ I<Higher-Order Perl>: http://hop.perl.plover.com/
 
 =over 4
 
-=item I<Programming Pearls> I<Жемчуг программирования>
+=item I<Programming Pearls> 
+=item I<Жемчуг программирования>
 
 	by Jon Bentley
 	ISBN 978-0-201-65788-3 [2 edition, October 1999]
