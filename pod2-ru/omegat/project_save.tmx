@@ -949,6 +949,14 @@ X&lt;perl, environment variables&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head1 SECURITY</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133911Z" creationid="ira" creationdate="20130727T133911Z">
+        <seg>=head1 БЕЗОПАСНОСТЬ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head1 SEE ALSO</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231049Z" creationid="ira" creationdate="20130723T231049Z">
@@ -2788,6 +2796,14 @@ modules (C&lt;@INC&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Displays the version of perldoc you're running.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133900Z" creationid="ira" creationdate="20130727T133900Z">
+        <seg>Отображает версию Perldoc с которой вы работаете.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do
 not use it in production.</seg>
       </tuv>
@@ -3883,6 +3899,14 @@ with the next one (if it exists).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T225016Z" creationid="ira" creationdate="20130726T225016Z">
         <seg>Если для данного файла, Perl не может создать файл резервной копии, как указано в расширении, то он пропустит этот файл и продолжить работу со следующей задачей (если она существует).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ignore case.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133847Z" creationid="ira" creationdate="20130727T133847Z">
+        <seg>Игнорировать регистр.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5300,6 +5324,14 @@ L&lt;perlretut&gt;, and L&lt;perlre&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001105Z" creationid="ira" creationdate="20130726T001105Z">
         <seg>Чтение в файла целиком за один раз, называется slurping хлебать (съесть целиком).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Recursive search.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133844Z" creationid="ira" creationdate="20130727T133844Z">
+        <seg>Рекурсивный поиск.</seg>
       </tuv>
     </tu>
     <tu>
