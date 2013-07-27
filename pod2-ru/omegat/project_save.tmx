@@ -1299,6 +1299,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 The sheet</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183313Z" creationid="ira" creationdate="20130727T183313Z">
+        <seg>=head2 Таблица</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Tutorials</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031937Z">
@@ -3148,6 +3156,14 @@ on its own.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T134451Z" creationid="ira" creationdate="20130727T134451Z">
         <seg>C&lt;perldoc&gt;будет использовать пейджер, в порядке предпочтения, определённый в C&lt;PERLDOC_PAGER&gt;, C&lt;MANPAGER&gt;, или C&lt;PAGER&gt; перед тем как попытается найти собственный.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CONTEXTS  SIGILS  ref        ARRAYS        HASHES</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183434Z" creationid="ira" creationdate="20130727T183434Z">
+        <seg>КОНТЕКСТЫ  СИГИЛЫ  ref        ARRAYS        HASHES</seg>
       </tuv>
     </tu>
     <tu>
@@ -6780,6 +6796,14 @@ metacharacters in parentheses.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002617Z" creationid="ira" creationdate="20130726T002528Z">
         <seg>Квантификаторы (умножители) могут быть использованы для указания, сколько из предыдущего, что вы хотите, чтобы соответствовать на, где "вещь" означает либо буквенный символ, один из метасимволов, перечисленных выше, или группа символов или метасимволы в круглых скобках.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>REFERENCES</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183509Z" creationid="ira" creationdate="20130727T183509Z">
+        <seg>Ссылки</seg>
       </tuv>
     </tu>
     <tu>
