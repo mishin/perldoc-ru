@@ -3469,6 +3469,15 @@ Windows and Mac OS, read L&lt;perlrun&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For portability, when using features that may not be implemented on
+every machine, test the construct in an eval to see if it fails.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144110Z" creationid="ira" creationdate="20130727T144110Z">
+        <seg>Для переносимости, когда вы используете особенности, которые не могут быть реализованы на каждой машине, выполняйте конструкцию в блоке eval.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For security reasons, this option must be
 seen by Perl quite early; usually this means it must appear early
 on the command line or in the C&lt;#!&gt; line for systems which support
@@ -3724,6 +3733,17 @@ obvious and convenient place.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T205937Z" creationid="ira" creationdate="20130726T205906Z">
         <seg>Если это не может быть сделано, системным администраторам настоятельно рекомендуется поставить (символические ссылки) на Perl и сопутствующие утилиты в каталог, который обычно встречаются  в пользовательском PATH (пути), или в некоторых других очевидных и удобных местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If
+you know what version or patchlevel a particular feature was
+implemented, you can test C&lt;$]&gt; (C&lt;$PERL_VERSION&gt; in C&lt;English&gt;) to see if it
+will be there.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144129Z" creationid="ira" creationdate="20130727T144129Z">
+        <seg>Если вам известен номер версии или патча, в котором данная особенность была реализована, то используйте переменную C&lt;$]&gt; (C&lt;$PERL_VERSION&gt; из модуля C&lt;English&gt;), чтобы убедиться, что она там есть.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5428,6 +5448,15 @@ L&lt;perlvms&gt; and in F&lt;README.vms&gt; in the Perl source distribution.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Otherwise use a C&lt;foreach()&gt; loop or
+the C&lt;system()&gt; function instead.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144054Z" creationid="ira" creationdate="20130727T144054Z">
+        <seg>В противном случае, используйте цикл C&lt;foreach()&gt; или функцию C&lt;system()&gt; соответсвенно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Over the years, Perl has grown into
 a general-purpose programming language.</seg>
       </tuv>
@@ -6616,6 +6645,15 @@ parsed.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001358Z" creationid="ira" creationdate="20130726T001349Z">
         <seg>Оператор C&lt;&lt; &lt;&gt; &gt;&gt; чаще всего используется в цикле C&lt;while&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The C&lt;Config&gt; module will also let you interrogate values
+determined by the B&lt;Configure&gt; program when Perl was installed.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144142Z" creationid="ira" creationdate="20130727T144142Z">
+        <seg>Для того, чтобы узнать значения, определенные программой C&lt;configure&gt; во время установки Perl, используйте модуль C&lt;Config&gt;.</seg>
       </tuv>
     </tu>
     <tu>
