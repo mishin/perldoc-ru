@@ -1754,10 +1754,26 @@ X&lt;SYS$LOGIN&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Use L&lt;plain old documentation|perlpod&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152435Z" creationid="ira" creationdate="20130727T152435Z">
+        <seg>=item Используйте L&lt;plain old documentation|perlpod&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Use L&lt;strict|strict&gt; and L&lt;warnings|warnings&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T152059Z" creationid="ira" creationdate="20130727T152059Z">
         <seg>=item Используйте L&lt;strict|strict&gt; и L&lt;warnings|warnings&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item Write tests</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152503Z" creationid="ira" creationdate="20130727T152503Z">
+        <seg>=item Пишите тесты</seg>
       </tuv>
     </tu>
     <tu>
@@ -2969,6 +2985,15 @@ completely lost.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>C&lt;@EXPORT_OK&gt;, on the other hand,
+specifies which symbols you're willing to export.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152411Z" creationid="ira" creationdate="20130727T152411Z">
+        <seg>C&lt;@EXPORT_OK&gt;, с другой стороны, указывает, какие символы вы готовы экспортировать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>C&lt;BEGIN&gt; and C&lt;END&gt; blocks may be used to capture control before or after
 the implicit loop, just as in I&lt;awk&gt;.</seg>
       </tuv>
@@ -3003,6 +3028,16 @@ blocks, however, will be skipped.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T214301Z" creationid="ira" creationdate="20130726T214301Z">
         <seg>C&lt;INIT&gt; и C&lt;END&gt; блоки, однаку, будут пропущены.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>C&lt;module-starter&gt; or C&lt;h2xs&gt; will provide a stub for you to fill in; if
+you're not sure about the format, look at L&lt;perlpod&gt; for an
+introduction.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152447Z" creationid="ira" creationdate="20130727T152447Z">
+        <seg>C&lt;module-starter&gt; или С&lt;h2xs&gt; обеспечит заглушки для вас, чтобы заполнить, если вы не уверены, о формате, посмотрите на L&lt;perlpod&gt; для введения.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3761,8 +3796,8 @@ C&lt;-oman&gt;.</seg>
         <seg>For instance,
 saying C&lt;use Net::Acme qw(&amp;frob)&gt; would import the C&lt;frob&gt; subroutine.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152339Z" creationid="ira" creationdate="20130727T152339Z">
-        <seg>Например, говоря C&lt;use Net::Acme qw(&amp;frob)&gt; будет импортировать C &lt;frob&gt; подпрограммы.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152345Z" creationid="ira" creationdate="20130727T152339Z">
+        <seg>Например, говоря C&lt;use Net::Acme qw(&amp;frob)&gt; будет импортировать C&lt;frob&gt; подпрограммы.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4568,6 +4603,16 @@ distribution.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T151934Z" creationid="ira" creationdate="20130727T151934Z">
         <seg>Если вы не хотите установить L&lt;Module::Starter|Module::Starter&gt; пакет из CPAN, F&lt;h2xs&gt; более старый инструмент, первоначально предназначенных для развития XS модулей, который поставляется в комплекте с Perl распределения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you do want to
+export a bunch of symbols, use the C&lt;%EXPORT_TAGS&gt; and define a standard
+export set - look at L&lt;Exporter&gt; for more details.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152422Z" creationid="ira" creationdate="20130727T152422Z">
+        <seg>Если вы хотите экспортировать кучу символов, используйте  C&lt;%EXPORT_TAGS&gt; и определить стандартный набор экспорт - посмотрите на L&lt;Exporter&gt; для более подробной информации.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6495,6 +6540,16 @@ non-letters).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Provide a good synopsis of how your module is used in
+code, a description, and then notes on the syntax and function of the
+individual subroutines or methods.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152449Z" creationid="ira" creationdate="20130727T152449Z">
+        <seg>Обеспечить хорошее резюме, как ваш модуль используется в коде, описание, а затем отмечает на синтаксис и функции отдельных подпрограмм или методов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Put</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T203553Z" creationid="ira" creationdate="20130726T203553Z">
@@ -7884,6 +7939,16 @@ even if the PERL_HASH_SEED has been specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The package variable C&lt;@EXPORT&gt; will determine which symbols will get
+exported when the caller simply says C&lt;use Net::Acme&gt; - you will hardly
+ever want to put anything in there.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152359Z" creationid="ira" creationdate="20130727T152359Z">
+        <seg>Переменная пакета  C&lt;@EXPORT&gt; будет определять, какие символы экспортируются когда абонент просто говорит C&lt;use Net::Acme&gt; - Вы вряд ли когда-нибудь хотите поставить что-то есть.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The problem is that none of this is reliable: it depends on the
 command and it is entirely possible neither works.</seg>
       </tuv>
@@ -8065,6 +8130,15 @@ are defined.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234218Z" creationid="ira" creationdate="20130725T234218Z">
         <seg>Переменные находятся в области видимости блока (то есть куча операторов, заключенная в фигурные скобки), в котором они определены.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The work isn't over until the paperwork is done, and you're going to
+need to put in some time writing some documentation for your module.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152436Z" creationid="ira" creationdate="20130727T152436Z">
+        <seg>Работа не закончена, пока документы не будет сделано, и вы собираетесь нужно положить в какое-то время написания некоторых документацию для вашего модуля.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9039,6 +9113,15 @@ messages of B&lt;perldoc&gt; operation, which is now enabled by B&lt;-D&gt;.</se
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T134702Z" creationid="ira" creationdate="20130727T134702Z">
         <seg>До 3.14_05, переключатель B&lt;-v&gt; использовался для получения подробных сообщений из B&lt;perldoc&gt; операции, которая теперь включен по B&lt;-D&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use Perl comments for developer notes
+and POD for end-user notes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152452Z" creationid="ira" creationdate="20130727T152452Z">
+        <seg>Используйте комментарии для Perl Разработчик отмечает POD и для конечных пользователей ноты.</seg>
       </tuv>
     </tu>
     <tu>
