@@ -1184,6 +1184,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item I&lt;Programming Perl&gt; (the "Camel Book"):</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123759Z" creationid="ira" creationdate="20130727T123759Z">
+        <seg>=item I&lt;Программирование на Perl&gt; ("Camel Book"):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Miscellaneous</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000521Z" creationid="ira" creationdate="20130726T000521Z">
@@ -3308,6 +3316,16 @@ and the C&lt;open&gt; pragma (see L&lt;open&gt;).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T213724Z" creationid="ira" creationdate="20130726T213724Z">
         <seg>Если вы хотите эффекта во время выполнения (runtime effects), используйте трёхаргументный open() (see L&lt;perlfunc/open&gt;), двухаргументный binmode () (см. L&lt;perlfunc/binmode&gt; ) И прагму (pragma) C&lt;open&gt;  (см. L&lt;open&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to learn the basics of Perl, you might start with the
+Llama book, which assumes that you already know a little about
+programming:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123956Z" creationid="ira" creationdate="20130727T123956Z">
+        <seg>Если вы хотите научиться основам Perl, вы можете начать с книги Лама, который предполагает, что вы уже кое-что знаете о программировании:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5453,6 +5471,15 @@ how many more is left as an exercise to the reader.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The Ram is a cookbook with hundreds of examples of using Perl to
+accomplish specific tasks:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123914Z" creationid="ira" creationdate="20130727T123914Z">
+        <seg>Ram представляет собой сборник рецептов с сотнями примеров использования кода Perl для выполнения конкретных задач:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The Win95/NT installation, when using the ActiveState installer for Perl,
 will modify the Registry to associate the F&lt;.pl&gt; extension with the perl
 interpreter.</seg>
@@ -5643,6 +5670,15 @@ are as follows; listing the letters is equal to summing the numbers.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T001621Z" creationid="ira" creationdate="20130727T001621Z">
         <seg>Список будет использоваться по умолчанию для I&lt;всех&gt; IO Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The major reference book on Perl, written by the creator of Perl, is
+I&lt;Programming Perl&gt;:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123746Z" creationid="ira" creationdate="20130727T123746Z">
+        <seg>Основной справочник по Perl, написанный создателем Perl, это I&lt;Programming Perl&gt; (Программирование на Perl):</seg>
       </tuv>
     </tu>
     <tu>
