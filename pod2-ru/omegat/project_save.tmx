@@ -1524,6 +1524,14 @@ gnu-tar и gnu-zip и добавить путь к ним в переменну�
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Fix bugs!</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165323Z" creationid="ira" creationdate="20130727T165323Z">
+        <seg>=item Исправляйте баги!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Get a CPAN user ID</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T152734Z" creationid="ira" creationdate="20130727T152734Z">
@@ -4336,6 +4344,15 @@ you want your program to be readable, consider supplying the argument.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If
+you're lucky, they'll even send you patches.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165330Z" creationid="ira" creationdate="20130727T165330Z">
+        <seg>Если вам повезет, они даже присылают заплатки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If B&lt;-e&gt; is given, Perl
 will not look for a filename in the argument list.</seg>
       </tuv>
@@ -4728,8 +4745,8 @@ good advice.</seg>
         <seg>If you have a burning desire to tell the world about your release, post
 an announcement to the moderated C&lt;comp.lang.perl.announce&gt; newsgroup.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165305Z" creationid="ira" creationdate="20130727T165305Z">
-        <seg>Если у вас есть горячее желание рассказать миру о вашем освобождении, разместить объявление в умеренных C &lt;comp.lang.perl.announce&gt; новостей.</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165309Z" creationid="ira" creationdate="20130727T165305Z">
+        <seg>Если у вас есть горячее желание рассказать миру о вашем освобождении, разместить объявление в умеренных C&lt;comp.lang.perl.announce&gt; новостей.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6181,6 +6198,14 @@ by-module and by-category listings on CPAN.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T165244Z" creationid="ira" creationdate="20130727T165244Z">
         <seg>После загрузки, он будет сидеть незамеченным в ваш автор каталога.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you start accumulating users, they'll send you bug reports.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165327Z" creationid="ira" creationdate="20130727T165327Z">
+        <seg>Как только вы начинаете накапливать пользователей, они вышлем вам сообщения об ошибке.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9490,6 +9515,15 @@ than XS modules.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001433Z" creationid="ira" creationdate="20130726T001433Z">
         <seg>Мы уже видели, как печатать на стандартный вывод с помощью C&lt;print()&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Welcome to the joys of
+maintaining a software project...</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165334Z" creationid="ira" creationdate="20130727T165334Z">
+        <seg>Добро пожаловать на радостях поддержание программного проекта ...</seg>
       </tuv>
     </tu>
     <tu>
