@@ -192,6 +192,14 @@ or</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$@%&amp;*  dereference     $$foo{bar}     aka $foo-&gt;{bar}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183641Z" creationid="ira" creationdate="20130727T183641Z">
+        <seg>$@%&amp;*  dereference     $$foo{bar}     тоже, что и $foo-&gt;{bar}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$ALL_CAPS_HERE   constants only (beware clashes with perl vars!)</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T144402Z" creationid="ira" creationdate="20130727T144402Z">
@@ -6908,6 +6916,14 @@ perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SYNTAX</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183815Z" creationid="ira" creationdate="20130727T183815Z">
+        <seg>СИНТАКСИС</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Scalar values can be strings, integers or floating point numbers, and Perl
 will automatically convert between them as required.</seg>
       </tuv>
@@ -10359,6 +10375,22 @@ which case you can probably just use the man(1) command.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002421Z" creationid="ira" creationdate="20130726T002421Z">
         <seg>[aeiou]             соответствует одному символу в данном наборе</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>\      reference       $$foo[1]       aka $foo-&gt;[1]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183621Z" creationid="ira" creationdate="20130727T183621Z">
+        <seg>\      ссылка       $$foo[1]       тоже, что и $foo-&gt;[1]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>\()    list of refs</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183739Z" creationid="ira" creationdate="20130727T183739Z">
+        <seg>\()    ссылка на список</seg>
       </tuv>
     </tu>
     <tu>
