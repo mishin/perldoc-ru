@@ -5852,6 +5852,15 @@ can ignore that.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Not everything is mentioned, but 195 features may
+already be overwhelming.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183207Z" creationid="ira" creationdate="20130727T183207Z">
+        <seg>Не все упомянутые, но уже 195 функций может быть подавляющим.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note how we load the user pragma C&lt;myint&gt; with an empty list C&lt;()&gt; to
 prevent its C&lt;import&gt; being called.</seg>
       </tuv>
@@ -8664,6 +8673,15 @@ might be more (or less) convenient, depending on what shell you use.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This 'cheat sheet' is a handy reference, meant for beginning Perl
+programmers.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183111Z" creationid="ira" creationdate="20130727T183111Z">
+        <seg>Этот «шпаргалка» является удобным справочником, предназначенный для начинающих программистов на этом языке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This allows one to specify the I&lt;language code&gt; for the desired language
 translation.</seg>
       </tuv>
@@ -11201,6 +11219,14 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032621Z">
         <seg>perlcheat		Perl шпаргалка</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlcheat - Perl 5 Cheat Sheet</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183053Z" creationid="ira" creationdate="20130727T183053Z">
+        <seg>perlcheat - Perl 5 Шпаргалка</seg>
       </tuv>
     </tu>
     <tu>
