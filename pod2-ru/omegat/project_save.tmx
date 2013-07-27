@@ -1746,6 +1746,14 @@ X&lt;SYS$LOGIN&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Use L&lt;Exporter|Exporter&gt; - wisely!</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152321Z" creationid="ira" creationdate="20130727T152321Z">
+        <seg>=item Используйте модуль L&lt;Exporter|Exporter&gt; - широко!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Use L&lt;strict|strict&gt; and L&lt;warnings|warnings&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T152059Z" creationid="ira" creationdate="20130727T152059Z">
@@ -3750,6 +3758,15 @@ C&lt;-oman&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For instance,
+saying C&lt;use Net::Acme qw(&amp;frob)&gt; would import the C&lt;frob&gt; subroutine.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152339Z" creationid="ira" creationdate="20130727T152339Z">
+        <seg>Например, говоря C&lt;use Net::Acme qw(&amp;frob)&gt; будет импортировать C &lt;frob&gt; подпрограммы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For instance, if you say this:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T152126Z" creationid="ira" creationdate="20130727T152126Z">
@@ -4033,6 +4050,16 @@ be set.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001646Z" creationid="ira" creationdate="20130726T001646Z">
         <seg>Тем не менее, коротко:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, keep
+C&lt;warn&gt; and C&lt;die&gt; in place for your sanity checks - where it really is
+your module at fault.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152303Z" creationid="ira" creationdate="20130727T152303Z">
+        <seg>Однако, имейте C&lt;warn&gt; и C&lt;die&gt; в место для вашего проверки вменяемости - там, где это действительно ваш модуль в вине.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5308,6 +5335,15 @@ buggy in this release (5.14).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T211823Z" creationid="ira" creationdate="20130726T211823Z">
         <seg>L    64   обычно "IOEioA" являются безусловными, L являются безусловными (normally the "IOEioA" are unconditional, the L makes)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>L&lt;Exporter|Exporter&gt; gives you a standard way of exporting symbols and
+subroutines from your module into the caller's namespace.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152328Z" creationid="ira" creationdate="20130727T152328Z">
+        <seg>L&lt;Exporter|Exporter&gt; дает стандартный способ экспорта символы и подпрограммы из вашего модуля в пространство имен вызывающего абонента.</seg>
       </tuv>
     </tu>
     <tu>
