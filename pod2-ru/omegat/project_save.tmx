@@ -2752,6 +2752,14 @@ fashion.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Examples:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130530Z" creationid="ira" creationdate="20130727T130530Z">
+        <seg>Примеры:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Except where otherwise noted, you
 should assume that C&lt;use strict&gt; and C&lt;use warnings&gt; statements
 appear earlier in the "program", and that any variables used have
@@ -4629,6 +4637,14 @@ a general-purpose programming language.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T224022Z" creationid="ira" creationdate="20130723T224003Z">
         <seg>По прошествии многих лет, Perl вырос в язык программирования общего назначения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PageName|ModuleName|ProgramName|URL</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130519Z" creationid="ira" creationdate="20130727T130519Z">
+        <seg>ИмяСтраницы|НазваниеМодуля|НазваниеПрограммы|URL</seg>
       </tuv>
     </tu>
     <tu>
@@ -7521,10 +7537,18 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[-L language_code]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130459Z" creationid="ira" creationdate="20130727T130459Z">
+        <seg>[-L код_языка]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[-M FormatterClassName]</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130341Z" creationid="ira" creationdate="20130727T130341Z">
-        <seg>[-M НазваниеКлассаФормата]</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130436Z" creationid="ira" creationdate="20130727T130341Z">
+        <seg>[-M названиеклассаформата]</seg>
       </tuv>
     </tu>
     <tu>
@@ -7533,6 +7557,14 @@ set $# explicitly if you use the default value of OFMT.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T130330Z" creationid="ira" creationdate="20130727T130330Z">
         <seg>[-d файл_назначения]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[-n nroff-replacement]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130453Z" creationid="ira" creationdate="20130727T130453Z">
+        <seg>[-n nroff-аналог]</seg>
       </tuv>
     </tu>
     <tu>
@@ -7547,8 +7579,8 @@ set $# explicitly if you use the default value of OFMT.</seg>
       <tuv lang="EN-US">
         <seg>[-w formatteroption:value]</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130404Z" creationid="ira" creationdate="20130727T130404Z">
-        <seg>[-w ПараметрФорматирования:Значение]</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130442Z" creationid="ira" creationdate="20130727T130404Z">
+        <seg>[-w параметрформатирования:значение]</seg>
       </tuv>
     </tu>
     <tu>
@@ -8526,6 +8558,38 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T130318Z" creationid="ira" creationdate="20130727T130318Z">
         <seg>perldoc - Perl-документация в POD-формате.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldoc -L fr -q FAQ Keyword</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130612Z" creationid="ira" creationdate="20130727T130612Z">
+        <seg>perldoc -L ru -q FAQ КлючевоеСлово</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldoc -L it -f BuiltinFunction</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130539Z" creationid="ira" creationdate="20130727T130539Z">
+        <seg>perldoc -L it -f ВстроеннаяФункция</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldoc -q FAQ Keyword</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130555Z" creationid="ira" creationdate="20130727T130555Z">
+        <seg>perldoc -q FAQ КлючевоеСлово</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldoc -v PerlVariable</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130624Z" creationid="ira" creationdate="20130727T130624Z">
+        <seg>perldoc -v ПеременнаяPerl</seg>
       </tuv>
     </tu>
     <tu>
