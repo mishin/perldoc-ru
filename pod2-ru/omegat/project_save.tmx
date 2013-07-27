@@ -2149,6 +2149,14 @@ warnings enabled you may get a lot of spurious "used only once" warnings.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Always check the return codes of system calls.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144643Z" creationid="ira" creationdate="20130727T144643Z">
+        <seg>Всегда проверяйте возвращаемые коды при системных вызовах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An alternate delimiter may be specified using B&lt;-F&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T211413Z" creationid="ira" creationdate="20130726T211413Z">
@@ -3590,6 +3598,17 @@ worth writing about.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Good error messages should
+go to C&lt;STDERR&gt;, include which program caused the problem, what the failed
+system call and arguments were, and (VERY IMPORTANT) should contain the
+standard system error message for what went wrong.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144704Z" creationid="ira" creationdate="20130727T144704Z">
+        <seg>В C&lt;STDERR&gt; должны писаться нормальные сообщения об ошибках, включая название программы, в которой произошла ошибка, какой системный вызов привел к ошибке, и (ОЧЕНЬ ВАЖНО) стандартное системное описание ошибки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hashes are
 randomized to protect against local and remote attacks against Perl
 code.</seg>
@@ -3650,6 +3669,15 @@ at least a week:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T231055Z" creationid="ira" creationdate="20130726T231055Z">
         <seg>Вот эффективный способ, чтобы удалить все файлы, которые не были изменены в течение по крайней мере недели:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here's a simple but
+sufficient example:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144711Z" creationid="ira" creationdate="20130727T144711Z">
+        <seg>Вот простой, но достаточный пример:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4994,6 +5022,23 @@ affected by wraparound).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T143439Z" creationid="ira" creationdate="20130727T143439Z">
         <seg>Выравнивать соответствующие элементы по вертикали.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Line up corresponding things vertically, especially if it'd be too long
+to fit on one line anyway.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144627Z" creationid="ira" creationdate="20130727T144627Z">
+        <seg>Выравнивайте похожие элементы по вертикали, особенно если они настолько длинные, чтобы поместиться на одну строку.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Line up your transliterations when it makes sense:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144723Z" creationid="ira" creationdate="20130727T144723Z">
+        <seg>Выравнивайте части транслитерации, когда это имеет смысл:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7699,6 +7744,14 @@ different precedence to C&lt;&amp;&amp;&gt; and friends.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Think about reusability.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144737Z" creationid="ira" creationdate="20130727T144737Z">
+        <seg>Подумайте о повторном использование кода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This
 might be more (or less) convenient, depending on what shell you use.</seg>
       </tuv>
@@ -8371,6 +8424,14 @@ messages of B&lt;perldoc&gt; operation, which is now enabled by B&lt;-D&gt;.</se
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T133100Z" creationid="ira" creationdate="20130727T133100Z">
         <seg>Используйте индекс, если он присутствует.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use here documents instead of repeated C&lt;print()&gt; statements.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144618Z" creationid="ira" creationdate="20130727T144618Z">
+        <seg>Используйте встроенные документы ("here" documents) вместо неоднократных вызовов C&lt;print()&gt;.</seg>
       </tuv>
     </tu>
     <tu>
