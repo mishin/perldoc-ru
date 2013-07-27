@@ -745,6 +745,14 @@ syntax tree.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>4-column indent.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143250Z" creationid="ira" creationdate="20130727T143250Z">
+        <seg>4х символьный отступ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>4096  U  Unofficial, User hacking (reserved for private,</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T220938Z" creationid="ira" creationdate="20130726T220911Z">
@@ -2654,6 +2662,14 @@ guesses right.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Beyond that, he has other preferences that aren't so strong:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143240Z" creationid="ira" creationdate="20130727T143240Z">
+        <seg>Кроме того, он имеет ряд других предпочтений, но не на настолько строгих:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But the code that parses
 layer specification strings, which is also used to decode the PERLIO
 environment variable, treats the colon as a separator.</seg>
@@ -3016,6 +3032,16 @@ program using the C&lt;Devel::DProf&gt; profiler.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T214633Z" creationid="ira" creationdate="20130726T214603Z">
         <seg>Например, B&lt;-d:DProf&gt; выполняет программу, используя C&lt;Devel::DProf&gt; профайлер (profiler).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each programmer will, of course, have his or her own preferences in
+regards to formatting, but there are some general guidelines that will
+make your programs easier to read, understand, and maintain.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143115Z" creationid="ira" creationdate="20130727T143115Z">
+        <seg>Безусловно, у каждого программиста есть свои собственные предпочтения относительно форматирования кода. Однако существуют некоторые общие рекомендации, которые сделают ваши программы читабельными, понятными и их поддержка не составит особого труда.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5644,6 +5670,16 @@ L&lt;perlretut&gt;, and L&lt;perlre&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Regarding aesthetics of code lay out, about the only thing Larry
+cares strongly about is that the closing curly bracket of
+a multi-line BLOCK should line up with the keyword that started the construct.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143233Z" creationid="ira" creationdate="20130727T143233Z">
+        <seg>Есть только один пункт, который Ларри рекомендует строго выполнять, с целью сохранения эстетики форматирования кода - закрывающая фигурная скобка многострочного блока должна находиться на одной вертикали с ключевым словом, начинающим конструкцию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Relevant only if Perl is compiled with the C&lt;malloc&gt; included with the Perl
 distribution; that is, if C&lt;perl -V:d_mymalloc&gt; is "define".</seg>
       </tuv>
@@ -6385,6 +6421,15 @@ diagnostics&gt;  автоматически включается в Perl обы�
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The C&lt;use sigtrap&gt; and even C&lt;use diagnostics&gt; pragmas
+may also prove useful.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143208Z" creationid="ira" creationdate="20130727T143208Z">
+        <seg>Использование прагмы C&lt;use sigtrap&gt; и даже C&lt;use diagnostics&gt; может также оказаться полезным.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The C&lt;use warnings&gt; pragma produces some lovely diagnostics.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231430Z" creationid="ira" creationdate="20130723T231430Z">
@@ -6707,6 +6752,15 @@ this:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T141223Z" creationid="ira" creationdate="20130727T141223Z">
         <seg>Минимальная реализация пакета C&lt;MyMaths&gt; будет примерно такой:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most important thing is to run your programs under the B&lt;-w&gt;
+flag at all times.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143121Z" creationid="ira" creationdate="20130727T143121Z">
+        <seg>Самое важное - всегда запускать программы с флагом B&lt;-w&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8440,6 +8494,16 @@ tree, or by C&lt;perl -V&gt;) to perlbug@perl.org .</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You may turn it off explicitly for particular
+portions of code via the C&lt;no warnings&gt; pragma or the C&lt;$^W&gt; variable
+if you must.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143150Z" creationid="ira" creationdate="20130727T143150Z">
+        <seg>В случае необходимости для определённых участков кода этот режим можно явно отключить, используя C&lt;no warnings&gt; или переменную C&lt;$^W&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You may wish to remove it.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064705Z" creationid="rdtex1" creationdate="20130725T064705Z">
@@ -8515,6 +8579,15 @@ before or after that 32-character boundary.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T201157Z" creationid="ira" creationdate="20130726T201157Z">
         <seg>Вы, наверное, хотите, чтобы убедиться, что все ваши переключатели действуют до или после 32-символьной границы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You should also always run under C&lt;use strict&gt; or know the
+reason why not.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143157Z" creationid="ira" creationdate="20130727T143157Z">
+        <seg>Также следует всегда работать с C&lt;use strict&gt;, кроме случаев, когда вы точно знаете, почему эта прагма вам не подходит.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10356,6 +10429,14 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T032529Z">
         <seg>perlstyle		Perl руководство по стилю программирования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlstyle - Perl style guide</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143039Z" creationid="ira" creationdate="20130727T143039Z">
+        <seg>perlstyle - Стиль написания Perl-кода</seg>
       </tuv>
     </tu>
     <tu>
