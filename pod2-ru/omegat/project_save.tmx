@@ -869,6 +869,14 @@ perltodo упоминает Unicode в %ENV и именах файлов.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head1 A basic example</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141110Z" creationid="ira" creationdate="20130727T141110Z">
+        <seg>=head1 Основной пример</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head1 AUTHOR</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230843Z" creationid="ira" creationdate="20130723T230843Z">
@@ -953,8 +961,8 @@ X&lt;perl, environment variables&gt;</seg>
       <tuv lang="EN-US">
         <seg>=head1 NAME</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T024918Z">
-        <seg>=head1 Имя</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T140952Z">
+        <seg>=head1 НАЗВАНИЕ</seg>
       </tuv>
     </tu>
     <tu>
@@ -1818,6 +1826,15 @@ B&lt;'-MI&lt;MODULE&gt; qw(foo bar)'&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T230417Z" creationid="ira" creationdate="20130726T230417Z">
         <seg>Немного встроенного синтаксического сахара означает, что вы можете также сказать, B&lt;-mI&lt;MODULE&gt;=foo,bar&gt; или  B&lt;-MI&lt;MODULE&gt;=foo,bar&gt; в качестве ярлыка для B&lt;'-MI&lt;MODULE&gt; qw(foo bar)'&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A pragma is a module which influences some aspect of the compile time or run
+time behaviour of Perl, such as C&lt;strict&gt; or C&lt;warnings&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141052Z" creationid="ira" creationdate="20130727T141052Z">
+        <seg>Прагма - это модуль, который влияет на некоторые моменты во время компиляции и во время выполнения Perl-кода. Пример прагмы: C&lt;strict&gt;или C&lt;warnings&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3189,6 +3206,16 @@ of those suffixes.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T232254Z" creationid="ira" creationdate="20130726T232254Z">
         <seg>Например, на платформах Win32 ". суффиксы  ".bat" и ".cmd" добавляются, если поиск по оригинальному названию не удается, и если имя еще не закончится в одном из этих суффиксов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, say you need to create a class implementing overloaded
+mathematical operators, and would like to provide your own pragma that
+functions much like C&lt;use integer;&gt; You'd like this code</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141127Z" creationid="ira" creationdate="20130727T141127Z">
+        <seg>Например, вам нужно создать класс, который реализует перегрузку математических операторов, и вы хотели бы использовать свою прагму с функционалом похожим на C&lt;use integer;&gt;. Пример кода:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7853,6 +7880,16 @@ on the version and vendor of the C compiler.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>With Perl 5.10 you
+are no longer limited to the built in pragmata; you can now create user
+pragmata that modify the behaviour of user functions within a lexical scope.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141102Z" creationid="ira" creationdate="20130727T141102Z">
+        <seg>С выходом Perl 5.10 вы не ограничены в разработке прагм, теперь можете создавать пользовательские прагмы, которые будут менять поведение пользовательских функций в лексическом контексте.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>With methods 2 and 3, Perl starts parsing the input file from the
 beginning, unless you've specified a B&lt;-x&gt; switch, in which case it
 scans for the first line starting with C&lt;#!&gt; and containing the word
@@ -9909,6 +9946,14 @@ like this at the top of your program:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>perlpragma - how to write a user pragma</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141007Z" creationid="ira" creationdate="20130727T141007Z">
+        <seg>perlpragma - как писать пользовательские прагмы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>perlqnx		Perl notes for QNX</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T222558Z" creationid="ira" creationdate="20130723T222558Z">
@@ -10511,6 +10556,14 @@ switch.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T211901Z" creationid="ira" creationdate="20130726T211901Z">
         <seg>они зависят от локальных переменных среды</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>to give the output</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141146Z" creationid="ira" creationdate="20130727T141146Z">
+        <seg>Результат выполнения кода:</seg>
       </tuv>
     </tu>
     <tu>
