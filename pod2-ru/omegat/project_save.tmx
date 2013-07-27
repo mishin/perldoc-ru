@@ -5248,6 +5248,14 @@ which you must I&lt;not&gt; do on Unix or Plan 9 systems.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>On the other hand</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143630Z" creationid="ira" creationdate="20130727T143630Z">
+        <seg>С другой стороны</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One can
 also use the B&lt;-w&gt; flag, but its use is normally discouraged, because
 it gets applied to all executed Perl code, including that not under
@@ -6175,6 +6183,15 @@ messages such as "Insecure dependency".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similarly, just because an operator lets you assume default arguments
+doesn't mean that you have to make use of the defaults.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143715Z" creationid="ira" creationdate="20130727T143715Z">
+        <seg>Аналогично, если оператор имеет значения по умолчанию, то вы не обязаны использовать их.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since a2p usually picks
 correctness over efficiency.</seg>
       </tuv>
@@ -6763,6 +6780,15 @@ they are used.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T002639Z" creationid="ira" creationdate="20130727T002639Z">
         <seg>По умолчанию набор слоев должны дать приемлемые результаты на всех платформах</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The defaults
+are there for lazy systems programmers writing one-shot programs.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143741Z" creationid="ira" creationdate="20130727T143741Z">
+        <seg>Значения по умолчанию предназначены для ленивых системных программистов, которые пишут однострочные программы.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8997,6 +9023,23 @@ want to pass to Perl.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>because the main point isn't whether the user typed B&lt;-v&gt; or not.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143700Z" creationid="ira" creationdate="20130727T143700Z">
+        <seg>потому, что суть не в том, чтобы пользователь набрал B&lt;-v&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>because the second way hides the main point of the statement in a
+modifier.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143623Z" creationid="ira" creationdate="20130727T143623Z">
+        <seg>потому, что второй способ скрывает суть выражения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>behaves just like B&lt;-e&gt;, except that it implicitly enables all
 optional features (in the main compilation unit).</seg>
       </tuv>
@@ -9195,6 +9238,14 @@ know when the filename has changed.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T211745Z" creationid="ira" creationdate="20130726T211745Z">
         <seg>в UTF-8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>is better than</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143600Z" creationid="ira" creationdate="20130727T143600Z">
+        <seg>лучше, чем</seg>
       </tuv>
     </tu>
     <tu>
