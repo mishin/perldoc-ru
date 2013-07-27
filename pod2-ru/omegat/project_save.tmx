@@ -287,6 +287,16 @@ B&lt;-e&gt; считается одной линией.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(In addition, if running under HP-UX,
+C&lt;col -x&gt; will be used.) This is primarily used for the documentation for
+the perl library modules.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130743Z" creationid="ira" creationdate="20130727T130743Z">
+        <seg>(а также C&lt;col -x&gt; для ОС HP-UX). В основном используется для получения документации по модулям Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(In this case you would indicate the end
 of the program using the C&lt;__END__&gt; token.)</seg>
       </tuv>
@@ -918,6 +928,14 @@ X&lt;perl, environment variables&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T233050Z" creationid="ira" creationdate="20130723T233050Z">
         <seg>=head1 ПРИМЕЧАНИЯ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head1 OPTIONS</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130855Z" creationid="ira" creationdate="20130727T130855Z">
+        <seg>=head1 ПАРАМЕТРЫ</seg>
       </tuv>
     </tu>
     <tu>
@@ -2342,6 +2360,16 @@ the best option when reading UTF-8 encoded data.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>B&lt;perldoc&gt; looks up a piece of documentation in .pod format that is
+embedded in the perl installation tree or in a perl script, and displays
+it via C&lt;groff -man | $PAGER&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130724Z" creationid="ira" creationdate="20130727T130724Z">
+        <seg>I&lt;perldoc&gt; позволяет получить часть документации в .pod формате, которая встроена в дистрибутив perl или Perl-скрипты и доступна с помощью C&lt;pod2man | nroff -man | $PAGER&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Be sure to change all
 operations the variable is involved in to match.</seg>
       </tuv>
@@ -3480,6 +3508,15 @@ PERL_ENCODING environment variable is consulted for an encoding name.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T003427Z" creationid="ira" creationdate="20130727T003427Z">
         <seg>При использовании C&lt;use encoding&gt; Pragma без явного именем кодировки, PERL_ENCODING переменная окружения консультировал имя кодировки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are looking for a table of contents to the Perl library modules
+documentation, see the L&lt;perltoc&gt; page.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130848Z" creationid="ira" creationdate="20130727T130848Z">
+        <seg>Если вы ищете оглавление к библиотеке документаций модулей Perl, смотрите L&lt;perltoc&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5281,6 +5318,14 @@ C&lt;key_traversal_mask()&gt; в L&lt;Hash::Util&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T235633Z" creationid="ira" creationdate="20130726T235633Z">
         <seg>См. также  L&lt;perldiag&gt; и L&lt;perltrap&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See below for more description of the switches.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130641Z" creationid="ira" creationdate="20130727T130641Z">
+        <seg>Подробная информация о параметрах командной строки ниже.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7533,6 +7578,15 @@ set $# explicitly if you use the default value of OFMT.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082400Z" creationid="rdtex1" creationdate="20130725T082308Z">
         <seg>Вам придется установить $# явно, если вы используете значение по умолчанию OFMT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Your system may also have man pages installed for those modules, in
+which case you can probably just use the man(1) command.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130803Z" creationid="ira" creationdate="20130727T130803Z">
+        <seg>На вашей системе тоже могут быть установлены руководства по этим модулям. В этом случае вы можете пользоваться командой man(1).</seg>
       </tuv>
     </tu>
     <tu>
