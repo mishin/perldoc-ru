@@ -3960,6 +3960,15 @@ the sources), you may have to modify the Registry yourself.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you need to store multiple values
+or complex structures, you should serialise them, for example with C&lt;pack&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142202Z" creationid="ira" creationdate="20130727T142202Z">
+        <seg>Если вам нужно хранить составные значения или сложные структуры, вам следует сериализовать их , например с помощью C&lt;pack&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you want
 a specific version of Perl, say, perl5.14.1, you should place
 that directly in the C&lt;#!&gt; line's path.</seg>
