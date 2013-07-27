@@ -713,6 +713,14 @@ syntax tree.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>10 ctime               10 hinthash    @INC  include paths</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185629Z" creationid="ira" creationdate="20130727T185629Z">
+        <seg>10 ctime               10 hinthash    @INC  включенные пути</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>1024  x  Syntax tree dump</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T220740Z" creationid="ira" creationdate="20130726T220731Z">
@@ -725,6 +733,22 @@ syntax tree.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T221739Z" creationid="ira" creationdate="20130726T221739Z">
         <seg>1048576  v  Verbose (многословный): использовать в сочетании с другими флагами</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>11 blksz               3..10 only     @_    subroutine args</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185638Z" creationid="ira" creationdate="20130727T185638Z">
+        <seg>11 blksz               3..10 only     @_    аргументы подпрограммы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>12 blcks               with EXPR      %ENV  environment</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185655Z" creationid="ira" creationdate="20130727T185655Z">
+        <seg>12 blcks               with EXPR      %ENV  переменные среды</seg>
       </tuv>
     </tu>
     <tu>
@@ -857,6 +881,14 @@ syntax tree.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>4 uid    4 month-1     4 hasargs     $|    autoflush</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185500Z" creationid="ira" creationdate="20130727T185500Z">
+        <seg>4 uid    4 month-1     4 hasargs     $|    autoflush (сбрасывание буфера)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>4-column indent.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T143250Z" creationid="ira" creationdate="20130727T143250Z">
@@ -913,6 +945,14 @@ syntax tree.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>7 size   7 yearday     7 is_require  $$    process ID</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185602Z" creationid="ira" creationdate="20130727T185602Z">
+        <seg>7 size   7 yearday     7 is_require  $$    ID процесса</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>8  t  Trace execution</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T215533Z" creationid="ira" creationdate="20130726T215533Z">
@@ -933,6 +973,14 @@ syntax tree.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T221907Z" creationid="ira" creationdate="20130726T221907Z">
         <seg>8388608  q  quiet - в настоящее время только подавляет "Запуск" ("EXECUTING")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>9 mtime                9 bitmask     @ARGV command line args</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185612Z" creationid="ira" creationdate="20130727T185612Z">
+        <seg>9 mtime                9 bitmask     @ARGV аргументы командной строки</seg>
       </tuv>
     </tu>
     <tu>
@@ -10994,6 +11042,14 @@ such code to be more efficient by discarding the semantic sugar.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>line number</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185604Z" creationid="ira" creationdate="20130727T185604Z">
+        <seg>номер строки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>list ops        /l locale   /d  dual  |      alternation</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T184431Z" creationid="ira" creationdate="20130727T184431Z">
@@ -12838,6 +12894,14 @@ split into an array.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000542Z" creationid="ira" creationdate="20130726T000542Z">
         <seg>конкатенации строк</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sys/libcall error</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185544Z" creationid="ira" creationdate="20130727T185544Z">
+        <seg>ошибки системы/или вызова lib </seg>
       </tuv>
     </tu>
     <tu>
