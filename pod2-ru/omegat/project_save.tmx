@@ -3171,6 +3171,15 @@ terminated by the null character, you can say this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For
+instance</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143548Z" creationid="ira" creationdate="20130727T143548Z">
+        <seg>Например:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For URLs, HTTP and
 HTTPS are the only kind currently supported.</seg>
       </tuv>
@@ -3494,6 +3503,14 @@ them, in no particular order.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T064258Z" creationid="rdtex1" creationdate="20130725T064254Z">
         <seg>Вот некоторые из них, без особого порядка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here are some other more substantive style issues to think about:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143502Z" creationid="ira" creationdate="20130727T143502Z">
+        <seg>Вот еще о чем стоит подумать:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4636,6 +4653,15 @@ third-party modules.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Just because you I&lt;CAN&gt; do something a particular way doesn't mean that
+you I&lt;SHOULD&gt; do it that way.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143520Z" creationid="ira" creationdate="20130727T143520Z">
+        <seg>То, что вы I&lt;МОЖЕТЕ&gt; сделать что-то определённым образом вовсе не означает, что вы I&lt;ОБЯЗАНЫ&gt; это делать так.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Just like special scalars and arrays, there are also special hashes.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233742Z" creationid="ira" creationdate="20130725T233742Z">
@@ -4712,6 +4738,15 @@ modules which came with your Perl installation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Larry has his reasons for each of these things, but he doesn't claim that
+everyone else's mind works the same as his does.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143455Z" creationid="ira" creationdate="20130727T143455Z">
+        <seg>У Ларри есть причины для каждого из этих пунктов, но он не имеет претензий, если вы думаете по-другому.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Layers it makes sense to include in the PERLIO environment
 variable are briefly summarized below.</seg>
       </tuv>
@@ -4756,6 +4791,14 @@ affected by wraparound).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T232637Z" creationid="ira" creationdate="20130723T232637Z">
         <seg>Номера строк отображаются диагностики внутренней памяти как короткие целые, поэтому они ограничиваются максимум 65535 (большие числа обычно под воздействием запахом).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Line up corresponding items vertically.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143439Z" creationid="ira" creationdate="20130727T143439Z">
+        <seg>Выравнивать соответствующие элементы по вертикали.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5111,6 +5154,14 @@ actions, whereas new awk does not.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T063402Z" creationid="rdtex1" creationdate="20130724T140649Z">
         <seg>Старый AWK всегда имеет цикл по строкам, даже если нет никаких действий, в то время как новый AWK нет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Omit redundant punctuation as long as clarity doesn't suffer.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143445Z" creationid="ira" creationdate="20130727T143445Z">
+        <seg>Опускать излишнюю пунктуацию до тех пор, пока код остается читабельным.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5495,6 +5546,15 @@ all Unix-like platforms.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230539Z" creationid="ira" creationdate="20130723T230513Z">
         <seg>Perl доступен для большинства операционных систем, в том числе практически для всех Unix-подобных платформ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perl is designed to give you several
+ways to do anything, so consider picking the most readable one.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143538Z" creationid="ira" creationdate="20130727T143538Z">
+        <seg>Perl спроектирован таким образом, чтобы дать вам возможность сделать любую вещь несколькими способами, и так, чтобы вы смогли выбрать наиболее читабельный вариант. </seg>
       </tuv>
     </tu>
     <tu>
