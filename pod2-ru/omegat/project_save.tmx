@@ -7521,6 +7521,38 @@ set $# explicitly if you use the default value of OFMT.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[-M FormatterClassName]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130341Z" creationid="ira" creationdate="20130727T130341Z">
+        <seg>[-M НазваниеКлассаФормата]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[-d destination_file]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130330Z" creationid="ira" creationdate="20130727T130330Z">
+        <seg>[-d файл_назначения]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[-o formatname]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130336Z" creationid="ira" creationdate="20130727T130336Z">
+        <seg>[-o название_формата]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[-w formatteroption:value]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130404Z" creationid="ira" creationdate="20130727T130404Z">
+        <seg>[-w ПараметрФорматирования:Значение]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>[^aeiou]            matches a single character outside the given</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002443Z" creationid="ira" creationdate="20130726T002443Z">
@@ -8486,6 +8518,14 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T220917Z" creationid="ira" creationdate="20130723T220917Z">
         <seg>perldoc		Посмотрите Perl документацию в формате Pod</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perldoc - Look up Perl documentation in Pod format.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130318Z" creationid="ira" creationdate="20130727T130318Z">
+        <seg>perldoc - Perl-документация в POD-формате.</seg>
       </tuv>
     </tu>
     <tu>
