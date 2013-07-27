@@ -4483,6 +4483,17 @@ you've got a problem.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you do not wish to install the L&lt;Module::Starter|Module::Starter&gt;
+package from CPAN, F&lt;h2xs&gt; is an older tool, originally intended for the
+development of XS modules, which comes packaged with the Perl
+distribution.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151934Z" creationid="ira" creationdate="20130727T151934Z">
+        <seg>Если вы не хотите установить L&lt;Module::Starter|Module::Starter&gt; пакет из CPAN, F&lt;h2xs&gt; более старый инструмент, первоначально предназначенных для развития XS модулей, который поставляется в комплекте с Perl распределения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you don't know what one of these is, the rest of this
 document isn't going to be much use to you.</seg>
       </tuv>
@@ -4919,8 +4930,8 @@ with stubs of all the necessary files to start a new module, according
 to recent "best practice" for module development, and is invoked from
 the command line, thus:</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151911Z" creationid="ira" creationdate="20130727T151911Z">
-        <seg>Это создает каталог с шаблонами (stubs) все[ необходимые файлы для запуска нового модуля, согласно последним "лучшей практики" для разработки модулей и вызывается из командной строки, таким образом:</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151917Z" creationid="ira" creationdate="20130727T151911Z">
+        <seg>Это создает каталог с шаблонами (stubs) всех необходимые файлы для запуска нового модуля, согласно последним "лучшей практики" для разработки модулей и вызывается из командной строки, таким образом:</seg>
       </tuv>
     </tu>
     <tu>
