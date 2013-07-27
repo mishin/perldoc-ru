@@ -946,6 +946,14 @@ X&lt;perl, environment variables&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 A note on freshness</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125624Z" creationid="ira" creationdate="20130727T125624Z">
+        <seg>=head2 Замечания по обновлениям</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Basic syntax overview</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231646Z" creationid="ira" creationdate="20130725T231639Z">
