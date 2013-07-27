@@ -1250,6 +1250,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item B&lt;-v&gt; I&lt;perlvar&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131901Z" creationid="ira" creationdate="20130727T131901Z">
+        <seg>=item B&lt;-v&gt; I&lt;perlпеременная&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Boolean logic</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000133Z" creationid="ira" creationdate="20130726T000023Z">
