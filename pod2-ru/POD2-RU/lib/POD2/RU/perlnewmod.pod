@@ -1,3 +1,5 @@
+=encoding utf8
+
 =head1 НАЗВАНИЕ
 
 perlnewmod - подготовка нового модуля для распределения (for distribution)
@@ -176,3 +178,12 @@ L<Carp>, L<Exporter>, L<perlpod>, L<Test::Simple>, L<Test::More>
 L<ExtUtils::MakeMaker>, L<Module::Build>, L<Module::Starter>
 http://www.cpan.org/ , Ken Williams's tutorial on building your own
 module at http://mathforum.org/~ken/perl_modules.html
+
+
+=head1 ПЕРЕВОДЧИКИ
+
+=over
+
+=item * Николай Мишин (Tech & Language Lead)
+
+=back    
