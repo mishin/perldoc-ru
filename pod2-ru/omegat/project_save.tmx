@@ -7861,6 +7861,15 @@ you get a scalar.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The email you got when you received your CPAN ID will tell you how to
+log in to PAUSE, the Perl Authors Upload SErver.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T164919Z" creationid="ira" creationdate="20130727T164919Z">
+        <seg>В email, который вы получили, когда вы получали ваш CPAN ID расскажет вам, как войти в систему PAUSE, the Perl Authors Upload SErver. (Perl Авторский Аплоад Сервер).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The examples above use a relative path to the perl interpreter,
 getting whatever version is first in the user's path.</seg>
       </tuv>
