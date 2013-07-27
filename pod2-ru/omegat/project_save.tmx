@@ -2909,6 +2909,58 @@ IO in order to load them!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Consider changing your whole
+world view.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144904Z" creationid="ira" creationdate="20130727T144904Z">
+        <seg>не изменить ли вам свои взгляды на целый мир</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider generalizing your
+code.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144815Z" creationid="ira" creationdate="20130727T144815Z">
+        <seg>Подумайте, как можно обобщить ваш код,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider giving away your code.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144900Z" creationid="ira" creationdate="20130727T144900Z">
+        <seg>Не предложить ли вам ваш код кому-нибудь другому,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider making your
+code run cleanly with C&lt;use strict&gt; and C&lt;use warnings&gt; (or B&lt;-w&gt;) in
+effect.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144832Z" creationid="ira" creationdate="20130727T144832Z">
+        <seg>как сделать код "чище", используя C&lt;use strict&gt; и C&lt;use warnings&gt; (или B&lt;-w&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider writing a module or object class.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144818Z" creationid="ira" creationdate="20130727T144818Z">
+        <seg>как написать модуль или класс,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider... oh, never mind.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144913Z" creationid="ira" creationdate="20130727T144913Z">
+        <seg>Подумайте... стоп, хватит.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Contained in the file specified by the first filename on the command line.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T200001Z" creationid="ira" creationdate="20130726T200001Z">
@@ -3643,6 +3695,15 @@ for the user's code.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T141522Z" creationid="ira" creationdate="20130727T141522Z">
         <seg>Следовательно, C&lt;import&gt; и C&lt;unimport&gt; вызываются B&lt;во время компиляции&gt; пользовательского кода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here
+are commonly expected conventions:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144945Z" creationid="ira" creationdate="20130727T144945Z">
+        <seg>Список предполагаемых соглашений:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5234,6 +5295,15 @@ not be preserved.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T225404Z" creationid="ira" creationdate="20130726T225404Z">
         <seg>Отметим, что поскольку B&lt;-i&gt; переименовывает или удаляет исходный файл перед созданием нового файла с таким же названием, Unix-стиль мягкие и жесткие ссылки не будут сохранены.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that function names are considered more readable
+with parentheses after their name, that is C&lt;function()&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T145009Z" creationid="ira" creationdate="20130727T145009Z">
+        <seg>Считается, что названия функций являются более читабельными, если после имени следуют круглые скобки, например, C&lt;function()&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8341,6 +8411,14 @@ are treated as though they are suffixed with sufficient 0's as required.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Try to document your code and use Pod formatting in a consistent way.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144938Z" creationid="ira" creationdate="20130727T144938Z">
+        <seg>Попытайтесь документировать свой код, используйте POD-форматирование.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Typical uses are in Unix:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T002827Z" creationid="ira" creationdate="20130727T002827Z">
@@ -8711,6 +8789,15 @@ separate words in longer identifiers.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T225212Z" creationid="ira" creationdate="20130726T225212Z">
         <seg>Почему -i разбивает (clobber) защищенные файлы?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Why waste brainpower on a one-shot when you
+might want to do something like it again?</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144750Z" creationid="ira" creationdate="20130727T144750Z">
+        <seg>Зачем тратить время на написание одноразовых программ, когда вы можете сделать что-нибудь для того, чтобы использовать их снова?</seg>
       </tuv>
     </tu>
     <tu>
@@ -11529,6 +11616,32 @@ switch.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T220930Z" creationid="ira" creationdate="20130726T220930Z">
         <seg>неизданного использования)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use C&lt;BE&lt;lt&gt;E&lt;gt&gt;&gt; for commands names like B&lt;cat&gt; or B&lt;grep&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T145018Z" creationid="ira" creationdate="20130727T145018Z">
+        <seg>Используйте C&lt;BE&lt;lt&gt;E&lt;gt&gt;&gt; для названия команд, например, B&lt;cat&gt;или B&lt;grep&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use C&lt;CE&lt;lt&gt;E&lt;gt&gt;&gt; for function, variable and module names (and more
+generally anything that can be considered part of code, like filehandles
+or specific values).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T145000Z" creationid="ira" creationdate="20130727T145000Z">
+        <seg>Используйте C&lt;CE&lt;lt&gt;E&lt;gt&gt;&gt; для названия функций, переменных и модулей, а также других частей кода (например, файловых дескрипторов или специфичных значений).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use C&lt;FE&lt;lt&gt;E&lt;gt&gt;&gt; or C&lt;CE&lt;lt&gt;E&lt;gt&gt;&gt; for file names.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T145033Z" creationid="ira" creationdate="20130727T145033Z">
+        <seg>Используйте C&lt;FE&lt;lt&gt;E&lt;gt&gt;&gt; или C&lt;CE&lt;lt&gt;E&lt;gt&gt;&gt; для названия файлов.</seg>
       </tuv>
     </tu>
     <tu>
