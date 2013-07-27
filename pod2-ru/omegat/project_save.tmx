@@ -1094,6 +1094,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Special Topics</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124632Z" creationid="ira" creationdate="20130727T124632Z">
+        <seg>=head2 Специальные темы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Stubs for Deleted Documents</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T222655Z" creationid="ira" creationdate="20130723T222655Z">
