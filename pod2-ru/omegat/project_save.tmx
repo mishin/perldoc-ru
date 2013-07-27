@@ -1282,6 +1282,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item B&lt;-w&gt; I&lt;option:value&gt; or B&lt;-w&gt; I&lt;option&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132605Z" creationid="ira" creationdate="20130727T132605Z">
+        <seg>=item B&lt;-w&gt; I&lt;параметр:значение&gt; или B&lt;-w&gt; I&lt;параметр&gt; I&lt;option&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Boolean logic</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000133Z" creationid="ira" creationdate="20130726T000023Z">
@@ -6895,6 +6903,14 @@ uses the C compiler's numeric file descriptor routines.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T230150Z" creationid="ira" creationdate="20130726T230150Z">
         <seg>Этот параметр определяет, C&lt;$\&gt; как символ новой строки, а затем устанавливает C&lt;$/&gt; в нулевой символ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specifies an option to call the formatter B&lt;w&gt;ith.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132712Z" creationid="ira" creationdate="20130727T132712Z">
+        <seg>Этот параметр позволяет вызвать форматирование с B&lt;п&gt;араметрами.</seg>
       </tuv>
     </tu>
     <tu>
