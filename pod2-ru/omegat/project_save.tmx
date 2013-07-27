@@ -2267,6 +2267,15 @@ of option letters.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As pragmata are implemented as modules, like any other module, C&lt;use myint;&gt;
+becomes</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141440Z" creationid="ira" creationdate="20130727T141440Z">
+        <seg>Прагма реализована как модуль, поэтому C&lt;use myint;&gt; означает:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As shown above, Perl creates the backup file whether or not any output
 is actually changed.</seg>
       </tuv>
@@ -3382,6 +3391,15 @@ number, the more it emits.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hence the C&lt;import&gt; and C&lt;unimport&gt; routines are called at B&lt;compile time&gt;
+for the user's code.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141522Z" creationid="ira" creationdate="20130727T141522Z">
+        <seg>Следовательно, C&lt;import&gt; и C&lt;unimport&gt; вызываются B&lt;во время компиляции&gt; пользовательского кода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here are some of
 them, in no particular order.</seg>
       </tuv>
@@ -4152,6 +4170,17 @@ sacrificed in the goal of getting the general idea across.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T223356Z" creationid="ira" creationdate="20130725T223356Z">
         <seg>В некоторых случаях совершенство изложения было принесено в жертву общей идее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the example pragma, retrieval
+is encapsulated into the routine C&lt;in_effect()&gt;, which takes as parameter
+the number of call frames to go up to find the value of the pragma in the
+user's script.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141622Z" creationid="ira" creationdate="20130727T141622Z">
+        <seg>В прагме из примера восстановление инкапсулировано в подпрограмме C&lt;in_effect()&gt;, которая в качестве аргументов принимает единственный параметр - число вызовов, оставшихся для нахождения значения прагмы в пользовательском скрипте.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6494,6 +6523,14 @@ if it is invoked with B&lt;-xyz=abc&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The interaction with the Perl compilation happens inside package C&lt;myint&gt;:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141410Z" creationid="ira" creationdate="20130727T141410Z">
+        <seg>Взаимодействие с Perl во время компиляции внутри пакета C&lt;myint&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The item you want to look up.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T133332Z" creationid="ira" creationdate="20130727T133332Z">
@@ -6693,6 +6730,16 @@ of an array:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233112Z" creationid="ira" creationdate="20130725T233112Z">
         <seg>Специальная переменная C&lt;$#array&gt; говорит вам, индекс последнего элемента массива:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The state information in C&lt;%^H&gt; is
+stored in the optree, and can be retrieved read-only at runtime with C&lt;caller()&gt;,
+at index 10 of the list of returned results.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141604Z" creationid="ira" creationdate="20130727T141604Z">
+        <seg>Информация о состоянии в C&lt;%^H&gt; сохраняется в op-дереве, и может быть получено во время выполнения с помощью C&lt;caller()&gt;, под индексом 10 в возвращённом списке.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7705,6 +7752,15 @@ or the like.</seg>
         <seg>Полезные значения для C&lt;PERLDOC&gt; включают C&lt;-oman&gt;, C&lt;-otext&gt;, C&lt;-otk&gt;, C&lt;-ortf&gt;,
 C&lt;-oxml&gt; и так далее, в зависимости от имеющихся у вас модулей; или явно укажите класс определяющий форматирование с помощью C&lt;-MPod::Perldoc::ToMan&gt;
 или подобного.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User pragmata store their state by writing to the magical hash C&lt;%^H&gt;,
+hence these two routines manipulate it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141538Z" creationid="ira" creationdate="20130727T141538Z">
+        <seg>Пользовательские прагмы сохраняют свое состояние в магическом хеше C&lt;%^H&gt;, следовательно эти две подпрограммы управляют им.</seg>
       </tuv>
     </tu>
     <tu>
