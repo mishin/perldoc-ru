@@ -5701,6 +5701,14 @@ doesn't need to return a true value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So "perldoc intro" is enough to find/render "perlintro.pod".</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133728Z" creationid="ira" creationdate="20130727T133728Z">
+        <seg>Таким образом, "perldoc intro" достаточно, чтобы найти/сделать "perlintro.pod".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So C&lt;my $logmessage = shift;&gt; shifts the first item off the list of
 arguments and assigns it to C&lt;$logmessage&gt;.</seg>
       </tuv>
