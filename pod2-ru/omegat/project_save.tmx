@@ -689,10 +689,26 @@ syntax tree.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>0 dev    0 second      0 package     $_    default variable</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185315Z" creationid="ira" creationdate="20130727T185315Z">
+        <seg>0 dev    0 second      0 package     $_    переменная по умолчанию</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>1  p  Tokenizing and parsing (with v, displays parse stack)</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T215400Z" creationid="ira" creationdate="20130726T215400Z">
         <seg>1  p  Разбор на токены или слова и парсинг (Tokenizing and parsing) (с v, отображает стек разборk)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1 ino    1 minute      1 filename    $0    program name</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185326Z" creationid="ira" creationdate="20130727T185326Z">
+        <seg>1 ino    1 minute      1 filename    $0    имя файла программы</seg>
       </tuv>
     </tu>
     <tu>
@@ -757,6 +773,14 @@ syntax tree.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T215447Z" creationid="ira" creationdate="20130726T215447Z">
         <seg>2  s  Снимок (snapshots) стека (с v, отображает все стеки)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2 mode   2 hour        2 line        $/    input separator</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185338Z" creationid="ira" creationdate="20130727T185338Z">
+        <seg>2 mode   2 hour        2 line        $/    вход разделитель</seg>
       </tuv>
     </tu>
     <tu>
@@ -3772,6 +3796,14 @@ L&lt;perlreftut&gt;, L&lt;perllol&gt;, L&lt;perlref&gt; and L&lt;perldsc&gt;.</s
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234013Z" creationid="ira" creationdate="20130725T234013Z">
         <seg>Исчерпывающую информацию по теме ссылок можно найти в L&lt;perlreftut&gt;, L&lt;perllol&gt;, L&lt;perlref&gt; and L&lt;perldsc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>FUNCTION RETURN LISTS</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185221Z" creationid="ira" creationdate="20130727T185221Z">
+        <seg>СПИСКИ ВОЗВРАТОВ ФУНКЦИЙ</seg>
       </tuv>
     </tu>
     <tu>
@@ -12782,6 +12814,14 @@ split into an array.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T223620Z" creationid="ira" creationdate="20130726T223620Z">
         <seg>указвывает шаблон для разделения, также можно использовать B&lt;-a&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>stat      localtime    caller         SPECIAL VARIABLES</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185252Z" creationid="ira" creationdate="20130727T185252Z">
+        <seg>stat      localtime    caller         СПЕЦИАЛЬНЫЕ ПЕРЕМЕННЫЕ</seg>
       </tuv>
     </tu>
     <tu>
