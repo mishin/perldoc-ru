@@ -2798,6 +2798,14 @@ detail.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Choose mnemonic identifiers.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144159Z" creationid="ira" creationdate="20130727T144159Z">
+        <seg>Выбирайте осмысленные названия для идентификаторов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Command-interpreters on non-Unix systems have rather different ideas
 on quoting than Unix shells.</seg>
       </tuv>
@@ -4098,6 +4106,15 @@ documentation, see the L&lt;perltoc&gt; page.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you can't remember what mnemonic means,
+you've got a problem.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144203Z" creationid="ira" creationdate="20130727T144203Z">
+        <seg>Если вы не можете вспомнить, что обозначает данное название, у вас проблемы с выбором имен.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you feel the urge to write Perl modules, L&lt;perlnewmod&gt; will give you
 good advice.</seg>
       </tuv>
@@ -4552,6 +4569,16 @@ emphasize their similarity to variable "attributes".</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T001419Z" creationid="ira" creationdate="20130727T001419Z">
         <seg>Принято, чтобы начать имена слоев с двоеточия (например, C&lt;:perlio&gt;), чтобы подчеркнуть их сходство с переменной "атрибуты".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is generally easier to read
+C&lt;$var_names_like_this&gt; than C&lt;$VarNamesLikeThis&gt;, especially for
+non-native speakers of English.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144247Z" creationid="ira" creationdate="20130727T144247Z">
+        <seg>Например, C&lt;$var_names_like_this&gt; легче прочитать, чем C&lt;$VarNamesLikeThis&gt;, особенно тем, для которых английский -- не родной язык.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8483,6 +8510,15 @@ given variable name may not be longer than 251 characters.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T232627Z" creationid="ira" creationdate="20130723T232601Z">
         <seg>Хотя ни один из встроенных типов данных не имеет любые произвольные ограничения на размер (кроме памяти), есть еще несколько произвольных ограничений: данное имя переменной не может быть длиннее 251 символов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While short identifiers like C&lt;$gotit&gt; are probably ok, use underscores to
+separate words in longer identifiers.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144243Z" creationid="ira" creationdate="20130727T144243Z">
+        <seg>Короткие название для идентификаторов типа C&lt;$gotit&gt; являются понятными. Для длинных названий в качестве разделителя слов используйте символ подчеркивания.</seg>
       </tuv>
     </tu>
     <tu>
