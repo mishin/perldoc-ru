@@ -1256,6 +1256,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item I&lt;Regular Expressions Cookbook&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124705Z" creationid="ira" creationdate="20130727T124705Z">
+        <seg>=item I&lt;Regular Expressions Cookbook&gt; I&lt;Книга рецептов по регулярным выражениям&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item I&lt;Writing Perl Modules for CPAN&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T124303Z" creationid="ira" creationdate="20130727T124303Z">
