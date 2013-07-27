@@ -1062,6 +1062,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 References</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124128Z" creationid="ira" creationdate="20130727T124128Z">
+        <seg>=head2 Литература</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Regular expressions</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001553Z" creationid="ira" creationdate="20130726T001553Z">
@@ -1188,6 +1196,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T123759Z" creationid="ira" creationdate="20130727T123759Z">
         <seg>=item I&lt;Программирование на Perl&gt; ("Camel Book"):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Writing Perl Modules for CPAN&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124303Z" creationid="ira" creationdate="20130727T124303Z">
+        <seg>=item I&lt;Writing Perl Modules for CPAN&gt; I&lt;Написание модулей Perl для CPAN&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5835,6 +5851,16 @@ Impatience, and Hubris.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The tutorial started in the Llama continues in the Alpaca, which
+introduces the intermediate features of references, data structures,
+object-oriented programming, and modules:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124117Z" creationid="ira" creationdate="20130727T124117Z">
+        <seg>Учебник начатый в Ламе продолжается в Aльпаке, который вводит промежуточные фичи (intermediate features), такие как ссылки, структуры данных, объектно-ориентированного программирование и модули:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The two additional lines request from perl to catch various common
 problems in your code.</seg>
       </tuv>
@@ -7162,6 +7188,14 @@ over such an array.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082144Z" creationid="rdtex1" creationdate="20130725T082144Z">
         <seg>Возможно, вам придется изменить любой цикл, который перебирает такой массив.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You might want to keep these desktop references close by your keyboard:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124147Z" creationid="ira" creationdate="20130727T124147Z">
+        <seg>Возможно, вы захотите, чтобы эти ссылки столе рядом с вашей клавиатурой:</seg>
       </tuv>
     </tu>
     <tu>
