@@ -1461,6 +1461,21 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item C&lt;perl Makefile.PL; make test; make dist&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T164712Z" creationid="ira" creationdate="20130727T164712Z">
+        <seg>=item C&lt;perl Makefile.PL; make test; make dist&gt;
+
+правда эти команды справедливы для Unix (примечание mishin)
+для Windows, где Ларри советует Strawberry perl
+будет работать dmake test; dmake dist,
+но и dmake dist не выполниться, если предварительно не установить на систему
+gnu-tar и gnu-zip и добавить путь к ним в переменную PATH
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Check again</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T151756Z" creationid="ira" creationdate="20130727T151756Z">
@@ -1750,6 +1765,14 @@ X&lt;SYS$LOGIN&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235854Z" creationid="ira" creationdate="20130725T235854Z">
         <seg>=item Сравнение строк</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item Upload the tarball</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T164807Z" creationid="ira" creationdate="20130727T164807Z">
+        <seg>=item Загрузить архив (Upload the tarball)</seg>
       </tuv>
     </tu>
     <tu>
@@ -6093,6 +6116,24 @@ which you must I&lt;not&gt; do on Unix or Plan 9 systems.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Once again, C&lt;module-starter&gt; or C&lt;h2xs&gt; has done all the work for you.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T164734Z" creationid="ira" creationdate="20130727T164734Z">
+        <seg>Еще раз,, C&lt;module-starter&gt; или C&lt;h2xs&gt; сделал всю работу за вас.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you've ensured that your module passes its own tests - always a
+good thing to make sure - you can C&lt;make dist&gt;, and the Makefile will
+hopefully produce you a nice tarball of your module, ready for upload.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T164758Z" creationid="ira" creationdate="20130727T164758Z">
+        <seg>Убедившись, что ваш модуль проходит свои собственные испытания - всегда хорошая вещь, чтобы убедиться - можно C&lt;make dist&gt; И Makefile, мы надеемся, вы производить хорошее архива ваших модулей, готовых к загрузке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One can
 also use the B&lt;-w&gt; flag, but its use is normally discouraged, because
 it gets applied to all executed Perl code, including that not under
@@ -8480,6 +8521,15 @@ used to capture the results of parts of the regexp match for later use.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T231240Z" creationid="ira" creationdate="20130725T231240Z">
         <seg>Они проверяют разные вещи, так что вам нужны обе строки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They produce the standard C&lt;Makefile.PL&gt; you see when you download and
+install modules, and this produces a Makefile with a C&lt;dist&gt; target.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T164750Z" creationid="ira" creationdate="20130727T164750Z">
+        <seg>Они производят стандартный C&lt;Makefile.PL&gt; Вы видите, когда вы загружаете и устанавливаете модули, и это производит Makefile с C&lt;dist&gt; цель.</seg>
       </tuv>
     </tu>
     <tu>
