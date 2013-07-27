@@ -6863,6 +6863,16 @@ same sections.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Suppose you're reading in data from a local
+format into a hash-of-hashes in Perl, turning that into a tree, walking
+the tree and then piping each node to an Acme Transmogrifier Server.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151414Z" creationid="ira" creationdate="20130727T151414Z">
+        <seg>Предположим, вы читаете данные из местного формата в хэш-из-хэшей в Perl, превращаете это в дерево, идете по дереву, а затем выводите (piping) каждый узел(node) на сервер Acme Transmogrifier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Switches in this variable are treated
 as if they were on every Perl command line.</seg>
       </tuv>
