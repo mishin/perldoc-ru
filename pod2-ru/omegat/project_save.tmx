@@ -2257,6 +2257,14 @@ quoting rules.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>B&lt;D&gt;escribes search for the item in B&lt;d&gt;etail.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131141Z" creationid="ira" creationdate="20130727T131141Z">
+        <seg>B&lt;О&gt;писывает поиск элемента B&lt;п&gt;одробнее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>B&lt;Do not disclose the hash seed&gt; to people who
 don't need to know it.</seg>
       </tuv>
@@ -4986,6 +4994,15 @@ needs to be protected, like a space or backslash, with another backslash.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T003025Z" creationid="ira" creationdate="20130727T003025Z">
         <seg>Предшествовать любой символ, который нуждается в защите, как и пространство или обратную косую черту, с другой косой чертой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Prints out a brief B&lt;h&gt;elp message.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T130915Z" creationid="ira" creationdate="20130727T130915Z">
+        <seg>Выводит справочную информацию по использованию
+(B&lt;h&gt;elp).</seg>
       </tuv>
     </tu>
     <tu>
