@@ -3329,6 +3329,16 @@ and loop through them.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Having PERLDOCDEBUG set to a positive integer will make perldoc emit
+even more descriptive output than the C&lt;-D&gt; switch does; the higher the
+number, the more it emits.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134618Z" creationid="ira" creationdate="20130727T134618Z">
+        <seg>При установке в PERLDOCDEBUG положительного целого числа perldoc выводит более подробно, чем это делает ключ C&lt;-D&gt;. Большее значение даёт больший вывод.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here are some of
 them, in no particular order.</seg>
       </tuv>
