@@ -4689,6 +4689,15 @@ right, but it can be spoofed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It's also a simple rule that works
+consistently with C&lt;VAR_NAMES_LIKE_THIS&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144259Z" creationid="ira" creationdate="20130727T144259Z">
+        <seg>Так же это простое правило распространяется на C&lt;VAR_NAMES_LIKE_THIS&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It's also convenient when debugging a script that uses C&lt;#!&gt;,
 and is thus normally found by the shell's $PATH search mechanism.</seg>
       </tuv>
