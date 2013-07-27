@@ -1224,6 +1224,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item I&lt;Higher-Order Perl&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125016Z" creationid="ira" creationdate="20130727T125016Z">
+        <seg>=item I&lt;Higher-Order Perl&gt; I&lt;Perl Высших порядков, примеры функционального программирования на Perl, там речь идет о функциях, которые могут модифицировать и производить другие функции.&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item I&lt;Intermediate Perl&gt; (the "Alpaca Book")</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T124601Z" creationid="ira" creationdate="20130727T124601Z">
@@ -1236,6 +1244,31 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T124521Z" creationid="ira" creationdate="20130727T124521Z">
         <seg>=item I&lt;Mastering Perl&gt; I&lt;Освоение Perl&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Mastering Regular Expressions&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125051Z" creationid="ira" creationdate="20130727T125051Z">
+        <seg>=item I&lt;Mastering Regular Expressions&gt; I&lt;Освоение
+регулярных выражений&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Network Programming with Perl&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125109Z" creationid="ira" creationdate="20130727T125109Z">
+        <seg>=item I&lt;Network Programming with Perl&gt; I&lt;Сетевое программирование в Perl&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Object Oriented Perl&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125133Z" creationid="ira" creationdate="20130727T125133Z">
+        <seg>=item I&lt;Object Oriented Perl&gt; I&lt;Объектно-ориентированный Perl&gt;</seg>
       </tuv>
     </tu>
     <tu>
