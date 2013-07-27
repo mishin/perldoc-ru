@@ -617,6 +617,14 @@ syntax tree.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-d:Trace        \w  word chars        (?&lt;=p) ZW pos behind \K</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184855Z" creationid="ira" creationdate="20130727T184855Z">
+        <seg>-d:Trace        \w  символы слова        (?&lt;=p) ZW поз позади \K</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>... and run the script as F&lt;/path/to/script.pl&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230732Z" creationid="ira" creationdate="20130725T230732Z">
