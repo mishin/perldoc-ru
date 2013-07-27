@@ -1004,6 +1004,14 @@ X&lt;perl, command switches&gt; X&lt;command switches&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Get your book listed</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125746Z" creationid="ira" creationdate="20130727T125746Z">
+        <seg>=head2 Получение перечисленных книг</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Internals and C Language Interface</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051533Z">
@@ -2692,6 +2700,15 @@ program using the C&lt;Devel::DProf&gt; profiler.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each version of Perl comes with the documentation that was current at
+the time of release.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125632Z" creationid="ira" creationdate="20130727T125632Z">
+        <seg>Каждая версия Perl поставляется с документацией, актуальной на момент релиза.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Either put all the switches after
 the 32-character boundary (if applicable), or replace the use of
 B&lt;-0&gt;I&lt;digits&gt; by C&lt;BEGIN{ $/ = "\0digits"; }&gt;.</seg>
@@ -3546,6 +3563,14 @@ can be used to help mail in a bug report.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If your Perl book isn't listed and you think it should be, let us know.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125752Z" creationid="ira" creationdate="20130727T125752Z">
+        <seg>Если ваш Perl книги нет в списке, и вы думаете, она должна быть, дайте нам знать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If your Perl success stories and testimonials may be of help to others 
 who wish to advocate the use of Perl in their applications, 
 or if you wish to simply express your gratitude to Larry and the 
@@ -3630,6 +3655,15 @@ expressions.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002208Z" creationid="ira" creationdate="20130726T002208Z">
         <seg>В самом деле, вы можете сопоставить все что угодно, о чем вы могли бы мечтать, используя более сложные регулярные выражения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In general though, we try to
+limit this list to books published in the past five years.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125720Z" creationid="ira" creationdate="20130727T125720Z">
+        <seg>Но в общем, мы стараемся ограничить этот список книг, изданных в последние пять лет.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4145,6 +4179,15 @@ to use semicolons where you would in a normal program.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Many of the beginner-level books, too, go over basic features and
+techniques that are still valid today.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125717Z" creationid="ira" creationdate="20130727T125717Z">
+        <seg>Многие из начального уровня книги, тоже переходят основные функции и методы, которые актуальны и сегодня.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Many operators can be combined with a C&lt;=&gt; as follows:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000616Z" creationid="ira" creationdate="20130726T000616Z">
@@ -4213,6 +4256,14 @@ implicit in the awk script.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082455Z" creationid="rdtex1" creationdate="20130725T082455Z">
         <seg>В верхней части линии цикла будет операция разбиения по частям (split), которая подразумевается в сценарий AWK.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Not everything in Perl changes every day.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125713Z" creationid="ira" creationdate="20130727T125713Z">
+        <seg>Не все в Perl меняется каждый день.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5391,6 +5442,16 @@ these are specific to a particular platform.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some of the books we've listed appear almost ancient in internet
+scale, but we've included those books because they still describe the
+current way of doing things.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125711Z" creationid="ira" creationdate="20130727T125711Z">
+        <seg>Некоторые из книг мы перечислили появляются чуть ли не древнее в интернете масштаба, но мы включили эти книги, потому что они по-прежнему описывают текущую способ делать вещи.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some of the ones
 we've already seen include C&lt;print&gt;, C&lt;sort&gt; and C&lt;reverse&gt;.</seg>
       </tuv>
@@ -6123,6 +6184,16 @@ punctuation or line noise.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are probably very nice books published after this list
+was included in your Perl release, and you can check the latest
+released version at http://perldoc.perl.org/perlbook.html .</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125703Z" creationid="ira" creationdate="20130727T125703Z">
+        <seg>Есть, вероятно, очень хорошие книги, изданные после этот список был включен в вашем Perl релиз, и вы можете проверить последней выпущенной версии на http://perldoc.perl.org/perlbook.html.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are some areas where you may want to
 examine the perl script produced and tweak it some.</seg>
       </tuv>
@@ -6524,6 +6595,15 @@ library calls.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T002228Z" creationid="ira" creationdate="20130727T002228Z">
         <seg>Этот уровень предоставляет PerlIO интерфейс, обернув системе ANSI C "STDIO" вызовы библиотеки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This poses a problem for content such as book
+lists.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125656Z" creationid="ira" creationdate="20130727T125656Z">
+        <seg>Это создает проблему для содержания таких книг, которые приведены в списке.</seg>
       </tuv>
     </tu>
     <tu>
