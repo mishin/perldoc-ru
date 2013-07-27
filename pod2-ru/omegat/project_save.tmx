@@ -1493,6 +1493,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Get a CPAN user ID</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152734Z" creationid="ira" creationdate="20130727T152734Z">
+        <seg>=item Получите идентификатор пользователя CPAN</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Hashes</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233534Z" creationid="ira" creationdate="20130725T233534Z">
@@ -3551,6 +3559,14 @@ parentheses in the wrong place.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T143900Z" creationid="ira" creationdate="20130727T143900Z">
         <seg>Даже если вы не сомневаетесь, подумайте о нервах того, кто будет поддерживать код после вас и, возможно, будет расставлять скобки не в тех местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Every developer publishing modules on CPAN needs a CPAN ID.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152737Z" creationid="ira" creationdate="20130727T152737Z">
+        <seg>Каждый разработчик публикации модулей на CPAN нуждается в CPAN ID.</seg>
       </tuv>
     </tu>
     <tu>
