@@ -2967,6 +2967,16 @@ terminated by the null character, you can say this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For URLs, HTTP and
+HTTPS are the only kind currently supported.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133517Z" creationid="ira" creationdate="20130727T133517Z">
+        <seg>Для ссылок (URLs), HTTP и
+HTTPS являются единственным поддерживаемым видом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For Unix platforms that will be the equivalent of "unix perlio" or "stdio".</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T002642Z" creationid="ira" creationdate="20130727T002642Z">
