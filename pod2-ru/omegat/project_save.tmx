@@ -1393,6 +1393,15 @@ could happen for example if I&lt;MODULE&gt; inherits from L&lt;Exporter&gt;.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A few of these are
+good, some are OK, but many aren't worth your money.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123533Z" creationid="ira" creationdate="20130727T123516Z">
+        <seg>Некоторые из них хорошие, некоторые в порядке, но многие из них не стоят ваших денег.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A fine-grained warning
 facility is also available if you want to manipulate entire classes
 of warnings; see L&lt;warnings&gt; or L&lt;perllexwarn&gt;.</seg>
@@ -5849,6 +5858,14 @@ punctuation or line noise.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are many books on Perl and Perl-related.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123505Z" creationid="ira" creationdate="20130727T123505Z">
+        <seg>Есть много книг по Perl и связанных с Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are some areas where you may want to
 examine the perl script produced and tweak it some.</seg>
       </tuv>
@@ -5864,6 +5881,16 @@ split is not done as often.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T083225Z" creationid="rdtex1" creationdate="20130725T082520Z">
         <seg>Есть моменты, когда вы можете двигаться вниз после некоторых условий, которые проверяют всю запись так, что разбиения не будет сделано, как обычно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a list
+of these books, some with extensive reviews, at http://books.perl.org/
+.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123551Z" creationid="ira" creationdate="20130727T123528Z">
+        <seg>Существует список этих книг, некоторые из которых имеют обширные обзоры, на http://books.perl.org/.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7952,6 +7979,14 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T220708Z" creationid="ira" creationdate="20130723T220642Z">
         <seg>perlbook		Perl информация о книгах</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlbook - Books about and related to Perl</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123440Z" creationid="ira" creationdate="20130727T123440Z">
+        <seg>perlbook - Информация о книгах по Perl</seg>
       </tuv>
     </tu>
     <tu>
