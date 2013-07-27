@@ -959,6 +959,14 @@ X&lt;perl, environment variables&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head1 Key naming</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141843Z" creationid="ira" creationdate="20130727T141843Z">
+        <seg>=head1 Ключевые наименования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head1 NAME</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T140952Z">
@@ -1994,6 +2002,16 @@ internal form.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T203137Z" creationid="ira" creationdate="20130726T203133Z">
         <seg>После размещения вашей программы, Perl компилирует внешнюю (по отношению к Perl) программу во внутреннюю форму.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After this
+module-identifying prefix, the rest of the key is entirely up to the
+module: it may include any characters whatsoever.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141918Z" creationid="ira" creationdate="20130727T141918Z">
+        <seg>После этого модуль идентифицирующей префикс, остальная часть ключа полностью зависит от модуля: он может включать любые символы.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3191,6 +3209,15 @@ information to stdout.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, a module
+C&lt;Foo::Bar&gt; should use keys such as C&lt;Foo::Bar/baz&gt; and C&lt;Foo::Bar/$%/_!&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141942Z" creationid="ira" creationdate="20130727T141942Z">
+        <seg>Например, модуль C&lt;Foo::Bar&gt; должны использовать ключи, такие как C&lt;Foo::Bar/baz&gt; и C&lt;Foo::Bar/$%/_!&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, any changes made to
 C&lt;@INC&gt; will show up in the output of `perl -V`.</seg>
       </tuv>
@@ -4352,6 +4379,16 @@ in taint mode under Windows.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T003101Z" creationid="ira" creationdate="20130727T003057Z">
         <seg>Рекомендуется, чтобы вы явно установить (или удалить) C&lt;$ENV{PERL5SHELL}&gt; при работе в данном режиме под Windows.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is therefore
+conventional for a module to use only keys that begin with the module's
+name (the name of its main package) and a "/" character.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141914Z" creationid="ira" creationdate="20130727T141914Z">
+        <seg>Поэтому для обычного модуля для использования только ключи, которые начинаются с имени модуля (имя его основной пакет) и символ "/".</seg>
       </tuv>
     </tu>
     <tu>
@@ -6942,6 +6979,15 @@ that kind.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is only a single C&lt;%^H&gt;, but arbitrarily many modules that want
+to use its scoping semantics.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141903Z" creationid="ira" creationdate="20130727T141903Z">
+        <seg>Существует только один C&lt;%^H&gt;, но сколь угодно много модулей, которые хотят использовать его обзорного семантики.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There's also a negated version of it:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234730Z" creationid="ira" creationdate="20130725T234730Z">
@@ -7435,6 +7481,17 @@ the lexically scoped C&lt;use warnings&gt; pragma is preferred.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This uses C&lt;caller()&gt; to determine the value of
+C&lt;$^H{"myint/in_effect"}&gt; when each line of the user's script was called, and
+therefore provide the correct semantics in the subroutine implementing the
+overloaded addition.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141800Z" creationid="ira" creationdate="20130727T141800Z">
+        <seg>Здесь используется C&lt;caller()&gt;, чтобы определить значение C&lt;$^H{"myint/in_effect"}&gt;, когда каждая строка пользовательского скрипта была вызвана. Поэтому в подпрограмме, реализующей перегрузку оператора сложения, используется корректная семантика.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This variable is set during Perl startup and is
 thereafter read-only.</seg>
       </tuv>
@@ -7524,6 +7581,15 @@ invoked, even if B&lt;-x&gt; was used to find the beginning of the program.</seg
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T201006Z" creationid="ira" creationdate="20130726T200916Z">
         <seg>Таким образом, если вы на машине, которая позволяет только один аргумент на строке C&lt;#!&gt;, или еще хуже, даже не признает C&lt;#!&gt; линии, вы все равно можете получить согласованное поведение переключателя независимо от того, как Perl был вызван, даже если  B&lt;-x&gt; был использован, чтобы найти начало программы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To avoid stepping on each other's toes,
+they need to be sure to use different keys in the hash.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141908Z" creationid="ira" creationdate="20130727T141908Z">
+        <seg>Чтобы не наступать друг другу на пальцы, они должны быть уверены, чтобы использовать различные ключи в хэше.</seg>
       </tuv>
     </tu>
     <tu>
