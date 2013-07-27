@@ -1242,6 +1242,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item B&lt;-M&gt; I&lt;module-name&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132314Z" creationid="ira" creationdate="20130727T132314Z">
+        <seg>=item B&lt;-M&gt; I&lt;название-модуля&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item B&lt;-d&gt; I&lt;destination-filename&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T132019Z" creationid="ira" creationdate="20130727T132019Z">
@@ -3036,6 +3044,14 @@ C&lt;-oman&gt;.</seg>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T132143Z" creationid="ira" creationdate="20130727T132143Z">
         <seg>Например:
 C&lt;-oman&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example: C&lt;perldoc -MPod::Perldoc::ToChecker&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132420Z" creationid="ira" creationdate="20130727T132420Z">
+        <seg>Например: C&lt;perldoc -MPod::Perldoc::ToChecker&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5973,6 +5989,14 @@ C&lt;use module split(/,/,q{foo,bar})&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The class must at least provide a C&lt;parse_from_file&gt; method.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132409Z" creationid="ira" creationdate="20130727T132409Z">
+        <seg>Класс должен содержать метод C&lt;parse_from_file&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The code is executed I&lt;very&gt; early.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T223439Z" creationid="ira" creationdate="20130726T223439Z">
@@ -6902,6 +6926,15 @@ class for the output format that you specify.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This specifies the module that you want to try using for formatting the
+pod.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132334Z" creationid="ira" creationdate="20130727T132334Z">
+        <seg>С помощью этого параметра можно указать модуль, с помощью которого Вы хотите форматировать POD-документацию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This speeds startup at the expense of some disk space (which you
 can minimize by stripping the executable).</seg>
       </tuv>
@@ -7569,6 +7602,15 @@ command or whatever method you're using to read this document.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T224329Z" creationid="ira" creationdate="20130725T224221Z">
         <seg>Вы можете прочитать эту документацию с помощью команды C&lt;perldoc&gt; или любым другим методом, который вы используете для чтения этого документа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can specify several classes to try by joining them with commas
+or semicolons, as in C&lt;-MTk::SuperPod;Tk::Pod&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132447Z" creationid="ira" creationdate="20130727T132447Z">
+        <seg>Вы можете указать несколько классов, разделив их запятыми или точкой с запятой, например: C&lt;-MTk::SuperPod;Tk::Pod&gt;.</seg>
       </tuv>
     </tu>
     <tu>
