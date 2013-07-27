@@ -1251,6 +1251,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item B&lt;-L&gt; I&lt;language_code&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133136Z" creationid="ira" creationdate="20130727T133136Z">
+        <seg>=item B&lt;-L&gt; I&lt;код_языка&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item B&lt;-M&gt; I&lt;module-name&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T132314Z" creationid="ira" creationdate="20130727T132314Z">
