@@ -1102,6 +1102,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Task-Oriented</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124447Z" creationid="ira" creationdate="20130727T124447Z">
+        <seg>=head2 Задаче-ориентированные</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 The most popular books</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T123709Z" creationid="ira" creationdate="20130727T123709Z">
@@ -1196,6 +1204,30 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T124329Z" creationid="ira" creationdate="20130727T124329Z">
         <seg>=item I&lt;Automating System Administration with Perl&gt; I&lt;Автоматизация системного администрирования с помощью Perl&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Effective Perl Programming&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124507Z" creationid="ira" creationdate="20130727T124507Z">
+        <seg>=item I&lt;Effective Perl Programming&gt; I&lt;Эффективное программирование на Perl&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Intermediate Perl&gt; (the "Alpaca Book")</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124601Z" creationid="ira" creationdate="20130727T124601Z">
+        <seg>=item I&lt;Intermediate Perl&gt; I&lt;Perl на уровне среднего разработчика&gt; ("Alpaca Book")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Mastering Perl&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T124521Z" creationid="ira" creationdate="20130727T124521Z">
+        <seg>=item I&lt;Mastering Perl&gt; I&lt;Освоение Perl&gt;</seg>
       </tuv>
     </tu>
     <tu>
