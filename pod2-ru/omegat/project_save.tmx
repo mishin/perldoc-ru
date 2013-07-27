@@ -3516,6 +3516,16 @@ standard output.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I&lt;i.e.&gt;, where C&lt;use myint;&gt; is in effect, addition operations are forced
+to integer, whereas by default they are not, with the default behaviour being
+restored via C&lt;no myint;&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141212Z" creationid="ira" creationdate="20130727T141212Z">
+        <seg>I&lt;В примере&gt;, в котором используется C&lt;use myint;&gt;, оператор сложения работает с целыми числами, значения по умолчанию не определены. Поведение по умолчанию будет восстановлено C&lt;no myint;&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If
 PERL5OPT begins with B&lt;-t&gt;, tainting will be enabled, a writable dot
 removed from @INC, and subsequent options honored.</seg>
@@ -4705,6 +4715,15 @@ are specified either as C&lt;File::Basename&gt; or C&lt;&lt; File/Basename &gt;&
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T125713Z" creationid="ira" creationdate="20130727T125713Z">
         <seg>Не все в Perl меняется каждый день.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note how we load the user pragma C&lt;myint&gt; with an empty list C&lt;()&gt; to
+prevent its C&lt;import&gt; being called.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141340Z" creationid="ira" creationdate="20130727T141340Z">
+        <seg>Примечание. При загрузке пользовательской прагмы C&lt;myint&gt; без параметров С&lt;()&gt; функция C&lt;import&gt; не будет вызвана.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6522,6 +6541,15 @@ I&lt;Programming Perl&gt;:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T123746Z" creationid="ira" creationdate="20130727T123746Z">
         <seg>Основной справочник по Perl, написанный создателем Perl, это I&lt;Programming Perl&gt; (Программирование на Perl):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The minimal implementation of the package C&lt;MyMaths&gt; would be something like
+this:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141223Z" creationid="ira" creationdate="20130727T141223Z">
+        <seg>Минимальная реализация пакета C&lt;MyMaths&gt; будет примерно такой:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8796,6 +8824,16 @@ program unless the name of the program contains path separators.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T003715Z" creationid="ira" creationdate="20130726T003715Z">
         <seg>my $logmessage = $_[0];                 # редко, и уродливо</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>my ($l, $r) = @_;
+	# Pass 1 to check up one call level from here</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T141309Z" creationid="ira" creationdate="20130727T141309Z">
+        <seg>my ($l, $r) = @_;
+	# передать 1, чтобы отметить один вызов уровня отсюда</seg>
       </tuv>
     </tu>
     <tu>
