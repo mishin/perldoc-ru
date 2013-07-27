@@ -388,6 +388,15 @@ operator instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(The latter is so that embedded pods for executables, such as
+C&lt;perldoc&gt; itself, are available.)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134205Z" creationid="ira" creationdate="20130727T134205Z">
+        <seg>(Последнее таково, что встроенная POD-документация для исполняемых файлов, таких как сам C&lt;perldoc&gt;, доступна.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(These typically would be for older compatible perl versions installed
 in the same directory tree.)</seg>
       </tuv>
@@ -2607,6 +2616,16 @@ scoped variables instead.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234201Z" creationid="ira" creationdate="20130725T234201Z">
         <seg>C&lt;my&gt; создает вместо этого лексическую область видимости переменных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>C&lt;perldoc&gt; also searches directories
+specified by the C&lt;PERL5LIB&gt; (or C&lt;PERLLIB&gt; if C&lt;PERL5LIB&gt; is not
+defined) and C&lt;PATH&gt; environment variables.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134148Z" creationid="ira" creationdate="20130727T134148Z">
+        <seg>C&lt;perldoc&gt; также ищет в директориях определённых в переменных окружения C&lt;PERL5LIB&gt; (или C&lt;PERLLIB&gt;, если C&lt;PERL5LIB&gt; не определено) и C&lt;PATH&gt;.</seg>
       </tuv>
     </tu>
     <tu>
