@@ -6382,6 +6382,15 @@ is run in taint mode.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The Perl core uses a handful of keys in C&lt;%^H&gt; which do not follow this
+convention, because they predate it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142013Z" creationid="ira" creationdate="20130727T142013Z">
+        <seg>Ядро Perl использует несколько ключей в C&lt;%^H&gt;, которые не следуют этому соглашению, потому что они предшествуют его.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The Perl motto is "There's more than one way to do it."  Divining
 how many more is left as an exercise to the reader.</seg>
       </tuv>
