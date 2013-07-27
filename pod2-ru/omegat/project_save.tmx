@@ -5079,6 +5079,26 @@ a general-purpose programming language.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Past contributors are:
+brian d foy C&lt;&lt; &lt;bdfoy@cpan.org&gt; &gt;&gt; 
+Adriano R. Ferreira C&lt;&lt; &lt;ferreira@cpan.org&gt; &gt;&gt;,
+Sean M. Burke C&lt;&lt; &lt;sburke@cpan.org&gt; &gt;&gt;,
+Kenneth Albanowski C&lt;&lt; &lt;kjahds@kjahds.com&gt; &gt;&gt;,
+Andy Dougherty  C&lt;&lt; &lt;doughera@lafcol.lafayette.edu&gt; &gt;&gt;,
+and many others.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134748Z" creationid="ira" creationdate="20130727T134748Z">
+        <seg>Прошлые участники являются: 
+brian d foy C&lt;&lt; &lt;bdfoy@cpan.org&gt; &gt;&gt; 
+Adriano R. Ferreira C&lt;&lt; &lt;ferreira@cpan.org&gt; &gt;&gt;,
+Sean M. Burke C&lt;&lt; &lt;sburke@cpan.org&gt; &gt;&gt;,
+Kenneth Albanowski C&lt;&lt; &lt;kjahds@kjahds.com&gt; &gt;&gt;,
+Andy Dougherty  C&lt;&lt; &lt;doughera@lafcol.lafayette.edu&gt; &gt;&gt;,
+and many others.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl actually inserts the following code:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T223252Z" creationid="ira" creationdate="20130726T223252Z">
