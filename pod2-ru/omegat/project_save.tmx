@@ -6546,6 +6546,16 @@ they are used.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The deletion of a hash key from C&lt;%^H&gt; is recorded, and as ever can be
+distinguished from the existence of a key with value C&lt;undef&gt; with
+C&lt;exists&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142224Z" creationid="ira" creationdate="20130727T142224Z">
+        <seg>Ключи хеша из C&lt;%^H&gt; можно удалять и, как всегда, с помощью C&lt;exists&gt; можно понять, является ли это значение определённым или C&lt;undef&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The directory, if specified, must appear immediately following the B&lt;-x&gt;
 with no intervening whitespace.</seg>
       </tuv>
