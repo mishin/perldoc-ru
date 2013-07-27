@@ -1251,6 +1251,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Step-by-step: Preparing the ground</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151502Z" creationid="ira" creationdate="20130727T151502Z">
+        <seg>=head2 Шаг за шагом: Подготовка почвы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Stubs for Deleted Documents</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T222655Z" creationid="ira" creationdate="20130723T222655Z">
@@ -1437,6 +1445,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Check it's new</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151621Z" creationid="ira" creationdate="20130727T151621Z">
+        <seg>=item Проверьте, что они самые свежие</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Hashes</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233534Z" creationid="ira" creationdate="20130725T233534Z">
@@ -1578,6 +1594,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T124303Z" creationid="ira" creationdate="20130727T124303Z">
         <seg>=item I&lt;Writing Perl Modules for CPAN&gt; I&lt;Написание модулей Perl для CPAN&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item Look around</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151511Z" creationid="ira" creationdate="20130727T151511Z">
+        <seg>=item Оглянись вокруг</seg>
       </tuv>
     </tu>
     <tu>
@@ -2752,6 +2776,15 @@ when running external commands.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Before we even start scraping out the code, there are a few things we'll
+want to do in advance.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151504Z" creationid="ira" creationdate="20130727T151504Z">
+        <seg>Прежде, чем мы даже начать соскоб из кода, существует несколько вещей, мы хотим сделать заранее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Besides, Perl can use a shell that may not be
 fit for interactive use, and setting COMSPEC to such a shell may
 interfere with the proper functioning of other programs (which usually
@@ -2788,12 +2821,31 @@ guesses right.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Building tree
+structures from Perl variables and then traversing them is a nice,
+general problem, and if nobody's already written a module that does
+that, you might want to modularise that code too.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151446Z" creationid="ira" creationdate="20130727T151446Z">
+        <seg>Строительные конструкции из дерева Perl переменные, а затем через них хороший, общая проблема, и если никто уже написал модуль, который делает это, вы, возможно, захотите modularise что код тоже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But the code that parses
 layer specification strings, which is also used to decode the PERLIO
 environment variable, treats the colon as a separator.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T001456Z" creationid="ira" creationdate="20130727T001456Z">
         <seg>Но код, который анализирует спецификации уровня строк, который также используется для декодирования переменной PERLIO среды, лечится двоеточием в качестве разделителя.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But what about the thing in the middle?</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151444Z" creationid="ira" creationdate="20130727T151444Z">
+        <seg>Но то, что о вещи в середине?</seg>
       </tuv>
     </tu>
     <tu>
@@ -3091,6 +3143,14 @@ no doubt other places.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230424Z" creationid="ira" creationdate="20130725T230424Z">
         <seg>Различные определения Perl приведены в L&lt;perl&gt;, L&lt;perlfaq1&gt; не и несомненно в других местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dig into a bunch of modules to see how they're written.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151513Z" creationid="ira" creationdate="20130727T151513Z">
+        <seg>Копать в кучу модулей, чтобы увидеть, как они написаны.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3648,6 +3708,16 @@ Windows and Mac OS, read L&lt;perlrun&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For object oriented
+code, C&lt;WWW::Mechanize&gt; or the C&lt;Email::*&gt; modules provide some good
+examples.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151539Z" creationid="ira" creationdate="20130727T151539Z">
+        <seg>Для объектно-ориентированного кода, C&lt;WWW::Mechanize&gt; или C&lt;Email::*&gt; Модули обеспечивают несколько хороших примеров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For portability, when using features that may not be implemented on
 every machine, test the construct in an eval to see if it fails.</seg>
       </tuv>
@@ -3917,6 +3987,17 @@ options e and f (or F).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T212311Z" creationid="ira" creationdate="20130726T212311Z">
         <seg>Я думаю, что это будут варианты e и f (или F).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I'd suggest
+starting with L&lt;Text::Tabs|Text::Tabs&gt;, since it's in the standard
+library and is nice and simple, and then looking at something a little
+more complex like L&lt;File::Copy|File::Copy&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151529Z" creationid="ira" creationdate="20130727T151529Z">
+        <seg>Я бы предложил, начинать с L&lt;Text::Tabs|Text::Tabs&gt;, Так как это в стандартной библиотеке и просто и красиво, а затем, глядя на что-то немного более сложным, как L&lt;File::Copy|File::Copy&gt; .</seg>
       </tuv>
     </tu>
     <tu>
@@ -5140,6 +5221,14 @@ string "perl".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let's now see how it's done.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151452Z" creationid="ira" creationdate="20130727T151452Z">
+        <seg>Давайте посмотрим, как это делается.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let's take an example.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T151245Z" creationid="ira" creationdate="20130727T151245Z">
@@ -5332,6 +5421,15 @@ are specified either as C&lt;File::Basename&gt; or C&lt;&lt; File/Basename &gt;&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Nobody else on the planet is going to talk your local data format, so we
+can ignore that.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151442Z" creationid="ira" creationdate="20130727T151442Z">
+        <seg>Никто на планете не будет говорить ваш местный формат данных, так что можно проигнорировать это.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Not everything in Perl changes every day.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T125713Z" creationid="ira" creationdate="20130727T125713Z">
@@ -5491,6 +5589,16 @@ specific and may not be available for a specific port of Perl.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T003429Z" creationid="ira" creationdate="20130726T003429Z">
         <seg>Теперь мы можем воспользоваться подпрограммой как и любой другой встроенной функцией:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, quite a few people have the Acme Transmogrifier, and you've had to
+write something to talk the protocol from scratch - you'd almost
+certainly want to make that into a module.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151423Z" creationid="ira" creationdate="20130727T151423Z">
+        <seg>Теперь, немало людей имеют Acme Transmogrifier, и вы должны были написать о чем поговорить протокол с нуля - вы наверняка хотите, чтобы сделать это в модуль.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6702,6 +6810,14 @@ hashes.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So hopefully you've now got a few ideas about what's good to modularise.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151450Z" creationid="ira" creationdate="20130727T151450Z">
+        <seg>Будем надеяться, что теперь у вас есть несколько идей о том, что хорошо, чтобы modularise.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So if you I&lt;really&gt; want a record separator of 0777,
 specify it as B&lt;-0x1FF&gt;.</seg>
       </tuv>
@@ -7186,6 +7302,15 @@ C&lt;use module split(/,/,q{foo,bar})&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The choice is yours, but you do want to get
+a module out for that server protocol.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151439Z" creationid="ira" creationdate="20130727T151439Z">
+        <seg>Выбор за вами, но вы хотите, чтобы получить из модуля для этого сервера протокола.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The class must at least provide a C&lt;parse_from_file&gt; method.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T132409Z" creationid="ira" creationdate="20130727T132409Z">
@@ -7384,6 +7509,17 @@ are as follows; listing the letters is equal to summing the numbers.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T211556Z" creationid="ira" creationdate="20130726T211556Z">
         <seg>Буквы, их числовые значения и эффекты являются следующие перечисление букв равно суммированию чисел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The level at which you pitch
+it is up to you: you might want protocol-level modules analogous to
+L&lt;Net::SMTP|Net::SMTP&gt; which then talk to higher level modules analogous
+to L&lt;Mail::Send|Mail::Send&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151433Z" creationid="ira" creationdate="20130727T151433Z">
+        <seg>Уровень, на котором вы шаг это выбор за вами: вы можете на уровне протокола модулей аналогична L&lt;Net::SMTP|Net::SMTP&gt; которые затем поговорить с более высоким уровнем модулей аналогична L&lt;Mail::Send|Mail::Send&gt; .</seg>
       </tuv>
     </tu>
     <tu>
@@ -7857,6 +7993,15 @@ line of code in a real program.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T224518Z" creationid="ira" creationdate="20130726T224518Z">
         <seg>Эти наборы однострочников (one-liners) эквивалентны:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These should give you an overall feel for how modules are laid out and
+written.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151542Z" creationid="ira" creationdate="20130727T151542Z">
+        <seg>Они должны дать вам общее ощущение того, как модули продуман и написан.</seg>
       </tuv>
     </tu>
     <tu>
