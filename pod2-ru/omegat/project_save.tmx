@@ -1094,6 +1094,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 The most popular books</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123709Z" creationid="ira" creationdate="20130727T123709Z">
+        <seg>=head2 Самые популярные книги</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Tutorials</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T031937Z">
@@ -3963,6 +3971,15 @@ you to build lists and hashes within lists and hashes.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232353Z" creationid="ira" creationdate="20130725T232353Z">
         <seg>Более подробные сведения о синтаксисе Perl можно найти в L&lt;perlsyn&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most of these books are available online through Safari Books Online
+( http://safaribooksonline.com/ ).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T123652Z" creationid="ira" creationdate="20130727T123652Z">
+        <seg>Большинство из этих книг доступны в онлайновом режиме через Safari Books Online (http://safaribooksonline.com/).</seg>
       </tuv>
     </tu>
     <tu>
