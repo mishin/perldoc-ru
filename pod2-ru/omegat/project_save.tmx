@@ -272,6 +272,14 @@ or</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&amp;&amp;              /i case insensitive   ^      string begin</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184144Z" creationid="ira" creationdate="20130727T184144Z">
+        <seg>&amp;&amp;              /i не чувствительно к регистру   ^      начало строки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&amp;&amp;  and</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000140Z" creationid="ira" creationdate="20130726T000140Z">
@@ -12853,6 +12861,14 @@ or specific values).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000144Z" creationid="ira" creationdate="20130726T000144Z">
         <seg>||  или</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>|| //           /m line based ^$      $      str end (bfr \n)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184234Z" creationid="ira" creationdate="20130727T184234Z">
+        <seg>|| //           /m основная линия ^$      $      str end (bfr \n)</seg>
       </tuv>
     </tu>
     <tu>
