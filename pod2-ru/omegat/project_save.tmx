@@ -1216,6 +1216,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item I&lt;Data Munging with Perl&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125320Z" creationid="ira" creationdate="20130727T125320Z">
+        <seg>=item I&lt;Data Munging with Perl&gt; I&lt;Манипулирование данными в Perl&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item I&lt;Effective Perl Programming&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T124507Z" creationid="ira" creationdate="20130727T124507Z">
