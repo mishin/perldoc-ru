@@ -5476,6 +5476,17 @@ L&lt;perlvms&gt; and in F&lt;README.vms&gt; in the Perl source distribution.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other modules should begin with a capital letter and use mixed
+case, but probably without underscores due to limitations in primitive
+file systems' representations of module names as files that must fit into a
+few sparse bytes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144334Z" creationid="ira" creationdate="20130727T144334Z">
+        <seg>Остальные названия модулей должны начинаться с прописной буквы и использовать смешанный регистр букв, возможно, без подчеркиваний из-за того, что названия модулей используются в качестве названий файлов, которые должны укладываться в несколько байт.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Other switches may precede or follow the digits.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T210407Z" creationid="ira" creationdate="20130726T210407Z">
@@ -5498,6 +5509,14 @@ a general-purpose programming language.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T224022Z" creationid="ira" creationdate="20130723T224003Z">
         <seg>По прошествии многих лет, Perl вырос в язык программирования общего назначения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Package names are sometimes an exception to this rule.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144308Z" creationid="ira" creationdate="20130727T144308Z">
+        <seg>Название пакетов и модулей -- исключение из этого правила.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5661,6 +5680,17 @@ folks use it for their backup files:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T081908Z" creationid="rdtex1" creationdate="20130725T081908Z">
         <seg>Perl имеет два вида массивов, численно-индексированных и ассоциативно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perl informally
+reserves lowercase module names for "pragma" modules like C&lt;integer&gt; and
+C&lt;strict&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144322Z" creationid="ira" creationdate="20130727T144322Z">
+        <seg>Так сложилось, что в Perl названия в нижнем регистре используются для прагм (например, C&lt;integer&gt; или
+C&lt;strict&gt;).</seg>
       </tuv>
     </tu>
     <tu>
