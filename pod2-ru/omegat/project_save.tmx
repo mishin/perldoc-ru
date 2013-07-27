@@ -3983,6 +3983,15 @@ must provide such a method, and the value you pass should be valid.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>From the menus there,
+you can upload your module to CPAN.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165206Z" creationid="ira" creationdate="20130727T165206Z">
+        <seg>В меню есть, вы можете загрузить свой модуль CPAN.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>From the shell, saying</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T224611Z" creationid="ira" creationdate="20130726T224611Z">
