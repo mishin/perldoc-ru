@@ -1355,6 +1355,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Announce to clpa</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165303Z" creationid="ira" creationdate="20130727T165303Z">
+        <seg>=item Объявите в clpa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Announce to the modules list</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T165236Z" creationid="ira" creationdate="20130727T165236Z">
@@ -4717,6 +4725,15 @@ good advice.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you have a burning desire to tell the world about your release, post
+an announcement to the moderated C&lt;comp.lang.perl.announce&gt; newsgroup.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165305Z" creationid="ira" creationdate="20130727T165305Z">
+        <seg>Если у вас есть горячее желание рассказать миру о вашем освобождении, разместить объявление в умеренных C &lt;comp.lang.perl.announce&gt; новостей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you have a really hairy regular expression, use the C&lt;/x&gt; modifier and
 put in some whitespace to make it look a little less like line noise.</seg>
       </tuv>
@@ -4758,6 +4775,16 @@ that directly in the C&lt;#!&gt; line's path.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T202342Z" creationid="ira" creationdate="20130726T202342Z">
         <seg>Если вы хотите конкретной версии Perl, скажем, perl5.14.1, вы должны поместить это прямо в путь на строке C&lt;#!&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want
+it connected to the rest of the CPAN, you'll need to go to "Register
+Namespace" on PAUSE.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165251Z" creationid="ira" creationdate="20130727T165251Z">
+        <seg>Если вы хотите, это связано с остальной частью CPAN, вы должны будете пойти в пункт "Регистрация имен" на паузу.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6137,6 +6164,15 @@ which you must I&lt;not&gt; do on Unix or Plan 9 systems.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T164734Z" creationid="ira" creationdate="20130727T164734Z">
         <seg>Еще раз,, C&lt;module-starter&gt; или C&lt;h2xs&gt; сделал всю работу за вас.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once registered, your module will appear in the
+by-module and by-category listings on CPAN.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165254Z" creationid="ira" creationdate="20130727T165254Z">
+        <seg>После регистрации ваш модуль появится в по-модулем и побочных категории листинга на CPAN.</seg>
       </tuv>
     </tu>
     <tu>
