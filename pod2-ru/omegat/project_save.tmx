@@ -192,6 +192,22 @@ or</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$ALL_CAPS_HERE   constants only (beware clashes with perl vars!)</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144402Z" creationid="ira" creationdate="20130727T144402Z">
+        <seg>$ALL_CAPS_HERE   константа (возможен конфликт с зарезервированными переменными!)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$Some_Caps_Here  package-wide global/static</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144412Z" creationid="ira" creationdate="20130727T144412Z">
+        <seg>$Some_Caps_Here  глобальная или статическая переменная пакета</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$a += 1;        # same as $a = $a + 1</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T000639Z" creationid="ira" creationdate="20130726T000639Z">
@@ -236,6 +252,14 @@ or</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233628Z" creationid="ira" creationdate="20130725T233628Z">
         <seg>$fruit_color{"apple"};           # дает "red"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$no_caps_here    function scope my() or local() variables</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144433Z" creationid="ira" creationdate="20130727T144433Z">
+        <seg>$no_caps_here    переменная, определенная через my() или local()</seg>
       </tuv>
     </tu>
     <tu>
@@ -2780,6 +2804,15 @@ on its own.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Call your subroutines as if they were
+functions or list operators to avoid excessive ampersands and parentheses.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144600Z" creationid="ira" creationdate="20130727T144600Z">
+        <seg>Вызывайте ваши подпрограммы так, как будто они были функциями или списковыми операторами, для избежания лишних амперсандов и скобок.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Categories of modules range from text manipulation to network protocols
 to database integration to graphics.</seg>
       </tuv>
@@ -3073,6 +3106,14 @@ the middle.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Don't use slash as a delimiter when your regexp has slashes or backslashes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144538Z" creationid="ira" creationdate="20130727T144538Z">
+        <seg>Не используйте слешы в качестве разделителей, если ваше регулярное выражение содержит слешы (/) или бекслешы (\).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Double quotes or single quotes may be used around literal strings:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T232109Z" creationid="ira" creationdate="20130725T232109Z">
@@ -3094,6 +3135,14 @@ program using the C&lt;Devel::DProf&gt; profiler.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T214633Z" creationid="ira" creationdate="20130726T214603Z">
         <seg>Например, B&lt;-d:DProf&gt; выполняет программу, используя C&lt;Devel::DProf&gt; профайлер (profiler).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>E.g., C&lt;$obj-E&lt;gt&gt;as_string()&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144501Z" creationid="ira" creationdate="20130727T144501Z">
+        <seg>Например, C&lt;$obj-E&lt;gt&gt;as_string()&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3529,6 +3578,14 @@ worth writing about.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230555Z" creationid="ira" creationdate="20130725T230555Z">
         <seg>Из этого мы можем определить, что Perl предоставляет разные возможности для разных людей, но, что многие люди думают, что об этом по крайней мере стоит писать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Function and method names seem to work best as all lowercase.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144452Z" creationid="ira" creationdate="20130727T144452Z">
+        <seg>Имена функций и методов лучше смотрятся в нижнем регистре.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4120,6 +4177,15 @@ good advice.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T004417Z" creationid="ira" creationdate="20130726T004417Z">
         <seg>Если вы чувствуете желание писать модули на Perl, L&lt;perlnewmod&gt; даст вам хороший совет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have a really hairy regular expression, use the C&lt;/x&gt; modifier and
+put in some whitespace to make it look a little less like line noise.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144529Z" creationid="ira" creationdate="20130727T144529Z">
+        <seg>Если вы написали, действительно, сложное регулярное выражение, то используйте модификатор C&lt;/x&gt; и расставьте пробелов в выражение, так будет лучше.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8309,6 +8375,16 @@ messages of B&lt;perldoc&gt; operation, which is now enabled by B&lt;-D&gt;.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Use the new C&lt;and&gt; and C&lt;or&gt; operators to avoid having to parenthesize
+list operators so much, and to reduce the incidence of punctuation
+operators like C&lt;&amp;&amp;&gt; and C&lt;||&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144553Z" creationid="ira" creationdate="20130727T144553Z">
+        <seg>Используйте новые C&lt;and&gt; и C&lt;or&gt; операторы, чтобы избежать заключения в круглые скобки нескольких списковых операторов и уменьшить использование пунктуационных операторов типа C&lt;&amp;&amp;&gt; и C&lt;||&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Use with the same care as is reserved for nitroglycerine.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T002018Z" creationid="ira" creationdate="20130727T002018Z">
@@ -8808,6 +8884,15 @@ file, in case you want to append to each file, or reset line numbering
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can use a leading underscore to indicate that a variable or
+function should not be used outside the package that defined it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144511Z" creationid="ira" creationdate="20130727T144511Z">
+        <seg>Вы можете использовать подчеркивание в начале имени для обозначения того, что переменная или функция не должна быть использована вне пакета, в котором она определена.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can use an "=" instead of the ":", as in: C&lt;-w textsize=15&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T132924Z" creationid="ira" creationdate="20130727T132924Z">
@@ -8882,6 +8967,15 @@ give a descriptive name of a page, such as C&lt;perlfunc&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T133400Z" creationid="ira" creationdate="20130727T133400Z">
         <seg>Также вы можете задать имя страницы документации, например С&lt;perlfunc&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may find it helpful to use letter case to indicate the scope
+or nature of a variable.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T144351Z" creationid="ira" creationdate="20130727T144351Z">
+        <seg>Вы можете найти полезным использование регистра букв для отражения области видимости или природы переменной.</seg>
       </tuv>
     </tu>
     <tu>
