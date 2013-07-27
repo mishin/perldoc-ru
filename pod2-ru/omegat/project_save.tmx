@@ -6075,6 +6075,14 @@ know what sort of object they are based on Perl's concept of packages.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>OPERATOR PRECEDENCE    foreach (LIST) { }     for (a;b;c) { }</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183832Z" creationid="ira" creationdate="20130727T183832Z">
+        <seg>ПРИОРИТЕТ ОПЕРАТОРОВ    foreach (LIST) { }     for (a;b;c) { }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Of course, C&lt;END&gt;
 blocks will be likewise executed very late.</seg>
       </tuv>
@@ -10508,6 +10516,14 @@ X&lt;hashbang&gt; X&lt;#!&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>anything else</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T183920Z" creationid="ira" creationdate="20130727T183920Z">
+        <seg>что-нибудь еще</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>as the first line in C&lt;*.cmd&gt; file (B&lt;-S&gt; due to a bug in cmd.exe's
 `extproc' handling).</seg>
       </tuv>
@@ -10857,6 +10873,14 @@ program unless the name of the program contains path separators.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T003702Z" creationid="ira" creationdate="20130726T003702Z">
         <seg>my ($logmessage, $priority) = @_;       # общие</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>named uops              == !=      eq ne</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184013Z" creationid="ira" creationdate="20130727T184013Z">
+        <seg>имени микрооперации (uops)              == !=      eq ne</seg>
       </tuv>
     </tu>
     <tu>
@@ -12813,6 +12837,14 @@ or specific values).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002738Z" creationid="ira" creationdate="20130726T002738Z">
         <seg>{3}                 соответствует ровно 3 от предыдущей вещи</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>| ^             REGEX MODIFIERS       REGEX METACHARS</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184109Z" creationid="ira" creationdate="20130727T184109Z">
+        <seg>| ^             МОДИФИКАТОРЫ REGEX       МЕТАСИМВОЛЫ REGEX </seg>
       </tuv>
     </tu>
     <tu>
