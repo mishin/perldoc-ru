@@ -1242,10 +1242,26 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item B&lt;-d&gt; I&lt;destination-filename&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132019Z" creationid="ira" creationdate="20130727T132019Z">
+        <seg>=item B&lt;-d&gt; I&lt;файл-назначения&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item B&lt;-m&gt; I&lt;module&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T131250Z" creationid="ira" creationdate="20130727T131250Z">
         <seg>=item B&lt;-m&gt; I&lt;модуль&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item B&lt;-o&gt; I&lt;output-formatname&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132100Z" creationid="ira" creationdate="20130727T132100Z">
+        <seg>=item B&lt;-o&gt; I&lt;название-формата-вывода&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -6818,6 +6834,33 @@ uses the C compiler's numeric file descriptor routines.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T230150Z" creationid="ira" creationdate="20130726T230150Z">
         <seg>Этот параметр определяет, C&lt;$\&gt; как символ новой строки, а затем устанавливает C&lt;$/&gt; в нулевой символ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specifies that the output is not to be sent to a pager, but is to
+be sent directly to STDOUT.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131959Z" creationid="ira" creationdate="20130727T131959Z">
+        <seg>Это указывает, что вывод не для отправки на страницу, но можно получить непосредственно на стандартный вывод (STDOUT).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specifies that the output is to be sent neither to a pager nor
+to STDOUT, but is to be saved to the specified filename.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132047Z" creationid="ira" creationdate="20130727T132047Z">
+        <seg>Этот параметр позволяет сохранить вывод в файл, не выводя на страницу или в STDOUT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specifies that you want Perldoc to try using a Pod-formatting
+class for the output format that you specify.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T132125Z" creationid="ira" creationdate="20130727T132125Z">
+        <seg>Используйте этот параметр, если вы хотите, чтобы Perldoc попытался использовать класс POD-форматирования в качестве выходного формата.</seg>
       </tuv>
     </tu>
     <tu>
