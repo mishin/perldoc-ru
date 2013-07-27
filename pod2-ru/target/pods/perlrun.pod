@@ -1,6 +1,6 @@
 =head1 Имя
 
-perlrun - how to execute the Perl interpreter
+perlrun - как запустить интерпретатор Perl
 
 =head1 СИНТАКСИС
 
