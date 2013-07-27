@@ -2485,6 +2485,17 @@ operations the variable is involved in to match.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because B&lt;perldoc&gt; does not run properly tainted, and is known to
+have security issues, when run as the superuser it will attempt to
+drop privileges by setting the effective and real IDs to nobody's
+or nouser's account, or -2 if unavailable.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T133953Z" creationid="ira" creationdate="20130727T133953Z">
+        <seg>Поскольку B&lt;perldoc&gt; не работает должным образом испорчены, и, как известно, вопросы безопасности, при запуске с правами суперпользователя он будет пытаться отказаться от привилегий, установив эффективные и реальные идентификаторы никому или nouser account, либо -2, если недоступны.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because historically some operating systems silently chopped off
 kernel interpretation of the C&lt;#!&gt; line after 32 characters, some
 switches may be passed in on the command line, and some may not;
