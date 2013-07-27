@@ -2755,6 +2755,14 @@ distribution for more information).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Current maintainer: Mark Allen C&lt;&lt; &lt;mallen@cpan.org&gt; &gt;&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134737Z" creationid="ira" creationdate="20130727T134737Z">
+        <seg>Текущий сопровождающий (maintainer): Mark Allen C&lt;&lt; &lt;mallen@cpan.org&gt; &gt;&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Currently the only "unsafe"
 operations are attempting to unlink directories while running as superuser
 and running setuid programs with fatal taint checks turned into warnings.</seg>
@@ -7551,6 +7559,15 @@ binary nature of the stream are also removed or disabled.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T002213Z" creationid="ira" creationdate="20130727T002158Z">
         <seg>В отличие от более ранних версий Perl, C&lt;:raw&gt; I&lt;не&gt; просто обратная C&lt;:crlf&gt;: другие слои, которые будут влиять на двоичный характер потока также удалить или отключить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Up to 3.14_05, the switch B&lt;-v&gt; was used to produce verbose
+messages of B&lt;perldoc&gt; operation, which is now enabled by B&lt;-D&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134702Z" creationid="ira" creationdate="20130727T134702Z">
+        <seg>До 3.14_05, переключатель B&lt;-v&gt; использовался для получения подробных сообщений из B&lt;perldoc&gt; операции, которая теперь включен по B&lt;-D&gt;.</seg>
       </tuv>
     </tu>
     <tu>
