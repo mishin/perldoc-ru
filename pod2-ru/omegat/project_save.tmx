@@ -1053,6 +1053,14 @@ perltodo упоминает Unicode в %ENV и именах файлов.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head1 ACKNOWLEDGEMENTS</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185700Z" creationid="ira" creationdate="20130727T185700Z">
+        <seg>=head1 БЛАГОДАРНОСТЬ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head1 AUTHOR</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T230843Z" creationid="ira" creationdate="20130723T230843Z">
@@ -2303,6 +2311,16 @@ type.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T001343Z" creationid="ira" creationdate="20130727T001343Z">
         <seg>Пробелы (или доеточия) разделенный список PerlIO слоев.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A special thanks to Damian Conway, who didn't only suggest important changes,
+but also took the time to count the number of listed features and make a
+Perl 6 version to show that Perl will stay Perl.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185743Z" creationid="ira" creationdate="20130727T185743Z">
+        <seg>Особая благодарность Дамиан Конвей, который не только предложил важные изменения, но и нашел время, чтобы подсчитать количество перечисленных особенностей и сделать версии Perl 6, чтобы показать, что Perl останется Perl.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5679,6 +5697,14 @@ third-party modules.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Juerd Waalboer &lt;#####@juerd.nl&gt;, with the help of many Perl Monks.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185757Z" creationid="ira" creationdate="20130727T185757Z">
+        <seg>Juerd Waalboer &lt;#####@juerd.nl&gt;, с помощью многих Perl Monks.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Just "outdent" it a little to make it more visible:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T143944Z" creationid="ira" creationdate="20130727T143944Z">
@@ -5744,6 +5770,30 @@ places to start when writing a test suite.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T152523Z" creationid="ira" creationdate="20130727T152523Z">
         <seg>L&lt;Test::Simple|Test::Simple&gt; и L&lt;Test::More|Test::More&gt; хорошие места, чтобы начать при написании тестов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>L&lt;http://juerd.nl/site.plp/perlcheat&gt; - home of the Perl Cheat Sheet</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185900Z" creationid="ira" creationdate="20130727T185900Z">
+        <seg>L&lt;http://juerd.nl/site.plp/perlcheat&gt; - дом Perl Шпаргалки (Cheat Sheet)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>L&lt;http://perlmonks.org/?node_id=216602&gt; - the original PM post</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185818Z" creationid="ira" creationdate="20130727T185818Z">
+        <seg>L&lt;http://perlmonks.org/?node_id=216602&gt; - Оригинальное сообщение на PM</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>L&lt;http://perlmonks.org/?node_id=238031&gt; - Damian Conway's Perl 6 version</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185836Z" creationid="ira" creationdate="20130727T185836Z">
+        <seg>L&lt;http://perlmonks.org/?node_id=238031&gt; - Damian Conway Perl 6 версия</seg>
       </tuv>
     </tu>
     <tu>
@@ -7726,6 +7776,14 @@ as if they were on every Perl command line.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thank you, Perl Monks.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185722Z" creationid="ira" creationdate="20130727T185722Z">
+        <seg>Спасибо, Perl Monks.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The
 comma-separated list of options must follow a C&lt;=&gt; character.</seg>
       </tuv>
@@ -8205,6 +8263,15 @@ rules:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T224002Z" creationid="ira" creationdate="20130726T224002Z">
         <seg>Расширение, если имеются, используется для изменения названия старых файлов, чтобы сделать резервную копию, следуя этим правилам:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first version of this document appeared on Perl Monks, where several
+people had useful suggestions.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185714Z" creationid="ira" creationdate="20130727T185714Z">
+        <seg>Первая версия этого документа появился на Perl Monks, где несколько человек делали полезные предложения.</seg>
       </tuv>
     </tu>
     <tu>
