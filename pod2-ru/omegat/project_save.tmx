@@ -1738,6 +1738,22 @@ X&lt;SYS$LOGIN&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Use L&lt;Carp|Carp&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152113Z" creationid="ira" creationdate="20130727T152113Z">
+        <seg>=item Используйте L&lt;Carp|Carp&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item Use L&lt;strict|strict&gt; and L&lt;warnings|warnings&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152059Z" creationid="ira" creationdate="20130727T152059Z">
+        <seg>=item Используйте L&lt;strict|strict&gt; и L&lt;warnings|warnings&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&gt;   greater than</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235819Z" creationid="ira" creationdate="20130725T235819Z">
@@ -1958,6 +1974,15 @@ B&lt;'-MI&lt;MODULE&gt; qw(foo bar)'&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A module's code has to be warning and strict-clean, since you can't
+guarantee the conditions that it'll be used under.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152102Z" creationid="ira" creationdate="20130727T152102Z">
+        <seg>Код модуля должен быть предупреждения и строгого чистой, так как вы не можете гарантировать условия, которые она будет использоваться под.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A pragma is a module which influences some aspect of the compile time or run
 time behaviour of Perl, such as C&lt;strict&gt; or C&lt;warnings&gt;.</seg>
       </tuv>
@@ -2032,6 +2057,14 @@ logical device for the @INC path on VMS only.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T004308Z" creationid="ira" creationdate="20130727T004308Z">
         <seg>Перевод скрытой коренится логическое имя, которое содержит Perl и логическое устройство для пути @INC только на VMS.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A typical invocation of L&lt;h2xs|h2xs&gt; for a pure Perl module is:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151944Z" creationid="ira" creationdate="20130727T151944Z">
+        <seg>Типичный вызов L&lt;h2xs|h2xs&gt; для чистого модуль Perl является:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2851,6 +2884,16 @@ guesses right.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T084259Z" creationid="rdtex1" creationdate="20130725T084259Z">
         <seg>Кроме того, A2P почти всегда угадывает правильно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Besides, you wouldn't
+want to distribute code that wasn't warning or strict-clean anyway,
+right?</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152105Z" creationid="ira" creationdate="20130727T152105Z">
+        <seg>Кроме того, вы не хотите распространять код, который не был предупреждением или строгого чистой во всяком случае, не так ли?</seg>
       </tuv>
     </tu>
     <tu>
@@ -3703,6 +3746,14 @@ C&lt;-oman&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T132420Z" creationid="ira" creationdate="20130727T132420Z">
         <seg>Например: C&lt;perldoc -MPod::Perldoc::ToChecker&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, if you say this:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152126Z" creationid="ira" creationdate="20130727T152126Z">
+        <seg>Например, если вы говорите, это:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4860,6 +4911,15 @@ floating point values are stringified.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T065025Z" creationid="rdtex1" creationdate="20130725T065025Z">
         <seg>Вместо этого он предлагает то, что вы хотите.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead, you want
+to put the blame on the user, and say this:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152217Z" creationid="ira" creationdate="20130727T152217Z">
+        <seg>Вместо этого, вы хотите, чтобы свалить вину на пользователя, и сказал так:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7235,6 +7295,16 @@ parsed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The C&lt;-A&gt; omits the Autoloader code, C&lt;-X&gt; omits XS elements,
+C&lt;--skip-exporter&gt; omits the Exporter code, C&lt;--use-new-tests&gt; sets up a
+modern testing environment, and C&lt;-n&gt; specifies the name of the module.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152039Z" creationid="ira" creationdate="20130727T152039Z">
+        <seg>C&lt;-A&gt; опускает автозагрузку кода,  C&lt;-X&gt; опускает XS элементов, C&lt;--skip-exporter&gt; опускает Экспортер кода,  C&lt;--use-new-tests&gt; устанавливает современную среду тестирования, и C&lt;-n&gt; указывает имя модуля.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The C&lt;//&gt; matching operator is documented in L&lt;perlop&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001808Z" creationid="ira" creationdate="20130726T001808Z">
@@ -7356,6 +7426,16 @@ qualified filenames, one per line.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T133120Z" creationid="ira" creationdate="20130727T133120Z">
         <seg>Файл F&lt;pod.idx&gt; должен содержать подходящие имена файлов, по одному имени на строке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The L&lt;Carp|Carp&gt; module allows you to present your error messages from
+the caller's perspective; this gives you a way to signal a problem with
+the caller and not your module.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152124Z" creationid="ira" creationdate="20130727T152124Z">
+        <seg>Модуль L&lt;Carp|Carp&gt; позволяет представить ваши сообщения об ошибках с точки зрения абонента, это дает вам возможность сигнализировать проблемы с абонентом, а не модуля вашего.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9568,6 +9648,15 @@ files.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T225301Z" creationid="ira" creationdate="20130726T225301Z">
         <seg>Вы не можете использовать B&lt;-i&gt; для создания каталогов или для обрезания расширений файлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You do this by using L&lt;Carp|Carp&gt; and replacing your C&lt;warn&gt;s with
+C&lt;carp&gt;s.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152238Z" creationid="ira" creationdate="20130727T152238Z">
+        <seg>Вы можете сделать это с помощью L&lt;Carp|Carp&gt; и замене C&lt;warn&gt; с с C&lt;carp&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12077,6 +12166,14 @@ switch.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>the user will see something like this:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152139Z" creationid="ira" creationdate="20130727T152139Z">
+        <seg>пользователь увидит что-то вроде этого:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>them conditional on the locale environment variables</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T211901Z" creationid="ira" creationdate="20130726T211901Z">
@@ -12167,10 +12264,26 @@ or specific values).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>warn "No hostname given";</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152135Z" creationid="ira" creationdate="20130727T152135Z">
+        <seg>warn "имя хоста не дано";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>which is equivalent to</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T224620Z" creationid="ira" creationdate="20130726T224620Z">
         <seg>что эквивалентно</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>which looks like your module is doing something wrong.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152215Z" creationid="ira" creationdate="20130727T152215Z">
+        <seg>который выглядит как ваш модуль делает что-то не так.</seg>
       </tuv>
     </tu>
     <tu>
