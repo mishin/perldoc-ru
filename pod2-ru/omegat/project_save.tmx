@@ -7519,6 +7519,19 @@ used.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Useful values for C&lt;PERLDOC&gt; include C&lt;-oterm&gt;, C&lt;-otext&gt;, C&lt;-ortf&gt;,
+C&lt;-oxml&gt;, and so on, depending on what modules you have on hand; or
+the formatter class may be specified exactly with C&lt;-MPod::Perldoc::ToTerm&gt;
+or the like.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T134127Z" creationid="ira" creationdate="20130727T134127Z">
+        <seg>Полезные значения для C&lt;PERLDOC&gt; включают C&lt;-oman&gt;, C&lt;-otext&gt;, C&lt;-otk&gt;, C&lt;-ortf&gt;,
+C&lt;-oxml&gt; и так далее, в зависимости от имеющихся у вас модулей; или явно укажите класс определяющий форматирование с помощью C&lt;-MPod::Perldoc::ToMan&gt;
+или подобного.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Using C&lt;my&gt; in combination with a C&lt;use strict;&gt; at the top of
 your Perl scripts means that the interpreter will pick up certain common
 programming errors.</seg>
