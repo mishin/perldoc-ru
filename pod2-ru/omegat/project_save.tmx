@@ -5734,6 +5734,15 @@ extract the documentation of this function from L&lt;perlfunc&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The B&lt;-v&gt; option followed by the name of a Perl predefined variable will
+extract the documentation of this variable from L&lt;perlvar&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T131927Z" creationid="ira" creationdate="20130727T131927Z">
+        <seg>Ключ B&lt;-v&gt;  с последующим названием Perl предопределенной переменной будет извлекать документацию этой переменной из L&lt;perlvar&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The B&lt;-x&gt; switch controls only the
 disposal of leading garbage.</seg>
       </tuv>
