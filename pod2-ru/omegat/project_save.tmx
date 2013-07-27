@@ -1251,6 +1251,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Step-by-step: Distributing your module</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152612Z" creationid="ira" creationdate="20130727T152612Z">
+        <seg>=head2 Шаг за шагом: Распространение вашей модуля</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Step-by-step: Making the module</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T151809Z" creationid="ira" creationdate="20130727T151809Z">
@@ -4758,6 +4766,15 @@ modules list at C&lt;modules@perl.org&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you're uploading to CPAN, the automated gremlins will extract the
+README file and place that in your CPAN directory.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152547Z" creationid="ira" creationdate="20130727T152547Z">
+        <seg>Если вы загружаете на CPAN, автоматизированная Гремлины будет извлечь файл README и место, что в вашем каталоге CPAN.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you've succeeded
 in compiling perl, the L&lt;perlbug&gt; script in the F&lt;utils/&gt; subdirectory
 can be used to help mail in a bug report.</seg>
@@ -5246,6 +5263,16 @@ but it would be gross and inefficient.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It'll also appear in
+the main F&lt;by-module&gt; and F&lt;by-category&gt; directories if you make it onto
+the modules list.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152600Z" creationid="ira" creationdate="20130727T152600Z">
+        <seg>Она будет также отображаться в главном F&lt;by-module&gt; и F&lt;by-category&gt; каталоге, если вы сделаете это на список модулей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It's a
 good idea to turn them on explicitly for programs that run on behalf
 of someone else whom you might not necessarily trust, such as CGI
@@ -5253,6 +5280,15 @@ programs or any internet servers you might write in Perl.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T233729Z" creationid="ira" creationdate="20130726T233729Z">
         <seg>Это хорошая идея, чтобы включить их явно для программы, которые работают от чужого имени, которым вы не обязательно будете доверять, таких, как программы CGI или любого интернет-серверов, вы можете написать в Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It's a good idea to put here what the module actually
+does in detail, and the user-visible changes since the last release.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152602Z" creationid="ira" creationdate="20130727T152602Z">
+        <seg>Это хорошая идея, чтобы положить здесь то, что на самом деле делает модуль в деталях, и видимых пользователю изменений с момента последнего релиза.</seg>
       </tuv>
     </tu>
     <tu>
