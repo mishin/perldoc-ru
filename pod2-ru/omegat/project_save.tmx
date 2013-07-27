@@ -3232,6 +3232,14 @@ on its own.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>CONFIGURATION   \pP named property    (?&gt;p)  no backtrack</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184952Z" creationid="ira" creationdate="20130727T184952Z">
+        <seg>КОНФИГУРАЦИЯ   \pP именованное свойство    (?&gt;p)  не возвращаться назад</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>CONTEXTS  SIGILS  ref        ARRAYS        HASHES</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T183434Z" creationid="ira" creationdate="20130727T183434Z">
@@ -10491,10 +10499,34 @@ which case you can probably just use the man(1) command.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>\K     keep left part</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185130Z" creationid="ira" creationdate="20130727T185130Z">
+        <seg>\K     держать левую часть</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>\R  linebreak         (?&lt;n&gt;p)named capture</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185057Z" creationid="ira" creationdate="20130727T185057Z">
+        <seg>\R  перенос строки         (?&lt;n&gt;p)именованный захват</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>\S                  non-whitespace character</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002313Z" creationid="ira" creationdate="20130726T002313Z">
         <seg>\S                  непробельный символ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>\S \W \D \H negate    \g{n}  ref to named cap</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185120Z" creationid="ira" creationdate="20130727T185120Z">
+        <seg>\S \W \D \H отрицать    \g{n}  ссылка на имени крышкой (cap)</seg>
       </tuv>
     </tu>
     <tu>
@@ -10511,6 +10543,14 @@ which case you can probably just use the man(1) command.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T002325Z" creationid="ira" creationdate="20130726T002325Z">
         <seg>\d                  цифра (0-9)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>\d  digits            (?&lt;!p) ZW neg behind</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184911Z" creationid="ira" creationdate="20130727T184911Z">
+        <seg>\d  цифры            (?&lt;!p) ZW отр позади</seg>
       </tuv>
     </tu>
     <tu>
@@ -11067,6 +11107,14 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T025053Z">
         <seg>perl - интерпретатор языка Perl5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perl -V:ivsize  \h  horiz.wh.space    (?|p|p)branch reset</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185031Z" creationid="ira" creationdate="20130727T185031Z">
+        <seg>perl -V:ivsize  \h  горизонт пробелы    (?|p|p)сброс ветки</seg>
       </tuv>
     </tu>
     <tu>
