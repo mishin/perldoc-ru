@@ -988,6 +988,14 @@ X&lt;perl, command switches&gt; X&lt;command switches&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Free (as in beer) books</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125442Z" creationid="ira" creationdate="20130727T125442Z">
+        <seg>=head2 бесплатно (как в пиве) книги</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 Internals and C Language Interface</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051533Z">
@@ -1026,6 +1034,14 @@ X&lt;perl, location of interpreter&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130724T122531Z" creationid="rdtex1" creationdate="20130724T122531Z">
         <seg>=head2 Параметры</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 Other interesting, non-Perl books</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125457Z" creationid="ira" creationdate="20130727T125457Z">
+        <seg>=head2 Другие интересные, не Perl книги</seg>
       </tuv>
     </tu>
     <tu>
@@ -1301,6 +1317,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T125422Z" creationid="ira" creationdate="20130727T125422Z">
         <seg>=item I&lt;Pro Perl Debugging&gt; I&lt;Профессиональная отладка Perl&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Programming Pearls&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125546Z" creationid="ira" creationdate="20130727T125546Z">
+        <seg>=item I&lt;Programming Pearls&gt; I&lt;Жемчуг программирования&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5368,6 +5392,14 @@ we've already seen include C&lt;print&gt;, C&lt;sort&gt; and C&lt;reverse&gt;.</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some of these books are available as free downloads.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125445Z" creationid="ira" creationdate="20130727T125445Z">
+        <seg>Некоторые из этих книг доступны для бесплатной загрузки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some switches do care if they are processed twice, for instance
 combinations of B&lt;-l&gt; and B&lt;-0&gt;.</seg>
       </tuv>
@@ -5941,6 +5973,15 @@ starts up the Perl interpreter.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T232752Z" creationid="ira" creationdate="20130726T232733Z">
         <seg>Шелл (Shell) выполняет вторую строку как обычную команду shell , и, таким образом запускает интерпретатор Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The similarity to the title of the major
+Perl book (which came later) is not completely accidental:</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125518Z" creationid="ira" creationdate="20130727T125518Z">
+        <seg>Сходство на звание крупнейших книжных Perl (которые пришли позже) не является полностью случайным:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7317,6 +7358,15 @@ over such an array.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082144Z" creationid="rdtex1" creationdate="20130725T082144Z">
         <seg>Возможно, вам придется изменить любой цикл, который перебирает такой массив.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You might notice several familiar Perl concepts in this collection of
+ACM columns from Jon Bentley.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125505Z" creationid="ira" creationdate="20130727T125505Z">
+        <seg>Вы могли заметить несколько знакомых Perl понятий в этой коллекции столбцов ACM от Jon Bentley.</seg>
       </tuv>
     </tu>
     <tu>
