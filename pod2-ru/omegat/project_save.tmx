@@ -779,8 +779,8 @@ syntax tree.</seg>
       <tuv lang="EN-US">
         <seg>2 mode   2 hour        2 line        $/    input separator</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185338Z" creationid="ira" creationdate="20130727T185338Z">
-        <seg>2 mode   2 hour        2 line        $/    вход разделитель</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185341Z" creationid="ira" creationdate="20130727T185338Z">
+        <seg>2 mode   2 hour        2 line        $/    входной разделитель</seg>
       </tuv>
     </tu>
     <tu>
@@ -813,6 +813,14 @@ syntax tree.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T221526Z" creationid="ira" creationdate="20130726T221526Z">
         <seg>262144  R  Включая счетчики ссылок дампинговых переменных (например, при</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>3 nlink  3 day         3 subroutine  $\    output separator</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T185350Z" creationid="ira" creationdate="20130727T185350Z">
+        <seg>3 nlink  3 day         3 subroutine  $\    выходной разделитель</seg>
       </tuv>
     </tu>
     <tu>
