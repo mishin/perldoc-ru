@@ -4581,6 +4581,14 @@ the sources), you may have to modify the Registry yourself.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you need to C&lt;die&gt;, say C&lt;croak&gt; instead.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T152251Z" creationid="ira" creationdate="20130727T152251Z">
+        <seg>Если вам нужно C&lt;die&gt; , скажитн C&lt;croak&gt; вместо этого.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you need to store multiple values
 or complex structures, you should serialise them, for example with C&lt;pack&gt;.</seg>
       </tuv>
