@@ -1299,10 +1299,26 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head2 Warning</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151158Z" creationid="ira" creationdate="20130727T151158Z">
+        <seg>=head2 Предупреждение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head2 What is Perl?</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T230013Z" creationid="ira" creationdate="20130725T230013Z">
         <seg>=head2 Что такое Perl?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 What should I make into a module?</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151231Z" creationid="ira" creationdate="20130727T151231Z">
+        <seg>=head2 Что я должен сделать в модуле?</seg>
       </tuv>
     </tu>
     <tu>
@@ -2236,6 +2252,16 @@ could also cause odd results.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Any
+part of your code which you can isolate and extract and plug into
+something else is a likely candidate.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151243Z" creationid="ira" creationdate="20130727T151243Z">
+        <seg>Любая часть вашего кода, который можно изолировать и извлечь и подключить во что-то другое является вероятным кандидатом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any architecture-specific and version-specific directories,
 such as F&lt;version/archname/&gt;, F&lt;version/&gt;, or F&lt;archname/&gt; under the
 specified locations are automatically included if they exist, with this
@@ -2286,6 +2312,15 @@ the value 0777 is the one normally used for this purpose.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T210636Z" creationid="ira" creationdate="20130726T210636Z">
         <seg>Любое значение 0400 или выше, будет вызывать Perl захватывать файлы целиком, но по соглашению значение 0777 является тем, которое обычно используется для этой цели.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Anything that's likely to fill a hole in the communal
+library and which someone else can slot directly into their program.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151239Z" creationid="ira" creationdate="20130727T151239Z">
+        <seg>Все, что, скорее всего, заполнить дыру в коммунальной библиотеке и которые кто-то может слота непосредственно в свои программы.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3839,6 +3874,16 @@ program, which is bad programming practice.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, the notes on preparing the Perl
+side of the module and packaging and distributing it will apply equally
+well to an XS module as a pure-Perl one.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151210Z" creationid="ira" creationdate="20130727T151210Z">
+        <seg>Тем не менее, указания по подготовке Perl стороне модуля и упаковку и распространение оно будет применять одинаково хорошо XS модуль как чистый Perl-один.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, there is a clever way of making your one-line
 conditional blocks more English like:</seg>
       </tuv>
@@ -4284,6 +4329,15 @@ you've got a problem.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T144203Z" creationid="ira" creationdate="20130727T144203Z">
         <seg>Если вы не можете вспомнить, что обозначает данное название, у вас проблемы с выбором имен.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you don't know what one of these is, the rest of this
+document isn't going to be much use to you.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151123Z" creationid="ira" creationdate="20130727T151123Z">
+        <seg>Если вы не знаете, что один из них, остальные этот документ не будет большой пользы для вас.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5086,6 +5140,14 @@ string "perl".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let's take an example.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151245Z" creationid="ira" creationdate="20130727T151245Z">
+        <seg>Давайте брать пример.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Like B&lt;-T&gt;, but taint checks will issue warnings rather than fatal
 errors.</seg>
       </tuv>
@@ -5600,6 +5662,16 @@ your control.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231535Z" creationid="ira" creationdate="20130723T231535Z">
         <seg>Можно также использовать B&lt;-w&gt; флаг, о его использование, как правило, не рекомендуется, потому что он будет применяться ко всему исполняемуму коду Perl, в том числе, который не под вашим контролем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One of the things that makes Perl really powerful is the fact that Perl
+hackers tend to want to share the solutions to problems they've faced,
+so you and I don't have to battle with the same problem again.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151110Z" creationid="ira" creationdate="20130727T151110Z">
+        <seg>Одна из вещей, которая делает действительно мощный Perl является то, что Perl хакеров, как правило, хотят поделиться решения проблем, они сталкиваются, так что вы и я не должны бороться с той же проблемой снова.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7314,6 +7386,15 @@ are as follows; listing the letters is equal to summing the numbers.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The main way they do this is by abstracting the solution into a Perl
+module.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151118Z" creationid="ira" creationdate="20130727T151118Z">
+        <seg>Основным, как они делают это за счет абстрагирования от раствора в Perl модуле.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The major reference book on Perl, written by the creator of Perl, is
 I&lt;Programming Perl&gt;:</seg>
       </tuv>
@@ -7898,6 +7979,16 @@ the I&lt;implicit&gt; (and problematic) UTF-8 behaviour of Perl 5.8.0.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T235938Z" creationid="ira" creationdate="20130726T235938Z">
         <seg>Это может быть переопределено с помощью директивы C&lt;#line&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document gives you some suggestions about how to go about writing
+Perl modules, preparing them for distribution, and making them available
+via CPAN.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151105Z" creationid="ira" creationdate="20130727T151105Z">
+        <seg>Этот документ дает вам несколько советов о том, как идти о написании модулей Perl, подготавливая их к распределению, и сделать их доступными через CPAN.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8667,6 +8758,15 @@ endorsement, don't think that not including a book means anything.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We're going to primarily concentrate on Perl-only modules here, rather
+than XS modules.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151203Z" creationid="ira" creationdate="20130727T151203Z">
+        <seg>Мы собираемся в первую очередь сосредоточиться на Perl-модулей только здесь, а не XS модулей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We've already seen how to print to standard output using C&lt;print()&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T001433Z" creationid="ira" creationdate="20130726T001433Z">
@@ -8785,6 +8885,17 @@ from program run to program run.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When you've found that there isn't a module available for what you're
+trying to do, and you've had to write the code yourself, consider
+packaging up the solution into a module and uploading it to CPAN so that
+others can benefit.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151151Z" creationid="ira" creationdate="20130727T151151Z">
+        <seg>Если вы обнаружили, что нет модуля доступны за то, что вы пытаетесь сделать, и вы должны были написать код самостоятельно, рассмотрите упаковку до раствора в модуль и загружать его на CPAN так что любой может пользу.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>While none of the built-in data types have any arbitrary size limits
 (apart from memory size), there are still a few arbitrary limits:  a
 given variable name may not be longer than 251 characters.</seg>
@@ -8864,6 +8975,17 @@ scans for the first line starting with C&lt;#!&gt; and containing the word
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T003417Z" creationid="ira" creationdate="20130726T003417Z">
         <seg>Написание подпрограмм легко:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XS modules serve a rather different purpose, and
+you should consider different things before distributing them - the
+popularity of the library you are gluing, the portability to other
+operating systems, and so on.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151207Z" creationid="ira" creationdate="20130727T151207Z">
+        <seg>XS модули служат несколько иную цель, и вы должны рассмотреть разные вещи, прежде чем распространять их - популярность библиотеки вы склейки, переносимость на другие операционные системы, и так далее.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9271,6 +9393,15 @@ reason why not.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You should make a module out of any code that you think is going to be
+useful to others.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151234Z" creationid="ira" creationdate="20130727T151234Z">
+        <seg>Вы должны сделать модуль из любого кода, который вы думаете, будет полезным для других.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You will need a C&lt;:crlf&gt; layer above it
 to do that.</seg>
       </tuv>
@@ -9296,6 +9427,16 @@ set $# explicitly if you use the default value of OFMT.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130725T082400Z" creationid="rdtex1" creationdate="20130725T082308Z">
         <seg>Вам придется установить $# явно, если вы используете значение по умолчанию OFMT.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You're also missing out on
+an awful lot of useful code; consider having a look at L&lt;perlmod&gt;,
+L&lt;perlmodlib&gt; and L&lt;perlmodinstall&gt; before coming back here.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151145Z" creationid="ira" creationdate="20130727T151145Z">
+        <seg>Вы также пропавших без вести на очень много полезного кода; рассмотреть взгляд на L&lt;perlmod&gt; , L&lt;perlmodlib&gt; и L&lt;perlmodinstall&gt; перед возвращением сюда.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10829,6 +10970,14 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T050936Z">
         <seg>perlnewmod		Perl модули: подготовка нового модуля для опубликования</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlnewmod - preparing a new module for distribution</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T151059Z" creationid="ira" creationdate="20130727T151059Z">
+        <seg>perlnewmod - подготовка нового модуля для распределения (for distribution)</seg>
       </tuv>
     </tu>
     <tu>
