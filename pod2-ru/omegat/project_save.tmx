@@ -2670,6 +2670,14 @@ guesses right.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Blank lines between chunks that do different things.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143354Z" creationid="ira" creationdate="20130727T143354Z">
+        <seg>Пустые строки между частями кода, реализующие разную логику.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But the code that parses
 layer specification strings, which is also used to decode the PERLIO
 environment variable, treats the colon as a separator.</seg>
@@ -4752,6 +4760,14 @@ affected by wraparound).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Long lines broken after an operator (except C&lt;and&gt; and C&lt;or&gt;).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143425Z" creationid="ira" creationdate="20130727T143425Z">
+        <seg>Разбивать длинные строки, оставляя на конце какой-либо оператор (кроме C&lt;and&gt; и C&lt;or&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Low-level layer that calls C&lt;read&gt;, C&lt;write&gt;, C&lt;lseek&gt;, etc.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T002328Z" creationid="ira" creationdate="20130727T002323Z">
@@ -4863,6 +4879,22 @@ are specified either as C&lt;File::Basename&gt; or C&lt;&lt; File/Basename &gt;&
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T133347Z" creationid="ira" creationdate="20130727T133347Z">
         <seg>Модули вида C&lt;File::Basename&gt; могут быть определены как C&lt;File::Basename&gt; или C&lt;File/Basename&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No space before the semicolon.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143326Z" creationid="ira" creationdate="20130727T143326Z">
+        <seg>Нет пробелов перед точкой с запятой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No space between function name and its opening parenthesis.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143411Z" creationid="ira" creationdate="20130727T143411Z">
+        <seg>Между именем функции и открывающей круглой скобкой нет пробелов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5184,11 +5216,27 @@ your control.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One-line BLOCK may be put on one line, including curlies.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143319Z" creationid="ira" creationdate="20130727T143319Z">
+        <seg>Однострочный блок может быть записан в одну строку, включая фигурные скобки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Only the B&lt;-[CDIMUdmtwW]&gt;
 switches are allowed.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T001009Z" creationid="ira" creationdate="20130727T001003Z">
         <seg>Только B &amp;lt;- [CDIMUdmtwW]&amp;gt; переключатели допускается.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Opening curly on same line as keyword, if possible, otherwise line up.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143301Z" creationid="ira" creationdate="20130727T143301Z">
+        <seg>Открывающая фигурная скобка находится на той же строке, что и ключевое слово (если это возможно), иначе на одной вертикали с ним.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6002,6 +6050,14 @@ which are commonly used in conditional statements.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Semicolon omitted in "short" one-line BLOCK.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143333Z" creationid="ira" creationdate="20130727T143333Z">
+        <seg>В коротких однострочных блоках точка с запятой опускается.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Set to 1 to allow the use of non-IFS compatible LSPs (Layered Service Providers).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T003143Z" creationid="ira" creationdate="20130727T003143Z">
@@ -6187,6 +6243,46 @@ combinations of B&lt;-l&gt; and B&lt;-0&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T201509Z" creationid="ira" creationdate="20130726T201405Z">
         <seg>Некоторым ключам не все равно будут ли они обрабатываться дважды, например комбинации  B&lt;-l&gt; и B&lt;-0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Space after each comma.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143417Z" creationid="ira" creationdate="20130727T143417Z">
+        <seg>Пробел после каждой запятой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Space after last parenthesis matching on current line.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143431Z" creationid="ira" creationdate="20130727T143431Z">
+        <seg>Пробел после последней сбалансированной круглой скобки в текущей строке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Space around a "complex" subscript (inside brackets).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143346Z" creationid="ira" creationdate="20130727T143346Z">
+        <seg>Пробелы вокруг "сложных" подпрограмм (внутри скобок)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Space around most operators.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143339Z" creationid="ira" creationdate="20130727T143339Z">
+        <seg>Пробелы вокруг большинства операторов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Space before the opening curly of a multi-line BLOCK.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143310Z" creationid="ira" creationdate="20130727T143310Z">
+        <seg>Пробел перед открывающей фигурной скобкой многострочного блока.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7875,6 +7971,14 @@ you access to exported functions or an OO interface to the module.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T211957Z" creationid="ira" creationdate="20130726T211957Z">
         <seg>UTF-8, потом выбирается "IOEioA" в действительности (UTF-8, then the selected "IOEioA" are in effect)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Uncuddled elses.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T143404Z" creationid="ira" creationdate="20130727T143404Z">
+        <seg>"Не обнимать" else-условия</seg>
       </tuv>
     </tu>
     <tu>
