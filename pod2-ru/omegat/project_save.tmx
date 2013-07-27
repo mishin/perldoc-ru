@@ -959,6 +959,14 @@ X&lt;perl, environment variables&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=head1 Implementation details</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142031Z" creationid="ira" creationdate="20130727T142031Z">
+        <seg>=head1 Детали реализации</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=head1 Key naming</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T141843Z" creationid="ira" creationdate="20130727T141843Z">
@@ -4240,6 +4248,16 @@ for more space in the hash.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Instead a compact form is used, which can only store values that are
+integers (signed and unsigned), strings or C&lt;undef&gt; - references and
+floating point values are stringified.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142144Z" creationid="ira" creationdate="20130727T142144Z">
+        <seg>Вместо этого используется компактная форма, которая может хранить только целые значения (со знаком или без), строки или C&lt;undef&gt;; ссылки и числа с плавающей точкой преобразуются в строку.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Instead do this</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T222654Z" creationid="ira" creationdate="20130726T222654Z">
@@ -4559,6 +4577,15 @@ third-party modules.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233742Z" creationid="ira" creationdate="20130725T233742Z">
         <seg>Так же, как специальные скаляры и массивы, существуют также специальные хэши.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keys that follow the convention
+won't conflict with the core's historical keys.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142021Z" creationid="ira" creationdate="20130727T142021Z">
+        <seg>Ключи, которые следуют Конвенция не вступит в противоречие с историческими ключей ядра.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6681,6 +6708,14 @@ need to know about for now is C&lt;$_&gt; which is the "default variable".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The optree is shared between threads.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142041Z" creationid="ira" creationdate="20130727T142041Z">
+        <seg>op-дерево является общим для всех потоков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The order may not be repeatable in a following program run
 even if the PERL_HASH_SEED has been specified.</seg>
       </tuv>
@@ -7397,6 +7432,17 @@ the file for you and simply hand it off for display.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T131623Z" creationid="ira" creationdate="20130727T131623Z">
         <seg>Это может быть полезно, если документация не достаточно объясняет работу функции и Вы хотите посмотреть непосредственно код; perldoc найдет файл для Вас и просто выведет содержимое.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This means there is a possibility that
+the optree will outlive the particular thread (and therefore the interpreter
+instance) that created it, so true Perl scalars cannot be stored in the
+optree.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T142122Z" creationid="ira" creationdate="20130727T142122Z">
+        <seg>Это означает, что существует возможность, при которой op-дерево "переживет" поток (и следовательно экземпляр интерпретатора), породивший его.Таким образом, настоящие Perl-скаляры не могут храниться в op-дереве.</seg>
       </tuv>
     </tu>
     <tu>
