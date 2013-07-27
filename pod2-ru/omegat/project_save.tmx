@@ -1218,8 +1218,8 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
       <tuv lang="EN-US">
         <seg>=item I&lt;Data Munging with Perl&gt;</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125320Z" creationid="ira" creationdate="20130727T125320Z">
-        <seg>=item I&lt;Data Munging with Perl&gt; I&lt;Манипулирование данными в Perl&gt;</seg>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125338Z" creationid="ira" creationdate="20130727T125320Z">
+        <seg>=item I&lt;Data Munging with Perl&gt; I&lt;Манипулирование (Munging) данными в Perl&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1228,6 +1228,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T124507Z" creationid="ira" creationdate="20130727T124507Z">
         <seg>=item I&lt;Effective Perl Programming&gt; I&lt;Эффективное программирование на Perl&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Extending and Embedding Perl&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125400Z" creationid="ira" creationdate="20130727T125400Z">
+        <seg>=item I&lt;Extending and Embedding Perl&gt; I&lt;Расширения и встраивания Perl&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1285,6 +1293,14 @@ X&lt;-0&gt; X&lt;$/&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T124737Z" creationid="ira" creationdate="20130727T124737Z">
         <seg>=item I&lt;Perl Best Practices&gt; I&lt;Perl Лучшие Практики&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=item I&lt;Pro Perl Debugging&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T125422Z" creationid="ira" creationdate="20130727T125422Z">
+        <seg>=item I&lt;Pro Perl Debugging&gt; I&lt;Профессиональная отладка Perl&gt;</seg>
       </tuv>
     </tu>
     <tu>
