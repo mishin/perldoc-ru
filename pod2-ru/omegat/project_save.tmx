@@ -10531,6 +10531,14 @@ which case you can probably just use the man(1) command.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>and             /e evaluate /ee rpts  \b     word boundary</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184504Z" creationid="ira" creationdate="20130727T184504Z">
+        <seg>and             /e выполнить /ee rpts  \b     граница слова</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>and quoting on non-Unix systems
 X&lt;hashbang&gt; X&lt;#!&gt;</seg>
       </tuv>
@@ -10979,6 +10987,14 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T210106Z" creationid="ira" creationdate="20130726T210106Z">
         <seg>или если вы просто хотите запустить на минимальной версии, разместить подобное заявление в верхней части вашей программы:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>or xor          /g global             \z     string end</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T184528Z" creationid="ira" creationdate="20130727T184528Z">
+        <seg>or xor          /g глобально             \z     конец строки</seg>
       </tuv>
     </tu>
     <tu>
