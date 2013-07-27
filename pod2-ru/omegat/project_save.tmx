@@ -1355,6 +1355,14 @@ X&lt;perl, location of interpreter&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item Announce to the modules list</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165236Z" creationid="ira" creationdate="20130727T165236Z">
+        <seg>=item Объявление о списке модулей</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=item Arithmetic</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235654Z" creationid="ira" creationdate="20130725T235654Z">
@@ -6129,6 +6137,14 @@ which you must I&lt;not&gt; do on Unix or Plan 9 systems.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T164734Z" creationid="ira" creationdate="20130727T164734Z">
         <seg>Еще раз,, C&lt;module-starter&gt; или C&lt;h2xs&gt; сделал всю работу за вас.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once uploaded, it'll sit unnoticed in your author directory.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130727T165244Z" creationid="ira" creationdate="20130727T165244Z">
+        <seg>После загрузки, он будет сидеть незамеченным в ваш автор каталога.</seg>
       </tuv>
     </tu>
     <tu>
