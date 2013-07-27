@@ -4,10 +4,10 @@ use Module::Build;
 #created by eumm-migrate.pl
 
 my $build = Module::Build->new(
-    'dist_abstract' => 'Документация Perl по-русски',
+    'dist_abstract' => 'Russian Perl documentation',
     'auto_configure_requires' => 0,
     'license'                 => 'perl',
-    'dist_author' => 'Команда Perl по-русски, Moscow-pm',
+    'dist_author' => 'Russian Perl Team, Moscow-pm',
     'module_name' => 'POD2::RU',
     'requires'    => {
         'Test::More'       => 0,

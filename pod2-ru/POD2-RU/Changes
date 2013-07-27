@@ -1,5 +1,7 @@
 Revision history for Perl extension POD2::RU
 
+5.18.0.1.05  July 28, 2013
+             * Remove russian language from Build.PL
 5.18.0.1.04  July 28, 2013
              * Add link to Makefile.PL git repository 
 	     https://github.com/mishin/perldoc-ru.git 

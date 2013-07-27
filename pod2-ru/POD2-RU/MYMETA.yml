@@ -21,4 +21,4 @@ requires:
   Test::More::UTF8: 0.04
 resources:
   license: http://dev.perl.org/licenses/
-version: v5.18.0.1.3
+version: v5.18.0.1.4
