@@ -83,7 +83,7 @@ POD2::RU - Perl Документация по-русски
   $ perldoc POD2::RU::<название_pod>
 
   $ perl -MPOD2::RU -e print_pods
-  $ perl -MPOD2::RU -e print_pod <nombre_pod1> [<nombre_pod2> ...]
+  $ perl -MPOD2::RU -e print_pod <название_pod1> [<название_pod2> ...]
 
   use POD2::RU;
   print_pods();
