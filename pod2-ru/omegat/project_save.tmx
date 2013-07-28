@@ -6609,6 +6609,17 @@ few sparse bytes.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other useful sources include the Unicode Glossary L&lt;http://unicode.org/glossary/&gt;,
+the Free On-Line Dictionary of Computing L&lt;http://foldoc.org/&gt;,
+the Jargon File L&lt;http://catb.org/~esr/jargon/&gt;,
+and Wikipedia L&lt;http://www.wikipedia.org/&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130728T103213Z" creationid="ira" creationdate="20130728T103213Z">
+        <seg>Другие полезные источники включают Unicode Глоссарий L&lt;http://unicode.org/glossary/&gt; , бесплатный он-лайн компьютерный словарь (Dictionary of Computing)  L&lt;http://foldoc.org/&gt; ,  Jargon File L&lt;http://catb.org/~esr/jargon/&gt; и  википедия L&lt;http://www.wikipedia.org/&gt; .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Otherwise use a C&lt;foreach()&gt; loop or
 the C&lt;system()&gt; function instead.</seg>
       </tuv>
