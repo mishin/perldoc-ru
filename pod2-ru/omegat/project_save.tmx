@@ -2009,6 +2009,14 @@ X&lt;SYS$LOGIN&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=item accessor methods</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130728T103236Z" creationid="ira" creationdate="20130728T103236Z">
+        <seg>=item accessor methods (методы доступа)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&gt;   greater than</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T235819Z" creationid="ira" creationdate="20130725T235819Z">
