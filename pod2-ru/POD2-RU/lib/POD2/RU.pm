@@ -163,6 +163,8 @@ C<< perldoc -f function >> использует возвращаемое зна�
 
 =item * Николай Мишин (Language Lead), C< mishin + pod2ru at gmail.com, mi at ya.ru >
 
+=item * Антон Николаев (Language), C< me at lelf.lu >
+
 =item * Алексей Суриков (Language), C< KSURi>
 
 =item * Михаил Любимов (Language), C< mikhail.lyubimov >
