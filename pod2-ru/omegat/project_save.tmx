@@ -2161,6 +2161,16 @@ of warnings; see L&lt;warnings&gt; or L&lt;perllexwarn&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A glossary of terms (technical and otherwise) used in the Perl
+documentation, derived from the Glossary of I&lt;Programming
+Perl&gt;, Fourth Edition.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130728T102659Z" creationid="ira" creationdate="20130728T102659Z">
+        <seg>Глоссарий терминов (технических и других), используемых в документации Perl, полученных из словаря я  I&lt;Programming Perl&gt; , Четвертое издание.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A hash represents a set of key/value pairs:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T233541Z" creationid="ira" creationdate="20130725T233541Z">
@@ -10043,6 +10053,15 @@ scans for the first line starting with C&lt;#!&gt; and containing the word
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Words or phrases in bold are defined elsewhere in
+this glossary.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130728T102712Z" creationid="ira" creationdate="20130728T102712Z">
+        <seg>Слова или фразы, выделенные жирным шрифтом, определены в данном глоссарии.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Writing subroutines is easy:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T003417Z" creationid="ira" creationdate="20130726T003417Z">
@@ -11966,6 +11985,14 @@ like this at the top of your program:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="Мишин" changedate="20130723T051442Z">
         <seg>perlglossary	Perl Глоссарий</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlglossary - Perl Glossary</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="ira" changedate="20130728T102619Z" creationid="ira" creationdate="20130728T102619Z">
+        <seg>perlglossary - Perl Глоссарий</seg>
       </tuv>
     </tu>
     <tu>
