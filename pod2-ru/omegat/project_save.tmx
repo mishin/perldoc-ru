@@ -131,10 +131,11 @@
 # Actualiza la hoja de estadГ­sticas en Google Docs, a partir de los datos
 # de estadГ­sticas del proyecto OmegaT.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T113413Z" creationid="rdtex1" creationdate="20130729T113413Z">
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120411Z" creationid="rdtex1" creationdate="20130729T113413Z">
         <seg>#!/usr/bin/env perl 
 #
-# Обновление Статистика сайта листа в Google Docs, данные из статистики сайта # проекта OmegaT.</seg>
+# Обновление Статистика сайта листа в Google Docs, данные из статистики сайта 
+# проекта OmegaT.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3588,6 +3589,14 @@ C&lt;cmd.exe /x/d/c&gt; on WindowsNT and C&lt;command.com /c&gt; on Windows95.</
     </tu>
     <tu>
       <tuv lang="ES">
+        <seg>Description		=&gt; 'desc.',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120611Z" creationid="rdtex1" creationdate="20130729T120611Z">
+        <seg>Description		=&gt; 'опис.',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
         <seg>Did we mention that you should definitely consider using the B&lt;use warnings&gt;
 pragma?</seg>
       </tuv>
@@ -3909,6 +3918,14 @@ L&lt;perlreftut&gt;, L&lt;perllol&gt;, L&lt;perlref&gt; and L&lt;perldsc&gt;.</s
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130727T185221Z" creationid="ira" creationdate="20130727T185221Z">
         <seg>СПИСКИ ВОЗВРАТОВ ФУНКЦИЙ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>File		=&gt; 'archivo',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120602Z" creationid="rdtex1" creationdate="20130729T120602Z">
+        <seg>File		=&gt; 'Файл',</seg>
       </tuv>
     </tu>
     <tu>
@@ -9584,6 +9601,14 @@ B&lt;-Dtls&gt;.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T215021Z" creationid="ira" creationdate="20130726T215021Z">
         <seg>Чтобы посмотреть, как он выполняет свою программу, используйте B&lt;-Dtls&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Translator		=&gt; 'traductor',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120617Z" creationid="rdtex1" creationdate="20130729T120617Z">
+        <seg>Translator		=&gt; 'переводчик',</seg>
       </tuv>
     </tu>
     <tu>
