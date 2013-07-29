@@ -7064,6 +7064,16 @@ non-letters).</seg>
     </tu>
     <tu>
       <tuv lang="ES">
+        <seg>Priority		=&gt; 'interes',
+);</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T121033Z" creationid="rdtex1" creationdate="20130729T121033Z">
+        <seg>Priority		=&gt; 'приоритет',
+);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
         <seg>Provide a good synopsis of how your module is used in
 code, a description, and then notes on the syntax and function of the
 individual subroutines or methods.</seg>
@@ -9732,6 +9742,22 @@ you access to exported functions or an OO interface to the module.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120925Z" creationid="rdtex1" creationdate="20130729T120925Z">
         <seg>Uni_Words		=&gt; 'уник.',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Uni_Words_perc	=&gt; 'unica',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T121023Z" creationid="rdtex1" creationdate="20130729T121023Z">
+        <seg>Uni_Words_perc	=&gt; 'уник.',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Uni_Words_rest	=&gt; 'unicaspend.',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T121014Z" creationid="rdtex1" creationdate="20130729T121014Z">
+        <seg>Uni_Words_rest	=&gt; 'уник.ост.',</seg>
       </tuv>
     </tu>
     <tu>
