@@ -7192,6 +7192,14 @@ nor toggling.</seg>
     </tu>
     <tu>
       <tuv lang="ES">
+        <seg>Reviewer		=&gt; 'revisor',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120639Z" creationid="rdtex1" creationdate="20130729T120639Z">
+        <seg>Reviewer		=&gt; 'рецензент',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
         <seg>Run C&lt;perldoc
 perldoc&gt; to learn more things you can do with F&lt;perldoc&gt;.</seg>
       </tuv>
@@ -7508,6 +7516,30 @@ which are commonly used in conditional statements.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130725T234647Z" creationid="ira" creationdate="20130725T234647Z">
         <seg>См. список операторов в следующем разделе для получения информации о сравнениях и логических операторах, которые обычно используются в условных операторах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Seg_perc		=&gt; 'seg',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120714Z" creationid="rdtex1" creationdate="20130729T120714Z">
+        <seg>Seg_perc		=&gt; 'сегм.',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Seg_rest		=&gt; 'seg.pend.',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120706Z" creationid="rdtex1" creationdate="20130729T120706Z">
+        <seg>Seg_rest		=&gt; 'сегм. ост..',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Segments		=&gt; 'seg.',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120654Z" creationid="rdtex1" creationdate="20130729T120654Z">
+        <seg>Segments		=&gt; 'сегм.',</seg>
       </tuv>
     </tu>
     <tu>
@@ -9672,6 +9704,38 @@ you access to exported functions or an OO interface to the module.</seg>
     </tu>
     <tu>
       <tuv lang="ES">
+        <seg>Uni_Seg		=&gt; 'unicos',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120727Z" creationid="rdtex1" creationdate="20130729T120727Z">
+        <seg>Uni_Seg		=&gt; 'уникальн.',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Uni_Seg_perc	=&gt; 'unico',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120855Z" creationid="rdtex1" creationdate="20130729T120855Z">
+        <seg>Uni_Seg_perc	=&gt; 'уник.',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Uni_Seg_rest	=&gt; 'unic.pend.',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120845Z" creationid="rdtex1" creationdate="20130729T120845Z">
+        <seg>Uni_Seg_rest	=&gt; 'уник. ост..',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Uni_Words		=&gt; 'unicas',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120925Z" creationid="rdtex1" creationdate="20130729T120925Z">
+        <seg>Uni_Words		=&gt; 'уник.',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
         <seg>Unix's C&lt;#!&gt; technique can be simulated on other systems:</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130726T203527Z" creationid="ira" creationdate="20130726T203527Z">
@@ -9839,6 +9903,14 @@ declared and prevents other misuses of legacy Perl features.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130723T231335Z" creationid="ira" creationdate="20130723T231335Z">
         <seg>Использование прагмы C&lt;use strict&gt;  гарантирует, что все переменные объявлены правильно и предотвращает другие злоупотребления от наследия функций Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Version		=&gt; 'vers.',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120647Z" creationid="rdtex1" creationdate="20130729T120647Z">
+        <seg>Version		=&gt; 'верс.',</seg>
       </tuv>
     </tu>
     <tu>
@@ -10110,11 +10182,35 @@ scans for the first line starting with C&lt;#!&gt; and containing the word
     </tu>
     <tu>
       <tuv lang="ES">
+        <seg>Words		=&gt; 'palabras',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120859Z" creationid="rdtex1" creationdate="20130729T120859Z">
+        <seg>Words		=&gt; 'слова',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
         <seg>Words or phrases in bold are defined elsewhere in
 this glossary.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="ira" changedate="20130728T102712Z" creationid="ira" creationdate="20130728T102712Z">
         <seg>Слова или фразы, выделенные жирным шрифтом, определены в данном глоссарии.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Words_perc		=&gt; 'pal',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120918Z" creationid="rdtex1" creationdate="20130729T120918Z">
+        <seg>Words_perc		=&gt; 'слова',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="ES">
+        <seg>Words_rest		=&gt; 'pal.pend.',</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20130729T120909Z" creationid="rdtex1" creationdate="20130729T120909Z">
+        <seg>Words_rest		=&gt; 'слов.ост.',</seg>
       </tuv>
     </tu>
     <tu>
