@@ -231,6 +231,14 @@ your request to be approved by the PAUSE administrators.
 
 =item C<perl Makefile.PL; make test; make dist>
 
+however, these commands are valid for Unix, but
+for Windows, where Larry advises Strawberry perl
+we have to run 
+=item C<dmake test; dmake dist>
+
+and B<dmake dist> will be executed, if we install gnu-tar and gnu-zip
+ and add the path to them in the %PATH%
+
 Once again, C<module-starter> or C<h2xs> has done all the work for you.
 They produce the standard C<Makefile.PL> you see when you download and
 install modules, and this produces a Makefile with a C<dist> target.
