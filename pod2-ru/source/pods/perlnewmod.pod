@@ -234,6 +234,7 @@ your request to be approved by the PAUSE administrators.
 however, these commands are valid for Unix, but
 for Windows, where Larry advises Strawberry perl
 we have to run 
+
 =item C<dmake test; dmake dist>
 
 and B<dmake dist> will be executed, if we install gnu-tar and gnu-zip
