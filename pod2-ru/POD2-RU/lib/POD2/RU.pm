@@ -5,7 +5,7 @@ use warnings;
 use base 'Exporter';
 use base 'POD2::Base';
 
-our $VERSION = '5.18.0.1.06';
+our $VERSION = '5.18.0.1.08';
 
 our @EXPORT = qw(print_pod print_pods);
 
@@ -235,6 +235,19 @@ L<http://search.cpan.org/dist/POD2-RU/>
 Авторы хотели бы выразить свою благодарность команде разработчиков OmegaT, инструмента, который используется для перевода.
 
 Проект OmegaT: L<http://omegat.org/>
+
+Также хотелось бы выразить благодарность автору перевода perl документации на испанский язык 
+POD2::ES Enrique Nell за его в помощь в напимании скриптов и вообще основу  взял с этого репозитория.
+ 
+Проект POD2::ES: L<https://github.com/zipf/perldoc-es>
+
+Благодарность Yusuke Kawasaki за совет разместить весь проект на github
+на вопрос о японской документации он ответил:
+They (JPRP people) uses sourceforge and its CVS. 
+
+L<http://sourceforge.jp/cvs/view/perldocjp/docs/modules/>
+
+They are using a traditional mailing list and sourceforge's bug tracking system. In my opinion, github would be a much better way to manage those things at the moment. github was not exist when they started the project.
 
 
 =head1 ЛИЦЕНЗИИ И АВТОРСКИЕ ПРАВА

@@ -1,5 +1,11 @@
 Revision history for Perl extension POD2::RU
 
+5.18.0.1.08  September 02, 2013
+             * Added new vote
+			 * Added 01pod.t test pod documentation
+5.18.0.1.07  July 28, 2013
+             * Add POD2::ES to see also, it's my fault,
+             * my sincere apologies to Enrique Nell
 5.18.0.1.06  July 28, 2013
              * Add changes from Anton Nikishaev<me@lelf.lu>
 5.18.0.1.05  July 28, 2013

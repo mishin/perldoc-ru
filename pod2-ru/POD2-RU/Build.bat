@@ -24,7 +24,7 @@ sub magic_number_matches {
   open FH, '_build\\magicnum' or return 0;
   my $filenum = <FH>;
   close FH;
-  return $filenum == 123321;
+  return $filenum == 597534;
 }
 
 my $progname;
@@ -33,7 +33,7 @@ BEGIN {
   $^W = 1;  # Use warnings
   $progname = basename($0);
   $orig_dir = Cwd::cwd();
-  my $base_dir = 'C:\\Users\\ira\\DOCUME~1\\GitHub\\PERLDO~1\\pod2-ru\\POD2-RU';
+  my $base_dir = 'C:\\DOCUME~1\\rdtex1\\C316~1\\GitHub\\PERLDO~1\\pod2-ru\\POD2-RU';
   if (!magic_number_matches()) {
     unless (chdir($base_dir)) {
       die ("Couldn't chdir($base_dir), aborting\n");
