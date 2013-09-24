@@ -1,4 +1,0 @@
-do{ my $x = {
-       'build_bat' => 1
-     };
-$x; }
