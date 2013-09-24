@@ -20,11 +20,11 @@ use File::Spec;
 
 sub magic_number_matches {
   return 0 unless -e '_build\\magicnum';
-  local *FH;
-  open FH, '_build\\magicnum' or return 0;
-  my $filenum = <FH>;
-  close FH;
-  return $filenum == 597534;
+  my $FH;
+  open $FH, '<','_build\\magicnum' or return 0;
+  my $filenum = <$FH>;
+  close $FH;
+  return $filenum == 800598;
 }
 
 my $progname;

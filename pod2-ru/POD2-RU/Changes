@@ -1,47 +1,36 @@
-Revision history for Perl extension POD2::RU
+Revision history for perl module POD2::RU
 
-5.18.0.1.08  September 02, 2013
-             * Added new vote
-			 * Added 01pod.t test pod documentation
-5.18.0.1.07  July 28, 2013
-             * Add POD2::ES to see also, it's my fault,
-             * my sincere apologies to Enrique Nell
-5.18.0.1.06  July 28, 2013
-             * Add changes from Anton Nikishaev<me@lelf.lu>
-5.18.0.1.05  July 28, 2013
-             * Remove russian language from Build.PL
-5.18.0.1.04  July 28, 2013
-             * Add link to Makefile.PL git repository 
-	     https://github.com/mishin/perldoc-ru.git 
-5.18.0.1.03  July 28, 2013
-             * Move to Build.PL
-	     http://blogs.perl.org/users/chorny/2011/07/how-to-get-rid-of-withoutworldwriteables.html
-5.18.0.1.01  July 27, 2013
-             * Change retype
-5.18.0.1.01  July 27, 2013
-             * Added 
-	     perlcheat.pod
-	     perlnewmod.pod
+0.09 2013-09-24
+ [Spec Changes]
+ - Change file Changes	   according to CPAN::Changes
 
-5.18.0.1  July 27, 2013
+0.08 2013-09-02
+ - Added new thanks, 01pod.t - test pod documentation
 
-           * First version, including 
-	   perl.pod 
-	   perlintro.pod 
-	   perlrun.pod 
-	   a2p.pod
-	   
-	   perlbook.pod
-	   perldoc.pod 
-	   perlpragma.pod
-	   perlstyle.pod
-	   
-	   * Thanks to Enrique Nell for basic script from POD2::ES
-	   * espesially merge tmx files for OmegaT
-	   
+0.07 2013-07-28
+ - Add POD2::ES to see also, it's my fault,
+ - my sincere apologies to Enrique Nell
 
-5.18.0.1  July 05, 2013
-          * Anatoliy Sharifullin agreed that i can use already translated code
-	  from https://github.com/sharifulin/pod2-ru/blob/master/RU.pm
+0.06 2013-07-28
+ - Add changes from Anton Nikishaev<me@lelf.lu>
 
-	   
+0.05 2013-07-28
+ - Remove russian language from Build.PL
+
+0.04 2013-07-28
+ - Add link to Makefile.PL git repository 
+   https://github.com/mishin/perldoc-ru.git 
+
+0.03 2013-07-28
+ - Move to Build.PL
+   http://blogs.perl.org/users/chorny/2011/07/how-to-get-rid-of-withoutworl
+   dwriteables.html
+
+0.02 2013-07-27
+ - Added  perlcheat.pod, perlnewmod.pod
+
+0.01 2013-07-02
+ - Initial release   
+ - Anatoliy Sharifullin agreed that i can use already translated code from
+   https://github.com/sharifulin/pod2-ru/blob/master/RU.pm
+
