@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlexperiment - A listing of experimental features in Perl
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This document lists the current and past experimental features in the perl
 core. Although all of these are documented with their appropriate topics,

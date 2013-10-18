@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perldata - Perl data types
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 =head2 Variable names
 X<variable, name> X<variable name> X<data type> X<type>
@@ -1006,7 +1006,7 @@ have the advantage of not hiding different types of the same name
 during the local().  See the bottom of L<perlfunc/open> for an
 example.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 See L<perlvar> for a description of Perl's built-in variables and
 a discussion of legal variable names.  See L<perlref>, L<perlsub>,

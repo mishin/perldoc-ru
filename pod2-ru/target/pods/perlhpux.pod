@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you see.
 It is written in the POD format (see pod/perlpod.pod) which is specially
 designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlhpux - Perl version 5 on Hewlett-Packard Unix (HP-UX) systems
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes various features of HP's Unix operating system
 (HP-UX) that will affect how Perl version 5 (hereafter just Perl) is
@@ -671,7 +671,7 @@ break utime() so that over NFS the timestamps do not get changed
 (on local filesystems utime() still works). This has probably been
 fixed on your system by now.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 H.Merijn Brand <h.m.brand@xs4all.nl>
 Jeff Okamoto <okamoto@corp.hp.com>

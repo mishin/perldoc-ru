@@ -1,10 +1,10 @@
 =encoding utf8
 
-=head1 Имя
+=head1 NAME
 
 perlthrtut - Tutorial on threads in Perl
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This tutorial describes the use of Perl interpreter threads (sometimes
 referred to as I<ithreads>).  In this
@@ -1075,7 +1075,7 @@ A complete thread tutorial could fill a book (and has, many times),
 but with what we've covered in this introduction, you should be well
 on your way to becoming a threaded Perl expert.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 Annotated POD for L<threads>:
 L<http://annocpan.org/?mode=search&field=Module&name=threads>
@@ -1156,7 +1156,7 @@ Pritikin, and Alan Burlison, for their help in reality-checking and
 polishing this article.  Big thanks to Tom Christiansen for his rewrite
 of the prime number generator.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Dan Sugalski E<lt>dan@sidhe.org<gt>
 

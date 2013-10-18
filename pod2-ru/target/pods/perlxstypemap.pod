@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlxstypemap - Perl XS C/Perl type mapping
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 The more you think about interfacing between two languages, the more
 you'll realize that the majority of programmer effort has to go into

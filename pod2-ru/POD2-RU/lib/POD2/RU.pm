@@ -161,7 +161,7 @@ C<< perldoc -f function >> использует возвращаемое зна�
 
 =item * Анатолий Шарифулин (Tech Lead), C< sharifulin + sharifulin at gmail.com >
 
-=item * Николай Мишин (Language Lead), C< mishin + pod2ru at gmail.com, mi at ya.ru >
+=item * Николай Мишин (Language Lead), C< mishin + pod2ru at gmail.com, mi at ya.ru, mishin at cpan.org >
 
 =item * Антон Николаев (Language), C< me at lelf.lu >
 
@@ -174,6 +174,8 @@ C<< perldoc -f function >> использует возвращаемое зна�
 =item * Евгений Баранов (Language), C< Baranov >
 
 =item * Динар Жамалиев (Language), C< zhdinar >
+
+=item * Валерий Кравчук (Language), C< valera at openxs.kiev.ua >
 
 =back
 

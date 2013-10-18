@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perldiag - various Perl diagnostics
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 These messages are classified as follows (listed in increasing order of
 desperation):
@@ -2381,7 +2381,7 @@ L<perlsec> for more information.
 (F) You can't use system(), exec(), or a piped open in a setuid or
 setgid script if C<$ENV{PATH}> contains a directory that is writable by
 the world.  Also, the PATH must not contain any relative directory.
-См. L<perlsec>.
+See L<perlsec>.
 
 =item Insecure $ENV{%s} while running %s
 
@@ -2389,7 +2389,7 @@ the world.  Also, the PATH must not contain any relative directory.
 setgid script if any of C<$ENV{PATH}>, C<$ENV{IFS}>, C<$ENV{CDPATH}>,
 C<$ENV{ENV}>, C<$ENV{BASH_ENV}> or C<$ENV{TERM}> are derived from data
 supplied (or potentially supplied) by the user.  The script must set
-the path to a known value, using trustworthy data.  См. L<perlsec>.
+the path to a known value, using trustworthy data.  See L<perlsec>.
 
 =item Insecure user-defined property %s
 
@@ -3189,7 +3189,7 @@ See L<mro>.
 (F) Certain operations are deemed to be too insecure for a setuid or
 setgid script to even be allowed to attempt.  Generally speaking there
 will be another way to do what you want that is, if not secure, at least
-securable.  См. L<perlsec>.
+securable.  See L<perlsec>.
 
 =item No code specified for -%c
 
@@ -6076,7 +6076,7 @@ See the explanation under L<perlvar/$_>.
 (W taint, deprecated) You have supplied C<system()> or C<exec()> with multiple
 arguments and at least one of them is tainted.  This used to be allowed
 but will become a fatal error in a future version of perl.  Untaint your
-arguments.  См. L<perlsec>.
+arguments.  See L<perlsec>.
 
 =item Use of uninitialized value%s
 
@@ -6355,7 +6355,7 @@ Something Very Wrong.
 
 =back
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<warnings>, L<perllexwarn>, L<diagnostics>.
 

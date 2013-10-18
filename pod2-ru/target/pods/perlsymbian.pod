@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you see.
 It is written in the POD format (see pod/perlpod.pod) which is specially
 designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlsymbian - Perl version 5 on Symbian OS
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes various features of the Symbian operating
 system that will affect how Perl version 5 (hereafter just Perl)
@@ -325,7 +325,7 @@ names are trademarks or registered trademarks of Nokia.  Other product
 and company names mentioned herein may be trademarks or trade names of
 their respective owners.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Jarkko Hietaniemi
 

@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see. It is written in the POD format (see pod/perlpod.pod) which is
 specially designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlvos - Perl for Stratus OpenVOS
 
-=head1 СИНТАКСИС
+=head1 SYNOPSIS
 
 This file contains notes for building perl on the Stratus OpenVOS
 operating system.  Perl is a scripting or macro language that is
@@ -110,7 +110,7 @@ If you want a supported version of perl for OpenVOS, purchase the
 OpenVOS GNU Tools product from Stratus Technologies, along with a
 support contract (or from anyone else who will sell you support).
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Paul Green (Paul.Green@stratus.com)
 

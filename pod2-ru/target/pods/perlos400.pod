@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you see.
 It is written in the POD format (see pod/perlpod.pod) which is specially
 designed to be readable as is.
 
-=head1 –ò–º—è
+=head1 NAME
 
 perlos400 - Perl version 5 on OS/400
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This document describes various features of IBM's OS/400 operating
 system that will affect how Perl version 5 (hereafter just Perl) is

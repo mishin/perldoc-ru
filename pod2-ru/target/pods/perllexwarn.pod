@@ -3,7 +3,7 @@ X<warning, lexical> X<warnings> X<warning>
 
 perllexwarn - Perl Lexical Warnings
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 The C<use warnings> pragma enables to control precisely what warnings are
 to be enabled in which parts of a Perl program. It's a more flexible
@@ -539,10 +539,10 @@ warnings::register like this:
 
     warnings::warnif('MyModule::format', '...');
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<warnings>, L<perldiag>.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Paul Marquess

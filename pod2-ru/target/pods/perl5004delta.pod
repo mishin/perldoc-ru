@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perl5004delta - what's new for perl5.004
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes differences between the 5.003 release (as
 documented in I<Programming Perl>, second edition--the Camel Book) and
@@ -1578,7 +1578,7 @@ in F<README.os2>.
 
 =back
 
-=head1 ОШИБКИ
+=head1 BUGS
 
 If you find what you think is a bug, you might check the headers of
 recently posted articles in the comp.lang.perl.misc newsgroup.
@@ -1591,7 +1591,7 @@ to a tiny but sufficient test case.  Your bug report, along with the
 output of C<perl -V>, will be sent off to <F<perlbug@perl.com>> to be
 analysed by the Perl porting team.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 The F<Changes> file for exhaustive details on what changed.
 

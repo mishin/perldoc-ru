@@ -1,11 +1,11 @@
 
 =encoding utf8
 
-=head1 –ò–º—è
+=head1 NAME
 
 perlglossary - Perl Glossary
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 A glossary of terms (technical and otherwise) used in the Perl
 documentation, derived from the Glossary of I<Programming

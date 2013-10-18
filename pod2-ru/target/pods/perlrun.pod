@@ -1,114 +1,173 @@
-=encoding utf8
+=head1 NAME
 
-=head1 Имя
+perlrun - how to execute the Perl interpreter
 
-perlrun - как запустить интерпретатор Perl
-
-=head1 СИНТАКСИС
+=head1 SYNOPSIS
 
 B<perl>	S<[ B<-sTtuUWX> ]>
 	S<[ B<-hv> ] [ B<-V>[:I<configvar>] ]>
-	S<[ B<-cw> ] [ B<-d>[B<t>][:I<отладчик>] ] [ B<-D>[I<кол-во/список>] ]>
-	S<[ B<-pna> ] [ B<-F>I<шаблон> ] [ B<-l>[I<восьмеричный>] ] [ B<-0>[I<восьмеричный/шестнадцатеричный>] ]>
-	S<[ B<-I>I<dir> ] [ B<-m>[B<->]I<модуль> ] [ B<-M>[B<->]I<'модуль...'> ] [ B<-f> ]>
-	S<[ B<-C [I<кол-во/список>] >]>
+	S<[ B<-cw> ] [ B<-d>[B<t>][:I<debugger>] ] [ B<-D>[I<number/list>] ]>
+	S<[ B<-pna> ] [ B<-F>I<pattern> ] [ B<-l>[I<octal>] ] [ B<-0>[I<octal/hexadecimal>] ]>
+	S<[ B<-I>I<dir> ] [ B<-m>[B<->]I<module> ] [ B<-M>[B<->]I<'module...'> ] [ B<-f> ]>
+	S<[ B<-C [I<number/list>] >]>
 	S<[ B<-S> ]>
 	S<[ B<-x>[I<dir>] ]>
-	S<[ B<-i>[I<расширение>] ]>
-	S<[ [B<-e>|B<-E>] I<'команда'> ] [ B<--> ] [ I<файл программы> ] [ I<аргумент> ]...>
+	S<[ B<-i>[I<extension>] ]>
+	S<[ [B<-e>|B<-E>] I<'command'> ] [ B<--> ] [ I<programfile> ] [ I<argument> ]...>
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
-Нормальный способ запуска Perl программы может быть таким или сделать файл его исполняемым, либо, передать имя исходного файла в качестве аргумента в командной строке.  (Интерактивная среда Perl также возможна - см. L<perldebug> для деталей о том, как это сделать) После запуска Perl ищет вашу программу в одном из следующих мест:
+The normal way to run a Perl program is by making it directly
+executable, or else by passing the name of the source file as an
+argument on the command line.  (An interactive Perl environment
+is also possible--see L<perldebug> for details on how to do that.)
+Upon startup, Perl looks for your program in one of the following
+places:
 
 =over 4
 
 =item 1.
 
-Выполняется строка (однострочник), если в командной строке указаны параметры B<-e> или B<-E>.
+Specified line by line via B<-e> or B<-E> switches on the command line.
 
 =item 2.
 
-Сценарий находится в файле, указанном в первом имени файла в командной строке.
-(Заметим, что системы, поддерживающие нотацию C<#!> вызывают интерпретатор, используя путь, стоящий за  C<#!>. См. L<Location of Perl>.)
+Contained in the file specified by the first filename on the command line.
+(Note that systems supporting the C<#!> notation invoke interpreters this
+way. See L<Location of Perl>.)
 
 =item 3.
 
-Принятый в неявно через стандартный ввод.  Это работает только тогда, когда в качестве аргумента нет имени файла - для передачи аргументов на STDIN (стандартный ввод/input) чтения программы необходимо явно указать "-" для имени программы.
+Passed in implicitly via standard input.  This works only if there are
+no filename arguments--to pass arguments to a STDIN-read program you
+must explicitly specify a "-" for the program name.
 
 =back
 
-С методами 2 и 3, Perl начинает анализировать входной файла с самого начала, если вы не указали опцию B<-x>, и в этом случае производится проверка первой строки, которая начинается с C<#!> и содержит слово " Perl ", и начинает там вместо этого.  Это полезно для запуска программы включенной в большое сообщение.  (В этом случае вы можете обозначить конец программы с помощью маркера C<__END__.)
+With methods 2 and 3, Perl starts parsing the input file from the
+beginning, unless you've specified a B<-x> switch, in which case it
+scans for the first line starting with C<#!> and containing the word
+"perl", and starts there instead.  This is useful for running a program
+embedded in a larger message.  (In this case you would indicate the end
+of the program using the C<__END__> token.)
 
-Строка C<#!> всегда рассматривается для поиска переключателей, как строка, которая в настоящее время анализируется.  Таким образом, если вы на машине, которая позволяет только один аргумент на строке C<#!>, или еще хуже, даже не признает C<#!> линии, вы все равно можете получить согласованное поведение переключателя независимо от того, как Perl был вызван, даже если  B<-x> был использован, чтобы найти начало программы.
+The C<#!> line is always examined for switches as the line is being
+parsed.  Thus, if you're on a machine that allows only one argument
+with the C<#!> line, or worse, doesn't even recognize the C<#!> line, you
+still can get consistent switch behaviour regardless of how Perl was
+invoked, even if B<-x> was used to find the beginning of the program.
 
-Потому что исторически некоторые операционные системы молча отрубили в ядре интерпретацию C<#!> строки после 32 символов, некоторые переключатели могут быть переданы в командной строке, а некоторые не могут, вы могли бы даже получить "-" без этого письма, если вы не будете осторожны.
-Вы, наверное, хотите, чтобы убедиться, что все ваши переключатели действуют до или после 32-символьной границы.  Большинство переключатели на самом деле не волнует, если они обработаны избыточно, но получение "-" вместо полных опций, может  привести к тому, что Perl будет попытаться выполнить скрипт со стандартного ввода, а не из вашей программы.  И частичный ключ B<-I> мог также вызвать странные результаты.
+Because historically some operating systems silently chopped off
+kernel interpretation of the C<#!> line after 32 characters, some
+switches may be passed in on the command line, and some may not;
+you could even get a "-" without its letter, if you're not careful.
+You probably want to make sure that all your switches fall either
+before or after that 32-character boundary.  Most switches don't
+actually care if they're processed redundantly, but getting a "-"
+instead of a complete switch could cause Perl to try to execute
+standard input instead of your program.  And a partial B<-I> switch
+could also cause odd results.
 
-Некоторым ключам не все равно будут ли они обрабатываться дважды, например комбинации  B<-l> и B<-0>.  Либо поставить все переключатели после 32-символьной границы (если применимо), или замените использование B<-0>I<digits> на C<BEGIN{ $/ = "\0digits"; }>.
+Some switches do care if they are processed twice, for instance
+combinations of B<-l> and B<-0>.  Either put all the switches after
+the 32-character boundary (if applicable), or replace the use of
+B<-0>I<digits> by C<BEGIN{ $/ = "\0digits"; }>.
 
-Разбор опции C<#!> начинается там, где в строку входит слово "Perl".
-Последовательности "-*" и "- " специально игнорируются, чтобы вы могли их использовать, если вам это нужно, скажем
+Parsing of the C<#!> switches starts wherever "perl" is mentioned in the line.
+The sequences "-*" and "- " are specifically ignored so that you could,
+if you were so inclined, say
 
     #!/bin/sh
     #! -*-perl-*-
     eval 'exec perl -x -wS $0 ${1+"$@"}'
         if 0;
 
-позволяя Perl увидеть ключ B<-p>.
+to let Perl see the B<-p> switch.
 
-Аналогичный трюк предполагает использование программы I<env> , если она у вас есть.
+A similar trick involves the I<env> program, if you have it.
 
     #!/usr/bin/env perl
 
-Приведенные выше примеры по использованию относительного пути к интерпретатору Perl, находят Perl в независимости от версии программы, которая встречается первой в пользовательских путях.  Если вы хотите конкретной версии Perl, скажем, perl5.14.1, вы должны поместить это прямо в путь на строке C<#!>.
+The examples above use a relative path to the perl interpreter,
+getting whatever version is first in the user's path.  If you want
+a specific version of Perl, say, perl5.14.1, you should place
+that directly in the C<#!> line's path.
 
-Если строка C<#!> не содержит слово "perl", ни слово "indir" программа, написанная послеC<#!> будет выполняться вместо интерпретатора Perl.  Это немного странно, но это помогает людям на машинах, у которых нет C<#!>, потому что они могут сказать, что их программа SHELL есть F</usr/bin/perl> И Perl затем отправляет программу для корректной обработки интерпретатором.
+If the C<#!> line does not contain the word "perl" nor the word "indir"
+the program named after the C<#!> is executed instead of the Perl
+interpreter.  This is slightly bizarre, but it helps people on machines
+that don't do C<#!>, because they can tell a program that their SHELL is
+F</usr/bin/perl>, and Perl will then dispatch the program to the correct
+interpreter for them.
 
-После размещения вашей программы, Perl компилирует внешнюю (по отношению к Perl) программу во внутреннюю форму.  Если есть какие-либо ошибки компиляции, программы не пытается выполниться.  (Это не похоже на типичный сценарий оболочки, который может выполнить часть сценария, прежде чем найдет синтаксические ошибки.)
+After locating your program, Perl compiles the entire program to an
+internal form.  If there are any compilation errors, execution of the
+program is not attempted.  (This is unlike the typical shell script,
+which might run part-way through before finding a syntax error.)
 
-Если программа синтаксически правильна, она выполняется.  Если программа работает до конца, не вызвая операторы exit() или die(), неявный C<exit(0)> предусмотрен для указания успешного завершения.
+If the program is syntactically correct, it is executed.  If the program
+runs off the end without hitting an exit() or die() operator, an implicit
+C<exit(0)> is provided to indicate successful completion.
 
-=head2 #! и ссылка на не-Unix системах X<hashbang> X<#!>
+=head2 #! and quoting on non-Unix systems
+X<hashbang> X<#!>
 
-Юниксовая C<#!> техника может быть смоделирована на других системах:
+Unix's C<#!> technique can be simulated on other systems:
 
 =over 4
 
 =item OS/2
 
-Устанавливает
+Put
 
     extproc perl -S -your_switches
 
-в качестве первой линии в C<*.cmd> файле (B<-S> в связи с ошибкой в ​​cmd.exe по регуляции `extproc').
+as the first line in C<*.cmd> file (B<-S> due to a bug in cmd.exe's
+`extproc' handling).
 
 =item MS-DOS
 
-Создайте пакетный файл для запуска вашей программы, и кодифицируйте его в C<ALTERNATE_SHEBANG> (См. F<dosish.h> в файле в дистрибутива для получения дополнительной информации).
+Create a batch file to run your program, and codify it in
+C<ALTERNATE_SHEBANG> (see the F<dosish.h> file in the source
+distribution for more information).
 
 =item Win95/NT
 
-Win95/NT установки, когда используется ActiveState Perl установщик он изменяет реестр, чтобы связать расширение F<.pl>  с интерпретатором Perl.  Если вы установили Perl с помощью других средств (в том числе билд из источников), возможно, придется внести изменения в реестр самостоятельно.  Заметим, что это означает, что вы больше не можете отличить исполняемые программы Perl и Perl файл библиотеки.
+The Win95/NT installation, when using the ActiveState installer for Perl,
+will modify the Registry to associate the F<.pl> extension with the perl
+interpreter.  If you install Perl by other means (including building from
+the sources), you may have to modify the Registry yourself.  Note that
+this means you can no longer tell the difference between an executable
+Perl program and a Perl library file.
 
 =item VMS
 
-Устанавливает
+Put
 
  $ perl -mysw 'f$env("procedure")' 'p1' 'p2' 'p3' 'p4' 'p5' 'p6' 'p7' 'p8' !
  $ exit++ + ++$status != 0 and $exit = $status = undef;
 
-в верхней части вашей программы, где B<-mysw> любые параметры командной строки, которые вы хотите передать Perl.  Теперь вы можете вызвать программу непосредственно, говоря C<perl program> Или в виде DCL (Digital Command Language цифровой командный язык) процедуры, говоря, C<@program> (или косвенно через F<DCL$PATH> только с помощью название программы).
+at the top of your program, where B<-mysw> are any command line switches you
+want to pass to Perl.  You can now invoke the program directly, by saying
+C<perl program>, or as a DCL procedure, by saying C<@program> (or implicitly
+via F<DCL$PATH> by just using the name of the program).
 
-Это заклинание достаточно трудно вспомнить, но Perl отобразит его для вас, если вы говорите,  C<perl "-V:startperl">.
+This incantation is a bit much to remember, but Perl will display it for
+you if you say C<perl "-V:startperl">.
 
 =back
 
-Командный интерпретаторы на не-Unix системах имеют отличные  представления о том, как делать кавычки, чем в Unix shells.  Вам нужно будет узнать специальные символы при запуске интерпретатора из командной строки (C<*>, C<\> and C<"> являются общими) и как защитить пробелы и эти символы для запуска однострочников (см.  L<-e|/-e commandline> ниже).
+Command-interpreters on non-Unix systems have rather different ideas
+on quoting than Unix shells.  You'll need to learn the special
+characters in your command-interpreter (C<*>, C<\> and C<"> are
+common) and how to protect whitespace and these characters to run
+one-liners (see L<-e|/-e commandline> below).
 
-На некоторых системах, вы, возможно, придется изменить одинарные кавычки на двойные, то, что вы I<не> должны делать на Unix или Plan 9 системах.  Вы можете также изменить одну % на a %%.
+On some systems, you may have to change single-quotes to double ones,
+which you must I<not> do on Unix or Plan 9 systems.  You might also
+have to change a single % to a %%.
 
-Например:
+For example:
 
     # Unix
     perl -e 'print "Hello world\n"'
@@ -119,274 +178,377 @@ Win95/NT установки, когда используется ActiveState Per
     # VMS
     perl -e "print ""Hello world\n"""
 
-Проблема в том, что ничто из этого не является надежным: он зависит от команды, и вполне возможно не будет работать.  Если в I<4DOS> была командная оболочка, это, вероятно работает лучше:
+The problem is that none of this is reliable: it depends on the
+command and it is entirely possible neither works.  If I<4DOS> were
+the command shell, this would probably work better:
 
     perl -e "print <Ctrl-x>"Hello world\n<Ctrl-x>""
 
-B<CMD.EXE> в Windows NT поскользнулся на многой стандартной функциональности Unix, когда никто не смотрел, но попробуйте найти документацию на ее правила экранирования.
+B<CMD.EXE> in Windows NT slipped a lot of standard Unix functionality in
+when nobody was looking, but just try to find documentation for its
+quoting rules.
 
-Здесь нет общего решения на все это.  Это просто беспорядок.
+There is no general solution to all of this.  It's just a mess.
 
-=head2 Расположение Perl
+=head2 Location of Perl
 X<perl, location of interpreter>
 
-Это может показаться очевидным сказать, но Perl полезен только тогда, когда пользователи могут легко найти его.  Когда это возможно, это хорошо как для F</usr/bin/perl> и F</usr/local/bin/perl> быть символическими ссылками на фактические двоичные файлы.  Если это не может быть сделано, системным администраторам настоятельно рекомендуется поставить (символические ссылки) на Perl и сопутствующие утилиты в каталог, который обычно встречаются  в пользовательском PATH (пути), или в некоторых других очевидных и удобных местах.
+It may seem obvious to say, but Perl is useful only when users can
+easily find it.  When possible, it's good for both F</usr/bin/perl>
+and F</usr/local/bin/perl> to be symlinks to the actual binary.  If
+that can't be done, system administrators are strongly encouraged
+to put (symlinks to) perl and its accompanying utilities into a
+directory typically found along a user's PATH, or in some other
+obvious and convenient place.
 
-В этой документации, C<#!/usr/bin/perl> на первой строке программы будет стоять какой бы метод не работал в вашей системе.  Вам рекомендуется использовать определенный путь, если вы заботитесь о конкретной версии интерпретатора Perl.
+In this documentation, C<#!/usr/bin/perl> on the first line of the program
+will stand in for whatever method works on your system.  You are
+advised to use a specific path if you care about a specific version.
 
     #!/usr/local/bin/perl5.14
 
-или если вы просто хотите запустить на минимальной версии, разместить подобное заявление в верхней части вашей программы:
+or if you just want to be running at least version, place a statement
+like this at the top of your program:
 
     use 5.014;
 
-=head2 Опции команды
+=head2 Command Switches
 X<perl, command switches> X<command switches>
 
-Как и во всех стандартных командах, односимвольный переключатель может быть положен в кластер со следующимо переключателем, если таковые имеются.
+As with all standard commands, a single-character switch may be
+clustered with the following switch, if any.
 
-    #!/usr/bin/perl -spi.orig	# то же самое -s -p -i.orig
+    #!/usr/bin/perl -spi.orig	# same as -s -p -i.orig
 
-Переключатели (опции Switches) включают в себя:
+Switches include:
 
 =over 5
 
-=item B<-0>[I<восьмеричный/шестнадцатеричный>]
+=item B<-0>[I<octal/hexadecimal>]
 X<-0> X<$/>
 
-указывается разделитель входных записей ((C<$/>) как восьмеричное или шестнадцатеричное число.  Если нет никаких цифр, нулевой символ является разделителем.  Другие переключатели могут предшествовать или следовать за цифрами.  Например, если у вас есть версии I<find> , которая может печатать имена файлов, завершающихся нулевым символом, то можно сказать следующее:
+specifies the input record separator (C<$/>) as an octal or
+hexadecimal number.  If there are no digits, the null character is the
+separator.  Other switches may precede or follow the digits.  For
+example, if you have a version of I<find> which can print filenames
+terminated by the null character, you can say this:
 
     find . -name '*.orig' -print0 | perl -n0e unlink
 
-Специальное значение 00 приводят Perl захватывать файлы по параграфам (slurp files in paragraph mode).
-Любое значение 0400 или выше, будет вызывать Perl захватывать файлы целиком, но по соглашению значение 0777 является тем, которое обычно используется для этой цели.
+The special value 00 will cause Perl to slurp files in paragraph mode.
+Any value 0400 or above will cause Perl to slurp files whole, but by convention
+the value 0777 is the one normally used for this purpose.
 
-Вы также можете указать символ-разделитель с помощью шестнадцатеричного формата: B<-0xI<HHH...>>, Где C<I<H>> действительные шестнадцатеричные цифры.  В отличие от восьмеричной формы, это может быть использовано для указания любого символ в Юникоде, даже тех, которые идут за 0xFF.  Так что, если вы мне  I<на самом> деле хотите разделитель записи 0777, указажите его как B<-0x1FF>.  (Это означает, что вы не можете использовать опцию B<-x> с именем каталога, который состоит из шестнадцатеричных цифр, иначе Perl подумает, что вы указали шестнадцатеричное число B<-0>.)
+You can also specify the separator character using hexadecimal notation:
+B<-0xI<HHH...>>, where the C<I<H>> are valid hexadecimal digits.  Unlike
+the octal form, this one may be used to specify any Unicode character, even
+those beyond 0xFF.  So if you I<really> want a record separator of 0777,
+specify it as B<-0x1FF>.  (This means that you cannot use the B<-x> option
+with a directory name that consists of hexadecimal digits, or else Perl
+will think you have specified a hex number to B<-0>.)
 
 =item B<-a>
 X<-a> X<autosplit>
 
-включает AutoSplit режим (режим авторазбиения), когда используется B<-n> или B<-p>.  Неявная команда разбиения в массив @F делается, как первая вещь внутри неявного цикла, который создается, если указаны опции B<-n> или B<-p>.
+turns on autosplit mode when used with a B<-n> or B<-p>.  An implicit
+split command to the @F array is done as the first thing inside the
+implicit while loop produced by the B<-n> or B<-p>.
 
     perl -ane 'print pop(@F), "\n";'
 
-эквивалентна
+is equivalent to
 
     while (<>) {
 	@F = split(' ');
 	print pop(@F), "\n";
     }
 
-Альтернативные разделители могут быть заданы с помощью B<-F>.
+An alternate delimiter may be specified using B<-F>.
 
 =item B<-C [I<number/list>]>
 X<-C>
 
-Флаг B<-C> указывает на некоторые из функций Perl Unicode.
+The B<-C> flag controls some of the Perl Unicode features.
 
-По состоянию на 5.8.1,  B<-C> может следовать либо номер или список параметров, букв.  Буквы, их числовые значения и эффекты являются следующие перечисление букв равно суммированию чисел.
+As of 5.8.1, the B<-C> can be followed either by a number or a list
+of option letters.  The letters, their numeric values, and effects
+are as follows; listing the letters is equal to summing the numbers.
 
-    I     1   STDIN считается в UTF-8
-    O     2   STDOUT будет в UTF-8
-    E     4   STDERR будет в UTF-8
+    I     1   STDIN is assumed to be in UTF-8
+    O     2   STDOUT will be in UTF-8
+    E     4   STDERR will be in UTF-8
     S     7   I + O + E
-    i     8   UTF-8 представляет собой слой умолчанию PerlIO для потоков ввода
-    o    16   UTF-8 представляет собой слой PerlIO умолчанию для потоков вывода
+    i     8   UTF-8 is the default PerlIO layer for input streams
+    o    16   UTF-8 is the default PerlIO layer for output streams
     D    24   i + o
-    A    32    элементы @ARGV ожидаются, как закодированные строки
-              в UTF-8
-    L    64   обычно "IOEioA" являются безусловными, L являются безусловными (normally the "IOEioA" are unconditional, the L makes)
-              они зависят от локальных переменных среды
-              (LC_ALL, LC_TYPE, и LANG, в следующем порядке
-              убывания приоритета) - если переменные указывают
-              UTF-8, потом выбирается "IOEioA" в действительности (UTF-8, then the selected "IOEioA" are in effect)
-    a   256   Установите ${^UTF8CACHE} в -1, для запуска UTF-8 кэширования
-              код в режиме отладки.
+    A    32   the @ARGV elements are expected to be strings encoded
+              in UTF-8
+    L    64   normally the "IOEioA" are unconditional, the L makes
+              them conditional on the locale environment variables
+              (the LC_ALL, LC_TYPE, and LANG, in the order of
+              decreasing precedence) -- if the variables indicate
+              UTF-8, then the selected "IOEioA" are in effect
+    a   256   Set ${^UTF8CACHE} to -1, to run the UTF-8 caching
+              code in debugging mode.
 
-=для документирования_поддокументов (documenting_the_underdocumented)
+=for documenting_the_underdocumented
 perl.h gives W/128 as PERL_UNICODE_WIDESYSCALLS "/* for Sarathy */"
 
-=для будущего (todo)
-perltodo упоминает Unicode в %ENV и именах файлов. Я думаю, что это будут варианты e и f (или F).
+=for todo
+perltodo mentions Unicode in %ENV and filenames. I guess that these will be
+options e and f (or F).
 
-Например, B<-COE> и B<-C6> будут оба переключать UTF-8 режим на обоих STDOUT и STDERR.  Повторение букв избыточно, не суммируются, не переключения.
+For example, B<-COE> and B<-C6> will both turn on UTF-8-ness on both
+STDOUT and STDERR.  Repeating letters is just redundant, not cumulative
+nor toggling.
 
-Опция C<io> означает, что любой последующий open() (или аналогичная операция ввода/вывода) в текущей области файла будет иметь C<:utf8> PerlIO слой неявно применяется к ним, другими словами, UTF-8, как ожидается, из любого входного потока и UTF-8 производится в любой выходной поток.  Это просто по умолчанию, с явными слоями (explicit layers) в open() и с binmode () можно управлять потоками, как обычно.
+The C<io> options mean that any subsequent open() (or similar I/O
+operations) in the current file scope will have the C<:utf8> PerlIO layer
+implicitly applied to them, in other words, UTF-8 is expected from any
+input stream, and UTF-8 is produced to any output stream.  This is just
+the default, with explicit layers in open() and with binmode() one can
+manipulate streams as usual.
 
-B<-C> сама по себе (не следует любое число или список опций), или пустая строка C<""> для C<PERL_UNICODE> переменной окружения, имеет тот же эффект, как B<-CSDL>.  Другими словами, стандарт ввода/вывода управляет умолчанием C<open()> слоя и будет переведет в UTF-8 I<но> только если переменные окружения указывают на локаль(locale) UTF-8.  Такое поведение следует I<неясно> (и проблематично) UTF-8 поведение Perl 5.8.0.
-((См. L<perl581delta/UTF-8 больше не является поведением по умолчанию под локалями UTF-8>.)
+B<-C> on its own (not followed by any number or option list), or the
+empty string C<""> for the C<PERL_UNICODE> environment variable, has the
+same effect as B<-CSDL>.  In other words, the standard I/O handles and
+the default C<open()> layer are UTF-8-fied I<but> only if the locale
+environment variables indicate a UTF-8 locale.  This behaviour follows
+the I<implicit> (and problematic) UTF-8 behaviour of Perl 5.8.0.
+(See L<perl581delta/UTF-8 no longer default under UTF-8 locales>.)
 
-Вы можете использовать B<-C0> (или C<"0"> для C<PERL_UNICODE>, чтобы явно отключить все выше Unicode особенности (features).
+You can use B<-C0> (or C<"0"> for C<PERL_UNICODE>) to explicitly
+disable all the above Unicode features.
 
-Волшебная переменная только для чтения C<${^UNICODE}> отражает числовое значение данного параметра.  Эта переменная устанавливается во время запуска Perl и после этого она доступна только  для чтения.  Если вы хотите эффекта во время выполнения (runtime effects), используйте трёхаргументный open() (see L<perlfunc/open>), двухаргументный binmode () (см. L<perlfunc/binmode> ) И прагму (pragma) C<open>  (см. L<open>).
+The read-only magic variable C<${^UNICODE}> reflects the numeric value
+of this setting.  This variable is set during Perl startup and is
+thereafter read-only.  If you want runtime effects, use the three-arg
+open() (see L<perlfunc/open>), the two-arg binmode() (see L<perlfunc/binmode>),
+and the C<open> pragma (see L<open>).
 
-(В Perl раньше, чем 5.8.1 B<-C> переключатель был только Win32-переключатель, который включен использование юникодовых "широкий системный вызов" Win32 API.
-Эта функция практически не используется, однако, и параметр командной строки, поэтому был "отправлен в ведро" ( "recycled").)
+(In Perls earlier than 5.8.1 the B<-C> switch was a Win32-only switch
+that enabled the use of Unicode-aware "wide system call" Win32 APIs.
+This feature was practically unused, however, and the command line
+switch was therefore "recycled".)
 
-B <Note:> Начинаяс perl 5.10.1, если опция B<-C> используется на строке C<#!>, то он должен быть указан в командной строке, а, так как стандартные потоки уже настроены в этот момент исполнения интерпретатора Perl.
-Вы также можете использовать binmode(), чтобы установить кодировку потока ввода/вывода.
+B<Note:> Since perl 5.10.1, if the B<-C> option is used on the C<#!> line,
+it must be specified on the command line as well, since the standard streams
+are already set up at this point in the execution of the perl interpreter.
+You can also use binmode() to set the encoding of an I/O stream.
 
 =item B<-c>
 X<-c>
 
-вызывает Perl для проверки синтаксиса программы и последующего выхода без выполнения.  На самом деле, эта опция I<будет> выполнять и C<BEGIN>, C<UNITCHECK> или С<CHECK> блоки и любые C<use> объявления: они рассматриваются как происходящие за пределами выполнения вашей программы.  C<INIT> и C<END> блоки, однаку, будут пропущены.
+causes Perl to check the syntax of the program and then exit without
+executing it.  Actually, it I<will> execute and C<BEGIN>, C<UNITCHECK>,
+or C<CHECK> blocks and any C<use> statements: these are considered as
+occurring outside the execution of your program.  C<INIT> and C<END>
+blocks, however, will be skipped.
 
 =item B<-d>
 X<-d> X<-dt>
 
 =item B<-dt>
 
-запускает программу под управлением отладчика Perl.  См. L<perldebug>.
-Если B<t> указан, то он указывает отладчику, что поток(threads)  будет использоваться в коде, который отлаживается.
+runs the program under the Perl debugger.  See L<perldebug>.
+If B<t> is specified, it indicates to the debugger that threads
+will be used in the code being debugged.
 
 =item B<-d:>I<MOD[=bar,baz]>
 X<-d> X<-dt>
 
 =item B<-dt:>I<MOD[=bar,baz]>
 
-запускает программу под контроль отладки, профилирования, или отслеживание модуля, устанавливаемого как C<Devel::I<MOD>>. Например, B<-d:DProf> выполняет программу, используя C<Devel::DProf> профайлер (profiler).  Как и в случае B<-M> флага, параметры могут быть переданы пакету C<Devel::I<MOD>>, в котором они будут получены и интерпретированы с помощью процедуры C<Devel::I<MOD>::import>.  Опять же, как B<-M>,
-используйте -B<-d:-I<MOD>> для вызова C<Devel::I<MOD>::unimport> вместо импорта.  Разделенный запятыми список опций должен следовать за символом C<=>.  Если B<t> указан, то он указывает, что отладчик темы будет использоваться в коде отладки.  См. L<perldebug>.
+runs the program under the control of a debugging, profiling, or tracing
+module installed as C<Devel::I<MOD>>. E.g., B<-d:DProf> executes the
+program using the C<Devel::DProf> profiler.  As with the B<-M> flag, options
+may be passed to the C<Devel::I<MOD>> package where they will be received
+and interpreted by the C<Devel::I<MOD>::import> routine.  Again, like B<-M>,
+use -B<-d:-I<MOD>> to call C<Devel::I<MOD>::unimport> instead of import.  The
+comma-separated list of options must follow a C<=> character.  If B<t> is
+specified, it indicates to the debugger that threads will be used in the
+code being debugged.  See L<perldebug>.
 
 =item B<-D>I<letters>
 X<-D> X<DEBUGGING> X<-DDEBUGGING>
 
 =item B<-D>I<number>
 
-устанавливает флаги отладки.  Чтобы посмотреть, как он выполняет свою программу, используйте B<-Dtls>.  (Это работает только тогда, когда отладка скомпилирована в Perl.) Еще одно приятное значение B<-Dx>, в котором перечислены списки вышего скомпилированного синтаксического дерева.  И B<-Dr> отображает скомпилированные регулярные выражения; формат вывода объясняется в L<perldebguts> .
+sets debugging flags.  To watch how it executes your program, use
+B<-Dtls>.  (This works only if debugging is compiled into your
+Perl.)  Another nice value is B<-Dx>, which lists your compiled
+syntax tree.  And B<-Dr> displays compiled regular expressions;
+the format of the output is explained in L<perldebguts>.
 
-В качестве альтернативы указажите число вместо списка букв (например, B<-D14> эквивалентен B<-Dtls>)
+As an alternative, specify a number instead of list of letters (e.g.,
+B<-D14> is equivalent to B<-Dtls>):
 
-        1  p  Разбор на токены или слова и парсинг (Tokenizing and parsing) (с v, отображает стек разборk)
-        2  s  Снимок (snapshots) стека (с v, отображает все стеки)
-        4  l  Контекст (цикла) стек обработки
-        8  t  Трассирует выполнение
-       16  o  Метод и разрешения перегрузки
-       32  c  Строковые/числовые преобразования
-       64  P  Печатает профилирующую информацию, исходный файл входного состояния 
-      128  m  Память и распределение SV (Scalar Value) скалярных переменных
-      256  f  Формат обработки
-      512  r  Разбор регулярных выражений и их исполнение
-     1024  x  Дамп синтаксического дерева (Syntax tree dump)
-     2048  u  Проверки на разрушение 
-     4096  U  Неофициальный, Пользовательский хак (hacking)(зарезервирован для частного,
-              неизданного использования)
-     8192  H  Хэш дамп (Hash dump) -- узурпирует/захватывает (usurps) values()
-    16384  X  Блокнот распределения (Scratchpad allocation)
-    32768  D  Очистка (Cleaning up)
-    65536  S  Распределение оперативной памяти (Op slab allocation http://ru.wikipedia.org/wiki/Slab)
-   131072  T  Разделение на слова/токены (Tokenizing)
-   262144  R  Включая счетчики ссылок дампинговых переменных (например, при
-              использование -Ds)
-   524288  J  показывает s,t,P-отладка (не выпрыгивать выше) на коды операций в оперативной памяти (show s,t,P-debug (don't Jump over) on opcodes withi)
+        1  p  Tokenizing and parsing (with v, displays parse stack)
+        2  s  Stack snapshots (with v, displays all stacks)
+        4  l  Context (loop) stack processing
+        8  t  Trace execution
+       16  o  Method and overloading resolution
+       32  c  String/numeric conversions
+       64  P  Print profiling info, source file input state
+      128  m  Memory and SV allocation
+      256  f  Format processing
+      512  r  Regular expression parsing and execution
+     1024  x  Syntax tree dump
+     2048  u  Tainting checks
+     4096  U  Unofficial, User hacking (reserved for private,
+              unreleased use)
+     8192  H  Hash dump -- usurps values()
+    16384  X  Scratchpad allocation
+    32768  D  Cleaning up
+    65536  S  Op slab allocation
+   131072  T  Tokenizing
+   262144  R  Include reference counts of dumped variables (eg when
+              using -Ds)
+   524288  J  show s,t,P-debug (don't Jump over) on opcodes within
               package DB
-  1048576  v  Verbose (многословный): использовать в сочетании с другими флагами
-  2097152  C  Копирование при записи (Copy On Write)
-  4194304  A  Проверка согласованности внутренних структур
-  8388608  q  quiet - в настоящее время только подавляет "Запуск" ("EXECUTING")
+  1048576  v  Verbose: use in conjunction with other flags
+  2097152  C  Copy On Write
+  4194304  A  Consistency checks on internal structures
+  8388608  q  quiet - currently only suppresses the "EXECUTING"
               message
- 16777216  M  отслеживает умное сопоставление (trace smart match resolution)
- 33554432  B  дамп подпрограммы определения, в том числе специальные блоки (dump suBroutine definitions, including special Block)
-              like НАЧАЛО
+ 16777216  M  trace smart match resolution
+ 33554432  B  dump suBroutine definitions, including special Blocks
+              like BEGIN
 
-Все эти флаги требуют B<-DDEBUGGING> при компиляции исполняемого Perl (но см. C<:opd> в L<Devel::Peek> или L<re/'debug' mode> которые могут изменить это).
-См. F<INSTALL> файл в исходных файлах Perl'а, как это сделать.  Этот флаг устанавливается автоматически, если вы включите B<-g> опцию, когда C<Configure> спрашивает вас об оптимизаторе/отладчике флагов.
+All these flags require B<-DDEBUGGING> when you compile the Perl
+executable (but see C<:opd> in L<Devel::Peek> or L<re/'debug' mode>
+which may change this).
+See the F<INSTALL> file in the Perl source distribution
+for how to do this.  This flag is automatically set if you include B<-g>
+option when C<Configure> asks you about optimizer/debugger flags.
 
-Если вы просто пытаются получить печать из каждой строки кода Perl, как он выполняет, таким образом, что C<sh -x>  предоставляет для shell скриптов, вы не можете использовать Perl-вый B<-D> ключ.  Вместо того, чтобы сделать это
+If you're just trying to get a print out of each line of Perl code
+as it executes, the way that C<sh -x> provides for shell scripts,
+you can't use Perl's B<-D> switch.  Instead do this
 
-  # Если у вас есть утилита "env"
+  # If you have "env" utility
   env PERLDB_OPTS="NonStop=1 AutoTrace=1 frame=2" perl -dS program
 
-  # Синтаксис оболочки (Bourne shell syntax)
+  # Bourne shell syntax
   $ PERLDB_OPTS="NonStop=1 AutoTrace=1 frame=2" perl -dS program
 
-  # синтаксис csh
+  # csh syntax
   % (setenv PERLDB_OPTS "NonStop=1 AutoTrace=1 frame=2"; perl -dS program)
 
-См. L<perldebug> для деталей и вариаций.
+See L<perldebug> for details and variations.
 
 =item B<-e> I<commandline>
 X<-e>
 
-может быть использован для ввода одной строки программы.  Если B<-e> задано, Perl не будет искать имя файла в списке аргументов.  Несколько B<-e> команд может быть дано, чтобы построить многострочный сценарий.  Убедитесь в том, что вы используете точку с запятой там, где вы были использовали ее в нормальной программе.
+may be used to enter one line of program.  If B<-e> is given, Perl
+will not look for a filename in the argument list.  Multiple B<-e>
+commands may be given to build up a multi-line script.  Make sure
+to use semicolons where you would in a normal program.
 
 =item B<-E> I<commandline>
 X<-E>
 
-ведет себя так же, как B<-e>, за исключением того, что она неявно включает все дополнительные функции (в основном блоке компиляции, например say). См. L<feature>.
+behaves just like B<-e>, except that it implicitly enables all
+optional features (in the main compilation unit). See L<feature>.
 
 =item B<-f>
 X<-f> X<sitecustomize> X<sitecustomize.pl>
 
-Отключает выполнение F<$Config{sitelib}/sitecustomize.pl> при запуске.
+Disable executing F<$Config{sitelib}/sitecustomize.pl> at startup.
 
-Perl может быть построен так, что он по умолчанию будет пытаться выполнить F<$Config{sitelib}/sitecustomize.pl> при запуске (в блоке BEGIN).
-Это крючок, который позволяет системному администратору настраивать поведение Perl.
-Он может, например, использоваться для добавления записей в массив @INC, чтобы найти Perl модули в нестандартных местах.
+Perl can be built so that it by default will try to execute
+F<$Config{sitelib}/sitecustomize.pl> at startup (in a BEGIN block).
+This is a hook that allows the sysadmin to customize how Perl behaves.
+It can for instance be used to add entries to the @INC array to make Perl
+find modules in non-standard locations.
 
-Perl на самом деле вставляет следующий код:
+Perl actually inserts the following code:
 
     BEGIN {
         do { local $!; -f "$Config{sitelib}/sitecustomize.pl"; }
             && do "$Config{sitelib}/sitecustomize.pl";
     }
 
-Поскольку это фактические C<do> (не C<require>), F<sitecustomize.pl> не нужно возвращать истинное значение. Код выполняется в пакете C<main>, в своей собственной лексической области. Однако, если сценарий умирает (dies), C<$@> не будет установлен.
+Since it is an actual C<do> (not a C<require>), F<sitecustomize.pl>
+doesn't need to return a true value. The code is run in package C<main>,
+in its own lexical scope. However, if the script dies, C<$@> will not
+be set.
 
-Значение C<$Config{sitelib}> также определяется в коде C и не считывается из C<Config.pm> , который не загружен.
+The value of C<$Config{sitelib}> is also determined in C code and not
+read from C<Config.pm>, which is not loaded.
 
-Код выполняется I<очень> рано. Например, любые изменения, внесенные в C<@INC> будут отображаться в результатах `perl -V` Конечно, C<END> блоки будут также выполнены очень поздно.
+The code is executed I<very> early. For example, any changes made to
+C<@INC> will show up in the output of `perl -V`. Of course, C<END>
+blocks will be likewise executed very late.
 
-Чтобы определить, во время выполнения, если эта возможность была скомпилирована в вашем Perl, вы можете проверить значение  C<$Config{usesitecustomize}>.
+To determine at runtime if this capability has been compiled in your
+perl, you can check the value of C<$Config{usesitecustomize}>.
 
 =item B<-F>I<pattern>
 X<-F>
 
-указвывает шаблон для разделения, также можно использовать B<-a>.  Шаблон может быть окружен C<//>, C<"">, или C<''> в противном случае он будет поставлен в одинарные кавычки. Вы не можете использовать буквальные пробелы в шаблоне.
+specifies the pattern to split on if B<-a> is also in effect.  The
+pattern may be surrounded by C<//>, C<"">, or C<''>, otherwise it will be
+put in single quotes. You can't use literal whitespace in the pattern.
 
 =item B<-h>
 X<-h>
 
-выдает список опций.
+prints a summary of the options.
 
 =item B<-i>[I<extension>]
 X<-i> X<in-place>
 
-указывает, что файлы, обрабатываемые конструкцией C<E<lt>E<gt>> , будут отредактированы на месте (edited in-place).  Он делает это путем переименования входного файла, открытия выходного файла по оригинальному названию, и выбора, что выходной файл является файлом по умолчанию для оператора print().  Расширение, если имеются, используется для изменения названия старых файлов, чтобы сделать резервную копию, следуя этим правилам:
+specifies that files processed by the C<E<lt>E<gt>> construct are to be
+edited in-place.  It does this by renaming the input file, opening the
+output file by the original name, and selecting that output file as the
+default for print() statements.  The extension, if supplied, is used to
+modify the name of the old file to make a backup copy, following these
+rules:
 
-Если расширение не указано, и ваша система поддерживает его, оригинальный I<файл> остается открытым без имени в то время как вывод будет перенаправлен в новый файл с оригинальным I<именем> .  Когда Perl выходит, чисто или нет, исходный I<файл> удаляется (unlinked).
+If no extension is supplied, and your system supports it, the original
+I<file> is kept open without a name while the output is redirected to
+a new file with the original I<filename>.  When perl exits, cleanly or not,
+the original I<file> is unlinked.
 
-Если расширение не содержит C<*>, то оно добавляется к концу текущего файла в качестве суффикса.  Если расширение содержит один или более символов  C<*>, то каждый  C<*> заменяется с текущим именем файла.  В Perl терминах, вы можете думать об этом как:
+If the extension doesn't contain a C<*>, then it is appended to the
+end of the current filename as a suffix.  If the extension does
+contain one or more C<*> characters, then each C<*> is replaced
+with the current filename.  In Perl terms, you could think of this
+as:
 
     ($backup = $extension) =~ s/\*/$file_name/g;
 
-Это позволяет добавить префикс к файлу резервной копии, вместо (или в дополнение к) суффикса:
+This allows you to add a prefix to the backup file, instead of (or in
+addition to) a suffix:
 
- $ perl -pi'orig_*' -e 's/bar/baz/' fileA  # резервирует файл в (backup to)
+ $ perl -pi'orig_*' -e 's/bar/baz/' fileA  # backup to
                                            # 'orig_fileA'
 
-Или даже размещает резервные копии оригинальных файлов в другом каталоге (при условии, что каталог уже существует):
+Or even to place backup copies of the original files into another
+directory (provided the directory already exists):
 
- $ perl -pi'old/*.orig' -e 's/bar/baz/' fileA  # делает бекап (backup to)
+ $ perl -pi'old/*.orig' -e 's/bar/baz/' fileA  # backup to
                                                # 'old/fileA.orig'
 
-Эти наборы однострочников (one-liners) эквивалентны:
+These sets of one-liners are equivalent:
 
- $ perl -pi -e 's/bar/baz/' fileA          # перезаписать текущий файл
- $ perl -pi'*' -e 's/bar/baz/' fileA       # перезаписать текущий файл
+ $ perl -pi -e 's/bar/baz/' fileA          # overwrite current file
+ $ perl -pi'*' -e 's/bar/baz/' fileA       # overwrite current file
 
  $ perl -pi'.orig' -e 's/bar/baz/' fileA   # backup to 'fileA.orig'
  $ perl -pi'*.orig' -e 's/bar/baz/' fileA  # backup to 'fileA.orig'
 
-Из shell, говоря
+From the shell, saying
 
     $ perl -p -i.orig -e "s/foo/bar/; ... "
 
-так же, как с помощью программы:
+is the same as using the program:
 
     #!/usr/bin/perl -pi.orig
     s/foo/bar/;
 
-что эквивалентно
+which is equivalent to
 
     #!/usr/bin/perl
     $extension = '.orig';
@@ -406,52 +568,76 @@ X<-i> X<in-place>
 	s/foo/bar/;
     }
     continue {
-	print;	# здесь напечатается исходное имя файла
+	print;	# this prints to original filename
     }
     select(STDOUT);
 
-исключением того, что форму B<-i> не нужно сравнивать $ARGV в $oldargv чтобы знать, когда файл был изменен.  Это, однако, использует ARGVOUT для выбранного дескриптор файла.  Обратите внимание, что STDOUT восстанавливается как дескриптор файла вывода по умолчанию после цикла.
+except that the B<-i> form doesn't need to compare $ARGV to $oldargv to
+know when the filename has changed.  It does, however, use ARGVOUT for
+the selected filehandle.  Note that STDOUT is restored as the default
+output filehandle after the loop.
 
-Как было показано выше, Perl создает файл резервной копии в независимости было ли что-либо изменено.  Так что это всего лишь причудливый способ для копирования файлов:
+As shown above, Perl creates the backup file whether or not any output
+is actually changed.  So this is just a fancy way to copy files:
 
     $ perl -p -i'/some/file/path/*' -e 1 file1 file2 file3...
-или
+or
     $ perl -p -i'.orig' -e 1 file1 file2 file3...
 
-Вы можете использовать C<eof> без скобок, чтобы найти в конце каждого входного файла, в случае, если вы хотите добавить к каждому файлу, или сбросить нумерацию строк (см. пример в L<perlfunc/eof>).
+You can use C<eof> without parentheses to locate the end of each input
+file, in case you want to append to each file, or reset line numbering
+(see example in L<perlfunc/eof>).
 
-Если для данного файла, Perl не может создать файл резервной копии, как указано в расширении, то он пропустит этот файл и продолжить работу со следующей задачей (если она существует).
+If, for a given file, Perl is unable to create the backup file as
+specified in the extension then it will skip that file and continue on
+with the next one (if it exists).
 
-Для обсуждения вопросов, связанных с правами доступа к файлам и B<-i>, см. L<perlfaq5/Why does Perl let me delete read-only files? (Почему Perl даёт мне удалить файлы только для чтения?)  Почему -i разбивает (clobber) защищенные файлы?  Разве это не ошибка в Perl?>.
+For a discussion of issues surrounding file permissions and B<-i>,
+see L<perlfaq5/Why does Perl let me delete read-only files?  Why does -i clobber protected files?  Isn't this a bug in Perl?>.
 
-Вы не можете использовать B<-i> для создания каталогов или для обрезания расширений файлов.
+You cannot use B<-i> to create directories or to strip extensions from
+files.
 
-Perl не интерполирует C<~> в именах файлов, и это хорошо, так как некоторые люди используют его для своих файлов резервных копий:
+Perl does not expand C<~> in filenames, which is good, since some
+folks use it for their backup files:
 
     $ perl -pi~ -e 's/foo/bar/' file1 file2 file3...
 
-Отметим, что поскольку B<-i> переименовывает или удаляет исходный файл перед созданием нового файла с таким же названием, Unix-стиль мягкие и жесткие ссылки не будут сохранены.
+Note that because B<-i> renames or deletes the original file before
+creating a new file of the same name, Unix-style soft and hard links will
+not be preserved.
 
-Наконец, опция  B<-i> не препятствует исполнению, когда файлы не заданы в командной строке.  В этом случае резервная копия не делается (исходный файл не может, конечно, быть определен), и обработка переходит со стандартного ввода (STDIN) на стандартный вывод (STDOUT), как можно было ожидать.
+Finally, the B<-i> switch does not impede execution when no
+files are given on the command line.  In this case, no backup is made
+(the original file cannot, of course, be determined) and processing
+proceeds from STDIN to STDOUT as might be expected.
 
 =item B<-I>I<directory>
 X<-I> X<@INC>
 
-Каталоги, указанные B<-I> вставляются в пути поиска модулей (C<@INC>).
+Directories specified by B<-I> are prepended to the search path for
+modules (C<@INC>).
 
 =item B<-l>[I<octnum>]
 X<-l> X<$/> X<$\>
 
-обеспечивает автоматическое завершения строк обработки.  Она состоит из двух отдельных эффектов.  Во-первых, он автоматически обрезает (chomps) C<$/> (разделитель входных записей) при использовании B<-n> или B<-p>.  Во-вторых, он присваивает C<$\> (разделителю выходных записей), чтобы иметь значение I<octnum> (I<восьмиричное число>) так что любые операторы печати будут иметь разделитель выданный обратно (will have that separator added back on).
-Если  I<octnum>> опущен, устанавливает C<$\>; для текущего значения как C<$/>.  Например, для обрезки линий до 80 символов/столбцов (columns):
+enables automatic line-ending processing.  It has two separate
+effects.  First, it automatically chomps C<$/> (the input record
+separator) when used with B<-n> or B<-p>.  Second, it assigns C<$\>
+(the output record separator) to have the value of I<octnum> so
+that any print statements will have that separator added back on.
+If I<octnum> is omitted, sets C<$\> to the current value of
+C<$/>.  For instance, to trim lines to 80 columns:
 
     perl -lpe 'substr($_, 80) = ""'
 
-Обратите внимание, что назначение  C<$\ = $/> делается, когда переключатель обрабатывается, поэтому разделитель входных записей может отличаться от разделителя выходных записей, если ключ B<-l> следует за ключом B<-0>:
+Note that the assignment C<$\ = $/> is done when the switch is processed,
+so the input record separator can be different than the output record
+separator if the B<-l> switch is followed by a B<-0> switch:
 
     gnufind / -print0 | perl -ln0e 'print "found $_" if -p'
 
-Этот параметр определяет, C<$\> как символ новой строки, а затем устанавливает C<$/> в нулевой символ.
+This sets C<$\> to newline and then sets C<$/> to the null character.
 
 =item B<-m>[B<->]I<module>
 X<-m> X<-M>
@@ -462,132 +648,216 @@ X<-m> X<-M>
 
 =item B<-[mM]>[B<->]I<module=arg[,arg]...>
 
-B<-m>I<module> выполняет C<use> I<module> C<();> перед выполнением программы.
+B<-m>I<module> executes C<use> I<module> C<();> before executing your
+program.
 
-B<-M>I<module> выполняет C<use> I<module> C<;> перед выполнением программы.  Вы можете использовать кавычки, чтобы добавить дополнительный код после имени модуля, например, C<'-MI<MODULE> qw(foo bar)'>.
+B<-M>I<module> executes C<use> I<module> C<;> before executing your
+program.  You can use quotes to add extra code after the module name,
+e.g., C<'-MI<MODULE> qw(foo bar)'>.
 
-Если первый символ после  B<-M> или B<-m> является тире (B<->), то «использование» заменяется на «нет».
+If the first character after the B<-M> or B<-m> is a dash (B<->)
+then the 'use' is replaced with 'no'.
 
-Немного встроенного синтаксического сахара означает, что вы можете также сказать, B<-mI<MODULE>=foo,bar> или  B<-MI<MODULE>=foo,bar> в качестве ярлыка для B<'-MI<MODULE> qw(foo bar)'>.  Это позволяет избежать необходимости использовать кавычки при импорте символов.  Фактический код, генерируемый B<-MI<MODULE>=foo,bar> является C<use module split(/,/,q{foo,bar})>.  Обратите внимание, что форма C<=>  стирает различие между B<-m> и B<-M>.
+A little builtin syntactic sugar means you can also say
+B<-mI<MODULE>=foo,bar> or B<-MI<MODULE>=foo,bar> as a shortcut for
+B<'-MI<MODULE> qw(foo bar)'>.  This avoids the need to use quotes when
+importing symbols.  The actual code generated by B<-MI<MODULE>=foo,bar> is
+C<use module split(/,/,q{foo,bar})>.  Note that the C<=> form
+removes the distinction between B<-m> and B<-M>.
 
-Следствием этого является то, что B<-MI<MODULE>=number> никогда не делает проверку версии, если C<I<MODULE>::import()> сам настроен сделать проверку версий, что может произойти, например, если I<MODULE наследует от L<Exporter> .
+A consequence of this is that B<-MI<MODULE>=number> never does a version check,
+unless C<I<MODULE>::import()> itself is set up to do a version check, which
+could happen for example if I<MODULE> inherits from L<Exporter>.
 
 =item B<-n>
 X<-n>
 
-вызывает Perl предположить следующий цикл вокруг вашей программы, который перебирает аргументы файлы также, как I<sed -n> или I<awk> :
+causes Perl to assume the following loop around your program, which
+makes it iterate over filename arguments somewhat like I<sed -n> or
+I<awk>:
 
   LINE:
     while (<>) {
-	...		# ваша программа идет здесь
+	...		# your program goes here
     }
 
-Следует отметить, что строки не выводятся (not printed) по умолчанию.  См. L</-p> чтобы иметь напечатанные строки.  Если файл, названный в аргументе не может быть открыт по некоторым причинам, Perl предупреждает вас об этом и переходит к следующему файлу.
+Note that the lines are not printed by default.  See L</-p> to have
+lines printed.  If a file named by an argument cannot be opened for
+some reason, Perl warns you about it and moves on to the next file.
 
-Также отметим, что C<< <> >> передает аргументы командной строки для L<perlfunc/open> , которая не обязательно будет интерпретировать их как имена файлов.
-См. L<perlop> за возможные последствия для безопасности.
+Also note that C<< <> >> passes command line arguments to
+L<perlfunc/open>, which doesn't necessarily interpret them as file names.
+See  L<perlop> for possible security implications.
 
-Вот эффективный способ, чтобы удалить все файлы, которые не были изменены в течение по крайней мере недели:
+Here is an efficient way to delete all files that haven't been modified for
+at least a week:
 
     find . -mtime +7 -print | perl -nle unlink
 
-Это быстрее, чем при использовании опцию B<-exec> у I<find>, потому что вы не должны запускать процесс на каждом найденном файле.  Он страдает от неправильного обращения ошибка в строки символ новой строки в путях (pathnames), которые можно исправить, если вы будете следовать, например, под B<-0>.
+This is faster than using the B<-exec> switch of I<find> because you don't
+have to start a process on every filename found.  It does suffer from
+the bug of mishandling newlines in pathnames, which you can fix if
+you follow the example under B<-0>.
 
-C<BEGIN> и C<END> блоки могут быть использованы для захвата управления до или после неявного цикла программы, как и в I<awk>.
+C<BEGIN> and C<END> blocks may be used to capture control before or after
+the implicit program loop, just as in I<awk>.
 
 =item B<-p>
 X<-p>
 
-заставляет Perl сделать следующий цикл вокруг вашей программы, что делает перебор аргументов файла в некоторой части, как в I<sed>:
+causes Perl to assume the following loop around your program, which
+makes it iterate over filename arguments somewhat like I<sed>:
 
 
   LINE:
     while (<>) {
-	...		# ваша программа идет здесь
+	...		# your program goes here
     } continue {
 	print or die "-p destination: $!\n";
     }
 
-Если файл, указанный в аргументе не может быть открыт по некоторым причинам, Perl предупреждает вас об этом, и переходит к следующему файлу.  Следует отметить, что строки печатаются автоматически.  Ошибка, произошедшая во время печати рассматриваются как фатальная.  Чтобы подавить печать используйте флаг B<-n>.  A B<-p>
-отменяет флаг B<-n>.
+If a file named by an argument cannot be opened for some reason, Perl
+warns you about it, and moves on to the next file.  Note that the
+lines are printed automatically.  An error occurring during printing is
+treated as fatal.  To suppress printing use the B<-n> switch.  A B<-p>
+overrides a B<-n> switch.
 
-C<BEGIN> и C<END> Блоки могут быть использованы для захвата управления до или после неявного цикла, как и в I<awk>.
+C<BEGIN> and C<END> blocks may be used to capture control before or after
+the implicit loop, just as in I<awk>.
 
 =item B<-s>
 X<-s>
 
-позволяет рудиментарной разбора переключателем для переключателей в командной строке после имени программы, но до любого аргумента файла (или перед аргументом B<-->).  Любая обнаруженная опция удаляется из @ARGV и устанавливает соответствующую переменную в Perl программе.  Следующая программа выводит "1", если программа вызывается с опцией B<-xyz> и "abc"
-если она вызывается с B<-xyz=abc>.
+enables rudimentary switch parsing for switches on the command
+line after the program name but before any filename arguments (or before
+an argument of B<-->).  Any switch found there is removed from @ARGV and sets the
+corresponding variable in the Perl program.  The following program
+prints "1" if the program is invoked with a B<-xyz> switch, and "abc"
+if it is invoked with B<-xyz=abc>.
 
     #!/usr/bin/perl -s
     if ($xyz) { print "$xyz\n" }
 
-Заметьте, что, как переключатель B<--help> создает переменную  C<${-help}>, который не соответствует C<use strict "refs">.  Кроме того, при использовании этой опции на сценарии с включенными  предупреждениями вы можете получить много ложных "используется только один раз" ("used only once") предупреждений.
+Do note that a switch like B<--help> creates the variable C<${-help}>, which is not compliant
+with C<use strict "refs">.  Also, when using this option on a script with
+warnings enabled you may get a lot of spurious "used only once" warnings.
 
 =item B<-S>
 X<-S>
 
-Perl позволяет использовать переменную окружения PATH для поиска программы, если имя программы не содержит разделителей пути.
+makes Perl use the PATH environment variable to search for the
+program unless the name of the program contains path separators.
 
-На некоторых платформах, это также делает Perl добавления суффикса к имени файла при поиске его.  Например, на платформах Win32 ". суффиксы  ".bat" и ".cmd" добавляются, если поиск по оригинальному названию не удается, и если имя еще не закончится в одном из этих суффиксов.  Если ваш Perl был скомпилирован с включенной опцией C<DEBUGGING>, используя опцию B<-Dp> Perl покажет как продвигается поиск.
+On some platforms, this also makes Perl append suffixes to the
+filename while searching for it.  For example, on Win32 platforms,
+the ".bat" and ".cmd" suffixes are appended if a lookup for the
+original name fails, and if the name does not already end in one
+of those suffixes.  If your Perl was compiled with C<DEBUGGING> turned
+on, using the B<-Dp> switch to Perl shows how the search progresses.
 
-Обычно это используется для эмуляции  C<#!> запуска на платформах, которые не поддерживают  C<#!>.  Это также удобно при отладке скрипта, который использует  C<#!>, и, таким образом, обычно находящиеся на в области поиска shell $PATH.
+Typically this is used to emulate C<#!> startup on platforms that don't
+support C<#!>.  It's also convenient when debugging a script that uses C<#!>,
+and is thus normally found by the shell's $PATH search mechanism.
 
-Этот пример работает на многих платформах, которые имеют совместимость с оболочкой Bourne (Bourne shell):
+This example works on many platforms that have a shell compatible with
+Bourne shell:
 
     #!/usr/bin/perl
     eval 'exec /usr/bin/perl -wS $0 ${1+"$@"}'
 	    if $running_under_some_shell;
 
-Система игнорирует первую линию и подает программу F</bin/sh>, которая продолжает пробовать выполнить Perl программу как сценарий оболочки.
-Шелл (Shell) выполняет вторую строку как обычную команду shell , и, таким образом запускает интерпретатор Perl.  На некоторых системах $0 не всегда содержит полный путь, так что B<-S> говорит Perl путь для поиска программы в случае необходимости.  После Perl находит программу, он анализирует линии и игнорирует их, потому что переменная $running_under_some_shell никогда не верно.  Если программа будет интерпретирован csh, вы, нужно будет заменить  C<${1+"$@"}> на C<$*>, хотя это не понимает пробелы (и такой) в списке аргументов .  Для запуска  I<sh> , а не I<csh>, некоторые системы, возможно, придется заменить строку с  C<#!> строкой содержащей только двоеточие, которая будет вежливо игнорироваться Perl.  Другие системы не могут контролировать это, и нужно полностью окольные конструкцию, которая будет работать под любой из  I<csh>, I<sh>, или Perl, такие как следующие:
+The system ignores the first line and feeds the program to F</bin/sh>,
+which proceeds to try to execute the Perl program as a shell script.
+The shell executes the second line as a normal shell command, and thus
+starts up the Perl interpreter.  On some systems $0 doesn't always
+contain the full pathname, so the B<-S> tells Perl to search for the
+program if necessary.  After Perl locates the program, it parses the
+lines and ignores them because the variable $running_under_some_shell
+is never true.  If the program will be interpreted by csh, you will need
+to replace C<${1+"$@"}> with C<$*>, even though that doesn't understand
+embedded spaces (and such) in the argument list.  To start up I<sh> rather
+than I<csh>, some systems may have to replace the C<#!> line with a line
+containing just a colon, which will be politely ignored by Perl.  Other
+systems can't control that, and need a totally devious construct that
+will work under any of I<csh>, I<sh>, or Perl, such as the following:
 
 	eval '(exit $?0)' && eval 'exec perl -wS $0 ${1+"$@"}'
 	& eval 'exec /usr/bin/perl -wS $0 $argv:q'
 		if $running_under_some_shell;
 
-Если имя файла содержит разделители директорий (и поэтому абсолютный или относительный путь), и, если этот файл не найден, платформа, которая добавляют расширения файлов сделает это и попытается искать файл с этими добавленным расширениями, один за другим.
+If the filename supplied contains directory separators (and so is an
+absolute or relative pathname), and if that file is not found,
+platforms that append file extensions will do so and try to look
+for the file with those extensions added, one by one.
 
-На DOS-подобных платформах, если программа не содержит разделителей директорий, то он сначала будет искаться в текущем каталоге, прежде чем искать в PATH.  В Unix платформ, программа будет искать строго в PATH.
+On DOS-like platforms, if the program does not contain directory
+separators, it will first be searched for in the current directory
+before being searched for on the PATH.  On Unix platforms, the
+program will be searched for strictly on the PATH.
 
 =item B<-t>
 X<-t>
 
-Как и B<-T>, но проверки заразы (разрушения) будет выносить предупреждения, а не фатальных ошибок.  Этими предупреждениями теперь можно управлять нормально с C<no warnings qw(taint)>.
+Like B<-T>, but taint checks will issue warnings rather than fatal
+errors.  These warnings can now be controlled normally with C<no warnings
+qw(taint)>.
 
-B<Замечание: Это не заменяет C<-T>!> Это должно быть использовано I<только> в качестве временной помощи в целях развития при обеспечении унаследованного кода: для реального кода производства и новый безопасный код, написанный с нуля, всегда использует реальный B<-T>.
+B<Note: This is not a substitute for C<-T>!> This is meant to be
+used I<only> as a temporary development aid while securing legacy code:
+for real production code and for new secure code written from scratch,
+always use the real B<-T>.
 
 =item B<-T>
 X<-T>
 
-переключает в "клеймо" ("taint"), поэтому вы можете проверить их.  Обычно эти проверки осуществляются только при работе SETUID или SETGID.  Это хорошая идея, чтобы включить их явно для программы, которые работают от чужого имени, которым вы не обязательно будете доверять, таких, как программы CGI или любого интернет-серверов, вы можете написать в Perl.  См.
-L<perlsec> для деталей.  По соображениям безопасности, эта опция должна быть определена в Perl как можно раньше, обычно это означает, что он должен появиться на раннем этапе в командной строке или в строке C<#!> для систем, которые поддерживают такую конструкцию.
+turns on "taint" so you can test them.  Ordinarily
+these checks are done only when running setuid or setgid.  It's a
+good idea to turn them on explicitly for programs that run on behalf
+of someone else whom you might not necessarily trust, such as CGI
+programs or any internet servers you might write in Perl.  See
+L<perlsec> for details.  For security reasons, this option must be
+seen by Perl quite early; usually this means it must appear early
+on the command line or in the C<#!> line for systems which support
+that construct.
 
 =item B<-u>
 X<-u>
 
-Этот выключатель принуждает Perl сваливать ядро ​​в дамп после компиляции программы (This switch causes Perl to dump core after compiling your program.).  Затем можно теоретически воспользоваться этим дампом и превратить его в исполняемый файл с помощью программы I<undump> (не прилагается).
-Это ускоряет запуск за счет некоторого дискового пространства (которое можно свести к минимуму путем удаления исполняемого файла).  (Тем не менее, "привет мир" исполняемый файл выходит около 200K на моей машине.) Если вы хотите, чтобы выполнить часть вашей программы перед дампом, используйте вместо этого оператор dump().  Примечание: наличие I<undump> зависит от платформы и может быть  не доступно для конкретного порта Perl.
+This switch causes Perl to dump core after compiling your
+program.  You can then in theory take this core dump and turn it
+into an executable file by using the I<undump> program (not supplied).
+This speeds startup at the expense of some disk space (which you
+can minimize by stripping the executable).  (Still, a "hello world"
+executable comes out to about 200K on my machine.)  If you want to
+execute a portion of your program before dumping, use the dump()
+operator instead.  Note: availability of I<undump> is platform
+specific and may not be available for a specific port of Perl.
 
 =item B<-U>
 X<-U>
 
-позволяет Perl делать небезопасные операции.  В настоящее время единственной «небезопасной» операцией  является пытка разорвать связь между каталогами, тогда, когда нет  привилегий суперпользователя и работает SETUID программа со смертельными проверками меток (taint), которые превращаются в предупреждения.
-Обратите внимание, что предупреждения (warnings) должны быть включены вместе с этим параметром, чтобы на самом деле I <генерировать> предупреждения метко-проверки (taint-check warnings).
+allows Perl to do unsafe operations.  Currently the only "unsafe"
+operations are attempting to unlink directories while running as superuser
+and running setuid programs with fatal taint checks turned into warnings.
+Note that warnings must be enabled along with this option to actually
+I<generate> the taint-check warnings.
 
 =item B<-v>
 X<-v>
 
-выдает номер версии и патч (patchlevel) вашего исполняемого perl файл.
+prints the version and patchlevel of your perl executable.
 
 =item B<-V>
 X<-V>
 
-выдает сводную таблицу основных значений конфигурации Perl и текущие значения @INC.
+prints summary of the major perl configuration values and the current
+values of @INC.
 
 =item B<-V:>I<configvar>
 
-Печатает на стандартный вывод (STDOUT) значение указанной переменной конфигурации или несколько переменных, если ваш C<I<configvar>> аргумент выглядит как регулярное выражение (содержит небуквы).  Например:
+Prints to STDOUT the value of the named configuration variable(s),
+with multiples when your C<I<configvar>> argument looks like a regex (has
+non-letters).  For example:
 
     $ perl -V:libc
 	libc='/lib/libc-2.2.4.so';
@@ -602,19 +872,23 @@ X<-V>
 	libperl='libperl.a';
 	....
 
-Кроме того, дополнительное двоеточие может быть использовано для управления форматированием.  Двоеточие подавляет перевод строки и терминатор ";", что позволяет вставлять запросы в команды оболочки (shell commands).  (мнемоника: разделитель (separator) PATH 
+Additionally, extra colons can be used to control formatting.  A
+trailing colon suppresses the linefeed and terminator ";", allowing
+you to embed queries into shell commands.  (mnemonic: PATH separator
 ":".)
 
-    $ echo "сжатые-переменные: " `perl -V:z.*: ` " уже здесь !"
-    сжатые-переменные:  zcat='' zip='zip' уже здесь !
+    $ echo "compression-vars: " `perl -V:z.*: ` " are here !"
+    compression-vars:  zcat='' zip='zip'  are here !
 
-Ведущее двоеточие удаляет "name =" часть ответа, это позволяет отображать в имени. (A leading colon removes the "name=" part of the response, this allows
-you to map to the name you need.)  (мнемоника: пустые метки)
+A leading colon removes the "name=" part of the response, this allows
+you to map to the name you need.  (mnemonic: empty label)
 
     $ echo "goodvfork="`./perl -Ilib -V::usevfork`
     goodvfork=false;
 
-Начальные и конечные двоеточия могут быть использованы вместе, если вам нужно значения позиционных параметров без имен.  Следует отметить, что в том случае, ниже, C<PERL_API> параметры возвращаются в алфавитном порядке.
+Leading and trailing colons can be used together if you need
+positional parameter values without the names.  Note that in the case
+below, the C<PERL_API> params are returned in alphabetical order.
 
     $ echo building_on `perl -V::osname: -V::PERL_API_.*:` now
     building_on 'linux' '5' '1' '9' now
@@ -622,21 +896,32 @@ you to map to the name you need.)  (мнемоника: пустые метки)
 =item B<-w>
 X<-w>
 
-печать предупреждения о сомнительных конструкций, таких как имена переменных упоминается только один раз и скалярных переменных, используемых, прежде чем установить; пересмотрены подпрограмм; ссылки на неопределенные дескрипторов файлов дескрипторов файлов открыт только для чтения, который вы пытаетесь писать на; значения, используемые как число, которое вы не должны I<видеть> как числа; использованием массива, как если бы это был скалярного, если ваш подпрограммы имеют рекурсию глубиной более 100 вложений, и бесчисленное множество других вещей.
+prints warnings about dubious constructs, such as variable names
+mentioned only once and scalar variables used
+before being set; redefined subroutines; references to undefined
+filehandles; filehandles opened read-only that you are attempting
+to write on; values used as a number that don't I<look> like numbers;
+using an array as though it were a scalar; if your subroutines
+recurse more than 100 deep; and innumerable other things.
 
-Этот переключатель позволяет включить только глобальную C<$^W> переменную, обычно, лексически C<use warnings> Pragma является предпочтительной. Вы можете отключить или продвижения в фатальные ошибки конкретные предупреждения использованием хука C<__WARN__> , как описано в L<perlvar> и L<perlfunc/warn> .
-См. также  L<perldiag> и L<perltrap>.  Мелкозернистой средство предупреждения также доступна, если вы хотите управлять целыми классами предупреждения, см. L<warnings> или L<perllexwarn> .
+This switch really just enables the global C<$^W> variable; normally,
+the lexically scoped C<use warnings> pragma is preferred. You
+can disable or promote into fatal errors specific warnings using
+C<__WARN__> hooks, as described in L<perlvar> and L<perlfunc/warn>.
+See also L<perldiag> and L<perltrap>.  A fine-grained warning
+facility is also available if you want to manipulate entire classes
+of warnings; see L<warnings> or L<perllexwarn>.
 
 =item B<-W>
 X<-W>
 
-Включает все предупреждения, независимо от C<no warnings> или C<$^W>.
+Enables all warnings regardless of C<no warnings> or C<$^W>.
 See L<perllexwarn>.
 
 =item B<-X>
 X<-X>
 
-Отключает все предупреждения независимо от C<use warnings> или C<$^W>.
+Disables all warnings regardless of C<use warnings> or C<$^W>.
 See L<perllexwarn>.
 
 =item B<-x>
@@ -644,20 +929,31 @@ X<-x>
 
 =item B<-x>I<directory>
 
-говорит Perl, что программа встраивается в большой кусок текста не связаны, например, в почтовом сообщении.  Ведущие мусора не будет отброшен до первой строке, которая начинается с  C<#!> и содержит строку "Perl".  Любое значимое переключателей на этой строке будет применяться.
+tells Perl that the program is embedded in a larger chunk of unrelated
+text, such as in a mail message.  Leading garbage will be
+discarded until the first line that starts with C<#!> and contains the
+string "perl".  Any meaningful switches on that line will be applied.
 
-Все ссылки на номер строки в программе (предупреждения, ошибки, ...) будут относиться к C<#!> как к первой строке.
-Таким образом, предупреждение на 2-й строке программы, которая находится на 100-й строчку в файле будут представлены как линии 2, а не как строка 100.
-Это может быть переопределено с помощью директивы C<#line>.
-(См. L<perlsyn/"Plain Old Comments (Not!)">)
+All references to line numbers by the program (warnings, errors, ...)
+will treat the C<#!> line as the first line.
+Thus a warning on the 2nd line of the program, which is on the 100th
+line in the file will be reported as line 2, not as line 100.
+This can be overridden by using the C<#line> directive.
+(See L<perlsyn/"Plain Old Comments (Not!)">)
 
-Если имя каталога указано, Perl будет переключаться в этот каталог перед запуском программы.  Опция B<-x> управляет только сбросом ведущего мусор.  Программа должна быть прекращена с C<__END__> если есть задний мусор должен быть проигнорирован, программа может обрабатывать любой или все из задней мусора через C<DATA> дескриптор файла при желании.
+If a directory name is specified, Perl will switch to that directory
+before running the program.  The B<-x> switch controls only the
+disposal of leading garbage.  The program must be terminated with
+C<__END__> if there is trailing garbage to be ignored;  the program
+can process any or all of the trailing garbage via the C<DATA> filehandle
+if desired.
 
-Каталог, если указан, должен появиться сразу же после B<-x> без промежуточных пробелов.
+The directory, if specified, must appear immediately following the B<-x>
+with no intervening whitespace.
 
 =back
 
-=head1 ОКРУЖЕНИЕ (ENVIRONMENT)
+=head1 ENVIRONMENT
 X<perl, environment variables>
 
 =over 12
@@ -665,272 +961,424 @@ X<perl, environment variables>
 =item HOME
 X<HOME>
 
-Используется, если C<chdir> не имеет аргументов.
+Used if C<chdir> has no argument.
 
 =item LOGDIR
 X<LOGDIR>
 
-Используется, если C<chdir> не имеет аргументов и HOME не установлен.
+Used if C<chdir> has no argument and HOME is not set.
 
 =item PATH
 X<PATH>
 
-Используется для выполнения подпроцессов, и в поиске программы, если используется B<-S>.
+Used in executing subprocesses, and in finding the program if B<-S> is
+used.
 
 =item PERL5LIB
 X<PERL5LIB>
 
-Список каталогов, в которых следует искать файлы Perl библиотеки, прежде чем искать в стандартной библиотеке и текущем каталоге.  Любой конкретной архитектуры и конкретных версий каталогов, таких как F<version/archname/>, F<version/> или F<archname/> по указанной директории, они автоматически включаются, если они существуют, интерпретатор ищет там во время запуска.  Кроме того, любые каталоги, соответствующие записи в C<$Config{inc_version_list}> будут добавлены.
-(Они обычно были бы для старой совместимости Perl версии устанавливаются в том же дереве каталогов.)
+A list of directories in which to look for Perl library
+files before looking in the standard library and the current
+directory.  Any architecture-specific and version-specific directories,
+such as F<version/archname/>, F<version/>, or F<archname/> under the
+specified locations are automatically included if they exist, with this
+lookup done at interpreter startup time.  In addition, any directories
+matching the entries in C<$Config{inc_version_list}> are added.
+(These typically would be for older compatible perl versions installed
+in the same directory tree.)
 
-Если PERL5LIB не определена, PERLLIB используется.  Каталоги разделяются (как в PATH) двоеточие на Unixi платформах и точки с запятой в Windows (правильный разделитель пути дается командой C<perl
+If PERL5LIB is not defined, PERLLIB is used.  Directories are separated
+(like in PATH) by a colon on Unixish platforms and by a semicolon on
+Windows (the proper path separator being given by the command C<perl
 -V:I<path_sep>>).
 
-При запуске проверок меток ( taint checks), либо потому, что программа работает SETUID или SETGID или B<-T> или B<-t> опции были указаны ни PERL5LIB ни PERLLIB не спрашиваются. Программа должна вместо этого сказать:
+When running taint checks, either because the program was running setuid or
+setgid, or the B<-T> or B<-t> switch was specified, neither PERL5LIB nor
+PERLLIB is consulted. The program should instead say:
 
     use lib "/my/directory";
 
 =item PERL5OPT
 X<PERL5OPT>
 
-Параметры командной строки (switches) переключатели.  Опции в этой переменной, рассматриваются как если бы они были на каждом Perl командной строки.  Только B &lt;- [CDIMUdmtwW]&gt; переключатели допускается.  При запуске проверки меток (taint check) (либо потому, что программа работает SETUID или SETGID, или потому что были использованы ключи B<-T> или B<-t>), эта переменная игнорируется.  Если PERL5OPT начинается с B<-T>, заражение(tainting) будет включена и последующие варианты игнорируются.  Если PERL5OPT начинается с B<-t>, заражение(tainting) будет включено, точка удаляется из @INC, и последующие опции учитываются (subsequent options honored).
+Command-line options (switches).  Switches in this variable are treated
+as if they were on every Perl command line.  Only the B<-[CDIMUdmtwW]>
+switches are allowed.  When running taint checks (either because the
+program was running setuid or setgid, or because the B<-T> or B<-t>
+switch was used), this variable is ignored.  If PERL5OPT begins with
+B<-T>, tainting will be enabled and subsequent options ignored.  If
+PERL5OPT begins with B<-t>, tainting will be enabled, a writable dot
+removed from @INC, and subsequent options honored.
 
 =item PERLIO
 X<PERLIO>
 
-Пробелы (или доеточия) разделенный список PerlIO слоев. Если Perl построен использовать PerlIO как систему ввода-вывода (по умолчанию) эти слои влияют на IO Perl.
+A space (or colon) separated list of PerlIO layers. If perl is built
+to use PerlIO system for IO (the default) these layers affect Perl's IO.
 
-Принято, чтобы начать имена слоев с двоеточия (например, C<:perlio>), чтобы подчеркнуть их сходство с переменной "атрибуты". Но код, который анализирует спецификации уровня строк, который также используется для декодирования переменной PERLIO среды, лечится двоеточием в качестве разделителя.
+It is conventional to start layer names with a colon (for example, C<:perlio>) to
+emphasize their similarity to variable "attributes". But the code that parses
+layer specification strings, which is also used to decode the PERLIO
+environment variable, treats the colon as a separator.
 
-Установлен или пустые PERLIO эквивалентна по умолчанию набор слоев для вашей платформы, например, C<:unix:perlio> на Unix-подобных системах и C<:unix:crlf> на Windows и других DOS-подобных систем.
+An unset or empty PERLIO is equivalent to the default set of layers for
+your platform; for example, C<:unix:perlio> on Unix-like systems
+and C<:unix:crlf> on Windows and other DOS-like systems.
 
-Список будет использоваться по умолчанию для I<всех> IO Perl. Следовательно только встроенные слои могут появиться в этом списке, в качестве внешних слоев (например, C<:encoding()>) IO нужно для того, чтобы загрузить их!  См. L<"open pragma"|open>, как добавить внешнюю кодировку по умолчанию.
+The list becomes the default for I<all> Perl's IO. Consequently only built-in
+layers can appear in this list, as external layers (such as C<:encoding()>) need
+IO in order to load them!  See L<"open pragma"|open> for how to add external
+encodings as defaults.
 
-Слои имеет смысл включить в переменную среды PERLIO кратко изложены ниже. Для получения дополнительной информации см. L<PerlIO>.
+Layers it makes sense to include in the PERLIO environment
+variable are briefly summarized below. For more details see L<PerlIO>.
 
 =over 8
 
 =item :bytes
 X<:bytes>
 
-Псевдолой, который превращает флаг  C<:utf8> I<off> (I<выключено>) для слоя ниже; вряд ли будет полезна сама по себе в глобальной переменной окружения PERLIO.
-Вы, возможно, думали о C<:crlf:bytes> или C<:perlio:bytes>.
+A pseudolayer that turns the C<:utf8> flag I<off> for the layer below;
+unlikely to be useful on its own in the global PERLIO environment variable.
+You perhaps were thinking of C<:crlf:bytes> or C<:perlio:bytes>.
 
 =item :crlf
 X<:crlf>
 
-Слой, который делает СRLF для  C<"\n"> перевод различия "текст" и "двоичный" файлы в виде MS-DOS и аналогичные операционных систем.
-(В настоящее время она I<не> имитировать MS-DOS, насколько лечении Control-Z как конец файла маркер.)
+A layer which does CRLF to C<"\n"> translation distinguishing "text" and
+"binary" files in the manner of MS-DOS and similar operating systems.
+(It currently does I<not> mimic MS-DOS as far as treating of Control-Z
+as being an end-of-file marker.)
 
 =item :mmap
 X<:mmap>
 
-Слой, который реализует «чтения» файлов с помощью I<mmap> (2), чтобы сделать весь файл отображается в адресное пространство процесса, а затем он используется в качестве «буфера» PerlIO.
+A layer that implements "reading" of files by using I<mmap>(2) to
+make an entire file appear in the process's address space, and then
+using that as PerlIO's "buffer".
 
 =item :perlio
 X<:perlio>
 
-Это вновь осуществления STDIO-подобный буферизации виде слоя PerlIO.  Как таковой, он будет вызывать все, что слой под ним для осуществления своей деятельности, обычно  C<:unix>.
+This is a re-implementation of stdio-like buffering written as a
+PerlIO layer.  As such it will call whatever layer is below it for
+its operations, typically C<:unix>.
 
 =item :pop
 X<:pop>
 
-Экспериментальные псевдослой (pseudolayer), который удаляет верхний слой.
-Используйте с такой же тщательностью, как зарезервировано для нитроглицерина.
+An experimental pseudolayer that removes the topmost layer.
+Use with the same care as is reserved for nitroglycerine.
 
 =item :raw
 X<:raw>
 
-Псевдослой (Pseudolayer) который манипулирует другими слоями.  Применив C<:raw> слой эквивалентен вызову C<binmode($fh)>.  Это делает поток проходит каждый байт как есть без перевода.  В частности, оба CRLF перевода и созерцание C<:utf8> из локали отключены.
+A pseudolayer that manipulates other layers.  Applying the C<:raw>
+layer is equivalent to calling C<binmode($fh)>.  It makes the stream
+pass each byte as-is without translation.  In particular, both CRLF
+translation and intuiting C<:utf8> from the locale are disabled.
 
-В отличие от более ранних версий Perl, C<:raw> I<не> просто обратная C<:crlf>: другие слои, которые будут влиять на двоичный характер потока также удалить или отключить.
+Unlike in earlier versions of Perl, C<:raw> is I<not>
+just the inverse of C<:crlf>: other layers which would affect the
+binary nature of the stream are also removed or disabled.
 
 =item :stdio
 X<:stdio>
 
-Этот уровень предоставляет PerlIO интерфейс, обернув системе ANSI C "STDIO" вызовы библиотеки. Слой обеспечивает как буферизации и ввода-вывода.
-Следует отметить, что C<:stdio> слой делает I<не> CRLF сделать перевод даже, если это нормальное поведение платформы. Вы будете нуждаться в  C<:crlf> слой над ним, чтобы сделать это.
+This layer provides a PerlIO interface by wrapping system's ANSI C "stdio"
+library calls. The layer provides both buffering and IO.
+Note that the C<:stdio> layer does I<not> do CRLF translation even if that
+is the platform's normal behaviour. You will need a C<:crlf> layer above it
+to do that.
 
 =item :unix
 X<:unix>
 
-Низкий уровень слоя, который вызывает C<read> , C<write> , C<lseek> и т.д.
+Low-level layer that calls C<read>, C<write>, C<lseek>, etc.
 
 =item :utf8
 X<:utf8>
 
-Псевдослой (Pseudolayer), который включает флаг в слое ниже, чтобы сказать, что Perl вывод должен быть в utf8 и что материалы следует считать уже в utf8 действительны форме. B <WARNING: Он не проверяет на достоверность и как таковой должны быть обработаны с особой осторожностью для ввода, так как нарушения безопасности могут происходиять с не-кратчайший UTF-8 кодировках, и т.д..> Вообще C<:encoding(utf8)> является наилучшим вариантом при чтении UTF-8 закодированных данных.
+A pseudolayer that enables a flag in the layer below to tell Perl
+that output should be in utf8 and that input should be regarded as
+already in valid utf8 form. B<WARNING: It does not check for validity and as such
+should be handled with extreme caution for input, because security violations
+can occur with non-shortest UTF-8 encodings, etc.> Generally C<:encoding(utf8)> is
+the best option when reading UTF-8 encoded data.
 
 =item :win32
 X<:win32>
 
-На платформе Win32 это I<экспериментальный> уровень использует родной "ручки" IO, а не Unix-подобных числовых слоя дескриптор файла. Известный как детский баг(buggy) в этой версии (5.14).
+On Win32 platforms this I<experimental> layer uses native "handle" IO
+rather than a Unix-like numeric file descriptor layer. Known to be
+buggy in this release (5.14).
 
 =back
 
-По умолчанию набор слоев должны дать приемлемые результаты на всех платформах
+The default set of layers should give acceptable results on all platforms
 
-Для Unix платформ, которые будут эквивалент "UNIX PerlIO" или "STDIO".
-Настройка настроена предпочтительность "STDIO" реализацию, если библиотеки системы обеспечивает быстрый доступ к буферу, в противном случае, он использует "UNIX PerlIO" реализации.
+For Unix platforms that will be the equivalent of "unix perlio" or "stdio".
+Configure is set up to prefer the "stdio" implementation if the system's library
+provides for fast access to the buffer; otherwise, it uses the "unix perlio"
+implementation.
 
-В Win32 по умолчанию в этой версии (5.14) является  "unix crlf". Win32 в "stdio" имеет ряд ошибок/MIS-функций (bugs/mis-features) для Perl IO которых несколько в зависимости от версии и поставщик компилятора C. Используя нашу собственную  C<crlf> слоя в качестве буфера позволяет избежать этих проблем и делает вещи более равномерным.  C<crlf> CRLF слой обеспечивает преобразование а также буферизации.
+On Win32 the default in this release (5.14) is "unix crlf". Win32's "stdio"
+has a number of bugs/mis-features for Perl IO which are somewhat depending
+on the version and vendor of the C compiler. Using our own C<crlf> layer as
+the buffer avoids those issues and makes things more uniform.  The C<crlf>
+layer provides CRLF conversion as well as buffering.
 
-Этот релиз (5.14) использует C<unix> в качестве нижнего слоя на Win32, и так до сих пор использует компилятора C. числовые процедуры дескриптор файла. Существует экспериментальная родной C<win32> слой, который как ожидается, будет повышена и должна в конечном итоге стать по умолчанию под Win32.
+This release (5.14) uses C<unix> as the bottom layer on Win32, and so still
+uses the C compiler's numeric file descriptor routines. There is an
+experimental native C<win32> layer, which is expected to be enhanced and
+should eventually become the default under Win32.
 
-Переменная PERLIO среда полностью игнорируется при Perl выполняется в данном режиме.
+The PERLIO environment variable is completely ignored when Perl
+is run in taint mode.
 
 =item PERLIO_DEBUG
 X<PERLIO_DEBUG>
 
-Если установлено имя файла или устройства, определенные операции PerlIO подсистемы будут записываться в этот файл, который открывается в режиме добавления.
-Типичное применение: Unix:
+If set to the name of a file or device, certain operations of PerlIO
+subsystem will be logged to that file, which is opened in append mode.
+Typical uses are in Unix:
 
    % env PERLIO_DEBUG=/dev/tty perl script ...
 
-и под Win32, приблизительно эквивалентны:
+and under Win32, the approximately equivalent:
 
    > set PERLIO_DEBUG=CON
-   Perl скрипт ...
+   perl script ...
 
-Эта функция отключена для SETUID скрипты и скрипты для запуска с B<-T>.
+This functionality is disabled for setuid scripts and for scripts run
+with B<-T>.
 
 =item PERLLIB
 X<PERLLIB>
 
-Список каталогов, в которых следует искать файлы Perl библиотеки, прежде чем искать в стандартной библиотеке и текущий каталог.
-Если PERL5LIB определено, PERLLIB не используется.
+A list of directories in which to look for Perl library
+files before looking in the standard library and the current directory.
+If PERL5LIB is defined, PERLLIB is not used.
 
-PERLLIB переменной окружения полностью игнорируется, когда Perl выполняется в данном режиме.
+The PERLLIB environment variable is completely ignored when Perl
+is run in taint mode.
 
 =item PERL5DB
 X<PERL5DB>
 
-Команда используется для загрузки кода отладчика.  Значение по умолчанию:
+The command used to load the debugger code.  The default is:
 
 	BEGIN { require "perl5db.pl" }
 
-PERL5DB переменная среды используется только при Perl запускается с голой B<-d> переключатель.
+The PERL5DB environment variable is only used when Perl is started with
+a bare B<-d> switch.
 
 =item PERL5DB_THREADED
 X<PERL5DB_THREADED>
 
-Если установлена ​​в истинное значение, указывает, что отладчик кода отлаживаемой использует потоки.
+If set to a true value, indicates to the debugger that the code being
+debugged uses threads.
 
 =item PERL5SHELL (specific to the Win32 port)
 X<PERL5SHELL>
 
-В Win32 только порты, может быть установлен в альтернативную оболочку, которая должна использовать Perl внутренне для выполнения "обратные" ("backtick") команды или system().  По умолчанию C<cmd.exe /x/d/c> на WindowsNT и C<command.com /c> на Windows 95.  Значение считается пробел.  Предшествовать любой символ, который нуждается в защите, как и пространство или обратную косую черту, с другой косой чертой.
+On Win32 ports only, may be set to an alternative shell that Perl must use
+internally for executing "backtick" commands or system().  Default is
+C<cmd.exe /x/d/c> on WindowsNT and C<command.com /c> on Windows95.  The
+value is considered space-separated.  Precede any character that
+needs to be protected, like a space or backslash, with another backslash.
 
-Следует отметить, что Perl не использует COMSPEC для этой цели, поскольку COMSPEC имеет высокую степень изменчивости среди пользователей, что приводит к переносимости проблем.  Кроме того, можно использовать Perl оболочку, которая не может быть пригодным для интерактивного использования и настройки COMSPEC такой оболочке может повлиять надлежащего функционирования других программ (которые обычно смотрят в COMSPEC найти оболочке, пригодный для интерактивного использования).
+Note that Perl doesn't use COMSPEC for this purpose because
+COMSPEC has a high degree of variability among users, leading to
+portability concerns.  Besides, Perl can use a shell that may not be
+fit for interactive use, and setting COMSPEC to such a shell may
+interfere with the proper functioning of other programs (which usually
+look in COMSPEC to find a shell fit for interactive use).
 
-До Perl 5.10.0 и 5.8.8, PERL5SHELL было не испортить проверены при выполнении внешних команд.  Рекомендуется, чтобы вы явно установить (или удалить) C<$ENV{PERL5SHELL}> при работе в данном режиме под Windows.
+Before Perl 5.10.0 and 5.8.8, PERL5SHELL was not taint checked
+when running external commands.  It is recommended that
+you explicitly set (or delete) C<$ENV{PERL5SHELL}> when running
+in taint mode under Windows.
 
-=item PERL_ALLOW_NON_IFS_LSP (специфичные для Win32 порт)
+=item PERL_ALLOW_NON_IFS_LSP (specific to the Win32 port)
 X<PERL_ALLOW_NON_IFS_LSP>
 
-Установите 1, чтобы разрешить использование не-IFS LSP, совместимы (многоуровневые службы).
-Perl обычно ищет IFS-совместимых LSP, потому что это требуется для его эмуляции интерфейс Windows Sockets как реальные дескрипторов файлов.  Однако, это может вызвать проблемы, если у вас есть брандмауэр, таких как я <McAfee Guardian> , Который требует, чтобы все приложения используют ее LSP но который не является IFS-совместимы, потому что ясно Perl, как правило, не использовать такие LSP.
+Set to 1 to allow the use of non-IFS compatible LSPs (Layered Service Providers).
+Perl normally searches for an IFS-compatible LSP because this is required
+for its emulation of Windows sockets as real filehandles.  However, this may
+cause problems if you have a firewall such as I<McAfee Guardian>, which requires
+that all applications use its LSP but which is not IFS-compatible, because clearly
+Perl will normally avoid using such an LSP.
 
-Установка этой переменной среды 1 означает, что Perl просто будет использовать только первый подходящий LSP перечисленных в каталоге, который держит I<McAfee Guardian> счастливым - и в этом конкретном случае Perl все еще работает, потому что я слишком I<McAfee Guardian> на самом деле играет LSP других игр, которые позволяют приложениям IFS требующих совместимости на работу.
+Setting this environment variable to 1 means that Perl will simply use the
+first suitable LSP enumerated in the catalog, which keeps I<McAfee Guardian>
+happy--and in that particular case Perl still works too because I<McAfee
+Guardian>'s LSP actually plays other games which allow applications
+requiring IFS compatibility to work.
 
 =item PERL_DEBUG_MSTATS
 X<PERL_DEBUG_MSTATS>
 
-Релевантно только в Perl скомпилирован с C<malloc> входит в Perl распределения, то есть, если C<perl -V:d_mymalloc> будет "определен".
+Relevant only if Perl is compiled with the C<malloc> included with the Perl
+distribution; that is, if C<perl -V:d_mymalloc> is "define".
 
-Если установлено, дамп памяти статистику после выполнения.  Если установлено значение целое число больше единицы, также выводит из статистики использования памяти после компиляции.
+If set, this dumps out memory statistics after execution.  If set
+to an integer greater than one, also dumps out memory statistics
+after compilation.
 
 =item PERL_DESTRUCT_LEVEL
 X<PERL_DESTRUCT_LEVEL>
 
-Соответствующие только если ваш Perl исполняемый был построен с B<-DDEBUGGING>, это управляет поведением глобального уничтожения объектов и др. Ссылки.  See L<perlhacktips/PERL_DESTRUCT_LEVEL> для получения дополнительной информации.
+Relevant only if your Perl executable was built with B<-DDEBUGGING>,
+this controls the behaviour of global destruction of objects and other
+references.  See L<perlhacktips/PERL_DESTRUCT_LEVEL> for more information.
 
 =item PERL_DL_NONLAZY
 X<PERL_DL_NONLAZY>
 
-Установите в  C<"1">  иметь Perl решения я <all> неопределенных символов при загрузке динамической библиотеки.  Поведение по умолчанию заключается в разрешении символы, когда они используются.  Установка этой переменной может пригодиться во время тестирования расширений, так как он гарантирует, что вы получите сообщение об ошибке на орфографическими ошибками имена функций, даже если набор тестов не называет их.
+Set to C<"1"> to have Perl resolve I<all> undefined symbols when it loads
+a dynamic library.  The default behaviour is to resolve symbols when
+they are used.  Setting this variable is useful during testing of
+extensions, as it ensures that you get an error on misspelled function
+names even if the test suite doesn't call them.
 
 =item PERL_ENCODING
 X<PERL_ENCODING>
 
-При использовании C<use encoding> Pragma без явного именем кодировки, PERL_ENCODING переменная окружения консультировал имя кодировки.
+If using the C<use encoding> pragma without an explicit encoding name, the
+PERL_ENCODING environment variable is consulted for an encoding name.
 
 =item PERL_HASH_SEED
 X<PERL_HASH_SEED>
 
-(Так как Perl 5.8.1, новой семантике Perl 5.18.0) Используется для переопределения рандомизации внутренней хэш-функции Perl. Значение выражается в шестнадцатеричном, и может включать лидирующий 0x. Усеченный шаблоны обрабатываются как будто они суффикс достаточной 0, как это требуется.
+(Since Perl 5.8.1, new semantics in Perl 5.18.0)  Used to override
+the randomization of Perl's internal hash function. The value is expressed
+in hexadecimal, and may include a leading 0x. Truncated patterns
+are treated as though they are suffixed with sufficient 0's as required.
 
-Если опция предусмотрена, и C<PERL_PERTURB_KEYS> не установлен, то значение '0 'означает C<PERL_PERTURB_KEYS=0> и любое другое значение означает C<PERL_PERTURB_KEYS=2> .
+If the option is provided, and C<PERL_PERTURB_KEYS> is NOT set, then
+a value of '0' implies C<PERL_PERTURB_KEYS=0> and any other value
+implies C<PERL_PERTURB_KEYS=2>.
 
-B <ПОЖАЛУЙСТА, ОБРАТИТЕ ВНИМАНИЕ: хэш ключи  чувствительно к информации> . Хэши рандомизированных для защиты от удаленных и локальных атак против кода Perl. Путем ручной настройки семян, эта защита может быть частично или полностью потеряны.
+B<PLEASE NOTE: The hash seed is sensitive information>. Hashes are
+randomized to protect against local and remote attacks against Perl
+code. By manually setting a seed, this protection may be partially or
+completely lost.
 
-См. L<perlsec/"Algorithmic Complexity Attacks"> and L</PERL_PERTURB_KEYS>
-L</PERL_HASH_SEED_DEBUG>  для получения дополнительной информации.
+See L<perlsec/"Algorithmic Complexity Attacks"> and L</PERL_PERTURB_KEYS>
+L</PERL_HASH_SEED_DEBUG> for more information.
 
 =item PERL_PERTURB_KEYS
 X<PERL_PERTURB_KEYS>
 
-(Так как Perl 5.18.0) Установите в  C<"0"> или C<"NO"> Затем клавишами перемещения будет повторяемые от запуска к запуску по той же PERL_HASH_SEED.
-Установка в хэш не изменит порядка, кроме как для оказания за больше места в хэш. В сочетании с установкой PERL_HASH_SEED этот режим как можно ближе к предварительно 5,18 поведения как вы можете получить.
+(Since Perl 5.18.0)  Set to C<"0"> or C<"NO"> then traversing keys
+will be repeatable from run to run for the same PERL_HASH_SEED.
+Insertion into a hash will not change the order, except to provide
+for more space in the hash. When combined with setting PERL_HASH_SEED
+this mode is as close to pre 5.18 behavior as you can get.
 
-При установке на C<"1"> или C<"RANDOM"> Затем клавишами перемещения будут рандомизированы.
-Каждый раз, когда хэш вставляется в порядок ключей будет изменяться случайным образом. Чтобы не может быть повторяемым в следующем запуске программы, даже если PERL_HASH_SEED был указан. Это режим по умолчанию для Perl.
+When set to C<"1"> or C<"RANDOM"> then traversing keys will be randomized.
+Every time a hash is inserted into the key order will change in a random
+fashion. The order may not be repeatable in a following program run
+even if the PERL_HASH_SEED has been specified. This is the default
+mode for perl.
 
-При установке на  C<"2"> или C<"DETERMINISTIC"> ; со вставкой ключей в хэш причинит ключевой для изменения, но таким образом, что повторяется от программы запуска на выполнение программы.
+When set to C<"2"> or C<"DETERMINISTIC"> then inserting keys into a hash
+will cause the key order to change, but in a way that is repeatable
+from program run to program run.
 
-B <ПРИМЕЧАНИЕ:> Использование этой опции считается небезопасной, и предназначен только для отладки недетерминированное поведения в хэш-функции Perl. Не используйте его в продакшене.
+B<NOTE:> Use of this option is considered insecure, and is intended only
+for debugging non-deterministic behavior in Perl's hash function. Do
+not use it in production.
 
-См. L<perlsec/"Algorithmic Complexity Attacks"> и L</PERL_HASH_SEED>
-и L</PERL_HASH_SEED_DEBUG> для получения дополнительной информации. Вы можете получать и устанавливать ключ обхода маску для конкретной хэш с помощью C<hash_traversal_mask()> функции из L<Hash::Util> .
+See L<perlsec/"Algorithmic Complexity Attacks"> and L</PERL_HASH_SEED>
+and L</PERL_HASH_SEED_DEBUG> for more information. You can get and set the
+key traversal mask for a specific hash by using the C<hash_traversal_mask()>
+function from L<Hash::Util>.
 
 =item PERL_HASH_SEED_DEBUG
 X<PERL_HASH_SEED_DEBUG>
 
-(Так как Perl 5.8.1.) Установите в C<"1"> для отображения (на стандартный вывод ошибок STDERR) информации о хэш-функция, семена, и какой тип ключевых рандомизации обхода в силу в начале исполнения.  Это, в сочетании с L</PERL_HASH_SEED> и L</PERL_PERTURB_KEYS> предназначена для помощи в отладке недетерминированное поведение вызвано хэш рандомизации.
+(Since Perl 5.8.1.)  Set to C<"1"> to display (to STDERR) information
+about the hash function, seed, and what type of key traversal
+randomization is in effect at the beginning of execution.  This, combined
+with L</PERL_HASH_SEED> and L</PERL_PERTURB_KEYS> is intended to aid in
+debugging nondeterministic behaviour caused by hash randomization.
 
-B <Примечание> , что любая информация о хэш-функции, особенно хэш семя B<sensitive information> :, Зная это, можно выработать отказ в обслуживании против кода Perl, даже отдаленно, см. L<perlsec/\"Algorithmic Complexity Attacks\"> для получения дополнительной информации. B <Не разглашайте хэш семян> для людей, которые не нужно это знать. См. также C<hash_seed()> и
-C<key_traversal_mask()> в L<Hash::Util>.
+B<Note> that any information about the hash function, especially the hash
+seed is B<sensitive information>: by knowing it, one can craft a denial-of-service
+attack against Perl code, even remotely; see L<perlsec/"Algorithmic Complexity Attacks">
+for more information. B<Do not disclose the hash seed> to people who
+don't need to know it. See also C<hash_seed()> and
+C<key_traversal_mask()> in L<Hash::Util>.
 
-Результат может быть таким:
+An example output might be:
 
     HASH_FUNCTION = ONE_AT_A_TIME_HARD HASH_SEED = 0x652e9b9349a7a032 PERTURB_KEYS = 1 (RANDOM)
 
 =item PERL_MEM_LOG
 X<PERL_MEM_LOG>
 
-Если ваш Perl был настроен с B<-Accflags=-DPERL_MEM_LOG>, задав переменную окружения C<PERL_MEM_LOG> позволяет записывать в журнал отладочных сообщений. Значение имеет вид  C<< <I<number>>[m][s][t] >>, где C<I<number>> это количество файловых дескрипторов вы хотите написать в (2 по умолчанию), и комбинации букв указывает, что вы хотите получить информацию о (m)emory (памяти) and/or (s)v (скалятрной переменной), optionally with (t)imestamps (опционально в датой и временем). Например, C<PERL_MEM_LOG=1mst> регистрирует все информацию на стандартный вывод. Вы можете написать другим открываемым дескрипторов файлов в различных формах:
+If your Perl was configured with B<-Accflags=-DPERL_MEM_LOG>, setting
+the environment variable C<PERL_MEM_LOG> enables logging debug
+messages. The value has the form C<< <I<number>>[m][s][t] >>, where
+C<I<number>> is the file descriptor number you want to write to (2 is
+default), and the combination of letters specifies that you want
+information about (m)emory and/or (s)v, optionally with
+(t)imestamps. For example, C<PERL_MEM_LOG=1mst> logs all
+information to stdout. You can write to other opened file descriptors
+in a variety of ways:
 
   $ 3>foo3 PERL_MEM_LOG=3m perl ...
 
 =item PERL_ROOT (specific to the VMS port)
 X<PERL_ROOT>
 
-Перевод скрытой коренится логическое имя, которое содержит Perl и логическое устройство для пути @INC только на VMS.  Другие логические имена, которые влияют на Perl VMS включают PERLSHR, PERL_ENV_TABLES и SYS$TIMEZONE_DIFFERENTIAL, но не являются обязательными и обсуждается в L<perlvms> и F<README.vms> в Perl распределения источника.
+A translation-concealed rooted logical name that contains Perl and the
+logical device for the @INC path on VMS only.  Other logical names that
+affect Perl on VMS include PERLSHR, PERL_ENV_TABLES, and
+SYS$TIMEZONE_DIFFERENTIAL, but are optional and discussed further in
+L<perlvms> and in F<README.vms> in the Perl source distribution.
 
 =item PERL_SIGNALS
 X<PERL_SIGNALS>
 
-Доступный в Perl  5.8.1 и выше.  Если установлено значение  C<"unsafe">, предварительно Perl-5.8.0 Поведение сигнала (который является непосредственным, но небезопасно) восстанавливается.  Если установлено значение C<safe> , То безопасным (но отложенные) сигналы.  См.
-L<perlipc/"Deferred Signals (Safe Signals)" (Отложенные сигналы (Безопасные сигналы))>.
+Available in Perls 5.8.1 and later.  If set to C<"unsafe">, the pre-Perl-5.8.0
+signal behaviour (which is immediate but unsafe) is restored.  If set
+to C<safe>, then safe (but deferred) signals are used.  See
+L<perlipc/"Deferred Signals (Safe Signals)">.
 
 =item PERL_UNICODE
 X<PERL_UNICODE>
 
-Эквивалент B<-C> командной строки.  Отметим, что это не имеет значение переменной. Установка этого значения в C<"1"> не правильный путь, чтобы "включить Unicode" (что бы это означало бы).  Вы можете использовать C<"0">, чтобы "отключить Unicode", хотя (или, альтернативно, отключенное PERL_UNICODE в вашей оболочке перед запуском Perl).  См. описание B<-C> переключатель получить дополнительные сведения.
+Equivalent to the B<-C> command-line switch.  Note that this is not
+a boolean variable. Setting this to C<"1"> is not the right way to
+"enable Unicode" (whatever that would mean).  You can use C<"0"> to
+"disable Unicode", though (or alternatively unset PERL_UNICODE in
+your shell before starting Perl).  See the description of the B<-C>
+switch for more information.
 
-=item SYS$LOGIN (характерные для VMS порт)
+=item SYS$LOGIN (specific to the VMS port)
 X<SYS$LOGIN>
 
-Используется, если ChDir не имеет аргументов, домашнего и LOGDIR не установлены.
+Used if chdir has no argument and HOME and LOGDIR are not set.
 
 =back
 
-Perl также имеет переменные окружения, которые контролируют как Perl обрабатывает данные, специфичные для конкретного естественного языка, см. L <perllocale> .
+Perl also has environment variables that control how Perl handles data
+specific to particular natural languages; see L<perllocale>.
 
-Perl и его различные модули и компоненты, в том числе его рамках теста, иногда может сделать использование некоторых других переменных среды.  Некоторые из них являются специфическими для конкретной платформы.  Пожалуйста, обратитесь к соответствующей документации модуля и любую документацию для вашей платформы (например, L<perlsolaris>, L<perllinux>, L<perlmacosx>, L<perlwin32>, И т.д.) для переменных характерна для тех конкретных ситуациях.
+Perl and its various modules and components, including its test frameworks,
+may sometimes make use of certain other environment variables.  Some of
+these are specific to a particular platform.  Please consult the
+appropriate module documentation and any documentation for your platform
+(like L<perlsolaris>, L<perllinux>, L<perlmacosx>, L<perlwin32>, etc) for
+variables peculiar to those specific situations.
 
-Perl делает все переменные среды, доступной для программы выполняются, и передает эти по любому ребенку, он начинает процесс.
-Тем не менее, программы, работающие SETUID не мешало бы выполнить следующие линии прежде чем делать что-либо еще, просто, чтобы держать людей честны:
+Perl makes all environment variables available to the program being
+executed, and passes these along to any child processes it starts.
+However, programs running setuid would do well to execute the following
+lines before doing anything else, just to keep people honest:
 
     $ENV{PATH}  = "/bin:/usr/bin";    # or whatever you need
     $ENV{SHELL} = "/bin/sh" if exists $ENV{SHELL};

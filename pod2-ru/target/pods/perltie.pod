@@ -3,7 +3,7 @@ X<tie>
 
 perltie - how to hide an object class in a simple variable
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
  tie VARIABLE, CLASSNAME, LIST
 
@@ -11,7 +11,7 @@ perltie - how to hide an object class in a simple variable
 
  untie VARIABLE
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 Prior to release 5.0 of Perl, a programmer could use dbmopen()
 to connect an on-disk database in the standard Unix dbm(3x)
@@ -1176,13 +1176,13 @@ be used:
      carp "untie attempted while $count inner references still exist" if $count;
     }
 
-=head1 小袦袨孝袪袠孝袝 孝袗袣袞袝
+=head1 SEE ALSO
 
 See L<DB_File> or L<Config> for some interesting tie() implementations.
 A good starting point for many tie() implementations is with one of the
 modules L<Tie::Scalar>, L<Tie::Array>, L<Tie::Hash>, or L<Tie::Handle>.
 
-=head1 袨楔袠袘袣袠
+=head1 BUGS
 
 The bucket usage information provided by C<scalar(%hash)> is not
 available.  What this means is that using %tied_hash in boolean
@@ -1212,7 +1212,7 @@ which has some fairly serious limitations.
 Tied filehandles are still incomplete.  sysopen(), truncate(),
 flock(), fcntl(), stat() and -X can't currently be trapped.
 
-=head1 袗袙孝袨袪
+=head1 AUTHOR
 
 Tom Christiansen
 

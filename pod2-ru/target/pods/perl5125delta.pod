@@ -1,10 +1,10 @@
 =encoding utf8
 
-=head1 Имя
+=head1 NAME
 
 perl5125delta - what is new for perl v5.12.5
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes differences between the 5.12.4 release and
 the 5.12.5 release.
@@ -227,7 +227,7 @@ platforms on which Perl is supported. Please only use this address for
 security issues in the Perl core, not for modules independently
 distributed on CPAN.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 The F<Changes> file for an explanation of how to view exhaustive details
 on what changed.

@@ -3,7 +3,7 @@ X<character class>
 
 perlrecharclass - Perl Regular Expression Character Classes
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 The top level documentation about Perl regular expressions
 is found in L<perlre>.

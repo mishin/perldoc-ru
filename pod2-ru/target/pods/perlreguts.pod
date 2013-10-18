@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlreguts - Description of the Perl regular expression engine.
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document is an attempt to shine some light on the guts of the regex
 engine and how it works. The regex engine represents a significant chunk
@@ -899,7 +899,7 @@ treated as a single blob.
 
 =back
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perlreapi>
 
@@ -907,7 +907,7 @@ L<perlre>
 
 L<perlunitut>
 
-=head1 АВТОР
+=head1 AUTHOR
 
 by Yves Orton, 2006.
 

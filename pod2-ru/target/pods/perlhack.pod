@@ -4,11 +4,11 @@
 Consistent formatting of this file is achieved with:
   perl ./Porting/podtidy pod/perlhack.pod
 
-=head1 Имя
+=head1 NAME
 
 perlhack - How to hack on Perl
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document explains how Perl development works. It includes details
 about the Perl 5 Porters email list, the Perl repository, the Perlbug
@@ -1154,7 +1154,7 @@ spelling and punctuation and using the same format the rest of the
 quotes are in. Indirect and oblique is just fine; remember, it's a
 metaphor, so being meta is, after all, what it's for.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 This document was originally written by Nathan Torkington, and is
 maintained by the perl5-porters mailing list.

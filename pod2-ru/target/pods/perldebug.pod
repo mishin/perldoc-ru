@@ -3,7 +3,7 @@ X<debug> X<debugger>
 
 perldebug - Perl debugging
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 First of all, have you tried using the B<-w> switch?
 
@@ -1202,7 +1202,7 @@ but this is a fairly advanced concept that requires some understanding
 of how memory allocation works.
 See L<perldebguts/"Debugging Perl Memory Usage"> for the details.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 You did try the B<-w> switch, didn't you?
 
@@ -1221,7 +1221,7 @@ have to type the path or C<which $scriptname>.
 
   $ perl -Sd foo.pl
 
-=head1 ОШИБКИ
+=head1 BUGS
 
 You cannot get stack frame information or in any fashion debug functions
 that were not compiled by Perl, such as those from C or C++ extensions.

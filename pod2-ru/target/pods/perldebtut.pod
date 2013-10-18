@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perldebtut - Perl debugging tutorial
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 A (very) lightweight introduction in the use of the perl debugger, and a
 pointer to existing, deeper sources of information on the subject of debugging
@@ -697,7 +697,7 @@ the language, to read the on-line help (L<perldebug> is probably the next
 place to go), and of course, experiment.  
 
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perldebug>, 
 L<perldebguts>, 
@@ -705,7 +705,7 @@ L<perldiag>,
 L<perlrun>
 
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Richard Foley <richard.foley@rfi.net> Copyright (c) 2000
 

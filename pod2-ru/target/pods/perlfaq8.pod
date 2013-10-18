@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlfaq8 - System Interaction
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This section of the Perl FAQ covers questions involving operating
 system interaction. Topics include interprocess communication (IPC),

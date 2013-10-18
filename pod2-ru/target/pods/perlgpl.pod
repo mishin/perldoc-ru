@@ -1,14 +1,14 @@
 
-=head1 袠屑褟
+=head1 NAME
 
 perlgpl - the GNU General Public License, version 1
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
  You can refer to this document in Pod via "L<perlgpl>"
  Or you can see this document by entering "perldoc perlgpl"
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 Perl is free software; you can redistribute it and/or modify
 it under the terms of either:

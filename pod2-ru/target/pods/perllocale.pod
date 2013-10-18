@@ -1,10 +1,10 @@
 =encoding utf8
 
-=head1 Имя
+=head1 NAME
 
 perllocale - Perl locale handling (internationalization and localization)
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 In the beginning there was ASCII, the "American Standard Code for
 Information Interchange", which works quite well for Americans with
@@ -947,7 +947,7 @@ Compare this with a similar but locale-aware program:
 This third program fails to run because $& is tainted: it is the result
 of a match involving C<\w> while C<use locale> is in effect.
 
-=head1 ОКРУЖЕНИЕ
+=head1 ENVIRONMENT
 
 =over 12
 
@@ -1047,7 +1047,7 @@ and also how strings are parsed by POSIX::strtod() as numbers:
    my $x = strtod("2,34") + 5;
    print $x, "\n"; # Probably shows 7,34.
 
-=head1 ПРИМЕЧАНИЯ
+=head1 NOTES
 
 =head2 Backward compatibility
 
@@ -1252,7 +1252,7 @@ v5.16 to the casing operations such as C<"\L"> and C<uc()>.  For
 collation, in all releases, the system's C<strxfrm()> function is called,
 and whatever it does is what you get.
 
-=head1 ОШИБКИ
+=head1 BUGS
 
 =head2 Broken systems
 
@@ -1265,7 +1265,7 @@ also contact your vendor: bug fixes may exist for these problems
 in your operating system.  Sometimes such bug fixes are called an
 operating system upgrade.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<I18N::Langinfo>, L<perluniintro>, L<perlunicode>, L<open>,
 L<POSIX/isalnum>, L<POSIX/isalpha>,

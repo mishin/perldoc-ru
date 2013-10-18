@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see.  It is written in the POD format (see pod/perlpod.pod) which is
 specifically designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlsolaris - Perl version 5 on Solaris systems
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes various features of Sun's Solaris operating system
 that will affect how Perl version 5 (hereafter just perl) is
@@ -688,7 +688,7 @@ has been end-of-lifed years ago, don't hold your breath for a fix.
 In addition to that, don't try anything too Unicode-y, especially
 with Encode, and you should be fine in SunOS 4.x.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 The original was written by Andy Dougherty F<doughera@lafayette.edu>
 drawing heavily on advice from Alan Burlison, Nick Ing-Simmons, Tim Bunce,

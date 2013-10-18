@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see.  It is written in the POD format (see pod/perlpod.pod) which is
 specifically designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlirix - Perl version 5 on Irix systems
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes various features of Irix that will affect how Perl
 version 5 (hereafter just Perl) is compiled and/or runs.
@@ -129,7 +129,7 @@ further fixes for the IRIX are unlikely.  If you can get gcc for 5.3,
 you could try that, too, since gcc in IRIX 6 is a known workaround for
 at least the shuffle.t and sort.t failures.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Jarkko Hietaniemi <jhi@iki.fi>
 

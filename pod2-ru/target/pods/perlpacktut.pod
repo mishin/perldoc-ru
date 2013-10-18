@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlpacktut - tutorial on C<pack> and C<unpack>
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 C<pack> and C<unpack> are two functions for transforming data according
 to a user-defined template, between the guarded way Perl stores values

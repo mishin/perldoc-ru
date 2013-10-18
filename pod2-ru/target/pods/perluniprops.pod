@@ -9,11 +9,11 @@ To change this file, edit mktables instead.
 
 =end comment
 
-=head1 Имя
+=head1 NAME
 
 perluniprops - Index of Unicode Version 6.2.0 character properties in Perl
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document provides information about the portion of the Unicode database
 that deals with character properties, that is the portion that is defined on
@@ -4328,7 +4328,7 @@ Documentation of status and cross reference of proposals for encoding by Unicode
 
 =back
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<http://www.unicode.org/reports/tr44/>
 

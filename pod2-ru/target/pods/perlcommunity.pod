@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlcommunity - a brief overview of the Perl community
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document aims to provide an overview of the vast perl community, which is
 far too large and diverse to provide a detailed listing. If any specific niche
@@ -163,7 +163,7 @@ Not every event or Perl Mongers group is on that calendar, so don't lose
 heart if you don't see yours posted. To have your event or group listed,
 contact brian d foy (brian@theperlreview.com).
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Edgar "Trizor" Bering <trizor@gmail.com>
 

@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see. It is written in the POD format (see F<pod/perlpod.pod>) which is
 specially designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlcygwin - Perl for Cygwin
 
-=head1 СИНТАКСИС
+=head1 SYNOPSIS
 
 This document will help you configure, make, test and install Perl
 on Cygwin.  This document also describes features of Cygwin that will

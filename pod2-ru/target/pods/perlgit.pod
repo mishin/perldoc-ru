@@ -4,11 +4,11 @@
 Consistent formatting of this file is achieved with:
   perl ./Porting/podtidy pod/perlgit.pod
 
-=head1 –ò–º—è
+=head1 NAME
 
 perlgit - Detailed information about git and the Perl repository
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This document provides details on using git to develop Perl. If you are
 just interested in working on a quick patch, see L<perlhack> first.

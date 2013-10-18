@@ -1,8 +1,8 @@
-=head1 袠屑褟
+=head1 NAME
 
 perlapio - perl's IO abstraction interface.
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
     #define PERLIO_NOT_STDIO 0    /* For co-existence with stdio only */
     #include <perlio.h>           /* Usually via #include <perl.h> */
@@ -65,7 +65,7 @@ perlapio - perl's IO abstraction interface.
     int     PerlIO_binmode(PerlIO *f, int ptype, int imode, const char *layers);
     void    PerlIO_debug(const char *fmt,...)
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 Perl's source code, and extensions that want maximum portability,
 should use the above functions instead of those defined in ANSI C's

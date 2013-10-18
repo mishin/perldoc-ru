@@ -1,4 +1,4 @@
-=head1 Имя
+=head1 NAME
 
 perlmodstyle - Perl module style guide
 
@@ -740,7 +740,7 @@ write these, include them as sub-documents such as C<My::Module::Tutorial> or
 C<My::Module::FAQ> and provide a link in the SEE ALSO section of the
 main documentation.  
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 =over 4
 
@@ -777,7 +777,7 @@ authors.
 
 =back
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Kirrily "Skud" Robert <skud@cpan.org>
 

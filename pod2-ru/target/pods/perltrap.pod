@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perltrap - Perl traps for the unwary
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 The biggest trap of all is forgetting to C<use warnings> or use the B<-w>
 switch; see L<perllexwarn> and L<perlrun>. The second biggest trap is not

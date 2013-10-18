@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you see.
 It is written in the POD format (see pod/perlpod.pod) which is specially
 designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlqnx - Perl version 5 on QNX
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 As of perl5.7.2 all tests pass under:
 
@@ -137,7 +137,7 @@ This is due to a bug in the C library's printf routine.
 printf("'%e'", 0. ) produces '0.000000e+0', but ANSI requires
 '0.000000e+00'. QNX has acknowledged the bug.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Norton T. Allen (allen@huarp.harvard.edu)
 

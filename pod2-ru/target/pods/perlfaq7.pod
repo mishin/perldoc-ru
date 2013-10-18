@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlfaq7 - General Perl Language Issues
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This section deals with general Perl language issues that don't
 clearly fit into any of the other sections.
@@ -201,7 +201,7 @@ transfer the module to you.
 
 If you can not reach the author for some reason contact
 the PAUSE admins at modules@perl.org who may be able to help,
-but each case it treated seperatly.
+but each case it treated separately.
 
 =over 4
 

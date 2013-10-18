@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see. It is written in the POD format (see perlpod manpage) which is
 specially designed to be readable as is.
 
-=head1 袠屑褟
+=head1 NAME
 
 perlos2 - Perl under OS/2, DOS, Win0.3*, Win0.95 and WinNT.
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
 One can read this document in the following formats:
 
@@ -127,7 +127,7 @@ Contents (This may be a little bit obsolete)
       AUTHOR
       SEE ALSO
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 =head2 Target
 
@@ -2316,7 +2316,7 @@ useful scripts. This forces C<a.out>-style compile of
 F<perl.exe>.
 
 
-=head1 袨袣袪校袞袝袧袠袝
+=head1 ENVIRONMENT
 
 Here we list environment variables with are either OS/2- and DOS- and
 Win*-specific, or are more important under OS/2 than under other OSes.
@@ -2696,7 +2696,7 @@ moved to per-thread structure, or serialized?)
 Note that these problems should not discourage experimenting, since they
 have a low probability of affecting small programs.
 
-=head1 袨楔袠袘袣袠
+=head1 BUGS
 
 This description is not updated often (since 5.6.1?), see F<./os2/Changes>
 for more info.
@@ -2729,11 +2729,11 @@ If you have some other extensions you want to share, send the code to
 me.  At least two are available: tied access to EA's, and tied access
 to system databases.
 
-=head1 袗袙孝袨袪
+=head1 AUTHOR
 
 Ilya Zakharevich, cpan@ilyaz.org
 
-=head1 小袦袨孝袪袠孝袝 孝袗袣袞袝
+=head1 SEE ALSO
 
 perl(1).
 

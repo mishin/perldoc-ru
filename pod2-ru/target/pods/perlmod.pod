@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlmod - Perl modules (packages and symbol tables)
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 =head2 Packages
 X<package> X<namespace> X<variable, global> X<global variable> X<global>
@@ -585,7 +585,7 @@ than the invocant package name, although that may change. Similarly, to
 allow for future expansion, the return value should be a single C<0> or
 C<1> value.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 See L<perlmodlib> for general style issues related to building Perl
 modules and classes, as well as descriptions of the standard library

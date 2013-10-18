@@ -1,10 +1,10 @@
 =encoding utf8
 
-=head1 Имя
+=head1 NAME
 
 perlpodspec - Plain Old Documentation: format specification and notes
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document is detailed notes on the Pod markup language.  Most
 people will only have to read L<perlpod|perlpod> to know how to write
@@ -113,7 +113,7 @@ A command paragraph (also called a "directive").  The first line of
 this paragraph must match C<m/\A=[a-zA-Z]/>.  Command paragraphs are
 typically one line, as in:
 
-  =head1 ПРИМЕЧАНИЯ
+  =head1 NOTES
 
   =item *
 
@@ -1902,12 +1902,12 @@ This is also invalid:
 This is invalid because every "=end" command must have a formatname
 parameter.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perlpod>, L<perlsyn/"PODs: Embedded Documentation">,
 L<podchecker>
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Sean M. Burke
 

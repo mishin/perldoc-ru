@@ -1,13 +1,13 @@
-=head1 袠屑褟
+=head1 NAME
 
 perliol - C API for Perl's implementation of IO in Layers.
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
     /* Defining a layer ... */
     #include <perliol.h>
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 This document describes the behavior and implementation of the PerlIO
 abstraction described in L<perlapio> when C<USE_PERLIO> is defined (and

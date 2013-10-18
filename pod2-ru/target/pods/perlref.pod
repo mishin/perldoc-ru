@@ -9,7 +9,7 @@ This is complete documentation about all aspects of references.
 For a shorter, tutorial introduction to just the essential features,
 see L<perlreftut>.
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 Before release 5 of Perl it was difficult to represent complex data
 structures, because all references had to be symbolic--and even then
@@ -743,7 +743,7 @@ real refs, instead of the keys(), which won't.
 
 The standard Tie::RefHash module provides a convenient workaround to this.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 Besides the obvious documents, source code can be instructive.
 Some pathological examples of the use of references can be found

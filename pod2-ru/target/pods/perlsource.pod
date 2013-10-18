@@ -4,11 +4,11 @@
 Consistent formatting of this file is achieved with:
   perl ./Porting/podtidy pod/perlsource.pod
 
-=head1 –ò–º—è
+=head1 NAME
 
 perlsource - A guide to the Perl source tree
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This document describes the layout of the Perl source tree. If you're
 hacking on the Perl core, this will help you find what you're looking

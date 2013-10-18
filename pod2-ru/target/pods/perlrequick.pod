@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlrequick - Perl regular expressions quick start
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This page covers the very basics of understanding, creating and
 using regular expressions ('regexes') in Perl.
@@ -493,11 +493,11 @@ the matched substrings from the groupings as well:
 Since the first character of $x matched the regex, C<split> prepended
 an empty initial element to the list.
 
-=head1 ОШИБКИ
+=head1 BUGS
 
 None.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 This is just a quick start guide.  For a more in-depth tutorial on
 regexes, see L<perlretut> and for the reference page, see L<perlre>.

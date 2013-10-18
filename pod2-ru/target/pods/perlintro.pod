@@ -1,202 +1,276 @@
-=encoding utf8
+=head1 NAME
 
-=head1 Имя
+perlintro -- a brief introduction and overview of Perl
 
-perlintro -- краткое введение и обзор Perl
+=head1 ��������
 
-=head1 ОПИСАНИЕ
+This document is intended to give you a quick overview of the Perl
+programming language, along with pointers to further documentation.  It
+is intended as a "bootstrap" guide for those who are new to the
+language, and provides just enough information for you to be able to
+read other peoples' Perl and understand roughly what it's doing, or
+write your own simple scripts.
 
-Этот документ предназначен, чтобы дать вам краткий обзор языка программирования Perl, а также содержит указатели на дополнительную документацию.  Он задуман как "начальная загрузка" (bootstrap) руководство для тех, кто плохо знаком с языком, а также предоставляет достаточно информации для вас, чтобы иметь возможность читать Perl код других людей и понять, примерно то, что он делает, или написать собственный простой сценарий.
+This introductory document does not aim to be complete.  It does not
+even aim to be entirely accurate.  In some cases perfection has been
+sacrificed in the goal of getting the general idea across.  You are
+I<strongly> advised to follow this introduction with more information
+from the full Perl manual, the table of contents to which can be found
+in L<perltoc>.
 
-Этот вводный документ не ставит целью быть полным.  Он даже не стремятся быть совсем точным.  В некоторых случаях совершенство изложения было принесено в жертву общей идее.  Я I<строго> рекомендую следовать этому введению, дополнительную информацию о полной Perl документации и ее оглавление можно найти в L<perltoc>.
+Throughout this document you'll see references to other parts of the
+Perl documentation.  You can read that documentation using the C<perldoc>
+command or whatever method you're using to read this document.
 
-В этом документе вы увидите ссылки на другие части документации Perl.  Вы можете прочитать эту документацию с помощью команды C<perldoc> или любым другим методом, который вы используете для чтения этого документа.
+Throughout Perl's documentation, you'll find numerous examples intended
+to help explain the discussed features.  Please keep in mind that many
+of them are code fragments rather than complete programs.
 
-На протяжении документации Perl, вы найдете многочисленные примеры, предназначенные, чтобы помочь объяснить обсуждаемые особенности (features).  Пожалуйста, имейте в виду, что многие из них являются фрагментами кода, а не полными программами.
+These examples often reflect the style and preference of the author of
+that piece of the documentation, and may be briefer than a corresponding
+line of code in a real program.  Except where otherwise noted, you
+should assume that C<use strict> and C<use warnings> statements
+appear earlier in the "program", and that any variables used have
+already been declared, even if those declarations have been omitted
+to make the example easier to read.
 
-Эти примеры часто отражают стиль и предпочтения автора этой части документации и могут быть короче, чем соответствующая строка кода в реальной программе.  Если не оговорено иное, следует предполагать, что объявления C<use strict> и C<use warnings> уже есть в заголовке программы, и что любые переменные, используемые уже были объявлены, даже если эти декларации были опущены, чтобы сделать пример проще для чтения.
+Do note that the examples have been written by many different authors over
+a period of several decades.  Styles and techniques will therefore differ,
+although some effort has been made to not vary styles too widely in the
+same sections.  Do not consider one style to be better than others - "There's
+More Than One Way To Do It" is one of Perl's mottos.  After all, in your
+journey as a programmer, you are likely to encounter different styles.
 
-Нельзя не отметить, что примеры были написаны многими разными авторами в течение нескольких десятилетий.  Стили и методы будут таким образом отличаться, хотя некоторые усилия были предприняты, чтобы стили не менялись слишком широко в одном разделе.  Не считайте один стиль лучше, чем другие - "Есть более чем один способ сделать это" ("There's
-More Than One Way To Do It" ) является одним из девизов Perl.  В конце концов, в вашем путешествии, как программиста, вы, вероятно, столкнётесь с различными стилями.
+=head2 What is Perl?
 
-=head2 Что такое Perl?
+Perl is a general-purpose programming language originally developed for
+text manipulation and now used for a wide range of tasks including
+system administration, web development, network programming, GUI
+development, and more.
 
-Perl является универсальным языком программирования, первоначально разработанный для манипуляций с текстом и в настоящее время используется для широкого круга задач, включая системное администрирование, веб-разработки, сетевое программирование, разработка графического интерфейса и многое другое.
+The language is intended to be practical (easy to use, efficient,
+complete) rather than beautiful (tiny, elegant, minimal).  Its major
+features are that it's easy to use, supports both procedural and
+object-oriented (OO) programming, has powerful built-in support for text
+processing, and has one of the world's most impressive collections of
+third-party modules.
 
-Язык больше предназначен для практических (простота в использовании, эффективность, полнота), чем для красивых решений (крошечность, элегантность, минимализм).  Основными функциями языка являются то, что он прост в использовании, поддерживает процедурные и объектно-ориентированных (ОО) парадигмы программирования, имеет мощную встроенную поддержку для обработки текста, и имеет одну из самых впечатляющих в мире коллекций сторонних модулей.
+Different definitions of Perl are given in L<perl>, L<perlfaq1> and
+no doubt other places.  From this we can determine that Perl is different
+things to different people, but that lots of people think it's at least
+worth writing about.
 
-Различные определения Perl приведены в L<perl>, L<perlfaq1> не и несомненно в других местах.  Из этого мы можем определить, что Perl предоставляет разные возможности для разных людей, но, что многие люди думают, что об этом по крайней мере стоит писать.
+=head2 Running Perl programs
 
-=head2 Запуск Perl программ
-
-Чтобы запустить программу Perl из командной строки Unix:
+To run a Perl program from the Unix command line:
 
  perl progname.pl
 
-Кроме того, вставьте это в первую строку вашего скрипта:
+Alternatively, put this as the first line of your script:
 
  #!/usr/bin/env perl
 
-... и запустить скрипт как F</path/to/script.pl>.  Конечно файлу нужно дать права на исполнение, поэтому C<chmod 755 script.pl> (under Unix).
+... and run the script as F</path/to/script.pl>.  Of course, it'll need
+to be executable first, so C<chmod 755 script.pl> (under Unix).
 
-(Это первая строка подразумевает, что у вас есть программа B<env>.  Вы также можете поместить непосредственно путь к исполняемому файлу perl, например, C<#!/usr/bin/perl>).
+(This start line assumes you have the B<env> program.  You can also put
+directly the path to your perl executable, like in C<#!/usr/bin/perl>).
 
-Для получения дополнительной информации, в том числе инструкций для других платформ, таких как Windows и Mac OS, читайте L<perlrun>.
+For more information, including instructions for other platforms such as
+Windows and Mac OS, read L<perlrun>.
 
-=head2 Защитная сетка
+=head2 Safety net
 
-Perl по умолчанию может очень много простить.  Для того, чтобы сделать его более надежным, рекомендуется начинать каждый программу со следующих строк:
+Perl by default is very forgiving.  In order to make it more robust
+it is recommended to start every program with the following lines:
 
  #!/usr/bin/perl
  use strict;
  use warnings;
 
-Две дополнительных строки требуют от perl ловить различные общие ошибки в вашем коде.  Они проверяют разные вещи, так что вам нужны обе строки.  Если C<use strict;> найдет потенциальную проблема при вызове вашего кода, то выполнение немедленно остановится, когда он встречается, в то время как C<use warnings;> будет просто давать предупреждение (как параметр командной строки B<-w>), и позволит вашему коду продолжаться дальше.
-Чтобы узнать больше об этом - посмотрите соответствующие страницы руководства на L<strict> и L<warnings> .
+The two additional lines request from perl to catch various common
+problems in your code.  They check different things so you need both.  A
+potential problem caught by C<use strict;> will cause your code to stop
+immediately when it is encountered, while C<use warnings;> will merely
+give a warning (like the command-line switch B<-w>) and let your code run.
+To read more about them check their respective manual pages at L<strict>
+and L<warnings>.
 
-=head2 Основной обзор синтаксиса
+=head2 Basic syntax overview
 
-Perl скрипт или программа состоит из одного или нескольких операторов.  Эти операторы(statements) просто написаны в сценарии прямым способом.  Здесь нет необходимости иметь C<main()> функцию или что-нибудь в этом роде.
+A Perl script or program consists of one or more statements.  These
+statements are simply written in the script in a straightforward
+fashion.  There is no need to have a C<main()> function or anything of
+that kind.
 
-Perl операторы имеют в конце точку с запятой:
+Perl statements end in a semi-colon:
 
- print "Привет, мир";
+ print "Hello, world";
 
-Комментарии начинаются с хэш-символа '#' и продолжаются до конца строки
+Comments start with a hash symbol and run to the end of the line
 
- # Это комментарий
+ # This is a comment
 
-Пробелы не имеют значения:
+Whitespace is irrelevant:
 
  print
-     "Привет, мир!"
+     "Hello, world"
      ;
 
-... кроме внутри строки в кавычках:
+... except inside quoted strings:
 
- # это будет печатать с переносом строки по середине
- print "Привет
- мир";
+ # this would print with a linebreak in the middle
+ print "Hello
+ world";
 
-Двойные или одинарные кавычки могут быть использованы вокруг символьных строк:
+Double quotes or single quotes may be used around literal strings:
 
- print "Привет, мир";
- print 'Привет, мир';
+ print "Hello, world";
+ print 'Hello, world';
 
-Однако, только двойные кавычки "интерполируют" переменные и специальные символы, такие как символы новой строки (C<\n>):
+However, only double quotes "interpolate" variables and special
+characters such as newlines (C<\n>):
 
- print "Hello, $name\n";     # работает отлично
- print 'Hello, $name\n';     # печатает $name\n буквально
+ print "Hello, $name\n";     # works fine
+ print 'Hello, $name\n';     # prints $name\n literally
 
-Числа не нуждаются в кавычках вокруг них:
+Numbers don't need quotes around them:
 
  print 42;
 
-Вы можете использовать скобки для аргументов функций или опустить их в соответствии с вашим личным вкусом.  Они требуются лишь иногда для прояснения вопросов старшинства операторов.
+You can use parentheses for functions' arguments or omit them
+according to your personal taste.  They are only required
+occasionally to clarify issues of precedence.
 
  print("Hello, world\n");
  print "Hello, world\n";
 
-Более подробные сведения о синтаксисе Perl можно найти в L<perlsyn> .
+More detailed information about Perl syntax can be found in L<perlsyn>.
 
-=head2 Perl типы переменных
+=head2 Perl variable types
 
-Perl имеет три основных типа переменных: скаляры, массивы и хэши.
+Perl has three main variable types: scalars, arrays, and hashes.
 
 =over 4
 
-=item Скаляры
+=item Scalars
 
-Скаляр представляет одно значение:
+A scalar represents a single value:
 
  my $animal = "camel";
  my $answer = 42;
 
-Скалярные значения могут быть строки, целые числа или числа с плавающей точкой, а также Perl автоматически преобразует между ними по мере необходимости.  Здесь нет необходимости предварительно объявлять переменную типа, но вы должны объявить их с помощью ключевого слова C<my> ,если вы используете их в первый раз.  (Это одно из требований C<use strict;> ).
+Scalar values can be strings, integers or floating point numbers, and Perl
+will automatically convert between them as required.  There is no need
+to pre-declare your variable types, but you have to declare them using
+the C<my> keyword the first time you use them.  (This is one of the
+requirements of C<use strict;>.)
 
-Скалярные значения могут быть использованы в различных формах:
+Scalar values can be used in various ways:
 
  print $animal;
  print "The animal is $animal\n";
  print "The square of $answer is ", $answer * $answer, "\n";
 
-Есть целый ряд "магических" скаляров с именами, которые выглядят как знаки препинания или помехи в линиях.  Эти переменные используются для всех видов целей, и документированы в L<perlvar> .  Единственное, что вам нужно знать о этом на данный момент, то это про переменную C<$_> которая является "переменной по умолчанию".
-Она используется как аргумент по умолчанию для ряда функций в Perl, и устанавливается неявно в определенные циклические конструкции.
+There are a number of "magic" scalars with names that look like
+punctuation or line noise.  These special variables are used for all
+kinds of purposes, and are documented in L<perlvar>.  The only one you
+need to know about for now is C<$_> which is the "default variable".
+It's used as the default argument to a number of functions in Perl, and
+it's set implicitly by certain looping constructs.
 
- print;          # Выводит содержимое $_ по умолчанию
+ print;          # prints contents of $_ by default
 
-=item Массивы
+=item Arrays
 
-Массив представляет собой список значений:
+An array represents a list of values:
 
  my @animals = ("camel", "llama", "owl");
  my @numbers = (23, 42, 69);
  my @mixed   = ("camel", 42, 1.23);
 
-Массивы индексируются с нуля.  Вот как вы можете вытащить элемент массива:
+Arrays are zero-indexed.  Here's how you get at elements in an array:
 
- print $animals[0];              # печатает "camel"
- print $animals[1];              # печатает "llama"
+ print $animals[0];              # prints "camel"
+ print $animals[1];              # prints "llama"
 
-Специальная переменная C<$#array> говорит вам, индекс последнего элемента массива:
+The special variable C<$#array> tells you the index of the last element
+of an array:
 
- print $mixed[$#mixed];       # последний элемент, печатает 1.23
+ print $mixed[$#mixed];       # last element, prints 1.23
 
-Можно было бы попытаться использовать C<$#array + 1>, чтобы сказать вам, сколько элементов есть в массиве.  Не беспокойтесь.  Как это происходит, используя C<@array>, где Perl ожидает найти скалярное значение ("в скалярном контексте") даст вам количество элементов в массиве:
+You might be tempted to use C<$#array + 1> to tell you how many items there
+are in an array.  Don't bother.  As it happens, using C<@array> where Perl
+expects to find a scalar value ("in scalar context") will give you the number
+of elements in the array:
 
  if (@animals < 5) { ... }
 
-Элементы, которые мы получаем из массива начинаются с C<$>, потому что мы получаем только одно значение из массива, вы запрашиваете в скалярном контексте и таким образом получаете скаляр.
+The elements we're getting from the array start with a C<$> because
+we're getting just a single value out of the array; you ask for a scalar,
+you get a scalar.
 
-Чтобы получить несколько значений из массива:
+To get multiple values from an array:
 
- @animals[0,1];                 # дает ("camel", "llama");
- @animals[0..2];                # дает ("camel", "llama", "owl");
- @animals[1..$#animals];        # дает все, кроме первого элемента
+ @animals[0,1];                 # gives ("camel", "llama");
+ @animals[0..2];                # gives ("camel", "llama", "owl");
+ @animals[1..$#animals];        # gives all except the first element
 
-Это называется "срез массива".
+This is called an "array slice".
 
-Вы можете делать различные полезные вещи списках:
+You can do various useful things to lists:
 
  my @sorted    = sort @animals;
  my @backwards = reverse @numbers;
 
-Есть несколько специальных массивов также, такие как C<@ARGV> (аргументы командной строки в скрипте) и C<@_> (аргументы, передаваемые в подпрограмму).  Они описаны в L<perlvar>.
+There are a couple of special arrays too, such as C<@ARGV> (the command
+line arguments to your script) and C<@_> (the arguments passed to a
+subroutine).  These are documented in L<perlvar>.
 
-=item Хэши
+=item Hashes
 
-Хэш представляет собой набор пар ключ/значение:
+A hash represents a set of key/value pairs:
 
  my %fruit_color = ("apple", "red", "banana", "yellow");
 
-Можно использовать пробелы и  оператору C<< => >>, чтобы выложить их для более наглядного представления:
+You can use whitespace and the C<< => >> operator to lay them out more
+nicely:
 
  my %fruit_color = (
      apple  => "red",
      banana => "yellow",
  );
 
-Чтобы добраться до элементов хеша:
+To get at hash elements:
 
- $fruit_color{"apple"};           # дает "red"
+ $fruit_color{"apple"};           # gives "red"
 
-Вы можете получить в списки ключей и значений используя функции C<keys()> и C<values()> .
+You can get at lists of keys and values with C<keys()> and
+C<values()>.
 
  my @fruits = keys %fruit_colors;
  my @colors = values %fruit_colors;
 
-Хэш не имеют особого внутреннего порядка, хотя вы можете отсортировать ключи и делать через них циклы.
+Hashes have no particular internal order, though you can sort the keys
+and loop through them.
 
-Так же, как специальные скаляры и массивы, существуют также специальные хэши.
-Наиболее известным из них является C<%ENV>, который содержит переменные окружения.  Читайте об этом (и других специальных переменных) в L<perlvar>.
+Just like special scalars and arrays, there are also special hashes.
+The most well known of these is C<%ENV> which contains environment
+variables.  Read all about it (and other special variables) in
+L<perlvar>.
 
 =back
 
-Скаляры, массивы и хэши описаны более полно в L<perldata> .
+Scalars, arrays and hashes are documented more fully in L<perldata>.
 
-Более сложные типы данных можно построить с помощью ссылок, которые позволяют создавать списки и хэши внутри списков и хэшей.
+More complex data types can be constructed using references, which allow
+you to build lists and hashes within lists and hashes.
 
-Ссылка является скалярной величиной и может ссылаться на любой другой тип данных Perl.  Так, сохраняя ссылку в качестве значения массива или хэша элемента, вы можете легко создавать списки и хэши внутри списков и хэшей.  В следующем примере показаны 2 уровня хэш хэш-структуры с использованием анонимных ссылок на хэши.
+A reference is a scalar value and can refer to any other Perl data
+type.  So by storing a reference as the value of an array or hash
+element, you can easily create lists and hashes within lists and
+hashes.  The following example shows a 2 level hash of hash
+structure using anonymous hash references.
 
  my $variables = {
      scalar  =>  {
@@ -213,21 +287,26 @@ Perl имеет три основных типа переменных: скал�
                  },
  };
 
- print "Скаляры начинаются с $variables->{'scalar'}->{'sigil'}\n";
+ print "Scalars begin with a $variables->{'scalar'}->{'sigil'}\n";
 
-Исчерпывающую информацию по теме ссылок можно найти в L<perlreftut>, L<perllol>, L<perlref> and L<perldsc>.
+Exhaustive information on the topic of references can be found in
+L<perlreftut>, L<perllol>, L<perlref> and L<perldsc>.
 
-=head2 Видимость переменной
+=head2 Variable scoping
 
-На протяжении предыдущего раздела во всех примерах мы использовали синтаксис:
+Throughout the previous section all the examples have used the syntax:
 
  my $var = "value";
 
-C<my> на самом деле не требуется, вы можете использовать только:
+The C<my> is actually not required; you could just use:
 
  $var = "value";
 
-Однако, указанное использование будет создавать глобальные переменные на протяжении всей программы и это является плохой практикой программирования.  C<my> создает вместо этого лексическую область видимости переменных.  Переменные находятся в области видимости блока (то есть куча операторов, заключенная в фигурные скобки), в котором они определены.
+However, the above usage will create global variables throughout your
+program, which is bad programming practice.  C<my> creates lexically
+scoped variables instead.  The variables are scoped to the block
+(i.e. a bunch of statements surrounded by curly-braces) in which they
+are defined.
 
  my $x = "foo";
  my $some_condition = 1;
@@ -236,46 +315,55 @@ C<my> на самом деле не требуется, вы можете исп
      print $x;           # prints "foo"
      print $y;           # prints "bar"
  }
- print $x;               # печатает "foo"
- print $y;               # ничего не печатает; $y выпал из сферы видимости переменной
+ print $x;               # prints "foo"
+ print $y;               # prints nothing; $y has fallen out of scope
 
-Использование C<my> в комбинации с C<use strict;> в верхней части вашего Perl скрипта означает, что интерпретатор будет находить некоторые общие ошибки программирования.  Например, в приведенном выше примере, конечный C<print $y> приведет к ошибке времени компиляции и препятствует запуску программы.  Использование C<strict> настоятельно рекомендуется.
+Using C<my> in combination with a C<use strict;> at the top of
+your Perl scripts means that the interpreter will pick up certain common
+programming errors.  For instance, in the example above, the final
+C<print $y> would cause a compile-time error and prevent you from
+running the program.  Using C<strict> is highly recommended.
 
-=head2 Условные и циклические конструкции
+=head2 Conditional and looping constructs
 
-Perl имеет большинство обычных условных и циклических конструкций.  По состоянию на Perl 5.10, у него даже есть оператор case/switch  (пишется C<given>/C<when>).  См. 
-L<perlsyn/"Switch Statements">  для более подробной информации.
+Perl has most of the usual conditional and looping constructs.  As of Perl
+5.10, it even has a case/switch statement (spelled C<given>/C<when>).  See
+L<perlsyn/"Switch Statements"> for more details.
 
-Условием может быть любое Perl выражение.  См. список операторов в следующем разделе для получения информации о сравнениях и логических операторах, которые обычно используются в условных операторах.
+The conditions can be any Perl expression.  See the list of operators in
+the next section for information on comparison and boolean logic operators,
+which are commonly used in conditional statements.
 
 =over 4
 
 =item if
 
- if ( условие ) {
+ if ( condition ) {
      ...
- } elsif ( другое условие ) {
+ } elsif ( other condition ) {
      ...
  } else {
      ...
  }
 
-Здесь даже есть негативная версия этого оператора:
+There's also a negated version of it:
 
- unless ( условие ) {
+ unless ( condition ) {
      ...
  }
 
-Это считается более читаемой версией C<if (!I<condition>)>.
+This is provided as a more readable version of C<if (!I<condition>)>.
 
-Обратите внимание, что фигурные скобки необходимы в Perl, даже если у вас только одна строка в блоке.  Однако, есть хитрый способ сделать ваши однострочные условные блоки более похожими на английский язык, такие как:
+Note that the braces are required in Perl, even if you've only got one
+line in the block.  However, there is a clever way of making your one-line
+conditional blocks more English like:
 
- # Традиционным способом
+ # the traditional way
  if ($zippy) {
      print "Yow!";
  }
 
- # Perlish постусловный путь
+ # the Perlish post-condition way
  print "Yow!" if $zippy;
  print "We have no bananas" unless $bananas;
 
@@ -285,225 +373,259 @@ L<perlsyn/"Switch Statements">  для более подробной инфор�
      ...
  }
 
-Также есть негативная версия, по той же причине у нас есть C<unless> :
+There's also a negated version, for the same reason we have C<unless>:
 
  until ( condition ) {
      ...
  }
 
-Вы также можете использовать C<while> в пост-условии:
+You can also use C<while> in a post-condition:
 
- print "LA LA LA\n" while 1;          #  зацикливается навсегда
+ print "LA LA LA\n" while 1;          # loops forever
 
 =item for
 
-Точно так же как C:
+Exactly like C:
 
  for ($i = 0; $i <= $max; $i++) {
      ...
  }
 
-Стиль С для цикла требуется редко Perl, т.к. Perl предоставляет более дружественный оператор для прохождения по списку C<foreach>.
+The C style for loop is rarely needed in Perl since Perl provides
+the more friendly list scanning C<foreach> loop.
 
 =item foreach
 
  foreach (@array) {
-     print "Это элемент $_\n";
+     print "This element is $_\n";
  }
 
  print $list[$_] foreach 0 .. $max;
 
- # вы не обязаны использовать переменную по умолчанию $ _ либо ...
+ # you don't have to use the default $_ either...
  foreach my $key (keys %hash) {
-     print "Значение $key есть $hash{$key}\n";
+     print "The value of $key is $hash{$key}\n";
  }
 
-Ключевое слово C<foreach>  на самом деле является синонимом ключевое слова C<for>.  См. C<L<perlsyn/"Foreach Loops">>.
+The C<foreach> keyword is actually a synonym for the C<for>
+keyword.  See C<L<perlsyn/"Foreach Loops">>.
 
 =back
 
-Более подробную информацию о конструкции цикла (и некоторые, которые не были упомянуты в этом обзоре) см. L<perlsyn>.
+For more detail on looping constructs (and some that weren't mentioned in
+this overview) see L<perlsyn>.
 
-= Head2 Встроенные операторы и функции
+=head2 Builtin operators and functions
 
-Perl поставляется с широким выбором встроенных функций.  Некоторые из них, которые мы уже видели, включают C<print>, C<sort> and C<reverse>.  Их список приведен в начале L<perlfunc> и вы можете легко прочитать о любой функции с помощью C<perldoc -f I<имя функции>>.
+Perl comes with a wide selection of builtin functions.  Some of the ones
+we've already seen include C<print>, C<sort> and C<reverse>.  A list of
+them is given at the start of L<perlfunc> and you can easily read
+about any given function by using C<perldoc -f I<functionname>>.
 
-Perl операторы полностью описаны в L<perlop> , но вот некоторые из наиболее распространенных из них:
+Perl operators are documented in full in L<perlop>, but here are a few
+of the most common ones:
 
 =over 4
 
-=item Арифметические
+=item Arithmetic
 
- +   сложение
- -   вычитание
- *   умножение
- /   деление
+ +   addition
+ -   subtraction
+ *   multiplication
+ /   division
 
-=item Числовое сравнение
+=item Numeric comparison
 
- ==  равенство
- !=  неравенство
- <   меньше чем
- >   больше чем
- <=  меньше или равно
- >=  больше или равно
+ ==  equality
+ !=  inequality
+ <   less than
+ >   greater than
+ <=  less than or equal
+ >=  greater than or equal
 
-=item Сравнение строк
+=item String comparison
 
- eq  равенство
- ne  неравенство
- lt  меньше
- gt  больше
- le  меньше или равно
- ge  больше или равно
+ eq  equality
+ ne  inequality
+ lt  less than
+ gt  greater than
+ le  less than or equal
+ ge  greater than or equal
 
-(Почему у нас есть отдельные числовые и строковые сравнения?  Потому что у нас нет специальных типов переменных и Perl должен знать, нужно ли сортировать численно (где 99 меньше 100) или в алфавитном порядке (100, где идет перед 99).
+(Why do we have separate numeric and string comparisons?  Because we don't
+have special variable types, and Perl needs to know whether to sort
+numerically (where 99 is less than 100) or alphabetically (where 100 comes
+before 99).
 
-=item Булева логика (в честь Джорджа Була)
+=item Boolean logic
 
- &&  и
- ||  или
- !   отрицание
+ &&  and
+ ||  or
+ !   not
 
-(C<and>, C<or> и C<not> не только в приведенной выше таблице,  также смотри описания операторов.  Они также поддерживаются как операторы в их собственном виде.  Они более понятные, чем C-style операторы, но имеют разные предпочтения (старшинство операторов) C<&&> и друзьями.  Проверьте L<perlop> для больших подробностей.)
+(C<and>, C<or> and C<not> aren't just in the above table as descriptions
+of the operators.  They're also supported as operators in their own
+right.  They're more readable than the C-style operators, but have
+different precedence to C<&&> and friends.  Check L<perlop> for more
+detail.)
 
-=item Разное
+=item Miscellaneous
 
- =   присваивание
- .   конкатенации строк
- x   умножение строк
- ..  оператор диапазона (создает список чисел)
+ =   assignment
+ .   string concatenation
+ x   string multiplication
+ ..  range operator (creates a list of numbers)
 
 =back
 
-Многие операторы могут быть объединены с C<=> следующим образом:
+Many operators can be combined with a C<=> as follows:
 
- $a += 1;        # также как $a = $a + 1
- $a -= 1;        # также как $a = $a - 1
- $a .= "\n";     # также как $a = $a . "\n";
+ $a += 1;        # same as $a = $a + 1
+ $a -= 1;        # same as $a = $a - 1
+ $a .= "\n";     # same as $a = $a . "\n";
 
-=head2 Файлы и Ввод/Вывод
+=head2 Files and I/O
 
-Вы можете открыть файл для ввода или вывода с помощью функции C<open()>.
-Это описано в экстравагантных деталях в L<perlfunc> и L<perlopentut> , но в кратце:
+You can open a file for input or output using the C<open()> function.
+It's documented in extravagant detail in L<perlfunc> and L<perlopentut>,
+but in short:
 
  open(my $in,  "<",  "input.txt")  or die "Can't open input.txt: $!";
  open(my $out, ">",  "output.txt") or die "Can't open output.txt: $!";
  open(my $log, ">>", "my.log")     or die "Can't open my.log: $!";
 
-Вы можете прочитать из открытого файлового манипулятора используя оператор C<< <> >> .  В скалярном контексте он читает одну строку из дескриптора файла, а в списочном контексте он читает весь файл в, назначая каждую строку элементу списка:
+You can read from an open filehandle using the C<< <> >> operator.  In
+scalar context it reads a single line from the filehandle, and in list
+context it reads the whole file in, assigning each line to an element of
+the list:
 
  my $line  = <$in>;
  my @lines = <$in>;
 
-Чтение в файла целиком за один раз, называется slurping хлебать (съесть целиком).  Это может быть полезным, но это может иметь память свиньи.  Большинство средств обработки текстовых файлов можно сделать с помощью циклических конструкций Perl.
+Reading in the whole file at one time is called slurping.  It can
+be useful but it may be a memory hog.  Most text file processing
+can be done a line at a time with Perl's looping constructs.
 
-Оператор C<< <> >> чаще всего используется в цикле C<while>:
+The C<< <> >> operator is most often seen in a C<while> loop:
 
- while (<$in>) {     # присваивает каждой строке $_
+ while (<$in>) {     # assigns each line in turn to $_
      print "Just read in this line: $_";
  }
 
-Мы уже видели, как печатать на стандартный вывод с помощью C<print()>.
-Тем не менее, C<print()> может также взять дополнительный первый аргумент, указывающий на дескриптор файла для печати:
+We've already seen how to print to standard output using C<print()>.
+However, C<print()> can also take an optional first argument specifying
+which filehandle to print to:
 
  print STDERR "This is your final warning.\n";
  print $out $record;
  print $log $logmessage;
 
-Когда вы закончите с вашим дескрипторов файлов, вы должны использовать C<close()> для закрытия (хотя, честно говоря, Perl будет убирать за вами, если вы забыли):
+When you're done with your filehandles, you should C<close()> them
+(though to be honest, Perl will clean up after you if you forget):
 
  close $in or die "$in: $!";
 
-=head2 Регулярные выражения
+=head2 Regular expressions
 
-Поддержка регулярных выражений Perl является как широкой и глубокой, и является предметом длинной документации в L<perlrequick>, L<perlretut> , И в других местах.  Тем не менее, коротко:
+Perl's regular expression support is both broad and deep, and is the
+subject of lengthy documentation in L<perlrequick>, L<perlretut>, and
+elsewhere.  However, in short:
 
 =over 4
 
-=item Простое совпадение
+=item Simple matching
 
- if (/foo/)       { ... }  # верно если $_ содержит "foo"
- if ($a =~ /foo/) { ... }  # верно если $a содержит "foo"
+ if (/foo/)       { ... }  # true if $_ contains "foo"
+ if ($a =~ /foo/) { ... }  # true if $a contains "foo"
 
-Оператор соответствия C<//> описан в L<perlop>.  Он работает с C<$_> по умолчанию, или может быть связан с другой переменной с помощью оператора привязки C<=~> (также документированы в L<perlop>).
+The C<//> matching operator is documented in L<perlop>.  It operates on
+C<$_> by default, or can be bound to another variable using the C<=~>
+binding operator (also documented in L<perlop>).
 
-=item Простая замена
+=item Simple substitution
 
- s/foo/bar/;               # заменяет foo с bar в $_
- $a =~ s/foo/bar/;         # заменяет foo с bar в $a
- $a =~ s/foo/bar/g;        # заменены ВСЕ ЭКЗЕМПЛЯРЫ foo с bar
-                           # в $a
+ s/foo/bar/;               # replaces foo with bar in $_
+ $a =~ s/foo/bar/;         # replaces foo with bar in $a
+ $a =~ s/foo/bar/g;        # replaces ALL INSTANCES of foo with bar
+                           # in $a
 
-Оператор замены C<s///> описан в L<perlop>
+The C<s///> substitution operator is documented in L<perlop>.
 
-=item Более сложные регулярные выражения
+=item More complex regular expressions
 
-Вы не просто должны совпадать по фиксированной строке.  В самом деле, вы можете сопоставить все что угодно, о чем вы могли бы мечтать, используя более сложные регулярные выражения.  Они описаны в достаточно подробно в L<perlre>, но тем не менее, вот быстрая шпаргалка:
+You don't just have to match on fixed strings.  In fact, you can match
+on just about anything you could dream of by using more complex regular
+expressions.  These are documented at great length in L<perlre>, but for
+the meantime, here's a quick cheat sheet:
 
- .                   один символ
- \s                  пробелы (пробел, табуляция, новая строка,
+ .                   a single character
+ \s                  a whitespace character (space, tab, newline,
                      ...)
- \S                  непробельный символ
- \d                  цифра (0-9)
- \D                  нецифра non-digit
- \w                  символ слова (a-z, A-Z, 0-9, _)
- \W                  несловесный символ
- [aeiou]             соответствует одному символу в данном наборе
- [^aeiou]            соответствует одному символу вне данного набора
-                     набор
- (foo|bar|baz)       соответствует любому из указанных альтернатив
+ \S                  non-whitespace character
+ \d                  a digit (0-9)
+ \D                  a non-digit
+ \w                  a word character (a-z, A-Z, 0-9, _)
+ \W                  a non-word character
+ [aeiou]             matches a single character in the given set
+ [^aeiou]            matches a single character outside the given
+                     set
+ (foo|bar|baz)       matches any of the alternatives specified
 
- ^                   начало строки
- $                   конец строки
+ ^                   start of string
+ $                   end of string
 
-Квантификаторы (умножители) могут быть использованы для указания, сколько из предыдущего, что вы хотите, чтобы соответствовать на, где "вещь" означает либо буквенный символ, один из метасимволов, перечисленных выше, или группа символов или метасимволы в круглых скобках.
+Quantifiers can be used to specify how many of the previous thing you
+want to match on, where "thing" means either a literal character, one
+of the metacharacters listed above, or a group of characters or
+metacharacters in parentheses.
 
- *                   ноль или более от предыдущей вещи
- +                   один или более от предыдущей вещи
- ?                   ноль или один от предыдущей вещи
- {3}                 соответствует ровно 3 от предыдущей вещи
- {3,6}               соответствует между 3 и 6 от предыдущей вещи
- {3,}                соответствует 3 или более от предыдущей вещи
+ *                   zero or more of the previous thing
+ +                   one or more of the previous thing
+ ?                   zero or one of the previous thing
+ {3}                 matches exactly 3 of the previous thing
+ {3,6}               matches between 3 and 6 of the previous thing
+ {3,}                matches 3 or more of the previous thing
 
-Некоторые краткие примеры:
+Some brief examples:
 
- /^\d+/              строка начинается с одной или несколькими цифрами
- /^$/                ничего в строке (начало и конец
-                     смежный)
- /(\d\s){3}/         три цифры, за каждой из которых стоит пробел
-                     символ (например "3 4 5 ")
- /(a.)+/             соответствует строка, в которой каждый нечетный
-                     письма (например, "abacadaf")
+ /^\d+/              string starts with one or more digits
+ /^$/                nothing in the string (start and end are
+                     adjacent)
+ /(\d\s){3}/         three digits, each followed by a whitespace
+                     character (eg "3 4 5 ")
+ /(a.)+/             matches a string in which every odd-numbered
+                     letter is a (eg "abacadaf")
 
- # Этот цикл читает со стандартного ввода и печатает без пустых строк:
+ # This loop reads from STDIN, and prints non-blank lines:
  while (<>) {
      next if /^$/;
      print;
  }
 
-=item Скобки для захвата
+=item Parentheses for capturing
 
-Так же, как группировка, скобки служат второй цели.  Они могут быть использованы для захвата результата части матча регулярного выражения для последующего использования.
-Результаты оказались в C<$1>, C<$2> и так далее.
+As well as grouping, parentheses serve a second purpose.  They can be
+used to capture the results of parts of the regexp match for later use.
+The results end up in C<$1>, C<$2> and so on.
 
- # дешевая и противная способ разорвать адрес электронной почты на части
+ # a cheap and nasty way to break an email address up into parts
 
  if ($email =~ /([^@]+)@(.+)/) {
      print "Username is $1\n";
      print "Hostname is $2\n";
  }
 
-=item Другие функции регулярных выражений
+=item Other regexp features
 
-Perl регулярные выражения также поддерживают обратные ссылки, lookaheads, и все виды других сложных деталей.  Прочитайте все о них в L<perlrequick>,
+Perl regexps also support backreferences, lookaheads, and all kinds of
+other complex details.  Read all about them in L<perlrequick>,
 L<perlretut>, and L<perlre>.
 
 =back
 
-=head2 Написание подпрограмм
+=head2 Writing subroutines
 
-Написание подпрограмм легко:
+Writing subroutines is easy:
 
  sub logger {
     my $logmessage = shift;
@@ -511,20 +633,22 @@ L<perlretut>, and L<perlre>.
     print $logfile $logmessage;
  }
 
-Теперь мы можем воспользоваться подпрограммой как и любой другой встроенной функцией:
+Now we can use the subroutine just as any other built-in function:
 
- logger("У нас есть регистратор подпрограммы!");
+ logger("We have a logger subroutine!");
 
-Что такое C<shift>?  Ну, аргументы подпрограммы доступны нам как специальный массив C<@_> (см. L<perlvar> более подробно об этом).
-Аргумент по умолчанию в C<shift> вытаскиеват первый аргумент массива C<@_>.
-So C<my $logmessage = shift;> двигает первый пункт из списка аргументов и присваивает его C<$logmessage>.
+What's that C<shift>?  Well, the arguments to a subroutine are available
+to us as a special array called C<@_> (see L<perlvar> for more on that).
+The default argument to the C<shift> function just happens to be C<@_>.
+So C<my $logmessage = shift;> shifts the first item off the list of
+arguments and assigns it to C<$logmessage>.
 
-Мы можем управлять  C<@_> и в других случаях тоже:
+We can manipulate C<@_> in other ways too:
 
- my ($logmessage, $priority) = @_;       # общие
- my $logmessage = $_[0];                 # редко, и уродливо
+ my ($logmessage, $priority) = @_;       # common
+ my $logmessage = $_[0];                 # uncommon, and ugly
 
-Подпрограммы могут также возвращать значения:
+Subroutines can also return values:
 
  sub square {
      my $num = shift;
@@ -532,37 +656,49 @@ So C<my $logmessage = shift;> двигает первый пункт из спи
      return $result;
  }
 
-Затем использовать его как:
+Then use it like:
 
  $sq = square(8);
 
-Для получения дополнительной информации о написании подпрограмм см. L<perlsub>.
+For more information on writing subroutines, see L<perlsub>.
 
 =head2 OO Perl
 
-OO Perl относительно проста и осуществляется с помощью ссылок, которые знают на основе какого объекта они созданы, объекты основаны на концепции Perl-пакетов.
-Тем не менее, OO Perl в значительной степени выходит за рамки этого документа.
-Читайте L<perlootut> и L<perlobj>.
+OO Perl is relatively simple and is implemented using references which
+know what sort of object they are based on Perl's concept of packages.
+However, OO Perl is largely beyond the scope of this document.
+Read L<perlootut> and L<perlobj>.
 
-Как начинающий программист Perl, ваш самый распространенный способ использования OO Perl будет при помощи сторонних модулей, которые описаны ниже.
+As a beginning Perl programmer, your most common use of OO Perl will be
+in using third-party modules, which are documented below.
 
-=head2 Использование Perl модулей
+=head2 Using Perl modules
 
-Perl модули предоставляют широкий спектр функций, которые помогут вам не изобретать велосипед, их можно загрузить с CPAN (http://www.cpan.org/).  Ряд популярных модулей уже идет в комплекте с Perl.
+Perl modules provide a range of features to help you avoid reinventing
+the wheel, and can be downloaded from CPAN ( http://www.cpan.org/ ).  A
+number of popular modules are included with the Perl distribution
+itself.
 
-Категории модулей варьируются от манипуляций с текстом до сетевых протоколов, модулей для интеграции баз данных, для графики.  Классифицированный список модулей также доступен на CPAN.
+Categories of modules range from text manipulation to network protocols
+to database integration to graphics.  A categorized list of modules is
+also available from CPAN.
 
-Чтобы узнать, как установить модули, загруженные из CPAN, читайте L<perlmodinstall> .
+To learn how to install modules you download from CPAN, read
+L<perlmodinstall>.
 
-Чтобы узнать, как использовать конкретный модуль, используйте C<perldoc I<Module::Name>>.
-Обычно вы можете использовать объявление C<use I<Module::Name>>, которое дает вам доступ к экспортируемым функциям или  OO ориентированный интерфейс к модулю.
+To learn how to use a particular module, use C<perldoc I<Module::Name>>.
+Typically you will want to C<use I<Module::Name>>, which will then give
+you access to exported functions or an OO interface to the module.
 
-L<perlfaq> содержит вопросы и ответы, связанные с большинством общих задач, и часто дает хорошие предложения для использования CPAN модулей.
+L<perlfaq> contains questions and answers related to many common
+tasks, and often provides suggestions for good CPAN modules to use.
 
-L<perlmod> описывает Perl модулей в целом.  L<perlmodlib> список модулей, которые поставляются вместе с Perl установкой.
+L<perlmod> describes Perl modules in general.  L<perlmodlib> lists the
+modules which came with your Perl installation.
 
-Если вы чувствуете желание писать модули на Perl, L<perlnewmod> даст вам хороший совет.
+If you feel the urge to write Perl modules, L<perlnewmod> will give you
+good advice.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Kirrily "Skud" Robert <skud@cpan.org>

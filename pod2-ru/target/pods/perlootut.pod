@@ -4,7 +4,7 @@
 Consistent formatting of this file is achieved with:
   perl ./Porting/podtidy pod/perlootut.pod
 
-=head1 –ò–º—è
+=head1 NAME
 
 perlootut - Object-Oriented Programming in Perl Tutorial
 
@@ -18,7 +18,7 @@ of the art has changed. We recommend you start by reading the perlootut
 document in the latest stable release of Perl, rather than this
 version.
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This document provides an introduction to object-oriented programming
 in Perl. It begins with a brief overview of the concepts behind object

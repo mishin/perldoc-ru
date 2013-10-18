@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you see.
 It is written in the POD format (see pod/perlpod.pod) which is specially
 designed to be readable as is.
 
-=head1 袠屑褟
+=head1 NAME
 
 perlmacosx - Perl under Mac OS X
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
 This document briefly describes Perl under Mac OS X.
 
@@ -18,7 +18,7 @@ This document briefly describes Perl under Mac OS X.
   make test
   sudo make install
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 The latest Perl release (5.18.0 as of this writing) builds without changes
 under all versions of Mac OS X from 10.3 "Panther" onwards. 
@@ -262,7 +262,7 @@ way to extract the Perl binaries from the OS media, without having to
 reinstall the entire OS.
 
 
-=head1 袗袙孝袨袪
+=head1 AUTHOR
 
 This README was written by Sherm Pendley E<lt>sherm@dot-app.orgE<gt>,
 and subsequently updated by Dominic Dunlop E<lt>domo@computer.orgE<gt>

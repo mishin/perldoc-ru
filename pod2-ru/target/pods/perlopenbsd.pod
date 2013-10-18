@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see.  It is written in the POD format (see pod/perlpod.pod) which is
 specifically designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlopenbsd - Perl version 5 on OpenBSD systems
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes various features of OpenBSD that will affect how Perl
 version 5 (hereafter just Perl) is compiled and/or runs.
@@ -22,7 +22,7 @@ should handle this problem correctly.  Older threaded Perls (5.8.6 or earlier)
 will run into this problem.  If you want to run a threaded Perl on OpenBSD
 3.7 or higher, you will need to upgrade to at least Perl 5.8.7.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Steve Peters <steve@fisharerojo.org>
 

@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlipc - Perl interprocess communication (signals, fifos, pipes, safe subprocesses, sockets, and semaphores)
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 The basic IPC facilities of Perl are built out of the good old Unix
 signals, named pipes, pipe opens, the Berkeley socket routines, and SysV
@@ -1774,7 +1774,7 @@ A small example demonstrating SysV message queues:
 
     msgctl($id, IPC_RMID, 0)    || die "msgctl failed: $!\n";
 
-=head1 ПРИМЕЧАНИЯ
+=head1 NOTES
 
 Most of these routines quietly but politely return C<undef> when they
 fail instead of causing your program to die right then and there due to
@@ -1789,7 +1789,7 @@ taint-checking flag to the C<#!> line for servers:
     use sigtrap;
     use Socket;
 
-=head1 ОШИБКИ
+=head1 BUGS
 
 These routines all create system-specific portability problems.  As noted
 elsewhere, Perl is at the mercy of your C libraries for much of its system
@@ -1798,12 +1798,12 @@ signals and to stick with simple TCP and UDP socket operations; e.g., don't
 try to pass open file descriptors over a local UDP datagram socket if you
 want your code to stand a chance of being portable.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Tom Christiansen, with occasional vestiges of Larry Wall's original
 version and suggestions from the Perl Porters.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 There's a lot more to networking than this, but this should get you
 started.

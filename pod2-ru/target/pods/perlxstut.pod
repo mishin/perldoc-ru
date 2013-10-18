@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlxstut - Tutorial for writing XSUBs
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This tutorial will educate the reader on the steps involved in creating
 a Perl extension.  The reader is assumed to have access to L<perlguts>,

@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see.  It is written in the POD format (see pod/perlpod.pod) which is
 specifically designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlriscos - Perl version 5 for RISC OS
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document gives instructions for building Perl for RISC OS. It is
 complicated by the need to cross compile. There is a binary version of
@@ -62,6 +62,6 @@ This will use miniperl to complete the rest of the build.
 
 =back
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Alex Waugh <alex@alexwaugh.com>

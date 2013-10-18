@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlxs - XS language reference manual
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 =head2 Introduction
 
@@ -2116,7 +2116,7 @@ File C<rpctest.pl>: Perl test program for the RPC extension.
 This document covers features supported by C<ExtUtils::ParseXS>
 (also known as C<xsubpp>) 3.13_01.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Originally written by Dean Roehrich <F<roehrich@cray.com>>.
 

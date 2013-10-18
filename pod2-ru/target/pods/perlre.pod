@@ -1,60 +1,46 @@
-=head1 NAME
+=head1 
 X<regular expression> X<regex> X<regexp>
 
-perlre - Perl regular expressions
+perlre - регулярные выражения Perl
 
-=head1 РћРџРРЎРђРќРР•
+=head1 ОПИСАНИЕ
 
-This page describes the syntax of regular expressions in Perl.
+Эта страница описывает синтаксис регулярных выражений в Perl.
 
-If you haven't used regular expressions before, a quick-start
-introduction is available in L<perlrequick>, and a longer tutorial
-introduction is available in L<perlretut>.
+Если вы не использовали регулярные выражения прежде, то быстрое введение доступно в L <perlrequick>, а более длинное учебное введение доступно в L <perlretut>.
 
-For reference on how regular expressions are used in matching
-operations, plus various examples of the same, see discussions of
-C<m//>, C<s///>, C<qr//> and C<??> in L<perlop/"Regexp Quote-Like
+Для справки о том, как используются регулярные выражения в поиске по шаблону,  а также различные примеры того же см. обсуждение C<m//>, C<s///>, C<qr//> и C<??> в L<perlop/"Regexp Quote-Like
 Operators">.
 
 
-=head2 Modifiers
+=head2 Модификаторы
 
-Matching operations can have various modifiers.  Modifiers
-that relate to the interpretation of the regular expression inside
-are listed below.  Modifiers that alter the way a regular expression
-is used by Perl are detailed in L<perlop/"Regexp Quote-Like Operators"> and
-L<perlop/"Gory details of parsing quoted constructs">.
+У операций поиска по шаблону быть различные модификаторы.  Модификаторы, которые относятся к интерпретации внутри регулярных выражений  перечислены ниже.  Модификаторы, которые изменяют путь регулярного выражения, использующегося в Perl, детализированы в  L<perlop/"Регулярные выражения в операторах, которые в кавычках"> и 
+L<perlop/"Внтутренние детали парсинга конструкций в кавычках"> (L<perlop/"Regexp Quote-Like Operators"> и
+L<perlop/"Gory details of parsing quoted constructs">).
 
 =over 4
 
 =item m
 X</m> X<regex, multiline> X<regexp, multiline> X<regular expression, multiline>
 
-Treat string as multiple lines.  That is, change "^" and "$" from matching
-the start or end of line only at the left and right ends of the string to
-matching them anywhere within the string.
+Строка, в которой происходит поиск, состоит из множества строк.  То есть, изменение "^" и "$" от соответствия началу или концу линии только в левых и правых концах строки к соответствию им где угодно в строке.
 
 =item s
 X</s> X<regex, single-line> X<regexp, single-line>
 X<regular expression, single-line>
 
-Treat string as single line.  That is, change "." to match any character
-whatsoever, even a newline, which normally it would not match.
+Представляет строку как одну линию.  Изменяет поведение "." для поиска любого символа включая новую строку, которая обычно не совпадает с этим шаблоном.
 
-Used together, as C</ms>, they let the "." match any character whatsoever,
-while still allowing "^" and "$" to match, respectively, just after
-and just before newlines within the string.
+Используя вместе как C</ms> позволяет "." соответствовать любому символу включая новую строку и позволяет "^" и "$" для нахождения соответственно только после и только перед переносом строки внутри строки.
 
 =item i
 X</i> X<regex, case-insensitive> X<regexp, case-insensitive>
 X<regular expression, case-insensitive>
 
-Do case-insensitive pattern matching.
+Выполняет соответствие шаблону без учета регистра.
 
-If locale matching rules are in effect, the case map is taken from the
-current
-locale for code points less than 255, and from Unicode rules for larger
-code points.  However, matches that would cross the Unicode
+{g}:Если язык правил соответствия в действительности, дело карту берется из текущей локали для кода пункта меньше, чем 255, а с Unicode правила для увеличения точки кода.{t}:Если правила соответствия места действия в действительности, карта случая взята от текущего места действия для кодовых точек меньше чем 255, и из правил Unicode для больших кодовых точек.}  However, matches that would cross the Unicode
 rules/non-Unicode rules boundary (ords 255/256) will not succeed.  See
 L<perllocale>.
 
@@ -2578,7 +2564,7 @@ Subroutine call to a named capture group. Equivalent to C<< (?&NAME) >>.
 
 =back
 
-=head1 РћРЁРР‘РљР
+=head1 BUGS
 
 Many regular expression constructs don't work on EBCDIC platforms.
 
@@ -2592,7 +2578,7 @@ hard to fathom in several places.
 This document needs a rewrite that separates the tutorial content
 from the reference content.
 
-=head1 РЎРњРћРўР РРўР• РўРђРљР–Р•
+=head1 SEE ALSO
 
 L<perlrequick>.
 

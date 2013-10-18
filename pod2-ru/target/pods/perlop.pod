@@ -3,7 +3,7 @@ X<operator>
 
 perlop - Perl operators and precedence
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 =head2 Operator Precedence and Associativity
 X<operator, precedence> X<precedence> X<associativity>

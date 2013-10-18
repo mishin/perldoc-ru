@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlreref - Perl Regular Expressions Reference
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This is a quick reference to Perl's regular expressions.
 For full information see L<perlre> and L<perlop>, as well
@@ -326,13 +326,13 @@ Unicode form that is useful when comparing strings regardless of case,
 as certain characters have compex one-to-many case mappings. Primarily a
 variant of lowercase.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Iain Truskett. Updated by the Perl 5 Porters.
 
 This document may be distributed under the same terms as Perl itself.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 =over 4
 

@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlcall - Perl calling conventions from C
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 The purpose of this document is to show you how to call Perl subroutines
 directly from C, i.e., how to write I<callbacks>.
@@ -1917,11 +1917,11 @@ first() and reduce() functions of List::Util 1.18. There you
 will also find a header file that emulates the multicall API
 on older versions of perl.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perlxs>, L<perlguts>, L<perlembed>
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Paul Marquess 
 

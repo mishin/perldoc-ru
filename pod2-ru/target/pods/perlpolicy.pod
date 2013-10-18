@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlpolicy - Various and sundry policies and commitments related to the Perl core
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This document is the master document which records all written
 policies about how the Perl 5 Porters collectively develop and maintain

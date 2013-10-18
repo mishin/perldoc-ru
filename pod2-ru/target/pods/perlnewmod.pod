@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlnewmod - preparing a new module for distribution
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document gives you some suggestions about how to go about writing
 Perl modules, preparing them for distribution, and making them available
@@ -231,6 +231,15 @@ your request to be approved by the PAUSE administrators.
 
 =item C<perl Makefile.PL; make test; make dist>
 
+however, these commands are valid for Unix, but
+for Windows, where Larry advises Strawberry perl
+we have to run 
+
+=item C<dmake test; dmake dist>
+
+and B<dmake dist> will be executed, if we install gnu-tar and gnu-zip
+ and add the path to them in the %PATH%
+
 Once again, C<module-starter> or C<h2xs> has done all the work for you.
 They produce the standard C<Makefile.PL> you see when you download and
 install modules, and this produces a Makefile with a C<dist> target.
@@ -265,13 +274,13 @@ maintaining a software project...
 
 =back
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Simon Cozens, C<simon@cpan.org>
 
 Updated by Kirrily "Skud" Robert, C<skud@cpan.org>
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perlmod>, L<perlmodlib>, L<perlmodinstall>, L<h2xs>, L<strict>,
 L<Carp>, L<Exporter>, L<perlpod>, L<Test::Simple>, L<Test::More>

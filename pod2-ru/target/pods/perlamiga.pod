@@ -2,7 +2,7 @@ If you read this file _as_is_, just ignore the funny characters you
 see. It is written in the POD format (see perlpod manpage) which is
 specially designed to be readable as is.
 
-=head1 袠屑褟
+=head1 NAME
 
 perlamiga - Perl under Amiga OS
 
@@ -13,7 +13,7 @@ maintenance release Perl 5.6.1 or the development release Perl 5.7.2
 in AmigaOS.  See L</"PERL 5.8.0 BROKEN IN AMIGAOS"> if you want to help
 fixing this problem.>
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
 One can read this document in the following formats:
 
@@ -56,7 +56,7 @@ Contents
        AUTHOR 
        SEE ALSO 
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 =head2 Prerequisites for Compiling Perl on AmigaOS
 
@@ -271,7 +271,7 @@ without fork().>
 Norbert Pueschel, pueschel@imsdd.meb.uni-bonn.de
 Jan-Erik Karlsson, trg@privat.utfors.se
 
-=head1 小袦袨孝袪袠孝袝 孝袗袣袞袝
+=head1 SEE ALSO
 
 perl(1).
 

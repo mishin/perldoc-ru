@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you see.
 It is written in the POD format (see pod/perlpod.pod) which is specially
 designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perlhurd - Perl version 5 on Hurd
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 If you want to use Perl on the Hurd, I recommend using the Debian
 GNU/Hurd distribution ( see http://www.debian.org/ ), even if an
@@ -46,7 +46,7 @@ In any way, if you're seeing failures beyond those mentioned in this
 document, please consider upgrading to the latest Hurd before reporting
 the failure as a bug. 
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Mark Kettenis <kettenis@gnu.org>
 

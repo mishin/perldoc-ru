@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlpragma - how to write a user pragma
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 A pragma is a module which influences some aspect of the compile time or run
 time behaviour of Perl, such as C<strict> or C<warnings>. With Perl 5.10 you

@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see. It is written in the POD format (see perlpod manpage) which is
 specially designed to be readable as is.
 
-=head1 袠屑褟
+=head1 NAME
 
 perldgux - Perl under DG/UX.
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
 One can read this document in the following formats:
 
@@ -35,7 +35,7 @@ Contents
       AUTHOR
       SEE ALSO
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 Perl 5.7/8.x for DG/UX ix86 R4.20MU0x
 
@@ -99,7 +99,7 @@ Then rerun the tests. This time all must be OK.
 
 Run the command "make install"
 
-=head1 袗袙孝袨袪
+=head1 AUTHOR
 
 Takis Psarogiannakopoulos
 University of Cambridge
@@ -109,7 +109,7 @@ Wilberforce road
 Cambridge CB3 0WB , UK
 email <takis@XFree86.Org>
 
-=head1 小袦袨孝袪袠孝袝 孝袗袣袞袝
+=head1 SEE ALSO
 
 perl(1).
 

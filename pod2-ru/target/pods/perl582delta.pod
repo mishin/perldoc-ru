@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perl582delta - what is new for perl v5.8.2
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes differences between the 5.8.1 release and
 the 5.8.2 release.
@@ -149,7 +149,7 @@ output of C<perl -V>, will be sent off to perlbug@perl.org to be
 analysed by the Perl porting team.  You can browse and search
 the Perl 5 bugs at http://bugs.perl.org/
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 The F<Changes> file for exhaustive details on what changed.
 

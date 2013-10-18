@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perldebguts - Guts of Perl debugging 
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This is not L<perldebug>, which tells you how to use
 the debugger.  This manpage describes low-level details concerning
@@ -1011,7 +1011,7 @@ never touched.
 
 =back
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perldebug>,
 L<perlguts>,

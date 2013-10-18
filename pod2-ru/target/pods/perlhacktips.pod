@@ -5,11 +5,11 @@
 Consistent formatting of this file is achieved with:
   perl ./Porting/podtidy pod/perlhacktips.pod
 
-=head1 Имя
+=head1 NAME
 
 perlhacktips - Tips for Perl core C code hacking
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document will help you learn the best way to go about hacking on
 the Perl core C code. It covers common problems, debugging, profiling,
@@ -1479,7 +1479,7 @@ You can expand the macros in a F<foo.c> file by saying
 which will expand the macros using cpp.  Don't be scared by the
 results.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 This document was originally written by Nathan Torkington, and is
 maintained by the perl5-porters mailing list.

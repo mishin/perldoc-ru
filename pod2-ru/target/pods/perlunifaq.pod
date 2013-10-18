@@ -1,4 +1,4 @@
-=head1 Имя
+=head1 NAME
 
 perlunifaq - Perl Unicode FAQ
 
@@ -309,11 +309,11 @@ when you C<encode>. In other words: don't try to find out what the internal
 encoding for a certain string is, but instead just encode it into the encoding
 that you want.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Juerd Waalboer <#####@juerd.nl>
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perlunicode>, L<perluniintro>, L<Encode>
 

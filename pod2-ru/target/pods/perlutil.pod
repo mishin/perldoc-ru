@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlutil - utilities packaged with the Perl distribution
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 Along with the Perl interpreter itself, the Perl distribution installs a
 range of utilities on your system. There are also several utilities
@@ -297,7 +297,7 @@ validate your packlists and even create a tarball from an installed module.
 
 =back
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perldoc|perldoc>, L<pod2man|pod2man>, L<perlpod>,
 L<pod2html|pod2html>, L<pod2usage|pod2usage>, L<podselect|podselect>,

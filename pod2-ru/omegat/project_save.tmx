@@ -1,9 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_3" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.5.1" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head1 DESCRIPTION</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T124719Z">
+        <seg>=head1 ОПИСАНИЕ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head1 NAME
+X&lt;regular expression&gt; X&lt;regex&gt; X&lt;regexp&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T124647Z">
+        <seg>=head1 
+X&lt;regular expression&gt; X&lt;regex&gt; X&lt;regexp&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=head2 Modifiers</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T131044Z">
+        <seg>=head2 Модификаторы</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do case-insensitive pattern matching.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T141745Z">
+        <seg>Выполняет соответствие шаблону без учета регистра.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For reference on how regular expressions are used in matching
+operations, plus various examples of the same, see discussions of
+C&lt;m//&gt;, C&lt;s///&gt;, C&lt;qr//&gt; and C&lt;??&gt; in L&lt;perlop/"Regexp Quote-Like
+Operators"&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T131023Z">
+        <seg>Для справки о том, как используются регулярные выражения в поиске по шаблону,  а также различные примеры того же см. обсуждение C&lt;m//&gt;, C&lt;s///&gt;, C&lt;qr//&gt; и C&lt;??&gt; в L&lt;perlop/"Regexp Quote-Like
+Operators"&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If locale matching rules are in effect, the case map is taken from the
+current
+locale for code points less than 255, and from Unicode rules for larger
+code points.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T141810Z">
+        <seg>{g}:Если язык правил соответствия в действительности, дело карту берется из текущей локали для кода пункта меньше, чем 255, а с Unicode правила для увеличения точки кода.{t}:Если правила соответствия места действия в действительности, карта случая взята от текущего места действия для кодовых точек меньше чем 255, и из правил Unicode для больших кодовых точек.}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you haven't used regular expressions before, a quick-start
+introduction is available in L&lt;perlrequick&gt;, and a longer tutorial
+introduction is available in L&lt;perlretut&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T125009Z">
+        <seg>Если вы не использовали регулярные выражения прежде, то быстрое введение доступно в L &lt;perlrequick&gt;, а более длинное учебное введение доступно в L &lt;perlretut&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Matching operations can have various modifiers.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T131129Z">
+        <seg>У операций поиска по шаблону быть различные модификаторы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Modifiers
+that relate to the interpretation of the regular expression inside
+are listed below.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T131225Z">
+        <seg>Модификаторы, которые относятся к интерпретации внутри регулярных выражений  перечислены ниже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Modifiers that alter the way a regular expression
+is used by Perl are detailed in L&lt;perlop/"Regexp Quote-Like Operators"&gt; and
+L&lt;perlop/"Gory details of parsing quoted constructs"&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T132926Z">
+        <seg>Модификаторы, которые изменяют путь регулярного выражения, использующегося в Perl, детализированы в  L&lt;perlop/"Регулярные выражения в операторах, которые в кавычках"&gt; и 
+L&lt;perlop/"Внтутренние детали парсинга конструкций в кавычках"&gt; (L&lt;perlop/"Regexp Quote-Like Operators"&gt; и
+L&lt;perlop/"Gory details of parsing quoted constructs"&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That is, change "." to match any character
+whatsoever, even a newline, which normally it would not match.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T141406Z">
+        <seg>Изменяет поведение "." для поиска любого символа включая новую строку, которая обычно не совпадает с этим шаблоном.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That is, change "^" and "$" from matching
+the start or end of line only at the left and right ends of the string to
+matching them anywhere within the string.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T133214Z">
+        <seg>То есть, изменение "^" и "$" от соответствия началу или концу линии только в левых и правых концах строки к соответствию им где угодно в строке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This page describes the syntax of regular expressions in Perl.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T124755Z">
+        <seg>Эта страница описывает синтаксис регулярных выражений в Perl.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Treat string as multiple lines.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T140847Z">
+        <seg>Строка, в которой происходит поиск, состоит из множества строк.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Treat string as single line.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T133250Z">
+        <seg>Представляет строку как одну линию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Used together, as C&lt;/ms&gt;, they let the "." match any character whatsoever,
+while still allowing "^" and "$" to match, respectively, just after
+and just before newlines within the string.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T141650Z">
+        <seg>Используя вместе как C&lt;/ms&gt; позволяет "." соответствовать любому символу включая новую строку и позволяет "^" и "$" для нахождения соответственно только после и только перед переносом строки внутри строки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>perlre - Perl regular expressions</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="rdtex1" changedate="20131016T124710Z">
+        <seg>perlre - регулярные выражения Perl</seg>
+      </tuv>
+    </tu>
 <!-- Alternative translations -->
   </body>
 </tmx>

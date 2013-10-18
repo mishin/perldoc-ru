@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlguts - Introduction to the Perl API
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document attempts to describe how to use the Perl API, as well as
 to provide some info on the basic workings of the Perl core. It is far
@@ -2930,6 +2930,6 @@ Andreas Koenig, Paul Hudson, Ilya Zakharevich, Paul Marquess, Neil
 Bowers, Matthew Green, Tim Bunce, Spider Boardman, Ulrich Pfeifer,
 Stephen McCamant, and Gurusamy Sarathy.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perlapi>, L<perlintern>, L<perlxs>, L<perlembed>

@@ -3,7 +3,7 @@ X<format> X<report> X<chart>
 
 perlform - Perl formats
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 Perl has a mechanism to help you generate simple reports and charts.  To
 facilitate this, Perl helps you code up your output page close to how it
@@ -317,7 +317,7 @@ method names instead:
 
 Much better!
 
-=head1 ПРИМЕЧАНИЯ
+=head1 NOTES
 
 Because the values line may contain arbitrary expressions (for at fields,
 not caret fields), you can farm out more sophisticated processing

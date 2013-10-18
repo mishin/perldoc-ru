@@ -1,10 +1,10 @@
 =encoding utf8
 
-=head1 Имя
+=head1 NAME
 
 perlebcdic - Considerations for running Perl on EBCDIC platforms
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 An exploration of some of the issues facing Perl programmers
 on EBCDIC based computers.  We do not cover localization,
@@ -1038,7 +1038,7 @@ to use the characters in the range explicitly:
 
     sub Is_latin_1 {
         my $char = substr(shift,0,1);
-        $char =~ /[ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ]/;
+        $char =~ /[ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×�?ÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ]/;
     }
 
 Although that form may run into trouble in network transit (due to the
@@ -1092,7 +1092,7 @@ apply tr/[A-Z]/[a-z]/ before sorting.  If the data are primarily UPPERCASE
 and include Latin-1 characters then apply:
 
    tr/[a-z]/[A-Z]/;
-   tr/[àáâãäåæçèéêëìíîïðñòóôõöøùúûüýþ]/[ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ/;
+   tr/[àáâãäåæçèéêëìíîïðñòóôõöøùúûüýþ]/[ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ�?ÙÚÛÜÝÞ/;
    s/ß/SS/g;
 
 then sort().  Do note however that such Latin-1 manipulation does not
@@ -1387,7 +1387,7 @@ or z/OS.
 
 XXX.
 
-=head1 ОШИБКИ
+=head1 BUGS
 
 This pod document contains literal Latin 1 characters and may encounter
 translation difficulties.  In particular one popular nroff implementation
@@ -1401,7 +1401,7 @@ Not all shells will allow multiple C<-e> string arguments to perl to
 be concatenated together properly as recipes 0, 2, 4, 5, and 6 might
 seem to imply.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perllocale>, L<perlfunc>, L<perlunicode>, L<utf8>.
 
@@ -1438,7 +1438,7 @@ B<IBM - EBCDIC and the P-bit; The biggest Computer Goof Ever> Robert Bemer.
 
 15 April 2001: added UTF-8 and UTF-EBCDIC to main table, pvhp.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Peter Prymmer pvhp@best.com wrote this in 1999 and 2000
 with CCSID 0819 and 0037 help from Chris Leach and

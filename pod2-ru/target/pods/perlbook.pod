@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlbook - Books about and related to Perl
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 There are many books on Perl and Perl-related. A few of these are
 good, some are OK, but many aren't worth your money. There is a list
@@ -99,7 +99,7 @@ You might want to keep these desktop references close by your keyboard:
 
 =back
 
-=head2 Учебники
+=head2 Tutorials
 
 =over 4
 

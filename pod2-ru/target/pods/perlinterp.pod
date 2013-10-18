@@ -4,11 +4,11 @@
 Consistent formatting of this file is achieved with:
   perl ./Porting/podtidy pod/perlinterp.pod
 
-=head1 –ò–º—è
+=head1 NAME
 
 perlinterp - An overview of the Perl interpreter
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This document provides an overview of how the Perl interpreter works at
 the level of C code, along with pointers to the relevant C source code

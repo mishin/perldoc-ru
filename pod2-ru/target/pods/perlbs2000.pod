@@ -3,16 +3,16 @@ characters in odd places.  Do not worry, you've apparently got the
 ASCII->EBCDIC translation worked out correctly.  You can read more
 about pod in pod/perlpod.pod or the short summary in the INSTALL file.
 
-=head1 袠屑褟
+=head1 NAME
 
 perlbs2000 - building and installing Perl for BS2000.
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
 This document will help you Configure, build, test and install Perl
 on BS2000 in the POSIX subsystem.
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 This is a ported perl for the POSIX subsystem in BS2000 VERSION OSD
 V3.1A or later.  It may work on other versions, but we started porting
@@ -212,7 +212,7 @@ for further possibilities.
 
 Thomas Dorner
 
-=head1 小袦袨孝袪袠孝袝 孝袗袣袞袝
+=head1 SEE ALSO
 
 L<INSTALL>, L<perlport>.
 

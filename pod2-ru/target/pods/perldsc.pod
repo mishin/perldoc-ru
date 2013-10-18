@@ -3,7 +3,7 @@ X<data structure> X<complex data structure> X<struct>
 
 perldsc - Perl Data Structures Cookbook
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 Perl lets us have complex data structures.  You can write something like
 this and all of a sudden, you'd have an array with three dimensions!
@@ -821,10 +821,10 @@ module that does partially attempt to address this need is the MLDBM
 module.  Check your nearest CPAN site as described in L<perlmodlib> for
 source code to MLDBM.
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perlref>, L<perllol>, L<perldata>, L<perlobj>
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Tom Christiansen <F<tchrist@perl.com>>

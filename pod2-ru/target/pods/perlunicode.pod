@@ -1,8 +1,8 @@
-=head1 Имя
+=head1 NAME
 
 perlunicode - Unicode support in Perl
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 =head2 Important Caveats
 
@@ -1632,7 +1632,7 @@ F<lib/unicore> in the Perl source tree.  Follow the instructions in
 F<README.perl> in that directory to change some of their names, and then build
 perl (see L<INSTALL>).
 
-=head1 ОШИБКИ
+=head1 BUGS
 
 =head2 Interaction with Locales
 
@@ -1846,7 +1846,7 @@ the UTF8 flag:
 
 =back
 
-=head1 СМОТРИТЕ ТАКЖЕ
+=head1 SEE ALSO
 
 L<perlunitut>, L<perluniintro>, L<perluniprops>, L<Encode>, L<open>, L<utf8>, L<bytes>,
 L<perlretut>, L<perlvar/"${^UNICODE}">

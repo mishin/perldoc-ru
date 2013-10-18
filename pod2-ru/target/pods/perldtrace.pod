@@ -1,8 +1,8 @@
-=head1 袠屑褟
+=head1 NAME
 
 perldtrace - Perl's support for DTrace
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
     # dtrace -Zn 'perl::sub-entry, perl::sub-return { trace(copyinstr(arg0)) }'
     dtrace: description 'perl::sub-entry, perl::sub-return ' matched 10 probes
@@ -21,7 +21,7 @@ perldtrace - Perl's support for DTrace
       0  75922      Perl_pp_leavesub:sub-return   inner
       0  75922      Perl_pp_leavesub:sub-return   outer
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 DTrace is a framework for comprehensive system- and application-level
 tracing. Perl is a DTrace I<provider>, meaning it exposes several
@@ -218,7 +218,7 @@ L<http://www.amazon.com/DTrace-Dynamic-Tracing-Solaris-FreeBSD/dp/0132091518/>
 
 =back
 
-=head1 小袦袨孝袪袠孝袝 孝袗袣袞袝
+=head1 SEE ALSO
 
 =over 4
 

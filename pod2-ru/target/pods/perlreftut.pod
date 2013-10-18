@@ -1,8 +1,8 @@
-=head1 –ò–º—è
+=head1 NAME
 
 perlreftut - Mark's very short tutorial about references
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 One of the most important new features in Perl 5 was the capability to
 manage complicated data structures like multidimensional arrays and

@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you
 see.  It is written in the POD format (see pod/perlpod.pod) which is
 specifically designed to be readable as is.
 
-=head1 –ò–º—è
+=head1 NAME
 
 perlnetware - Perl for NetWare
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 This file gives instructions for building Perl 5.7 and above, and also 
 Perl modules for NetWare. Before you start, you may want to read the

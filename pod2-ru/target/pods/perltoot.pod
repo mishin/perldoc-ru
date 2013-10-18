@@ -1,10 +1,10 @@
 =encoding utf8
 
-=head1 –ò–º—è
+=head1 NAME
 
 perltoot - This document has been deleted
 
-=head1 –û–ü–ò–°–ê–ù–ò–ï
+=head1 Œœ»—¿Õ»≈
 
 For information on OO programming with Perl, please see L<perlootut>
 and L<perlobj>.

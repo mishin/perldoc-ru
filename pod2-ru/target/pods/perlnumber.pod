@@ -1,8 +1,8 @@
-=head1 袠屑褟
+=head1 NAME
 
 perlnumber - semantics of numbers and numeric operations in Perl
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
     $n = 1234;		    # decimal integer
     $n = 0b1110011;	    # binary integer
@@ -12,7 +12,7 @@ perlnumber - semantics of numbers and numeric operations in Perl
     $n = "-12.34e56";	    # number specified as a string
     $n = "1234";	    # number specified as a string
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 This document describes how Perl internally handles numeric values.
 
@@ -196,7 +196,7 @@ stored number, Perl remembers the result of such conversions.  In
 particular, though the first such conversion may be time-consuming,
 repeated operations will not need to redo the conversion.
 
-=head1 袗袙孝袨袪
+=head1 AUTHOR
 
 Ilya Zakharevich C<ilya@math.ohio-state.edu>
 
@@ -204,6 +204,6 @@ Editorial adjustments by Gurusamy Sarathy <gsar@ActiveState.com>
 
 Updates for 5.8.0 by Nicholas Clark <nick@ccl4.org>
 
-=head1 小袦袨孝袪袠孝袝 孝袗袣袞袝
+=head1 SEE ALSO
 
 L<overload>, L<perlop>

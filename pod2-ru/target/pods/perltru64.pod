@@ -2,11 +2,11 @@ If you read this file _as_is_, just ignore the funny characters you see.
 It is written in the POD format (see pod/perlpod.pod) which is specially
 designed to be readable as is.
 
-=head1 Имя
+=head1 NAME
 
 perltru64 - Perl version 5 on Tru64 (formerly known as Digital UNIX formerly known as DEC OSF/1) systems
 
-=head1 ОПИСАНИЕ
+=head1 ��������
 
 This document describes various features of HP's (formerly Compaq's,
 formerly Digital's) Unix operating system (Tru64) that will affect
@@ -165,7 +165,7 @@ you need to either recompile your Perl in Tru64 4.0D or upgrade your
 Tru64 4.0D to at least 4.0F: the sockatmark() system call was
 added in Tru64 4.0F, and the IO extension refers that symbol.
 
-=head1 АВТОР
+=head1 AUTHOR
 
 Jarkko Hietaniemi <jhi@iki.fi>
 

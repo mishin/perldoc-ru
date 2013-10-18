@@ -2,16 +2,16 @@ If you read this file _as_is_, just ignore the funny characters you
 see. It is written in the POD format (see perlpod manpage) which is
 specially designed to be readable as is.
 
-=head1 袠屑褟
+=head1 NAME
 
 perldos - Perl under DOS, W31, W95.
 
-=head1 小袠袧孝袗袣小袠小
+=head1 SYNOPSIS
 
 These are instructions for building Perl under DOS (or w??), using
 DJGPP v2.03 or later.  Under w95 long filenames are supported.
 
-=head1 袨袩袠小袗袧袠袝
+=head1 蜗妊劳扰
 
 Before you start, you should glance through the README file
 found in the top-level directory where the Perl distribution
@@ -317,13 +317,13 @@ by using the command:
 
         perl -S perldoc perllocal
 
-=head1 袗袙孝袨袪
+=head1 AUTHOR
 
 Laszlo Molnar, F<laszlo.molnar@eth.ericsson.se> [Installing/building perl]
 
 Peter J. Farley III F<pjfarley@banet.net> [Building/installing modules]
 
-=head1 小袦袨孝袪袠孝袝 孝袗袣袞袝
+=head1 SEE ALSO
 
 perl(1).
 
