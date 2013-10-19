@@ -1,6 +1,6 @@
 =encoding utf8
 
-=head1 Имя
+=head1 НАЗВАНИЕ
 
 perldoc - Perl-документация в POD-формате.
 
