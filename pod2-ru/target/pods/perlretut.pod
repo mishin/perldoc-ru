@@ -2583,7 +2583,7 @@ during backtracking, and we get
     'a' count is 4, $c variable is 'bob'
 
 Note that only localized variable changes are undone.  Other side
-effects of code expression execution are permanent.  Thus
+effects of code expression execution are permanent.  Таким образом
 
     $x = "aaaa";
     $x =~ /(a(?{print "Yow\n";}))*aa/;

@@ -1,4 +1,4 @@
-=head1 
+=head1 НАЗВАНИЕ
 X<regular expression> X<regex> X<regexp>
 
 perlre - регулярные выражения Perl
@@ -16,7 +16,7 @@ Operators">.
 =head2 Модификаторы
 
 У операций поиска по шаблону быть различные модификаторы.  Модификаторы, которые относятся к интерпретации внутри регулярных выражений  перечислены ниже.  Модификаторы, которые изменяют путь регулярного выражения, использующегося в Perl, детализированы в  L<perlop/"Регулярные выражения в операторах, которые в кавычках"> и 
-L<perlop/"Внтутренние детали парсинга конструкций в кавычках"> (L<perlop/"Regexp Quote-Like Operators"> и
+L<perlop/"Внутренние детали парсинга конструкций в кавычках"> (L<perlop/"Regexp Quote-Like Operators"> и
 L<perlop/"Gory details of parsing quoted constructs">).
 
 =over 4
@@ -24,7 +24,7 @@ L<perlop/"Gory details of parsing quoted constructs">).
 =item m
 X</m> X<regex, multiline> X<regexp, multiline> X<regular expression, multiline>
 
-Строка, в которой происходит поиск, состоит из множества строк.  То есть, изменение "^" и "$" от соответствия началу или концу линии только в левых и правых концах строки к соответствию им где угодно в строке.
+Представляет строку поиска, как многострочную.  То есть, изменение "^" и "$" от соответствия началу или концу линии только в левых и правых концах строки к соответствию им где угодно в строке.
 
 =item s
 X</s> X<regex, single-line> X<regexp, single-line>
@@ -40,101 +40,63 @@ X<regular expression, case-insensitive>
 
 Выполняет соответствие шаблону без учета регистра.
 
-{g}:Если язык правил соответствия в действительности, дело карту берется из текущей локали для кода пункта меньше, чем 255, а с Unicode правила для увеличения точки кода.{t}:Если правила соответствия места действия в действительности, карта случая взята от текущего места действия для кодовых точек меньше чем 255, и из правил Unicode для больших кодовых точек.}  However, matches that would cross the Unicode
-rules/non-Unicode rules boundary (ords 255/256) will not succeed.  See
+Если правила поиска локали ключены, текущая карта символов берется из текущей локали для символов с кодом менее 255 и используются юникодные правила для больших кодовых точек.  Однако совпадение, которое будет пересекать правила Unicode / не Unicode  на границе (Ords 255/256) не удастся.  См.
 L<perllocale>.
 
-There are a number of Unicode characters that match multiple characters
-under C</i>.  For example, C<LATIN SMALL LIGATURE FI>
-should match the sequence C<fi>.  Perl is not
-currently able to do this when the multiple characters are in the pattern and
-are split between groupings, or when one or more are quantified.  Thus
+Есть целый ряд символов Юникода, которым соответствуют несколько символов в C</I>  Например, C<LATIN SMALL LIGATURE FI> должна соответствовать последовательности C</I>  Perl в настоящее время не в состоянии сделать это, когда многократные знаки находятся в образце поиска и расколоты между группировками, или когда один или больше определено количественно.  Таким образом
 
- "\N{LATIN SMALL LIGATURE FI}" =~ /fi/i;          # Matches
- "\N{LATIN SMALL LIGATURE FI}" =~ /[fi][fi]/i;    # Doesn't match!
- "\N{LATIN SMALL LIGATURE FI}" =~ /fi*/i;         # Doesn't match!
+ "\N{LATIN SMALL LIGATURE FI}" =~ /fi/i;          # Найдет
+ "\N{LATIN SMALL LIGATURE FI}" =~ /[fi][fi]/i;    # Не найдет!
+ "\N{LATIN SMALL LIGATURE FI}" =~ /fi*/i;         # Не найдет!
 
- # The below doesn't match, and it isn't clear what $1 and $2 would
- # be even if it did!!
- "\N{LATIN SMALL LIGATURE FI}" =~ /(f)(i)/i;      # Doesn't match!
+ # Ниже не будет соответствия, и не ясно, что было бы в $1 и $2
+ # будьте честны, если это произойдет
+ "\N{LATIN SMALL LIGATURE FI}" =~ /(f)(i)/i;      # Не найдет!
 
-Perl doesn't match multiple characters in a bracketed
-character class unless the character that maps to them is explicitly
-mentioned, and it doesn't match them at all if the character class is
-inverted, which otherwise could be highly confusing.  See
+Perl не находит несколько символов в скобках (образующих класс), если только знак, который отображается на них прямо упоминается, и он не находит вообще, если класс символов инвертирован, что в противном случае могло бы быть очень запутанно.  См.
 L<perlrecharclass/Bracketed Character Classes>, and
 L<perlrecharclass/Negation>.
 
 =item x
 X</x>
 
-Extend your pattern's legibility by permitting whitespace and comments.
-Details in L</"/x">
+Увеличивает читаемость вашего паттерна (шаблона для поиска), позволяя пробелы и комментарии.
+Подробности в L</"/x">
 
 =item p
 X</p> X<regex, preserve> X<regexp, preserve>
 
-Preserve the string matched such that ${^PREMATCH}, ${^MATCH}, and
-${^POSTMATCH} are available for use after matching.
+Сохраненные части строки, такие как ${^PREMATCH}, ${^MATCH}, и
+${^POSTMATCH}  доступны для использования после поиска по шаблону.
 
-=item g and c
+=item g и c
 X</g> X</c>
 
-Global matching, and keep the Current position after failed matching.
-Unlike i, m, s and x, these two flags affect the way the regex is used
-rather than the regex itself. See
-L<perlretut/"Using regular expressions in Perl"> for further explanation
-of the g and c modifiers.
+Глобальный поиск совпадений, и сохранение текущей позиции после неудачного поиска.
+В отличие от i, m, s и x,эти два флага влияют затрагиваем способ, которым regex используется, а не сам regex. См.
+L<perlretut/"Using regular expressions in Perl" (Использоывание регулярных выражений Perl)> для получения большей информации
+о модификаторах g и c.
 
-=item a, d, l and u
+=item a, d, l и u
 X</a> X</d> X</l> X</u>
 
-These modifiers, all new in 5.14, affect which character-set semantics
-(Unicode, etc.) are used, as described below in
-L</Character set modifiers>.
+Эти модификаторы, все новые в 5.14, влияют при какая семантике кодировки (Unicode, и т.д.) используются, как описано ниже в L </модификаторы Кодировки>.}
 
 =back
 
-Regular expression modifiers are usually written in documentation
-as e.g., "the C</x> modifier", even though the delimiter
-in question might not really be a slash.  The modifiers C</imsxadlup>
-may also be embedded within the regular expression itself using
-the C<(?...)> construct, see L</Extended Patterns> below.
+Модификаторы регулярных выражений  обычно описываются в документации, например,как " C</x> модификатор" несмотря на косую черту, разделителем может быть не только слэш.  Модификаторы C</imsxadlup>
+могут также быть включены в пределах самого регулярного выражения, используя конструкцию C<(?...)> , см.  L</Extended Patterns>  (L</Расширенные Образцы>) ниже.
 
 =head3 /x
 
-C</x> tells
-the regular expression parser to ignore most whitespace that is neither
-backslashed nor within a character class.  You can use this to break up
-your regular expression into (slightly) more readable parts.  The C<#>
-character is also treated as a metacharacter introducing a comment,
-just as in ordinary Perl code.  This also means that if you want real
-whitespace or C<#> characters in the pattern (outside a character
-class, where they are unaffected by C</x>), then you'll either have to
-escape them (using backslashes or C<\Q...\E>) or encode them using octal,
-hex, or C<\N{}> escapes.  Taken together, these features go a long way towards
-making Perl's regular expressions more readable.  Note that you have to
-be careful not to include the pattern delimiter in the comment--perl has
-no way of knowing you did not intend to close the pattern early.  See
-the C-comment deletion code in L<perlop>.  Also note that anything inside
-a C<\Q...\E> stays unaffected by C</x>.  And note that C</x> doesn't affect
-space interpretation within a single multi-character construct.  For
-example in C<\x{...}>, regardless of the C</x> modifier, there can be no
-spaces.  Same for a L<quantifier|/Quantifiers> such as C<{3}> or
-C<{5,}>.  Similarly, C<(?:...)> can't have a space between the C<(>,
-C<?>, and C<:>.  Within any delimiters for such a
-construct, allowed spaces are not affected by C</x>, and depend on the
-construct.  For example, C<\x{...}> can't have spaces because hexadecimal
-numbers don't have spaces in them.  But, Unicode properties can have spaces, so
-in C<\p{...}> there can be spaces that follow the Unicode rules, for which see
-L<perluniprops/Properties accessible through \p{} and \P{}>.
+C</x> говорит регулярному анализатору выражения игнорировать большую часть пробелов, перед которыми не стоит обратный слэш и не входящих в класс символов.  Вы можете использовать это, чтобы разбить ваше регулярное выражение на части, чтобы сделать его более читаемым.  Символ  C<#> также рассматривается как метасимвол, являющимся комментарием, как в обычном коде Perl.  Это также означает, что если вы хотите реальный пробел или символ C<#> в шаблоне поиска (вне класса характера, где они незатронуты C</x>), тогда вы должны будете или эскейпить их (используя наклонную черту влево или C<\Q...\E>) или кодировать их используя восьмеричный, шестнадцатиричный или  C<\N{}> код.  Взятые вместе, эти фичи (features) имеют большое значение для создания более читаемых регулярных выражений в Perl.  Обратите внимание, что вы должны быть осторожны, чтобы не включать разделитель шаблона в комментарий --perl не имеет никакого способа узнать, что вы не намеревались закрыть шаблон раньше.  См. удаление комментариев  в C коде в L<perlop>.  Также отметим, что все внутри C<\Q...\E> остается не зависимым от C</x>.  И заметьте, что C</x> не влияет на интерпретацию пространства в пределах одной многосимвольной конструкции.  Например, в C<\x{...}>,  независимо от модификатора C</x>,  не может быть пробелов.  То же самое для  L<quantifier|/Quantifiers> таких как C<{3}> или
+C<{5,}>.  Аналогично, C<(?:...)> не может иметь пробелов между C<(>,
+C<?>, и C<:>.  В пределах любых разделителей для такой конструкции, позволенные пробелы не имеют силы из-за C</x> и зависят от конструкции.  Например, C<\x{...}>  не должно быть пробелов, потому что шестнадцатеричные числа не имеют в себе пробелов.  Но, у свойств Unicode (Unicode properties) могут быть пробелы, таким образом, в C<\p{...}>  могут быть пробелы, которые следуют за правилами Unicode, для которых см. L<perluniprops/Properties accessible through \p{} and \P{}> (L <perluniprops/Свойства, доступные через \p{} и  \P{}>)
 X</x>
 
-=head3 Character set modifiers
+=head3 Модификаторы Кодировки
 
-C</d>, C</u>, C</a>, and C</l>, available starting in 5.14, are called
-the character set modifiers; they affect the character set semantics
-used for the regular expression.
+C</d>, C</u>, C</a>, и C</l>, доступные, начиная с 5.14, называют модификаторами кодировки; они затрагивают семантику кодировки, используемую для регулярного выражения.
 
 The C</d>, C</u>, and C</l> modifiers are not likely to be of much use
 to you, and so you need not worry about them very much.  They exist for
@@ -2329,7 +2291,7 @@ ones like the C</g> modifier or split() operator.
 
 The lower-level loops are I<interrupted> (that is, the loop is
 broken) when Perl detects that a repeated expression matched a
-zero-length substring.   Thus
+zero-length substring.   Таким образом
 
    m{ (?: NON_ZERO_LENGTH | ZERO_LENGTH )* }x;
 

@@ -485,7 +485,7 @@ X<~~>
 
 "lt", "le", "ge", "gt" and "cmp" use the collation (sort) order specified
 by the current locale if a legacy C<use locale> (but not
-C<use locale ':not_characters'>) is in effect.  See
+C<use locale ':not_characters'>) is in effect.  Ñì.
 L<perllocale>.  Do not mix these with Unicode, only with legacy binary
 encodings.  The standard L<Unicode::Collate> and
 L<Unicode::Collate::Locale> modules offer much more powerful solutions to
