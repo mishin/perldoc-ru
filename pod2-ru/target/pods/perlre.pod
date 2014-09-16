@@ -2,7 +2,7 @@
 =head1 НАЗВАНИЕ
 X<regular expression> X<regex> X<regexp>
 
-perlre - регулярные выражения в Perl
+perlre - регулярные выражения Perl
 
 =head1 ОПИСАНИЕ
 
