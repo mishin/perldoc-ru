@@ -30,7 +30,7 @@ X</m> X<regex, multiline> X<regexp, multiline> X<regular expression, multiline>
 X</s> X<regex, single-line> X<regexp, single-line>
 X<regular expression, single-line>
 
-Метасимволу точка "точка"(.) разрешено соответсвовать \n.
+Метасимволу "точка" разрешено соответсвовать \n.
 
 Используя вместе как C</ms> позволяет "." соответствовать любому символу включая новую строку а символы "^" и "$" становятся началом и концом всего буфера.
 
