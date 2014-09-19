@@ -15,40 +15,38 @@ perlrequick - быстрый старт использования регуля�
 Простейший regex это просто слово, или, более обще, строка символов.
 Regex состоящее из слова соответствует любой строке, содержащей это слово:
 
-    "Hello World" =~ /World/;  # matches
+    "Hello World" =~ /World/;  # совпадение
 
-In this statement, C<World> is a regex and the C<//> enclosing
-C</World/> tells Perl to search a string for a match.  The operator
-C<=~> associates the string with the regex match and produces a true
-value if the regex matched, or false if the regex did not match.  In
-our case, C<World> matches the second word in C<"Hello World">, so the
-expression is true.  This idea has several variations.
+В этом выражении, C<World> это regex и слеши C<//> вокруг
+C</World/> говорят Perl искать строку для совпадения.  Оператор
+C<=~> связывает строку с regex и выдает значение true
+если regex mсовпадает, или false если нет.  В нашем случае, C<World> совпадает со вторым словом в C<"Hello World">, таким образом выражение истинно. У этой идеи есть несколько вариаций.
 
-Expressions like this are useful in conditionals:
+Такие выражения полезны в условиях:
 
-    print "It matches\n" if "Hello World" =~ /World/;
+    print "Найдено\n" if "Hello World" =~ /World/;
 
-The sense of the match can be reversed by using C<!~> operator:
+Смысл совпадения может быть полностью изменен при помощи оператора C<!~>:
 
-    print "It doesn't match\n" if "Hello World" !~ /World/;
+    print "Не совпало\n" if "Hello World" !~ /World/;
 
-The literal string in the regex can be replaced by a variable:
+Последовательность строкв regex может быть заменена переменной:
 
     $greeting = "World";
-    print "It matches\n" if "Hello World" =~ /$greeting/;
+    print "Найдено\n" if "Hello World" =~ /$greeting/;
 
-If you're matching against C<$_>, the C<$_ =~> part can be omitted:
+Если вы ищите в C<$_>, то эту часть C<$_ =~> можно опустить: 
 
     $_ = "Hello World";
-    print "It matches\n" if /World/;
+    print "Найдено\n" if /World/;
 
-Finally, the C<//> default delimiters for a match can be changed to
-arbitrary delimiters by putting an C<'m'> out front:
+Наконец, разделители по умолчанию C<//> для поиска могут быть изменены на
+произвольные разделители, но тогда в начале доджны быть буква C<'m'>:
 
-    "Hello World" =~ m!World!;   # matches, delimited by '!'
-    "Hello World" =~ m{World};   # matches, note the matching '{}'
-    "/usr/bin/perl" =~ m"/perl"; # matches after '/usr/bin',
-                                 # '/' becomes an ordinary char
+    "Hello World" =~ m!World!;   # найдено, разделители '!'
+    "Hello World" =~ m{World};   # найдено, отметим совпадение '{}'
+    "/usr/bin/perl" =~ m"/perl"; # найдено после '/usr/bin',
+                                 # '/' стал произвольным символом
 
 Regexes must match a part of the string I<exactly> in order for the
 statement to be true:
