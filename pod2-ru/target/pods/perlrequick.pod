@@ -1,20 +1,19 @@
-=head1 NAME
+=encoding UTF-8
+=head1 НАЗВАНИЕ
 
-perlrequick - Perl regular expressions quick start
+perlrequick - быстрый старт использования регулярных выражений Perl
 
-=head1 ��������
+=head1 ОПИСАНИЕ
 
-This page covers the very basics of understanding, creating and
-using regular expressions ('regexes') in Perl.
+Эта страница описывает самые простые шаги для понимания, создания и использования регулярных выражений ('regexes') в Perl.
 
 
-=head1 The Guide
+=head1 Руководство
 
-=head2 Simple word matching
+=head2 Простой поиск соответствия слова
 
-The simplest regex is simply a word, or more generally, a string of
-characters.  A regex consisting of a word matches any string that
-contains that word:
+Простейший regex это просто слово, или, более обще, строка символов.
+Regex состоящее из слова соответствует любой строке, содержащей это слово:
 
     "Hello World" =~ /World/;  # matches
 
