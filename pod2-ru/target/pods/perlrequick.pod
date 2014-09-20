@@ -72,14 +72,14 @@ Perl будет всегда находить самое первое совпа
     'C:\WIN32' =~ /C:\\WIN/;                       # найдено
     "/usr/bin/perl" =~ /\/usr\/bin\/perl/;  # найдено
 
-В последнем регекс перед первым слешем C<'/'> также ставиться бэкслеш,
+В последнем регексе перед первым слешем C<'/'> также ставиться бэкслеш,
 потому что слеш здесь используется, чтобы разграничить регекс.
 
-Non-printable ASCII characters are represented by B<escape sequences>.
-Common examples are C<\t> for a tab, C<\n> for a newline, and C<\r>
-for a carriage return.  Arbitrary bytes are represented by octal
-escape sequences, e.g., C<\033>, or hexadecimal escape sequences,
-e.g., C<\x1B>:
+Непечатные символы ASCII представлены B<управляющими последовательностями>.
+Типичными примерами являются  C<\t> для символа табуляции, C<\n> для символа перехода на новую строку, и C<\r>
+для возврата каретки. Произвольные байты представлены восьмеричными
+управляющими последовательностями, например, C<\033>, или шестнадцатеричными управляющими последовательностями,
+например, C<\x1B>:
 
     "1000\t2000" =~ m(0\t2)      # matches
     "cat"      =~ /\143\x61\x74/ # matches in ASCII, but a weird way to spell cat
