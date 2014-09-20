@@ -81,28 +81,27 @@ Perl будет всегда находить самое первое совпа
 управляющими последовательностями, например, C<\033>, или шестнадцатеричными управляющими последовательностями,
 например, C<\x1B>:
 
-    "1000\t2000" =~ m(0\t2)      # matches
-    "cat"      =~ /\143\x61\x74/ # matches in ASCII, but a weird way to spell cat
+    "1000\t2000" =~ m(0\t2)      # найдено
+    "cat"      =~ /\143\x61\x74/ # найдено в кодах ASCII, хотя и странный способ искать cat
 
-Regexes are treated mostly as double-quoted strings, so variable
-substitution works:
+Регексы рассматриваются в основном как строки в двойных кавычках, поэтому работает интерполяция переменной:    
 
     $foo = 'house';
-    'cathouse' =~ /cat$foo/;   # matches
-    'housecat' =~ /${foo}cat/; # matches
+    'cathouse' =~ /cat$foo/;   # найдено
+    'housecat' =~ /${foo}cat/; # найдено
 
-With all of the regexes above, if the regex matched anywhere in the
-string, it was considered a match.  To specify I<where> it should
-match, we would use the B<anchor> metacharacters C<^> and C<$>.  The
-anchor C<^> means match at the beginning of the string and the anchor
-C<$> means match at the end of the string, or before a newline at the
-end of the string.  Some examples:
+Со всеми регексами выше, если регекс находит соответствие в любой точке
+строки, то он считается найденным. Чтобы указать I<где> он должен
+быть найден, мы будем использовать B<якорем> метасимволы C<^> и C<$>.
+Якорь C<^> означает поиск в начале строки , а якорь
+C<$> означает поиск в конце строки или перед символом перевода строки в
+конце строки. Несколько примеров:
 
-    "housekeeper" =~ /keeper/;         # matches
-    "housekeeper" =~ /^keeper/;        # doesn't match
-    "housekeeper" =~ /keeper$/;        # matches
-    "housekeeper\n" =~ /keeper$/;      # matches
-    "housekeeper" =~ /^housekeeper$/;  # matches
+    "housekeeper" =~ /keeper/;         # найдено
+    "housekeeper" =~ /^keeper/;        # не найдено
+    "housekeeper" =~ /keeper$/;        # найдено
+    "housekeeper\n" =~ /keeper$/;      # найдено
+    "housekeeper" =~ /^housekeeper$/;  # найдено
 
 =head2 Using character classes
 
