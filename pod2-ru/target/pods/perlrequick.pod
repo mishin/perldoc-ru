@@ -185,7 +185,7 @@ Perl имеет несколько сокращений для общих кла
 
 =item *
 
-\S это отрицание \s; он содержитit любой непробельный символ
+\S это отрицание \s; он содержит любой непробельный символ
 
     [^\s]
 
@@ -218,29 +218,28 @@ S<B<якорь слова> > C<\b> находит границу между си
     $x =~ /cat\b/;  # найдет cat d 'housecat'
     $x =~ /\bcat\b/;  # найдет 'cat' в конце строки
 
-In the last example, the end of the string is considered a word
-boundary.
+В последнем примере, концом строки считается граница слова.
 
-=head2 Matching this or that
+=head2 Поиск того или этого
 
-We can match different character strings with the B<alternation>
-metacharacter C<'|'>.  To match C<dog> or C<cat>, we form the regex
-C<dog|cat>.  As before, Perl will try to match the regex at the
-earliest possible point in the string.  At each character position,
-Perl will first try to match the first alternative, C<dog>.  If
-C<dog> doesn't match, Perl will then try the next alternative, C<cat>.
-If C<cat> doesn't match either, then the match fails and Perl moves to
-the next position in the string.  Some examples:
+Мы можем найти разные строчные символы с помощью метасивола B<или> C<'|'>. Чтобы найти C<dog> или C<cat>, мы создаем регекс
+C<dog|cat>.  Как и прежде, Perl пытается найти соответствие в самом раннем месте строки.  В каждой позиции символа
+Perl сначала пытается сопоставить первую альтернативу, C<dog>.  Если
+C<dog> не найден, Perl теперь пробует следующую альтернативу, C<cat>.
+Если C<cat> тоже не находит, тогда поиск считается неудавшимся и Perl перемещается к следующей позиции в строке. Вот ряд примеров:
 
-    "cats and dogs" =~ /cat|dog|bird/;  # matches "cat"
-    "cats and dogs" =~ /dog|cat|bird/;  # matches "cat"
+    "cats and dogs" =~ /cat|dog|bird/;  # найдет "cat"
+    "cats and dogs" =~ /dog|cat|bird/;  # найдет "cat"
 
-Even though C<dog> is the first alternative in the second regex,
-C<cat> is able to match earlier in the string.
+Даже при том, что  C<dog> является первой альтернативой во втором регексе,
+C<cat> находится раньше в строке.
 
-    "cats"          =~ /c|ca|cat|cats/; # matches "c"
-    "cats"          =~ /cats|cat|ca|c/; # matches "cats"
+    "cats"          =~ /c|ca|cat|cats/; # находит "c"
+    "cats"          =~ /cats|cat|ca|c/; # найдет "cats"
 
+В данном положении символов, первая альтернатива позволяет
+успешно найти регекс, это первое, что будет найдено. чтобы преуспеть будет тем, который соответствует. Здесь, весь
+альтернативы соответствуют в первом положении последовательности, таким образом, первые матчи.
 At a given character position, the first alternative that allows the
 regex match to succeed will be the one that matches. Here, all the
 alternatives match at the first string position, so the first matches.
