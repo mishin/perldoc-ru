@@ -103,26 +103,26 @@ C<$> означает поиск в конце строки или перед с
     "housekeeper\n" =~ /keeper$/;      # найдено
     "housekeeper" =~ /^housekeeper$/;  # найдено
 
-=head2 Using character classes
+=head2 Использование классов символов
 
-A B<character class> allows a set of possible characters, rather than
-just a single character, to match at a particular point in a regex.
-Character classes are denoted by brackets C<[...]>, with the set of
-characters to be possibly matched inside.  Here are some examples:
+B<Класс символов> позволяет набору возможных символов, а не только одному символу,
+соответствовать в определенной точке в регексе.
+Класс символом обозначается квадратными скобками C<[...]>, с набором символов, которые нужно найти внутри.
+Вот некоторые примеры:
 
-    /cat/;            # matches 'cat'
-    /[bcr]at/;        # matches 'bat', 'cat', or 'rat'
-    "abc" =~ /[cab]/; # matches 'a'
+    /cat/;            # найдет 'cat'
+    /[bcr]at/;        # найдет 'bat', 'cat', or 'rat'
+    "abc" =~ /[cab]/; # найдет 'a'
 
-In the last statement, even though C<'c'> is the first character in
-the class, the earliest point at which the regex can match is C<'a'>.
+В последнем вырадении, даже несмотря на то, что C<'c'> является первым символом в классе, 
+самой ранней точкой совпадения регекса будет C<'a'>.
 
-    /[yY][eE][sS]/; # match 'yes' in a case-insensitive way
+    /[yY][eE][sS]/; # найдет 'yes' в регистронезависимом поиске
                     # 'yes', 'Yes', 'YES', etc.
-    /yes/i;         # also match 'yes' in a case-insensitive way
+    /yes/i;         # также найдет 'yes' без учета регистра
 
-The last example shows a match with an C<'i'> B<modifier>, which makes
-the match case-insensitive.
+Последний пример показывает поиск с B<модификатором> C<'i'> , который делает
+поиск независимым от регистра (ignore registr).
 
 Character classes also have ordinary and special characters, but the
 sets of ordinary and special characters inside a character class are
