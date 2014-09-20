@@ -161,64 +161,62 @@ Perl имеет несколько сокращений для общих кла
 
 =item *
 
-\d is a digit and represents
+\d это цифра и содержит
 
     [0-9]
 
 =item *
 
-\s is a whitespace character and represents
+\s это пробельный символ и содержит
 
     [\ \t\r\n\f]
 
 =item *
 
-\w is a word character (alphanumeric or _) and represents
+\w это символ слова (буквоцифры или _) и содержит
 
     [0-9a-zA-Z_]
 
 =item *
 
-\D is a negated \d; it represents any character but a digit
+\D это отрицание \d; и содержит любой символ кроме цифры
 
     [^0-9]
 
 =item *
 
-\S is a negated \s; it represents any non-whitespace character
+\S это отрицание \s; он содержитit любой непробельный символ
 
     [^\s]
 
 =item *
 
-\W is a negated \w; it represents any non-word character
+\W это отрицание \w; и содержи любой несловесный символ
 
     [^\w]
 
 =item *
 
-The period '.' matches any character but "\n"
+Точка '.' найдет любой символ, кроме "\n"
 
 =back
 
-The C<\d\s\w\D\S\W> abbreviations can be used both inside and outside
-of character classes.  Here are some in use:
+Сокращения C<\d\s\w\D\S\W> можно использовать как внутри, так и вне классов символов. Вот некоторые приемы использования:
 
-    /\d\d:\d\d:\d\d/; # matches a hh:mm:ss time format
-    /[\d\s]/;         # matches any digit or whitespace character
-    /\w\W\w/;         # matches a word char, followed by a
-                      # non-word char, followed by a word char
-    /..rt/;           # matches any two chars, followed by 'rt'
-    /end\./;          # matches 'end.'
-    /end[.]/;         # same thing, matches 'end.'
+    /\d\d:\d\d:\d\d/; # найдет время в формате hh:mm:ss
+    /[\d\s]/;         # найдет любой цифровой или пробельный символ
+    /\w\W\w/;         # найдет символ слова, следующий несловесный символ
+                      # за которым символ слова
+    /..rt/;           # найдет 2 символа, за которыми следует 'rt'
+    /end\./;          # найдет 'end.'
+    /end[.]/;         # то же самое, найдет 'end.'
 
-The S<B<word anchor> > C<\b> matches a boundary between a word
-character and a non-word character C<\w\W> or C<\W\w>:
+S<B<якорь слова> > C<\b> находит границу между сиволом слова и не словесным символом C<\w\W> или C<\W\w>:
 
     $x = "Housecat catenates house and cat";
-    $x =~ /\bcat/;  # matches cat in 'catenates'
-    $x =~ /cat\b/;  # matches cat in 'housecat'
-    $x =~ /\bcat\b/;  # matches 'cat' at end of string
+    $x =~ /\bcat/;  # найдет cat в 'catenates'
+    $x =~ /cat\b/;  # найдет cat d 'housecat'
+    $x =~ /\bcat\b/;  # найдет 'cat' в конце строки
 
 In the last example, the end of the string is considered a word
 boundary.
