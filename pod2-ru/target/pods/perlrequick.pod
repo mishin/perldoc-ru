@@ -243,7 +243,7 @@ C<cat> находится раньше в строке.
 
 =head2 Группировка элементов и иерархический поиск
 
-B<Группирующие> метасимволы C<()> рассматривают части регекса как одтельную единицу.
+B<Группирующие> метасимволы C<()> рассматривают части регекса как отдельную единицу.
 Части регекса сгуппированы по ограждающим их скобкам. Регекс C<house(cat|keeper)> означает поиск
 C<house> за которым следует либо C<cat> либо C<keeper>.  Еще несколько примеров
 
@@ -257,40 +257,33 @@ C<house> за которым следует либо C<cat> либо C<keeper>. 
     "20" =~ /(19|20|)\d\d/;  # находит пустой элемент выбора '()\d\d',
                              # т.к. '20\d\d' не может найти
 
-=head2 Extracting matches
+=head2 Извлечение найденных элементов
 
-The grouping metacharacters C<()> also allow the extraction of the
-parts of a string that matched.  For each grouping, the part that
-matched inside goes into the special variables C<$1>, C<$2>, etc.
-They can be used just as ordinary variables:
+Группирующие метасимволы C<()> позволяют еще извлекать части найденной строки. Каждые найденные группы попадают в специальные переменные C<$1>, C<$2>, и т.д.
+Они могут быть использованы как обычные переменные:
 
-    # extract hours, minutes, seconds
-    $time =~ /(\d\d):(\d\d):(\d\d)/;  # match hh:mm:ss format
+    # извлекаем часы, минуты, секунды
+    $time =~ /(\d\d):(\d\d):(\d\d)/;  # найдет hh:mm:ss формат
     $hours = $1;
     $minutes = $2;
     $seconds = $3;
 
-In list context, a match C</regex/> with groupings will return the
-list of matched values C<($1,$2,...)>.  So we could rewrite it as
+В списочном контексте, поиск C</регекс/> с группировками вернет список найденных значений C<($1,$2,...)>.  Таким образом мы можем это переписать так
 
     ($hours, $minutes, $second) = ($time =~ /(\d\d):(\d\d):(\d\d)/);
 
-If the groupings in a regex are nested, C<$1> gets the group with the
-leftmost opening parenthesis, C<$2> the next opening parenthesis,
-etc.  For example, here is a complex regex and the matching variables
-indicated below it:
+Если группы в регексе вложенные, C<$1> получает с самой левой открытой скобкой, C<$2> следующая открытая скобка, и т.д.
+Напримет, вот сложный регекс и найденные переменные  указаны ниже:
 
     /(ab(cd|ef)((gi)|j))/;
      1  2      34
 
-Associated with the matching variables C<$1>, C<$2>, ... are
-the B<backreferences> C<\g1>, C<\g2>, ...  Backreferences are
-matching variables that can be used I<inside> a regex:
+Связанные найденные переменные C<$1>, C<$2>, ... являются B<обратными ссылками> C<\g1>, C<\g2>, ...  Обратные ссылки на найденные переменные могут использоваться I<внутри> регекса:
 
-    /(\w\w\w)\s\g1/; # find sequences like 'the the' in string
+    /(\w\w\w)\s\g1/; # найдет последовательность такую как 'the the' в строке
 
-C<$1>, C<$2>, ... should only be used outside of a regex, and C<\g1>,
-C<\g2>, ... only inside a regex.
+C<$1>, C<$2>, ... должны использоваться за пределами регекса, а C<\g1>,
+C<\g2>, ... только внутри регекса.
 
 =head2 Matching repetitions
 
