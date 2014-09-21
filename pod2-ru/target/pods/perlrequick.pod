@@ -237,30 +237,25 @@ C<cat> находится раньше в строке.
     "cats"          =~ /c|ca|cat|cats/; # находит "c"
     "cats"          =~ /cats|cat|ca|c/; # найдет "cats"
 
-В данном положении символов, первая альтернатива позволяет
-успешно найти регекс, это первое, что будет найдено. чтобы преуспеть будет тем, который соответствует. Здесь, весь
-альтернативы соответствуют в первом положении последовательности, таким образом, первые матчи.
-At a given character position, the first alternative that allows the
-regex match to succeed will be the one that matches. Here, all the
-alternatives match at the first string position, so the first matches.
+В данном положении символов, уже первый элемент из списка позволяет поиску
+завершиться успешно.
+Здесь все элементы из списка выбора соответствуют первой позиции строки, но совпадение считается с первым элементом.
 
-=head2 Grouping things and hierarchical matching
+=head2 Группировка элементов и иерархический поиск
 
-The B<grouping> metacharacters C<()> allow a part of a regex to be
-treated as a single unit.  Parts of a regex are grouped by enclosing
-them in parentheses.  The regex C<house(cat|keeper)> means match
-C<house> followed by either C<cat> or C<keeper>.  Some more examples
-are
+B<Группирующие> метасимволы C<()> рассматривают части регекса как одтельную единицу.
+Части регекса сгуппированы по ограждающим их скобкам. Регекс C<house(cat|keeper)> означает поиск
+C<house> за которым следует либо C<cat> либо C<keeper>.  Еще несколько примеров
 
-    /(a|b)b/;    # matches 'ab' or 'bb'
-    /(^a|b)c/;   # matches 'ac' at start of string or 'bc' anywhere
+    /(a|b)b/;    # найдет 'ab' или 'bb'
+    /(^a|b)c/;   # найдет 'ac' в начале строки или 'bc' где угодно
 
-    /house(cat|)/;  # matches either 'housecat' or 'house'
-    /house(cat(s|)|)/;  # matches either 'housecats' or 'housecat' or
-                        # 'house'.  Note groups can be nested.
+    /house(cat|)/;  # найдет или 'housecat' или 'house'
+    /house(cat(s|)|)/;  # найдет или 'housecats' или 'housecat' или
+                        # 'house'. Обратите внимание на то, что группы могут быть вложены.
 
-    "20" =~ /(19|20|)\d\d/;  # matches the null alternative '()\d\d',
-                             # because '20\d\d' can't match
+    "20" =~ /(19|20|)\d\d/;  # находит пустой элемент выбора '()\d\d',
+                             # т.к. '20\d\d' не может найти
 
 =head2 Extracting matches
 
