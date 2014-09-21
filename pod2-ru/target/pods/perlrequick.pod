@@ -340,7 +340,7 @@ C<a{n}> = найдет точно C<n> раз
 все еще будет соответствовать шаблону поиска. Второму повторителю C<.*> совсем не осталось строки, таким образом
 он найдется 0 раз.
 
-=head2 Дальнейший поиска
+=head2 Находим больше
 
 Есть еще несколько вещей, которые вы, возможно, захотите узнать, речь идет об операторах поиска.
 Глобальный модификатор C<//g> позволяет оператору поиска найти строку столько раз сколько это возможно.
@@ -374,29 +374,29 @@ C<//c>, как в C</регекс/gc>.
 
 =head2 Поиск и замена
 
-Search and replace is performed using C<s/regex/replacement/modifiers>.
-The C<replacement> is a Perl double-quoted string that replaces in the
-string whatever is matched with the C<regex>.  The operator C<=~> is
-also used here to associate a string with C<s///>.  If matching
-against C<$_>, the S<C<$_ =~>> can be dropped.  If there is a match,
-C<s///> returns the number of substitutions made; otherwise it returns
-false.  Here are a few examples:
+Поиск и замена осуществляется с помощью C<s/регекс/замена/модификаторы>.
+C<замена> является Perl строкой в двойных кавычках, которая заменяет в
+строке то, что нашел C<регекс>. Оператор C<=~> 
+также используется здесь, чтобы связать строку с C<s///>. Если мы ищем в C<$_>
+S<C<$_ =~>> можно опустить. Если есть совпадение,
+C<s///> возвращает количество сделанных замен; в противном случае возвращается
+ложь. Вот несколько примеров:
 
     $x = "Time to feed the cat!";
-    $x =~ s/cat/hacker/;   # $x contains "Time to feed the hacker!"
+    $x =~ s/cat/hacker/;   # $x содержит "Time to feed the hacker!"
     $y = "'quoted words'";
-    $y =~ s/^'(.*)'$/$1/;  # strip single quotes,
-                           # $y contains "quoted words"
+    $y =~ s/^'(.*)'$/$1/;  # обрезать одиночные кавычки,
+                           # $y содержит "quoted words"
 
-With the C<s///> operator, the matched variables C<$1>, C<$2>, etc.
-are immediately available for use in the replacement expression. With
-the global modifier, C<s///g> will search and replace all occurrences
-of the regex in the string:
+С оператором C<s///>, найденные переменные C <$ 1>, C <$ 2> и т.д.
+сразу становятся доступными для использования в выражениях подстановки. С
+глобальным модификатором, C<s///g> будет искать и заменять все вхождения
+из регекса в строке:
 
     $x = "I batted 4 for 4";
-    $x =~ s/4/four/;   # $x contains "I batted four for 4"
+    $x =~ s/4/four/;   # $x содержит "I batted four for 4"
     $x = "I batted 4 for 4";
-    $x =~ s/4/four/g;  # $x contains "I batted four for four"
+    $x =~ s/4/four/g;  # $x содержит "I batted four for four"
 
 The non-destructive modifier C<s///r> causes the result of the substitution
 to be returned instead of modifying C<$_> (or whatever variable the
