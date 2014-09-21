@@ -360,19 +360,19 @@ C<a{n}> = найдет точно C<n> раз
     Слово dog, заканчивается в позиции 7
     Слово house, заканчивается в позиции 13
 
-A failed match or changing the target string resets the position.  If
-you don't want the position reset after failure to match, add the
-C<//c>, as in C</regex/gc>.
+Неудавшийся поиск или изменения в целевой строки сбрасывает позицию. Если
+Вы не хотите, чтобы позиция сбрасывалась после неудачного поиска добавте
+C<//c>, как в C</регекс/gc>.
 
-In list context, C<//g> returns a list of matched groupings, or if
-there are no groupings, a list of matches to the whole regex.  So
+В списочном контексте, C<//g> вернет список найденных групп или, если групп нет,
+то список поисков целого регекса.  Так
 
-    @words = ($x =~ /(\w+)/g);  # matches,
+    @words = ($x =~ /(\w+)/g);  # найдет,
                                 # $word[0] = 'cat'
                                 # $word[1] = 'dog'
                                 # $word[2] = 'house'
 
-=head2 Search and replace
+=head2 Поиск и замена
 
 Search and replace is performed using C<s/regex/replacement/modifiers>.
 The C<replacement> is a Perl double-quoted string that replaces in the
