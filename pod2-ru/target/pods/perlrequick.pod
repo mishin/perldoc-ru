@@ -285,86 +285,80 @@ C<house> за которым следует либо C<cat> либо C<keeper>. 
 C<$1>, C<$2>, ... должны использоваться за пределами регекса, а C<\g1>,
 C<\g2>, ... только внутри регекса.
 
-=head2 Matching repetitions
+=head2 Поиск повторений
 
-The B<quantifier> metacharacters C<?>, C<*>, C<+>, and C<{}> allow us
-to determine the number of repeats of a portion of a regex we
-consider to be a match.  Quantifiers are put immediately after the
-character, character class, or grouping that we want to specify.  They
-have the following meanings:
+Метасимволы B<повторения>  C<?>, C<*>, C<+>, и C<{}> позволяют нам определить число повторений порции регекса, которые нам нужно найти.  
+Повторители ставятся сразу после
+символа, символьного класса, или группировки того, что мы хотим указать. Они, имеют следующие значения:
 
 =over 4
 
 =item *
 
-C<a?> = match 'a' 1 or 0 times
+C<a?> = найдет 'a' 1 или 0 раз
 
 =item *
 
-C<a*> = match 'a' 0 or more times, i.e., any number of times
+C<a*> = найдет 'a' 0 или больше раз, т.е. любое число раз
 
 =item *
 
-C<a+> = match 'a' 1 or more times, i.e., at least once
+C<a+> = найдет 'a' 1 или больше или много раз, но как минимум один
 
 =item *
 
-C<a{n,m}> = match at least C<n> times, but not more than C<m>
-times.
+C<a{n,m}> = найдет минимум C<n> раз, но не более чем C<m> раз.
 
 =item *
 
-C<a{n,}> = match at least C<n> or more times
+C<a{n,}> = найдет минимум C<n> или больше раз
 
 =item *
 
-C<a{n}> = match exactly C<n> times
+C<a{n}> = найдет точно C<n> раз
 
 =back
 
-Here are some examples:
+Вот несколько примеров:
 
-    /[a-z]+\s+\d*/;  # match a lowercase word, at least some space, and
-                     # any number of digits
-    /(\w+)\s+\g1/;    # match doubled words of arbitrary length
-    $year =~ /^\d{2,4}$/;  # make sure year is at least 2 but not more
-                           # than 4 digits
-    $year =~ /^\d{4}$|^\d{2}$/;    # better match; throw out 3 digit dates
+    /[a-z]+\s+\d*/;  # найдет слов в нижнем регистре, как минимум один пробельный символ, и
+                     # любое число символов
+    /(\w+)\s+\g1/;    # найдет удвоенное слово произвольной длины
+    $year =~ /^\d{2,4}$/;  # гарантирует в году 2 но не более
+                           # чем 4 цифры
+    $year =~ /^\d{4}$|^\d{2}$/;    # лучшее совпадение; исключает дату из 3 цифр
 
-These quantifiers will try to match as much of the string as possible,
-while still allowing the regex to match.  So we have
+Повторители могут искать в строке настолько долго насколько это воможно, позволяя регексу найтись. Поэтому
 
     $x = 'the cat in the hat';
-    $x =~ /^(.*)(at)(.*)$/; # matches,
+    $x =~ /^(.*)(at)(.*)$/; # найдет,
                             # $1 = 'the cat in the h'
                             # $2 = 'at'
                             # $3 = ''   (0 matches)
 
-The first quantifier C<.*> grabs as much of the string as possible
-while still having the regex match. The second quantifier C<.*> has
-no string left to it, so it matches 0 times.
+Первый повторитель C<.*> захватывает как можно больше от строки поиска пока регекс 
+все еще будет соответствовать шаблону поиска. Второму повторителю C<.*> совсем не осталось строки, таким образом
+он найдется 0 раз.
 
-=head2 More matching
+=head2 Дальнейший поиска
 
-There are a few more things you might want to know about matching
-operators.
-The global modifier C<//g> allows the matching operator to match
-within a string as many times as possible.  In scalar context,
-successive matches against a string will have C<//g> jump from match
-to match, keeping track of position in the string as it goes along.
-You can get or set the position with the C<pos()> function.
-For example,
+Есть еще несколько вещей, которые вы, возможно, захотите узнать, речь идет об операторах поиска.
+Глобальный модификатор C<//g> позволяет оператору поиска найти строку столько раз сколько это возможно.
+В скалярном контексте, удачный поиск в строке, имеющей C<//g> прыгает с найденной точки на
+ найденную точку, отслеживая позицию в строке, как она идет вдоль. 
+Вы можете получить или установить позицию поиска с помощью функции C<pos()>.
+Например,
 
-    $x = "cat dog house"; # 3 words
+    $x = "cat dog house"; # 3 слова
     while ($x =~ /(\w+)/g) {
-        print "Word is $1, ends at position ", pos $x, "\n";
+        print "Слово $1, заканчивается в позиции ", pos $x, "\n";
     }
 
-prints
+напечатает
 
-    Word is cat, ends at position 3
-    Word is dog, ends at position 7
-    Word is house, ends at position 13
+    Слово cat, заканчивается в позиции 3
+    Слово dog, заканчивается в позиции 7
+    Слово house, заканчивается в позиции 13
 
 A failed match or changing the target string resets the position.  If
 you don't want the position reset after failure to match, add the
