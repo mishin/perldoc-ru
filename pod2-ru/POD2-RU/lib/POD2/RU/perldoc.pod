@@ -1,6 +1,6 @@
 =encoding utf8
 
-=head1 НАЗВАНИЕ
+=head1 НАИМЕНОВАНИЕ
 
 perldoc - Perl-документация в POD-формате.
 
@@ -226,12 +226,11 @@ and many others.
 
 =over
 
-=item * Николай Мишин (Tech & Language Lead)
-=item * Анатолий Шарифулин (Tech Lead), C< sharifulin + sharifulin at gmail.com >
-=item * Николай Мишин (Language Lead), C< mishin + pod2ru at gmail.com, mi at ya.ru >
-=item * Алексей Суриков (Language), C< KSURi>
-=item * Михаил Любимов (Language), C< mikhail.lyubimov >
-=item * Дмитрий Константинов (Language), C< Dim_K >
-=item * Евгений Баранов (Language), C< Baranov >
+=item * Николай Мишин  C<< <mishin@cpan.org> >>
+=item * Анатолий Шарифулин  C<< <sharifulin@gmail.com> >>
+=item * Алексей Суриков (Language) C<< <KSURi> >>
+=item * Михаил Любимов (Language) C<< <mikhail.lyubimov> >>
+=item * Дмитрий Константинов (Language) C<< <Dim_K> >>
+=item * Евгений Баранов (Language) C<< <Baranov> >>
 
 =back    
