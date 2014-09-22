@@ -1,7 +1,7 @@
 # This Makefile is for the POD2::RU extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 6.72 (Revision: 67200) from the contents of
+# 6.62 (Revision: 66200) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
@@ -19,17 +19,15 @@
 #     NAME => q[POD2::RU]
 #     PL_FILES => {  }
 #     PREREQ_PM => { Test::More=>q[0], Pod::Perldoc=>q[3.15], POD2::Base=>q[0.043], Test::More::UTF8=>q[0.04] }
-#     TEST_REQUIRES => {  }
 #     VERSION_FROM => q[lib/POD2/RU.pm]
 #     clean => { FILES=>q[POD2-RU-*] }
-#     dist => { COMPRESS=>q[gzip -9f], SUFFIX=>q[gz] }
 
 # --- MakeMaker post_initialize section:
 
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via C:/strawberry/perl/lib/Config.pm).
+# These definitions are from config.sh (via C:/Dwimperl/perl/lib/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = gcc
@@ -40,36 +38,36 @@ DLSRC = dl_win32.xs
 EXE_EXT = .exe
 FULL_AR = 
 LD = g++
-LDDLFLAGS = -mdll -s -L"C:\strawberry\perl\lib\CORE" -L"C:\strawberry\c\lib"
-LDFLAGS = -s -L"C:\strawberry\perl\lib\CORE" -L"C:\strawberry\c\lib"
+LDDLFLAGS = -mdll -s -L"C:\Dwimperl\perl\lib\CORE" -L"C:\Dwimperl\c\lib"
+LDFLAGS = -s -L"C:\Dwimperl\perl\lib\CORE" -L"C:\Dwimperl\c\lib"
 LIBC = 
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = MSWin32
 OSVERS = 4.0
 RANLIB = rem
-SITELIBEXP = C:\strawberry\perl\site\lib
-SITEARCHEXP = C:\strawberry\perl\site\lib
+SITELIBEXP = C:\Dwimperl\perl\site\lib
+SITEARCHEXP = C:\Dwimperl\perl\site\lib
 SO = dll
-VENDORARCHEXP = C:\strawberry\perl\vendor\lib
-VENDORLIBEXP = C:\strawberry\perl\vendor\lib
+VENDORARCHEXP = C:\Dwimperl\perl\vendor\lib
+VENDORLIBEXP = C:\Dwimperl\perl\vendor\lib
 
 
 # --- MakeMaker constants section:
 
 # Get dmake to read long commands like PM_TO_BLIB
-MAXLINELENGTH = 800000
+MAXLINELENGTH = 65536
 
 AR_STATIC_ARGS = cr
 DIRFILESEP = \\
 DFSEP = $(DIRFILESEP)
 NAME = POD2::RU
 NAME_SYM = POD2_RU
-VERSION = 5.18.0.1.02
+VERSION = 5.18.0.1.11
 VERSION_MACRO = VERSION
-VERSION_SYM = 5_18_0_1_02
+VERSION_SYM = 5_18_0_1_11
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 5.18.0.1.02
+XS_VERSION = 5.18.0.1.11
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib\arch
@@ -83,32 +81,32 @@ MAN3EXT = 3
 INSTALLDIRS = site
 DESTDIR = 
 PREFIX = $(SITEPREFIX)
-PERLPREFIX = C:\strawberry\perl
-SITEPREFIX = C:\strawberry\perl\site
-VENDORPREFIX = C:\strawberry\perl\vendor
-INSTALLPRIVLIB = C:\strawberry\perl\lib
+PERLPREFIX = C:\Dwimperl\perl
+SITEPREFIX = C:\Dwimperl\perl\site
+VENDORPREFIX = C:\Dwimperl\perl\vendor
+INSTALLPRIVLIB = C:\Dwimperl\perl\lib
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
-INSTALLSITELIB = C:\strawberry\perl\site\lib
+INSTALLSITELIB = C:\Dwimperl\perl\site\lib
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
-INSTALLVENDORLIB = C:\strawberry\perl\vendor\lib
+INSTALLVENDORLIB = C:\Dwimperl\perl\vendor\lib
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = C:\strawberry\perl\lib
+INSTALLARCHLIB = C:\Dwimperl\perl\lib
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = C:\strawberry\perl\site\lib
+INSTALLSITEARCH = C:\Dwimperl\perl\site\lib
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
-INSTALLVENDORARCH = C:\strawberry\perl\vendor\lib
+INSTALLVENDORARCH = C:\Dwimperl\perl\vendor\lib
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
-INSTALLBIN = C:\strawberry\perl\bin
+INSTALLBIN = C:\Dwimperl\perl\bin
 DESTINSTALLBIN = $(DESTDIR)$(INSTALLBIN)
-INSTALLSITEBIN = C:\strawberry\perl\site\bin
+INSTALLSITEBIN = C:\Dwimperl\perl\site\bin
 DESTINSTALLSITEBIN = $(DESTDIR)$(INSTALLSITEBIN)
-INSTALLVENDORBIN = C:\strawberry\perl\bin
+INSTALLVENDORBIN = C:\Dwimperl\perl\bin
 DESTINSTALLVENDORBIN = $(DESTDIR)$(INSTALLVENDORBIN)
-INSTALLSCRIPT = C:\strawberry\perl\bin
+INSTALLSCRIPT = C:\Dwimperl\perl\bin
 DESTINSTALLSCRIPT = $(DESTDIR)$(INSTALLSCRIPT)
-INSTALLSITESCRIPT = C:\strawberry\perl\site\bin
+INSTALLSITESCRIPT = C:\Dwimperl\perl\site\bin
 DESTINSTALLSITESCRIPT = $(DESTDIR)$(INSTALLSITESCRIPT)
-INSTALLVENDORSCRIPT = C:\strawberry\perl\bin
+INSTALLVENDORSCRIPT = C:\Dwimperl\perl\bin
 DESTINSTALLVENDORSCRIPT = $(DESTDIR)$(INSTALLVENDORSCRIPT)
 INSTALLMAN1DIR = none
 DESTINSTALLMAN1DIR = $(DESTDIR)$(INSTALLMAN1DIR)
@@ -122,16 +120,16 @@ INSTALLSITEMAN3DIR = $(INSTALLMAN3DIR)
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = $(INSTALLMAN3DIR)
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
-PERL_LIB = C:\strawberry\perl\lib
-PERL_ARCHLIB = C:\strawberry\perl\lib
+PERL_LIB = C:\Dwimperl\perl\lib
+PERL_ARCHLIB = C:\Dwimperl\perl\lib
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = C:\strawberry\perl\lib\CORE
-PERL = C:\strawberry\perl\bin\perl.exe
-FULLPERL = C:\strawberry\perl\bin\perl.exe
+PERL_INC = C:\Dwimperl\perl\lib\CORE
+PERL = C:\Dwimperl\perl\bin\perl.exe
+FULLPERL = C:\Dwimperl\perl\bin\perl.exe
 ABSPERL = $(PERL)
 PERLRUN = $(PERL)
 FULLPERLRUN = $(FULLPERL)
@@ -144,9 +142,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = C:/strawberry/perl/site/lib/ExtUtils/MakeMaker.pm
-MM_VERSION  = 6.72
-MM_REVISION = 67200
+MAKEMAKER   = C:/Dwimperl/perl/lib/ExtUtils/MakeMaker.pm
+MM_VERSION  = 6.62
+MM_REVISION = 66200
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -187,7 +185,7 @@ INST_BOOT        =
 
 # Extra linker info
 EXPORT_LIST        = $(BASEEXT).def
-PERL_ARCHIVE       = $(PERL_INC)\libperl516.a
+PERL_ARCHIVE       = $(PERL_INC)\libperl514.a
 PERL_ARCHIVE_AFTER = 
 
 
@@ -200,6 +198,7 @@ TO_INST_PM = lib/POD2/RU.pm \
 	lib/POD2/RU/perlintro.pod \
 	lib/POD2/RU/perlnewmod.pod \
 	lib/POD2/RU/perlpragma.pod \
+	lib/POD2/RU/perlrequick.pod \
 	lib/POD2/RU/perlrun.pod \
 	lib/POD2/RU/perlstyle.pod
 
@@ -215,6 +214,8 @@ PM_TO_BLIB = lib/POD2/RU/perlintro.pod \
 	blib\lib\POD2\RU.pm \
 	lib/POD2/RU/perlnewmod.pod \
 	blib\lib\POD2\RU\perlnewmod.pod \
+	lib/POD2/RU/perlrequick.pod \
+	blib\lib\POD2\RU\perlrequick.pod \
 	lib/POD2/RU/perlrun.pod \
 	blib\lib\POD2\RU\perlrun.pod \
 	lib/POD2/RU/perlcheat.pod \
@@ -228,12 +229,12 @@ PM_TO_BLIB = lib/POD2/RU/perlintro.pod \
 
 
 # --- MakeMaker platform_constants section:
-MM_Win32_VERSION = 6.72
+MM_Win32_VERSION = 6.62
 
 
 # --- MakeMaker tool_autosplit section:
 # Usage: $(AUTOSPLITFILE) FileToSplit AutoDirToSplitInto
-AUTOSPLITFILE = $(ABSPERLRUN)  -e "use AutoSplit;  autosplit($$$$ARGV[0], $$$$ARGV[1], 0, 1, 1)" --
+AUTOSPLITFILE = $(ABSPERLRUN)  -e "use AutoSplit;  autosplit($$ARGV[0], $$ARGV[1], 0, 1, 1)" --
 
 
 
@@ -280,8 +281,8 @@ TAR = tar
 TARFLAGS = cvf
 ZIP = zip
 ZIPFLAGS = -r
-COMPRESS = gzip -9f
-SUFFIX = gz
+COMPRESS = gzip --best
+SUFFIX = .gz
 SHAR = shar
 PREOP = $(NOECHO) $(NOOP)
 POSTOP = $(NOECHO) $(NOOP)
@@ -291,7 +292,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = POD2-RU
-DISTVNAME = POD2-RU-5.18.0.1.02
+DISTVNAME = POD2-RU-5.18.0.1.11
 
 
 # --- MakeMaker macro section:
@@ -491,7 +492,6 @@ clean :: clean_subdirs
 	- $(RM_RF) \
 	  dll.exp dll.base \
 	  POD2-RU-* blib 
-	- $(NOECHO) $(RM_F) $(MAKEFILE_OLD)
 	- $(MV) $(FIRST_MAKEFILE) $(MAKEFILE_OLD) $(DEV_NULL)
 
 
@@ -521,7 +521,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) configure_requires: >> META_new.yml
 	$(NOECHO) $(ECHO) "  ExtUtils::MakeMaker: 0" >> META_new.yml
 	$(NOECHO) $(ECHO) "dynamic_config: 1" >> META_new.yml
-	$(NOECHO) $(ECHO) "generated_by: 'ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.120921'" >> META_new.yml
+	$(NOECHO) $(ECHO) "generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.131560'" >> META_new.yml
 	$(NOECHO) $(ECHO) "license: perl" >> META_new.yml
 	$(NOECHO) $(ECHO) meta-spec: >> META_new.yml
 	$(NOECHO) $(ECHO) "  url: http://module-build.sourceforge.net/META-spec-v1.4.html" >> META_new.yml
@@ -536,7 +536,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "  Pod::Perldoc: 3.15" >> META_new.yml
 	$(NOECHO) $(ECHO) "  Test::More: 0" >> META_new.yml
 	$(NOECHO) $(ECHO) "  Test::More::UTF8: 0.04" >> META_new.yml
-	$(NOECHO) $(ECHO) "version: v5.18.0.1.02" >> META_new.yml
+	$(NOECHO) $(ECHO) "version: v5.18.0.1.11" >> META_new.yml
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
 	$(NOECHO) $(ECHO) {{ > META_new.json
@@ -545,7 +545,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "      \"Команда Perl по-русски, Moscow-pm\"" >> META_new.json
 	$(NOECHO) $(ECHO) "   ]," >> META_new.json
 	$(NOECHO) $(ECHO) "   \"dynamic_config\" : 1," >> META_new.json
-	$(NOECHO) $(ECHO) "   \"generated_by\" : \"ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.120921\"," >> META_new.json
+	$(NOECHO) $(ECHO) "   \"generated_by\" : \"ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.131560\"," >> META_new.json
 	$(NOECHO) $(ECHO) "   \"license\" : [" >> META_new.json
 	$(NOECHO) $(ECHO) "      \"perl_5\"" >> META_new.json
 	$(NOECHO) $(ECHO) "   ]," >> META_new.json
@@ -581,7 +581,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) "      }}" >> META_new.json
 	$(NOECHO) $(ECHO) "   }}," >> META_new.json
 	$(NOECHO) $(ECHO) "   \"release_status\" : \"stable\"," >> META_new.json
-	$(NOECHO) $(ECHO) "   \"version\" : \"v5.18.0.1.02\"" >> META_new.json
+	$(NOECHO) $(ECHO) "   \"version\" : \"v5.18.0.1.11\"" >> META_new.json
 	$(NOECHO) $(ECHO) }} >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
 
@@ -605,7 +605,7 @@ manifest :
 	$(PERLRUN) "-MExtUtils::Manifest=mkmanifest" -e mkmanifest
 
 veryclean : realclean
-	$(RM_F) *~ */*~ *.orig */*.orig *.bak */*.bak *.old */*.old
+	$(RM_F) *~ */*~ *.orig */*.orig *.bak */*.bak *.old */*.old 
 
 
 
@@ -620,7 +620,6 @@ tardist : $(DISTVNAME).tar$(SUFFIX)
 
 uutardist : $(DISTVNAME).tar$(SUFFIX)
 	uuencode $(DISTVNAME).tar$(SUFFIX) $(DISTVNAME).tar$(SUFFIX) > $(DISTVNAME).tar$(SUFFIX)_uu
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).tar$(SUFFIX)_uu'
 
 $(DISTVNAME).tar$(SUFFIX) : distdir
 	$(PREOP)
@@ -628,7 +627,6 @@ $(DISTVNAME).tar$(SUFFIX) : distdir
 	$(TAR) $(TARFLAGS) $(DISTVNAME).tar $(DISTVNAME)
 	$(RM_RF) $(DISTVNAME)
 	$(COMPRESS) $(DISTVNAME).tar
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).tar$(SUFFIX)'
 	$(POSTOP)
 
 zipdist : $(DISTVNAME).zip
@@ -638,14 +636,12 @@ $(DISTVNAME).zip : distdir
 	$(PREOP)
 	$(ZIP) $(ZIPFLAGS) $(DISTVNAME).zip $(DISTVNAME)
 	$(RM_RF) $(DISTVNAME)
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).zip'
 	$(POSTOP)
 
 shdist : distdir
 	$(PREOP)
 	$(SHAR) $(DISTVNAME) > $(DISTVNAME).shar
 	$(RM_RF) $(DISTVNAME)
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).shar'
 	$(POSTOP)
 
 
@@ -681,17 +677,17 @@ ci :
 distmeta : create_distdir metafile
 	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e "exit unless -e q{{META.yml}};\
 eval {{ maniadd({{q{{META.yml}} => q{{Module YAML meta-data (added by MakeMaker)}}}}) }}\
-    or print \"Could not add META.yml to MANIFEST: $$$${{'^@'}}\n\"" --
+    or print \"Could not add META.yml to MANIFEST: $${{'^@'}}\n\"" --
 	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e "exit unless -f q{{META.json}};\
 eval {{ maniadd({{q{{META.json}} => q{{Module JSON meta-data (added by MakeMaker)}}}}) }}\
-    or print \"Could not add META.json to MANIFEST: $$$${{'^@'}}\n\"" --
+    or print \"Could not add META.json to MANIFEST: $${{'^@'}}\n\"" --
 
 
 
 # --- MakeMaker distsignature section:
 distsignature : create_distdir
-	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e "eval {{ maniadd({{q{{SIGNATURE}} => q{{Public-key signature (added by MakeMaker)}}}}) }}\
-    or print \"Could not add SIGNATURE to MANIFEST: $$$${{'^@'}}\n\"" --
+	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e "eval {{ maniadd({{q{{SIGNATURE}} => q{{Public-key signature (added by MakeMaker)}}}}) }} \
+    or print \"Could not add SIGNATURE to MANIFEST: $${{'^@'}}\n\"" --
 	$(NOECHO) cd $(DISTVNAME) && $(TOUCH) SIGNATURE
 	cd $(DISTVNAME) && cpansign -s
 
@@ -837,7 +833,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = perl
-FULLPERL      = C:\strawberry\perl\bin\perl.exe
+FULLPERL      = C:\Dwimperl\perl\bin\perl.exe
 
 $(MAP_TARGET) :: static $(MAKE_APERL_FILE)
 	$(MAKE) $(USEMAKEFILE) $(MAKE_APERL_FILE) $@
@@ -881,7 +877,7 @@ testdb_static :: testdb_dynamic
 # --- MakeMaker ppd section:
 # Creates a PPD (Perl Package Description) for a binary distribution.
 ppd :
-	$(NOECHO) $(ECHO) "<SOFTPKG NAME=\"$(DISTNAME)\" VERSION=\"$(VERSION)\">" > $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) "<SOFTPKG NAME=\"$(DISTNAME)\" VERSION=\"5.18.0.1.11\">" > $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "    <ABSTRACT>Документация Perl по-русски</ABSTRACT>" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "    <AUTHOR>Команда Perl по-русски, Moscow-pm</AUTHOR>" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "    <IMPLEMENTATION>" >> $(DISTNAME).ppd
@@ -889,7 +885,7 @@ ppd :
 	$(NOECHO) $(ECHO) "        <REQUIRE NAME=\"Pod::Perldoc\" VERSION=\"3.15\" />" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "        <REQUIRE NAME=\"Test::More\" />" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "        <REQUIRE NAME=\"Test::More::UTF8\" VERSION=\"0.04\" />" >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) "        <ARCHITECTURE NAME=\"MSWin32-x64-multi-thread-5.16\" />" >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) "        <ARCHITECTURE NAME=\"MSWin32-x86-multi-thread-5.14\" />" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "        <CODEBASE HREF=\"\" />" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) "    </IMPLEMENTATION>" >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) ^</SOFTPKG^> >> $(DISTNAME).ppd
@@ -905,6 +901,7 @@ pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 	  lib/POD2/RU/a2p.pod blib\lib\POD2\RU\a2p.pod \
 	  lib/POD2/RU.pm blib\lib\POD2\RU.pm \
 	  lib/POD2/RU/perlnewmod.pod blib\lib\POD2\RU\perlnewmod.pod \
+	  lib/POD2/RU/perlrequick.pod blib\lib\POD2\RU\perlrequick.pod \
 	  lib/POD2/RU/perlrun.pod blib\lib\POD2\RU\perlrun.pod \
 	  lib/POD2/RU/perlcheat.pod blib\lib\POD2\RU\perlcheat.pod \
 	  lib/POD2/RU/perlbook.pod blib\lib\POD2\RU\perlbook.pod \

@@ -1,8 +1,11 @@
 Revision history for perl module POD2::RU
 
+v5.18.0.1.11 2014-09-24
+ - добавил perlrequick - быстрый старт использования регулярных выражений Perl
+
 v5.18.0.1.10 2013-09-24
  [Spec Changes]
- - add correct distribution version (v5.18.0.1.10)
+ - add correct distribution version
 
 v5.18.0.1.9 2013-09-24
  [Spec Changes]

@@ -4,7 +4,7 @@
       "Russian Perl Team, Moscow-pm"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132660",
+   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132660, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "perl_5"
    ],
@@ -14,6 +14,11 @@
    },
    "name" : "POD2-RU",
    "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
       "runtime" : {
          "requires" : {
             "POD2::Base" : "0.043",
@@ -26,7 +31,7 @@
    "provides" : {
       "POD2::RU" : {
          "file" : "lib/POD2/RU.pm",
-         "version" : "v5.18.0.1.9"
+         "version" : "v5.18.0.1.10"
       }
    },
    "release_status" : "stable",
@@ -35,5 +40,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v5.18.0.1.9"
+   "version" : "v5.18.0.1.10"
 }

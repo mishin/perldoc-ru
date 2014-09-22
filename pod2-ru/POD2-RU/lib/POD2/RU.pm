@@ -5,7 +5,7 @@ use warnings;
 use base 'Exporter';
 use base 'POD2::Base';
 
-our $VERSION = '5.18.0.1.10';
+our $VERSION = '5.18.0.1.11';
 
 our @EXPORT = qw(print_pod print_pods);
 
@@ -22,6 +22,7 @@ sub pod_info {
         perlstyle  => '5.18.0.1',
         perlcheat  => '5.18.0.1',
         perlnewmod  => '5.18.0.1',
+        perlrequick  => '5.18.0.1',
     };
 }
 
@@ -159,23 +160,15 @@ C<< perldoc -f function >> использует возвращаемое зна�
 
 =over
 
-=item * Анатолий Шарифулин (Tech Lead), C< sharifulin + sharifulin at gmail.com >
-
-=item * Николай Мишин (Language Lead), C< mishin + pod2ru at gmail.com, mi at ya.ru, mishin at cpan.org >
-
-=item * Антон Николаев (Language), C< me at lelf.lu >
-
-=item * Алексей Суриков (Language), C< KSURi>
-
-=item * Михаил Любимов (Language), C< mikhail.lyubimov >
-
-=item * Дмитрий Константинов (Language), C< Dim_K >
-
-=item * Евгений Баранов (Language), C< Baranov >
-
-=item * Динар Жамалиев (Language), C< zhdinar >
-
-=item * Валерий Кравчук (Language), C< valera at openxs.kiev.ua >
+=item * Николай Мишин  C<< <mishin@cpan.org> >>
+=item * Анатолий Шарифулин  C<< <sharifulin@gmail.com> >>
+=item * Алексей Суриков C<< <KSURi> >>
+=item * Михаил Любимов  C<< <mikhail.lyubimov> >>
+=item * Дмитрий Константинов  C<< <Dim_K> >>
+=item * Евгений Баранов  C<< <Baranov> >>
+=item * Антон Николаев C<< <me@lelf.lu> >>
+=item * Динар Жамалиев C<< <zhdinar> >>
+=item * Валерий Кравчук C<< <valera@openxs.kiev.ua> >>
 
 =back
 
