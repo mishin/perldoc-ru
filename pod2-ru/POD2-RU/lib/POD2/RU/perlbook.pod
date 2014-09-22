@@ -1,6 +1,6 @@
 =encoding utf8
 
-=head1 НАЗВАНИЕ
+=head1 НАИМЕНОВАНИЕ
 
 perlbook - Информация о книгах по Perl
 
@@ -294,6 +294,6 @@ I<Higher-Order Perl>: http://hop.perl.plover.com/
 
 =over
 
-=item * Николай Мишин (Tech & Language Lead)
+=item * Николай Мишин  C<< <mishin@cpan.org> >>
 
 =back    
