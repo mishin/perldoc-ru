@@ -1,6 +1,6 @@
 =encoding utf8
 
-=head1 НАЗВАНИЕ
+=head1 НАИМЕНОВАНИЕ
 
 perlnewmod - подготовка нового модуля для распределения (for distribution)
 
@@ -184,6 +184,6 @@ module at http://mathforum.org/~ken/perl_modules.html
 
 =over
 
-=item * Николай Мишин (Tech & Language Lead)
+=item * Николай Мишин  C<< <mishin@cpan.org> >>
 
 =back    
