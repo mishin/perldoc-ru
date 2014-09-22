@@ -1,15 +1,17 @@
-=head1 NAME
+=encoding utf8
 
-perlretut - Perl regular expressions tutorial
+=head1 НАИМЕНОВАНИЕ
 
-=head1 ��������
+perlretut - учебник регулярных выражений Perl
 
-This page provides a basic tutorial on understanding, creating and
-using regular expressions in Perl.  It serves as a complement to the
-reference page on regular expressions L<perlre>.  Regular expressions
-are an integral part of the C<m//>, C<s///>, C<qr//> and C<split>
-operators and so this tutorial also overlaps with
-L<perlop/"Regexp Quote-Like Operators"> and L<perlfunc/split>.
+=head1 ОПИСАНИЕ
+
+Эта страница обеспечивает базовый учебник по пониманию, созданию и
+использованию регулярных выражений в Perl. Она служит в качестве дополнения к
+справочной странице о регулярных выражениях L<perlre>. Регулярные выражения
+являются неотъемлемой частью операторов C<m//>, C<s///>, C<qr//> и C<split>
+, таксже этот учебник пересекается со страницами
+L<perlop/"Регексп операторы заключения в кавычки"> и L<perlfunc/split>.
 
 Perl is widely renowned for excellence in text processing, and regular
 expressions are one of the big factors behind this fame.  Perl regular
@@ -2583,7 +2585,7 @@ during backtracking, and we get
     'a' count is 4, $c variable is 'bob'
 
 Note that only localized variable changes are undone.  Other side
-effects of code expression execution are permanent.  ����� �������
+effects of code expression execution are permanent.  Òàêèì îáðàçîì
 
     $x = "aaaa";
     $x =~ /(a(?{print "Yow\n";}))*aa/;
