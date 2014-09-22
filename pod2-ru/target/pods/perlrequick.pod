@@ -375,7 +375,7 @@ C<//c>, как в C</регекс/gc>.
 =head2 Поиск и замена
 
 Поиск и замена осуществляется с помощью C<s/регекс/замена/модификаторы>.
-C<замена> является Perl строкой в двойных кавычках, которая заменяет в
+C<Замена> является Perl строкой в двойных кавычках, которая заменяет в
 строке то, что нашел C<регекс>. Оператор C<=~> 
 также используется здесь, чтобы связать строку с C<s///>. Если мы ищем в C<$_>
 S<C<$_ =~>> можно опустить. Если есть совпадение,
@@ -398,60 +398,59 @@ C<s///> возвращает количество сделанных замен;
     $x = "I batted 4 for 4";
     $x =~ s/4/four/g;  # $x содержит "I batted four for four"
 
-The non-destructive modifier C<s///r> causes the result of the substitution
-to be returned instead of modifying C<$_> (or whatever variable the
-substitute was bound to with C<=~>):
+Неразрушающий модификатор  C<s///r> делает так, что результаты подстановки 
+должны быть возвращены, переменная C<$_> не изменяется (или любая другая переменная
+с которой заменитель связан с помощью C<=~>):
 
     $x = "I like dogs.";
     $y = $x =~ s/dogs/cats/r;
-    print "$x $y\n"; # prints "I like dogs. I like cats."
+    print "$x $y\n"; # напечатает "I like dogs. I like cats."
 
     $x = "Cats are great.";
     print $x =~ s/Cats/Dogs/r =~ s/Dogs/Frogs/r =~ s/Frogs/Hedgehogs/r, "\n";
-    # prints "Hedgehogs are great."
+    # напечатает "Hedgehogs are great."
 
     @foo = map { s/[a-z]/X/r } qw(a b c 1 2 3);
-    # @foo is now qw(X X X 1 2 3)
+    # @foo сейчас qw(X X X 1 2 3)
 
-The evaluation modifier C<s///e> wraps an C<eval{...}> around the
-replacement string and the evaluated result is substituted for the
-matched substring.  Some examples:
+Модификатор выполнения C<s///e> обертывает C<eval{...}> вокруг 
+заменяемой строки и результат вычисления заменяется на найденную строку.
+Некоторые примеры:
 
-    # reverse all the words in a string
+    # переворачивает все слова в строке
     $x = "the cat in the hat";
-    $x =~ s/(\w+)/reverse $1/ge;   # $x contains "eht tac ni eht tah"
+    $x =~ s/(\w+)/reverse $1/ge;   # $x содержит "eht tac ni eht tah"
 
-    # convert percentage to decimal
+    # конвертирует проценты в десятичный формат
     $x = "A 39% hit rate";
-    $x =~ s!(\d+)%!$1/100!e;       # $x contains "A 0.39 hit rate"
+    $x =~ s!(\d+)%!$1/100!e;       # $x содержит "A 0.39 hit rate"
 
-The last example shows that C<s///> can use other delimiters, such as
-C<s!!!> and C<s{}{}>, and even C<s{}//>.  If single quotes are used
-C<s'''>, then the regex and replacement are treated as single-quoted
-strings.
+Последний пример показывает, что C<s///> может использовать и другие разделители, такие как
+C<s!!!> и C<s{}{}>, и даже C<s{}//>. Если используются одинарные кавычки C<s'''>, то регекс
+и заменяемое выражение рассматриваются как строки в одинарных кавычках.
 
-=head2 The split operator
+=head2 Оператор разделения
 
-C<split /regex/, string> splits C<string> into a list of substrings
-and returns that list.  The regex determines the character sequence
-that C<string> is split with respect to.  For example, to split a
-string into words, use
+C<split /регекс/, строка> расделяет C<строку> в список подстрок 
+и возвращает этот список. Регекс определяет последовательность символов 
+, которые разделяют C<строку>. Например, чтобы разделить 
+строку на слова, нужно
 
     $x = "Calvin and Hobbes";
     @word = split /\s+/, $x;  # $word[0] = 'Calvin'
                               # $word[1] = 'and'
                               # $word[2] = 'Hobbes'
 
-To extract a comma-delimited list of numbers, use
+Чтобы извлечь список номеров,разделенных запятыми, нужно
 
     $x = "1.618,2.718,   3.142";
     @const = split /,\s*/, $x;  # $const[0] = '1.618'
                                 # $const[1] = '2.718'
                                 # $const[2] = '3.142'
 
-If the empty regex C<//> is used, the string is split into individual
-characters.  If the regex has groupings, then the list produced contains
-the matched substrings from the groupings as well:
+Если используется пустой регекс C<//>, строка разбивается на отдельные 
+символы. Если регекс имеет группировки, то результирующий список содержит также
+совпавшие подстроки из группировок:
 
     $x = "/usr/bin";
     @parts = split m!(/)!, $x;  # $parts[0] = ''
@@ -460,30 +459,35 @@ the matched substrings from the groupings as well:
                                 # $parts[3] = '/'
                                 # $parts[4] = 'bin'
 
-Since the first character of $x matched the regex, C<split> prepended
-an empty initial element to the list.
+Поскольку первому символу $x соответствует регекс, то C<split> создает 
+пустой начальный элемент в списке.
 
-=head1 BUGS
+=head1 ОШИБКИ
 
-None.
+Нет.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
-This is just a quick start guide.  For a more in-depth tutorial on
-regexes, see L<perlretut> and for the reference page, see L<perlre>.
+Это всего лишь краткое руководство. Для более глубокого изучения регулярных выражений, 
+см L<perlretut> ,а для справочной страницы см L<perlre>.
 
-=head1 AUTHOR AND COPYRIGHT
+=head1 АВТОР И АВТОРСКОЕ ПРАВО
 
 Copyright (c) 2000 Mark Kvale
-All rights reserved.
+Все права защищены.
 
-This document may be distributed under the same terms as Perl itself.
+Этот документ может распространяться на тех же условиях, что и Perl.
 
-=head2 Acknowledgments
+=head2 Благодарности
 
-The author would like to thank Mark-Jason Dominus, Tom Christiansen,
-Ilya Zakharevich, Brad Hughes, and Mike Giroux for all their helpful
-comments.
+Автор хотел бы поблагодарить Марка-Джейсона Доминуса, Том Кристиансена, 
+Илью Захаревича, Брэда Хьюза, и Майка Жиру за все их полезные 
+комментарии.
 
-=cut
-
+=head1 ПЕРЕВОДЧИКИ
+ 
+=over
+ 
+=item * Николай Мишин (mishin)
+ 
+=back
