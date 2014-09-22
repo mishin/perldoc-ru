@@ -1,6 +1,6 @@
 =encoding utf8
 
-=head1 НАЗВАНИЕ
+=head1 НАИМЕНОВАНИЕ
 
 perlcheat - Perl 5 Шпаргалка
 
@@ -108,6 +108,6 @@ L<http://juerd.nl/site.plp/perlcheat> - дом Perl Шпаргалки (Cheat Sh
 
 =over
 
-=item * Николай Мишин (mi at ya ru)
+=item * Николай Мишин  C<< <mishin@cpan.org> >>
 
 =back    
