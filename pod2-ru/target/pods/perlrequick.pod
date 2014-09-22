@@ -488,6 +488,6 @@ Copyright (c) 2000 Mark Kvale
  
 =over
  
-=item * Николай Мишин (mishin)
+=item * Николай Мишин (mi at ya ru)
  
 =back
