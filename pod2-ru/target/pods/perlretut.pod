@@ -10,40 +10,38 @@ perlretut - учебник регулярных выражений Perl
 использованию регулярных выражений в Perl. Она служит в качестве дополнения к
 справочной странице о регулярных выражениях L<perlre>. Регулярные выражения
 являются неотъемлемой частью операторов C<m//>, C<s///>, C<qr//> и C<split>
-, таксже этот учебник пересекается со страницами
+, также этот учебник пересекается со страницами
 L<perlop/"Регексп операторы заключения в кавычки"> и L<perlfunc/split>.
 
-Perl is widely renowned for excellence in text processing, and regular
-expressions are one of the big factors behind this fame.  Perl regular
-expressions display an efficiency and flexibility unknown in most
-other computer languages.  Mastering even the basics of regular
-expressions will allow you to manipulate text with surprising ease.
+Perl широко известен за выдающиеся достижения в обработке текста, и регулярные 
+выражения являются одним из крупных факторов, стоящих за этой славой. Регулярные 
+выражения Perl показывают эффективность и гибкость, неизвестную в большинстве
+других компьютерных языков. Освоение даже азов регулярных 
+выражений позволит вам манипулировать текстом с удивительной легкостью.
 
-What is a regular expression?  A regular expression is simply a string
-that describes a pattern.  Patterns are in common use these days;
-examples are the patterns typed into a search engine to find web pages
-and the patterns used to list files in a directory, e.g., C<ls *.txt>
-or C<dir *.*>.  In Perl, the patterns described by regular expressions
-are used to search strings, extract desired parts of strings, and to
-do search and replace operations.
+Что такое регулярное выражение? Регулярное выражение это просто строка 
+, которая описывает образец или шаблон, который мы должны найти. Шаблон поиска используются теперь повсеместно; 
+примерами являются шаблоны, которые вводятся в поисковую систему для поиска веб-страниц
+и шаблоны, используемые для получения списка файлов в директории, например, C<ls *.txt>
+или  C<dir *.*>. В Perl, шаблоны, описанные регулярными выражениями,
+используются для поиска строк, извлечения нужных частей строк, и для 
+ операций поиска и замены.
 
-Regular expressions have the undeserved reputation of being abstract
-and difficult to understand.  Regular expressions are constructed using
-simple concepts like conditionals and loops and are no more difficult
-to understand than the corresponding C<if> conditionals and C<while>
-loops in the Perl language itself.  In fact, the main challenge in
-learning regular expressions is just getting used to the terse
-notation used to express these concepts.
+Регулярные выражения имеют незаслуженную репутацию абстрактных
+и трудно понимаемых. Регулярные выражения создаются с помощью
+простых понятий, таких как условия и циклы и их не сложнее понять,
+чем соответствующие условные операторы  C<if> и циклы C<while>
+ в самом языке Perl.  Фактически, главная проблема в 
+ изучении регулярных выражений, это просто привыкнуть к кратким
+обозначениям, которые используются для выражения этих понятий.
 
-This tutorial flattens the learning curve by discussing regular
-expression concepts, along with their notation, one at a time and with
-many examples.  The first part of the tutorial will progress from the
-simplest word searches to the basic regular expression concepts.  If
-you master the first part, you will have all the tools needed to solve
-about 98% of your needs.  The second part of the tutorial is for those
-comfortable with the basics and hungry for more power tools.  It
-discusses the more advanced regular expression operators and
-introduces the latest cutting-edge innovations.
+Этот учебник сглаживает кривую обучения, обсуждая концепцию регулярных
+ выражений, а также их обозначения на множестве примеров. 
+ Если вы овладеете первой частью, вы будете иметь все инструменты, необходимые для решения
+около 98% от ваших потребностей. Вторая часть урока для тех, кто 
+знаком с основами и голоден для более мощных инструментов. Там
+рассматриваются более продвинутые операторы регулярных выражений и
+представляют последние передовые инновации.
 
 A note: to save time, 'regular expression' is often abbreviated as
 regexp or regex.  Regexp is a more natural abbreviation than regex, but
