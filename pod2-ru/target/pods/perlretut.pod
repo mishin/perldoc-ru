@@ -44,75 +44,74 @@ Perl широко известен за выдающиеся достижени�
 представляют последние передовые инновации.
 
 Примечание: чтобы сэкономить время, 'регулярное выражение' часто сокращают
- как регексп или регекс. Регексп - более естественный аббревиатура, чем регекс, но 
+ как регексп или регекс. Регексп - более естественная аббревиатура, чем регекс, но 
 труднее произносится. В документации Perl pod равномерно распределяются сокращения
 Регексп и Регекс; в Perl существует более одного способа сокращать его.(there is more than one way to abbreviate it!)
 В этом руководстве мы будем использовать регексп.
 
-=head1 Part 1: The basics
+=head1 Часть 1: Основы
 
-=head2 Simple word matching
+=head2 Простой поиск слова
 
-The simplest regexp is simply a word, or more generally, a string of
-characters.  A regexp consisting of a word matches any string that
-contains that word:
+Простейший регексп это просто слово, или, более обще, строка символов.
+Регексп, состоящий из слова, соответствует любой строке, содержащей это слово:
 
-    "Hello World" =~ /World/;  # matches
+    "Hello World" =~ /World/;  # совпадение
 
-What is this Perl statement all about? C<"Hello World"> is a simple
-double-quoted string.  C<World> is the regular expression and the
-C<//> enclosing C</World/> tells Perl to search a string for a match.
-The operator C<=~> associates the string with the regexp match and
-produces a true value if the regexp matched, or false if the regexp
-did not match.  In our case, C<World> matches the second word in
-C<"Hello World">, so the expression is true.  Expressions like this
-are useful in conditionals:
+О чём это выражение? C<"Hello World"> - это проста строка, заключённая 
+в двойные кавычки.  C<World> - это это регулярное выражение и
+заключеное в C<//> слово C</World/> говорит Perl искать вхождение строки.
+Оператор C<=~> связывает строку с регекспом и выдает значение true
+если регексп совпадает, или false если нет.
+ В нашем случае, C<World> совпадает со вторым словом в C<"Hello World">, 
+ таким образом выражение истинно. У этой идеи есть несколько вариаций.  Такие выражения
+полезны в условных операторах:
 
     if ("Hello World" =~ /World/) {
-        print "It matches\n";
+        print "Найдено\n";
     }
     else {
-        print "It doesn't match\n";
+        print "Не Найдено\n";
     }
 
-There are useful variations on this theme.  The sense of the match can
-be reversed by using the C<!~> operator:
+Есть много полезных вариантов на эту тему.
+Смысл совпадения может быть полностью изменен при помощи оператора C<!~>:
 
     if ("Hello World" !~ /World/) {
-        print "It doesn't match\n";
+        print "Не Найдено\n";
     }
     else {
-        print "It matches\n";
+        print "Найдено\n";
     }
 
-The literal string in the regexp can be replaced by a variable:
+Последовательность строк в регексе может быть заменена переменной:
 
     $greeting = "World";
     if ("Hello World" =~ /$greeting/) {
-        print "It matches\n";
+        print "Найдено\n";
     }
     else {
-        print "It doesn't match\n";
+        print "Не Найдено\n";
     }
 
-If you're matching against the special default variable C<$_>, the
-C<$_ =~> part can be omitted:
+Если вы ищите в специальной переменной по умолчанию C<$_>, 
+то эту часть C<$_ =~> можно опустить:
 
     $_ = "Hello World";
     if (/World/) {
-        print "It matches\n";
+        print "Найдено\n";
     }
     else {
-        print "It doesn't match\n";
+        print "Не Найдено\n";
     }
 
-And finally, the C<//> default delimiters for a match can be changed
-to arbitrary delimiters by putting an C<'m'> out front:
+Наконец, разделители по умолчанию C<//> для поиска могут быть изменены на
+произвольные разделители, но тогда в начале должны быть буква C<'m'>:
 
-    "Hello World" =~ m!World!;   # matches, delimited by '!'
-    "Hello World" =~ m{World};   # matches, note the matching '{}'
-    "/usr/bin/perl" =~ m"/perl"; # matches after '/usr/bin',
-                                 # '/' becomes an ordinary char
+    "Hello World" =~ m!World!;   # найдено, разделители '!'
+    "Hello World" =~ m{World};   # найдено, отметим совпадение '{}'
+    "/usr/bin/perl" =~ m"/perl"; # найдено после '/usr/bin',
+                                 # '/' стал произвольным символом
 
 C</World/>, C<m!World!>, and C<m{World}> all represent the
 same thing.  When, e.g., the quote (C<">) is used as a delimiter, the forward
