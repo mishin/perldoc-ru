@@ -113,28 +113,28 @@ Perl широко известен за выдающиеся достижени�
     "/usr/bin/perl" =~ m"/perl"; # найдено после '/usr/bin',
                                  # '/' стал произвольным символом
 
-C</World/>, C<m!World!>, and C<m{World}> all represent the
-same thing.  When, e.g., the quote (C<">) is used as a delimiter, the forward
-slash C<'/'> becomes an ordinary character and can be used in this regexp
-without trouble.
+C</World/>, C<m!World!> и C<m{World}> все представляют собой то же самое. 
+Например, когда кавычки (C<">) используются в качестве разделителя, то слеш
+C<'/'>  становится обычным символом и может быть использован в этом регекспе
+без проблем.
+Давайте рассмотрим, каким образом различные регекспы будет соответствовать 
+ C<"Hello World">:
 
-Let's consider how different regexps would match C<"Hello World">:
+    "Hello World" =~ /world/;  # не найдено
+    "Hello World" =~ /o W/;    # найдено
+    "Hello World" =~ /oW/;     # не найдено
+    "Hello World" =~ /World /; # не найдено
 
-    "Hello World" =~ /world/;  # doesn't match
-    "Hello World" =~ /o W/;    # matches
-    "Hello World" =~ /oW/;     # doesn't match
-    "Hello World" =~ /World /; # doesn't match
-
-The first regexp C<world> doesn't match because regexps are
-case-sensitive.  The second regexp matches because the substring
-S<C<'o W'>> occurs in the string S<C<"Hello World">>.  The space
-character ' ' is treated like any other character in a regexp and is
-needed to match in this case.  The lack of a space character is the
-reason the third regexp C<'oW'> doesn't match.  The fourth regexp
-C<'World '> doesn't match because there is a space at the end of the
-regexp, but not at the end of the string.  The lesson here is that
-regexps must match a part of the string I<exactly> in order for the
-statement to be true.
+Первый регексп C <world> не совпадает, потому регексп 
+учитывает регистр. Второй регексп совпадает потому что подстрока
+S<C<'o W'>> встречается в строке S<C<"Hello World">>. Пробельный
+ символ ' ' рассматривается как любой другой символ в регекспе и будет 
+ найден в этом случае. Отсутствие пробела
+ является причиной того, почему третий регексп C<'oW'> не совпадает. Четвертый 
+ регексп C<'World '> не совпадает, потому что есть пробел в конце
+регекспа, но не в конце строки. Урок здесь состоит в том, что
+регекспы должны I<точно> совпадать с частью строки для того,
+ чтобы выражение стало истинным.
 
 If a regexp matches in more than one place in the string, Perl will
 always match at the earliest possible point in the string:
