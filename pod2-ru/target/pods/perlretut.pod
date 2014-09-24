@@ -136,72 +136,75 @@ S<C<'o W'>> встречается в строке S<C<"Hello World">>. Проб
 регекспы должны I<точно> совпадать с частью строки для того,
  чтобы выражение стало истинным.
 
-If a regexp matches in more than one place in the string, Perl will
-always match at the earliest possible point in the string:
+Если регексп находится больше одного раза в строке, 
+Perl будет всегда находить самое первое совпадение в строке:
 
-    "Hello World" =~ /o/;       # matches 'o' in 'Hello'
-    "That hat is red" =~ /hat/; # matches 'hat' in 'That'
+    "Hello World" =~ /o/;       # найдет 'o' в 'Hello'
+    "That hat is red" =~ /hat/; # найдет 'hat' в 'That'
 
-With respect to character matching, there are a few more points you
-need to know about.   First of all, not all characters can be used 'as
-is' in a match.  Some characters, called I<metacharacters>, are reserved
-for use in regexp notation.  The metacharacters are
+Что касается соответствия символов есть еще несколько пунктов, которые нужно знать.
+Во-первых, не все символы могут использоваться, 'как есть' в поиске. Некоторые, называемые B<метасимволами>,
+ зарезервированы для использования в описании регекса.
+Метасимволы это
 
     {}[]()^$.|*+?\
 
-The significance of each of these will be explained
-in the rest of the tutorial, but for now, it is important only to know
-that a metacharacter can be matched by putting a backslash before it:
+Значение каждого из них будет объяснено
+в остальной части учебника, но на данный момент, важно только знать
+то, что метасимвол может быть найден, если перед ним поставить 
+обратную косую черту:
 
-    "2+2=4" =~ /2+2/;    # doesn't match, + is a metacharacter
-    "2+2=4" =~ /2\+2/;   # matches, \+ is treated like an ordinary +
-    "The interval is [0,1)." =~ /[0,1)./     # is a syntax error!
-    "The interval is [0,1)." =~ /\[0,1\)\./  # matches
-    "#!/usr/bin/perl" =~ /#!\/usr\/bin\/perl/;  # matches
+    "2+2=4" =~ /2+2/;    # не найдет, т.к. + это метасимвол
+    "2+2=4" =~ /2\+2/;   # найдено, \+ считается обычным знаком +
+    "The interval is [0,1)." =~ /[0,1)./     # будет синтаксическая ошибка!
+    "The interval is [0,1)." =~ /\[0,1\)\./  # найдет
+    "#!/usr/bin/perl" =~ /#!\/usr\/bin\/perl/;  # найдет
 
-In the last regexp, the forward slash C<'/'> is also backslashed,
-because it is used to delimit the regexp.  This can lead to LTS
-(leaning toothpick syndrome), however, and it is often more readable
-to change delimiters.
+В последнем регекспе перед первым слешем C<'/'> также ставиться бэкслеш,
+потому что слеш здесь используется, чтобы разграничить регексп.
+Это может привести к СВЗ
+(синдрому выступающей зубочистки), однако, выражение можно сделать более читаемым, если
+ изменить разделители.
 
-    "#!/usr/bin/perl" =~ m!#\!/usr/bin/perl!;  # easier to read
+    "#!/usr/bin/perl" =~ m!#\!/usr/bin/perl!;  # читается легче
 
-The backslash character C<'\'> is a metacharacter itself and needs to
-be backslashed:
+Символ обратного слеша C<'\'> является метасимволом и для его поиска нужен еще
+один обратный слеш:
 
-    'C:\WIN32' =~ /C:\\WIN/;   # matches
+    'C:\WIN32' =~ /C:\\WIN/;   # найдет
 
-In addition to the metacharacters, there are some ASCII characters
-which don't have printable character equivalents and are instead
-represented by I<escape sequences>.  Common examples are C<\t> for a
-tab, C<\n> for a newline, C<\r> for a carriage return and C<\a> for a
-bell (or alert).  If your string is better thought of as a sequence of arbitrary
-bytes, the octal escape sequence, e.g., C<\033>, or hexadecimal escape
-sequence, e.g., C<\x1B> may be a more natural representation for your
-bytes.  Here are some examples of escapes:
+В добавлении к метасимволам, есть некоторые символы ASCII 
+которые не имеют печатных аналогов и вместо этого
+представлены B<escape-последовательностями>.
+Типичными примерами являются  C<\t> для табуляции, C<\n> для символа перехода на новую строку, C<\r>
+для возврата каретки и C<\a> для пищалки (или сигнала предупреждения). 
+Если о строке думать как о последовательности произвольных байт, то
+восьмеричные escape-последовательности, например, C<\033>, или шестнадцатеричные escape-последовательности,
+например, C<\x1B> могут быть более естественным представлением для ваших байт.
+Вот несколько примеров управляющих последовательностей:
 
-    "1000\t2000" =~ m(0\t2)   # matches
-    "1000\n2000" =~ /0\n20/   # matches
-    "1000\t2000" =~ /\000\t2/ # doesn't match, "0" ne "\000"
-    "cat"   =~ /\o{143}\x61\x74/ # matches in ASCII, but a weird way
-                                 # to spell cat
+    "1000\t2000" =~ m(0\t2)   # найдет
+    "1000\n2000" =~ /0\n20/   # найдет
+    "1000\t2000" =~ /\000\t2/ # не найдет, "0" не равен "\000"
+    "cat"   =~ /\o{143}\x61\x74/ # найдено в кодах ASCII, хотя и странный способ
+                                 # искать cat
 
-If you've been around Perl a while, all this talk of escape sequences
-may seem familiar.  Similar escape sequences are used in double-quoted
-strings and in fact the regexps in Perl are mostly treated as
-double-quoted strings.  This means that variables can be used in
-regexps as well.  Just like double-quoted strings, the values of the
-variables in the regexp will be substituted in before the regexp is
-evaluated for matching purposes.  So we have:
+Если вы уже использовали Perl какое-то время, все эти разговоры о escape-последовательностях
+могут показаться знакомыми. Подобные escape-последовательности
+ используются в двойных кавычках и фактически регекспы в Perl в основном рассматриваются как
+строки в двойных кавычках. Это означает, что переменные также могут использоваться в регекспах.
+Подобно строкам в двойных кавычках, значение
+переменной в регекспе будет подставлено прежде чем регексп выполнит поиск. 
+Итак, мы имеем:                                 
 
     $foo = 'house';
-    'housecat' =~ /$foo/;      # matches
-    'cathouse' =~ /cat$foo/;   # matches
-    'housecat' =~ /${foo}cat/; # matches
+    'housecat' =~ /$foo/;      # найдено
+    'cathouse' =~ /cat$foo/;   # найдено
+    'housecat' =~ /${foo}cat/; # найдено
 
-So far, so good.  With the knowledge above you can already perform
-searches with just about any literal string regexp you can dream up.
-Here is a I<very simple> emulation of the Unix grep program:
+Пока все в порядке. Со знаниями, полученными выше вы можете уже выполнять
+поиски регекспом почти любой символьной строкой , о которой можно мечтать.
+Вот I<очень простая> эмуляция программы grep Unix:
 
     % cat > simple_grep
     #!/usr/bin/perl
