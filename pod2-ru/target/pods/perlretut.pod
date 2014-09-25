@@ -245,15 +245,15 @@ C</$regexp/> используют переменную по умолчанию C
 в конце строки или перед символом перевода строки в конце строки. 
 Вот как они используются:
 
-    "housekeeper" =~ /keeper/;    # найдет
-    "housekeeper" =~ /^keeper/;   # не найдет
-    "housekeeper" =~ /keeper$/;   # найдет
-    "housekeeper\n" =~ /keeper$/; # найдет
+    "housekeeper" =~ /keeper/;    # найдено
+    "housekeeper" =~ /^keeper/;   # не найдено
+    "housekeeper" =~ /keeper$/;   # найдено
+    "housekeeper\n" =~ /keeper$/; # найдено
 
-The second regexp doesn't match because C<^> constrains C<keeper> to
-match only at the beginning of the string, but C<"housekeeper"> has
-keeper starting in the middle.  The third regexp does match, since the
-C<$> constrains C<keeper> to match only at the end of the string.
+Второй регексп не найдет, т.к. C<^> вынуждает, чтобы C<keeper> 
+ искался только в начале строки, но C<"housekeeper"> содержит
+keeper начинающийся посередине.  Третий регексп найдет, т.к. 
+C<$> принуждает C<keeper> искаться только в конце строки.
 
 When both C<^> and C<$> are used at the same time, the regexp has to
 match both the beginning and the end of the string, i.e., the regexp
