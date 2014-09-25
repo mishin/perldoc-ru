@@ -255,29 +255,29 @@ C</$regexp/> используют переменную по умолчанию C
 keeper начинающийся посередине.  Третий регексп найдет, т.к. 
 C<$> принуждает C<keeper> искаться только в конце строки.
 
-When both C<^> and C<$> are used at the same time, the regexp has to
-match both the beginning and the end of the string, i.e., the regexp
-matches the whole string.  Consider
+Когда одновременно используются и C<^> и C<$> , то регексп 
+должен найти и начало и конец строки, таким образом регексп должен
+ найти всю строку целиком (совпасть).  
 
-    "keeper" =~ /^keep$/;      # doesn't match
-    "keeper" =~ /^keeper$/;    # matches
-    ""       =~ /^$/;          # ^$ matches an empty string
+    "keeper" =~ /^keep$/;      # не найдет
+    "keeper" =~ /^keeper$/;    # найдет
+    ""       =~ /^$/;          # ^$ находит пустую строку
 
-The first regexp doesn't match because the string has more to it than
-C<keep>.  Since the second regexp is exactly the string, it
-matches.  Using both C<^> and C<$> in a regexp forces the complete
-string to match, so it gives you complete control over which strings
-match and which don't.  Suppose you are looking for a fellow named
-bert, off in a string by himself:
+Первый регексп не совпадает, потому что длинее, чем C<keep>.
+Поскольку второй регексп совпадает со строкой, то он ее найдет. 
+Использование C<^> и C<$> в regexp принуждает к поиску всей строки,
+таким образом это дает вам полный контроль над тем, какие строки
+ искать, а какие нет. Предположим, что вы ищете парня по имени
+bert,  находящегося целиком в строке:
 
-    "dogbert" =~ /bert/;   # matches, but not what you want
+    "dogbert" =~ /bert/;   # найдет, но не то, что хотим
 
-    "dilbert" =~ /^bert/;  # doesn't match, but ..
-    "bertram" =~ /^bert/;  # matches, so still not good enough
+    "dilbert" =~ /^bert/;  # не найдет, но ..
+    "bertram" =~ /^bert/;  # найдет, но пока еще не так хорошо
 
-    "bertram" =~ /^bert$/; # doesn't match, good
-    "dilbert" =~ /^bert$/; # doesn't match, good
-    "bert"    =~ /^bert$/; # matches, perfect
+    "bertram" =~ /^bert$/; # не найдет, хорошо
+    "dilbert" =~ /^bert$/; # не найдет, хорошо
+    "bert"    =~ /^bert$/; # найдет, идеально
 
 Of course, in the case of a literal string, one could just as easily
 use the string comparison S<C<$string eq 'bert'>> and it would be
