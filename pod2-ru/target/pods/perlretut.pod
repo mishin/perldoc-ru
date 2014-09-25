@@ -227,15 +227,23 @@ Perl будет всегда находить самое первое совпа
     scabbard
     scabbards
 
-This program is easy to understand.  C<#!/usr/bin/perl> is the standard
-way to invoke a perl program from the shell.
-S<C<$regexp = shift;>> saves the first command line argument as the
-regexp to be used, leaving the rest of the command line arguments to
-be treated as files.  S<C<< while (<>) >>> loops over all the lines in
-all the files.  For each line, S<C<print if /$regexp/;>> prints the
-line if the regexp matches the line.  In this line, both C<print> and
-C</$regexp/> use the default variable C<$_> implicitly.
+Эту программу легко понять.  C<#!/usr/bin/perl> это стандартный 
+способ вызвать программу Perl из командной строки.
+S<C<$regexp = shift;>> сохраняет первый аргумент командной строки, как
+регексп, который будет использоваться, а оставшиеся аргументы командной строки
+рассматриваются как файлы. S<C<< while (<>) >>> перебирает все строки во всех входящих
+файлах.  Для каждой строки, S<C<print if /$regexp/;>> напечатает строку, если
+ регексп будет в ней найден.  В этой строке, оба оператора C<print> и
+C</$regexp/> используют переменную по умолчанию C<$_> неявно.
 
+Со всеми регекспами выше, если регексп находит соответствие в любой точке строки,
+то он считается найденным. Иногда однако, мы хотели бы
+указать I<где> в строке регексп должен искать.
+Для этого Чтобы указать где он должен быть найден, 
+мы будем использовать якорем метасимволы ^ и $. 
+Якорь ^ означает поиск в начале строки , а якорь $ означает поиск 
+в конце строки или перед символом перевода строки в конце строки. 
+Несколько примеров:
 With all of the regexps above, if the regexp matched anywhere in the
 string, it was considered a match.  Sometimes, however, we'd like to
 specify I<where> in the string the regexp should try to match.  To do
