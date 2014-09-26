@@ -4,16 +4,15 @@
 Consistent formatting of this file is achieved with:
   perl ./Porting/podtidy pod/perlhacktut.pod
 
-=head1 NAME
+=head1 НАИМЕНОВАНИЕ
 
-perlhacktut - Walk through the creation of a simple C code patch
+perlhacktut - Легкая прогулка по созданию патча для C кода.
 
-=head1 ��������
+=head1 ОПИСАНИЕ
 
-This document takes you through a simple patch example.
+Этот документ проведет вас через простой пример патча.
 
-If you haven't read L<perlhack> yet, go do that first! You might also
-want to read through L<perlsource> too.
+Если вы еще не читали L<perlhack> , сделайте это в первую очередь! Вы также могли бы прочитать L<perlsource>.
 
 Once you're done here, check out L<perlhacktips> next.
 
