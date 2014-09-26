@@ -12,28 +12,28 @@ perlreref - Справочник регулярных выражений Perl
 
 =head2 ОПЕРАТОРЫ
 
-C<=~> determines to which variable the regex is applied.
-In its absence, $_ is used.
+C<=~> определяет к какой переменной применяется регкс.
+Если переменная отсутствует, то используется $_ .
 
     $var =~ /foo/;
 
-C<!~> determines to which variable the regex is applied,
-and negates the result of the match; it returns
-false if the match succeeds, and true if it fails.
+C<!~> определяет к какой переменной применяется регкс.
+и изменяет результат поиска на противоположный; он возвращает ложь,
+если поиск удался, и правду, если не удалось ничего найти.
 
     $var !~ /foo/;
 
-C<m/pattern/msixpogcdual> searches a string for a pattern match,
-applying the given options.
+C<m/шаблон/msixpogcdual> ищет строку по шаблону поиска,
+применяя соответствующие флаги (опции).
 
-    m  Multiline mode - ^ and $ match internal lines
-    s  match as a Single line - . matches \n
-    i  case-Insensitive
-    x  eXtended legibility - free whitespace and comments
-    p  Preserve a copy of the matched string -
-       ${^PREMATCH}, ${^MATCH}, ${^POSTMATCH} will be defined.
-    o  compile pattern Once
-    g  Global - all occurrences
+    m  Многострочный режим - ^ и $ находят внутренние строки
+    s  поиск как в Одной строке (Single line) - . найдет \n
+    i  Игнорировать регистр
+    x  Улучшение читаьельности (eXtended legibility) - свободно ставим пробелы и комментарии
+    p  Сохраняет копии совпавшей строки -
+       ${^PREMATCH}, ${^MATCH}, ${^POSTMATCH} будут определены.
+    o  скомпилирует шаблон Один раз
+    g  Глобально - все вхождения
     c  don't reset pos on failed matches when using /g
     a  restrict \d, \s, \w and [:posix:] to match ASCII only
     aa (two a's) also /i matches exclude ASCII/non-ASCII
