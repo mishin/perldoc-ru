@@ -34,7 +34,7 @@ C<m/шаблон/msixpogcdual> ищет строку по шаблону пои�
        ${^PREMATCH}, ${^MATCH}, ${^POSTMATCH} будут определены.
     o  скомпилирует шаблон Один раз
     g  Глобально - все вхождения
-    c  don't reset pos on failed matches when using /g
+    c  не сбрасывать pos при неудачном поиске, при использовании/g
     a  restrict \d, \s, \w and [:posix:] to match ASCII only
     aa (two a's) also /i matches exclude ASCII/non-ASCII
     l  match according to current locale
