@@ -35,12 +35,11 @@ C<m/шаблон/msixpogcdual> ищет строку по шаблону пои�
     o  скомпилирует шаблон Один раз
     g  Глобально - все вхождения
     c  не сбрасывать pos при неудачном поиске, при использовании/g
-    a  restrict \d, \s, \w and [:posix:] to match ASCII only
-    aa (two a's) also /i matches exclude ASCII/non-ASCII
-    l  match according to current locale
-    u  match according to Unicode rules
-    d  match according to native rules unless something indicates
-       Unicode
+    a  ограничивает \d, \s, \w и [:posix:] для поиска только ASCII символов
+    aa (двойное a) также принуждает при флаге /i искать исключая перемешивание ASCII/non-ASCII
+    l  искать согласно текущей локали
+    u  искать согласно правилам Юникода
+    d  искать согласно обычным правилам, если что-то не указывает на Юникод
 
 If 'pattern' is an empty string, the last I<successfully> matched
 regex is used. Delimiters other than '/' may be used for both this
