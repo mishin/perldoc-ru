@@ -42,30 +42,21 @@ C<m/шаблон/msixpogcdual> ищет строку по шаблону пои�
     d  искать согласно обычным правилам, если что-то не указывает на Юникод
 
 Если 'шаблон' это пустая строка, то используется последний I<удачно> найденный регекс.
-Разделители отличные от '/' могут использоваться для этого оператора и следующие из них.
-Delimiters other than '/' may be used for both this
-operator and the following ones. Ведущую  C<m> моржно опустить, если разделитель '/'.
-Если 'образец' - пустая последовательность, последнее успешно соответствовало regex, используется.
+Разделители отличные от '/' могут использоваться и для этого оператора и для следующих.
+Ведущую  C<m> моржно опустить, если разделитель '/'.
 
-If 'pattern' is an empty string, the last successfully matched regex is used. 
-Delimiters other than '/' may be used for both this operator and the following ones. 
-The leading m can be omitted if the delimiter is '/'.
-
-qr/pattern/msixpodual lets you store a regex in a variable, or pass one around. Modifiers as for m//, and are stored within the regex.
+qr/шаблон/msixpodual позволяет сохранить регекс в переменной и передавать его во вне. 
+Модификаторы для m// сохраняются в пределах регекса.
 
 Наконец, разделители по умолчанию C<//> для поиска могут быть изменены на
 произвольные разделители, но тогда в начале должны быть буква C<'m'>:
 
-C<qr/pattern/msixpodual> lets you store a regex in a variable,
-or pass one around. Modifiers as for C<m//>, and are stored
-within the regex.
 
-C<s/pattern/replacement/msixpogcedual> substitutes matches of
-'pattern' with 'replacement'. Modifiers as for C<m//>,
-with two additions:
+C<s/шаблон/заменитель/msixpogcedual> заменяет найденное в 
+'шаблоне' на 'заменитель'. Модификаторы для C<m//> с двумя дополнениями:
 
-    e  Evaluate 'replacement' as an expression
-    r  Return substitution and leave the original string untouched.
+    e  Выполняет 'заменитель' как выражение
+    r  Возвращает замену и оставляет исходную строку неизменной.
 
 'e' may be specified multiple times. 'replacement' is interpreted
 as a double quoted string unless a single-quote (C<'>) is the delimiter.
