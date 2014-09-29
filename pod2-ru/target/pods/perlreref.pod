@@ -41,10 +41,20 @@ C<m/шаблон/msixpogcdual> ищет строку по шаблону пои�
     u  искать согласно правилам Юникода
     d  искать согласно обычным правилам, если что-то не указывает на Юникод
 
-If 'pattern' is an empty string, the last I<successfully> matched
-regex is used. Delimiters other than '/' may be used for both this
-operator and the following ones. The leading C<m> can be omitted
-if the delimiter is '/'.
+Если 'шаблон' это пустая строка, то используется последний I<удачно> найденный регекс.
+Разделители отличные от '/' могут использоваться для этого оператора и следующие из них.
+Delimiters other than '/' may be used for both this
+operator and the following ones. Ведущую  C<m> моржно опустить, если разделитель '/'.
+Если 'образец' - пустая последовательность, последнее успешно соответствовало regex, используется.
+
+If 'pattern' is an empty string, the last successfully matched regex is used. 
+Delimiters other than '/' may be used for both this operator and the following ones. 
+The leading m can be omitted if the delimiter is '/'.
+
+qr/pattern/msixpodual lets you store a regex in a variable, or pass one around. Modifiers as for m//, and are stored within the regex.
+
+Наконец, разделители по умолчанию C<//> для поиска могут быть изменены на
+произвольные разделители, но тогда в начале должны быть буква C<'m'>:
 
 C<qr/pattern/msixpodual> lets you store a regex in a variable,
 or pass one around. Modifiers as for C<m//>, and are stored
