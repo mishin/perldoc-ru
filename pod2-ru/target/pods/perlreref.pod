@@ -210,71 +210,71 @@ C<s/шаблон/заменитель/msixpogcedual> заменяет найде
 
 =head2 ПОВТОРИТЕЛИ (КВАНТИФИКАТОРЫ)
 
-Quantifiers are greedy by default and match the B<longest> leftmost.
+Повторители жадные по умолчанию и захватывают B<длиннейшую> часть слева.
 
-   Maximal Minimal Possessive Allowed range
+   Максима Минимал Притяжатель Допустимый диапазон
    ------- ------- ---------- -------------
-   {n,m}   {n,m}?  {n,m}+     Must occur at least n times
-                              but no more than m times
-   {n,}    {n,}?   {n,}+      Must occur at least n times
-   {n}     {n}?    {n}+       Must occur exactly n times
-   *       *?      *+         0 or more times (same as {0,})
-   +       +?      ++         1 or more times (same as {1,})
-   ?       ??      ?+         0 or 1 time (same as {0,1})
+   {n,m}   {n,m}?  {n,m}+     Совпадение по кр мере n раз
+                              но не более, чем m раз
+   {n,}    {n,}?   {n,}+      По крайней мере n раз
+   {n}     {n}?    {n}+       Должен найти ровно n раз
+   *       *?      *+         0 или более раз (также как {0,})
+   +       +?      ++         1 или более раз (также как {1,})
+   ?       ??      ?+         0 или 1 раз (также как {0,1})
 
-The possessive forms (new in Perl 5.10) prevent backtracking: what gets
-matched by a pattern with a possessive quantifier will not be backtracked
-into, even if that causes the whole match to fail.
+Притяжательные формы (новое в Perl 5.10) предотвращают возвращение: то,что получает
+подобранный образцом с притяжательным повторителем не будет возвращено
+, даже если это заставляет терпеть неудачу весь поиск.
 
-There is no quantifier C<{,n}>. That's interpreted as a literal string.
+Существует не повторитель C<{,n}>. Это интерпретируется как строковая константа.
 
-=head2 EXTENDED CONSTRUCTS
+=head2 РАСШИРЕННЫЕ КОНСТРУКЦИИ
 
-   (?#text)          A comment
-   (?:...)           Groups subexpressions without capturing (cluster)
-   (?pimsx-imsx:...) Enable/disable option (as per m// modifiers)
-   (?=...)           Zero-width positive lookahead assertion
-   (?!...)           Zero-width negative lookahead assertion
-   (?<=...)          Zero-width positive lookbehind assertion
-   (?<!...)          Zero-width negative lookbehind assertion
-   (?>...)           Grab what we can, prohibit backtracking
-   (?|...)           Branch reset
-   (?<name>...)      Named capture
-   (?'name'...)      Named capture
-   (?P<name>...)     Named capture (python syntax)
-   (?{ code })       Embedded code, return value becomes $^R
-   (??{ code })      Dynamic regex, return value used as regex
-   (?N)              Recurse into subpattern number N
-   (?-N), (?+N)      Recurse into Nth previous/next subpattern
-   (?R), (?0)        Recurse at the beginning of the whole pattern
-   (?&name)          Recurse into a named subpattern
-   (?P>name)         Recurse into a named subpattern (python syntax)
-   (?(cond)yes|no)
-   (?(cond)yes)      Conditional expression, where "cond" can be:
-                     (?=pat)   look-ahead
-                     (?!pat)   negative look-ahead
-                     (?<=pat)  look-behind
-                     (?<!pat)  negative look-behind
-                     (N)       subpattern N has matched something
-                     (<name>)  named subpattern has matched something
-                     ('name')  named subpattern has matched something
-                     (?{code}) code condition
-                     (R)       true if recursing
-                     (RN)      true if recursing into Nth subpattern
-                     (R&name)  true if recursing into named subpattern
-                     (DEFINE)  always false, no no-pattern allowed
+   (?#text)          Комментария
+   (?:...)           Группировка без захвата (кластеризации)
+   (?pimsx-imsx:...) Включить/отключить опцию (в соответствии с модификатором m//)
+   (?=...)           Утверждение положительного просмотра вперед нулевой ширины
+   (?!...)           Утверждение отрицательного просмотра вперед нулевой ширины
+   (?<=...)          Утверждение положительного просмотра назад нулевой ширины
+   (?<!...)          Утверждение отрицательного просмотра назад нулевой ширины
+   (?>...)           Возьмите то, что мы можем, запрещает использование поиска с возвратом
+   (?|...)           Сброс ветвления
+   (?<name>...)      Именованный захват
+   (?'name'...)      Именованный захват
+   (?P<name>...)     Именованный захват (синтакс питона)
+   (?{ code })       Встроенный код, возвращаемое значение становится $^R
+   (??{ code })      Динамический регекс, возвращаемое значение используется как регекс
+   (?N)              Рекурсивно в подобразец номер N
+   (?-N), (?+N)      Рекурсивно в N-нный предыдущий/следующий подобразец
+   (?R), (?0)        Рекурсия сначала всего шаблона
+   (?&name)          Рекурсия в именованный подобразец
+   (?P>name)         Рекурсия в именованный подобразец (питоновский синтакс)
+   (?(условие)да|нет)
+   (?(условие)да)      Условное выражение, где "условие" может быть:
+                     (?=pat)   смотреть вперед
+                     (?!pat)   отрицание смотра вперед
+                     (?<=pat)  смотреть назад
+                     (?<!pat)  отрицание смотра назад
+                     (N)       подшаблон N раз что-то нашел
+                     (<name>)  именованный подшаблон что-то нашел
+                     ('name')  именованный подшаблон что-то нашел
+                     (?{code}) условие из кода
+                     (R)       правда, если рекурсия
+                     (RN)      правда, если рекурсия в N-ном подшаблоне
+                     (R&name)  правда, если рекурсия в именованном подшаблоне
+                     (DEFINE)  всегда имеет значение ложь, разрешается не no шаблону
 
-=head2 VARIABLES
+=head2 ПЕРЕМЕННЫЕ
 
-   $_    Default variable for operators to use
+   $_    Переменная для использования по умолчанию
 
-   $`    Everything prior to matched string
-   $&    Entire matched string
-   $'    Everything after to matched string
+   $`    Все перед найденной строкой
+   $&    Найденная строка
+   $'    Все после найденной строки
 
-   ${^PREMATCH}   Everything prior to matched string
-   ${^MATCH}      Entire matched string
-   ${^POSTMATCH}  Everything after to matched string
+   ${^PREMATCH}   Все перед найденной строкой
+   ${^MATCH}      Найденная строка
+   ${^POSTMATCH}  Все после найденной строки
 
 The use of C<$`>, C<$&> or C<$'> will slow down B<all> regex use
 within your program. Consult L<perlvar> for C<@->
