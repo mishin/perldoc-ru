@@ -122,93 +122,93 @@ C<s/шаблон/заменитель/msixpogcedual> заменяет найде
 
    [amy]    Найдет 'a', 'm' или 'y'
    [f-j]    Тире указывает "диапазон"
-   [f-j-]   Тире с эскейпом C<'\'> или вначале или конце обозначает простое 'тире'
-   [^f-j]   Caret indicates "match any character _except_ these"
+   [f-j-]   Тире с эскейпом (обратным слешем) или вначале или конце обозначает простое 'тире'
+   [^f-j]   Знак крышки указывает,  "найти любой сивмол _кроме_ этих"
 
-The following sequences (except C<\N>) work within or without a character class.
-The first six are locale aware, all are Unicode aware. See L<perllocale>
-and L<perlunicode> for details.
+Следующие последовательности (за исключением C<\N>) работают внутри или без класса символов.
+Первые шесть локали,  все работают с Unicode. См. L<perllocale>
+и L<perlunicode> для подробной информации.
 
-   \d      A digit
-   \D      A nondigit
-   \w      A word character
-   \W      A non-word character
-   \s      A whitespace character
-   \S      A non-whitespace character
-   \h      An horizontal whitespace
-   \H      A non horizontal whitespace
-   \N      A non newline (when not followed by '{NAME}';;
-           not valid in a character class; equivalent to [^\n]; it's
-           like '.' without /s modifier)
-   \v      A vertical whitespace
-   \V      A non vertical whitespace
-   \R      A generic newline           (?>\v|\x0D\x0A)
+   \d      Цифра
+   \D      Не цифра
+   \w      Словесный символ
+   \W      Несловесный символ
+   \s      Пробельный символ
+   \S      Непробельный символ
+   \h      Горизонтальный пробел
+   \H      Негоризонтальный пробел
+   \N      Не новая строка (когда не следует за '{NAME}';;
+           не действует в классе символов; эквивалентен [^\n]; это
+           как '.' без модификатора /s )
+   \v      Вертикальный пробел
+   \V      Невертикальный пробел
+   \R      Универсальная новая строка           (?>\v|\x0D\x0A)
 
-   \C      Match a byte (with Unicode, '.' matches a character)
-   \pP     Match P-named (Unicode) property
-   \p{...} Match Unicode property with name longer than 1 character
-   \PP     Match non-P
-   \P{...} Match lack of Unicode property with name longer than 1 char
-   \X      Match Unicode extended grapheme cluster
+   \C      Найдет байт (с Юникодом, '.' найдет символ)
+   \pP     Найдет свойство (Юникодное) с P-именем
+   \p{...} Найдет Юникодное свойство с именем длиннее 1 символа
+   \PP     Найдет не-P
+   \P{...} Найдет отсутвие Юникодного свойства с именем длиннее 1 символа
+   \X      Найдет Юникодный расширенный графема кластер
 
-POSIX character classes and their Unicode and Perl equivalents:
+символьные классы POSIX  и их Unicode и Perl эквиваленты :
 
             ASCII-         Full-
    POSIX    range          range    backslash
  [[:...:]]  \p{...}        \p{...}   sequence    Description
 
  -----------------------------------------------------------------------
- alnum   PosixAlnum       XPosixAlnum            Alpha plus Digit
- alpha   PosixAlpha       XPosixAlpha            Alphabetic characters
- ascii   ASCII                                   Any ASCII character
- blank   PosixBlank       XPosixBlank   \h       Horizontal whitespace;
-                                                   full-range also
-                                                   written as
+ alnum   PosixAlnum       XPosixAlnum            Алфавитный символ плюс Цифра
+ alpha   PosixAlpha       XPosixAlpha            Алфавитный символ
+ ascii   ASCII                                   Любой ASCII символ
+ blank   PosixBlank       XPosixBlank   \h       Горизонтальный пробел;
+                                                   полный спектр также
+                                                   записывается как
                                                    \p{HorizSpace} (GNU
-                                                   extension)
- cntrl   PosixCntrl       XPosixCntrl            Control characters
- digit   PosixDigit       XPosixDigit   \d       Decimal digits
- graph   PosixGraph       XPosixGraph            Alnum plus Punct
- lower   PosixLower       XPosixLower            Lowercase characters
- print   PosixPrint       XPosixPrint            Graph plus Print, but
-                                                   not any Cntrls
- punct   PosixPunct       XPosixPunct            Punctuation and Symbols
-                                                   in ASCII-range; just
-                                                   punct outside it
+                                                   расширение)
+ cntrl   PosixCntrl       XPosixCntrl            Знак Контрола
+ digit   PosixDigit       XPosixDigit   \d       Десятичные цифры
+ graph   PosixGraph       XPosixGraph            Алфавитный символ плюс Пунктуация
+ lower   PosixLower       XPosixLower            Строчные буквы
+ print   PosixPrint       XPosixPrint            Graph плюс Print, без
+                                                   нескольких Control символов
+ punct   PosixPunct       XPosixPunct            Пунктуация и Символы
+                                                   в ASCII-диапазоне; просто
+                                                   пунктуация за ее пределами
  space   PosixSpace       XPosixSpace            [\s\cK]
-         PerlSpace        XPerlSpace    \s       Perl's whitespace def'n
- upper   PosixUpper       XPosixUpper            Uppercase characters
- word    PosixWord        XPosixWord    \w       Alnum + Unicode marks +
-                                                   connectors, like '_'
-                                                   (Perl extension)
- xdigit  ASCII_Hex_Digit  XPosixDigit            Hexadecimal digit,
-                                                    ASCII-range is
+         PerlSpace        XPerlSpace    \s       Perl пробельный символ
+ upper   PosixUpper       XPosixUpper            Прописные буквы (в верхнем регисте)
+ word    PosixWord        XPosixWord    \w       Цифры, буквы + знаки Юникода +
+                                                   соединители, такие как '_'
+                                                   (Perl расширение)
+ xdigit  ASCII_Hex_Digit  XPosixDigit            Шестнадцатиричные цифрв,
+                                                    ASCII-диапазон
                                                     [0-9A-Fa-f]
 
-Also, various synonyms like C<\p{Alpha}> for C<\p{XPosixAlpha}>; all listed
-in L<perluniprops/Properties accessible through \p{} and \P{}>
+Кроме того, различные синонимы такие как C<\p{Alpha}> для C<\p{XPosixAlpha}>; все перечисленные
+в L<perluniprops/Свойства, доступные через \p{} и \P{}>
 
-Within a character class:
+Внутри класса символов:
 
     POSIX      traditional   Unicode
   [:digit:]       \d        \p{Digit}
   [:^digit:]      \D        \P{Digit}
 
-=head2 ANCHORS
+=head2 ЯКОРЯ
 
-All are zero-width assertions.
+Все утверждения нулевой ширины.
 
-   ^  Match string start (or line, if /m is used)
-   $  Match string end (or line, if /m is used) or before newline
-   \b Match word boundary (between \w and \W)
-   \B Match except at word boundary (between \w and \w or \W and \W)
-   \A Match string start (regardless of /m)
-   \Z Match string end (before optional newline)
-   \z Match absolute string end
-   \G Match where previous m//g left off
-   \K Keep the stuff left of the \K, don't include it in $&
+   ^  Найдет начало строки (или линии при /m)
+   $  Найдет конец строки (или линии при /m) или перед новой строкой
+   \b Найдет границу слова (между \w и \W)
+   \B Найдет за исключением границы слова (между  \w и \w или \W и \W)
+   \A Найдет начало строки (независимо от /m)
+   \Z Найдет конец строки (перед вероятным знаком новой строки)
+   \z Найдет абсолютный конец строки
+   \G Найдет, где остановился предыдущий m//g
+   \K Сохраняет найденный материал слева от \K, не включая его в $&
 
-=head2 QUANTIFIERS
+=head2 ПОВТОРИТЕЛИ (КВАНТИФИКАТОРЫ)
 
 Quantifiers are greedy by default and match the B<longest> leftmost.
 
