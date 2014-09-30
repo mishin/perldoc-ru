@@ -64,7 +64,7 @@ C<s/шаблон/заменитель/msixpogcedual> заменяет найде
 Выражение C<?шаблон?> такое же как C<m/шаблон/> но будет найдено только один раз. 
 Нельзя использовать разделители или C<|>. Можно сбросить с помощью reset().
 
-=head2 СИНТАКС
+=head2 СИНТАКСИС
 
  \       Превращает следующий за обратной косой чертой символ в обычный
  .       Найдет любой одиночный символ, кроме перевода строки (если не используется /s)
@@ -86,31 +86,31 @@ C<s/шаблон/заменитель/msixpogcedual> заменяет найде
  \k'name'     Именованная обратная ссылка
  (?P=name)    Именованная обратная ссылка (синтакс python)
 
-=head2 ESCAPE SEQUENCES
+=head2 УПРАВЛЯЮЩИЕ ПОСЛЕДОВАТЕЛЬНОСТИ (ESCAPE SEQUENCES) 
 
-These work as in normal strings.
+Эти работают в нормальных строках.
 
-   \a       Alarm (beep)
-   \e       Escape
-   \f       Formfeed
-   \n       Newline
-   \r       Carriage return
-   \t       Tab
-   \037     Char whose ordinal is the 3 octal digits, max \777
-   \o{2307} Char whose ordinal is the octal number, unrestricted
-   \x7f     Char whose ordinal is the 2 hex digits, max \xFF
-   \x{263a} Char whose ordinal is the hex number, unrestricted
+   \a       Тревога (звуковой сигнал)
+   \e       Клавиша ESC (Escape)
+   \f       Перевод формата (Formfeed)
+   \n       Новая строка
+   \r       Возврат каретки
+   \t       Табуляция
+   \037     Символы, представляющие 3 восьмеричные цифры, максимально \777
+   \o{2307} Символы, представляющие восьмеричные цифры, без ограничений
+   \x7f     Символы, представляющие 2 шестнадцатеричные цифры, максимально \xFF
+   \x{263a} Символы, представляющий шестнадцатеричные цифры, без ограничений
    \cx      Control-x
-   \N{name} A named Unicode character or character sequence
-   \N{U+263D} A Unicode character by hex ordinal
+   \N{name} Именованный символ Юникода или последовательность символов
+   \N{U+263D} Символ Юникода в шестнадцатеричном формате
 
-   \l  Lowercase next character
-   \u  Titlecase next character
-   \L  Lowercase until \E
-   \U  Uppercase until \E
-   \F  Foldcase until \E
-   \Q  Disable pattern metacharacters until \E
-   \E  End modification
+   \l  Следующий символ в нижнем регистре
+   \u  Следующий символ в верхнем регистре
+   \L  Нижний регистр до \E
+   \U  Верхний регистр до \E
+   \F  Возвращает регистронезависимое представление до \E
+   \Q  Отключает действие метасиволов в шаблоне до \E
+   \E  Завершение модификации
 
 For Titlecase, see L</Titlecase>.
 
