@@ -276,45 +276,53 @@ C<s/шаблон/заменитель/msixpogcedual> заменяет найде
    ${^MATCH}      Найденная строка
    ${^POSTMATCH}  Все после найденной строки
 
-The use of C<$`>, C<$&> or C<$'> will slow down B<all> regex use
-within your program. Consult L<perlvar> for C<@->
-to see equivalent expressions that won't cause slow down.
-See also L<Devel::SawAmpersand>. Starting with Perl 5.10, you
-can also use the equivalent variables C<${^PREMATCH}>, C<${^MATCH}>
-and C<${^POSTMATCH}>, but for them to be defined, you have to
-specify the C</p> (preserve) modifier on your regular expression.
+Использование C < $' раздел настроек, C < $& настроек или C < $' раздел настроек будет замедлять B <all>regex использование
+в рамках программы. Проконсультируйтесь с Л <perlvar>для C < @->
+чтобы увидеть эквивалент выражения, которые не вызывают замедление.
+Смотрите также L <Devel::SawAmpersand>. Начиная с Perl 5.10, вы
+можно также использовать эквивалентные переменные C <${^PREMATCH}>, C <${^MATCH}>
+и C <${^POSTMATCH}>, но для них, чтобы определить, нужно
+Укажите C</p> (заповедник) Модификатор на регулярное выражение.
 
-   $1, $2 ...  hold the Xth captured expr
-   $+    Last parenthesized pattern match
-   $^N   Holds the most recently closed capture
-   $^R   Holds the result of the last (?{...}) expr
-   @-    Offsets of starts of groups. $-[0] holds start of whole match
-   @+    Offsets of ends of groups. $+[0] holds end of whole match
-   %+    Named capture groups
-   %-    Named capture groups, as array refs
+Использование C<$`>, C<$&> или C<$'> будет замедлять использование B<всех> регексов
+в рамках программы. Посмотрите в L<perlvar> на C<@->
+чтобы увидеть эквивалент выражения, которое не вызывают замедления.
+Смотрите также L<Devel::SawAmpersand>. Начиная с Perl 5.10, вы
+можно также использовать эквивалентные переменные  C<${^PREMATCH}>, C<${^MATCH}>
+и C<${^POSTMATCH}>, но, чтобы их определить, нужно
+в регулярном выражении указать модификатор C</p> (preserve сохранить).
 
-Captured groups are numbered according to their I<opening> paren.
+   $1, $2 ...  удерхивает X-ное захваченное выражение
+   $+    Последнее найденное скобочное выражение
+   $^N   Сохраняет самый близкое захваченное выражение
+   $^R   Сохраняет результат последнего (?{...}) выражения
+   @-    Смещение от начала группировки. $-[0] содержит найденное выражение целиком
+   @+    Смещение от конца группировки. $+[0] сохраняет остаток от найденного
+   %+    Именованные захваченные группы
+   %-    Именованные захваченные группы, как ссылка на массив
 
-=head2 FUNCTIONS
+Захваченные группы пронумеровываются согласно их I<открытой> скобке.
 
-   lc          Lowercase a string
-   lcfirst     Lowercase first char of a string
-   uc          Uppercase a string
-   ucfirst     Titlecase first char of a string
-   fc          Foldcase a string
+=head2 ФУНКЦИИ
 
-   pos         Return or set current match position
-   quotemeta   Quote metacharacters
-   reset       Reset ?pattern? status
-   study       Analyze string for optimizing matching
+   lc          Строку в нижний регистр
+   lcfirst     В нижний регистр первый символ строки
+   uc          Строку в верхний регистр
+   ucfirst     В верхний регистр первый символ строки
+   fc          Сделать регистронезависимую строку (для сравнения)
 
-   split       Use a regex to split a string into parts
+   pos         Вернуть или установить текущее положение поиска
+   quotemeta   Квотировать метасимволы
+   reset       Сбросить статус ?шаблона?
+   study       Анализировать строку для оптимизации поиска
 
-The first five of these are like the escape sequences C<\L>, C<\l>,
-C<\U>, C<\u>, and C<\F>.  For Titlecase, see L</Titlecase>; For
-Foldcase, see L</Foldcase>.
+   split       Использование регекса для разбиения строки на части
 
-=head2 TERMINOLOGY
+Первые пять из них, как escape-последовательности C<\L>, C<\l>,
+C<\U>, C<\u>, и C<\F>.  Для заголовочного регистра, см L</Titlecase>; Для
+Регистронезависимого, см L</Foldcase>.
+
+=head2 ТЕРМИНОЛОГИЯ
 
 =head3 Titlecase
 
