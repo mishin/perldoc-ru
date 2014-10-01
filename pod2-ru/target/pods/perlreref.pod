@@ -326,20 +326,20 @@ C<\U>, C<\u>, и C<\F>.  Для заголовочного регистра, с�
 
 =head3 Titlecase
 
-Unicode concept which most often is equal to uppercase, but for
-certain characters like the German "sharp s" there is a difference.
+В концепции Unicode он чаще всего равен верхнему регистру, но для
+некоторых символов, таких как немецкий "sharp s"(резкое s - ß) это не так есть разница.
 
 =head3 Foldcase
 
-Unicode form that is useful when comparing strings regardless of case,
-as certain characters have compex one-to-many case mappings. Primarily a
-variant of lowercase.
+Юникодная форма  полезна при сравнении строк независимо от регистра,
+но некоторые символы имеют разветвленную систему сопоставления регистра один ко многим. Прежде всего
+вариант нижнего регистра.
 
-=head1 AUTHOR
+=head1 АВТОР
 
-Iain Truskett. Updated by the Perl 5 Porters.
+Iain Truskett. Обновлено портировщиками Perl 5.
 
-This document may be distributed under the same terms as Perl itself.
+Этот документ может распространяться на тех же условиях, как и сам Perl.
 
 =head1 SEE ALSO
 
