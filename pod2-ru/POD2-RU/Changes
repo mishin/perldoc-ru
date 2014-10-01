@@ -1,14 +1,18 @@
 Revision history for perl module POD2::RU
 
-5.18.0.1.12  Ceptember 23, 2013
+5.18.0.1.13  October 1, 2014
+ 
+           * Added translation perlreref.pod
+           
+5.18.0.1.12  Ceptember 23, 2014
  
            * Russian language (utf8) is not not possible in readme
            * Minor changes
            * Format of Changes changed ;)
 
-5.18.0.1.11  Ceptember 22, 2013
+5.18.0.1.11  Ceptember 22, 2014
  
-           * Added the translation perlrequick.pod
+           * Added translation perlrequick.pod
            
 5.18.0.1.10  Ceptember 24, 2013
            [Spec Changes]

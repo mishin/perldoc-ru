@@ -5,7 +5,7 @@ use warnings;
 use base 'Exporter';
 use base 'POD2::Base';
 
-our $VERSION = '5.18.0.1.12';
+our $VERSION = '5.18.0.1.13';
 
 our @EXPORT = qw(print_pod print_pods);
 
@@ -23,6 +23,7 @@ sub pod_info {
         perlcheat  => '5.18.0.1',
         perlnewmod  => '5.18.0.1',
         perlrequick  => '5.18.0.1',
+        perlreref  => '5.18.0.1',
     };
 }
 
