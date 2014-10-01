@@ -7,11 +7,20 @@ POD2::RU - Perl Документация по-русски
 
 Для установки этого модуля, выполните следующие команды:
 
-   perl Build.PL       # 'Build.PL' script creates the 'Build' script
-  ./Build             # Need ./ to ensure we're using this "Build" script
-  ./Build test        # and not another one that happens to be in the PATH
-  ./Build install
+   perl Makefile.PL;
+   make;
+   make test;
+   make install;
 
+Для DWIM Perl
+
+   perl Makefile.PL;
+   dmake;
+   dmake test;
+   dmake dist;
+   dmake install;
+   
+   
 См. https://github.com/mishin/perldoc-ru чтобы получить больше информации о проекте.
 
 
