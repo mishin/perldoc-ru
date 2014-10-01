@@ -341,77 +341,82 @@ Iain Truskett. Обновлено портировщиками Perl 5.
 
 Этот документ может распространяться на тех же условиях, как и сам Perl.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
 =over 4
 
 =item *
 
-L<perlretut> for a tutorial on regular expressions.
+L<perlretut> учебник по регулярным выражениям.
 
 =item *
 
-L<perlrequick> for a rapid tutorial.
+L<perlrequick> для быстрого изучения.
 
 =item *
 
-L<perlre> for more details.
+L<perlre> для более подробной информации.
 
 =item *
 
-L<perlvar> for details on the variables.
+L<perlvar> дополнительные сведения о переменных.
 
 =item *
 
-L<perlop> for details on the operators.
+L<perlop> дополнительные сведения об операторах.
 
 =item *
 
-L<perlfunc> for details on the functions.
+L<perlfunc> дополнительные сведения о функциях.
 
 =item *
 
-L<perlfaq6> for FAQs on regular expressions.
+L<perlfaq6> часто задаваемые вопросы о регулярных выражениях.
 
 =item *
 
-L<perlrebackslash> for a reference on backslash sequences.
+L<perlrebackslash> для справки о последовательностях с обратной косой чертой.
 
 =item *
 
-L<perlrecharclass> for a reference on character classes.
+L<perlrecharclass> для справки о классах символов.
 
 =item *
 
-The L<re> module to alter behaviour and aid
-debugging.
+Модуль L<re>, изменяющий поведение и помогающий отладке.
 
 =item *
 
-L<perldebug/"Debugging Regular Expressions">
+L<perldebug/"Отладка регулярных выражений">
 
 =item *
 
-L<perluniintro>, L<perlunicode>, L<charnames> and L<perllocale>
-for details on regexes and internationalisation.
+L<perluniintro>, L<perlunicode>, L<charnames> и L<perllocale>
+для подробной информации о регулярные выражениях и интернационализации.
 
 =item *
 
-I<Mastering Regular Expressions> by Jeffrey Friedl
-(F<http://oreilly.com/catalog/9780596528126/>) for a thorough grounding and
-reference on the topic.
+I<Мастеринг регулярных выражений>  Jeffrey Friedl
+(F<http://oreilly.com/catalog/9780596528126/>) для тщательного изучения и
+ссылки на главы.
 
 =back
 
-=head1 THANKS
+=head1 СПАСИБО
 
 David P.C. Wollmann,
 Richard Soderberg,
 Sean M. Burke,
 Tom Christiansen,
 Jim Cromie,
-and
+и
 Jeffrey Goff
-for useful advice.
+за полезные советы.
 
-=cut
+=head1 ПЕРЕВОДЧИКИ
+ 
+=over
+ 
+=item * Николай Мишин C<< <mishin@cpan.org> >>
+ 
+=back
