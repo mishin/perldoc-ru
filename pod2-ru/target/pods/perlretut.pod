@@ -279,12 +279,12 @@ bert,  находящегося целиком в строке:
     "dilbert" =~ /^bert$/; # не найдет, хорошо
     "bert"    =~ /^bert$/; # найдет, идеально
 
-Of course, in the case of a literal string, one could just as easily
-use the string comparison S<C<$string eq 'bert'>> and it would be
-more efficient.   The  C<^...$> regexp really becomes useful when we
-add in the more powerful regexp tools below.
+Конечно, в случае со строковой константой, ее можно было бы найти
+гораздо проще просто использовав сравнение строк  S<C<$string eq 'bert'>> и это было бы
+более эффективным. Regexp C<^...$> действительно становится полезным, когда мы
+добавьте в более мощные regexp инструменты  ниже.
 
-=head2 Using character classes
+=head2 Использование классов символов
 
 Although one can already do quite a lot with the literal string
 regexps above, we've only scratched the surface of regular expression
