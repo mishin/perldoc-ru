@@ -2,25 +2,27 @@
 
 =head1 НАИМЕНОВАНИЕ
 
-perlreguts - Description of the Perl regular expression engine.
+perlreguts - Описание машины регулярных выражений Perl.
 
 =head1 ОПИСАНИЕ
 
-Этот документ представляет собой попытку, чтобы сиять некоторый свет на кишки regex
-двигатель и как она работает. Regex engine представляет значительный кусок
-perl кодовой базы, но это относительно плохо понимает. Этот документ
-это скудные попытка в урегулировании этой ситуации. Он является производным от
-опыт автора, комментарии в исходном коде, другие документы на
-Regex двигатель, обратной связи на список рассылки perl5-носильщиков и без сомнения других
-мест, а также.
-This document is an attempt to shine some light on the guts of the regex
-engine and how it works. The regex engine represents a significant chunk
-of the perl codebase, but is relatively poorly understood. This document
-is a meagre attempt at addressing this situation. It is derived from the
-author's experience, comments in the source code, other papers on the
-regex engine, feedback on the perl5-porters mail list, and no doubt other
-places as well.
+Этот документ представляет собой попытку пролить свет на внутренность регекс
+машины и на то, как она работает. Регекс машина представляет собой значительный кусок
+перловой кодовой базы, но он относительно плохо понимаем. Этот документ - 
+это скудные попытки в урегулировании этой ситуации. Он является производным от
+опыта автора, комментариев в исходном коде, и других документов регекс машины
+, обратной связи на список рассылки perl5-портировщиков и других
+мест.
 
+B <NOTICE!> он должен быть четко поняли, что поведение и
+структуры, обсуждали в этом представляет состояние двигателя как
+Автор понимает это на момент написания. Это B <NOT>API
+определение, это чисто внутреннее руководство для тех, кто хочет взломать
+regex двигателя, или понять, как работает двигатель regex. Читатели
+Этот документ, как ожидается, понять синтаксис регулярных выражений perl и его
+использование в деталях. Если вы хотите узнать об основах Perl
+регулярные выражения, см L <perlre>. И если вы хотите заменить
+engine Regex с вашим собственным, см L <perlreapi>.
 B<NOTICE!> It should be clearly understood that the behavior and
 structures discussed in this represents the state of the engine as the
 author understood it at the time of writing. It is B<NOT> an API
