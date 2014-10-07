@@ -286,29 +286,23 @@ bert,  находящегося целиком в строке:
 
 =head2 Использование классов символов
 
-Хотя можно сделать очень много уже с строковыми коснтантами
-в виде регекспов выше, мы только поцарапали поверхность технологии регулярных выражений. 
+Хотя можно сделать очень много уже со строковыми коснтантами
+в виде регекспов выше, мы только прикоснулись к технологии регулярных выражений. 
 В этом и последующих разделах мы будем вводить regexp
-концепции (и связанные метасимвол нотаций), что позволит
-RegExp представляют не только последовательность одного символа, но я < весь
-класс настроек из них.
-Although one can already do quite a lot with the literal string
-regexps above, we've only scratched the surface of regular expression
-technology.  In this and subsequent sections we will introduce regexp
-concepts (and associated metacharacter notations) that will allow a
-regexp to represent not just a single character sequence, but a I<whole
-class> of them.
+концепции (и связанные с ними описания метасимволов), что позволит
+регексп представлять не только, как последовательность одного символа, но и 
+I<целого класса> символов.
 
-One such concept is that of a I<character class>.  A character class
-allows a set of possible characters, rather than just a single
-character, to match at a particular point in a regexp.  Character
-classes are denoted by brackets C<[...]>, with the set of characters
-to be possibly matched inside.  Here are some examples:
+Одна из таких концепций это I<классы символов>. Класс символов
+позволяет созадать набор возможных символов, а не только одного, 
+чтобы соответствовать определенной точке регекспа. Классы символов
+обозначаются квадратными скобками <[...]>, с набором возможных 
+для сопоставления символов внутри. Вот несколько примеров:
 
-    /cat/;       # matches 'cat'
-    /[bcr]at/;   # matches 'bat, 'cat', or 'rat'
-    /item[0123456789]/;  # matches 'item0' or ... or 'item9'
-    "abc" =~ /[cab]/;    # matches 'a'
+    /cat/;       # найдет 'cat'
+    /[bcr]at/;   # найдет 'bat, 'cat', или 'rat'
+    /item[0123456789]/;  # найдет 'item0' или ... или 'item9'
+    "abc" =~ /[cab]/;    # найдет 'a'
 
 In the last statement, even though C<'c'> is the first character in
 the class, C<'a'> matches because the first character position in the
