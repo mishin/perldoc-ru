@@ -304,20 +304,30 @@ I<целого класса> символов.
     /item[0123456789]/;  # найдет 'item0' или ... или 'item9'
     "abc" =~ /[cab]/;    # найдет 'a'
 
-In the last statement, even though C<'c'> is the first character in
-the class, C<'a'> matches because the first character position in the
-string is the earliest point at which the regexp can match.
+В последнем выражении, даже несмотря на то, что C<'c'> является первым символом в классе, 
+самой ранней точкой совпадения регекспа будет C<'a'>.
 
-    /[yY][eE][sS]/;      # match 'yes' in a case-insensitive way
+    /[yY][eE][sS]/;      # найдет 'yes' в регистронезависимом поиске
                          # 'yes', 'Yes', 'YES', etc.
 
-This regexp displays a common task: perform a case-insensitive
-match.  Perl provides a way of avoiding all those brackets by simply
-appending an C<'i'> to the end of the match.  Then C</[yY][eE][sS]/;>
-can be rewritten as C</yes/i;>.  The C<'i'> stands for
-case-insensitive and is an example of a I<modifier> of the matching
-operation.  We will meet other modifiers later in the tutorial.
+Последний пример показывает обычную задачу: сделать регистронезависимы поиск.
+Perl предоставляет путь исключить все эти скобки, просто добавив
+C<'i'> в конце поисковой строки. Тогда C</[yY][eE][sS]/;>
+можно переписать как C</yes/i;>. C<'i'> означает
+без учета регистра и является примером I<модификатора> 
+операции поиска. Мы встретим другие модификаторы в этом руководстве позднее.
 
+Мы видели выше в разделе, что там были обычные символы, которые
+представлял себя и специальные символы, которые необходимо
+Обратная косая черта C < \ настроек представлять себя. То же самое верно в
+класс символов, но наборы обычных и специальных символов
+внутри класса символов отличаются от тех, кто за пределами символа
+класс. Специальные символы для класса символов являются C <-] \ ^ $настроек (и
+Шаблон разделителя, какой бы она является).
+C <] раздел настроек специальных, потому что оно обозначает конец класса символов. C < $ раздел настроек
+Специальные, потому что оно обозначает скалярной переменной. C < \ настроек специальных потому что
+Он используется в escape-последовательности, как выше. Вот как
+Специальные символы C <] $\ настроек обрабатываются:
 We saw in the section above that there were ordinary characters, which
 represented themselves, and special characters, which needed a
 backslash C<\> to represent themselves.  The same is true in a
