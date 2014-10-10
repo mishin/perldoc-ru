@@ -352,85 +352,86 @@ C<]>  - специальный, потому что оно обозначает 
     /[0-9a-zA-Z_]/; # найдет символ "слова",
                     # которое совпрадает с именем переменной в Perl
 
-If C<'-'> is the first or last character in a character class, it is
-treated as an ordinary character; C<[-ab]>, C<[ab-]> and C<[a\-b]> are
-all equivalent.
+Если C<'-'> будет первым или последним символом в классе символов, то он
+считается обычным тире; C<[-ab]>, C<[ab-]> и C<[a\-b]> эквивалентны.
 
-The special character C<^> in the first position of a character class
-denotes a I<negated character class>, which matches any character but
-those in the brackets.  Both C<[...]> and C<[^...]> must match a
-character, or the match fails.  Then
+Специальный символ C<^> в первой позиции класса
+означает I<отрицание класса символов>, которое найдет любой символ, который не присутствует
+ в списке в квадратных скобках.  Оба и C<[...]> и C<[^...]> должны найти символы
+ или поиск будет неудачным. Тогда
 
-    /[^a]at/;  # doesn't match 'aat' or 'at', but matches
-               # all other 'bat', 'cat, '0at', '%at', etc.
-    /[^0-9]/;  # matches a non-numeric character
-    /[a^]at/;  # matches 'aat' or '^at'; here '^' is ordinary
+    /[^a]at/;  # не найдет 'aat' или 'at', но найдет
+               # все другие 'bat', 'cat, '0at', '%at', и т.д.
+    /[^0-9]/;  # найдет нецифровой символ
+    /[a^]at/;  # найдет 'aat' или '^at'; здесь '^' - обычный символ
 
-Now, even C<[0-9]> can be a bother to write multiple times, so in the
-interest of saving keystrokes and making regexps more readable, Perl
-has several abbreviations for common character classes, as shown below.
-Since the introduction of Unicode, unless the C<//a> modifier is in
-effect, these character classes match more than just a few characters in
-the ASCII range.
+Теперь, даже писать несколько раз C<[0-9]> может надоесть , так
+появляется интерес сократить число нажатий клавиш и сделать 
+регулярные выражения удобочитаемыми,  Perl
+имеет несколько сокращений для общих классов символов, как показано ниже.
+С момента введения Юникода, если нет модификатора  C<//a>, то
+этот класс символов найдет больше, чем просто несколько символов в
+диапазоне ASCII.
 
 =over 4
 
 =item *
 
-\d matches a digit, not just [0-9] but also digits from non-roman scripts
+\d найдет цифру, не только [0-9] но еще и цифры нероманских языков
 
 =item *
 
-\s matches a whitespace character, the set [\ \t\r\n\f] and others
+\s найдет пробельный символ, набор [\ \t\r\n\f] и другие
 
 =item *
 
-\w matches a word character (alphanumeric or _), not just [0-9a-zA-Z_]
-but also digits and characters from non-roman scripts
+\w найдет словесный символ (буквацифру или _), не только [0-9a-zA-Z_]
+но и цифры и символы из нероманских языков
 
 =item *
 
-\D is a negated \d; it represents any other character than a digit, or [^\d]
+\D отрицает \d; представляет другие символы, отличные от цифр, или [^\d]
 
 =item *
 
-\S is a negated \s; it represents any non-whitespace character [^\s]
+\S отрицает \s; представляет любой непробельный символ [^\s]
 
 =item *
 
-\W is a negated \w; it represents any non-word character [^\w]
+\W отрицает \w; представляет любой несловесный символ [^\w]
 
 =item *
 
-The period '.' matches any character but "\n" (unless the modifier C<//s> is
-in effect, as explained below).
+Точка '.' найдет любой символ, кроме "\n" (пока не работает модификатор C<//s>, 
+как объясняется позднее).
 
 =item *
 
-\N, like the period, matches any character but "\n", but it does so
-regardless of whether the modifier C<//s> is in effect.
+\N, как и точка, найдет любые символы кроме "\n", но делает это
+ независимо, даже, если присутствует модификатор C<//s>.
 
 =back
 
-The C<//a> modifier, available starting in Perl 5.14,  is used to
-restrict the matches of \d, \s, and \w to just those in the ASCII range.
-It is useful to keep your program from being needlessly exposed to full
-Unicode (and its accompanying security considerations) when all you want
-is to process English-like text.  (The "a" may be doubled, C<//aa>, to
-provide even more restrictions, preventing case-insensitive matching of
-ASCII with non-ASCII characters; otherwise a Unicode "Kelvin Sign"
-would caselessly match a "k" or "K".)
+Модификатор C<//a> появился начиная с  Perl 5.14,  используется, 
+чтобы ужесточить поиск \d, \s, и \w и только в ASCII диапазоне.
+Полезно не полностью переводить вашу программу на полный Юникод
+( в частности и по вопросам безопасности ), когда все, что вам нужно,
+ это обработка английскоподобных текстов. ("a" может быть удвоено ,
+ используйте C<//aa>, чтобы сделать больше ограничений , предотвращая регистрозависимый поиск
+ASCII в не-ASCII символах; в противном случае Юникодный "символ Кельвина"
+будет бессистемно соответствовать "k" или "K".)
 
-The C<\d\s\w\D\S\W> abbreviations can be used both inside and outside
-of character classes.  Here are some in use:
 
-    /\d\d:\d\d:\d\d/; # matches a hh:mm:ss time format
-    /[\d\s]/;         # matches any digit or whitespace character
-    /\w\W\w/;         # matches a word char, followed by a
-                      # non-word char, followed by a word char
-    /..rt/;           # matches any two chars, followed by 'rt'
-    /end\./;          # matches 'end.'
-    /end[.]/;         # same thing, matches 'end.'
+Сокращения C<\d\s\w\D\S\W> могут быть использованы, как внутри, так и снаружи
+класса символов.  Вот примеры использования:
+
+    /\d\d:\d\d:\d\d/; # найдет время в формате hh:mm:ss
+    /[\d\s]/;         # найдет любую цифру или пробельный символ
+    /\w\W\w/;         # найдет словесный символ, за которым несловесный символ,
+                      # за которым символ слова
+    /..rt/;           # найдет любые 2 символа и за ними 'rt'
+    /end\./;          # найдет 'end.'
+    /end[.]/;         # также найдет 'end.'
 
 Because a period is a metacharacter, it needs to be escaped to match
 as an ordinary period. Because, for example, C<\d> and C<\w> are sets
