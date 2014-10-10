@@ -335,15 +335,15 @@ C<]>  - специальный, потому что оно обозначает 
    /[\$x]at/;  # найдет '$at' или 'xat'
    /[\\$x]at/; # найдет '\at', 'bat, 'cat', или 'rat'
 
-The last two are a little tricky.  In C<[\$x]>, the backslash protects
-the dollar sign, so the character class has two members C<$> and C<x>.
-In C<[\\$x]>, the backslash is protected, so C<$x> is treated as a
-variable and substituted in double quote fashion.
+Последние два немного сложнее.  В C<[\$x]>, обратный слеш защищает символ доллара
+, таким образом класс символов включает 2 символа C<$> и C<x>.
+В C<[\\$x]>, обратный слеш защищен, таким образом C<$x> воспринимается
+как переменная и заменяется в стиле двойных кавычек.
 
-The special character C<'-'> acts as a range operator within character
-classes, so that a contiguous set of characters can be written as a
-range.  With ranges, the unwieldy C<[0123456789]> and C<[abc...xyz]>
-become the svelte C<[0-9]> and C<[a-z]>.  Some examples are
+Специальный символ C<'-'> представляет из себя опратор диапазона внутри класса,
+так что непрерывный набор символов может быть записан, как
+диапазон.  С диапазоном, громоздкое C<[0123456789]> и C<[abc...xyz]>
+становиться стройным C<[0-9]> и C<[a-z]>.  Вот примеры
 
     /item[0-9]/;  # matches 'item0' or ... or 'item9'
     /[0-9bx-z]aa/;  # matches '0aa', ..., '9aa',
