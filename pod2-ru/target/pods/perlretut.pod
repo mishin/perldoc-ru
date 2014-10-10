@@ -345,12 +345,12 @@ C<]>  - специальный, потому что оно обозначает 
 диапазон.  С диапазоном, громоздкое C<[0123456789]> и C<[abc...xyz]>
 становиться стройным C<[0-9]> и C<[a-z]>.  Вот примеры
 
-    /item[0-9]/;  # matches 'item0' or ... or 'item9'
-    /[0-9bx-z]aa/;  # matches '0aa', ..., '9aa',
+    /item[0-9]/;  # найдет 'item0' или ... или 'item9'
+    /[0-9bx-z]aa/;  # найдет '0aa', ..., '9aa',
                     # 'baa', 'xaa', 'yaa', or 'zaa'
-    /[0-9a-fA-F]/;  # matches a hexadecimal digit
-    /[0-9a-zA-Z_]/; # matches a "word" character,
-                    # like those in a Perl variable name
+    /[0-9a-fA-F]/;  # найдет шестнадцатиричную цифру
+    /[0-9a-zA-Z_]/; # найдет символ "слова",
+                    # которое совпрадает с именем переменной в Perl
 
 If C<'-'> is the first or last character in a character class, it is
 treated as an ordinary character; C<[-ab]>, C<[ab-]> and C<[a\-b]> are
