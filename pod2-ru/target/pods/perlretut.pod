@@ -433,52 +433,52 @@ ASCII в не-ASCII символах; в противном случае Юни�
     /end\./;          # найдет 'end.'
     /end[.]/;         # также найдет 'end.'
 
-Because a period is a metacharacter, it needs to be escaped to match
-as an ordinary period. Because, for example, C<\d> and C<\w> are sets
-of characters, it is incorrect to think of C<[^\d\w]> as C<[\D\W]>; in
-fact C<[^\d\w]> is the same as C<[^\w]>, which is the same as
-C<[\W]>. Think DeMorgan's laws.
+Т.к. точка это метасимвол, его нужно заэскейпить, чтобы найти обычную точку. 
+Поэтому, например, C<\d> и C<\w> - это наборы символов
+, неверно думать, о C<[^\d\w]> как C<[\D\W]>; фактически
+ C<[^\d\w]> тоже, что и C<[^\w]>, что тоже самое, что и C<[\W]>. 
+ Думайте законами Де Моргана!
 
-An anchor useful in basic regexps is the I<word anchor>
-C<\b>.  This matches a boundary between a word character and a non-word
-character C<\w\W> or C<\W\w>:
+Якорь удобен в базовых регекспах I<якорь границы  слова>
+C<\b>.  Находит границу между словным символом и и несловным символом
+ C<\w\W> или C<\W\w>:
 
     $x = "Housecat catenates house and cat";
-    $x =~ /cat/;    # matches cat in 'housecat'
-    $x =~ /\bcat/;  # matches cat in 'catenates'
-    $x =~ /cat\b/;  # matches cat in 'housecat'
-    $x =~ /\bcat\b/;  # matches 'cat' at end of string
+    $x =~ /cat/;    # найдет cat в 'housecat'
+    $x =~ /\bcat/;  # найдет cat в 'catenates'
+    $x =~ /cat\b/;  # найдет cat в 'housecat'
+    $x =~ /\bcat\b/;  # найдет 'cat' в конце строки
 
-Note in the last example, the end of the string is considered a word
-boundary.
+Замечание к последнему примеру, конец строки здесь подразумевает и конец слова.
 
-You might wonder why C<'.'> matches everything but C<"\n"> - why not
-every character? The reason is that often one is matching against
-lines and would like to ignore the newline characters.  For instance,
-while the string C<"\n"> represents one line, we would like to think
-of it as empty.  Then
+Вы можете спросить, почему C<'.'> найдет все, кроме C<"\n"> - почему не все символы? 
+Причина в том, что часто при сравнении со строкой
+хотят игнорировать символы новой строки. К примеру,
+в то время как строка C<"\n"> представляет одну строку, мы хотели бы думать о ней, как о пустой строке.
+Тогда
 
-    ""   =~ /^$/;    # matches
-    "\n" =~ /^$/;    # matches, $ anchors before "\n"
+    ""   =~ /^$/;    # найдет
+    "\n" =~ /^$/;    # найдет, $ якорь после "\n"
 
-    ""   =~ /./;      # doesn't match; it needs a char
-    ""   =~ /^.$/;    # doesn't match; it needs a char
-    "\n" =~ /^.$/;    # doesn't match; it needs a char other than "\n"
-    "a"  =~ /^.$/;    # matches
-    "a\n"  =~ /^.$/;  # matches, $ anchors before "\n"
+    ""   =~ /./;      # не найдет; требуется символ
+    ""   =~ /^.$/;    # не найдет; требуется символ
+    "\n" =~ /^.$/;    # не найдет; требуется символ отличный от "\n"
+    "a"  =~ /^.$/;    # найдет
+    "a\n"  =~ /^.$/;  # найдет, $ якорь после "\n"
 
-This behavior is convenient, because we usually want to ignore
-newlines when we count and match characters in a line.  Sometimes,
-however, we want to keep track of newlines.  We might even want C<^>
-and C<$> to anchor at the beginning and end of lines within the
-string, rather than just the beginning and end of the string.  Perl
-allows us to choose between ignoring and paying attention to newlines
-by using the C<//s> and C<//m> modifiers.  C<//s> and C<//m> stand for
-single line and multi-line and they determine whether a string is to
-be treated as one continuous string, or as a set of lines.  The two
-modifiers affect two aspects of how the regexp is interpreted: 1) how
-the C<'.'> character class is defined, and 2) where the anchors C<^>
-and C<$> are able to match.  Here are the four possible combinations:
+Такое поведение удобно, потому что мы обычно хотим игнорировать
+символы новой строки, когда мы рассчитываем найти символы в строке. Иногда,
+однако мы хотим отслеживать символы новой строки. Мы, возможно, даже хотим поставить
+C<^> и C<$> как якорь в начале и в конце линий в пределах
+строки, а не только начало и конец строки. Perl
+позволяет нам выбирать между игнорированием и обращением внимания на символ новой строки
+с помощью модификаторов C<//s> и C<//m>. C<//s> и C<//m>
+устанавливается для 
+однострочной и многострочной строки и они определяют, рассматривать ли строку
+, как одну непрерывной линию или как набор линий. Два
+модификаторы влияют на два аспекта того, как регексп будет интерпретироваться: 
+1) как C<'.'> определяется класс символов и 2) где могут найтись якори C<^>
+и C<$>. Ниже приведены четыре возможных комбинации:
 
 =over 4
 
