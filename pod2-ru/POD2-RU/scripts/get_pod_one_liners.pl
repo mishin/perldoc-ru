@@ -1,3 +1,30 @@
+$perl -MIO::All -E'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'
+/usr/share/perl/5.18/pod/perlrepository.pod 18
+/usr/share/perl/5.18/pod/perlreref.pod 408       +
+/usr/share/perl/5.18/pod/perlrequick.pod 519     +
+/usr/share/perl/5.18/pod/perlrebackslash.pod 664
+/usr/share/perl/5.18/pod/perlreapi.pod 826
+/usr/share/perl/5.18/pod/perlreguts.pod 928
+/usr/share/perl/5.18/pod/perlrecharclass.pod 1081
+/usr/share/perl/5.18/pod/perlre.pod 2614         +-
+/usr/share/perl/5.18/pod/perlretut.pod 2928 512 17%   +-
+
+
+perl -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"
+
+/usr/share/perl/5.18/pod/perlrepository.pod 18
+/usr/share/perl/5.18/pod/perlreref.pod 408   +
+/usr/share/perl/5.18/pod/perlrequick.pod 519 + 
+/usr/share/perl/5.18/pod/perlreftut.pod 526
+/usr/share/perl/5.18/pod/perlrebackslash.pod 664
+/usr/share/perl/5.18/pod/perlref.pod 754
+/usr/share/perl/5.18/pod/perlreapi.pod 826
+/usr/share/perl/5.18/pod/perlreguts.pod 928
+/usr/share/perl/5.18/pod/perlrecharclass.pod 1081
+/usr/share/perl/5.18/pod/perlre.pod 2614
+/usr/share/perl/5.18/pod/perlretut.pod 2928
+
+
 my @lines = map {chomp; $_} $io->slurp;
 
 
