@@ -484,33 +484,32 @@ C<^> и C<$> как якорь в начале и в конце линий в п
 
 =item *
 
-no modifiers (//): Default behavior.  C<'.'> matches any character
-except C<"\n">.  C<^> matches only at the beginning of the string and
-C<$> matches only at the end or before a newline at the end.
+без модификаторов (//): Поведение по умолчанию.  C<'.'> найдет любой символ кроме
+C<"\n">.  C<^> найдет только начало строки и
+C<$> найдет только конец или перед новой строкой в конце.
 
 =item *
 
-s modifier (//s): Treat string as a single long line.  C<'.'> matches
-any character, even C<"\n">.  C<^> matches only at the beginning of
-the string and C<$> matches only at the end or before a newline at the
-end.
+s модификатор (//s): Представляет строку как единую длинную линию.  C<'.'> найдет
+любой символ, даже C<"\n">.  C<^> найдет только начало строки
+и C<$> найдет только конец перед началом новой строки в конце.
 
 =item *
 
-m modifier (//m): Treat string as a set of multiple lines.  C<'.'>
-matches any character except C<"\n">.  C<^> and C<$> are able to match
-at the start or end of I<any> line within the string.
+m модификатор (//m): Представляет строку как набор строк.  C<'.'>
+найдет любой символ, кроме C<"\n">.  C<^> и C<$> могут найти
+начало и конец I<любой> линиии внутри строки.
 
 =item *
 
-both s and m modifiers (//sm): Treat string as a single long line, but
-detect multiple lines.  C<'.'> matches any character, even
-C<"\n">.  C<^> and C<$>, however, are able to match at the start or end
-of I<any> line within the string.
+оба модификатора s и m (//sm): Представляют строку как одну длинную линию, но 
+позволяют найти множество строк.  C<'.'> найдет любой символ, даже
+C<"\n">.  C<^> и C<$>, тем не менее, могут найти начало и конец
+ I<любой>  линии внутри строки.
 
 =back
 
-Here are examples of C<//s> and C<//m> in action:
+Вот примеры C<//s> и C<//m> в действии:
 
     $x = "There once was a girl\nWho programmed in Perl\n";
 
