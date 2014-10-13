@@ -7,6 +7,8 @@ C:\Perl64\lib\pods\perlrecharclass.pod 850 0-
 C:\Perl64\lib\pods\perlreguts.pod 886 20/886     +/-
 C:\Perl64\lib\pods\perlre.pod 2585 0 -
 C:\Perl64\lib\pods\perlretut.pod 2928 512 17%    +-
+perlsecret.ru.pod 959 214 +-
+https://github.com/mishin/perlsecret/blob/master/lib/perlsecret.ru.pod
 
 
 perl -MIO::All -E'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'
