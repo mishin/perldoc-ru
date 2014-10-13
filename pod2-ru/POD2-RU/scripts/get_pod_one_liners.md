@@ -1,4 +1,4 @@
-perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^fp]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"  
+````perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^fp]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"  
 C:\Perl64\lib\pods\perlreref.pod 408             +  
 C:\Perl64\lib\pods\perlrequick.pod 519           +  
 C:\Perl64\lib\pods\perlreapi.pod 706 0           -  
