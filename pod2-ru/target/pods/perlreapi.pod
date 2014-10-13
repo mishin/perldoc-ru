@@ -1,14 +1,16 @@
-=head1 NAME
+=encoding utf8
+
+=head1 НАИМЕНОВАНИЕ
 
 perlreapi - Perl regular expression plugin interface
 
-=head1 ��������
+=head1 ОПИСАНИЕ
 
-As of Perl 5.9.5 there is a new interface for plugging and using
-regular expression engines other than the default one.
+По состоянию на Perl 5.9.5 есть новый интерфейс для подключения и использования
+движка регулярных выражений другого, чем по умолчанию.
 
-Each engine is supposed to provide access to a constant structure of the
-following format:
+Каждый движок должен предоставлять доступ к постоянной структуре
+следующий формат:
 
     typedef struct regexp_engine {
         REGEXP* (*comp) (pTHX_
