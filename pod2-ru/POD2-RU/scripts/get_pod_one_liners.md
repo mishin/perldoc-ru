@@ -1,4 +1,6 @@
-````perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^fp]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"  
+````
+perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^fp]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"  
+```
 C:\Perl64\lib\pods\perlreref.pod 408             +  
 C:\Perl64\lib\pods\perlrequick.pod 519           +  
 C:\Perl64\lib\pods\perlreapi.pod 706 0           -  
@@ -10,8 +12,9 @@ C:\Perl64\lib\pods\perlretut.pod 2928 512 17%    +-
 perlsecret.ru.pod 959 214 +-  
 https://github.com/mishin/perlsecret/blob/master/lib/perlsecret.ru.pod  
 
-
+```
 perl -MIO::All -E'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'
+```
 /usr/share/perl/5.18/pod/perlrepository.pod 18
 /usr/share/perl/5.18/pod/perlreref.pod 408       +
 /usr/share/perl/5.18/pod/perlrequick.pod 519     +
@@ -24,9 +27,9 @@ perl -MIO::All -E'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}gr
 
 
 
-
+```
 perl -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"
-
+```
 /usr/share/perl/5.18/pod/perlrepository.pod 18
 /usr/share/perl/5.18/pod/perlreref.pod 408   +
 /usr/share/perl/5.18/pod/perlrequick.pod 519 + 
@@ -39,7 +42,7 @@ perl -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}gr
 /usr/share/perl/5.18/pod/perlre.pod 2614
 /usr/share/perl/5.18/pod/perlretut.pod 2928
 
-
+```
 my @lines = map {chomp; $_} $io->slurp;
 
 
@@ -51,7 +54,9 @@ perl -I"c:\Users\TOSH\Documents\GitHub\io-all-mishin\lib" -MIO::All -e "printf q
 
 perl -MIO::All -E "$p{$_->name}=map{$l++}$_->slurp for grep{/perlre/}io('.')->all;for $k(sort {$p{$a}<=>$p{$b}} keys %p){say qq{$k $p{$k}}}"
 
+
 cd c:\Users\TOSH\Documents\GitHub\perldoc-ru\pod2-ru\target\pods
 set path_2_lib=c:\Users\TOSH\Documents\GitHub\io-all-mishin\lib
 perl  -I%path_2_lib% -MIO::All -e "printf qq{%s %s\n},$_->name,$_->rows for sort{$a->rows<=>$b->rows}grep{/perlre/}io(q(.))->all"
 
+```
