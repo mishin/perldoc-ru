@@ -1,4 +1,4 @@
-````
+```perl
 perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^fp]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"  
 ```
 C:\Perl64\lib\pods\perlreref.pod 408             +  
@@ -12,7 +12,7 @@ C:\Perl64\lib\pods\perlretut.pod 2928 512 17%    +-
 perlsecret.ru.pod 959 214 +-  
 https://github.com/mishin/perlsecret/blob/master/lib/perlsecret.ru.pod  
 
-```
+```perl
 perl -MIO::All -E'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'
 ```
 /usr/share/perl/5.18/pod/perlrepository.pod 18  
@@ -27,7 +27,7 @@ perl -MIO::All -E'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}gr
 
 
 
-```
+```perl
 perl -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"
 ```
 /usr/share/perl/5.18/pod/perlrepository.pod 18  
@@ -42,7 +42,7 @@ perl -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}gr
 /usr/share/perl/5.18/pod/perlre.pod 2614  
 /usr/share/perl/5.18/pod/perlretut.pod 2928  
 
-```
+```perl
 my @lines = map {chomp; $_} $io->slurp;
 
 
