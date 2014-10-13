@@ -1,22 +1,24 @@
-=head1 NAME
+=encoding utf8
 
-perlrebackslash - Perl Regular Expression Backslash Sequences and Escapes
+=head1 НАИМЕНОВАНИЕ
 
-=head1 ��������
+perlrebackslash - регулярных выражения Perl и последовательности с обратной косой чертой (Backslash Sequences) и Escapes
 
-The top level documentation about Perl regular expressions
-is found in L<perlre>.
+=head1 ОПИСАНИЕ
 
-This document describes all backslash and escape sequences. After
-explaining the role of the backslash, it lists all the sequences that have
-a special meaning in Perl regular expressions (in alphabetical order),
-then describes each of them.
+Документация верхнего уровня о регулярных выражениях Perl 
+находится в L<perlre>.
 
-Most sequences are described in detail in different documents; the primary
-purpose of this document is to have a quick reference guide describing all
-backslash and escape sequences.
+Этот документ описывает все backslash и escape последовательности. После
+объяснения роли обратной косой черты, перечисляются все последовательности, которые имеют
+специальное значение в регулярных выражениях Perl (в алфавитном порядке),
+затем описывается каждая из них.
 
-=head2 The backslash
+Большинство последовательностей описаны в деталях в различных документах; основная
+цель этого документа заключается в кратком справочном руководстве, описывающем все
+backslash и escape последовательности.
+
+=head2 Обратная косая черта (backslash)
 
 In a regular expression, the backslash can perform one of two tasks:
 it either takes away the special meaning of the character following it
@@ -320,7 +322,7 @@ Mnemonic: heI<x>adecimal.
  /\x{263B}/         # Black smiling face.
  /\x{263b}/         # Same, the hex digits A - F are case insensitive.
 
-=head2 ������������
+=head2 Ìîäèôèêàòîðû
 
 A number of backslash sequences have to do with changing the character,
 or characters following them. C<\l> will lowercase the character following
