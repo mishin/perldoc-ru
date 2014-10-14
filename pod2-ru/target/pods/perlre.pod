@@ -98,13 +98,12 @@ X</x>
 
 C</d>, C</u>, C</a>, и C</l>, доступные, начиная с 5.14, называют модификаторами кодировки; они затрагивают семантику кодировки, используемую для регулярного выражения.
 
-The C</d>, C</u>, and C</l> modifiers are not likely to be of much use
-to you, and so you need not worry about them very much.  They exist for
-Perl's internal use, so that complex regular expression data structures
-can be automatically serialized and later exactly reconstituted,
-including all their nuances.  But, since Perl can't keep a secret, and
-there may be rare instances where they are useful, they are documented
-here.
+Модификаторы C</d>, C</u>, и  C</l> вряд ли будут иметь большое применения
+вами, и таким образом, вы не должны о них очень волноваться. Они существуют для
+внутреннего пользования Perl, так, чтобы сложные структуры данных регулярных выражений
+могли быть автоматически преобразованы в последовательную форму и позже точно воссозданы,
+включая все их нюансы. Но, так как Perl не может хранить все в тайне, и
+могут быть редкие случаи, где они полезны, они задокументированы здесь.
 
 The C</a> modifier, on the other hand, may be useful.  Its purpose is to
 allow code that is to work mostly on ASCII data to not have to concern
