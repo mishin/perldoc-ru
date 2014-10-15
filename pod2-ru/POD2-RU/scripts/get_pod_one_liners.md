@@ -9,8 +9,10 @@ C:\Perl64\lib\pods\perlrecharclass.pod 850 30    +/-
 C:\Perl64\lib\pods\perlreguts.pod 886 20/886     +/-  
 C:\Perl64\lib\pods\perlre.pod 2585 107           +/-  
 C:\Perl64\lib\pods\perlretut.pod 2928 512 17%    +-  
-perlsecret.ru.pod 959 282 +-  
+perlsecret.ru.pod 959 345 +-  
 
+
+https://github.com/mishin/perldoc-ru/blob/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md
 https://github.com/mishin/perlsecret/edit/master/lib/perlsecret.ru.pod
 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreref.pod 408             +  
