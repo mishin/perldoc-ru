@@ -20,31 +20,29 @@ backslash и escape последовательности.
 
 =head2 Обратная косая черта (backslash)
 
-In a regular expression, the backslash can perform one of two tasks:
-it either takes away the special meaning of the character following it
-(for instance, C<\|> matches a vertical bar, it's not an alternation),
-or it is the start of a backslash or escape sequence.
+В регулярном выражении обратной косой чертой можно выполнить одну из двух задач:
+Она либо отнимает особое значение символа после него
+(например, C<\|> найдет вертикальную черту, здесь это не знак или),
+или это начало последовательности, обратной косой черты или эскейп (backslash или escape sequence).
 
-The rules determining what it is are quite simple: if the character
-following the backslash is an ASCII punctuation (non-word) character (that is,
-anything that is not a letter, digit, or underscore), then the backslash just
-takes away any special meaning of the character following it.
+Правила, определяющие, что это, довольно просты: eсли символ
+после обратной косой черты является знаком ASCII пунктуации (не слово)  (то есть,
+все, что не является буквой, цифрой или подчеркивания), то обратная косая черта
+просто  снимает любое особое значение символа, после него.
 
-If the character following the backslash is an ASCII letter or an ASCII digit,
-then the sequence may be special; if so, it's listed below. A few letters have
-not been used yet, so escaping them with a backslash doesn't change them to be
-special.  A future version of Perl may assign a special meaning to them, so if
-you have warnings turned on, Perl issues a warning if you use such a
-sequence.  [1].
+Если символ после обратной косой черты ASCII буква или ASCII цифра,
+тогда последовательность может быть специальной; если это так, то она приводится ниже. Есть несколько букв,
+ которые не используются, так что их эскейпинг косой чертой не меняет их специальности. 
+ Будущие версии Perl может назначить особый смысл для них, так что если
+у вас есть включены предупреждения (use warnings), Perl выдает предупреждение, если вы используете такую
+последовательность. [1].
 
-It is however guaranteed that backslash or escape sequences never have a
-punctuation character following the backslash, not now, and not in a future
-version of Perl 5. So it is safe to put a backslash in front of a non-word
-character.
+Однако, гарантируется, что последовательности обратной косой черты или эскейп никогда не будут иметь
+знака препинания после обратной косой черты, не сейчас, не в будущих
+версиях Perl 5. Так что это безопасно поставить косую черту перед несловесным символом.
 
-Note that the backslash itself is special; if you want to match a backslash,
-you have to escape the backslash with a backslash: C</\\/> matches a single
-backslash.
+Обратите внимание, что обратная косая черта является специальным символом; если вы хотите найти обратную косую черту,
+вы должны заэскейпить ее обратной косой чертой:C</\\/> найдет одну косую черту (backslash).
 
 =over 4
 
