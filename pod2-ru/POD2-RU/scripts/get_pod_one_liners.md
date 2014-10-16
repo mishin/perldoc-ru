@@ -4,7 +4,7 @@ perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->s
 C:\Perl64\lib\pods\perlreref.pod 408             +  
 C:\Perl64\lib\pods\perlrequick.pod 519           +  
 C:\Perl64\lib\pods\perlreapi.pod 706 57         +/-  
-C:\Perl64\lib\pods\perlrebackslash.pod 661 50    +/-  
+C:\Perl64\lib\pods\perlrebackslash.pod 661 131    +/-  
 C:\Perl64\lib\pods\perlrecharclass.pod 850 30    +/-   
 C:\Perl64\lib\pods\perlreguts.pod 886 20/886     +/-  
 C:\Perl64\lib\pods\perlre.pod 2585 107           +/-  
