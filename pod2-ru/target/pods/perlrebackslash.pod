@@ -2,7 +2,7 @@
 
 =head1 НАИМЕНОВАНИЕ
 
-perlrebackslash - регулярных выражения Perl и последовательности с обратной косой чертой (Backslash Sequences) и Escapes
+perlrebackslash - Бэкслеш и Эскейп последовательности в регулярных выражениях Perl
 
 =head1 ОПИСАНИЕ
 
