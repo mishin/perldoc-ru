@@ -34,11 +34,11 @@ backslash и escape последовательности.
 тогда последовательность может быть специальной; если это так, то она приводится ниже. Есть несколько букв,
  которые не используются, так что их эскейпинг косой чертой не меняет их специальности. 
  Будущие версии Perl может назначить особый смысл для них, так что если
-у вас есть включены предупреждения (use warnings), Perl выдает предупреждение, если вы используете такую
+у вас есть включенные предупреждения (use warnings), Perl выдает предупреждение, если вы используете такую
 последовательность. [1].
 
 Однако, гарантируется, что последовательности обратной косой черты или эскейп никогда не будут иметь
-знака препинания после обратной косой черты, не сейчас, не в будущих
+знака препинания после обратной косой черты, ни сейчас, ни в будущих
 версиях Perl 5. Так что это безопасно поставить косую черту перед несловесным символом.
 
 Обратите внимание, что обратная косая черта является специальным символом; если вы хотите найти обратную косую черту,
@@ -48,85 +48,82 @@ backslash и escape последовательности.
 
 =item [1]
 
-There is one exception. If you use an alphanumeric character as the
-delimiter of your pattern (which you probably shouldn't do for readability
-reasons), you have to escape the delimiter if you want to match
-it. Perl won't warn then. See also L<perlop/Gory details of parsing
-quoted constructs>.
+Есть одно исключение. Если вы используете алфавитно-цифровой символ как
+разделитель вашего шаблона (который вы, вероятно, не стоит делать по причине удобочитаемости),
+вы должны заэскейпить разделитель, если вы хотите найти его. 
+Тогда Perl не будет предупреждать. Смотрите также L<perlop/Подробности разбора (парсинга) конструкций в кавычках>.
 
 =back
 
 
-=head2 All the sequences and escapes
+=head2 Все последовательности и эскейпы
 
-Those not usable within a bracketed character class (like C<[\da-z]>) are marked
-as C<Not in [].>
+Тех, что не используются в пределах класса символов в квадратных скобосках (таких как C<[\da-z]>) помечаются
+как C<Не в [].>
 
- \000              Octal escape sequence.  See also \o{}.
- \1                Absolute backreference.  Not in [].
- \a                Alarm or bell.
- \A                Beginning of string.  Not in [].
- \b                Word/non-word boundary. (Backspace in []).
- \B                Not a word/non-word boundary.  Not in [].
+ \000              Восьмеричная escape-последовательность.  Смотри также \o{}.
+ \1                Абсолютная обратная ссылка.  Не в [].
+ \a                Будильник или Звонок.
+ \A                Начало строки.  Не в [].
+ \b                Граница слова/не-слова. (Обратный слеш в []).
+ \B                Не граница слова/не-слова. Не в [].
  \cX               Control-X.
- \C                Single octet, even under UTF-8.  Not in [].
- \d                Character class for digits.
- \D                Character class for non-digits.
- \e                Escape character.
- \E                Turn off \Q, \L and \U processing.  Not in [].
- \f                Form feed.
- \F                Foldcase till \E.  Not in [].
- \g{}, \g1         Named, absolute or relative backreference.
-                   Not in [].
- \G                Pos assertion.  Not in [].
- \h                Character class for horizontal whitespace.
- \H                Character class for non horizontal whitespace.
- \k{}, \k<>, \k''  Named backreference.  Not in [].
- \K                Keep the stuff left of \K.  Not in [].
- \l                Lowercase next character.  Not in [].
- \L                Lowercase till \E.  Not in [].
- \n                (Logical) newline character.
- \N                Any character but newline.  Not in [].
- \N{}              Named or numbered (Unicode) character or sequence.
- \o{}              Octal escape sequence.
- \p{}, \pP         Character with the given Unicode property.
- \P{}, \PP         Character without the given Unicode property.
- \Q                Quote (disable) pattern metacharacters till \E.  Not
-                   in [].
- \r                Return character.
- \R                Generic new line.  Not in [].
- \s                Character class for whitespace.
- \S                Character class for non whitespace.
- \t                Tab character.
- \u                Titlecase next character.  Not in [].
- \U                Uppercase till \E.  Not in [].
- \v                Character class for vertical whitespace.
- \V                Character class for non vertical whitespace.
- \w                Character class for word characters.
- \W                Character class for non-word characters.
- \x{}, \x00        Hexadecimal escape sequence.
- \X                Unicode "extended grapheme cluster".  Not in [].
- \z                End of string.  Not in [].
- \Z                End of string.  Not in [].
+ \C                Один октет, даже под UTF-8.  Не в [].
+ \d                Класс символов для цифр.
+ \D                Класс символов для не-цифр.
+ \e                Символ эскейпа.
+ \E                Выключает обоработку \Q, \L и \U. Не в [].
+ \f                Перевод формата (Formfeed).
+ \F                Возвращает регистронезависимое представление (Foldcase) до \E.  Не в [].
+ \g{}, \g1         Именованная, абсолютная или относительная обратная ссылка. Не в [].
+ \G                Найдет, где остановился предыдущий m//g Позиция поиска в регекспе (Pos).  Не в [].
+ \h                Класс символов для горизонтальных пробелов.
+ \H                Класс символов для не-горизонтальных пробелов.
+ \k{}, \k<>, \k''  Именованная обратная ссылка. Не в [].
+ \K                Сохраняет найденный материал слева от \K, не включая его в $&. Не в [].
+ \l                Следующий символ в нижнем регистре.  Не в [].
+ \L                Нижний регистр до \E.  Не в [].
+ \n                (Логически) символ новой строки.
+ \N                Любой символ, кроме символа новой строки.  Не в [].
+ \N{}              Именованный или номерной символ (Юникода) или последовательности.
+ \o{}              Восьмеричная эскейп-последовательность.
+ \p{}, \pP         Символ с данным Юникодным свойством.
+ \P{}, \PP         Символ без данного Юникодного свойства.
+ \Q                Квотирует (отключает) действие метасиволов в шаблоне до \E.  Не в [].
+ \r                Символ возврата каретки.
+ \R                Универсальная новая строка           (?>\v|\x0D\x0A)  Не в [].
+ \s                Класс символов для пробелов.
+ \S                Класс символов для не-пробелов.
+ \t                Символ табуляции.
+ \u                Следующий символ в верхнем регистре.  Не в [].
+ \U                Верхний регистр до \E.  Не в [].
+ \v                Класс символов для вертикальных пробелов.
+ \V                Класс символов для не-вертикальных пробелов.
+ \w                Класс символов для слова.
+ \W                Класс символов для не-слова.
+ \x{}, \x00        Шестнадцатеричная эскейп-последовательность.
+ \X                Найдет Юникодный расширенный графема кластер ("extended grapheme cluster").  Не в [].
+ \z                Конец строки.  Не в [].
+ \Z                Конец строки.  Не в [].
 
-=head2 Character Escapes
+=head2 Эскейп символы
 
-=head3  Fixed characters
+=head3  Фиксированные знаки
 
-A handful of characters have a dedicated I<character escape>. The following
-table shows them, along with their ASCII code points (in decimal and hex),
-their ASCII name, the control escape on ASCII platforms and a short
-description.  (For EBCDIC platforms, see L<perlebcdic/OPERATOR DIFFERENCES>.)
+У горстки знаков есть специальные I<эскейп символы>. Следующая
+таблица показывает их, наряду с их кодами ASCII (в десятичном и шестнадцатиричном виде),
+их ASCII имя , контрол эскейп на ASCII платформах  и короткое
+описание. (Для платформ расширенного двоично-десятичного кода (EBCDIC) см. L<perlebcdic/ОПЕРАТОР РАЗЛИЧИЯ>.)
 
  Seq.  Code Point  ASCII   Cntrl   Description.
        Dec    Hex
-  \a     7     07    BEL    \cG    alarm or bell
-  \b     8     08     BS    \cH    backspace [1]
-  \e    27     1B    ESC    \c[    escape character
-  \f    12     0C     FF    \cL    form feed
-  \n    10     0A     LF    \cJ    line feed [2]
-  \r    13     0D     CR    \cM    carriage return
-  \t     9     09    TAB    \cI    tab
+  \a     7     07    BEL    \cG    будильник или звонок.
+  \b     8     08     BS    \cH    обратный слеш [1]
+  \e    27     1B    ESC    \c[    символ эскейпа
+  \f    12     0C     FF    \cL    перевод формата
+  \n    10     0A     LF    \cJ    перевод строки [2]
+  \r    13     0D     CR    \cM    возврат каретки
+  \t     9     09    TAB    \cI    табуляция
 
 =over 4
 
