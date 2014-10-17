@@ -10,7 +10,7 @@ C:\Perl64\lib\pods\perlreguts.pod 886 20/886     +/-
 C:\Perl64\lib\pods\perlre.pod 2585 107           +/-  
 C:\Perl64\lib\pods\perlretut.pod 2928 512 17%    +-  
 perlsecret.ru.pod 959 400 +-  
-C:\Perl64\lib\pods\perlunicode.pod 1857 23 +/-
+C:\Perl64\lib\pods\perlunicode.pod 1857 49 +/-
 
 perlunicode.pod
 https://github.com/mishin/perldoc-ru/blob/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md
