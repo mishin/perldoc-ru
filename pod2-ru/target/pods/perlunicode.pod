@@ -21,20 +21,21 @@ L<perluniintro>, перед чтением этого справочного д�
 
 =over 4
 
-=item Safest if you "use feature 'unicode_strings'"
+=item Самое безопасное, если вы используете "use feature 'unicode_strings'"
 
-In order to preserve backward compatibility, Perl does not turn
-on full internal Unicode support unless the pragma
-C<use feature 'unicode_strings'> is specified.  (This is automatically
-selected if you use C<use 5.012> or higher.)  Failure to do this can
-trigger unexpected surprises.  See L</The "Unicode Bug"> below.
+Для того чтобы сохранить обратную совместимость, Perl не включает 
+полную внутреннюю поддержку Юникода, если не указана прагма
+C<use feature 'unicode_strings'>. (Она автоматически 
+выбрается, если вы используете C<use 5.012> или выше.) 
+Неспособность сделать это может 
+вызвать неожиданные сюрпризы. Смотреть L</The "Баг Юникода"> ниже.
 
-This pragma doesn't affect I/O.  Nor does it change the internal
-representation of strings, only their interpretation.  There are still
-several places where Unicode isn't fully supported, such as in
-filenames.
+Эта прагма не влияет на операции ввода-вывода. Ни меняет внутреннее
+представление строк, только их интерпретацию. Есть еще
+несколько мест, где Юникод не полностью поддерживается, например, в
+именах файлов.
 
-=item Input and Output Layers
+=item Входные и выходные Слои (Layers)
 
 Perl knows when a filehandle uses Perl's internal Unicode encodings
 (UTF-8, or UTF-EBCDIC if in EBCDIC) if the filehandle is opened with
