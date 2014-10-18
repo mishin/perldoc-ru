@@ -28,7 +28,7 @@ https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.p
 
 ```perl
 perl -MIO::All -E'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'
-```
+```,
 /usr/share/perl/5.18/pod/perlrepository.pod 18  
 /usr/share/perl/5.18/pod/perlreref.pod 408       +  
 /usr/share/perl/5.18/pod/perlrequick.pod 519     +  
