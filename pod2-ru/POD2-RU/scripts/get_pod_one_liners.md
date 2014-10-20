@@ -13,7 +13,8 @@ perlsecret.ru.pod 959 450 +-
 C:\Perl64\lib\pods\perlunicode.pod 1857 49 +/-
 
 perlunicode.pod
-https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md
+view https://github.com/mishin/perldoc-ru/blob/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md
+edit https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md
 https://github.com/mishin/perlsecret/edit/master/lib/perlsecret.ru.pod
 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlunicode.pod 1857 23 +/-
