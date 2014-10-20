@@ -9,7 +9,7 @@ C:\Perl64\lib\pods\perlrecharclass.pod 850 78    +/-
 C:\Perl64\lib\pods\perlreguts.pod 886 20/886     +/-  
 C:\Perl64\lib\pods\perlre.pod 2585 107           +/-  
 C:\Perl64\lib\pods\perlretut.pod 2928 512 17%    +-  
-perlsecret.ru.pod 959 450 +-  
+perlsecret.ru.pod 959 959 +  
 C:\Perl64\lib\pods\perlunicode.pod 1857 49 +/-
 
 perlunicode.pod
