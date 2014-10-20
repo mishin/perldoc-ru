@@ -34,62 +34,61 @@ usage in detail. If you want to learn about the basics of Perl's
 regular expressions, see L<perlre>. And if you want to replace the
 regex engine with your own, see L<perlreapi>.
 
-=head1 OVERVIEW
+=head1 ОБЗОР
 
-=head2 A quick note on terms
+=head2 Небольшое примечание о терминах
 
-There is some debate as to whether to say "regexp" or "regex". In this
-document we will use the term "regex" unless there is a special reason
-not to, in which case we will explain why.
+Существует некоторая дискуссия о том, следует ли сказать "регексп" или "регекс". В этом
+документе, мы будем использовать термин "регекс", пока не будет особой причины
+ для другого, в этом случае мы будем объяснять почему.
 
-When speaking about regexes we need to distinguish between their source
-code form and their internal form. In this document we will use the term
-"pattern" when we speak of their textual, source code form, and the term
-"program" when we speak of their internal representation. These
-correspond to the terms I<S-regex> and I<B-regex> that Mark Jason
-Dominus employs in his paper on "Rx" ([1] in L</REFERENCES>).
+Когда мы говорим о регексах нам нужно различать их источник
+код формы и их внутреннюю форму. В настоящем документе мы будем использовать термин
+"паттерн", когда мы говорим о их текстовой форме исходного кода и термин
+"программа", когда мы говорим о их внутреннем представлении. Это
+соответствует условиям,  I<S-регкс> и I<B-регкс> что Марк Джесон
+Доминус использует в своей статье о  "Rx"  ([1] в L</REFERENCES>).
 
-=head2 What is a regular expression engine?
+=head2 Что такое движок регулярных выражений?
 
-A regular expression engine is a program that takes a set of constraints
-specified in a mini-language, and then applies those constraints to a
-target string, and determines whether or not the string satisfies the
-constraints. See L<perlre> for a full definition of the language.
+Движком регулярных выражений является программа, которая принимает набор ограничений
+в мини-языке, а затем применяет эти ограничения на
+целевую строку и определяет, удовлетворяет ли строка
+этим ограничениям. Смотрите L<perlre> для полного определения этого языка.
 
-In less grandiose terms, the first part of the job is to turn a pattern into
-something the computer can efficiently use to find the matching point in
-the string, and the second part is performing the search itself.
+В менее грандиозных терминах первая часть работы состоит из превращения паттерна в
+что-то, что компьютер можно эффективно использовать для поиска соответствия позиции в
+строке, а вторая часть выполняет сам поиск.
 
-To do this we need to produce a program by parsing the text. We then
-need to execute the program to find the point in the string that
-matches. And we need to do the whole thing efficiently.
+Для этого нам необходимо подготовить программу для синтаксического анализа текста. Затем нам
+необходимо выполнить программу для нахождения позиции в строке.
+И мы должны сделать все это эффективно.
 
-=head2 Structure of a Regexp Program
+=head2 Структура Ререксп программы
 
-=head3 High Level
+=head3 Верхний уровень
 
-Although it is a bit confusing and some people object to the terminology, it
-is worth taking a look at a comment that has
-been in F<regexp.h> for years:
+Хотя это немного запутывающее, и некоторые люди возражают против терминологии, но
+стоит посмотреть на комментарий, который писался в F<regexp.h> на протяжении лет:
 
-I<This is essentially a linear encoding of a nondeterministic
-finite-state machine (aka syntax charts or "railroad normal form" in
-parsing technology).>
+I<Это по существу линейное кодирование недетерминированного
+конечного автомата (типа синтаксической диаграммы или or "железнодорожная нормальная форма" в технологии
+ парсинга).>
 
-The term "railroad normal form" is a bit esoteric, with "syntax
-diagram/charts", or "railroad diagram/charts" being more common terms.
-Nevertheless it provides a useful mental image of a regex program: each
-node can be thought of as a unit of track, with a single entry and in
-most cases a single exit point (there are pieces of track that fork, but
-statistically not many), and the whole forms a layout with a
-single entry and single exit point. The matching process can be thought
-of as a car that moves along the track, with the particular route through
-the system being determined by the character read at each possible
-connector point. A car can fall off the track at any point but it may
-only proceed as long as it matches the track.
+Термин "железнодорожная нормальная форма" немного эзотеричен, с "синтаксисом схем/диаграмм", 
+или "железнодорожных диаграмм/графиков", будучи более общих терминов.
+Тем не менее он обеспечивает полезный мысленный образ регекс программы: каждый
+узел можно рассматривать как единицу трассы, с одним входом и в
+большинстве случаев одной точкой выхода (есть части трассы, которые ветвятся, но
+статистически их не много), и весь образует макет с
+одним входом и одной точкой выхода. Процесс сопоставления можно рассматривать
+,как автомобиль, который движется вдоль дорожки, с конкретным маршрутом через
+системы, определяемые характером чтения каждой возможной
+точки соединения. Автомобиль может упасть с трассы в любом пункте, 
+но он может продолжать двигаться, пока он попадает в след.
 
-Thus the pattern C</foo(?:\w+|\d+|\s+)bar/> can be thought of as the
-following chart:
+Таким образом шаблон C</foo(?:\w+|\d+|\s+)bar/> можно рассматривать как
+следующую диаграмму:
 
                       [start]
                          |
@@ -105,10 +104,10 @@ following chart:
                          |
                        [end]
 
-The truth of the matter is that perl's regular expressions these days are
-much more complex than this kind of structure, but visualising it this way
-can help when trying to get your bearings, and it matches the
-current implementation pretty closely.
+Правда заключается в том, что регулярные выражения Perl в наши дни 
+гораздо сложнее, чем такого рода структуры, цель визуализация заключается в том, чтобы
+ помочь при попытке получить понимания поведения, и он совпадает 
+ с текущей реализацией довольно близко.
 
 To be more precise, we will say that a regex program is an encoding
 of a graph. Each node in the graph corresponds to part of
