@@ -21,6 +21,9 @@ lib/POD2/RU/perlrebackslash.pod
 lib/POD2/RU/perlreapi.pod
 lib/POD2/RU/perlre.pod
 lib/POD2/RU/perlsecret.pod
+scripts/get_pod_one_liners.md
+scripts/encode.pl
+scripts/test_pod2ru_setup.pl
 Makefile.PL
 MANIFEST			This list of files
 META.json
