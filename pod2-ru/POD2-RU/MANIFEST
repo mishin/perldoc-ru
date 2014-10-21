@@ -13,6 +13,14 @@ lib/POD2/RU/perlrun.pod
 lib/POD2/RU/perlstyle.pod
 lib/POD2/RU/perlrequick.pod
 lib/POD2/RU/perlreref.pod
+lib/POD2/RU/perlunicode.pod
+lib/POD2/RU/perlretut.pod
+lib/POD2/RU/perlreguts.pod
+lib/POD2/RU/perlrecharclass.pod
+lib/POD2/RU/perlrebackslash.pod
+lib/POD2/RU/perlreapi.pod
+lib/POD2/RU/perlre.pod
+lib/POD2/RU/perlsecret.pod
 Makefile.PL
 MANIFEST			This list of files
 META.json

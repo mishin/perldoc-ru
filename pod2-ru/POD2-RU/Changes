@@ -1,5 +1,9 @@
 Revision history for perl module POD2::RU
 
+5.18.0.1.14  October 21, 2014
+ 
+           * Added translation perlsecret.pod
+
 5.18.0.1.13  October 1, 2014
  
            * Added translation perlreref.pod

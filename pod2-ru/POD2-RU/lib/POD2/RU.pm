@@ -5,25 +5,34 @@ use warnings;
 use base 'Exporter';
 use base 'POD2::Base';
 
-our $VERSION = '5.18.0.1.13';
+our $VERSION = '5.18.0.1.14';
 
 our @EXPORT = qw(print_pod print_pods);
 
 # Versions list
 sub pod_info {
     {
-        perl       => '5.18.0.1',
-        perlintro  => '5.18.0.1',
-        perlrun    => '5.18.0.1',
-        a2p        => '5.18.0.1',
-        perlbook   => '5.18.0.1',
-        perldoc    => '5.18.0.1',
-        perlpragma => '5.18.0.1',
-        perlstyle  => '5.18.0.1',
-        perlcheat  => '5.18.0.1',
+        perl        => '5.18.0.1',
+        perlintro   => '5.18.0.1',
+        perlrun     => '5.18.0.1',
+        a2p         => '5.18.0.1',
+        perlbook    => '5.18.0.1',
+        perldoc     => '5.18.0.1',
+        perlpragma  => '5.18.0.1',
+        perlstyle   => '5.18.0.1',
+        perlcheat   => '5.18.0.1',
         perlnewmod  => '5.18.0.1',
-        perlrequick  => '5.18.0.1',
-        perlreref  => '5.18.0.1',
+        perlrequick => '5.18.0.1',
+        perlreref   => '5.18.0.1',
+        perlunicode   => '5.18.0.1',
+        perlretut   => '5.18.0.1',
+        perlreguts   => '5.18.0.1',
+        perlrecharclass   => '5.18.0.1',
+        perlrebackslash   => '5.18.0.1',
+        perlreapi   => '5.18.0.1',
+        perlre   => '5.18.0.1',
+        perlsecret   => '5.18.0.1',
+        perlreapi   => '5.18.0.1',
     };
 }
 
@@ -35,7 +44,7 @@ sub search_perlfunc_re {
 # Print information about a pod file
 sub print_pod {
     my $self = shift;
-
+    prepare_encoding_console();
     my @args = @_ ? @_ : @ARGV;
 
     unless ( ref $self ) {
@@ -67,13 +76,24 @@ sub print_pod {
 # Print list of translated pods
 sub print_pods {
     my $self = @_ ? shift : __PACKAGE__;
-
+    prepare_encoding_console();
     $self->SUPER::print_pods;
+}
+
+sub prepare_encoding_console {
+    use Encode::Locale qw(decode_argv);
+    if (-t) {
+        binmode( STDIN,  ":encoding(console_in)" );
+        binmode( STDOUT, ":encoding(console_out)" );
+        binmode( STDERR, ":encoding(console_out)" );
+    }
+    Encode::Locale::decode_argv();
 }
 
 1;
 
 __END__
+
 =encoding utf8
 
 =head1 ИМЯ
