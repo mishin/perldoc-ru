@@ -105,14 +105,14 @@ C</d>, C</u>, C</a>, и C</l>, доступные, начиная с 5.14, на�
 включая все их нюансы. Но, так как Perl не может хранить все в тайне, и
 могут быть редкие случаи, где они полезны, они задокументированы здесь.
 
-The C</a> modifier, on the other hand, may be useful.  Its purpose is to
-allow code that is to work mostly on ASCII data to not have to concern
-itself with Unicode.
+Модификатор C</a>, с другой стороны, может быть полезным. Его цель заключается в том, что он
+позволяет коду работать главным образом на данных ASCII, чтобы не иметь проблем
+с Unicode.
 
-Briefly, C</l> sets the character set to that of whatever B<L>ocale is in
-effect at the time of the execution of the pattern match.
+Кратко, C</l> задает кодировку, которая будет работать в любой
+<L>ocale во время выполнения поиска по шаблону.
 
-C</u> sets the character set to B<U>nicode.
+C</u> задает кодировку B<Ю>никод.
 
 C</a> also sets the character set to Unicode, BUT adds several
 restrictions for B<A>SCII-safe matching.
