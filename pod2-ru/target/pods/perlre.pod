@@ -114,11 +114,11 @@ C</d>, C</u>, C</a>, и C</l>, доступные, начиная с 5.14, на�
 
 C</u> задает кодировку B<Ю>никод.
 
-C</a> also sets the character set to Unicode, BUT adds several
-restrictions for B<A>SCII-safe matching.
+C</a> также устанавливает набор символов для Юникода, но добавляет несколько
+ограничений B<A>SCII-безопасного поиска.
 
-C</d> is the old, problematic, pre-5.14 B<D>efault character set
-behavior.  Its only use is to force that old behavior.
+C</d> является старым, проблематичным, перед-5.14 B<Н>бором по умолчанию символов
+поведение. Используется только для этого старого поведения.
 
 At any given time, exactly one of these modifiers is in effect.  Their
 existence allows Perl to keep the originally compiled behavior of a
