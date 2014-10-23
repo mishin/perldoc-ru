@@ -17,15 +17,22 @@ view https://github.com/mishin/perldoc-ru/blob/master/pod2-ru/POD2-RU/scripts/ge
 edit https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md  
 https://github.com/mishin/perlsecret/edit/master/lib/perlsecret.ru.pod  
   
-https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlunicode.pod 1857 23 +/-
-https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreref.pod 408             +  
-https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrequick.pod 519           +  
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlunicode.pod 1857 23 +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreapi.pod 706 57           +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebackslash.pod 661 22 +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrecharclass.pod 850 30 +/-   
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreguts.pod 886 20/886     +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlre.pod 2585 107 +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.pod 2928 512 17%    +/-  
+
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebguts.pod 10             +/-  
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebug.pod 10             +/-  
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebtut.pod 10             +/-  
+
+ready
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreref.pod 408             +  
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrequick.pod 519           +  
+
 
 ```perl
 perl -MIO::All -E'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^f]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'
