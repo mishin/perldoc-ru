@@ -1,14 +1,16 @@
-=head1 NAME
+=encoding utf8
 
-perldebguts - Guts of Perl debugging 
+=head1 НАИМЕНОВАНИЕ
 
-=head1 ��������
+perldebguts - Внутренности (Guts - кишки) отладки Perl
 
-This is not L<perldebug>, which tells you how to use
-the debugger.  This manpage describes low-level details concerning
-the debugger's internals, which range from difficult to impossible
-to understand for anyone who isn't incredibly intimate with Perl's guts.
-Caveat lector.
+=head1 ОПИСАНИЕ
+
+Это не L<perldebug>, который говорит вам, как пользоваться
+отладчиком. Это руководство описывает низкоуровневые детали относительно
+внутренностей отладчика , которые варьируются от стадии трудных до невозможно
+понять, для тех, кто не невероятно глубоко хочет посмотреть на Perl кишки.
+Предостережение лектора.
 
 =head1 Debugger Internals
 
@@ -1019,3 +1021,11 @@ L<perlrun>
 L<re>,
 and
 L<Devel::DProf>.
+
+=head1 ПЕРЕВОДЧИКИ
+ 
+=over
+ 
+=item * Николай Мишин C<< <mishin@cpan.org> >>
+ 
+=back
