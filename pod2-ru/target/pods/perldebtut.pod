@@ -1,17 +1,18 @@
-=head1 NAME
+=encoding utf8
 
-perldebtut - Perl debugging tutorial
+=head1 НАИМЕНОВАНИЕ
 
-=head1 ��������
+perldebtut - Учебник по отладке в Perl
 
-A (very) lightweight introduction in the use of the perl debugger, and a
-pointer to existing, deeper sources of information on the subject of debugging
-perl programs.  
+=head1 ОПИСАНИЕ
 
-There's an extraordinary number of people out there who don't appear to know
-anything about using the perl debugger, though they use the language every
-day.  
-This is for them.  
+(Очень) упрощенный введение в использование perl отладчика и
+указатель на существующие, более подробные источники информации по вопросу отладки
+программы на Perl.
+
+Существует чрезвычайно большое число людей, которые не представляют себе ничего
+об отладчике perl, хотя они используют язык каждый день.
+Это для них.
 
 
 =head1 use strict
@@ -720,3 +721,12 @@ Hugo van der Sanden <hv@crypt0.demon.co.uk>
 
 Peter Scott <Peter@PSDT.com>
 
+
+
+=head1 ПЕРЕВОДЧИКИ
+ 
+=over
+ 
+=item * Николай Мишин C<< <mishin@cpan.org> >>
+ 
+=back
