@@ -6,56 +6,56 @@ perldebtut - Учебник по отладке в Perl
 
 =head1 ОПИСАНИЕ
 
-Это очень упрощенное введение в использование perl отладчика и
-указатель на существующие, более подробные источники информации по вопросу отладки
-программы на Perl.
+Это очень упрощенное введение в использование отладчика perl  и
+указатель на существующие, более подробные источники информации по вопросам отладки
+программ на Perl.
 
 Существует чрезвычайно большое число людей, которые не представляют себе ничего
-об отладчике perl, хотя они используют язык каждый день.
+об отладчике perl, хотя они используют этот язык каждый день.
 Это для них.
 
 
 =head1 use strict
 
-First of all, there's a few things you can do to make your life a lot more
-straightforward when it comes to debugging perl programs, without using the
-debugger at all.  To demonstrate, here's a simple script, named "hello", with
-a problem:
+Во-первых есть несколько вещей, которые вы можете сделать, чтобы сделать вашу жизнь намного больше
+простой, когда дело доходит до отладки perl программ, без использования
+отладчика вообще. Чтобы это продемонстрировать, вот простой скрипт с именем "hello",
+с проблемой:
 
 	#!/usr/bin/perl
 
-	$var1 = 'Hello World'; # always wanted to do that :-)
+	$var1 = 'Hello World'; #всегда хотел сделать это:-)
 	$var2 = "$varl\n";
 
 	print $var2; 
 	exit;
 
-While this compiles and runs happily, it probably won't do what's expected,
-namely it doesn't print "Hello World\n" at all;  It will on the other hand do
-exactly what it was told to do, computers being a bit that way inclined.  That
-is, it will print out a newline character, and you'll get what looks like a
-blank line.  It looks like there's 2 variables when (because of the typo)
-there's really 3:
+Хотя это компилируется и выполняет успешно, он вероятно не будет делать то, что ожидается,
+а именно он совсем не печатает  "Hello World\n"; c другой стороны она делает
+именно это было приказано, компьютеры, обычно выполняют биты, которые им передают.
+Скрипт напечатает знак новой строки, и вы получите то, что выглядит как
+пустая строка. Здесь мы видими 2 переменные, тогда как их (из-за опечатки)
+на самом деле 3:
 
 	$var1 = 'Hello World';
 	$varl = undef;
 	$var2 = "\n";
 
-To catch this kind of problem, we can force each variable to be declared
-before use by pulling in the strict module, by putting 'use strict;' after the
-first line of the script.
+Чтобы поймать такого рода проблемы, мы должны заставить объявить каждую переменную
+перед использованием, поставив в начале модуль strict, поставив 'use strict;' после
+первая строки скрипта.
 
-Now when you run it, perl complains about the 3 undeclared variables and we
-get four error messages because one variable is referenced twice:
-
+Теперь, когда вы запускаете его, perl жалуется о 3-х необъявленных переменных и мы
+получим четыре сообщения об ошибках, потому что одна переменная используется дважды:
+	
  Global symbol "$var1" requires explicit package name at ./t1 line 4.
  Global symbol "$var2" requires explicit package name at ./t1 line 5.
  Global symbol "$varl" requires explicit package name at ./t1 line 5.
  Global symbol "$var2" requires explicit package name at ./t1 line 7.
  Execution of ./hello aborted due to compilation errors.     
 
-Luvverly! and to fix this we declare all variables explicitly and now our
-script looks like this:	
+Супер! и чтобы это исправить мы объявим все переменные явно и теперь наш
+сценарий выглядит следующим образом:
 
 	#!/usr/bin/perl
 	use strict;
@@ -67,7 +67,7 @@ script looks like this:
 	print $var2; 
 	exit;
 
-We then do (always a good idea) a syntax check before we try to run it again:
+Потом мы делаем (всегда хорошая идея) проверку синтаксиса, прежде чем мы попытаемся запустить его снова:
 
 	> perl -c hello
 	hello syntax OK 
