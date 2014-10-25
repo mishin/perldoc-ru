@@ -1,7 +1,7 @@
 ```perl
 perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^fp]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"  
 ```
-https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreguts.pod 886 20/886     +/-  
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreguts.pod 886 112/886     +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlre.pod 2585 107 +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.pod 2928 512 17%    +/-  
 
