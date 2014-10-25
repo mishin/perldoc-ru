@@ -15,24 +15,13 @@ perlreguts - Описание машины регулярных выражени
 мест.
 
 B<ВНИМАНИЕ!> должно быть четко понято, что поведение и
-структуры, обсуждаемые в этом представлении состояния движка так как
+структуры, обсуждаемые в этом представлении состояние движка представлены так, как
 автор понимает это на момент написания. 
-Это B <NOT>API
-определение, это чисто внутреннее руководство для тех, кто хочет взломать
-regex двигателя, или понять, как работает двигатель regex. Читатели
-Этот документ, как ожидается, понять синтаксис регулярных выражений perl и его
-использование в деталях. Если вы хотите узнать об основах Perl
-регулярные выражения, см L <perlre>. И если вы хотите заменить
-engine Regex с вашим собственным, см L <perlreapi>.
-B<NOTICE!> It should be clearly understood that the behavior and
-structures discussed in this represents the state of the engine as the
-author understood it at the time of writing. It is B<NOT> an API
-definition, it is purely an internals guide for those who want to hack
-the regex engine, or understand how the regex engine works. Readers of
-this document are expected to understand perl's regex syntax and its
-usage in detail. If you want to learn about the basics of Perl's
-regular expressions, see L<perlre>. And if you want to replace the
-regex engine with your own, see L<perlreapi>.
+Это B<Не> определение API, это чисто внутреннее руководство для тех, кто хочет хачить
+ (программировать) регекс движок, или хочет понять, как он работает. Читатели
+этот документа, как ожидается, понимают синтаксис регулярных выражений perl и 
+используют его в деталях. Если вы хотите узнать об основах регулярных выражений Perl
+, см L<perlre>. И, если вы хотите заменить регекс движоксвоим собственным, см L<perlreapi>.
 
 =head1 ОБЗОР
 
@@ -46,7 +35,7 @@ regex engine with your own, see L<perlreapi>.
 код формы и их внутреннюю форму. В настоящем документе мы будем использовать термин
 "паттерн", когда мы говорим о их текстовой форме исходного кода и термин
 "программа", когда мы говорим о их внутреннем представлении. Это
-соответствует условиям,  I<S-регкс> и I<B-регкс> что Марк Джесон
+соответствует условиям,  I<S-регкс> и I<B-регкс>, что Марк Джесон
 Доминус использует в своей статье о  "Rx"  ([1] в L</REFERENCES>).
 
 =head2 Что такое движок регулярных выражений?
