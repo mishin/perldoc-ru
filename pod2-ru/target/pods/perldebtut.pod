@@ -32,7 +32,7 @@ perldebtut - Учебник по отладке в Perl
 
 Хотя это компилируется и выполняет успешно, он вероятно не будет делать то, что ожидается,
 а именно он совсем не печатает  "Hello World\n"; c другой стороны она делает
-именно это было приказано, компьютеры, обычно выполняют биты, которые им передают.
+именно то, что было приказано, компьютеры, обычно выполняют биты, которые им передают.
 Скрипт напечатает знак новой строки, и вы получите то, что выглядит как
 пустая строка. Здесь мы видими 2 переменные, тогда как их (из-за опечатки)
 на самом деле 3:
@@ -43,7 +43,7 @@ perldebtut - Учебник по отладке в Perl
 
 Чтобы поймать такого рода проблемы, мы должны заставить объявить каждую переменную
 перед использованием, поставив в начале модуль strict, поставив 'use strict;' после
-первая строки скрипта.
+первой строки скрипта.
 
 Теперь, когда вы запускаете его, perl жалуется о 3-х необъявленных переменных и мы
 получим четыре сообщения об ошибках, потому что одна переменная используется дважды:
@@ -72,15 +72,14 @@ perldebtut - Учебник по отладке в Perl
 	> perl -c hello
 	hello syntax OK 
 
-And now when we run it, we get "\n" still, but at least we know why.  Just
-getting this script to compile has exposed the '$varl' (with the letter 'l')
-variable, and simply changing $varl to $var1 solves the problem.
+И теперь когда мы запускаем его, мы получаем «\n», но мы, по крайней мере, знаем почему. Просто
+полученный скрипт во время компиляции выявил переменную '$varl' (с буквы 'l')
+, которая просто меняется $varl на $var1 и это решает проблему.
 
+=head1 Смотрим на данные -w и v
 
-=head1 Looking at data and -w and v
-
-Ok, but how about when you want to really see your data, what's in that
-dynamic variable, just before using it?
+Хорошо, но как насчет того, когда вы действительно хотите увидеть ваши данные, что там, в этой
+динамической переменной перед тем, как ее использовать?
 
 	#!/usr/bin/perl 
 	use strict;
@@ -97,29 +96,28 @@ dynamic variable, just before using it?
 	print "$data{$key}\n";
 	exit;                               
 
-Looks OK, after it's been through the syntax check (perl -c scriptname), we
-run it and all we get is a blank line again!  Hmmmm.
+Выглядит хорошо, после того, как он был проведен через проверку синтаксиса (perl -c scriptname), мы
+pапустили его и получаем пустую строку снова! Хм-м.
 
-One common debugging approach here, would be to liberally sprinkle a few print
-statements, to add a check just before we print out our data, and another just
-after:
+Один общий подход для отладки такой, чтобы использовать выражение print 
+для вывода тех переменных, которые мы хотим проверить перед тем как 
+мы выводи наши данные, и теперь после:
 
 	print "All OK\n" if grep($key, keys %data);
 	print "$data{$key}\n";
 	print "done: '$data{$key}'\n";
 
-And try again:
+Попробуем еще раз:
 
 	> perl data
 	All OK     
 
 	done: ''
 
-After much staring at the same piece of code and not seeing the wood for the
-trees for some time, we get a cup of coffee and try another approach.  That
-is, we bring in the cavalry by giving perl the 'B<-d>' switch on the command
-line:
-
+После долгих минут взгляда на этоте кусок кода и не видя леса за деревьями
+некоторое время, мы идем питькофе и попробуем другой подход. Мы используем 
+ кавалерию, давая perl ключ командной строки 'B<-d>':
+	
 	> perl -d data 
 	Default die handler restored.
 
