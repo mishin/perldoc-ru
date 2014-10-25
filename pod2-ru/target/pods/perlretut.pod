@@ -513,34 +513,34 @@ C<"\n">.  C<^> и C<$>, тем не менее, могут найти начал
 
     $x = "There once was a girl\nWho programmed in Perl\n";
 
-    $x =~ /^Who/;   # doesn't match, "Who" not at start of string
-    $x =~ /^Who/s;  # doesn't match, "Who" not at start of string
-    $x =~ /^Who/m;  # matches, "Who" at start of second line
-    $x =~ /^Who/sm; # matches, "Who" at start of second line
+    $x =~ /^Who/;   # не найдет, "Who" не является началом строки
+    $x =~ /^Who/s;  # не найдет, "Who" не является началом строки
+    $x =~ /^Who/m;  # найдет, "Who" является началом второй строкиm
+    $x =~ /^Who/sm; # найдет, "Who" является началом второй строкиm
 
-    $x =~ /girl.Who/;   # doesn't match, "." doesn't match "\n"
-    $x =~ /girl.Who/s;  # matches, "." matches "\n"
-    $x =~ /girl.Who/m;  # doesn't match, "." doesn't match "\n"
-    $x =~ /girl.Who/sm; # matches, "." matches "\n"
+    $x =~ /girl.Who/;   # не найдет, "." не найдет "\n"
+    $x =~ /girl.Who/s;  # найдет, "." найдет "\n"
+    $x =~ /girl.Who/m;  # не найдет, "." не найдет "\n"
+    $x =~ /girl.Who/sm; # найдет, "." найдет "\n"
 
-Most of the time, the default behavior is what is wanted, but C<//s> and
-C<//m> are occasionally very useful.  If C<//m> is being used, the start
-of the string can still be matched with C<\A> and the end of the string
-can still be matched with the anchors C<\Z> (matches both the end and
-the newline before, like C<$>), and C<\z> (matches only the end):
+Большую часть времени, поведение по умолчанию - это то, что мы хотели, но C<//s> и
+C <//m>, иногда очень полезны. Если используется C<//m>, началу
+строки по-прежнему может быть сопоставлен C<\A> и в конец строки
+все еще может быть сопоставлен с якорем C<\Z> (найти оба конец строки и
+символ новой строки перед ним, подобно C<$>) и C<\z> (находит только конец строки):
 
-    $x =~ /^Who/m;   # matches, "Who" at start of second line
-    $x =~ /\AWho/m;  # doesn't match, "Who" is not at start of string
+    $x =~ /^Who/m;   # найдет, "Who" в начале строки
+    $x =~ /\AWho/m;  # не найдет, "Who" не является началом всей строки
 
-    $x =~ /girl$/m;  # matches, "girl" at end of first line
-    $x =~ /girl\Z/m; # doesn't match, "girl" is not at end of string
+    $x =~ /girl$/m;  # найдет, "girl" в конце первой строки
+    $x =~ /girl\Z/m; # не найдет, "girl" не является концом всей строки
 
-    $x =~ /Perl\Z/m; # matches, "Perl" is at newline before end
-    $x =~ /Perl\z/m; # doesn't match, "Perl" is not at end of string
+    $x =~ /Perl\Z/m; # найдет, "Perl" это новая строка в конце всей строки поиска
+    $x =~ /Perl\z/m; # не найдет, "Perl" не в конце строки
 
-We now know how to create choices among classes of characters in a
-regexp.  What about choices among words or character strings? Such
-choices are described in the next section.
+Теперь мы знаем, как сделать выбор среди классов символов в
+регекспе. Как насчет выбора среди словесных или символьных строк? Такие
+варианты описаны в следующем разделе.
 
 =head2 Matching this or that
 
