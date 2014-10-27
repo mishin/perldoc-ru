@@ -608,55 +608,31 @@ C<house> за которым следует либо C<cat> либо C<keeper>. 
 Группирующие метасимволы C<()> позволяют еще извлекать части найденной строки. Каждые найденные группы попадают в специальные переменные C<$1>, C<$2>, и т.д.
 Они могут быть использованы как обычные переменные:
 
-Полуколебаний ведут себя одинаково в группах, из них: в данной
-позиции строки, крайняя левая альтернатива, которая позволяет regexp для
-берется матч. Так, в последнем примере на первой строки позиции,
-C <"20"> соответствует второй вариант, но нет ничего левой над
-чтобы соответствовать следующие две цифры C <\d\d>. Поэтому Perl переходит к следующему
-альтернатива, которая является альтернативой null и что работает, так как
-C <"20"> состоит из двух цифр.
 
-Alternations behave the same way in groups as out of them: at a given
-string position, the leftmost alternative that allows the regexp to
-match is taken.  So in the last example at the first string position,
-C<"20"> matches the second alternative, but there is nothing left over
-to match the next two digits C<\d\d>.  So Perl moves on to the next
-alternative, which is the null alternative and that works, since
-C<"20"> is two digits.
+Элементы выбора ведут себя одинаково как в группах, так и вне их: в данной
+позиции строки, крайняя левая альтернатива позволяет регекспу выполнить поиск.
+Так, в последнем примере на первой позиции строки C<"20"> соответствует второй вариант,
+но нет ничего слева, чтобы найти следующие две цифры C<\d\d>. 
+Поэтому Perl переходит к следующему элементу выбора, 
+которым является null и это работает, так как
+C<"20"> состоит из двух цифр.
 
-Процесс пытается один из альтернативных вариантов, видя, если он совпадает, и
-Переходя к следующей альтернативой, при этом возвращаясь в строке
-от где предыдущий вариант был осужден, если этого не происходит называется
-Я <backtracking>. Термин «возвратом» приходит от идеи,
-соответствие regexp, как прогулка в лесу. Успешно соответствие
-regexp, как прибыть в пункт назначения. Существует множество возможных
-trailheads, один для каждой позиции строки и каждый из них пытался в
-порядке, слева направо. От каждого Трейлхед может быть много путей,
-Некоторые из них получить вас там и некоторые из которых являются тупиков. Когда вы
-Прогулка по тропе и попал в тупик, вам придется отступать вдоль
-тропа до более ранней точки попробовать другой след. Если вы нажмете вашей
-назначения, вы немедленно прекратить и забыть о попытке все
-другие тропы. Ты стойким и только если вы пробовали все
-трассы от всех trailheads и не прибыл в пункт назначения,
-вы объявляете провал. Чтобы быть конкретным, вот пошаговый анализ
-что делает Perl, когда он пытается соответствовать regexp
-
-The process of trying one alternative, seeing if it matches, and
-moving on to the next alternative, while going back in the string
-from where the previous alternative was tried, if it doesn't, is called
-I<backtracking>.  The term 'backtracking' comes from the idea that
-matching a regexp is like a walk in the woods.  Successfully matching
-a regexp is like arriving at a destination.  There are many possible
-trailheads, one for each string position, and each one is tried in
-order, left to right.  From each trailhead there may be many paths,
-some of which get you there, and some which are dead ends.  When you
-walk along a trail and hit a dead end, you have to backtrack along the
-trail to an earlier point to try another trail.  If you hit your
-destination, you stop immediately and forget about trying all the
-other trails.  You are persistent, and only if you have tried all the
-trails from all the trailheads and not arrived at your destination, do
-you declare failure.  To be concrete, here is a step-by-step analysis
-of what Perl does when it tries to match the regexp
+Процесс пытается найти первый элемент выбора, смотрит, есть ли совпадение, и
+переходя к следующему элементу, при этом возвращаясь в строке
+ где попробовали предыдущую альтернативу,если она была неудачна, это называется
+I<возвратом> (I<backtracking>). Термин "возврат" приходит от идеи,
+что поиск регекспа похож на прогулку в лесу. Успешный поиск регекспа
+ это как это как прибытие в пункт назначения. Существует множество возможных
+троп одна для каждой позиции строки и каждая из них пытался в
+порядке слева направо. У каждой тропы может быть много путей,
+некоторые из них успешные, а некоторые являются тупиками. Когда вы
+прогуливаетесь по тропе и попадаете в тупик, вам придется отступать вдоль
+тропы до более ранней точки, чтобы попробовать другой след. Если вы доберетесь до пункта
+назначения, вы немедленно остановитесь и забудете об остальных тропах.
+Вы стойкие и только, если вы попробовали все трассы от 
+всех троп и не прибудете в пункт назначения,
+вы объявляете провал. Чтобы быть конкретным, вот пошаговый анализ того,
+что делает Perl, когда он пытается найти регексп
 
     "abcde" =~ /(abd|abc)(df|d|de)/;
 
