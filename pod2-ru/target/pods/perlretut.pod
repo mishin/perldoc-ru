@@ -542,72 +542,79 @@ C <//m>, иногда очень полезны. Если используетс
 регекспе. Как насчет выбора среди словесных или символьных строк? Такие
 варианты описаны в следующем разделе.
 
-=head2 Matching this or that
+=head2 Найти то или это
 
-Sometimes we would like our regexp to be able to match different
-possible words or character strings.  This is accomplished by using
-the I<alternation> metacharacter C<|>.  To match C<dog> or C<cat>, we
-form the regexp C<dog|cat>.  As before, Perl will try to match the
-regexp at the earliest possible point in the string.  At each
-character position, Perl will first try to match the first
-alternative, C<dog>.  If C<dog> doesn't match, Perl will then try the
-next alternative, C<cat>.  If C<cat> doesn't match either, then the
-match fails and Perl moves to the next position in the string.  Some
-examples:
+Иногда мы хотим, чтобы наш регексп имел возможность искать разные
+ слова или символьные строки. Это достигается с помощью метасивола B<или> C<'|'>.
+  Чтобы найти C<dog> или C<cat>, мы создаем регекс
+C<dog|cat>. Как и прежде, Perl пытается найти соответствие в самом раннем месте строки.  В каждой позиции символа
+Perl сначала пытается сопоставить первую альтернативу, C<dog>.  Если
+C<dog> не найден, Perl теперь пробует следующую альтернативу, C<cat>.
+Если C<cat> тоже не находит, тогда поиск считается неудавшимся и Perl перемещается к следующей позиции в строке.
+Вот ряд примеров:
 
-    "cats and dogs" =~ /cat|dog|bird/;  # matches "cat"
-    "cats and dogs" =~ /dog|cat|bird/;  # matches "cat"
+    "cats and dogs" =~ /cat|dog|bird/;  # найдет "cat"
+    "cats and dogs" =~ /dog|cat|bird/;  # найдет "cat"
 
-Even though C<dog> is the first alternative in the second regexp,
-C<cat> is able to match earlier in the string.
+Даже при том, что  C<dog> является первой альтернативой во втором регексе,
+C<cat> находится раньше в строке.
 
-    "cats"          =~ /c|ca|cat|cats/; # matches "c"
-    "cats"          =~ /cats|cat|ca|c/; # matches "cats"
+    "cats"          =~ /c|ca|cat|cats/; # находит "c"
+    "cats"          =~ /cats|cat|ca|c/; # найдет "cats"
 
-Here, all the alternatives match at the first string position, so the
-first alternative is the one that matches.  If some of the
-alternatives are truncations of the others, put the longest ones first
-to give them a chance to match.
+В данном положении символов, уже первый элемент из списка позволяет поиску
+завершиться успешно. Если некоторые варианты усекают другие, то
+располагайте самые длинные вперед, чтобы дать им шанс найтись.
 
-    "cab" =~ /a|b|c/ # matches "c"
+    "cab" =~ /a|b|c/ # найдет "c"
                      # /a|b|c/ == /[abc]/
 
-The last example points out that character classes are like
-alternations of characters.  At a given character position, the first
-alternative that allows the regexp match to succeed will be the one
-that matches.
+Последний пример показывает, что символьные классы подобны 
+ альтернативным символам. В данной символьной позиции первая
+альтернатива позволяет регекспу  успешно завершить поиск.
 
-=head2 Grouping things and hierarchical matching
+=head2 Группировка элементов и иерархический поиск
 
-Alternation allows a regexp to choose among alternatives, but by
-itself it is unsatisfying.  The reason is that each alternative is a whole
-regexp, but sometime we want alternatives for just part of a
-regexp.  For instance, suppose we want to search for housecats or
-housekeepers.  The regexp C<housecat|housekeeper> fits the bill, but is
-inefficient because we had to type C<house> twice.  It would be nice to
-have parts of the regexp be constant, like C<house>, and some
-parts have alternatives, like C<cat|keeper>.
+Чередование позволяет регекспу выбирать среди альтернатив, но 
+само по себе это является неудовлетворительным. Причина в том, что каждый вариант представляет собой единый
+регексп, но иногда мы хотим альтернатив для части регекспа.
+Например, предположим, мы хотим искать housecats или
+housekeeper. Регексп C<housecat|housekeeper> вписывается в нашу задачу, но является
+неэффективным, потому что нам пришлось дважды писать C<house>. Было бы неплохо
+иметь постоянную часть регекспа С<house> , а другие части будут иметь альтернативу, как C<cat|keeper>.
 
-The I<grouping> metacharacters C<()> solve this problem.  Grouping
-allows parts of a regexp to be treated as a single unit.  Parts of a
-regexp are grouped by enclosing them in parentheses.  Thus we could solve
-the C<housecat|housekeeper> by forming the regexp as
-C<house(cat|keeper)>.  The regexp C<house(cat|keeper)> means match
-C<house> followed by either C<cat> or C<keeper>.  Some more examples
-are
+B<Группирующие> метасимволы C<()> решают эту проблему. 
+Группировка позволяет рассматривать части регекса как отдельную единицу.
+Части регекса сгуппированы по ограждающим их скобкам. Таким образом
+ мы можем заменить регексп C<housecat|housekeeper> на C<house(cat|keeper)>.
+ Регексп C<house(cat|keeper)>означает поиск
+C<house> за которым следует либо C<cat> либо C<keeper>.  Вот несколько примеров
 
-    /(a|b)b/;    # matches 'ab' or 'bb'
-    /(ac|b)b/;   # matches 'acb' or 'bb'
-    /(^a|b)c/;   # matches 'ac' at start of string or 'bc' anywhere
-    /(a|[bc])d/; # matches 'ad', 'bd', or 'cd'
+    /(a|b)b/;    # найдет 'ab' или 'bb'
+    /(^a|b)c/;   # найдет 'ac' в начале строки или 'bc' где угодно
 
-    /house(cat|)/;  # matches either 'housecat' or 'house'
-    /house(cat(s|)|)/;  # matches either 'housecats' or 'housecat' or
-                        # 'house'.  Note groups can be nested.
+    /(a|b)b/;    # найдет 'ab' или 'bb'
+    /(ac|b)b/;   # найдет 'acb' или 'bb'
+    /(^a|b)c/;   # найдет 'ac' в начале строки или 'bc' где угодно
+    /(a|[bc])d/; # найдет 'ad', 'bd', или 'cd'
 
-    /(19|20|)\d\d/;  # match years 19xx, 20xx, or the Y2K problem, xx
-    "20" =~ /(19|20|)\d\d/;  # matches the null alternative '()\d\d',
-                             # because '20\d\d' can't match
+    /house(cat|)/;  # найдет или 'housecat' или 'house'
+    /house(cat(s|)|)/;  # найдет или 'housecats' или 'housecat' или
+                        # 'house'. Обратите внимание на то, что группы могут быть вложены.
+
+    "20" =~ /(19|20|)\d\d/;  # находит пустой элемент выбора '()\d\d',
+                             # т.к. '20\d\d' не может найти
+
+Группирующие метасимволы C<()> позволяют еще извлекать части найденной строки. Каждые найденные группы попадают в специальные переменные C<$1>, C<$2>, и т.д.
+Они могут быть использованы как обычные переменные:
+
+Полуколебаний ведут себя одинаково в группах, из них: в данной
+позиции строки, крайняя левая альтернатива, которая позволяет regexp для
+берется матч. Так, в последнем примере на первой строки позиции,
+C <"20"> соответствует второй вариант, но нет ничего левой над
+чтобы соответствовать следующие две цифры C <\d\d>. Поэтому Perl переходит к следующему
+альтернатива, которая является альтернативой null и что работает, так как
+C <"20"> состоит из двух цифр.
 
 Alternations behave the same way in groups as out of them: at a given
 string position, the leftmost alternative that allows the regexp to
@@ -616,6 +623,23 @@ C<"20"> matches the second alternative, but there is nothing left over
 to match the next two digits C<\d\d>.  So Perl moves on to the next
 alternative, which is the null alternative and that works, since
 C<"20"> is two digits.
+
+Процесс пытается один из альтернативных вариантов, видя, если он совпадает, и
+Переходя к следующей альтернативой, при этом возвращаясь в строке
+от где предыдущий вариант был осужден, если этого не происходит называется
+Я <backtracking>. Термин «возвратом» приходит от идеи,
+соответствие regexp, как прогулка в лесу. Успешно соответствие
+regexp, как прибыть в пункт назначения. Существует множество возможных
+trailheads, один для каждой позиции строки и каждый из них пытался в
+порядке, слева направо. От каждого Трейлхед может быть много путей,
+Некоторые из них получить вас там и некоторые из которых являются тупиков. Когда вы
+Прогулка по тропе и попал в тупик, вам придется отступать вдоль
+тропа до более ранней точки попробовать другой след. Если вы нажмете вашей
+назначения, вы немедленно прекратить и забыть о попытке все
+другие тропы. Ты стойким и только если вы пробовали все
+трассы от всех trailheads и не прибыл в пункт назначения,
+вы объявляете провал. Чтобы быть конкретным, вот пошаговый анализ
+что делает Perl, когда он пытается соответствовать regexp
 
 The process of trying one alternative, seeing if it matches, and
 moving on to the next alternative, while going back in the string
