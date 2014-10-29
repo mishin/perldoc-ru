@@ -2926,5 +2926,13 @@ The author would like to thank Jeff Pinyan, Andrew Johnson, Peter
 Haworth, Ronald J Kimball, and Joe Smith for all their helpful
 comments.
 
-=cut
+
+=head1 ПЕРЕВОДЧИКИ
+ 
+=over
+ 
+=item * Николай Мишин C<< <mishin@cpan.org> >>
+ 
+=back
+
 
