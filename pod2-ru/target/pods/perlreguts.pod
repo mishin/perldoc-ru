@@ -935,4 +935,11 @@ L<perlunitut>
 
 [2] L<http://www.unicode.org>
 
-=cut
+
+=head1 ПЕРЕВОДЧИКИ
+ 
+=over
+ 
+=item * Николай Мишин C<< <mishin@cpan.org> >>
+ 
+=back
