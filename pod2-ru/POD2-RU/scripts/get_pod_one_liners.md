@@ -5,7 +5,7 @@ https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreguts.
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlre.pod 2585 107 +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.pod 2928 642 22%    +/-  
 
-https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebtut.pod 10             +/-  
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebtut.pod 730 130 18%             +/-  
 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebackslash.pod 661 22 +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrecharclass.pod 850 30 +/-   
