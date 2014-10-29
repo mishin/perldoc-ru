@@ -1,8 +1,10 @@
-=head1 NAME
+=encoding utf8
+
+=head1 НАИМЕНОВАНИЕ
 
 perlreftut - Mark's very short tutorial about references
 
-=head1 ��������
+=head1 ОПИСАНИЕ
 
 One of the most important new features in Perl 5 was the capability to
 manage complicated data structures like multidimensional arrays and
@@ -523,4 +525,12 @@ courteous but is not required.
 
 
 
-=cut
+
+=head1 ПЕРЕВОДЧИКИ
+ 
+=over
+
+=item * Иван Рак C<< <rak@tut.by> >> 
+=item * Николай Мишин C<< <mishin@cpan.org> >>
+
+=back
