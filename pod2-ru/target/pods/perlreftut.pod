@@ -538,7 +538,8 @@ courteous but is not required.
  
 =over
 
-=item * Иван Рак C<< <rak@tut.by> >> 
+=item * Иван Рак C<< <rak@tut.by> >>
+
 =item * Николай Мишин C<< <mishin@cpan.org> >>
 
 =back
