@@ -530,14 +530,15 @@ as you see fit.  A simple comment in the code giving credit would be
 courteous but is not required.
 
 
+=head1 ССЫЛКИ
 
-
+[1] L<http://www.opennet.ru/base/dev/perlreftut_ru.txt.html>
 
 =head1 ПЕРЕВОДЧИКИ
  
 =over
 
-=item * Иван Рак C<< <rak@tut.by> >> http://www.opennet.ru/base/dev/perlreftut_ru.txt.html
+=item * Иван Рак C<< <rak@tut.by> >> 
 =item * Николай Мишин C<< <mishin@cpan.org> >>
 
 =back
