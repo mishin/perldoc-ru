@@ -704,15 +704,15 @@ I<возвратом> (I<backtracking>). Термин "возврат" прих�
 
 =head2 Извлечение найденного
 
-The grouping metacharacters C<()> also serve another completely
-different function: they allow the extraction of the parts of a string
-that matched.  This is very useful to find out what matched and for
-text processing in general.  For each grouping, the part that matched
-inside goes into the special variables C<$1>, C<$2>, etc.  They can be
-used just as ordinary variables:
+Метасимволы группировки  C<()> также служат для совершенно другой
+ функции: они позволяют извлекать частей найденной строки.
+Бывает  очень полезно узнать, что найдено и 
+в целом для обработки текста. Для каждой группы, часть, найденная внутри скобок
+ кладется в специальные переменные  C<$1>, C<$2>, и др. Они могут
+использоваться так же, как обычные переменные:
 
-    # extract hours, minutes, seconds
-    if ($time =~ /(\d\d):(\d\d):(\d\d)/) {    # match hh:mm:ss format
+    # извлекаем часы, минуты, секунды
+    if ($time =~ /(\d\d):(\d\d):(\d\d)/) {    # найде hh:mm:ss формат
 	$hours = $1;
 	$minutes = $2;
 	$seconds = $3;
