@@ -686,23 +686,23 @@ I<возвратом> (I<backtracking>). Термин "возврат" прих�
 
 =back
 
-There are a couple of things to note about this analysis.  First, the
-third alternative in the second group 'de' also allows a match, but we
-stopped before we got to it - at a given character position, leftmost
-wins.  Second, we were able to get a match at the first character
-position of the string 'a'.  If there were no matches at the first
-position, Perl would move to the second character position 'b' and
-attempt the match all over again.  Only when all possible paths at all
-possible character positions have been exhausted does Perl give
-up and declare S<C<$string =~ /(abd|abc)(df|d|de)/;>> to be false.
+Есть несколько важных вещей,которые стоит сказать об этом анализе. Во-первых,
+третий вариант во второй группе 'de' также находится, но мы
+останавливаемся прямо перед ним,в данной позиции символ слева
+выигрывает. Во-вторых, мы могли получить успешный поиск с позиции первого символа
+ строки 'a'. Если бы не было совпадений на первой
+позиции, Perl будет двигаться на вторую позицию символа 'b' и
+попытается найти все снова. Только, когда все возможные пути на всех
+возможных позициях символов были исчерпаны, Perl сдается
+ и объявляет S<C<$string =~ /(abd|abc)(df|d|de)/;>> ложным.
 
-Even with all this work, regexp matching happens remarkably fast.  To
-speed things up, Perl compiles the regexp into a compact sequence of
-opcodes that can often fit inside a processor cache.  When the code is
-executed, these opcodes can then run at full throttle and search very
-quickly.
+Даже с этой работой соответствие регекспу происходит удивительно быстро. Чтобы это
+ускорить, Perl компилирует регексп в компактную последовательность
+опкодов, которые часто могут поместиться внутри кэша процессора. Когда код выполняется
+, эти опкоды могут потом выполняться на полной скорости и искать очень
+быстро.
 
-=head2 Extracting matches
+=head2 Извлечение найденного
 
 The grouping metacharacters C<()> also serve another completely
 different function: they allow the extraction of the parts of a string
