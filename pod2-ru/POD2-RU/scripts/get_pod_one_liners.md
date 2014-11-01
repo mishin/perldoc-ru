@@ -8,7 +8,7 @@ https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.p
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebtut.pod 730 130 18%             +/-  
 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebackslash.pod 661 22 +/-  
-https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrecharclass.pod 850 30 +/-   
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrecharclass.pod 851 30 +/-   
 
 view https://github.com/mishin/perldoc-ru/blob/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md  
 edit https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md  
