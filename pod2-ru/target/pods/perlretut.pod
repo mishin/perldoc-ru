@@ -775,13 +775,12 @@ C<$2>,... ассоциируются с самыми правыми закрыв
     murmur
     papa
 
-The regexp has a single grouping which considers 4-letter
-combinations, then 3-letter combinations, etc., and uses C<\g1> to look for
-a repeat.  Although C<$1> and C<\g1> represent the same thing, care should be
-taken to use matched variables C<$1>, C<$2>,... only I<outside> a regexp
-and backreferences C<\g1>, C<\g2>,... only I<inside> a regexp; not doing
-so may lead to surprising and unsatisfactory results.
-
+Регексп имеет единую группировку, которая рассматривает 4-х буквенные
+комбинации, а затем 3-х буквенные сочетания и т.д. и использует C<\g1>, чтобы  искать
+повторения. Хотя C<$1> и C<\g1> представляют собой то же самое, аккуратность должна быть
+ в использовании соответствующих переменных поиска C<$1>, C<$2>,... только I<вне> регекспа,
+  а обратных ссылок C<\g1>, C<\g2>,... только I<внутри> регекспа; не выполнение
+  этих требований может привести к удивлению и неудовлетворительным результатам.
 
 =head2 Relative backreferences
 
