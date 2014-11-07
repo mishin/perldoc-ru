@@ -782,7 +782,7 @@ C<$2>,... ассоциируются с самыми правыми закрыв
   а обратных ссылок C<\g1>, C<\g2>,... только I<внутри> регекспа; не выполнение
   этих требований может привести к удивлению и неудовлетворительным результатам.
 
-=head2 Relative backreferences
+=head2 Относительные обратные ссылки
 
 Counting the opening parentheses to get the correct number for a
 backreference is error-prone as soon as there is more than one
