@@ -784,35 +784,35 @@ C<$2>,... ассоциируются с самыми правыми закрыв
 
 =head2 Относительные обратные ссылки
 
-Считая открытия круглые скобки, чтобы получить правильный номер для
-Обратная ссылка ошибкам, как только есть более чем один
-Группа захвата. Более удобная техника стала доступна
-с Perl 5.10: относительная обратных ссылок. Для обозначения сразу
-предыдущей группы захвата одной теперь может написать C <\g{-1}>, но следующий
+Подсчет открытых круглых скобок, чтобы получить правильный номер для
+обратной ссылки приводит к ошибкам, как только есть более чем одна
+группа захвата. Более удобная техника стала доступна
+с Perl 5.10: относительные обратные ссылки. Для обозначения сразу
+первой предыдущей группы захвата можно записать C<\g{-1}>, но следующий
 последний доступен через C <\g{-2}> и так далее.
 
-Counting the opening parentheses to get the correct number for a
-backreference is error-prone as soon as there is more than one
-capturing group.  A more convenient technique became available
-with Perl 5.10: relative backreferences. To refer to the immediately
-preceding capture group one now may write C<\g{-1}>, the next but
-last is available via C<\g{-2}>, and so on.
+Еще одна хорошая причина, помимо чтения и поддержки кода
+для использования относительных обратных иллюстрируется в следующем примере,
+где используется простой шаблон для сопоставления своеобразный строк:
 
-Another good reason in addition to readability and maintainability
-for using relative backreferences is illustrated by the following example,
-where a simple pattern for matching peculiar strings is used:
+    $a99a = '([a-z])(\d)\g2\g1';   # найдет a11a, g22g, x33x, и так далее.
 
-    $a99a = '([a-z])(\d)\g2\g1';   # matches a11a, g22g, x33x, etc.
-
-Now that we have this pattern stored as a handy string, we might feel
-tempted to use it as a part of some other pattern:
+Теперь, когда мы сохранили этот шаблон как удобную последовательность, мы могли бы почувствовать
+ соблазн использовать его в качестве части некоторого другого образца:
 
     $line = "code=e99e";
-    if ($line =~ /^(\w+)=$a99a$/){   # unexpected behavior!
+    if ($line =~ /^(\w+)=$a99a$/){   # неожиданное поведение!
         print "$1 is valid\n";
     } else {
         print "bad line: '$line'\n";
     }
+
+Но это не соответствует, по крайней мере не так, можно было бы ожидать. Только
+После вставки интерполированные C <$a99a> и глядя на итоговый
+полный текст regexp это очевидным, что обратные ссылки
+к обратным результатам. Выражения в C <(\w+)> схватил номер 1 и
+понижены в группы C <$a99a> на один ранг. Этого можно избежать
+Использование относительных обратных ссылок:
 
 But this doesn't match, at least not the way one might expect. Only
 after inserting the interpolated C<$a99a> and looking at the resulting
