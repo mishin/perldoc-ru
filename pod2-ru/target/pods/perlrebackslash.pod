@@ -134,14 +134,14 @@ C<\b> это бекслешированный символ действует т
 
 =item [2]
 
-C<\n> matches a logical newline. Perl converts between C<\n> and your
-OS's native newline character when reading from or writing to text files.
+C<\n> соответствует логической новой строке. Perl преобразует между C<\n> и ваш
+ОС родной символ новой строки при чтении или записи в текстовые файлы.
 
 =back
 
-=head4 Example
+=head4 Пример
 
- $str =~ /\t/;   # Matches if $str contains a (horizontal) tab.
+ $str =~ /\t/;   # Найдет, если $str содержит (горизонтальный) символ табуляции.
 
 =head3 Control characters
 
