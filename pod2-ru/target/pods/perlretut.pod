@@ -807,38 +807,31 @@ C<$2>,... ассоциируются с самыми правыми закрыв
         print "bad line: '$line'\n";
     }
 
-Но это не соответствует, по крайней мере не так, можно было бы ожидать. Только
-После вставки интерполированные C <$a99a> и глядя на итоговый
-полный текст regexp это очевидным, что обратные ссылки
-к обратным результатам. Выражения в C <(\w+)> схватил номер 1 и
-понижены в группы C <$a99a> на один ранг. Этого можно избежать
-Использование относительных обратных ссылок:
+Но шаблон не находится, по крайней мере не так, как можно было бы ожидать. Только
+после вставки интерполированного C<$a99a> и глядя на итоговый
+полный текст регекспа становится очевидным, что обратные ссылки
+ приводят к неприятным последствиям. Подвыражение C<(\w+)> захватывает номер 1 и
+понижает группы в C<$a99a> на один ранг. Этого можно избежать
+использованием относительных обратных ссылок:
 
-But this doesn't match, at least not the way one might expect. Only
-after inserting the interpolated C<$a99a> and looking at the resulting
-full text of the regexp is it obvious that the backreferences have
-backfired. The subexpression C<(\w+)> has snatched number 1 and
-demoted the groups in C<$a99a> by one rank. This can be avoided by
-using relative backreferences:
-
-    $a99a = '([a-z])(\d)\g{-1}\g{-2}';  # safe for being interpolated
+    $a99a = '([a-z])(\d)\g{-1}\g{-2}';  # безопасно для интерполяции
 
 
-=head2 Named backreferences
+=head2 Именованные обратные ссылки
 
-Perl 5.10 also introduced named capture groups and named backreferences.
-To attach a name to a capturing group, you write either
-C<< (?<name>...) >> or C<< (?'name'...) >>.  The backreference may
-then be written as C<\g{name}>.  It is permissible to attach the
-same name to more than one group, but then only the leftmost one of the
-eponymous set can be referenced.  Outside of the pattern a named
-capture group is accessible through the C<%+> hash.
+Perl 5.10 также представил именованные группы захвата и именованные обратные ссылки.
+Чтобы присоединить имя к группе захвата, вы пишете, либо
+C<<(?<name>...)>> или C<< (?'name'...) >>.  Обратную ссылку можно
+потом записать, как C<\g{name}>. Это допустимо для присоединения
+ одного и того же имени более чем одной группе, но потом ссылаться можно будет только на самую левую скобку из
+одноименного набора. За пределами шаблона именованная 
+группа захвата доступна через хэш  C<%+>.
 
-Assuming that we have to match calendar dates which may be given in one
-of the three formats yyyy-mm-dd, mm/dd/yyyy or dd.mm.yyyy, we can write
-three suitable patterns where we use 'd', 'm' and 'y' respectively as the
-names of the groups capturing the pertaining components of a date. The
-matching operation combines the three patterns as alternatives:
+Предположим, что нам нужно найти календарные даты, которые могут быть предоставлены в одном
+из трех форматы yyyy-mm-dd, mm/dd/yyyy или dd.mm.yyyy, мы можем написать
+три подходящих шаблона, когда мы используем 'd', 'm' и 'y'  ('д', 'м' и 'г') соответственно в качестве
+имен групп, захватывая соответствующие компоненты даты.
+Поисковая операция сочетает в себе три шаблона как альтернативу:
 
     $fmt1 = '(?<y>\d\d\d\d)-(?<m>\d\d)-(?<d>\d\d)';
     $fmt2 = '(?<m>\d\d)/(?<d>\d\d)/(?<y>\d\d\d\d)';
@@ -849,36 +842,35 @@ matching operation combines the three patterns as alternatives:
         }
     }
 
-If any of the alternatives matches, the hash C<%+> is bound to contain the
-three key-value pairs.
+Если любая из альтернатив найдется, хэш  C<%+> будет содержать
+три пары ключ-значение.
 
+=head2 Альтернативные нумерация групп захвата
 
-=head2 Alternative capture group numbering
-
-Yet another capturing group numbering technique (also as from Perl 5.10)
-deals with the problem of referring to groups within a set of alternatives.
-Consider a pattern for matching a time of the day, civil or military style:
+Еще одна техника нумерации групп (также начиная с Perl 5.10)
+занимается проблемой ссылок на группы внутри набора альтернатив.
+Рассмотрим шаблон для сопоставления, время суток, гражданского или военного стиля:
 
     if ( $time =~ /(\d\d|\d):(\d\d)|(\d\d)(\d\d)/ ){
-        # process hour and minute
+        # обработка часов и минут
     }
 
-Processing the results requires an additional if statement to determine
-whether C<$1> and C<$2> or C<$3> and C<$4> contain the goodies. It would
-be easier if we could use group numbers 1 and 2 in second alternative as
-well, and this is exactly what the parenthesized construct C<(?|...)>,
-set around an alternative achieves. Here is an extended version of the
-previous pattern:
+Обработка результатов требует дополнительных выражение if для определения
+где C<$1> и C<$2> или C<$3> и C<$4> содержат нужные данные. Будет
+проще, если мы могли бы использовать второй вариант как номера группы 1 и 2
+Ну это именно то, что дает конструкция C<(?|...)>,
+поставленная вокруг целевой альтернативы. Вот расширенная версия
+предыдущего шаблона:
 
     if ( $time =~ /(?|(\d\d|\d):(\d\d)|(\d\d)(\d\d))\s+([A-Z][A-Z][A-Z])/ ){
 	print "hour=$1 minute=$2 zone=$3\n";
     }
 
-Within the alternative numbering group, group numbers start at the same
-position for each alternative. After the group, numbering continues
-with one higher than the maximum reached across all the alternatives.
+В рамках альтернативной группы нумерации, группирующие номера начинаются в той же
+позиции для каждой альтернативы. Внутри групп нумерация продолжает
+ повышаться до максимума внутри всех альтернатив.
 
-=head2 Position information
+=head2 Информацию о позиции
 
 In addition to what was matched, Perl also provides the
 positions of what was matched as contents of the C<@-> and C<@+>
