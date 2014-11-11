@@ -2880,7 +2880,16 @@ An alternative method of debugging regexps is to embed C<print>
 statements within the regexp.  This provides a blow-by-blow account of
 the backtracking in an alternation:
 
-    "that this" =~ m@(?{print "Start at position ", pos, "\n";})
+use utf8;
+use Encode::Locale;
+
+if (-t) 
+{
+    binmode(STDIN, ":encoding(console_in)");
+    binmode(STDOUT, ":encoding(console_out)");
+    binmode(STDERR, ":encoding(console_out)");
+}
+    "that this" =~ m@(?{print "Начало в позиции ", pos, "\n";})
                      t(?{print "t1\n";})
                      h(?{print "h1\n";})
                      i(?{print "i1\n";})
@@ -2890,19 +2899,19 @@ the backtracking in an alternation:
                      h(?{print "h2\n";})
                      a(?{print "a2\n";})
                      t(?{print "t2\n";})
-                     (?{print "Done at position ", pos, "\n";})
+                     (?{print "Закончили в позиции ", pos, "\n";})
                     @x;
 
-prints
+напечатает
 
-    Start at position 0
+    Начало в позиции 0
     t1
     h1
     t2
     h2
     a2
     t2
-    Done at position 4
+    Закончили в позиции 4
 
 =head1 ОШИБКИ
 
