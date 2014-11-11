@@ -2909,10 +2909,10 @@ prints
 Code expressions, conditional expressions, and independent expressions
 are I<experimental>.  Don't use them in production code.  Yet.
 
-=head1 SEE ALSO
+=head1 СМОТРИТЕ ТАКЖЕ
 
-This is just a tutorial.  For the full story on Perl regular
-expressions, see the L<perlre> regular expressions reference page.
+Это всего лишь учебное пособие. Для полной истории регулярных выражений 
+смотри полную справку в L<perlre>.
 
 For more information on the matching C<m//> and substitution C<s///>
 operators, see L<perlop/"Regexp Quote-Like Operators">.  For
