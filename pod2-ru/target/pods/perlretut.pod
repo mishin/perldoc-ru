@@ -901,25 +901,36 @@ C<$+[0]>  является положением конца. Точно так ж
     $x =~ /cat/;  # $` = 'the ', $& = 'cat', $' = ' caught the mouse'
     $x =~ /the/;  # $` = '', $& = 'the', $' = ' cat caught the mouse'
 
-In the second match, C<$`> equals C<''> because the regexp matched at the
-first character position in the string and stopped; it never saw the
-second 'the'.  It is important to note that using C<$`> and C<$'>
-slows down regexp matching quite a bit, while C<$&> slows it down to a
-lesser extent, because if they are used in one regexp in a program,
-they are generated for I<all> regexps in the program.  So if raw
-performance is a goal of your application, they should be avoided.
-If you need to extract the corresponding substrings, use C<@-> and
-C<@+> instead:
+Во втором поиска, C<$`> равно C<''>, потому что регексп находит 
+первый символ в строке и останавливается; он никогда не видел
+второй 'the'.  Важно отметить, что использование C<$`> и C<$'>
+лишь немного замедляет процесс поиска регекспа, то C<$&> замедляет его еще больше
+, потому что если они используются в одном регекспе в программе,
+они создаются для I<всех> регекспов в программе. Таким образом, если
+ целью приложения является производительность, их следует избегать.
+Если вам необходимо извлечь соответствующие подстроки, используйте  C<@-> и
+C<@+> вместо этого:
 
-    $` is the same as substr( $x, 0, $-[0] )
-    $& is the same as substr( $x, $-[0], $+[0]-$-[0] )
-    $' is the same as substr( $x, $+[0] )
+    $` тоже, что и substr( $x, 0, $-[0] )
+    $& тоже, что и substr( $x, $-[0], $+[0]-$-[0] )
+    $' тоже, что и substr( $x, $+[0] )
 
-As of Perl 5.10, the C<${^PREMATCH}>, C<${^MATCH}> and C<${^POSTMATCH}>
-variables may be used. These are only set if the C</p> modifier is present.
-Consequently they do not penalize the rest of the program.
+Начиная с Perl 5.10, C<${^PREMATCH}>, C<${^MATCH}> и C<${^POSTMATCH}>
+переменные могут использоваться. Они устанавливаются только если присутствует модификатор C</p> .
+Следовательно, они не наказывают остальную часть программы.
 
-=head2 Non-capturing groupings
+=head2 Не захватывающие группировки
+
+Группа, которая требуется связать набор альтернатив может быть или не быть
+полезен в качестве группы записи. Если это не так, он просто создает лишние
+дополнением к набору доступных захвата группы значения, внутри, а также
+за пределами regexp. Non захвата группировки, обозначается C <(?:regexp) настроек,
+по-прежнему позволяют regexp следует рассматривать как единое целое, но не установить
+в то же время группа записи. Захват и non захвата
+группировки могут сосуществовать в том же regexp. Потому что
+не добыча, non захвата группировки быстрее, чем захват
+группировки. Non захвата группировки также удобны для выбора именно
+какие части регулярного выражения должны быть извлечены для сопоставления переменных:
 
 A group that is required to bundle a set of alternatives may or may not be
 useful as a capturing group.  If it isn't, it just creates a superfluous
