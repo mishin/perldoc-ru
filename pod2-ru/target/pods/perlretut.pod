@@ -2904,22 +2904,22 @@ prints
     t2
     Done at position 4
 
-=head1 BUGS
+=head1 ОШИБКИ
 
-Code expressions, conditional expressions, and independent expressions
-are I<experimental>.  Don't use them in production code.  Yet.
+Выражения с кодом, условные выражения и независимые выражения 
+являются I<экспериментальными>. Не используйте их в рабочем коде. Пока.
 
 =head1 СМОТРИТЕ ТАКЖЕ
 
 Это всего лишь учебное пособие. Для полной истории регулярных выражений 
-смотри полную справку в L<perlre>.
+смотри справку в L<perlre>.
 
-For more information on the matching C<m//> and substitution C<s///>
-operators, see L<perlop/"Regexp Quote-Like Operators">.  For
-information on the C<split> operation, see L<perlfunc/split>.
+Для получения дополнительной информации об операторах поиска C<m//>  и замены C<s///>
+см L<perlop/"Regexp Quote-Like Operators">. Для
+информация об операции C<split> см  L<perlfunc/split>.
 
-For an excellent all-around resource on the care and feeding of
-regular expressions, see the book I<Mastering Regular Expressions> by
+Для превосходного всестороннего ресурса по уходу и кормлению
+регулярных выражений, см. книгу I<Mastering Regular Expressions> by
 Jeffrey Friedl (published by O'Reilly, ISBN 1556592-257-3).
 
 =head1 АВТОР И АВТОРСКОЕ ПРАВО
