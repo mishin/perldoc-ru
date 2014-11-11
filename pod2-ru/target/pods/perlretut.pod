@@ -2922,21 +2922,21 @@ For an excellent all-around resource on the care and feeding of
 regular expressions, see the book I<Mastering Regular Expressions> by
 Jeffrey Friedl (published by O'Reilly, ISBN 1556592-257-3).
 
-=head1 AUTHOR AND COPYRIGHT
+=head1 АВТОР И АВТОРСКОЕ ПРАВО
 
 Copyright (c) 2000 Mark Kvale
-All rights reserved.
+Все права защищены.
 
-This document may be distributed under the same terms as Perl itself.
+Этот документ может распространяться на тех же условиях, что и Perl.
 
-=head2 Acknowledgments
+=head2 Благодарности
 
-The inspiration for the stop codon DNA example came from the ZIP
-code example in chapter 7 of I<Mastering Regular Expressions>.
+Вдохновленный примером stop codon DNA  пришедшим из ZIP
+примеров кода в главе 7 книги I<Mastering Regular Expressions>.
 
-The author would like to thank Jeff Pinyan, Andrew Johnson, Peter
-Haworth, Ronald J Kimball, and Joe Smith for all their helpful
-comments.
+Автор хотел бы поблагодарить Jeff Pinyan, Andrew Johnson, Peter
+Haworth, Ronald J Kimball, и Joe Smith за все их полезные
+комментарии.
 
 
 =head1 ПЕРЕВОДЧИКИ
