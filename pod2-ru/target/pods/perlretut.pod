@@ -901,7 +901,7 @@ C<$+[0]>  является положением конца. Точно так ж
     $x =~ /cat/;  # $` = 'the ', $& = 'cat', $' = ' caught the mouse'
     $x =~ /the/;  # $` = '', $& = 'the', $' = ' cat caught the mouse'
 
-Во втором поиска, C<$`> равно C<''>, потому что регексп находит 
+Во втором поиске, C<$`> равно C<''>, потому что регексп находит 
 первый символ в строке и останавливается; он никогда не видел
 второй 'the'.  Важно отметить, что использование C<$`> и C<$'>
 лишь немного замедляет процесс поиска регекспа, то C<$&> замедляет его еще больше
@@ -915,53 +915,42 @@ C<@+> вместо этого:
     $& тоже, что и substr( $x, $-[0], $+[0]-$-[0] )
     $' тоже, что и substr( $x, $+[0] )
 
-Начиная с Perl 5.10, C<${^PREMATCH}>, C<${^MATCH}> и C<${^POSTMATCH}>
-переменные могут использоваться. Они устанавливаются только если присутствует модификатор C</p> .
+Начиная с Perl 5.10  могут использоваться переменные C<${^PREMATCH}>, C<${^MATCH}> и C<${^POSTMATCH}>.
+Они устанавливаются только, если присутствует модификатор C</p> .
 Следовательно, они не наказывают остальную часть программы.
 
 =head2 Не захватывающие группировки
 
-Группа, которая требуется связать набор альтернатив может быть или не быть
-полезен в качестве группы записи. Если это не так, он просто создает лишние
-дополнением к набору доступных захвата группы значения, внутри, а также
-за пределами regexp. Non захвата группировки, обозначается C <(?:regexp) настроек,
-по-прежнему позволяют regexp следует рассматривать как единое целое, но не установить
-в то же время группа записи. Захват и non захвата
-группировки могут сосуществовать в том же regexp. Потому что
-не добыча, non захвата группировки быстрее, чем захват
-группировки. Non захвата группировки также удобны для выбора именно
+Группе, которую требуется связать в набор альтернатив может быть, может быть как с захватом, так и без.
+Если захват не нужен, то он просто создает лишние
+дополнения к набору доступных для захвата группя, внутри, а также
+за пределами регекспа. Незахватывающие захвата группировки, обозначаются C<(?:regexp)>,
+по-прежнему позволяют регекспу рассматривать себя как единое целое, но не установливать
+ группу для захвата в то же время. И захватывающие и незахватывающие
+группировки могут сосуществовать в одном и  том же регекспе. Потому что
+не вытаскивающая, незахватывающая группировка быстрее, чем захватывающая.
+Незахватывающие группировки также удобны для выбора того, 
 какие части регулярного выражения должны быть извлечены для сопоставления переменных:
 
-A group that is required to bundle a set of alternatives may or may not be
-useful as a capturing group.  If it isn't, it just creates a superfluous
-addition to the set of available capture group values, inside as well as
-outside the regexp.  Non-capturing groupings, denoted by C<(?:regexp)>,
-still allow the regexp to be treated as a single unit, but don't establish
-a capturing group at the same time.  Both capturing and non-capturing
-groupings are allowed to co-exist in the same regexp.  Because there is
-no extraction, non-capturing groupings are faster than capturing
-groupings.  Non-capturing groupings are also handy for choosing exactly
-which parts of a regexp are to be extracted to matching variables:
-
-    # match a number, $1-$4 are set, but we only want $1
+    # найти число, $1-$4 установлены, но мы хотим только $1
     /([+-]?\ *(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)/;
 
-    # match a number faster , only $1 is set
+    # поиск значительно быстрее , установлена только $1
     /([+-]?\ *(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?)/;
 
-    # match a number, get $1 = whole number, $2 = exponent
+    # найти число, в $1 = целое число, $2 = экспонента
     /([+-]?\ *(?:\d+(?:\.\d*)?|\.\d+)(?:[eE]([+-]?\d+))?)/;
 
-Non-capturing groupings are also useful for removing nuisance
-elements gathered from a split operation where parentheses are
-required for some reason:
+Незахватывающие группировки также полезны для удаления шумных
+элементы, полученные от операции split где скобки 
+требуются по какой-либо причине:
 
     $x = '12aba34ba5';
     @num = split /(a|b)+/, $x;    # @num = ('12','a','34','a','5')
     @num = split /(?:a|b)+/, $x;  # @num = ('12','34','5')
 
 
-=head2 Matching repetitions
+=head2 Поиск повторений
 
 The examples in the previous section display an annoying weakness.  We
 were only matching 3-letter words, or chunks of words of 4 letters or
