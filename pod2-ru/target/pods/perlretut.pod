@@ -2865,9 +2865,9 @@ matched.  The S<C<< |  1:  STAR >>> says that Perl is at line number 1
 in the compilation list above.  See
 L<perldebguts/"Debugging Regular Expressions"> for much more detail.
 
-An alternative method of debugging regexps is to embed C<print>
-statements within the regexp.  This provides a blow-by-blow account of
-the backtracking in an alternation:
+Альтернативным методом отладки регулярных выражений является включение внедрение C<print>
+в регексп. Это предоставляет подробный отчет
+об обратных ссылках в случае оператора C<или>:
 
 use utf8;
 use Encode::Locale;
@@ -2878,7 +2878,7 @@ if (-t)
     binmode(STDOUT, ":encoding(console_out)");
     binmode(STDERR, ":encoding(console_out)");
 }
-    "that this" =~ m@(?{print "Начало в позиции ", pos, "\n";})
+    "that this" =~ m@(?{print "Начали в позиции ", pos, "\n";})
                      t(?{print "t1\n";})
                      h(?{print "h1\n";})
                      i(?{print "i1\n";})
@@ -2893,7 +2893,7 @@ if (-t)
 
 напечатает
 
-    Начало в позиции 0
+    Начали в позиции 0
     t1
     h1
     t2
