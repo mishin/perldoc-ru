@@ -952,62 +952,63 @@ C<@+> вместо этого:
 
 =head2 Поиск повторений
 
-The examples in the previous section display an annoying weakness.  We
-were only matching 3-letter words, or chunks of words of 4 letters or
-less.  We'd like to be able to match words or, more generally, strings
-of any length, without writing out tedious alternatives like
+Примеры в предыдущей секции показывают раздражающую слабость. Мы
+только распознавали 3-буквенные слова или куски слов из 4-х букв или менее.
+Мы хотели бы распознать слова или, более широко, последовательности
+ любой длины, не выписывая утомительные альтернативы такие, как
 C<\w\w\w\w|\w\w\w|\w\w|\w>.
 
-This is exactly the problem the I<quantifier> metacharacters C<?>,
-C<*>, C<+>, and C<{}> were created for.  They allow us to delimit the
-number of repeats for a portion of a regexp we consider to be a
-match.  Quantifiers are put immediately after the character, character
-class, or grouping that we want to specify.  They have the following
-meanings:
+Для решения этой проблемы были созданы I<повторительные> метесимволы  C<?>,
+C<*>, C<+>, и C<{}>.  Они позволяют нам изменять
+число повторений для части регекспа, которым мы собираемся искать.
+Повторители идут сразу за символом, символьным
+классом или группировкой, которую мы хотим определить. У них есть следующие
+значения:
 
 =over 4
 
 =item *
 
-C<a?> means: match 'a' 1 or 0 times
+C<a?> означает: найти 'a' 1 или 0 раз
 
 =item *
 
-C<a*> means: match 'a' 0 or more times, i.e., any number of times
+C<a*> означает: найти 'a' 0 или более раз, то есть число любое число раз
 
 =item *
 
-C<a+> means: match 'a' 1 or more times, i.e., at least once
+C<a+> означает: найти 'a' 1 или более раз , то есть как минимум один раз
 
 =item *
 
-C<a{n,m}> means: match at least C<n> times, but not more than C<m>
-times.
+C<a{n,m}> означает: найти по крайней мере C<n> раз, но не более C<m>.
 
 =item *
 
-C<a{n,}> means: match at least C<n> or more times
+C<a{n,}> означает: найти по крайней мере C<n> или больше раз
 
 =item *
 
-C<a{n}> means: match exactly C<n> times
+C<a{n}> означает: найти точно C<n> раз
 
 =back
 
-Here are some examples:
+Вот несколько примеров:
+слово строчная, по крайней мере один пробел, и
+# любое количество цифр
 
-    /[a-z]+\s+\d*/;  # match a lowercase word, at least one space, and
-                     # any number of digits
-    /(\w+)\s+\g1/;    # match doubled words of arbitrary length
-    /y(es)?/i;       # matches 'y', 'Y', or a case-insensitive 'yes'
-    $year =~ /^\d{2,4}$/;  # make sure year is at least 2 but not more
-                           # than 4 digits
-    $year =~ /^\d{4}$|^\d{2}$/;    # better match; throw out 3-digit dates
-    $year =~ /^\d{2}(\d{2})?$/;  # same thing written differently. However,
-                                 # this captures the last two digits in $1
-                                 # and the other does not.
+    /[a-z]+\s+\d*/;  # найти слово в нижнем регистре, по крайней мере один пробел, и
+                     # любое количество цифр
+    /(\w+)\s+\g1/;    # матч двойное слово произвольной длины
+    /y(es)?/i;       # найти 'y', 'Y', или 'yes' без учета регистра
+    $year =~ /^\d{2,4}$/;  # удостоверьтесь, что год - по крайней мере 2, но не больше
+                           # 4 цифр
+    $year =~ /^\d{4}$|^\d{2}$/;    #  # лучшее совпадение; исключает дату из 3 цифр
+    $year =~ /^\d{2}(\d{2})?$/;  #то же самое, написанное по-другому. Однако,
+                                 # это захватывает последние две цифры в $1,
+                                 # а другие нет.
 
-    % simple_grep '^(\w+)\g1$' /usr/dict/words   # isn't this easier?
+    % simple_grep '^(\w+)\g1$' /usr/dict/words   # разве это не проще?
     beriberi
     booboo
     coco
