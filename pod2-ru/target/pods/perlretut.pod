@@ -1016,11 +1016,11 @@ C<a{n}> означает: найти точно C<n> раз
     murmur
     papa
 
-For all of these quantifiers, Perl will try to match as much of the
-string as possible, while still allowing the regexp to succeed.  Thus
-with C</a?.../>, Perl will first try to match the regexp with the C<a>
-present; if that fails, Perl will try to match the regexp without the
-C<a> present.  For the quantifier C<*>, we get the following:
+Для всех этих повторителей Perl будет пытаться искать строку настолько долго насколько это возможно
+пока все еще регексп будет этому соответствовать. Таким образом
+с  C</a?.../> Perl сначала попытается найти регексп с C<a>, если это не удается, 
+Perl будет пытаться искать регексп  без C<a>.
+Для повторителя C<*> мы получаем следующее:
 
     $x = "the cat in the hat";
     $x =~ /^(.*)(cat)(.*)$/; # matches,
@@ -1031,10 +1031,10 @@ C<a> present.  For the quantifier C<*>, we get the following:
 Which is what we might expect, the match finds the only C<cat> in the
 string and locks onto it.  Consider, however, this regexp:
 
-    $x =~ /^(.*)(at)(.*)$/; # matches,
+    $x =~ /^(.*)(at)(.*)$/; # найдет,
                             # $1 = 'the cat in the h'
                             # $2 = 'at'
-                            # $3 = ''   (0 characters match)
+                            # $3 = ''   (0 символов найдено)
 
 One might initially guess that Perl would find the C<at> in C<cat> and
 stop there, but that wouldn't give the longest possible string to the
