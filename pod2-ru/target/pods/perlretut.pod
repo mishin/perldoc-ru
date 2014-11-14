@@ -1059,23 +1059,23 @@ I<жадными> потворителями.
 
 =item *
 
-Principle 0: Taken as a whole, any regexp will be matched at the
-earliest possible position in the string.
+Принцип 0: Взятый в целом, любой регексп будет искать
+самое раннее положение в строке.
 
 =item *
 
-Principle 1: In an alternation C<a|b|c...>, the leftmost alternative
-that allows a match for the whole regexp will be the one used.
+Принцип 1: В случае альтернативы C<a|b|c...>, крайняя левая альтернатива
+что позволяет найти весь регексп.
 
 =item *
 
-Principle 2: The maximal matching quantifiers C<?>, C<*>, C<+> and
-C<{n,m}> will in general match as much of the string as possible while
-still allowing the whole regexp to match.
+Принцип 2: Повторители максимального поиска C<?>, C<*>, C<+> и
+C<{n,m}> в целом будут строку настолько много насколько это возможно и
+по-прежнему будет позволять соответствовать всему регекспу.
 
 =item *
 
-Principle 3: If there are two or more elements in a regexp, the
+Принцип 3: If there are two or more elements in a regexp, the
 leftmost greedy quantifier, if any, will match as much of the string
 as possible while still allowing the whole regexp to match.  The next
 leftmost greedy quantifier, if any, will try to match as much of the
