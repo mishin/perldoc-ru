@@ -1028,13 +1028,30 @@ Perl будет пытаться искать регексп  без C<a>.
                              # $2 = 'cat'
                              # $3 = ' in the hat'
 
-Which is what we might expect, the match finds the only C<cat> in the
-string and locks onto it.  Consider, however, this regexp:
+Как мы и ожидали, поиск находит только 
+строку C<cat> и останавливается на этом.
+Хотя этот регексп:
 
     $x =~ /^(.*)(at)(.*)$/; # найдет,
                             # $1 = 'the cat in the h'
                             # $2 = 'at'
                             # $3 = ''   (0 символов найдено)
+
+Один первоначально догадаться что Perl найдут C <at>в C <cat>и
+останавливаться на достигнутом, но это не даст максимальной длины к
+Первый квантификатор C <. * раздел настроек. Вместо этого первый квантификатор C <. * раздел настроек хватает как
+Большая часть строки как можно по-прежнему имея матч regexp. В
+в этом примере, это означает, что C <at>последовательность с окончательной C <at>
+в строке. Другой важный принцип, показанные здесь, что,
+когда есть два или более элементов в regexp, я <leftmost>
+Кванторы, если таковая имеется, получает захватить как многие строки как
+возможно, оставляя остальную часть regexp бороться за обрывки. Таким образом, в
+Наш пример, первый квантификатор C <. * раздел настроек захватывает большую часть строки, в то время как
+второй квантификатор C <. * раздел настроек возвращает пустую строку. Кванторы,
+захватить как многие строки как можно называют я < максимальное соответствие настроек или
+Я <greedy>Кванторы.
+
+
 
 One might initially guess that Perl would find the C<at> in C<cat> and
 stop there, but that wouldn't give the longest possible string to the
@@ -1049,6 +1066,9 @@ our example, the first quantifier C<.*> grabs most of the string, while
 the second quantifier C<.*> gets the empty string.   Quantifiers that
 grab as much of the string as possible are called I<maximal match> or
 I<greedy> quantifiers.
+
+Когда regexp может соответствовать строка несколькими различными способами, мы можем использовать
+принципы выше, чтобы предсказать, каким образом будет соответствовать regexp:
 
 When a regexp can match a string in several different ways, we can use
 the principles above to predict which way the regexp will match:
