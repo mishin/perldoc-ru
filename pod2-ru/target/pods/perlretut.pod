@@ -1064,33 +1064,34 @@ I<жадными> потворителями.
 
 =item *
 
-Принцип 1: В случае альтернативы C<a|b|c...>, крайняя левая альтернатива
-что позволяет найти весь регексп.
+Принцип 1: В случае альтернативы C<a|b|c...>, если найдена крайняя левая альтернатива, то
+найден весь регексп.
 
 =item *
 
 Принцип 2: Повторители максимального поиска C<?>, C<*>, C<+> и
-C<{n,m}> в целом будут строку настолько много насколько это возможно и
-по-прежнему будет позволять соответствовать всему регекспу.
+C<{n,m}> будут искать строку настолько долго (вперед) насколько это возможно и
+ пока эта строка будет соответствовать всему регекспу.
 
 =item *
 
-Принцип 3: If there are two or more elements in a regexp, the
-leftmost greedy quantifier, if any, will match as much of the string
-as possible while still allowing the whole regexp to match.  The next
-leftmost greedy quantifier, if any, will try to match as much of the
-string remaining available to it as possible, while still allowing the
-whole regexp to match.  And so on, until all the regexp elements are
-satisfied.
+Принцип 3: Если есть два или более элемента в регекспе,
+самый левый жадный повторитель, если такой есть,
+будет искать строку настолько долго насколько это возможно,
+пока весь регексп регексп будет соответствовать этому поиску.
+Следующий самый левый жадный потворитель, если есть,
+постарается найти настолько много насколько это возможно
+из оставшейся строки, пока эта строка будет соответсвовать регекспу.
+И так далее, до тех пор, пока все элементы регекспа не будут 
+удовлетворены.
 
 =back
 
-As we have seen above, Principle 0 overrides the others. The regexp
-will be matched as early as possible, with the other principles
-determining how the regexp matches at that earliest character
-position.
+Как мы видели выше, принцип 0 переопределяет другие. Регексп
+будет соответствовать как можно скорее, с другими принципами
+определения такими, как, что регексп ищет самую ранню позицию символа.
 
-Here is an example of these principles in action:
+Вот пример этих принципов в действии:
 
     $x = "The programming republic of Perl";
     $x =~ /^(.+)(e|r)(.*)$/;  # matches,
