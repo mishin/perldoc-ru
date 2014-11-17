@@ -2871,15 +2871,15 @@ L<perldebguts/"Debugging Regular Expressions"> for much more detail.
 в регексп. Это предоставляет подробный отчет
 об обратных ссылках в случае оператора C<или>:
 
-use utf8;
-use Encode::Locale;
+    use utf8;
+    use Encode::Locale;
 
-if (-t) 
-{
-    binmode(STDIN, ":encoding(console_in)");
-    binmode(STDOUT, ":encoding(console_out)");
-    binmode(STDERR, ":encoding(console_out)");
-}
+    if (-t) 
+    {
+        binmode(STDIN, ":encoding(console_in)");
+        binmode(STDOUT, ":encoding(console_out)");
+        binmode(STDERR, ":encoding(console_out)");
+    }
     "that this" =~ m@(?{print "Начали в позиции ", pos, "\n";})
                      t(?{print "t1\n";})
                      h(?{print "h1\n";})
