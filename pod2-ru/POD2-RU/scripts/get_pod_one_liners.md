@@ -3,7 +3,7 @@ perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->s
 ```
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreguts.pod 886 112/886     +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlre.pod 2585 108 +/-  
-https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.pod 2928 1100 37%    +/-  
+https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.pod 2928 1133 38%    +/-  
 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebtut.pod 730 130 18%             +/-  
 
