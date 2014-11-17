@@ -1106,32 +1106,31 @@ matched, but C<r> produces the longest string in the first quantifier.
                             # $1 = 'mm'
                             # $2 = 'ing republic of Perl'
 
-Here, The earliest possible match is at the first C<'m'> in
-C<programming>. C<m{1,2}> is the first quantifier, so it gets to match
-a maximal C<mm>.
+Здесь самый ранний возможный поиск будет првая  C<'m'> в
+C<programming>. C<m{1,2}> первый повторитель, таким образом он найдет максимальные C<mm>.
 
-    $x =~ /.*(m{1,2})(.*)$/;  # matches,
+    $x =~ /.*(m{1,2})(.*)$/;  # найдет,
                               # $1 = 'm'
                               # $2 = 'ing republic of Perl'
 
-Here, the regexp matches at the start of the string. The first
-quantifier C<.*> grabs as much as possible, leaving just a single
-C<'m'> for the second quantifier C<m{1,2}>.
+Здесь регексп ищет с начала строки. Первый повторитель C<.*> 
+забирает настолько много насколько это возможно , оставляя лишь одну
+C<'m'> для второго повторителя C<m{1,2}>.
 
-    $x =~ /(.?)(m{1,2})(.*)$/;  # matches,
+    $x =~ /(.?)(m{1,2})(.*)$/;  # найдет,
                                 # $1 = 'a'
                                 # $2 = 'mm'
                                 # $3 = 'ing republic of Perl'
 
-Here, C<.?> eats its maximal one character at the earliest possible
-position in the string, C<'a'> in C<programming>, leaving C<m{1,2}>
-the opportunity to match both C<m>'s. Finally,
+Здесь, C<.?> съест максимально один символ в самой ранней возможной позиции строки,
+ это будет C<'a'> в C<programming>, Оставляя C<m{1,2}>
+возможность нати оба C<m>. Наконец,
 
-    "aXXXb" =~ /(X*)/; # matches with $1 = ''
+    "aXXXb" =~ /(X*)/; # найдет $1 = ''
 
-because it can match zero copies of C<'X'> at the beginning of the
-string.  If you definitely want to match at least one C<'X'>, use
-C<X+>, not C<X*>.
+потому что он може найти ноль копий C<'X'> в начале строки.
+Если вы определенно хотите найти по крайней мере один C<'X'>, 
+используйте C<X+>, не C<X*>.
 
 Sometimes greed is not good.  At times, we would like quantifiers to
 match a I<minimal> piece of string, rather than a maximal piece.  For
