@@ -1098,7 +1098,7 @@ C<{n,m}> будут искать строку настолько долго (в�
                               # $2 = 'r'
                               # $3 = 'l'
 
-This regexp matches at the earliest string position, C<'T'>.  One
+Регексп ищет наиболее раннюю позицию в строке, C<'T'>.  One
 might think that C<e>, being leftmost in the alternation, would be
 matched, but C<r> produces the longest string in the first quantifier.
 
