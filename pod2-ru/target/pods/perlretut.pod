@@ -1213,17 +1213,25 @@ C<$> и находит всю оставшуюся строку.
                                  # $2 = 'mm'
                                  # $3 = 'ing republic of Perl'
 
-Just as in the previous regexp, the first quantifier C<.??> can match
-earliest at position C<'a'>, so it does.  The second quantifier is
-greedy, so it matches C<mm>, and the third matches the rest of the
-string.
+Как и в предыдущих регекспах, первый повторитель квантификатор C<.??> может соответствовать
+самой ранней позиции C<'a'> и он это делает. Второй повторитель
+жадный, так что он совпадает C<mm>, и третий соответствует остальной части
+строки.
 
-We can modify principle 3 above to take into account non-greedy
-quantifiers:
+Мы можем изменить принцип 3 выше, принимая во внимание не-жадные (щедрые)
+потворители:
 
 =over 4
 
 =item *
+
+Принцип 3: Если есть два или более элементов в regexp,
+крайний слева (не жадный) жадный квантор, если таковые имеются, будет соответствовать как много
+(мало) строки как можно по-прежнему предоставляя весь
+регулярное выражение для сопоставления. Следующий крайний слева жадный квантификатор (не жадный), если
+любой, будет пытаться соответствовать как много (мало) оставшиеся строки
+имеющиеся в его распоряжении как можно скорее, пока все еще позволяющ весь regexp для
+матч. И так далее, пока не будут выполнены все элементы regexp.
 
 Principle 3: If there are two or more elements in a regexp, the
 leftmost greedy (non-greedy) quantifier, if any, will match as much
