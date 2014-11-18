@@ -1225,43 +1225,36 @@ C<$> и находит всю оставшуюся строку.
 
 =item *
 
-Принцип 3: Если есть два или более элементов в regexp,
-крайний слева (не жадный) жадный квантор, если таковые имеются, будет соответствовать как много
-(мало) строки как можно по-прежнему предоставляя весь
-регулярное выражение для сопоставления. Следующий крайний слева жадный квантификатор (не жадный), если
-любой, будет пытаться соответствовать как много (мало) оставшиеся строки
-имеющиеся в его распоряжении как можно скорее, пока все еще позволяющ весь regexp для
-матч. И так далее, пока не будут выполнены все элементы regexp.
-
-Principle 3: If there are two or more elements in a regexp, the
-leftmost greedy (non-greedy) quantifier, if any, will match as much
-(little) of the string as possible while still allowing the whole
-regexp to match.  The next leftmost greedy (non-greedy) quantifier, if
-any, will try to match as much (little) of the string remaining
-available to it as possible, while still allowing the whole regexp to
-match.  And so on, until all the regexp elements are satisfied.
+Принцип 3: Если есть два или более элемента в регекспе,
+крайний слева жадный  (не жадный) повторитель, если таковые имеются, 
+будет соответствовать наиболее длинной (короткой) части
+насколько это позволяет соответствовать всему регекспу. 
+Следующий крайний слева жадный (не жадный) повторитель, если
+ есть, будет пытаться соответствовать наиболее длинной (короткой) части оставшейся строки
+ насколько это возможно, пока все еще позволяя соответствовать всему регекспу. 
+И так далее, пока не будут выполнены все элементы регекспа.
 
 =back
 
-Just like alternation, quantifiers are also susceptible to
-backtracking.  Here is a step-by-step analysis of the example
+Так же как чередование, повторители также чувствительны к
+поиску с возвратом. Вот пошаговый анализ примера
 
     $x = "the cat in the hat";
-    $x =~ /^(.*)(at)(.*)$/; # matches,
+    $x =~ /^(.*)(at)(.*)$/; # найдет,
                             # $1 = 'the cat in the h'
                             # $2 = 'at'
-                            # $3 = ''   (0 matches)
+                            # $3 = ''   (0 найдено)
 
 =over 4
 
 =item 0
 
-Start with the first letter in the string 't'.
+Начинаем с первой буквы в строке 't'.
 
 =item 1
 
-The first quantifier '.*' starts out by matching the whole
-string 'the cat in the hat'.
+Первый повторитель '.*' начинает совпадать с целой строкой
+'the cat in the hat'.
 
 =item 2
 
