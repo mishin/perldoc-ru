@@ -1179,36 +1179,36 @@ C<n> раз, C<a{n}?> эквивалентно C<a{n}> и есть только 
                               # $2 = 'e'
                               # $3 = ' programming republic of Perl'
 
-The minimal string that will allow both the start of the string C<^>
-and the alternation to match is C<Th>, with the alternation C<e|r>
-matching C<e>.  The second quantifier C<.*> is free to gobble up the
-rest of the string.
+Минимальная строка позволяет найти одновременно и начало строки
+ C<^> и первая скобка найдет C<Th>, а в альтернативе C<e|r>
+найдется C<e>.  Второй повторитель C<.*> теперь свободен 
+съесть оставшуюся часть строки.
 
-    $x =~ /(m{1,2}?)(.*?)$/;  # matches,
+    $x =~ /(m{1,2}?)(.*?)$/;  # найдет,
                               # $1 = 'm'
                               # $2 = 'ming republic of Perl'
 
-The first string position that this regexp can match is at the first
-C<'m'> in C<programming>. At this position, the minimal C<m{1,2}?>
-matches just one C<'m'>.  Although the second quantifier C<.*?> would
-prefer to match no characters, it is constrained by the end-of-string
-anchor C<$> to match the rest of the string.
+Первую позиция строки, которую регексп находит это 
+C<'m'> в C<programming>. В этой позиции, минимальному  C<m{1,2}?>
+соответствует только один C<'m'>. Хотя второй повторитель C<.*?>
+предпочитает поиск без символов, он ограничен якорем конца строки
+C<$> и находит всю оставшуюся строку.
 
-    $x =~ /(.*?)(m{1,2}?)(.*)$/;  # matches,
+    $x =~ /(.*?)(m{1,2}?)(.*)$/;  # найдет,
                                   # $1 = 'The progra'
                                   # $2 = 'm'
                                   # $3 = 'ming republic of Perl'
 
-In this regexp, you might expect the first minimal quantifier C<.*?>
-to match the empty string, because it is not constrained by a C<^>
-anchor to match the beginning of the word.  Principle 0 applies here,
-however.  Because it is possible for the whole regexp to match at the
-start of the string, it I<will> match at the start of the string.  Thus
-the first quantifier has to match everything up to the first C<m>.  The
-second minimal quantifier matches just one C<m> and the third
-quantifier matches the rest of the string.
+В этом регекспе, вы могли бы ожидать, что первый минимальный повторитель C<.*?>
+ найдет пустую строку, потому что он не ограничен якорем C<^> в начале слова. 
+Однако, здесь применяется принцип 0.
+Потому что, если возможно для регекспа найти от начала строки,
+он I<найдет> с начала строки. Таким образом
+первый потворитель должно соответствовать всему до первого C<m>. 
+Второй минимальный потворитель находит только один  C<m> и третий
+повторитель соответствует остальной части строки.
 
-    $x =~ /(.??)(m{1,2})(.*)$/;  # matches,
+    $x =~ /(.??)(m{1,2})(.*)$/;  # найдет,
                                  # $1 = 'a'
                                  # $2 = 'mm'
                                  # $3 = 'ing republic of Perl'
