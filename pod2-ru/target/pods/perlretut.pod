@@ -1258,35 +1258,47 @@ C<$> и находит всю оставшуюся строку.
 
 =item 2
 
-'a' in the regexp element 'at' doesn't match the end of the
-string.  Backtrack one character.
+'a' в элементе регекспа 'at' не находится в конце строки.
+Возвращаемся на один символ назад.
 
 =item 3
 
-'a' in the regexp element 'at' still doesn't match the last
-letter of the string 't', so backtrack one more character.
+'a' в элементе регекспа 'at' еще не совпадает с последним символом
+ 't', таким образом возвращаемся еще на один символ.
 
 =item 4
 
-Now we can match the 'a' and the 't'.
+Теперь мы можем найти 'a' и 't'.
 
 =item 5
 
-Move on to the third element '.*'.  Since we are at the end of
-the string and '.*' can match 0 times, assign it the empty string.
+Переходим к третьему элементу '.*'. Поскольку мы находимся в конце
+строки и '.*' может найтись 0 раз, то ему присваивается пустая строка.
 
 =item 6
 
-We are done!
+Мы сделали это!
 
 =back
 
-Most of the time, all this moving forward and backtracking happens
-quickly and searching is fast. There are some pathological regexps,
-however, whose execution time exponentially grows with the size of the
-string.  A typical structure that blows up in your face is of the form
+Большую часть времени, все эти перемещения вперед и назад происходят
+быстро и поиск быстр. Есть некоторые патологические регекспы,
+однако, время выполнения которых растет экспоненциально с ростом размера
+строки. Типичная структура, которая взрывается в лицо имеет вид
 
     /(a|b+)*/;
+
+Проблема заключается в неопределенном числе вложенных повторителей (квантификаторов). Есть много
+различных способов секционирования строку длины n между C < + раздел настроек
+и C < * раздел настроек: одно повторение с C <b+> длины n, двух повторений с
+Первый C <b+> длина k и второй с длиной n-k, m повторений
+чьи биты добавить до длины n, и др. На самом деле существует экспоненциальная
+количество способов разделить строку в зависимости от его длины. A
+RegExp может получить повезло и матч в начале процесса, но если есть
+не матч, Perl постараюсь я <every>возможность до отказа. Так что будьте
+осторожнее с вложенными C < * раздел настроек, C <{n,m}> и C < + раздел настроек ' s. Книга
+Я < мастеринг регулярные выражения раздел настроек, Джеффри Friedl дает прекрасный
+обсуждение этого и других вопросов эффективности.
 
 The problem is the nested indeterminate quantifiers.  There are many
 different ways of partitioning a string of length n between the C<+>
