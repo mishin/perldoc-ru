@@ -1302,19 +1302,18 @@ I<Mastering Regular Expressions> Джеффри Фридла дает прекр
 
 =head2 Притяжательные повторители
 
-Backtracking during the relentless search for a match may be a waste
-of time, particularly when the match is bound to fail.  Consider
-the simple pattern
+Поиск с возвратом в ходе неустанного поиска может быть
+бессмысленной тратой времени. Рассмотрим простой шаблон
 
-    /^\w+\s+\w+$/; # a word, spaces, a word
+    /^\w+\s+\w+$/; # слово, пробел, слово
 
-Whenever this is applied to a string which doesn't quite meet the
-pattern's expectations such as S<C<"abc  ">> or S<C<"abc  def ">>,
-the regex engine will backtrack, approximately once for each character
-in the string.  But we know that there is no way around taking I<all>
-of the initial word characters to match the first repetition, that I<all>
-spaces must be eaten by the middle part, and the same goes for the second
-word.
+Всякий раз, когда это применяется к строке, которая не вполне соответствуют
+ожиданиям шаблона например S<C<"abc  ">> или S<C<"abc  def ">>,
+обработчик регулярных выражений будет отступать (выполнять возрат), примерно один раз для каждого символа
+в строке. Но мы знаем, что нет никакого пути вокруг принимая I<все>
+из начальных символов слова, чтобы найти первое повторение, таким образом  I<все>
+пробелы должны быть съедены в средней части, и то же самое для второго
+слова.
 
 With the introduction of the I<possessive quantifiers> in Perl 5.10, we
 have a way of instructing the regex engine not to backtrack, with the
