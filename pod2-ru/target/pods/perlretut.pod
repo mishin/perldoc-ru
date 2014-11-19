@@ -1289,31 +1289,18 @@ C<$> и находит всю оставшуюся строку.
     /(a|b+)*/;
 
 Проблема заключается в неопределенном числе вложенных повторителей (квантификаторов). Есть много
-различных способов секционирования строку длины n между C < + раздел настроек
-и C < * раздел настроек: одно повторение с C <b+> длины n, двух повторений с
-Первый C <b+> длина k и второй с длиной n-k, m повторений
+различных способов секционирования строки на длину n между C<+> и C<*>:
+одно повторение с  C<b+> длины n, два повторения с
+первым C<b+> длины k и второе с длиной n-k, m повторений
 чьи биты добавить до длины n, и др. На самом деле существует экспоненциальная
-количество способов разделить строку в зависимости от его длины. A
-RegExp может получить повезло и матч в начале процесса, но если есть
-не матч, Perl постараюсь я <every>возможность до отказа. Так что будьте
-осторожнее с вложенными C < * раздел настроек, C <{n,m}> и C < + раздел настроек ' s. Книга
-Я < мастеринг регулярные выражения раздел настроек, Джеффри Friedl дает прекрасный
-обсуждение этого и других вопросов эффективности.
+количество способов разделить строку в зависимости от его длины. 
+Регекспу может повезти и он найдет в начале процесса, но если 
+он не найдет, Perl постарается проверить  I<каждую> возможность не сдаваясь. Так что будьте
+осторожнее с вложенными C<*>,  C<{n,m}>, и C<+>'s. Книга
+I<Mastering Regular Expressions> Джеффри Фридла дает прекрасное
+обсуждение этого и других проблем эффективности.
 
-The problem is the nested indeterminate quantifiers.  There are many
-different ways of partitioning a string of length n between the C<+>
-and C<*>: one repetition with C<b+> of length n, two repetitions with
-the first C<b+> length k and the second with length n-k, m repetitions
-whose bits add up to length n, etc.  In fact there are an exponential
-number of ways to partition a string as a function of its length.  A
-regexp may get lucky and match early in the process, but if there is
-no match, Perl will try I<every> possibility before giving up.  So be
-careful with nested C<*>'s, C<{n,m}>'s, and C<+>'s.  The book
-I<Mastering Regular Expressions> by Jeffrey Friedl gives a wonderful
-discussion of this and other efficiency issues.
-
-
-=head2 Possessive quantifiers
+=head2 Притяжательные повторители
 
 Backtracking during the relentless search for a match may be a waste
 of time, particularly when the match is bound to fail.  Consider
