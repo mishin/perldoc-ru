@@ -1315,67 +1315,67 @@ I<Mastering Regular Expressions> Джеффри Фридла дает прекр
 пробелы должны быть съедены в средней части, и то же самое для второго
 слова.
 
-With the introduction of the I<possessive quantifiers> in Perl 5.10, we
-have a way of instructing the regex engine not to backtrack, with the
-usual quantifiers with a C<+> appended to them.  This makes them greedy as
-well as stingy; once they succeed they won't give anything back to permit
-another solution. They have the following meanings:
+С введением I<притяжательных повторителей>  в Perl 5.10 у нас
+есть способ давай инструкции движку регулярных выражений не возвращаться, с
+обычными повторителями C<+>, добавляемые к ним. Это делает их скупыми
+; после того, как они найдут успешное совпадение они не возвращаются обратно, чтобы найти
+другое решение. Они имеют следующие значения:
 
 =over 4
 
 =item *
 
-C<a{n,m}+> means: match at least C<n> times, not more than C<m> times,
-as many times as possible, and don't give anything up. C<a?+> is short
-for C<a{0,1}+>
+C<a{n,m}+> означает: найти как минимум C<n> раз, но не более C<m> раз,
+настолько много насколько возможно, и не дает ничего больше. C<a?+> это краткая запись для
+ C<a{0,1}+>
 
 =item *
 
-C<a{n,}+> means: match at least C<n> times, but as many times as possible,
-and don't give anything up. C<a*+> is short for C<a{0,}+> and C<a++> is
-short for C<a{1,}+>.
+C<a{n,}+> означает: найти как минимум C<n> раз, но настолько много насколько возможно
+ и не дает ничего больше. C<a*+> это краткая запись для C<a{0,}+> и 
+ C<a++> это краткая запись для C<a{1,}+>.
 
 =item *
 
-C<a{n}+> means: match exactly C<n> times.  It is just there for
-notational consistency.
+C<a{n}+> означает: найти точно C<n> раз.  Это только для нотационной
+консистенции.
 
 =back
 
-These possessive quantifiers represent a special case of a more general
-concept, the I<independent subexpression>, see below.
+Эти притяжательные повторители представляют собой особый случай более общей
+концепции I<независимого подвыражения>, смотрите ниже.
 
-As an example where a possessive quantifier is suitable we consider
-matching a quoted string, as it appears in several programming languages.
-The backslash is used as an escape character that indicates that the
-next character is to be taken literally, as another character for the
-string.  Therefore, after the opening quote, we expect a (possibly
-empty) sequence of alternatives: either some character except an
-unescaped quote or backslash or an escaped character.
+В качестве примера, когда притяжательный повторитель подходит мы считаем
+совпадающие строки в кавычках, как они появляются в нескольких языках программирования.
+Обратная косая черта используется как escape-символ, который указывает, что
+следующим символ следует понимать буквально, как еще один символ для
+строки. Таким образом, после открытия кавычки, мы ожидаем (возможно
+пустую) последовательность альтернатив: либо некоторые символы, за исключением
+неэкранированной кавычки или обратной косой черты или escape-символа.
 
     /"(?:[^"\\]++|\\.)*+"/;
 
 
-=head2 Building a regexp
+=head2 Построение регекспа
 
-At this point, we have all the basic regexp concepts covered, so let's
-give a more involved example of a regular expression.  We will build a
-regexp that matches numbers.
+На данный момент у нас есть все основные понятия регексп, так что давайте
+дадим более сложный пример регулярного выражения. Мы будем строить
+регексп, соответствующий числам.
 
-The first task in building a regexp is to decide what we want to match
-and what we want to exclude.  In our case, we want to match both
-integers and floating point numbers and we want to reject any string
-that isn't a number.
+Первая задача при создании регексп это решить, чего мы хотим найти, и
+, что мы хотим исключить. В нашем случае мы хотим найти и
+целые числа и числа с плавающей запятой и мы хотим отвергнуть любую строку,т.к.
+это не число.
 
-The next task is to break the problem down into smaller problems that
-are easily converted into a regexp.
+Следующая задача — разбить проблему на меньшие, которые уже
+легко превратить в регексп.
 
-The simplest case is integers.  These consist of a sequence of digits,
-with an optional sign in front.  The digits we can represent with
-C<\d+> and the sign can be matched with C<[+-]>.  Thus the integer
-regexp is
+Простейший случай — это целые числа. Они состоят из последовательности цифр,
+с необязательным знаком впереди. Цифры, которые мы можем представлять 
+C<\d+> и знак может быть найден C<[+-]>. 
+Таким образом,регексп для целого числа
 
-    /[+-]?\d+/;  # matches integers
+    /[+-]?\d+/;  # найдет целые числа
 
 A floating point number potentially has a sign, an integral part, a
 decimal point, a fractional part, and an exponent.  One or more of these
