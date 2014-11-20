@@ -1377,29 +1377,36 @@ C<\d+> и знак может быть найден C<[+-]>.
 
     /[+-]?\d+/;  # найдет целые числа
 
-A floating point number potentially has a sign, an integral part, a
-decimal point, a fractional part, and an exponent.  One or more of these
-parts is optional, so we need to check out the different
-possibilities.  Floating point numbers which are in proper form include
-123., 0.345, .34, -1e6, and 25.4E-72.  As with integers, the sign out
-front is completely optional and can be matched by C<[+-]?>.  We can
-see that if there is no exponent, floating point numbers must have a
-decimal point, otherwise they are integers.  We might be tempted to
-model these with C<\d*\.\d*>, but this would also match just a single
-decimal point, which is not a number.  So the three cases of floating
-point number without exponent are
+Число с плавающей точкой потенциально имеет знак, 
+десятичную запятую, дробную часть и показатель степени. Один или более из этих
+частей являются не обязательными, поэтому нам нужно проверить различные
+возможности. Числа с плавающей запятой, которые находятся в надлежащей форме включают
+123. 0,345,.34,-1e6 и 25.4E-72. Как и с целыми числами, знак
+спереди совершенно необязателен и может находится  C<[+-]?>. Мы можем
+увидеть, что если нет не показателя степени, числа с плавающей точкой должны иметь
+десятичную запятую, в противном случае они являются целыми числами. У нас мог бы возникнуть соблазн
+замоделировать это так  C<\d*\.\d*>, но это также будет соответствовать только одной
+десятичной точке, которая не является числом. Таким образом вот три случая числа с плавающей
+запятой без экспоненты
 
    /[+-]?\d+\./;  # 1., 321., etc.
    /[+-]?\.\d+/;  # .1, .234, etc.
    /[+-]?\d+\.\d+/;  # 1.0, 30.56, etc.
 
-These can be combined into a single regexp with a three-way alternation:
+Они могут быть объединены в единый регексп с тройным чередованием:
 
-   /[+-]?(\d+\.\d+|\d+\.|\.\d+)/;  # floating point, no exponent
+   /[+-]?(\d+\.\d+|\d+\.|\.\d+)/;  # число с плавающей точкой, не с экспонентой
 
-In this alternation, it is important to put C<'\d+\.\d+'> before
-C<'\d+\.'>.  If C<'\d+\.'> were first, the regexp would happily match that
-and ignore the fractional part of the number.
+В этом выборе, важно поставить C<'\d+\.\d+'> перед
+C<'\d+\.'>.  Если C<'\d+\.'> идет первым, регексп успешно найдется
+ и проигнорирует дробную часть числа.
+
+Теперь рассмотрим числа с плавающей запятой с экспонентой. Ключ
+наблюдения здесь является то, что я <both>целых чисел и чисел с десятичной
+Очки разрешены перед экспонентой. Тогда как экспоненты,
+общий знак, независимо от ли мы соответствие чисел с
+или без десятичной точки и можно «отделить» от
+мантисса. Общая форма regexp теперь становится ясно:
 
 Now consider floating point numbers with exponents.  The key
 observation here is that I<both> integers and numbers with decimal
