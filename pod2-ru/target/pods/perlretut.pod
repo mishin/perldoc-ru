@@ -1401,30 +1401,29 @@ C<\d+> и знак может быть найден C<[+-]>.
 C<'\d+\.'>.  Если C<'\d+\.'> идет первым, регексп успешно найдется
  и проигнорирует дробную часть числа.
 
-Теперь рассмотрим числа с плавающей запятой с экспонентой. Ключ
-наблюдения здесь является то, что я <both>целых чисел и чисел с десятичной
-Очки разрешены перед экспонентой. Тогда как экспоненты,
-общий знак, независимо от ли мы соответствие чисел с
-или без десятичной точки и можно «отделить» от
-мантисса. Общая форма regexp теперь становится ясно:
-
-Now consider floating point numbers with exponents.  The key
-observation here is that I<both> integers and numbers with decimal
-points are allowed in front of an exponent.  Then exponents, like the
-overall sign, are independent of whether we are matching numbers with
-or without decimal points, and can be 'decoupled' from the
-mantissa.  The overall form of the regexp now becomes clear:
+Теперь рассмотрим числа с плавающей запятой с экспонентой. Важным 
+здесь является то, что я I<оба числа> и целые и с десятичной
+запятой могут быть перед экспонентой.Тогда экспонента,
+как и знак, независимоа от того ищем ли мы числа с или
+без десятичной запятой и их можно 'отделить' от
+мантиссы. Общая форма регекспа теперь становится ясна:
 
     /^(optional sign)(integer | f.p. mantissa)(optional exponent)$/;
 
-The exponent is an C<e> or C<E>, followed by an integer.  So the
-exponent regexp is
+Экспонена это C<e> или C<E>, идущая перед цифрой.  Таким образом
+регексп для экспоненты такой
 
-   /[eE][+-]?\d+/;  # exponent
+   /[eE][+-]?\d+/;  # экспонента
 
-Putting all the parts together, we get a regexp that matches numbers:
+Соединяя все части, мы получаем регексп, который соответствует числам:
 
-   /^[+-]?(\d+\.\d+|\d+\.|\.\d+|\d+)([eE][+-]?\d+)?$/;  # Ta da!
+   /^[+-]?(\d+\.\d+|\d+\.|\.\d+|\d+)([eE][+-]?\d+)?$/;  # Тадам!
+
+Длинные регулярных выражений, как это может впечатлить ваших друзей, но может быть трудно
+Расшифруйте. В сложных ситуациях, как это, C <//x> модификатор для
+матч имеет неоценимое значение. Это позволяет поставить почти произвольным пробелы
+и комментарии в регулярное выражение не затрагивая их смысл. Используя его,
+Мы можем переписать наши «расширенный» regexp в более приятной форме
 
 Long regexps like this may impress your friends, but can be hard to
 decipher.  In complex situations like this, the C<//x> modifier for a
