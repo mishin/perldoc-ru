@@ -14,7 +14,8 @@ view https://github.com/mishin/perldoc-ru/blob/master/pod2-ru/POD2-RU/scripts/ge
 edit https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/POD2-RU/scripts/get_pod_one_liners.md  
 edit https://github.com/mishin/parse_datastage_dsx/edit/master/Dsx_parse/Tools.pm  
 https://github.com/mishin/perlsecret/edit/master/lib/perlsecret.ru.pod  
-  
+
+https://github.com/mishin/perldoc-ru/blob/master/pod2-ru/target/pods/perlperf.pod  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlunicode.pod 1857 23 +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreapi.pod 706 57           +/-  
 
