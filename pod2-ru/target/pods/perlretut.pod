@@ -1507,18 +1507,18 @@ S<C<'\ '>>  или вставить пробел, как в классе сим�
 
 =head2 Использование регулярных выражений в Perl
 
-The last topic of Part 1 briefly covers how regexps are used in Perl
-programs.  Where do they fit into Perl syntax?
+Последняя тема 1 части кратко охватывает использование регулярных выражений в Perl
+программах. Где они помещаются в синтаксисе Perl?
 
-We have already introduced the matching operator in its default
-C</regexp/> and arbitrary delimiter C<m!regexp!> forms.  We have used
-the binding operator C<=~> and its negation C<!~> to test for string
-matches.  Associated with the matching operator, we have discussed the
-single line C<//s>, multi-line C<//m>, case-insensitive C<//i> and
-extended C<//x> modifiers.  There are a few more things you might
-want to know about matching operators.
+Мы уже представили соответствующий оператор по умолчанию это
+C</регексп/> , а в случае произвольного разделителя C<m!регексп!> . Мы использовали
+оператор привязки  C<=~>  и его отрицание  C<!~> для проверки найденной строки.
+Операторы, связанные с оператором поиска, мы уже обсуждали,
+ это единая линия C<//s>, многострочная строка C<//m>, без учета регистра С<//i> и
+модификатор расширенного синтаксиса C<//x>. Есть несколько вещей, которые вы могли бы
+захотеть узнать об операторах поиска.
 
-=head3 Prohibiting substitution
+=head3 Запрет замены
 
 If you change C<$pattern> after the first substitution happens, Perl
 will ignore it.  If you don't want any substitutions at all, use the
