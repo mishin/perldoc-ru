@@ -1520,24 +1520,34 @@ C</регексп/> , а в случае произвольного раздел
 
 =head3 Запрет замены
 
-If you change C<$pattern> after the first substitution happens, Perl
-will ignore it.  If you don't want any substitutions at all, use the
-special delimiter C<m''>:
+Если вы измените  C<$pattern> после первой произошедшей замены, Perl
+это проигнорирует.  Если вы не хотите замен вообще, используйте
+cпециальный разделитель C<m''>:
 
     @pattern = ('Seuss');
     while (<>) {
-        print if m'@pattern';  # matches literal '@pattern', not 'Seuss'
+        print if m'@pattern';  # найде строку '@pattern', не 'Seuss'
     }
 
-Similar to strings, C<m''> acts like apostrophes on a regexp; all other
-C<m> delimiters act like quotes.  If the regexp evaluates to the empty string,
-the regexp in the I<last successful match> is used instead.  So we have
+Подобно строкам, C<m''> действует как апостроф на регексп; все другие
+разделители C<m> действуют как цитаты. Если выражение оценивается как пустая строка,
+вместо этого используется регексп I <последнего успешного сопоставления>. Поэтому у нас
 
-    "dog" =~ /d/;  # 'd' matches
-    "dogbert =~ //;  # this matches the 'd' regexp used before
+    "dog" =~ /d/;  # найдет 'd'
+    "dogbert =~ //;  # это найдет 'd' , как и предыдущий регексп
 
 
-=head3 Global matching
+=head3 Глобальный поиск
+
+
+Модификаторы глобальной matchingThe последние два мы будем обсуждать здесь,
+C <//g> и C <//c>, касаются нескольких матчей.
+Модификатор C <//g> стоит для глобального согласования и позволяет
+соответствующий оператор для сопоставления в строке столько раз, насколько это возможно.
+В скалярных контексте будет иметь последовательные вызовы против строки
+C <//g> прыгать от матча к матчу, следить за позицию в
+Строка, как она идет вперед. Вы можете получить или задать положение с
+C <pos()> функции.
 
 The final two modifiers we will discuss here,
 C<//g> and C<//c>, concern multiple matches.
