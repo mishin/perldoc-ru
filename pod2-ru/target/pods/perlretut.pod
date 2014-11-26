@@ -1582,6 +1582,13 @@ C<//g> и C<//c>.
     Слово dog, оканчивается в позиции 7
     Слово house, оканчивается в позиции 13
 
+Неудачного матча или меняется Целевая строка сбрасывает позицию. Если
+Вы не хотите сбросить после отказа матч, добавить позицию
+C <//c>, как и C </regexp/gc>. Текущая позиция в строке
+связанные с строкой, не regexp. Это означает, что разные
+строки имеют разные позиции и их соответствующие позиции может быть
+задать или прочитать самостоятельно.
+
 A failed match or changing the target string resets the position.  If
 you don't want the position reset after failure to match, add the
 C<//c>, as in C</regexp/gc>.  The current position in the string is
