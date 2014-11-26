@@ -1539,49 +1539,48 @@ cпециальный разделитель C<m''>:
 
 =head3 Глобальный поиск
 
+Здесь мы будем обсуждать последние 2 модификатора, касающиеся поиска
+C<//g> и C<//c>.
+Модификатор C<//g> нужен для глобального поиска и позволяет
+найти шаблон в строке столько раз, насколько это возможно.
+В скалярных контексте при C<//g> будут последовательные вызовы в искомой строке
+ от одного удачного совпадения к другому, удерживая позицию в искомой строке 
+ по мере продвижения вперед. Вы можете получить или задать положение в строке 
+ с помощью функции C<pos()>.
 
-Модификаторы глобальной matchingThe последние два мы будем обсуждать здесь,
-C <//g> и C <//c>, касаются нескольких матчей.
-Модификатор C <//g> стоит для глобального согласования и позволяет
-соответствующий оператор для сопоставления в строке столько раз, насколько это возможно.
-В скалярных контексте будет иметь последовательные вызовы против строки
-C <//g> прыгать от матча к матчу, следить за позицию в
-Строка, как она идет вперед. Вы можете получить или задать положение с
-C <pos()> функции.
+В следующем примере показано использование C<//g>. Предположим, что у нас есть
+строка, которая состоит из слов, разделенных пробелами. Если мы знаем число
+слов заранее, то мы могли бы извлечь слова, используя группировки:
 
-The final two modifiers we will discuss here,
-C<//g> and C<//c>, concern multiple matches.
-The modifier C<//g> stands for global matching and allows the
-matching operator to match within a string as many times as possible.
-In scalar context, successive invocations against a string will have
-C<//g> jump from match to match, keeping track of position in the
-string as it goes along.  You can get or set the position with the
-C<pos()> function.
-
-The use of C<//g> is shown in the following example.  Suppose we have
-a string that consists of words separated by spaces.  If we know how
-many words there are in advance, we could extract the words using
-groupings:
-
-    $x = "cat dog house"; # 3 words
-    $x =~ /^\s*(\w+)\s+(\w+)\s+(\w+)\s*$/; # matches,
+    $x = "cat dog house"; # 3 слова
+    $x =~ /^\s*(\w+)\s+(\w+)\s+(\w+)\s*$/; # найдет,
                                            # $1 = 'cat'
                                            # $2 = 'dog'
                                            # $3 = 'house'
 
-But what if we had an indeterminate number of words? This is the sort
-of task C<//g> was made for.  To extract all words, form the simple
-regexp C<(\w+)> and loop over all matches with C</(\w+)/g>:
+Но что делать, если мы имеем неопределенное число слов? Для этого рода
+задач сделан модификатор C<//g>. Чтобы извлечь все слова, образуют простой
+регексп C<(\w+)> и цикл по всем найденным шаблонам в строке C</(\w+)/g>:
 
+    use utf8;
+    use Encode::Locale;
+
+    if (-t) 
+    {
+        binmode(STDIN, ":encoding(console_in)");
+        binmode(STDOUT, ":encoding(console_out)");
+        binmode(STDERR, ":encoding(console_out)");
+    }
+    
     while ($x =~ /(\w+)/g) {
-        print "Word is $1, ends at position ", pos $x, "\n";
+        print "Слово $1, оканчивается в позиции ", pos $x, "\n";
     }
 
-prints
+напечатает
 
-    Word is cat, ends at position 3
-    Word is dog, ends at position 7
-    Word is house, ends at position 13
+    Слово cat, оканчивается в позиции 3
+    Слово dog, оканчивается в позиции 7
+    Слово house, оканчивается в позиции 13
 
 A failed match or changing the target string resets the position.  If
 you don't want the position reset after failure to match, add the
