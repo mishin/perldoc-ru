@@ -1582,45 +1582,38 @@ C<//g> и C<//c>.
     Слово dog, оканчивается в позиции 7
     Слово house, оканчивается в позиции 13
 
-Неудачного матча или меняется Целевая строка сбрасывает позицию. Если
-Вы не хотите сбросить после отказа матч, добавить позицию
-C <//c>, как и C </regexp/gc>. Текущая позиция в строке
-связанные с строкой, не regexp. Это означает, что разные
-строки имеют разные позиции и их соответствующие позиции может быть
-задать или прочитать самостоятельно.
+Неудачный поиск или изменение целевой строки для поиска сбрасывает позицию. Если
+вы не хотите сбрасывать позицию после неудачного поиска добавте
+C<//c>, как в C</регексп/gc>. Текущая позиция в строке
+связывается со строкой, а не с регекспом. Это означает, что разные
+строки имеют разные позиции и их соответствующие позиции можно
+задать или прочитать независимо.
 
-A failed match or changing the target string resets the position.  If
-you don't want the position reset after failure to match, add the
-C<//c>, as in C</regexp/gc>.  The current position in the string is
-associated with the string, not the regexp.  This means that different
-strings have different positions and their respective positions can be
-set or read independently.
+В списочном контексте C<//g> возвращает список найденных группировок, или если
+нет групп, список совпадений во всем регекспе. Так что, если
+мы хотим найти только слова, мы можем использовать
 
-In list context, C<//g> returns a list of matched groupings, or if
-there are no groupings, a list of matches to the whole regexp.  So if
-we wanted just the words, we could use
-
-    @words = ($x =~ /(\w+)/g);  # matches,
+    @words = ($x =~ /(\w+)/g);  # найдет,
                                 # $words[0] = 'cat'
                                 # $words[1] = 'dog'
                                 # $words[2] = 'house'
 
-Closely associated with the C<//g> modifier is the C<\G> anchor.  The
-C<\G> anchor matches at the point where the previous C<//g> match left
-off.  C<\G> allows us to easily do context-sensitive matching:
+Тесно связан с модификатором C<//g> якорь C<\G> . Якорь C<\G> находит позицию, где предыдущий
+C<//g> в поиске был выключен. 
+C<\G> позволяет нам легко сделать контекстно-чувствительный поиск:
 
-    $metric = 1;  # use metric units
+    $metric = 1;  # использовать метрические единицы
     ...
-    $x = <FILE>;  # read in measurement
-    $x =~ /^([+-]?\d+)\s*/g;  # get magnitude
+    $x = <FILE>;  # читать в измерение
+    $x =~ /^([+-]?\d+)\s*/g;  # получить величины
     $weight = $1;
-    if ($metric) { # error checking
+    if ($metric) { # проверка ошибок
         print "Units error!" unless $x =~ /\Gkg\./g;
     }
     else {
         print "Units error!" unless $x =~ /\Glbs\./g;
     }
-    $x =~ /\G\s+(widget|sprocket)/g;  # continue processing
+    $x =~ /\G\s+(widget|sprocket)/g;  # продолжаем обработку
 
 The combination of C<//g> and C<\G> allows us to process the string a
 bit at a time and use arbitrary Perl logic to decide what to do next.
