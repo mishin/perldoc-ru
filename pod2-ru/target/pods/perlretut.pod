@@ -1615,60 +1615,60 @@ C<\G> позволяет нам легко сделать контекстно-�
     }
     $x =~ /\G\s+(widget|sprocket)/g;  # продолжаем обработку
 
-The combination of C<//g> and C<\G> allows us to process the string a
-bit at a time and use arbitrary Perl logic to decide what to do next.
-Currently, the C<\G> anchor is only fully supported when used to anchor
-to the start of the pattern.
+Сочетание С<//g> и С<\G> позволяет позволяет нам обрабатывать последовательность бит 
+за один раз и использовать произвольную логику Perl, чтобы решить, что делать дальше.
+В настоящее время, якорь C<\G> полностью поддерживается  только тогда, когда используется якорь для привязки
+к  началу шаблона.
 
-C<\G> is also invaluable in processing fixed-length records with
-regexps.  Suppose we have a snippet of coding region DNA, encoded as
-base pair letters C<ATCGTTGAAT...> and we want to find all the stop
-codons C<TGA>.  In a coding region, codons are 3-letter sequences, so
-we can think of the DNA snippet as a sequence of 3-letter records.  The
-naive regexp
+C<\G> также неоценим в обработке отчетов фиксированной длины 
+регекспами. Предположим, что у нас есть отрывок кодирования ДНК области, закодированной как
+письма о паре оснований C<ATCGTTGAAT...>  и мы хотим найти всю остановку
+кодоны C<TGA>. В кодирующем регионе кодоны - 3-буквенные последовательности, таким образом,
+мы можем думать об отрывке ДНК как о последовательности 3-буквенных отчетов.
+наивный регексп
 
-    # expanded, this is "ATC GTT GAA TGC AAA TGA CAT GAC"
+    # расширенный, это "ATC GTT GAA TGC AAA TGA CAT GAC"
     $dna = "ATCGTTGAATGCAAATGACATGAC";
     $dna =~ /TGA/;
 
-doesn't work; it may match a C<TGA>, but there is no guarantee that
-the match is aligned with codon boundaries, e.g., the substring
-S<C<GTT GAA>> gives a match.  A better solution is
+не работает; это может соответствоватьC<TGA>, но нет никакой гарантии, что поиск 
+будет выровнен с границами кодона, например, подстрока
+S<C<GTT GAA>> дает успешный поиск. Лучшее решение
 
-    while ($dna =~ /(\w\w\w)*?TGA/g) {  # note the minimal *?
-        print "Got a TGA stop codon at position ", pos $dna, "\n";
+    while ($dna =~ /(\w\w\w)*?TGA/g) {  # отметьте минимальное *?
+        print "Получил кодон остановки TGA в позиции", pos $dna, "\n";
     }
 
-which prints
+что напечатает
 
-    Got a TGA stop codon at position 18
-    Got a TGA stop codon at position 23
+    Получил кодон остановки TGA в позиции 18
+    Получил кодон остановки TGA в позиции 23
 
-Position 18 is good, but position 23 is bogus.  What happened?
+Позиция 18 хорошо, но позиция 23 поддельная. Что произошло?
 
-The answer is that our regexp works well until we get past the last
-real match.  Then the regexp will fail to match a synchronized C<TGA>
-and start stepping ahead one character position at a time, not what we
-want.  The solution is to use C<\G> to anchor the match to the codon
-alignment:
+Ответ - то, что наш регексп работает хорошо, пока мы не заканчиваем последний
+реальный поиск. Потом регексп не будет соответствовать синхронизированному C<TGA>
+и начнет ступать вперед одно положение символа за один раз,а не то,что мы
+хотим. Решение состоит в том, чтобы использовать якорь  C<\G> , чтобы закрепить поиск к 
+выравненному кодону:
 
     while ($dna =~ /\G(\w\w\w)*?TGA/g) {
         print "Got a TGA stop codon at position ", pos $dna, "\n";
     }
 
-This prints
+Напечатает
 
     Got a TGA stop codon at position 18
 
-which is the correct answer.  This example illustrates that it is
-important not only to match what is desired, but to reject what is not
-desired.
+который является правильным ответом. Этот пример иллюстрирует, что 
+важно найти не только то, что желаемо, но и отклонить то, что не
+желанно.
 
-(There are other regexp modifiers that are available, such as
-C<//o>, but their specialized uses are beyond the
-scope of this introduction.  )
+(Есть другие модификаторы регексп , которые доступны, такие как
+C<//o>, но их специализированное использование вне
+объема этого введения.)
 
-=head3 Search and replace
+=head3 Поиск и замена
 
 Regular expressions also play a big role in I<search and replace>
 operations in Perl.  Search and replace is accomplished with the
