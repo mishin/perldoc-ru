@@ -1681,20 +1681,20 @@ C<замена> является Perl строкой в двойных кавы�
 в противном случае он возвращает значение false. Вот несколько примеров:
 
     $x = "Time to feed the cat!";
-    $x =~ s/cat/hacker/;   # $x contains "Time to feed the hacker!"
+    $x =~ s/cat/hacker/;   # $x содержит "Time to feed the hacker!"
     if ($x =~ s/^(Time.*hacker)!$/$1 now!/) {
         $more_insistent = 1;
     }
     $y = "'quoted words'";
-    $y =~ s/^'(.*)'$/$1/;  # strip single quotes,
-                           # $y contains "quoted words"
+    $y =~ s/^'(.*)'$/$1/;  # удалить одиночные кавычки,
+                           # $y содержит "quoted words"
 
-In the last example, the whole string was matched, but only the part
-inside the single quotes was grouped.  With the C<s///> operator, the
-matched variables C<$1>, C<$2>, etc. are immediately available for use
-in the replacement expression, so we use C<$1> to replace the quoted
-string with just what was quoted.  With the global modifier, C<s///g>
-will search and replace all occurrences of the regexp in the string:
+В последнем примере целая строка была найдена, но только часть
+в одинарных кавычках составила группу. С оператором C<s///>
+ переменные  C<$1>, C<$2>, и т.д. немедленно доступны для использования
+в выражении замены, таким образом, мы используем C<$1>, чтобы заменить указанную
+ закавыченную строку. С глобальным модификатором, C<s///g>
+будет искать и заменять все найденные части регекспа в строке:
 
     $x = "I batted 4 for 4";
     $x =~ s/4/four/;   # doesn't do it all:
