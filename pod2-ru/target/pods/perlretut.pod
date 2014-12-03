@@ -1697,14 +1697,14 @@ C<замена> является Perl строкой в двойных кавы�
 будет искать и заменять все найденные части регекспа в строке:
 
     $x = "I batted 4 for 4";
-    $x =~ s/4/four/;   # doesn't do it all:
-                       # $x contains "I batted four for 4"
+    $x =~ s/4/four/;   # не заменит для всех:
+                       # $x содержит "I batted four for 4"
     $x = "I batted 4 for 4";
-    $x =~ s/4/four/g;  # does it all:
-                       # $x contains "I batted four for four"
+    $x =~ s/4/four/g;  # заменит все:
+                       # $x содержит "I batted four for four"
 
-If you prefer 'regex' over 'regexp' in this tutorial, you could use
-the following program to replace it:
+Если вы предпочитаете 'regex' над 'regexp' в этом учебнике, вы можете 
+использовать следующую программу для замены:
 
     % cat > simple_replace
     #!/usr/bin/perl
@@ -1718,16 +1718,17 @@ the following program to replace it:
 
     % simple_replace regexp regex perlretut.pod
 
-In C<simple_replace> we used the C<s///g> modifier to replace all
-occurrences of the regexp on each line.  (Even though the regular
-expression appears in a loop, Perl is smart enough to compile it
-only once.)  As with C<simple_grep>, both the
-C<print> and the C<s/$regexp/$replacement/g> use C<$_> implicitly.
+В C<простой_замене> мы используем модификатор C<s///g>, чтобы заменить все 
+найденные части строки на всем блоке искомого текста. 
+(Даже, если регулярное выражение появляется в цикле, Perl 
+достаточно умен, чтобы скопмилировать его один раз.) 
+Как с C<простым_grep>, оба
+C<print> и C<s/$regexp/$replacement/g> используют C<$_> не явно.
 
-If you don't want C<s///> to change your original variable you can use
-the non-destructive substitute modifier, C<s///r>.  This changes the
-behavior so that C<s///r> returns the final substituted string
-(instead of the number of substitutions):
+Если вы не хотите использовать C<s///> для изменения оригинальной переменной
+вы можете использовать неразрушаемый модификатор C<s///r>.  
+Он изменяет поведение, так, что C<s///r> возвращает конечную измененную строку
+(вместо числа замен):
 
     $x = "I like dogs.";
     $y = $x =~ s/dogs/cats/r;
