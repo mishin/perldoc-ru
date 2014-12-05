@@ -1734,11 +1734,9 @@ C<print> и C<s/$regexp/$replacement/g> используют C<$_> не явно
     $y = $x =~ s/dogs/cats/r;
     print "$x $y\n";
 
-That example will print "I like dogs. I like cats". Notice the original
-C<$x> variable has not been affected. The overall
-result of the substitution is instead stored in C<$y>. If the
-substitution doesn't affect anything then the original string is
-returned:
+Этот пример напечатает "I like dogs. I like cats". Учтите, что начальная переменная
+C<$x> не была изменена. Общий результат замены вместо этого
+сохраняется в C<$y>. Если замены не происходит, то возвращается исходная строка:
 
     $x = "I like dogs.";
     $y = $x =~ s/elephants/cougars/r;
