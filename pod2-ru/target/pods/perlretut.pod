@@ -1740,14 +1740,22 @@ C<$x> не была изменена. Общий результат замены
 
     $x = "I like dogs.";
     $y = $x =~ s/elephants/cougars/r;
-    print "$x $y\n"; # prints "I like dogs. I like dogs."
+    print "$x $y\n"; # напечатает "I like dogs. I like dogs."
 
-One other interesting thing that the C<s///r> flag allows is chaining
-substitutions:
+Еще одна интересная штука в том, что флаг C<s///r>  позволяет делать цепочки
+замен:
 
     $x = "Cats are great.";
     print $x =~ s/Cats/Dogs/r =~ s/Dogs/Frogs/r =~ s/Frogs/Hedgehogs/r, "\n";
-    # prints "Hedgehogs are great."
+    # напечатает "Hedgehogs are great."
+
+Модификатор специально для поиска и замены
+C <s///e> оценки модификатор. C <s///e> лечит
+Замена текста как кода Perl, а не двойные кавычки
+строка. Значение, которое возвращает код подставляется
+сопоставленная подстрока. C <s///e> полезно, если вам нужно сделать немного
+вычисление в процессе замены текста. В этом примере рассчитывает
+частот символов в строке:
 
 A modifier available specifically to search and replace is the
 C<s///e> evaluation modifier.  C<s///e> treats the
