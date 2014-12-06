@@ -1749,28 +1749,19 @@ C<$x> не была изменена. Общий результат замены
     print $x =~ s/Cats/Dogs/r =~ s/Dogs/Frogs/r =~ s/Frogs/Hedgehogs/r, "\n";
     # напечатает "Hedgehogs are great."
 
-Модификатор специально для поиска и замены
-C <s///e> оценки модификатор. C <s///e> лечит
-Замена текста как кода Perl, а не двойные кавычки
-строка. Значение, которое возвращает код подставляется
-сопоставленная подстрока. C <s///e> полезно, если вам нужно сделать немного
-вычисление в процессе замены текста. В этом примере рассчитывает
-частот символов в строке:
-
-A modifier available specifically to search and replace is the
-C<s///e> evaluation modifier.  C<s///e> treats the
-replacement text as Perl code, rather than a double-quoted
-string.  The value that the code returns is substituted for the
-matched substring.  C<s///e> is useful if you need to do a bit of
-computation in the process of replacing text.  This example counts
-character frequencies in a line:
+C<s///e> - модификатор выполнения, существующий специально для поиска и замены. 
+C<s///e> воспринимает заменемый текст,как код Perl, а не строку в двойных кавычках.
+Значение, которое возвращает код подставляется
+вместо найденной подстроки. C<s///e> полезно, если вам нужно сделать некоторые
+вычисления в процессе замены текста. В этом примере рассчитывается
+частота символов в строке:
 
     $x = "Bill the cat";
-    $x =~ s/(.)/$chars{$1}++;$1/eg;  # final $1 replaces char with itself
+    $x =~ s/(.)/$chars{$1}++;$1/eg;  # конечный $1 заменяет символ на самого себя
     print "frequency of '$_' is $chars{$_}\n"
         foreach (sort {$chars{$b} <=> $chars{$a}} keys %chars);
 
-This prints
+Это напечатает
 
     frequency of ' ' is 2
     frequency of 't' is 2
@@ -1782,15 +1773,14 @@ This prints
     frequency of 'i' is 1
     frequency of 'a' is 1
 
-As with the match C<m//> operator, C<s///> can use other delimiters,
-such as C<s!!!> and C<s{}{}>, and even C<s{}//>.  If single quotes are
-used C<s'''>, then the regexp and replacement are
-treated as single-quoted strings and there are no
-variable substitutions.  C<s///> in list context
-returns the same thing as in scalar context, i.e., the number of
-matches.
+Как и в операторе поиска C<m//>, оператор C<s///> может использовать другие разделители,
+Например, C<s!!!> и C<s{}{}> и даже C<s{}//>. Если используются одинарные кавычки
+ C<s'''>, тогда регексп regexp и замена
+рассматриваются как строки в одиночных кавычках и тогда не происходит
+подстановки переменных. C<s///> в списочном контексте
+возвращает то же самое, как и в скалярном контексте, т.е. число найденных элементов.
 
-=head3 The split function
+=head3 Функция split
 
 The C<split()> function is another place where a regexp is used.
 C<split /regexp/, string, limit> separates the C<string> operand into
@@ -2878,8 +2868,8 @@ matched.  The S<C<< |  1:  STAR >>> says that Perl is at line number 1
 in the compilation list above.  See
 L<perldebguts/"Debugging Regular Expressions"> for much more detail.
 
-Альтернативным методом отладки регулярных выражений является включение внедрение C<print>
-в регексп. Это предоставляет подробный отчет
+Альтернативным методом отладки регулярных выражений является включение включение C<print>
+в регексп. Здесь предоставляется подробный отчет
 об обратных ссылках в случае оператора C<или>:
 
     use utf8;
