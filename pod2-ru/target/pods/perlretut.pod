@@ -1782,22 +1782,23 @@ C<s///e> воспринимает заменемый текст,как код Pe
 
 =head3 Функция split
 
-The C<split()> function is another place where a regexp is used.
-C<split /regexp/, string, limit> separates the C<string> operand into
-a list of substrings and returns that list.  The regexp must be designed
-to match whatever constitutes the separators for the desired substrings.
-The C<limit>, if present, constrains splitting into no more than C<limit>
-number of strings.  For example, to split a string into words, use
+
+Функция C<split()>  является еще одним местом, где используется регексп.
+C<split /регексп/, строка, limit> разделяет C<строку> операнд в
+список подстрок и возвращает этот список. Регексп должен быть таким
+, чтобы находить любые разделители для желаемых подстрок.
+C<limit>, если он присутствует, накладывает ограничение на раздел не более чем C<limit>
+ строк. Например чтобы разделить строку на слова, используйте
 
     $x = "Calvin and Hobbes";
     @words = split /\s+/, $x;  # $word[0] = 'Calvin'
                                # $word[1] = 'and'
                                # $word[2] = 'Hobbes'
 
-If the empty regexp C<//> is used, the regexp always matches and
-the string is split into individual characters.  If the regexp has
-groupings, then the resulting list contains the matched substrings from the
-groupings as well.  For instance,
+Если используется пустой регексп C<//>, то он всегда будет находиться и разделит строку 
+на отдельные символы. Если регексп имеет группировки,
+то результирующий список содержит совпавшие подстроки из
+группировок. К примеру
 
     $x = "/usr/bin/perl";
     @dirs = split m!/!, $x;  # $dirs[0] = ''
@@ -1811,18 +1812,19 @@ groupings as well.  For instance,
                                 # $parts[4] = 'bin'
                                 # $parts[5] = '/'
                                 # $parts[6] = 'perl'
+                                
+Так как первый символ $x регексп находит, C<split> присоединяет
+пустой начальный элемент к списку.
 
-Since the first character of $x matched the regexp, C<split> prepended
-an empty initial element to the list.
+Если вы дочитали так далеко, Поздравляем! Теперь у вас есть все основные
+инструменты, необходимые для использования регулярных выражений для решения 
+широкого круга проблем обработки текста.
+Если это ваш первый раз через учебник,
+то почему бы не остановится и поиграть с регулярными выражениями какое-то время... 
+ S<Часть 2> касается более эзотерических аспектов регулярных выражений и тех
+концепций, которые, безусловно, не нужны в самом начале
 
-If you have read this far, congratulations! You now have all the basic
-tools needed to use regular expressions to solve a wide range of text
-processing problems.  If this is your first time through the tutorial,
-why not stop here and play around with regexps a while....  S<Part 2>
-concerns the more esoteric aspects of regular expressions and those
-concepts certainly aren't needed right at the start.
-
-=head1 Part 2: Power tools
+=head1 Часть 2: Электроинструменты (Power Tools)
 
 OK, you know the basics of regexps and you want to know more.  If
 matching regular expressions is analogous to a walk in the woods, then
