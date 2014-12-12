@@ -1852,53 +1852,53 @@ C<\l> и C<\u> преобразуют следующий символ в ниж�
     $x = "M(rs?|s)\\."; # внимание двойной бекслеш
     $string =~ /\l$x/;  # найдет 'mr.', 'mrs.', и 'ms.',
 
-A C<\L> or C<\U> indicates a lasting conversion of case, until
-terminated by C<\E> or thrown over by another C<\U> or C<\L>:
+C<\L> или C<\U> указывают на преобразование регистра, пока не встетится
+завершающее C<\E> или бросаются другие C<\U> или C<\L>:
 
     $x = "This word is in lower case:\L SHOUT\E";
-    $x =~ /shout/;       # matches
+    $x =~ /shout/;       # найдет
     $x = "I STILL KEYPUNCH CARDS FOR MY 360"
-    $x =~ /\Ukeypunch/;  # matches punch card string
+    $x =~ /\Ukeypunch/;  # найдет punch card string
 
-If there is no C<\E>, case is converted until the end of the
-string. The regexps C<\L\u$word> or C<\u\L$word> convert the first
-character of C<$word> to uppercase and the rest of the characters to
-lowercase.
+Если нет C<\E>, регистр меняетя до конца строки. 
+Регексп C<\L\u$word> или C<\u\L$word> конвертирует первый символ
+у C<$word> в верхний регистр и оставшиеся символы в нижний регистр.
 
-Control characters can be escaped with C<\c>, so that a control-Z
-character would be matched with C<\cZ>.  The escape sequence
-C<\Q>...C<\E> quotes, or protects most non-alphabetic characters.   For
-instance,
+Управляющие символы могут быть заэскейплены при помощи
+C<\c>, то есть символ control-Z будет найден с помощью C<\cZ>.  
+Эскейп последовательносить
+C<\Q>...C<\E> яляется кавычками, или защищает неалфавитные символы.
+Например,
 
     $x = "\QThat !^*&%~& cat!";
-    $x =~ /\Q!^*&%~&\E/;  # check for rough language
+    $x =~ /\Q!^*&%~&\E/;  # проверка на грубый язык
 
-It does not protect C<$> or C<@>, so that variables can still be
-substituted.
+Но они не защищают C<$> или C<@>, таким образом переменные могут быть все еще заменены.
 
-C<\Q>, C<\L>, C<\l>, C<\U>, C<\u> and C<\E> are actually part of
-double-quotish syntax, and not part of regexp syntax proper.  They will
-work if they appear in a regular expression embedded directly in a
-program, but not when contained in a string that is interpolated in a
-pattern.
+C<\Q>, C<\L>, C<\l>, C<\U>, C<\u> и C<\E> на самом деле часть
+ синтаксиса заключения в двойные кавычки, а не часть правильного 
+ синтаксиса регулярных выражений. Они будут
+работать, если они появляются в регулярном выражении, встроенном непосредственно в
+программу, но не когда содержащиеся в строке, которая интерполируется в
+шаблон.
 
-Perl regexps can handle more than just the
-standard ASCII character set.  Perl supports I<Unicode>, a standard
-for representing the alphabets from virtually all of the world's written
-languages, and a host of symbols.  Perl's text strings are Unicode strings, so
-they can contain characters with a value (codepoint or character number) higher
-than 255.
+Perl регекспы могутт обрабатывать больше, чем просто
+стандартный набор символов ASCII. Perl поддерживает I<Unicode>, стандарт
+для представления письменных алфавитов из практически всех мировых
+языков и множество специальных символов. Perl текстовые строки являются строками в Юникоде, таким
+ образом они могут содержать символы со значением (символ или кодовым номер) выше
+чем 255.
 
-What does this mean for regexps? Well, regexp users don't need to know
-much about Perl's internal representation of strings.  But they do need
-to know 1) how to represent Unicode characters in a regexp and 2) that
-a matching operation will treat the string to be searched as a sequence
-of characters, not bytes.  The answer to 1) is that Unicode characters
-greater than C<chr(255)> are represented using the C<\x{hex}> notation, because
-\x hex (without curly braces) doesn't go further than 255.  (Starting in Perl
-5.14, if you're an octal fan, you can also use C<\o{oct}>.)
+Что это значит для регулярных выражений? Ну пользователям регекспов не нужно знать
+много о внутреннем представлении строк в Perl . Но они должны
+знать 1) как для представляются символы Юникода в регекспе и 2),что
+ операция поиска будет относиться к строке для поиска как последовательность
+из символов, а не байтов. Ответ на 1), что символы Юникода
+больше, чем C<chr(255)> представлены использованием C<\x{hex}> нотации, потому что
+\x hex (без фигурных скобок) не идет дальше, чем 255. (Начиная с Perl
+5.14, если вы поклонник восьмеричной системы, вы можете также использовать C<\o{oct}>.)
 
-    /\x{263a}/;  # match a Unicode smiley face :)
+    /\x{263a}/;  # найдет Юникодный символ лица в виде смайла :)
 
 B<NOTE>: In Perl 5.6.0 it used to be that one needed to say C<use
 utf8> to use any Unicode features.  This is no more the case: for
