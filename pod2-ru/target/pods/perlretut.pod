@@ -1848,9 +1848,9 @@ C<\l> и C<\u> преобразуют следующий символ в ниж�
 верхний регистр, соответственно:
 
     $x = "perl";
-    $string =~ /\u$x/;  # matches 'Perl' in $string
-    $x = "M(rs?|s)\\."; # note the double backslash
-    $string =~ /\l$x/;  # matches 'mr.', 'mrs.', and 'ms.',
+    $string =~ /\u$x/;  # найдет 'Perl' в $string
+    $x = "M(rs?|s)\\."; # внимание двойной бекслеш
+    $string =~ /\l$x/;  # найдет 'mr.', 'mrs.', и 'ms.',
 
 A C<\L> or C<\U> indicates a lasting conversion of case, until
 terminated by C<\E> or thrown over by another C<\U> or C<\L>:
