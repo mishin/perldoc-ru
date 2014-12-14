@@ -1900,11 +1900,20 @@ Perl регекспы могутт обрабатывать больше, чем
 
     /\x{263a}/;  # найдет Юникодный символ лица в виде смайла :)
 
-B<NOTE>: In Perl 5.6.0 it used to be that one needed to say C<use
-utf8> to use any Unicode features.  This is no more the case: for
-almost all Unicode processing, the explicit C<utf8> pragma is not
-needed.  (The only case where it matters is if your Perl script is in
-Unicode and encoded in UTF-8, then an explicit C<use utf8> is needed.)
+B<ЗАМЕТЬТЕ>: В Perl 5.6.0, раньше считалось, что необходимо сказать C<use
+utf8> , чтобы использовать любые функции Юникода. Это больше не так: для
+почти всей обработки Юникода, явная прагма C<utf8> не нужна.
+(Единственный случай, когда это имеет значение – если ваш Perl скрипт находится в
+Юникоде и кодировка UTF-8, тогда явное указание C<use utf8> необходимо.)
+
+Выяснить, шестнадцатеричной последовательности символа Юникода, который вы хотите
+или расшифровка чужой шестнадцатеричное Unicode regexp может как
+Интересно, как программирование в машинный код. Так что другой способ указания
+Символы Юникода заключается в использовании я бежать < именованных символов раздел настроек
+последовательность C < \N{I <name>} раздел настроек. Я <name>— это имя для символа Юникода, как
+указанного в стандарте Юникод. Например если мы хотели
+представляют собой или соответствует знак зодиака, планета Меркурий, мы
+можно использовать
 
 Figuring out the hexadecimal sequence of a Unicode character you want
 or deciphering someone else's hexadecimal Unicode regexp is about as
