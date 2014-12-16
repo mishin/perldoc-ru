@@ -1906,42 +1906,45 @@ utf8> , чтобы использовать любые функции Юнико
 (Единственный случай, когда это имеет значение – если ваш Perl скрипт находится в
 Юникоде и кодировка UTF-8, тогда явное указание C<use utf8> необходимо.)
 
-Выяснить, шестнадцатеричной последовательности символа Юникода, который вы хотите
-или расшифровка чужой шестнадцатеричное Unicode regexp может как
-Интересно, как программирование в машинный код. Так что другой способ указания
-Символы Юникода заключается в использовании я бежать < именованных символов раздел настроек
-последовательность C < \N{I <name>} раздел настроек. Я <name>— это имя для символа Юникода, как
-указанного в стандарте Юникод. Например если мы хотели
-представляют собой или соответствует знак зодиака, планета Меркурий, мы
+Выяснение шестнадцатеричной последовательности Юникодного символа, который вы хотите
+или расшифровка чужого шестнадцатеричного Юникодного регекспа может быть также
+интересно, как программирование в машинном коде. Так что другой способ указания
+символов Юникода заключается в использовании I<именованных символов> эскейп последовательности
+C<\N{I<имя>}>. I<имя> — это имя для символа Юникода, 
+указанного в стандарте Юникода. Например, если мы хотим узначть, что
+представляют собой знак зодиака планеты Меркурий, мы
 можно использовать
 
-Figuring out the hexadecimal sequence of a Unicode character you want
-or deciphering someone else's hexadecimal Unicode regexp is about as
-much fun as programming in machine code.  So another way to specify
-Unicode characters is to use the I<named character> escape
-sequence C<\N{I<name>}>.  I<name> is a name for the Unicode character, as
-specified in the Unicode standard.  For instance, if we wanted to
-represent or match the astrological sign for the planet Mercury, we
-could use
-
     $x = "abc\N{MERCURY}def";
-    $x =~ /\N{MERCURY}/;   # matches
+    $x =~ /\N{MERCURY}/;   # найдет
 
-One can also use "short" names:
+Можно также использовать "короткие" имена:
 
-    print "\N{GREEK SMALL LETTER SIGMA} is called sigma.\n";
-    print "\N{greek:Sigma} is an upper-case sigma.\n";
+    print "\N{GREEK SMALL LETTER SIGMA} называется сигма.\n";
+    print "\N{greek:Sigma} это сигма в верхнем регистре.\n";
 
-You can also restrict names to a certain alphabet by specifying the
-L<charnames> pragma:
+Можно также ограничить имена определенным алфавитом, указав
+прагму L<charnames>:
 
     use charnames qw(greek);
-    print "\N{sigma} is Greek sigma\n";
+    print "\N{sigma} это Греческая сигма\n";
 
-An index of character names is available on-line from the Unicode
-Consortium, L<http://www.unicode.org/charts/charindex.html>; explanatory
-material with links to other resources at
+Индекс имен символов доступен он-лайн у Юникодного Консорциума,
+L<http://www.unicode.org/charts/charindex.html>; пояснительные
+материалы со ссылками на другие ресурсы есть на
 L<http://www.unicode.org/standard/where>.
+
+Ответ на требование 2) является то, что regexp (в основном)
+использует символы Unicode. «Главным образом» предназначен для грязной обратной
+обеспечения совместимости, но начиная с пакетом Perl 5.14, любой regex, обобщены в
+область C < используйте функцию 'unicode_strings' раздел настроек (который автоматически
+включена в сферу C < использования 5.012 настроек или выше) станет,
+«главным образом» в «всегда». Если вы хотите обрабатывать Unicode должным образом, вам
+следует обеспечить, что C <'unicode_strings'> включен.
+Внутренне это кодируется с помощью UTF-8 или родной 8 байт
+бит кодировки, но концептуально в зависимости от истории строки,
+это последовательность символов, не байты. Смотрите L <perlunitut>
+Учебник об этом.
 
 The answer to requirement 2) is that a regexp (mostly)
 uses Unicode characters.  The "mostly" is for messy backward
