@@ -1982,12 +1982,11 @@ L<http://www.unicode.org/standard/where>.
     IsWord           /^[LMN]/ || $code eq "005F"
     IsXDigit         $code =~ /^00(3[0-9]|[46][1-6])$/
 
-You can also use the official Unicode class names with C<\p> and
-C<\P>, like C<\p{L}> for Unicode 'letters', C<\p{Lu}> for uppercase
-letters, or C<\P{Nd}> for non-digits.  If a C<name> is just one
-letter, the braces can be dropped.  For instance, C<\pM> is the
-character class of Unicode 'marks', for example accent marks.
-For the full list see L<perlunicode>.
+ВЫ можете также использовать официальный класс Юникода с C<\p> и
+C<\P>, например C<\p{L}> для Юникодных 'симолов' ('letters'), C<\p{Lu}> для символов в верхнем регистре
+, или C<\P{Nd}> для нецифр.  Если C<name> это только один символ, 
+скобки можно опустить. Например, C<\pM> - это символьный класс Юникодных знаков ('marks'),
+например, знака ударения (диакритические). Для получения полной информации смотри L<perlunicode>.
 
 Unicode has also been separated into various sets of characters
 which you can test with C<\p{...}> (in) and C<\P{...}> (not in).
