@@ -1988,28 +1988,22 @@ C<\P>, например C<\p{L}> для Юникодных 'симолов' ('le
 скобки можно опустить. Например, C<\pM> - это символьный класс Юникодных знаков ('marks'),
 например, знака ударения (диакритические). Для получения полной информации смотри L<perlunicode>.
 
-Юникод также были разделены на различные наборы символов
-который вы можете проверить с C <\p{...}> (в) и C <\P{...}> (в).
-Чтобы проверить ли символ (или нет) элемент скрипта
-Вы будет использовать имя сценария, например C <\p{Latin}>, C <\p{Greek}>,
-или C <\P{Katakana}>.
+Юникод также был разделен на различные наборы символов
+которые вы можете протестировать C<\p{...}> (входит) и C<\P{...}> (не входит).
+Чтобы проверить символ на вхождение (или нет) в элемент скрипта
+вы должны использовать имя скрипта, например C<\p{Latin}>, C<\p{Greek}>,
+или C<\P{Katakana}>.
 
-Unicode has also been separated into various sets of characters
-which you can test with C<\p{...}> (in) and C<\P{...}> (not in).
-To test whether a character is (or is not) an element of a script
-you would use the script name, for example C<\p{Latin}>, C<\p{Greek}>,
-or C<\P{Katakana}>.
-
-What we have described so far is the single form of the C<\p{...}> character
-classes.  There is also a compound form which you may run into.  These
-look like C<\p{name=value}> or C<\p{name:value}> (the equals sign and colon
-can be used interchangeably).  These are more general than the single form,
-and in fact most of the single forms are just Perl-defined shortcuts for common
-compound forms.  For example, the script examples in the previous paragraph
-could be written equivalently as C<\p{Script=Latin}>, C<\p{Script:Greek}>, and
-C<\P{script=katakana}> (case is irrelevant between the C<{}> braces).  You may
-never have to use the compound forms, but sometimes it is necessary, and their
-use can make your code easier to understand.
+То, что мы описали пока является единой формой C<\p{...}> 
+класса символов. Существует также составные формы, с которыми вы можете столкнуться. Эти
+выглядят как C<\p{name=value}> или C<\p{name:value} (знак равенства и двоеточия
+могут использоваться как синонимы). Это более общее представление, чем одинарная форма,
+и на самом деле большинство одиночных форм просто Perl определенные ярлыки для общих
+составных форм. Наример сценарии в предыдущем пункте
+могут быть написан эквивалентно, как C<\p{Script=Latin}>, C<\p{Script:Greek}, и
+C<\P{script=katakana}> (регистр имеет значения между фигурными скобками C<{}>). Вам возможно
+никогда не придется использовать составные формы, но иногда это необходимо и их
+использование может сделать ваш код более понятным.
 
 C<\X> is an abbreviation for a character class that comprises
 a Unicode I<extended grapheme cluster>.  This represents a "logical character":
