@@ -1998,50 +1998,50 @@ C<\P>, например C<\p{L}> для Юникодных 'симолов' ('le
 класса символов. Существует также составные формы, с которыми вы можете столкнуться. Эти
 выглядят как C<\p{name=value}> или C<\p{name:value} (знак равенства и двоеточия
 могут использоваться как синонимы). Это более общее представление, чем одинарная форма,
-и на самом деле большинство одиночных форм просто Perl определенные ярлыки для общих
+и на самом деле для большинства одиночных форм Perl просто  дает определенные ярлыки для общих
 составных форм. Наример сценарии в предыдущем пункте
-могут быть написан эквивалентно, как C<\p{Script=Latin}>, C<\p{Script:Greek}, и
+могут быть написан эквивалентны  C<\p{Script=Latin}>, C<\p{Script:Greek}, и
 C<\P{script=katakana}> (регистр имеет значения между фигурными скобками C<{}>). Вам возможно
 никогда не придется использовать составные формы, но иногда это необходимо и их
 использование может сделать ваш код более понятным.
 
-C<\X> is an abbreviation for a character class that comprises
-a Unicode I<extended grapheme cluster>.  This represents a "logical character":
-what appears to be a single character, but may be represented internally by more
-than one.  As an example, using the Unicode full names, e.g., S<C<A + COMBINING
-RING>> is a grapheme cluster with base character C<A> and combining character
-S<C<COMBINING RING>>, which translates in Danish to A with the circle atop it,
-as in the word Angstrom.
+C<\X> — это аббревиатура для класса символов, который состоит из
+Юникодных I<расширенных графема кластеров>. Они представляют собой "логический символ":
+то, что представляется, как один символ, но может быть внутренне представлено больше
+чем одним символом. Например, с помощью полных имен Юникода, например, 
+S<C<A + COMBINING RING>> — графема кластер, основанный на символе C<A> и сочетания символов
+S<C<COMBINING RING>>, который переводится в датском на A с кружком на вершине,
+как и слово ангстрем(Angstrom).
 
-For the full and latest information about Unicode see the latest
-Unicode standard, or the Unicode Consortium's website L<http://www.unicode.org>
+Полную и последнюю информацию о кодировке Юникод см последний
+Стандарт Юникод, или веб-сайт консорциума Unicode L<http://www.unicode.org>
 
-As if all those classes weren't enough, Perl also defines POSIX-style
-character classes.  These have the form C<[:name:]>, with C<name> the
-name of the POSIX class.  The POSIX classes are C<alpha>, C<alnum>,
+Если и этих классов не достаточно, Perl также определяет POSIX-стиль
+классов символов. Они имеют форму C<[:name:]>, где C<name>
+имя класса POSIX. Классы POSIX, C<alpha>, C<alnum>,
 C<ascii>, C<cntrl>, C<digit>, C<graph>, C<lower>, C<print>, C<punct>,
-C<space>, C<upper>, and C<xdigit>, and two extensions, C<word> (a Perl
-extension to match C<\w>), and C<blank> (a GNU extension).  The C<//a>
-modifier restricts these to matching just in the ASCII range; otherwise
-they can match the same as their corresponding Perl Unicode classes:
-C<[:upper:]> is the same as C<\p{IsUpper}>, etc.  (There are some
-exceptions and gotchas with this; see L<perlrecharclass> for a full
-discussion.) The C<[:digit:]>, C<[:word:]>, and
-C<[:space:]> correspond to the familiar C<\d>, C<\w>, and C<\s>
-character classes.  To negate a POSIX class, put a C<^> in front of
-the name, so that, e.g., C<[:^digit:]> corresponds to C<\D> and, under
-Unicode, C<\P{IsDigit}>.  The Unicode and POSIX character classes can
-be used just like C<\d>, with the exception that POSIX character
-classes can only be used inside of a character class:
+C<space>, C<upper>, и C<xdigit>,и два расширения, C<word>(Perl
+расширение для поиска C<\w>) и C<blank>(расширение GNU). 
+Модификатор C<//a> ограничивает эти соответствия только в диапазоне ASCII; в противном случае
+они могут совпадать, так же, как соответствующие им классы Perl Unicode:
+C<[:upper:]> такой же, как C<\p{IsUpper}>, и т.д. (есть некоторые
+исключения и ошибки с этим; Смотрите полное обсуждение в L<perlrecharclass>.)
+C<[:digit:]>, C<[:word:]>, и
+C<[:space:]> соответствуют знакомым C<\d>, C<\w> и C<\s>
+классам символов. Для инвертирования класса POSIX, поставьте  C<^> перед
+именем, так что, например, C<[:^digit:]> соответствует C<\D> и, под
+Юникодом, C<\P{IsDigit}>. Классы символов Unicode и POSIX могут
+быть использованы так же, как C<\d>, за исключением символов POSIX
+классы которых могут использоваться только внутри класса символов:
 
-    /\s+[abc[:digit:]xyz]\s*/;  # match a,b,c,x,y,z, or a digit
-    /^=item\s[[:digit:]]/;      # match '=item',
-                                # followed by a space and a digit
-    /\s+[abc\p{IsDigit}xyz]\s+/;  # match a,b,c,x,y,z, or a digit
-    /^=item\s\p{IsDigit}/;        # match '=item',
-                                  # followed by a space and a digit
+    /\s+[abc[:digit:]xyz]\s*/;  # найдет a,b,c,x,y,z, или цифру
+    /^=item\s[[:digit:]]/;      # найдет '=item',
+                                # за которым пробел и цифра
+    /\s+[abc\p{IsDigit}xyz]\s+/;  # найдет a,b,c,x,y,z, или цифру
+    /^=item\s\p{IsDigit}/;        # найдет '=item',
+                                  # за которым пробел и цифра
 
-Whew! That is all the rest of the characters and character classes.
+Вау! Это уже все знаки и классы символов.
 
 =head2 Compiling and saving regular expressions
 
