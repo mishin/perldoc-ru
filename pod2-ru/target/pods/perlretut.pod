@@ -2046,40 +2046,39 @@ C<[:space:]> соответствуют знакомым C<\d>, C<\w> и C<\s>
 
 =head2 Компиляция и сохранение в переменной регулярного выражения
 
-В Части1 мы упоминули, что Perl компилирует регекспы в компактную
+В 1 Части мы упоминули, что Perl компилирует регекспы в компактную
 последовательность опкодов. Таким образом скомпилированное регулярное выражение 
 — это структура данных, которую можно сохранить один раз и использовать снова и снова.
-The regexp quote
-C<qr//> does exactly that: C<qr/string/> compiles the C<string> as a
-regexp and transforms the result into a form that can be assigned to a
-variable:
+Кавычки регекспа
+C<qr//> а точнее: C<qr/строка/> компилируют C<строку> как регулярное выражение
+ и преобразуют результат в форму, которую можно можно присвоить переменной:
 
-    $reg = qr/foo+bar?/;  # reg contains a compiled regexp
+    $reg = qr/foo+bar?/;  # reg содержит откомпилированный регексп
 
-Then C<$reg> can be used as a regexp:
+Тогда C<$reg> может быть использован в регекспе:
 
     $x = "fooooba";
-    $x =~ $reg;     # matches, just like /foo+bar?/
-    $x =~ /$reg/;   # same thing, alternate form
+    $x =~ $reg;     # найдет, то же, что и /foo+bar?/
+    $x =~ /$reg/;   # то же, альтернативная форма
 
-C<$reg> can also be interpolated into a larger regexp:
+C<$reg> также может быть интерполирован в больший регексп:
 
-    $x =~ /(abc)?$reg/;  # still matches
+    $x =~ /(abc)?$reg/;  # все еще найдет
 
-As with the matching operator, the regexp quote can use different
-delimiters, e.g., C<qr!!>, C<qr{}> or C<qr~~>.  Apostrophes
-as delimiters (C<qr''>) inhibit any interpolation.
+С оператором поиска C<m>, кавычки регекспа могут иметь ранообразные разделители
+, т.е., C<qr!!>, C<qr{}> или C<qr~~>.  Апострофы
+в качестве разделителей (C<qr''>) препятствуют интерполяции.
 
-Pre-compiled regexps are useful for creating dynamic matches that
-don't need to be recompiled each time they are encountered.  Using
-pre-compiled regexps, we write a C<grep_step> program which greps
-for a sequence of patterns, advancing to the next pattern as soon
-as one has been satisfied.
+Предварительно скомпилированные регулярные выражения полезны для создания динамического поиска,
+их не нужно перекомпилировать каждый раз, когда они встречаются. С помощью
+предварительно скомпилированных регулярных выражений, мы пише C<grep_step> программу которая грепит
+последовательности шаблонов, передвигаясь к следующему шаблону, как только
+как один был успешно найдет.
 
     % cat > grep_step
     #!/usr/bin/perl
-    # grep_step - match <number> regexps, one after the other
-    # usage: multi_grep <number> regexp1 regexp2 ... file1 file2 ...
+    # grep_step - найдет <число> регекспов, один после другого
+    # использование: multi_grep <number> regexp1 regexp2 ... file1 file2 ...
 
     $number = shift;
     $regexp[$_] = shift foreach (0..$number-1);
@@ -2098,10 +2097,9 @@ as one has been satisfied.
             print $line;
             last unless @compiled;
 
-Storing pre-compiled regexps in an array C<@compiled> allows us to
-simply loop through the regexps without any recompilation, thus gaining
-flexibility without sacrificing speed.
-
+Сохранение прекомпилированных регекспов в массиве C<@compiled> позволяет нам
+сделать простой цикл по регекспам без их перекомпиляции, таким образом, получается
+гибкость без ущерба для скорости.
 
 =head2 Composing regular expressions at runtime
 
