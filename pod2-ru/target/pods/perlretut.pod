@@ -2044,11 +2044,12 @@ C<[:space:]> соответствуют знакомым C<\d>, C<\w> и C<\s>
 
 Вау! Это уже все знаки и классы символов.
 
-=head2 Compiling and saving regular expressions
+=head2 Компиляция и сохранение в переменной регулярного выражения
 
-In Part 1 we mentioned that Perl compiles a regexp into a compact
-sequence of opcodes.  Thus, a compiled regexp is a data structure
-that can be stored once and used again and again.  The regexp quote
+В Части1 мы упоминули, что Perl компилирует регекспы в компактную
+последовательность опкодов. Таким образом скомпилированное регулярное выражение 
+— это структура данных, которую можно сохранить один раз и использовать снова и снова.
+The regexp quote
 C<qr//> does exactly that: C<qr/string/> compiles the C<string> as a
 regexp and transforms the result into a form that can be assigned to a
 variable:
