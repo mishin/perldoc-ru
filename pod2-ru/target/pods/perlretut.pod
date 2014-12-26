@@ -2234,43 +2234,24 @@ C<(?i-m:regexp)>— это незахватывающая группа, кото
 
 Этот раздел рассказывает о заглядываниях вперед и назад. Сначала, немного теории.
 
-В регулярные выражения Perl большинство элементов regexp «съедать» определенный
-Сумма строки, когда они совпадают. Например элемент regexp
-C <[abc}]> съедает один символ строки, если он соответствует, в
-смысле, что Perl перемещается в следующую позицию символа в строке
-После матча. Есть некоторые элементы, однако, что не едят
-Персонажи (Предварительная позиция символа) если они совпадают. Примеры
-Мы видели до настоящего времени являются якорей. Якорь C < ^ раздел настроек соответствует
-начало линии, но не ест любые символы. Аналогичным образом
-слово граница якорь C <\b> матчи там, где знак соответствия C <\w>
-Это рядом с буквами, это не, но он не ест любой
-персонажей себя. Якоря являются примерами я < утверждения нулевой ширины настроек:
-нулевой ширины, потому что они потребляют
-нет символов и утверждения, потому что они тестируют некоторые свойства
-строка. В контексте нашей прогулки в лесу аналогии regexp
-соответствия, большинство элементов regexp переместить нас по тропе, но у якоря
-нас остановить мгновение и проверить наше окружение. Если местной окружающей среды
-проверяет, мы можем двигаться вперед. Но если местной окружающей среды
-не удовлетворяют нас, мы должны отступать.
-
-In Perl regular expressions, most regexp elements 'eat up' a certain
-amount of string when they match.  For instance, the regexp element
-C<[abc}]> eats up one character of the string when it matches, in the
-sense that Perl moves to the next character position in the string
-after the match.  There are some elements, however, that don't eat up
-characters (advance the character position) if they match.  The examples
-we have seen so far are the anchors.  The anchor C<^> matches the
-beginning of the line, but doesn't eat any characters.  Similarly, the
-word boundary anchor C<\b> matches wherever a character matching C<\w>
-is next to a character that doesn't, but it doesn't eat up any
-characters itself.  Anchors are examples of I<zero-width assertions>:
-zero-width, because they consume
-no characters, and assertions, because they test some property of the
-string.  In the context of our walk in the woods analogy to regexp
-matching, most regexp elements move us along a trail, but anchors have
-us stop a moment and check our surroundings.  If the local environment
-checks out, we can proceed forward.  But if the local environment
-doesn't satisfy us, we must backtrack.
+В регулярных выражениях Perl большинство элементов регекспа "съедает" определенную
+часть строки, когда они совпадают. Например регексп элемент
+C<[abc}]> съедает один символ строки, когда он находит совпадение, в
+смысле, что Perl перемещается на следующую позицию символа в строке
+после найденного символа. Есть некоторые элементы, однако, которые не съедают
+символы (предварительная позиция символа), если они совпадают. Примером, который мы 
+видели до настоящего времени - бли якори. Якорь  C<^> соответствует
+началу строки, но не съедает символы. Аналогичным образом,
+якорь границы слова C<\b> находит там,где и знак соответствия C<\w>
+ и следующий симол, но он не ест символы. 
+ Якоря являются примерами I<утверждения нулевой ширины>:
+нулевой ширины, потому что они не потребляют символы и 
+утверждения, потому что они тестируют некоторые свойства
+строки. В контексте нашей прогулки в лесу по аналогии с поиском регекспом, 
+большинство элементов регексп перемещает нас по тропе, но у якоря
+мы останавливаемся на мгновение и проверяем наше окружение. Если местная окружающая среда
+проходит проверку, мы можем двигаться вперед. Но если местная окружающая среда
+не удовлетворяет нас, мы должны отступить.
 
 Checking the environment entails either looking ahead on the trail,
 looking behind, or both.  C<^> looks behind, to see that there are no
