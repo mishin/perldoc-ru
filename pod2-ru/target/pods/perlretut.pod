@@ -2291,24 +2291,24 @@ C<< (?<=(ab|bc)) >> это хорошо, но C<< (?<=(ab)*) >> нет.
     $x =~ /foo(?!baz)/;  # найдет, 'baz' не следует 'foo'
     $x =~ /(?<!\s)foo/;  # найдет, не присутствует \s перед 'foo'
 
-C<\C> не поддерживается в разведке вперед, потому что уже
+C<\C> не поддерживается в разведке вперед, потому что 
 коварных определений C<\C> станет еще больше,
 когда мы пойдем в обратном направлении.
 
-Here is an example where a string containing blank-separated words,
-numbers and single dashes is to be split into its components.
-Using C</\s+/> alone won't work, because spaces are not required between
-dashes, or a word or a dash. Additional places for a split are established
-by looking ahead and behind:
+Вот пример, где строка содержит слова, разделенные пробелами,
+цифрами и тире.
+Используя один C</\s+/> у вас ничего не получится, потому, что пробелы не требуются между
+тире, или словом или тире. Устанавливаем дополнительные места разделения
+устанавливая утрвеждения на разведку вперед и наза:
 
     $str = "one two - --6-8";
-    @toks = split / \s+              # a run of spaces
-                  | (?<=\S) (?=-)    # any non-space followed by '-'
-                  | (?<=-)  (?=\S)   # a '-' followed by any non-space
+    @toks = split / \s+              # начинается с пробелов
+                  | (?<=\S) (?=-)    # любой непробельный символ, следующий за '-'
+                  | (?<=-)  (?=\S)   #  '-' следующий после непробела
                   /x, $str;          # @toks = qw(one two - - - 6 - 8)
 
 
-=head2 Using independent subexpressions to prevent backtracking
+=head2 Использование независимых подвыражений для предотвращения поиска с возвратом(backtracking)
 
 I<Independent subexpressions> are regular expressions, in the
 context of a larger regular expression, that function independently of
