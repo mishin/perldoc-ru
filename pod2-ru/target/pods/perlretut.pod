@@ -2295,7 +2295,7 @@ C<\C> не поддерживается в разведке вперед, пот
 коварных определений C<\C> станет еще больше,
 когда мы пойдем в обратном направлении.
 
-Вот пример, где строка содержит слова, разделенные пробелами,
+Вот пример, где строка содержит слова, разделенная пробелами,
 цифрами и тире.
 Используя один C</\s+/> у вас ничего не получится, потому, что пробелы не требуются между
 тире, или словом или тире. Устанавливаем дополнительные места разделения
@@ -2310,37 +2310,37 @@ C<\C> не поддерживается в разведке вперед, пот
 
 =head2 Использование независимых подвыражений для предотвращения поиска с возвратом(backtracking)
 
-I<Independent subexpressions> are regular expressions, in the
-context of a larger regular expression, that function independently of
-the larger regular expression.  That is, they consume as much or as
-little of the string as they wish without regard for the ability of
-the larger regexp to match.  Independent subexpressions are represented
-by C<< (?>regexp) >>.  We can illustrate their behavior by first
-considering an ordinary regexp:
+I<Независимые подвыражения> являются регулярными выражениями, в
+контексте большого регулярного выражения, которые функционируют независимо от
+этого большого регулярного выражения. То есть они потребляют так много или так мало
+ от строки, как они хотят, без учета способности поиска большого регекспа.
+ Независимые подвыражения представлены  C<< (?>regexp) >>.
+ Мы можем проиллюстрировать их поведение сначала рассматривая обычный регексп:
 
     $x = "ab";
-    $x =~ /a*ab/;  # matches
+    $x =~ /a*ab/;  # найдёт
 
-This obviously matches, but in the process of matching, the
-subexpression C<a*> first grabbed the C<a>.  Doing so, however,
-wouldn't allow the whole regexp to match, so after backtracking, C<a*>
-eventually gave back the C<a> and matched the empty string.  Here, what
-C<a*> matched was I<dependent> on what the rest of the regexp matched.
+Это, очевидно, совпадает, но в процессе поиска,
+подвыражение C<a*> сначала схватывает C<a>. Это, однако,
+не позволило бы соответствовать всему регекспу, таким образом, после поиска с возвратом, C<a*>
+в конце концов возвращает C<a> и соответствует пустой строке. Здесь то, чему
+соответствует C<a*> I<зависит> от остальной части регекспа.
 
-Contrast that with an independent subexpression:
+Сравните это с независимым подвыражением:
 
-    $x =~ /(?>a*)ab/;  # doesn't match!
+    $x =~ /(?>a*)ab/;  # не найдет!
 
-The independent subexpression C<< (?>a*) >> doesn't care about the rest
-of the regexp, so it sees an C<a> and grabs it.  Then the rest of the
-regexp C<ab> cannot match.  Because C<< (?>a*) >> is independent, there
-is no backtracking and the independent subexpression does not give
-up its C<a>.  Thus the match of the regexp as a whole fails.  A similar
-behavior occurs with completely independent regexps:
+Независимое подвыражение C<< (?>a*) >> не беспокоится о остальном регекспе,
+таким образом оно види C<a> и хватает его. Тогда оставшийся регексп
+C<ab> уже не может совпасть.  Потому что C<< (?>a*) >> является независимым, 
+здесь нет поиска с возвратом(backtracking)
+и  независимое подвыражение (independent subexpression) не отдает наверх C<a>.
+Таким образом поиск регекспа в целом не удается.  То же самое
+происходит с полностью независимыми регулярными выражениями:
 
     $x = "ab";
-    $x =~ /a*/g;   # matches, eats an 'a'
-    $x =~ /\Gab/g; # doesn't match, no 'a' available
+    $x =~ /a*/g;   # найдет, съест 'a'
+    $x =~ /\Gab/g; # не найдет, не доступных 'a'
 
 Here C<//g> and C<\G> create a 'tag team' handoff of the string from
 one regexp to the other.  Regexps with an independent subexpression are
