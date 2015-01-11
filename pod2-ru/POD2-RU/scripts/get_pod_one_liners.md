@@ -6,7 +6,7 @@ https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlre.pod 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.pod 2928 2607  89%    +/-  
 perl -E "say 1/(2928/2606)"
 
-8
+9
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebtut.pod 730 130 18%             +/-  
 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebackslash.pod 661 22 +/-  
