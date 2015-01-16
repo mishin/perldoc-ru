@@ -2343,11 +2343,14 @@ C<ab> уже не может совпасть.  Потому что C<< (?>a*) >
     $x =~ /\Gab/g; # не найдет, не доступных 'a'
 
 Здесь C<//g> и C<\G> создают 'тег команды' передачи строки из одного регекспа в другой.
-Regexps with an independent subexpression are
-much like this, with a handoff of the string to the independent
-subexpression, and a handoff of the string back to the enclosing
-regexp.
+Регекспы с независимыми подвыражениями являются
+такими же, как это, с перемещением строки для независимых
+подвыражений и передачи строки обратно в окруженный скобками регексп.
 
+Способность независимых подвыражений предотвращать поиск с возвратом
+может быть весьма полезна. Предположим, мы хотим не пустой строки
+заключенный в круглые скобки до двух уровней в глубину. Затем следующие
+RegExp совпадений:
 The ability of an independent subexpression to prevent backtracking
 can be quite useful.  Suppose we want to match a non-empty string
 enclosed in parentheses up to two levels deep.  Then the following
