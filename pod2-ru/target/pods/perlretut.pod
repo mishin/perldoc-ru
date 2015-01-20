@@ -2356,39 +2356,24 @@ C<ab> уже не может совпасть.  Потому что C<< (?>a*) >
     $x =~ /\( ( [^()]+ | \([^()]*\) )+ \)/x;
 
 Регексп находит открытую скобку, один или много знаков "или"
- и закрытую скобку. Альтернатива ("или") бывает 2-х типов
-Regexp соответствует открывающую скобку, один или более копий
-чередование и закрыть скобку. Чередование является двусторонней, с
-Первый вариант C < [^ ()] + раздел настроек сопоставление подстроки с без
-скобки и второй вариант C < \ ([^ ()] * \) настроек сопоставления
-подстрока, разделенных скобки. Проблема с этой regexp
-что это патологическое: он имеет вложенные неопределенного кванторы
-формы C <(a+|b)+>. Мы обсуждали в первой части как вложенные квантификаторы
-как это может занять экспоненциально много времени для выполнения, если там
-не матч можно было. Для предотвращения экспоненциального раздутия, нам нужно
-предотвращения бесполезной отступает в определенный момент. Это может быть сделано путем
-ограждающих внутренний квантификатор как независимая часть выражения:
-
-The regexp matches an open parenthesis, one or more copies of an
-alternation, and a close parenthesis.  The alternation is two-way, with
-the first alternative C<[^()]+> matching a substring with no
-parentheses and the second alternative C<\([^()]*\)>  matching a
-substring delimited by parentheses.  The problem with this regexp is
-that it is pathological: it has nested indeterminate quantifiers
-of the form C<(a+|b)+>.  We discussed in Part 1 how nested quantifiers
-like this could take an exponentially long time to execute if there
-was no match possible.  To prevent the exponential blowup, we need to
-prevent useless backtracking at some point.  This can be done by
-enclosing the inner quantifier as an independent subexpression:
+ и закрытую скобку. Альтернатива ("или") бывает 2-х типов?
+ первая альтернатива C<[^()]+> находит подстроку без скобок
+ ,а вторая альтернатива C<\([^()]*\)>  находит подстроку,
+ разделенную скобками. Проблема с этим регекспом в том, что он
+патологический: он имеет вложенные неопределенные формы умножителей
+ C<(a+|b)+>.  Мы обсуждали в первой части о том,как вложенные квантификаторы
+ могут занимать экспоненциально много времени для выполнения, если там
+не ничего не должно быть найдено. Для предотвращения экспоненциального раздутия, нам нужно
+предотвращения бесполезный возврат (backtracking) в определенный момент. Это может быть сделано путем
+ограждающих внутреннего квантификатора как независимого подвыражения:
 
     $x =~ /\( ( (?>[^()]+) | \([^()]*\) )+ \)/x;
 
-Here, C<< (?>[^()]+) >> breaks the degeneracy of string partitioning
-by gobbling up as much of the string as possible and keeping it.   Then
-match failures fail much more quickly.
+Здесь,  C<< (?>[^()]+) >> ломает дегенерацию разбиения строки,
+съедая настолько большую строку насколько это возможно и удерживая её. Тогда
+неудачный поиск происходит намного быстрее.
 
-
-=head2 Conditional expressions
+=head2 Условные выражения
 
 A I<conditional expression> is a form of if-then-else statement
 that allows one to choose which patterns are to be matched, based on
