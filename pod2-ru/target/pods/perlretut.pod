@@ -2375,19 +2375,19 @@ C<ab> уже не может совпасть.  Потому что C<< (?>a*) >
 
 =head2 Условные выражения
 
-A I<conditional expression> is a form of if-then-else statement
-that allows one to choose which patterns are to be matched, based on
-some condition.  There are two types of conditional expression:
-C<(?(condition)yes-regexp)> and
-C<(?(condition)yes-regexp|no-regexp)>.  C<(?(condition)yes-regexp)> is
-like an S<C<'if () {}'>> statement in Perl.  If the C<condition> is true,
-the C<yes-regexp> will be matched.  If the C<condition> is false, the
-C<yes-regexp> will be skipped and Perl will move onto the next regexp
-element.  The second form is like an S<C<'if () {} else {}'>> statement
-in Perl.  If the C<condition> is true, the C<yes-regexp> will be
-matched, otherwise the C<no-regexp> will be matched.
+I<Условные выражение> это форма если-тогда-иначе (if-then-else) выражения,
+ которое позволяет выбрать шаблон для поиска, основанный на некотором условии.  
+ Существует 2 типа условных выражений:
+C<(?(условие)да-регексп)> и
+C<(?(условие)да-регексп|нет-регексп)>.  C<(?(условие)да-регексп)> это то же, что и
+S<C<'if () {}'>> выражение в Perl.  Если C<условие> истина (true),
+то C<да-регексп> будет найдет. Если C<условие> ложь (false), то
+C<да-регексп> будет пропущен и  Perl передвинется к следующему регекспу в эелементе.
+Вторая форма -это тоже, что и S<C<'if () {} else {}'>> выражение
+в Perl.  Если C<условие> истинно, то C<да-регексп> будет найдет
+, иначе C<нет-регексп> будет найден.
 
-The C<condition> can have several forms.  The first form is simply an
+The C<условие> can have several forms.  The first form is simply an
 integer in parentheses C<(integer)>.  It is true if the corresponding
 backreference C<\integer> matched earlier in the regexp.  The same
 thing can be done with a name associated with a capture group, written
