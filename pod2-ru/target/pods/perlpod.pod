@@ -1,28 +1,29 @@
+=encoding utf8
 
 =for comment
-This document is in Pod format.  To read this, use a Pod formatter,
-like "perldoc perlpod".
+Этот документ в в формате Pod.  Для его чтения используйте средство форматирования Pod такое, как
+ "perldoc perlpod".
 
-=head1 NAME
+=head1 НАИМЕНОВАНИЕ
 X<POD> X<plain old documentation>
 
-perlpod - the Plain Old Documentation format
+perlpod - формат простой старой документации   (Plain Old Documentation format)
 
-=head1 ��������
+=head1 ОПИСАНИЕ
 
-Pod is a simple-to-use markup language used for writing documentation
-for Perl, Perl programs, and Perl modules.
+Pod - это простой-в-использовании язык разметки для написания документации для Perl, 
+Perl программ, и Perl модулей.
 
-Translators are available for converting Pod to various formats
-like plain text, HTML, man pages, and more.
+Доступны программы для преобразования Pod в различные форматы:
+обычный текст, HTML, man-страницы и многие другие.
 
-Pod markup consists of three basic kinds of paragraphs:
-L<ordinary|/"Ordinary Paragraph">,
-L<verbatim|/"Verbatim Paragraph">, and 
-L<command|/"Command Paragraph">.
+Pod разметка состоит из трех основных видов пунктов:
+L<ordinary|/"Обычный параграф">,
+L<verbatim|/"Стенографические параграф">, и 
+L<command|/"Командный параграф">.
 
 
-=head2 Ordinary Paragraph
+=head2 Обычный параграф
 X<POD, ordinary paragraph>
 
 Most paragraphs in your documentation will be ordinary blocks
