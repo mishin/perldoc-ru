@@ -2388,28 +2388,15 @@ C<да-регексп> будет пропущен и  Perl передвинет
 , иначе C<нет-регексп> будет найден.
 
 C<Условие> может иметь несколько форм. Первая форма-просто
-целое число в скобках C<(integer)>. Это правда, если соответствующий
-Обратная ссылка C <\integer> соответствует ранее в regexp. То же самое
-вещь может быть сделано с имя, связанное с группой захвата, написано
-как << (<name>) >> или C << (' имя') >>. Вторая форма-голые
-утверждение нулевой ширины C <(?...) настроек, либо вперед, назад или в
-код утверждения (рассматривается в следующем разделе). Третий набор форм
+целое число в скобках C<(integer)>. Это правда, если соответствующая
+обратная ссылка C<\integer> была найдена ранее в регекспе. То же самое
+вещь может быть сделано с именем, связанным с группой захвата, написанным,
+как <<(<name>)>> или C<<('имя')>>. Вторая форма-голые
+утверждение нулевой ширины C<(?...)>, либо вперед, назад или в
+коде утверждения (рассматривается в следующем разделе). Третий набор форм
 содержит тесты, которые возвращают значение true, если выражение выполняется в рамках
-рекурсия (C <(R)>) или является группа, вызываемой из некоторых захвата
-ссылки либо по номеру (C <(R1)>, C<(R2)>,...) или по имени
-(C <(R&name)>).
-
-
-The first form is simply an
-integer in parentheses C<(integer)>.  It is true if the corresponding
-backreference C<\integer> matched earlier in the regexp.  The same
-thing can be done with a name associated with a capture group, written
-as C<< (<name>) >> or C<< ('name') >>.  The second form is a bare
-zero-width assertion C<(?...)>, either a lookahead, a lookbehind, or a
-code assertion (discussed in the next section).  The third set of forms
-provides tests that return true if the expression is executed within
-a recursion (C<(R)>) or is being called from some capturing group,
-referenced either by number (C<(R1)>, C<(R2)>,...) or by name
+рекурсии (C<(R)>) или является вызываемой из некоторых групп захвата, ссылающихся
+ либо по номеру (C<(R1)>, C<(R2)>,...) или по имени
 (C<(R&name)>).
 
 The integer or name form of the C<condition> allows us to choose,
