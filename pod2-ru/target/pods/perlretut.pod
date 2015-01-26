@@ -2399,9 +2399,9 @@ C<Условие> может иметь несколько форм. Перва�
  либо по номеру (C<(R1)>, C<(R2)>,...) или по имени
 (C<(R&name)>).
 
-The integer or name form of the C<condition> allows us to choose,
-with more flexibility, what to match based on what matched earlier in the
-regexp. This searches for words of the form C<"$x$x"> or C<"$x$y$y$x">:
+Форма цифры или имени в C<условии> позволяет нам выбрать более гибко, 
+что я вляется базовым шаблоном и, что найдено ранее в регекспе. 
+В от поиск слов в форме C<"$x$x"> или C<"$x$y$y$x">:
 
     % simple_grep '^(\w+)(\w+)?(?(2)\g2\g1|\g1)$' /usr/dict/words
     beriberi
@@ -2413,20 +2413,21 @@ regexp. This searches for words of the form C<"$x$x"> or C<"$x$y$y$x">:
     toto
     tutu
 
-The lookbehind C<condition> allows, along with backreferences,
-an earlier part of the match to influence a later part of the
-match.  For instance,
+Бектрекинг C <condition>позволяет, наряду с обратными ссылками,
+ранее частью матча влиять позднее частью
+матч. К примеру,
+Просмотр C<условий> назад  позволяет, наряду с обратными ссылками,
+на транней стадии поиска влиять на более поздний поиск. Например,
 
     /[ATGC]+(?(?<=AA)G|C)$/;
 
-matches a DNA sequence such that it either ends in C<AAG>, or some
-other base pair combination and C<C>.  Note that the form is
-C<< (?(?<=AA)G|C) >> and not C<< (?((?<=AA))G|C) >>; for the
-lookahead, lookbehind or code assertions, the parentheses around the
-conditional are not needed.
+найдет последовательность DNA такую, что она либо заканчинвается на C<AAG>, или на другие комбинации пар и C<C>.
+Обратите внимание, что форма
+C<< (?(?<=AA)G|C) >> и не C<< (?((?<=AA))G|C) >>; 
+для просмотра вперед, назад или кода утверждения, скобки вокруг
+условия не требуются.
 
-
-=head2 Defining named patterns
+=head2 Определение именованных шаблонов
 
 Some regular expressions use identical subpatterns in several places.
 Starting with Perl 5.10, it is possible to define named subpatterns in
