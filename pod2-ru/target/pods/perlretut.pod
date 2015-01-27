@@ -2502,40 +2502,32 @@ hitherto required a recursive parser)
 Предупреждаем, что эта функция считается экспериментальной и может быть
 изменена без предварительного уведомления.
 
-Код выражения являются утверждения нулевой ширины и они возвращают значение
-зависит от окружающей их среды. Есть две возможности: либо
-выражение кода, которое используется в качестве условного в условном выражении
-C <(?(condition)...)>, или его нет. Если выражение кода
-условное, вычисляется код и результат (то есть, результат
-последний оператор) используется для определения правды или лжи. Если
-кодовое выражение не используется в качестве условного, утверждение всегда
-Вычисляет значение true и результат помещается в специальную переменную
-C <$^R>. Переменная C <$^R> затем могут быть использованы в выражениях код позже
-в regexp. Ниже приведены некоторые примеры глупо:
-
-Code expressions are zero-width assertions, and the value they return
-depends on their environment.  There are two possibilities: either the
-code expression is used as a conditional in a conditional expression
-C<(?(condition)...)>, or it is not.  If the code expression is a
-conditional, the code is evaluated and the result (i.e., the result of
-the last statement) is used to determine truth or falsehood.  If the
-code expression is not used as a conditional, the assertion always
-evaluates true and the result is put into the special variable
-C<$^R>.  The variable C<$^R> can then be used in code expressions later
-in the regexp.  Here are some silly examples:
+Выражение с кодом являются утверждением нулевой ширины и оно возвращают значение,
+зависящее от окружающей их среды. Есть две возможности: либо
+выражение с кодом используется в качестве условного в условном выражении
+C<(?(condition)...)>, или нет. Если выражение с кодом
+условное, код вычисляется  и результат (то есть, результат
+последнего оператора) используется для определения правды или лжи. Если
+выражение с кодом  не используется в качестве условного, утверждение всегда
+вычисляет значение true и результат помещается в специальную переменную
+C<$^R>. Переменная C<$^R> затем может быть использована в выражениях с кодом позже
+в регекспе. Ниже приведены некоторые простые примеры:
 
     $x = "abcdef";
-    $x =~ /abc(?{print "Hi Mom!";})def/; # matches,
-                                         # prints 'Hi Mom!'
-    $x =~ /aaa(?{print "Hi Mom!";})def/; # doesn't match,
-                                         # no 'Hi Mom!'
+    $x =~ /abc(?{print "Hi Mom!";})def/; # найдет,
+                                         # напечатает 'Hi Mom!'
+    $x =~ /aaa(?{print "Hi Mom!";})def/; # не найдёт,
+                                         # нет 'Hi Mom!'
 
-Pay careful attention to the next example:
+Обратите особое внимание на следующий пример:
 
-    $x =~ /abc(?{print "Hi Mom!";})ddd/; # doesn't match,
-                                         # no 'Hi Mom!'
-                                         # but why not?
+    $x =~ /abc(?{print "Hi Mom!";})ddd/; # не найдет,
+                                         # нет 'Hi Mom!'
+                                         # нопочему?
 
+На первый взгляд, можно подумать, что он не должен печатать, потому что очевидно
+C <ddd>не будет соответствовать целевой строки. Но посмотрите на это
+Пример:
 At first glance, you'd think that it shouldn't print, because obviously
 the C<ddd> isn't going to match the target string. But look at this
 example:
