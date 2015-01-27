@@ -2429,20 +2429,20 @@ C<< (?(?<=AA)G|C) >> и не C<< (?((?<=AA))G|C) >>;
 
 =head2 Определение именованных шаблонов
 
-Some regular expressions use identical subpatterns in several places.
-Starting with Perl 5.10, it is possible to define named subpatterns in
-a section of the pattern so that they can be called up by name
-anywhere in the pattern.  This syntactic pattern for this definition
-group is C<< (?(DEFINE)(?<name>pattern)...) >>.  An insertion
-of a named pattern is written as C<(?&name)>.
+Некоторые регулярные выражения используют идентичные подшаблоны в нескольких местах.
+Начиная с Perl 5.10, это возможно определяя именованные подшаблоны (подмаски;)) в
+секции шаблона, так что они могут вызываться по имени в любом месте шаблона (для поиска).
+Для определения именованного шаблона используется синтаксический паттерн
+ C<< (?(DEFINE)(?<name>pattern)...) >>. Вставка
+именованного шаблона записывается как  C<(?&name)>.
 
-The example below illustrates this feature using the pattern for
-floating point numbers that was presented earlier on.  The three
-subpatterns that are used more than once are the optional sign, the
-digit sequence for an integer and the decimal fraction.  The DEFINE
-group at the end of the pattern contains their definition.  Notice
-that the decimal fraction pattern is the first place where we can
-reuse the integer pattern.
+Пример ниже иллюстрирует эту функцию, используя шаблон для
+числа с плавающей запятой, который был представлен ранее. Три
+подшаблона, которые используются несколько раз – необязательный знак,
+последовательности цифр для целого числа и десятичной дроби. DEFINE (ОПРЕДЕЛЕНИЕ)
+группу в конце шаблона содержит их определение. Обратите внимание
+что шаблон десятичной дроби находиться на первом месте, где мы можем
+повторно используйте шаблон целого (integer).
 
    /^ (?&osg)\ * ( (?&int)(?&dec)? | (?&dec) )
       (?: [eE](?&osg)(?&int) )?
@@ -2454,42 +2454,44 @@ reuse the integer pattern.
     )/x
 
 
-=head2 Recursive patterns
+=head2 Рекурсивные шаблоны
 
-This feature (introduced in Perl 5.10) significantly extends the
-power of Perl's pattern matching.  By referring to some other
-capture group anywhere in the pattern with the construct
-C<(?group-ref)>, the I<pattern> within the referenced group is used
-as an independent subpattern in place of the group reference itself.
-Because the group reference may be contained I<within> the group it
-refers to, it is now possible to apply pattern matching to tasks that
-hitherto required a recursive parser.
+Эта функция (введена в Perl 5.10) значительно расширяет
+мощность Perl поиска по шаблону. Ссылаясь на другие захваченные
+группы в любом месте шаблона с помощью конструкции
+C<(?group-ref)>, I<шаблон> в указанной группе используется
+как независимый подшаблон вместо группы ссылающейся сама на себя.
+Так как групповая ссылка может содержаться I<внутри> группы, к которой он
+относится, то теперь можно применять поиск по шаблону для задачи,
+для которой до сих пор требуется рекурсивный парсер.
+(it is now possible to apply pattern matching to tasks that
+hitherto required a recursive parser)
 
-To illustrate this feature, we'll design a pattern that matches if
-a string contains a palindrome. (This is a word or a sentence that,
-while ignoring spaces, interpunctuation and case, reads the same backwards
-as forwards. We begin by observing that the empty string or a string
-containing just one word character is a palindrome. Otherwise it must
-have a word character up front and the same at its end, with another
-palindrome in between.
+Чтобы проиллюстрировать эту функцию, мы будем разрабатывать шаблон, который будет находить
+строку, содержащую палиндром. (Это слово или предложение,
+которое игнорируя пробелы может читаться вперед также, как и назад. 
+Мы начинаем, заметив, что пустая строка или строка
+содержащие только один буквенный символ является палиндромом. В противном случае он должен
+иметь сивол вначале таким же, как и в конце, с другой
+палиндромом между ними.
 
-    /(?: (\w) (?...Here be a palindrome...) \g{-1} | \w? )/x
+    /(?: (\w) (?...Здесь будет палиндром...) \g{-1} | \w? )/x
 
-Adding C<\W*> at either end to eliminate what is to be ignored, we already
-have the full pattern:
+Добавляя C<\W*> на концах для ликвидации того, что будет проигнорировано, мы уже
+имеют полный шаблон:
 
     my $pp = qr/^(\W* (?: (\w) (?1) \g{-1} | \w? ) \W*)$/ix;
     for $s ( "saippuakauppias", "A man, a plan, a canal: Panama!" ){
         print "'$s' is a palindrome\n" if $s =~ /$pp/;
     }
 
-In C<(?...)> both absolute and relative backreferences may be used.
-The entire pattern can be reinserted with C<(?R)> or C<(?0)>.
-If you prefer to name your groups, you can use C<(?&name)> to
-recurse into that group.
 
+Внутри C<(?...)> могут быть использованы, как абсолютные, так и относительные обратные ссылки.
+Весь шаблон может быть перевставлен с C<(?R)> или C<(?0)>.
+Если вы предпочитаете имя для вашей группы, то вы можете использовать C<(?&name)> для
+рекурсии в эту группу.
 
-=head2 A bit of magic: executing Perl code in a regular expression
+=head2 Немного магии: выполнение кода в регулярном выражении Perl
 
 Normally, regexps are a part of Perl expressions.
 I<Code evaluation> expressions turn that around by allowing
