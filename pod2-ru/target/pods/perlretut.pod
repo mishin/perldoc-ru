@@ -2573,21 +2573,21 @@ C<ddd> не будет соответствовать целевой строкt
     $x =~ /(?{local $c = 0;})         # инифиализация счетчика
            ( a                        # находим 'a'
              (?{local $c = $c + 1;})  # увеличиваем счетчик
-           )*                         # do this any number of times,
-           aa                         # but match 'aa' at the end
-           (?{$count = $c;})          # copy счетчикl $c var into $count
+           )*                         # делать так любое число раз,
+           aa                         # но найти 'aa' в конце
+           (?{$count = $c;})          # скопировать счетчик $c в $count
           /x;
-    print "'a' count is $count, \$c variable is '$c'\n";
+    print "число 'a' равно $count, переменная \$c равна '$c'\n";
 
-This prints
+Это напечатает
 
-    'a' count is 2, $c variable is 'bob'
+    число 'a' равно 2, переменная $c равна 'bob'
 
-If we replace the S<C< (?{local $c = $c + 1;})>> with
-S<C< (?{$c = $c + 1;})>>, the variable changes are I<not> undone
-during backtracking, and we get
+Если мы заменим S<C< (?{local $c = $c + 1;})>> на
+S<C< (?{$c = $c + 1;})>>, изменения в переменной будет I<нет> восстановимы
+вовремя обратного поиска, и мы получим
 
-    'a' count is 4, $c variable is 'bob'
+    число 'a' равно 4, переменная $c равна 'bob' 
 
 Note that only localized variable changes are undone.  Other side
 effects of code expression execution are permanent.  Òàêèì îáðàçîì
