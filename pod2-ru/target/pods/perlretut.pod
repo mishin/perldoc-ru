@@ -2559,29 +2559,23 @@ C<ddd> не будет соответствовать целевой строкt
                                            # напечатает '1'
     $x =~ /(?{$c = 1;})(?{print "$^R";})/; # найдёт,
                                            # напечатает '1'
-Немного магии, упомянутых в названии раздела происходит когда regexp
-откат в процессе поиска совпадения. Если regexp
-откат за выражение кода и если переменные, используемые в рамках
-локализованы с помощью C <local>, производимые изменения в переменных
-выражение кода отменяются! Таким образом если мы хотели, чтобы подсчитать сколько раз
-персонаж получил соответствует внутри группы, мы могли бы использовать, например,
-
-The bit of magic mentioned in the section title occurs when the regexp
-backtracks in the process of searching for a match.  If the regexp
-backtracks over a code expression and if the variables used within are
-localized using C<local>, the changes in the variables produced by the
-code expression are undone! Thus, if we wanted to count how many times
-a character got matched inside a group, we could use, e.g.,
+                                           
+Немного магии, упомянутых в названии раздела, происходит когда регексп
+возвращается назад в процессе поиска совпадения. Если регексп
+возвращается за выражение с кодом и, если переменные, используемые внутри
+локализованы с помощью C<local>, производимые изменения в переменных
+выражения с кодом отменяются! Таким образом, если мы хотели подсчитать сколько раз
+символ был найден внутри группы, мы могли бы использовать, например,
 
     $x = "aaaa";
-    $count = 0;  # initialize 'a' count
-    $c = "bob";  # test if $c gets clobbered
-    $x =~ /(?{local $c = 0;})         # initialize count
-           ( a                        # match 'a'
-             (?{local $c = $c + 1;})  # increment count
+    $count = 0;  # инициализация количества 'a'
+    $c = "bob";  # тест, если $c испорчен
+    $x =~ /(?{local $c = 0;})         # инифиализация счетчика
+           ( a                        # находим 'a'
+             (?{local $c = $c + 1;})  # увеличиваем счетчик
            )*                         # do this any number of times,
            aa                         # but match 'aa' at the end
-           (?{$count = $c;})          # copy local $c var into $count
+           (?{$count = $c;})          # copy счетчикl $c var into $count
           /x;
     print "'a' count is $count, \$c variable is '$c'\n";
 
