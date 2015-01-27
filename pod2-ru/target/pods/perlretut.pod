@@ -2589,13 +2589,14 @@ S<C< (?{$c = $c + 1;})>>, изменения в переменной будет 
 
     число 'a' равно 4, переменная $c равна 'bob' 
 
-Note that only localized variable changes are undone.  Other side
-effects of code expression execution are permanent.  Òàêèì îáðàçîì
+Обратите внимание, что только изменения в локализованных переменных будут отменены.
+Другие побочные эффекты выполнения выражения с кодом  являются постоянными. 
+Таким образом
 
     $x = "aaaa";
     $x =~ /(a(?{print "Yow\n";}))*aa/;
 
-produces
+произведет
 
    Yow
    Yow
