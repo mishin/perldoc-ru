@@ -2537,39 +2537,34 @@ C<ddd> не будет соответствовать целевой строкt
 заключение C<d> в классе символов не собирается менять то, что он
 найдёт. Так почему же первый не печатает, а второй печатает?
 
-Ответ заключается в оптимизации, которые делает regex engine. В первом
-дело, все двигателя видит простой старый символов (наряду с
-C <? {} раздел настроек построения). Он достаточно умен, чтобы понимать, что строка «ddd»
-не происходит в нашей целевой строки до фактического запуска шаблон
-через. Но во втором случае, мы обманули его в думая, что наши
-шаблон является более сложным. Он смотрит, видит наши
-класс символа и решает, что ей придется работать
-шаблон, чтобы определить ли или не соответствует, а в
-его хиты оператор print, прежде чем он узнает, что мы не
-у матча.
+Ответ заключается в оптимизации, которую делает движок регексов (regex engine). В первом
+случае весь движок видит простой старые символы (наряду с конструкцией C<?{}>).
+Он достаточно умен, чтобы понимать, что строка «ddd»
+не совпадает с нашей целевой строкой до фактического запуска шаблон. 
+Но во втором случае, мы обманули его, заставляя его думать,что наш
+шаблон является более сложным. Он смотрит, видит наш
+символьный класс и решает, что ему придется запускать
+шаблон, чтобы определить соответствует ему строка или нет,
+м процессе выполненич он печатает выражение прежде чем он узнает, что полный регексп
+ не соответствует шаблону.
 
-The answer lies in the optimizations the regex engine makes. In the first
-case, all the engine sees are plain old characters (aside from the
-C<?{}> construct). It's smart enough to realize that the string 'ddd'
-doesn't occur in our target string before actually running the pattern
-through. But in the second case, we've tricked it into thinking that our
-pattern is more complicated. It takes a look, sees our
-character class, and decides that it will have to actually run the
-pattern to determine whether or not it matches, and in the process of
-running it hits the print statement before it discovers that we don't
-have a match.
+Чтобы увидеть, как движок делает оптимизацию, см.
+секцию  L<"Прагмы и отладки"> (L<"Pragmas and debugging">) ниже.
 
-To take a closer look at how the engine does optimizations, see the
-section L<"Pragmas and debugging"> below.
+Больше фана с C<?{}>:
 
-More fun with C<?{}>:
-
-    $x =~ /(?{print "Hi Mom!";})/;       # matches,
-                                         # prints 'Hi Mom!'
-    $x =~ /(?{$c = 1;})(?{print "$c";})/;  # matches,
-                                           # prints '1'
-    $x =~ /(?{$c = 1;})(?{print "$^R";})/; # matches,
-                                           # prints '1'
+    $x =~ /(?{print "Hi Mom!";})/;       # найдёт,
+                                         # напечатает 'Hi Mom!'
+    $x =~ /(?{$c = 1;})(?{print "$c";})/;  # найдёт,
+                                           # напечатает '1'
+    $x =~ /(?{$c = 1;})(?{print "$^R";})/; # найдёт,
+                                           # напечатает '1'
+Немного магии, упомянутых в названии раздела происходит когда regexp
+откат в процессе поиска совпадения. Если regexp
+откат за выражение кода и если переменные, используемые в рамках
+локализованы с помощью C <local>, производимые изменения в переменных
+выражение кода отменяются! Таким образом если мы хотели, чтобы подсчитать сколько раз
+персонаж получил соответствует внутри группы, мы могли бы использовать, например,
 
 The bit of magic mentioned in the section title occurs when the regexp
 backtracks in the process of searching for a match.  If the regexp
