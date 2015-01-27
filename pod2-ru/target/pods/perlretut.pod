@@ -2493,14 +2493,25 @@ hitherto required a recursive parser)
 
 =head2 Немного магии: выполнение кода в регулярном выражении Perl
 
-Normally, regexps are a part of Perl expressions.
-I<Code evaluation> expressions turn that around by allowing
-arbitrary Perl code to be a part of a regexp.  A code evaluation
-expression is denoted C<(?{code})>, with I<code> a string of Perl
-statements.
+Как правило регекспы являются частью Perl выражения.
+Выражения I<выполнения кода>  позволяют 
+произвольному коду Perl быть частью регекспа. Выражение выполнения 
+кода обозначается как C<(?{code})>, где строка I<code> является 
+выражение на языке Perl.
 
-Be warned that this feature is considered experimental, and may be
-changed without notice.
+Предупреждаем, что эта функция считается экспериментальной и может быть
+изменена без предварительного уведомления.
+
+Код выражения являются утверждения нулевой ширины и они возвращают значение
+зависит от окружающей их среды. Есть две возможности: либо
+выражение кода, которое используется в качестве условного в условном выражении
+C <(?(condition)...)>, или его нет. Если выражение кода
+условное, вычисляется код и результат (то есть, результат
+последний оператор) используется для определения правды или лжи. Если
+кодовое выражение не используется в качестве условного, утверждение всегда
+Вычисляет значение true и результат помещается в специальную переменную
+C <$^R>. Переменная C <$^R> затем могут быть использованы в выражениях код позже
+в regexp. Ниже приведены некоторые примеры глупо:
 
 Code expressions are zero-width assertions, and the value they return
 depends on their environment.  There are two possibilities: either the
