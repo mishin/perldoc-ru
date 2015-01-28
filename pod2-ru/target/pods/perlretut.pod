@@ -2584,7 +2584,7 @@ C<ddd> не будет соответствовать целевой строкt
     число 'a' равно 2, переменная $c равна 'bob'
 
 Если мы заменим S<C< (?{local $c = $c + 1;})>> на
-S<C< (?{$c = $c + 1;})>>, изменения в переменной будет I<нет> восстановимы
+S<C< (?{$c = $c + 1;})>>, изменения в переменной будут I<нет> восстановимы
 вовремя обратного поиска, и мы получим
 
     число 'a' равно 4, переменная $c равна 'bob' 
@@ -2603,23 +2603,28 @@ S<C< (?{$c = $c + 1;})>>, изменения в переменной будет 
    Yow
    Yow
 
-The result C<$^R> is automatically localized, so that it will behave
-properly in the presence of backtracking.
+Результат C<$^R> автоматически локализуется, так что он будет вести себя
+должным образом во время поиска с возвратом.
 
-This example uses a code expression in a conditional to match a
-definite article, either 'the' in English or 'der|die|das' in German:
+В этом примере используется выражение с кодом  в условном смысле для поиска
+определенного артикля, 'the' в английском или «der|die|das» в немецком языке:
 
-    $lang = 'DE';  # use German
+    $lang = 'DE';  # используем Немецкий
     ...
     $text = "das";
     print "matched\n"
         if $text =~ /(?(?{
-                          $lang eq 'EN'; # is the language English?
+                          $lang eq 'EN'; # язык английский?
                          })
-                       the |             # if so, then match 'the'
-                       (der|die|das)     # else, match 'der|die|das'
+                       the |             # если да, то ищем 'the'
+                       (der|die|das)     # иначе ищем 'der|die|das'
                      )
                     /xi;
+
+Обратите внимание, что синтаксис здесь C <(?(?{...})yes-regexp|no-regexp)>, не
+C <(?((?{...}))yes-regexp|no-regexp)>. Другими словами, в случае использования
+выражение кода, нам не нужны дополнительные скобки вокруг
+условное.
 
 Note that the syntax here is C<(?(?{...})yes-regexp|no-regexp)>, not
 C<(?((?{...}))yes-regexp|no-regexp)>.  In other words, in the case of a
