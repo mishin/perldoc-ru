@@ -2620,31 +2620,31 @@ S<C< (?{$c = $c + 1;})>>, изменения в переменной будут 
 
 Обратите внимание, что синтаксис здесь C <(?(?{...})yes-regexp|no-regexp)>, не
 C <(?((?{...}))yes-regexp|no-regexp)>. Другими словами, в случае использования
-выражение кода, нам не нужны дополнительные скобки вокруг
-условное.
+выражения с кодом(code expression), нам не нужны дополнительные скобки вокруг
+условия.
 
-Note that the syntax here is C<(?(?{...})yes-regexp|no-regexp)>, not
-C<(?((?{...}))yes-regexp|no-regexp)>.  In other words, in the case of a
-code expression, we don't need the extra parentheses around the
-conditional.
-
-If you try to use code expressions where the code text is contained within
-an interpolated variable, rather than appearing literally in the pattern,
-Perl may surprise you:
+Если вы попытаетесь использовать выражение с кодом, где текст кода содержится в
+переменной интерполяции, а не появляется буквально в шаблоне, то
+Perl может вас удивить:
 
     $bar = 5;
     $pat = '(?{ 1 })';
-    /foo(?{ $bar })bar/; # compiles ok, $bar not interpolated
-    /foo(?{ 1 })$bar/;   # compiles ok, $bar interpolated
-    /foo${pat}bar/;      # compile error!
+    /foo(?{ $bar })bar/; # компилируется успешно, $bar не интерполируется
+    /foo(?{ 1 })$bar/;   # компилируется успешно, $bar интерполируется
+    /foo${pat}bar/;      # ошибка компиляции!
 
-    $pat = qr/(?{ $foo = 1 })/;  # precompile code regexp
-    /foo${pat}bar/;      # compiles ok
+    $pat = qr/(?{ $foo = 1 })/;  # педкомпиляция регекспа с кодом
+    /foo${pat}bar/;      # компилируется успешно!
 
-If a regexp has a variable that interpolates a code expression, Perl
-treats the regexp as an error. If the code expression is precompiled into
-a variable, however, interpolating is ok. The question is, why is this an
-error?
+Если в регекспе есть переменная, которая интерполируется в выражении с кодом, то Perl
+рассматривает выражение как ошибку. Если выражение с кодом предварительно скомпилировано в
+переменную, тогда однако, интерполяции проходит успешно. Вопрос в том, почему это
+Ошибка?
+
+Причина-это та переменная интерполяции и кода выражения
+вместе создать угрозу безопасности. Сочетание это опасно потому, что
+Многие программисты, которые пишут поисковых системах часто принимать вводимые пользователем данные и
+Подключите его непосредственно к regexp:
 
 The reason is that variable interpolation and code expressions
 together pose a security risk.  The combination is dangerous because
