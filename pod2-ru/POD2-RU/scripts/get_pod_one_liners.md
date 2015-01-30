@@ -95,6 +95,7 @@ perl  -I%path_2_lib% -MIO::All -e "printf qq{%s %s\n},$_->name,$_->rows for sort
 
 http://habrahabr.ru/company/luxoft/blog/215345/
 
+```
 git filter-branch --env-filter \
     'if [ $GIT_COMMIT = 119f9ecf58069b265ab22f1f97d2b648faf932e0 ]
      then
@@ -104,30 +105,32 @@ git filter-branch --env-filter \
 	 
 git commit --amend --date="Wed Feb 16 14:00 2011 +0100"
 GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend
-
+```
 Here is a convenient alias that changes both commit and author times of the last commit to a time accepted by date --date:
 
+```
 [alias]
     cd = "!d=\"$(date -d \"$1\")\" && shift && GIT_COMMITTER_DATE=\"$d\" \
             git commit --amend --date \"$d\""
 Usage: git cd <date_arg>
-
+```
 Examples:
-
+```
 git cd now  # update the last commit time to current time
 git cd '1 hour ago'  # set time to 1 hour ago
+```
 Edit: Here is a more-automated version which checks that the index is clean (no uncommitted changes) and reuses the last commit message, or fails otherwise (fool-proof):
-
+```
 [alias]
     cd = "!d=\"$(date -d \"$1\")\" && shift && \
         git diff-index --cached --quiet HEAD --ignore-submodules -- && \
         GIT_COMMITTER_DATE=\"$d\" git commit --amend -C HEAD --date \"$d\"" \
         || echo >&2 "error: date change failed: index not clean!"	 
-		
+```		
 The following bash function will change the time of any commit on the current branch.
 
 Be careful not to use if you already pushed the commit or if you use the commit in another branch.
-
+```
 # rewrite_commit_date(commit, date_timestamp)
 #
 # !! Commit has to be on the current branch, and only on the current branch !!
@@ -159,3 +162,4 @@ rewrite_commit_date () {
     git rebase "$commit" --onto "$temp_branch"
     git branch -d "$temp_branch"
 }		
+```
