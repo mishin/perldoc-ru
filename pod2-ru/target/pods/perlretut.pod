@@ -2641,19 +2641,14 @@ Perl может вас удивить:
 переменную, тогда однако, интерполяции проходит успешно. Вопрос в том, почему это
 Ошибка?
 
-Причина-это та переменная интерполяции и кода выражения
-вместе создать угрозу безопасности. Сочетание это опасно потому, что
-Многие программисты, которые пишут поисковых системах часто принимать вводимые пользователем данные и
-Подключите его непосредственно к regexp:
+Причина в том, что эта интерполированная переменная  и выражение с кодом
+вместе создают угрозу безопасности. Сочетание это опасно потому, что
+многие программисты, которые пишут поисковые системы часто принимать вводимые пользователем данные и
+подключают их непосредственно в регексп:
 
-The reason is that variable interpolation and code expressions
-together pose a security risk.  The combination is dangerous because
-many programmers who write search engines often take user input and
-plug it directly into a regexp:
-
-    $regexp = <>;       # read user-supplied regexp
-    $chomp $regexp;     # get rid of possible newline
-    $text =~ /$regexp/; # search $text for the $regexp
+    $regexp = <>;       # читать регексп, предоставленный пользователем
+    $chomp $regexp;     # избавиться от возможной новой строки
+    $text =~ /$regexp/; # искать $regexp в $text
 
 If the C<$regexp> variable contains a code expression, the user could
 then execute arbitrary Perl code.  For instance, some joker could
