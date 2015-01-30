@@ -91,3 +91,71 @@ set path_2_lib=c:\Users\TOSH\Documents\GitHub\io-all-mishin\lib
 perl  -I%path_2_lib% -MIO::All -e "printf qq{%s %s\n},$_->name,$_->rows for sort{$a->rows<=>$b->rows}grep{/perlre/}io(q(.))->all"
 
 ```
+
+
+http://habrahabr.ru/company/luxoft/blog/215345/
+
+git filter-branch --env-filter \
+    'if [ $GIT_COMMIT = 119f9ecf58069b265ab22f1f97d2b648faf932e0 ]
+     then
+         export GIT_AUTHOR_DATE="Fri Jan 2 21:38:53 2009 -0800"
+         export GIT_COMMITTER_DATE="Sat May 19 01:01:01 2007 -0700"
+     fi'
+	 
+git commit --amend --date="Wed Feb 16 14:00 2011 +0100"
+GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend
+
+Here is a convenient alias that changes both commit and author times of the last commit to a time accepted by date --date:
+
+[alias]
+    cd = "!d=\"$(date -d \"$1\")\" && shift && GIT_COMMITTER_DATE=\"$d\" \
+            git commit --amend --date \"$d\""
+Usage: git cd <date_arg>
+
+Examples:
+
+git cd now  # update the last commit time to current time
+git cd '1 hour ago'  # set time to 1 hour ago
+Edit: Here is a more-automated version which checks that the index is clean (no uncommitted changes) and reuses the last commit message, or fails otherwise (fool-proof):
+
+[alias]
+    cd = "!d=\"$(date -d \"$1\")\" && shift && \
+        git diff-index --cached --quiet HEAD --ignore-submodules -- && \
+        GIT_COMMITTER_DATE=\"$d\" git commit --amend -C HEAD --date \"$d\"" \
+        || echo >&2 "error: date change failed: index not clean!"	 
+		
+The following bash function will change the time of any commit on the current branch.
+
+Be careful not to use if you already pushed the commit or if you use the commit in another branch.
+
+# rewrite_commit_date(commit, date_timestamp)
+#
+# !! Commit has to be on the current branch, and only on the current branch !!
+# 
+# Usage example:
+#
+# 1. Set commit 0c935403 date to now:
+#
+#   rewrite_commit_date 0c935403
+#
+# 2. Set commit 0c935403 date to 1402221655:
+#
+#   rewrite_commit_date 0c935403 1402221655
+#
+rewrite_commit_date () {
+    local commit="$1" date_timestamp="$2"
+    local date temp_branch="temp-rebasing-branch"
+    local current_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+    if [[ -z "$commit" ]]; then
+        date="$(date -R)"
+    else
+        date="$(date -R --date "@$date_timestamp")"
+    fi
+
+    git checkout -b "$temp_branch" "$commit"
+    GIT_COMMITTER_DATE="$date" git commit --amend --date "$date"
+    git checkout "$current_branch"
+    git rebase "$commit" --onto "$temp_branch"
+    git branch -d "$temp_branch"
+}		
