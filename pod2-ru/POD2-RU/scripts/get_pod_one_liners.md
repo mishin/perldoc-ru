@@ -11,6 +11,8 @@ lc is aliased to `git commit -a -m "a bit"
 
 perl -pi -e 's/8/9/ if $. == 9' ./pod2-ru/POD2-RU/scripts/get_pod_one_liners.md;lc;git commit --amend --date="Sat Jan 10 14:00 2015 +0300"
 
+perl -pi -e 's/10/11/ if $. == 9' ./pod2-ru/POD2-RU/scripts/get_pod_one_liners.md;lc;git commit --amend --date="Sat Jan 24 14:00 2015 +0300"
+
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perldebtut.pod 730 130 18%             +/-  
 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebackslash.pod 661 22 +/-  
