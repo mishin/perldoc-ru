@@ -2643,62 +2643,71 @@ Perl может вас удивить:
 
 Причина в том, что эта интерполированная переменная  и выражение с кодом
 вместе создают угрозу безопасности. Сочетание это опасно потому, что
-многие программисты, которые пишут поисковые системы часто принимать вводимые пользователем данные и
+многие программисты, которые пишут поисковые системы часто принимаютьвводимые пользователем данные и
 подключают их непосредственно в регексп:
 
     $regexp = <>;       # читать регексп, предоставленный пользователем
     $chomp $regexp;     # избавиться от возможной новой строки
     $text =~ /$regexp/; # искать $regexp в $text
 
-If the C<$regexp> variable contains a code expression, the user could
-then execute arbitrary Perl code.  For instance, some joker could
-search for S<C<system('rm -rf *');>> to erase your files.  In this
-sense, the combination of interpolation and code expressions I<taints>
-your regexp.  So by default, using both interpolation and code
-expressions in the same regexp is not allowed.  If you're not
-concerned about malicious users, it is possible to bypass this
-security check by invoking S<C<use re 'eval'>>:
+Если переменная C<$regexp>  содержит выражение c кодом, то пользователь может
+выполните произвольный код Perl. Например некоторые шутники могут искать 
+S<C<system('rm -rf *');>>  для удаления ваших файлов. В этом
+смысл, сочетание интерполяции и выражений с кодом код I<заражает>
+ваш регексп. Таким образом, по умолчанию, использовать интерполяцию и 
+выражение с кодом в одном и том же регекспе не допускается. Если вы не
+обеспокоенны по поводу злонамеренных пользователей, эту проверку безопасности можно обойти
+ путем вызова  S<C<use re 'eval'>>:
 
-    use re 'eval';       # throw caution out the door
+    use re 'eval';       # открывает дверь для опасностей
     $bar = 5;
     $pat = '(?{ 1 })';
-    /foo${pat}bar/;      # compiles ok
+    /foo${pat}bar/;      # компилируется успешно
 
-Another form of code expression is the I<pattern code expression>.
-The pattern code expression is like a regular code expression, except
-that the result of the code evaluation is treated as a regular
-expression and matched immediately.  A simple example is
+Другая форма выражений с кодом — I<шаблон поиска с кодовым выражением>.
+Шаблон c кодированным выражением, это как обычное выражение с кодом, за исключением того,
+что результат выполнения кода представляется как регулярное выражение и
+и по нему сразу выполняется поиск. Простой пример
 
     $length = 5;
     $char = 'a';
     $x = 'aaaaabb';
-    $x =~ /(??{$char x $length})/x; # matches, there are 5 of 'a'
+    $x =~ /(??{$char x $length})/x; # найдет, 5 'a'
 
-
-This final example contains both ordinary and pattern code
-expressions.  It detects whether a binary string C<1101010010001...> has a
-Fibonacci spacing 0,1,1,2,3,5,...  of the C<1>'s:
+Этот последний пример содержит и обычный шаблон и  шаблон поиска с кодовым выражением.
+(This final example contains both ordinary and pattern code expressions.)
+Он определяет, является ли двойная последовательность C<1101010010001...>
+ последовательсностью Фибоначчи 0,1,1,2,3,5,..., начиная с C<1>-го элемента:
+(It detects whether a binary string C<1101010010001...> has a
+Fibonacci spacing 0,1,1,2,3,5,...  of the C<1>'s):
 
     $x = "1101010010001000001";
-    $z0 = ''; $z1 = '0';   # initial conditions
-    print "It is a Fibonacci sequence\n"
-        if $x =~ /^1         # match an initial '1'
+    $z0 = ''; $z1 = '0';   # начальные условия
+    print "Это последовательность Фибоначчи\n"
+        if $x =~ /^1         # находим начальную '1'
                     (?:
-                       ((??{ $z0 })) # match some '0'
-                       1             # and then a '1'
+                       ((??{ $z0 })) # найдет несколько '0'
+                       1             # и потом '1'
 		       (?{ $z0 = $z1; $z1 .= $^N; })
-                    )+   # repeat as needed
-                  $      # that is all there is
+                    )+   # повторить, если нужно
+                  $      # на этом все
                  /x;
-    printf "Largest sequence matched was %d\n", length($z1)-length($z0);
+    printf "Наибольшая цифра в последовательности %d\n", length($z1)-length($z0);
 
-Remember that C<$^N> is set to whatever was matched by the last
-completed capture group. This prints
+Запомните, что в C<$^N> установлено то, что было найдено последней
+группой захвата. Это напечатает
 
-    It is a Fibonacci sequence
-    Largest sequence matched was 5
+    Это последовательность Фибоначчи
+    Наибольшая цифра в последовательности 5
 
-Ha! Try that with your garden variety regexp package...
+Ха! Попробуйте это в вашем саду различных регексп пакетов...
+(Ha! Try that with your garden variety regexp package...)
+
+Обратите внимание, что переменные C <$z0> и C <$z1>, не заменить, когда
+RegExp составляется, как это происходит для обычных переменных вне кода
+выражение. Скорее, весь код блок анализируется как perl код на
+же время, как perl компиляции кода, содержащего литерал регулярного выражения
+шаблон.
 
 Note that the variables C<$z0> and C<$z1> are not substituted when the
 regexp is compiled, as happens for ordinary variables outside a code
