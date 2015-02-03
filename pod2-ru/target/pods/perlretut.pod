@@ -2721,37 +2721,37 @@ pattern.)
 регулярных выражений является почти необходимым во время создания и отладки.
 
 
-=head2 Управляющие глаголы во время поиска с возвратом (backtracking)
+=head2 Управляющие глаголы(control verbs) во время поиска с возвратом (backtracking)
 
 Perl 5.10 представил ряд глаголов управления, предназначенных для обеспечения
-подробный контроль над процессом поиска с возвратом, непосредственно влияя на
-двигатель regexp и предоставляя методов мониторинга. Как и все
-функции в этой группе экспериментальных и могут быть изменены или
-Удаление в будущей версии Perl, заинтересованный читатель является
-упомянутые Л < perlre / «Специальный Поиск с возвратом управления глаголов» настроек для
-Подробное описание.
-Perl 5.10 introduced a number of control verbs intended to provide
-detailed control over the backtracking process, by directly influencing
-the regexp engine and by providing monitoring techniques.  As all
-the features in this group are experimental and subject to change or
-removal in a future version of Perl, the interested reader is
-referred to L<perlre/"Special Backtracking Control Verbs"> for a
-detailed description.
+большего контроля над процессом поиска с возвратом, непосредственно влияя на
+двигатель регекспа и предоставляя методы мониторинга. Как и все
+функции в этой группе - эта возможность экспериментальна и может быть изменена или
+удалена в будущей версии Perl, заинтересованный читатель может прочитать
+L<perlre/"Управляющие глаголы поиска с возвратом"> для более подробного описания.
 
-Below is just one example, illustrating the control verb C<(*FAIL)>,
-which may be abbreviated as C<(*F)>. If this is inserted in a regexp
-it will cause it to fail, just as it would at some
-mismatch between the pattern and the string. Processing
-of the regexp continues as it would after any "normal"
-failure, so that, for instance, the next position in the string or another
-alternative will be tried. As failing to match doesn't preserve capture
-groups or produce results, it may be necessary to use this in
-combination with embedded code.
+Ниже приведен лишь один из примеров, иллюстрирующий управляющий глагол C<(*FAIL)>,
+что может быть сокращенно до C<(*F)>. Если он будет вставлен в регексп
+это вызовет то, что регексп вернет ложь, так же, как, если бы шаблон поиска не был найден в строке.
+Обработка регекспа продолжается, как и после «нормального»
+неудачного поиска, так что, к примеру, движок переходит к следующей позиции в строке или пробует другую
+альтернативу. Как и неудавшийся поиск после этого не сохраняется группа захвата
+и не производятся результаты, эту возможность необходимо использовать в
+комбинации с внедренным кодом.
 
    %count = ();
    "supercalifragilisticexpialidocious" =~
        /([aeiou])(?{ $count{$1}++; })(*FAIL)/i;
    printf "%3d '%s'\n", $count{$_}, $_ for (sort keys %count);
+
+Шаблон начинается с сопоставления подмножества буквы класса. Всякий раз, когда
+Это соответствует, заявление, как выполняется C <$count{'a'}++;>, увеличивая
+Письмо счетчик. Затем C <(*FAIL)> делает то, что он говорит, и
+обработчик регулярных выражений переходит в книге: как долго, как в конце
+строка не наступил, положение вперед перед поиском
+для другой гласной. Таким образом, соответствие или не соответствие делает никакой разницы и
+двигатель RegExp продолжается до тех пор, пока вся строка проверен.
+(Примечательно, что с помощью что-то вроде альтернативного решения
 
 The pattern begins with a class matching a subset of letters.  Whenever
 this matches, a statement like C<$count{'a'}++;> is executed, incrementing
