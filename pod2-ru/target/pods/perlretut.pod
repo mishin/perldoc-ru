@@ -2747,28 +2747,29 @@ L<perlre/"Управляющие глаголы поиска с возврато
 Шаблон начинается с сопоставления подмножества буквы класса. Всякий раз, когда
 буква находится, выполняется выражение C<$count{'a'}++;>, увеличивая
 счетчик букв. Затем C<(*FAIL)> делает то, что он говорит, и
-обработчик регулярных выражений переходит в книге: как долго, как в конце
-строка не наступил, положение вперед перед поиском
-для другой гласной. Таким образом, соответствие или не соответствие делает никакой разницы и
-двигатель RegExp продолжается до тех пор, пока вся строка проверен.
-(Примечательно, что с помощью что-то вроде альтернативного решения
-
-The pattern begins with a class matching a subset of letters.  Whenever
-this matches, a statement like C<$count{'a'}++;> is executed, incrementing
-the letter's counter. Then C<(*FAIL)> does what it says, and
+обработчик регулярных выражений продолжает работать согласно учебнику: настолько долго, пока не наступит конец 
+строки, положение вперед перед поиском для другой гласной. 
+(Then C<(*FAIL)> does what it says, and
 the regexp engine proceeds according to the book: as long as the end of
 the string hasn't been reached, the position is advanced before looking
-for another vowel. Thus, match or no match makes no difference, and the
-regexp engine proceeds until the entire string has been inspected.
-(It's remarkable that an alternative solution using something like
+for another vowel.)
+Таким образом, соответствие или не соответствие не делает никакой разницы и
+двигатель регексп продолжает до тех пор, пока не проверена вся строка.
+(Примечательно, что альтернативное решение использует что-то вроде 
 
    $count{lc($_)}++ for split('', "supercalifragilisticexpialidocious");
    printf "%3d '%s'\n", $count2{$_}, $_ for ( qw{ a e i o u } );
 
-is considerably slower.)
+это значительно медленнее.)
 
 
-=head2 Pragmas and debugging
+=head2 Прагмы и отладка
+
+Говоря о отладки, существует несколько прагм для управления
+и отладки регулярных выражений в Perl. Мы уже столкнулись с одной pragma в
+предыдущем разделе, S < C < использования re «eval»; >>, что позволяет переменной
+интерполяция и кода выражения сосуществовать в regexp. Другой
+прагмы
 
 Speaking of debugging, there are several pragmas available to control
 and debug regexps in Perl.  We have already encountered one pragma in
