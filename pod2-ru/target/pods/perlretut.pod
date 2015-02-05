@@ -2775,36 +2775,35 @@ for another vowel.)
     $tainted = <>;
     @parts = ($tainted =~ /(\w+)\s+(\w+)/; # @parts теперь помечена
 
-C <taint>pragma вызывает любые подстроки из матча с испорченной
-Переменная также грязными. Это не обычно так, как
-регулярных выражений часто используются для получения безопасной биты из испорченной
-переменная. Использовать C <taint>, когда вы не извлечения безопасный бит, но
-выполнение некоторых других обработки. C <taint>и <eval>прагмы C
-ограничены лексически, что означает, они действуют только до
-конец блока, включающего директивы pragma.
-The C<taint> pragma causes any substrings from a match with a tainted
-variable to be tainted as well.  This is not normally the case, as
-regexps are often used to extract the safe bits from a tainted
-variable.  Use C<taint> when you are not extracting safe bits, but are
-performing some other processing.  Both C<taint> and C<eval> pragmas
-are lexically scoped, which means they are in effect only until
-the end of the block enclosing the pragmas.
+Здесь меченая и испорченная переменная являются синонимами! (мой перевод слова tainted, еще предлагают - крашеная;))
+Прагма C<taint> делает так, что подстроки, найденные в меченой переменной
+также становятся мечеными(tainted). Обычно это не так, т.к. регекспы
+часто используются для получения безопасных бит из испорченной (tainted)
+переменной. Используйте  C<taint>, когда вы не извлекаете безопасные биты, но
+выполняете другую обработку. Обе прагмы  C<taint> и C<eval> лексически
+ограничены , это означает то, что они действуют только до
+конца блока, включающего эти прагмы.
 
-    use re '/m';  # or any other flags
-    $multiline_string =~ /^foo/; # /m is implied
+    use re '/m';  # или любые другие флаги
+    $multiline_string =~ /^foo/; # /m подразумевается
 
-The C<re '/flags'> pragma (introduced in Perl
-5.14) turns on the given regular expression flags
-until the end of the lexical scope.  See
-L<re/"'E<sol>flags' mode"> for more
-detail.
+Прагма C<re '/flags'> (введена в Perl 5.14) 
+включает флаги указанного регулярного выражения
+до конца лексической области. 
+См. L<re/"'E<sol>flags' mode"> для больших
+деталей.
 
     use re 'debug';
-    /^(.*)$/s;       # output debugging info
+    /^(.*)$/s;       # вывод отладочной информация
 
     use re 'debugcolor';
-    /^(.*)$/s;       # output debugging info in living color
+    /^(.*)$/s;       # вывод отладочной информации в цвете
 
+Глобальный C <debug>и C <debugcolor>прагмы позволяют получить
+Подробная отладки информацию о компиляции regexp и
+исполнение. C <debugcolor>так же, как отладка, за исключением отладки
+информация отображается в цвете на терминалы, которые могут отображать
+termcap цветовой последовательности. Вот пример вывода:
 The global C<debug> and C<debugcolor> pragmas allow one to get
 detailed debugging info about regexp compilation and
 execution.  C<debugcolor> is the same as debug, except the debugging
