@@ -2765,22 +2765,23 @@ for another vowel.)
 
 =head2 Прагмы и отладка
 
-Говоря о отладки, существует несколько прагм для управления
-и отладки регулярных выражений в Perl. Мы уже столкнулись с одной pragma в
-предыдущем разделе, S < C < использования re «eval»; >>, что позволяет переменной
-интерполяция и кода выражения сосуществовать в regexp. Другой
+Поговорим об отладке, существует несколько прагм для управления
+и отладки регулярных выражений в Perl. Мы уже столкнулись с одной прагмой в
+предыдущем разделе,  S<C<use re 'eval';>>, которая позволяет интерполяцию переменных 
+ и выражению с кодом сосуществовать в одном регекспе. Другие
 прагмы
-
-Speaking of debugging, there are several pragmas available to control
-and debug regexps in Perl.  We have already encountered one pragma in
-the previous section, S<C<use re 'eval';>>, that allows variable
-interpolation and code expressions to coexist in a regexp.  The other
-pragmas are
 
     use re 'taint';
     $tainted = <>;
-    @parts = ($tainted =~ /(\w+)\s+(\w+)/; # @parts is now tainted
+    @parts = ($tainted =~ /(\w+)\s+(\w+)/; # @parts теперь помечена
 
+C <taint>pragma вызывает любые подстроки из матча с испорченной
+Переменная также грязными. Это не обычно так, как
+регулярных выражений часто используются для получения безопасной биты из испорченной
+переменная. Использовать C <taint>, когда вы не извлечения безопасный бит, но
+выполнение некоторых других обработки. C <taint>и <eval>прагмы C
+ограничены лексически, что означает, они действуют только до
+конец блока, включающего директивы pragma.
 The C<taint> pragma causes any substrings from a match with a tainted
 variable to be tainted as well.  This is not normally the case, as
 regexps are often used to extract the safe bits from a tainted
