@@ -2836,6 +2836,9 @@ termcap color sequences.  Here is example output:
     Match successful!
     Freeing REx: 'a*b+c'
 
+Если вы получили это далеко в учебник, вы можете догадаться
+что в различных частях выходные данные отладки рассказать вам. Первый
+часть
 If you have gotten this far into the tutorial, you can probably guess
 what the different parts of the debugging output tell you.  The first
 part
