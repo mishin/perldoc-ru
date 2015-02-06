@@ -2832,12 +2832,9 @@ termcap (terminal capability - отрытая библиотека для тер
     Match successful!
     Freeing REx: 'a*b+c'
 
-Если вы получили это далеко в учебник, вы можете догадаться
-что в различных частях выходные данные отладки рассказать вам. Первый
+Если вы прошли так далеко в этом учебнике, то вы сможете разобраться
+в различных частях отладочного вывода. Первая
 часть
-If you have gotten this far into the tutorial, you can probably guess
-what the different parts of the debugging output tell you.  The first
-part
 
     Compiling REx 'a*b+c'
     size 9 first at 1
@@ -2848,18 +2845,18 @@ part
        7: EXACT <c>(9)
        9: END(0)
 
-describes the compilation stage.  C<STAR(4)> means that there is a
-starred object, in this case C<'a'>, and if it matches, goto line 4,
-i.e., C<PLUS(7)>.  The middle lines describe some heuristics and
-optimizations performed before a match:
+описывает этап компиляции. C<STAR(4)> означает, что это
+избранный объект, в данном случае C<'a'>, и если она совпадает, то идем на строку 4,
+то есть C<PLUS(7)>. Средние линии описывают некоторые эвристики и
+выполненную оптимизацию  перед поиском:
 
     floating 'bc' at 0..2147483647 (checking floating) minlen 2
     Guessing start of match, REx 'a*b+c' against 'abc'...
     Found floating substr 'bc' at offset 1...
     Guessed: match at offset 0
 
-Then the match is executed and the remaining lines describe the
-process:
+затем выполняется поиск и остальные строки описывают
+этот процесс:
 
     Matching REx 'a*b+c' against 'abc'
       Setting an EVAL scope, savestack=3
@@ -2874,11 +2871,10 @@ process:
     Match successful!
     Freeing REx: 'a*b+c'
 
-Each step is of the form S<C<< n <x> <y> >>>, with C<< <x> >> the
-part of the string matched and C<< <y> >> the part not yet
-matched.  The S<C<< |  1:  STAR >>> says that Perl is at line number 1
-in the compilation list above.  See
-L<perldebguts/"Debugging Regular Expressions"> for much more detail.
+Каждый шаг имеет форму S<C<< n <x> <y> >>>, где C<< <x> >>
+- это часть найденной строки и части C<< <y> >> , которая еще не найдена.
+ S<C<< |  1:  STAR >>> говорит, что Perl в 1 строке с компиляцией
+ упоминают выше. См. L<perldebguts/"Отлидка Регулярных Выражений">  для больших подробностей.
 
 Альтернативным методом отладки регулярных выражений является включение включение C<print>
 в регексп. Здесь предоставляется подробный отчет
