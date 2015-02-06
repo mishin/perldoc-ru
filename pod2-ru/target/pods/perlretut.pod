@@ -2799,16 +2799,12 @@ for another vowel.)
     use re 'debugcolor';
     /^(.*)$/s;       # вывод отладочной информации в цвете
 
-Глобальный C <debug>и C <debugcolor>прагмы позволяют получить
-Подробная отладки информацию о компиляции regexp и
-исполнение. C <debugcolor>так же, как отладка, за исключением отладки
+Глобальные прагмы C<debug> и C<debugcolor> позволяют получить
+детальную отладочную информацию о компиляции регекспа и его
+исполнении. C<debugcolor> - такой же, как и C<debug>, за исключением того, что
 информация отображается в цвете на терминалы, которые могут отображать
-termcap цветовой последовательности. Вот пример вывода:
-The global C<debug> and C<debugcolor> pragmas allow one to get
-detailed debugging info about regexp compilation and
-execution.  C<debugcolor> is the same as debug, except the debugging
-information is displayed in color on terminals that can display
-termcap color sequences.  Here is example output:
+termcap (terminal capability - отрытая библиотека для терминалов) цветовые последовательности. 
+Вот пример вывода:
 
     % perl -e 'use re "debug"; "abc" =~ /a*b+c/;'
     Compiling REx 'a*b+c'
