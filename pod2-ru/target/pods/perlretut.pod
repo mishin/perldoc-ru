@@ -2754,7 +2754,7 @@ the regexp engine proceeds according to the book: as long as the end of
 the string hasn't been reached, the position is advanced before looking
 for another vowel.)
 Таким образом, соответствие или не соответствие не делает никакой разницы и
-двигатель регексп продолжает до тех пор, пока не проверена вся строка.
+двигатель регексп продолжает работать до тех пор, пока не проверена вся строка.
 (Примечательно, что альтернативное решение использует что-то вроде 
 
    $count{lc($_)}++ for split('', "supercalifragilisticexpialidocious");
