@@ -7,6 +7,8 @@ perl -Ilib -MIO::All -E 'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreguts.pod 886 112/886     +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlre.pod 2585 108 +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.pod 2928 2607  93%    +/-  
+
+https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod
 perl -E "say 1/(2928/2746)"
 
 11
