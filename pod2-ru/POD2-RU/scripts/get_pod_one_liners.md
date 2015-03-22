@@ -11,7 +11,7 @@ https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.p
 https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod
 perl -E "say 1/(2928/2746)"
 
-__NUMBER43__
+__NUMBER44__
 lc is aliased to `git commit -a -m "a bit"
 
 perl -pi -e 's/8/9/ if $. == 9' ./pod2-ru/POD2-RU/scripts/get_pod_one_liners.md;lc;git commit --amend --date="Sat Jan 10 14:00 2015 +0300"
