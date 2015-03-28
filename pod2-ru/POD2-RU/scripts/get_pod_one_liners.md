@@ -175,3 +175,4 @@ rewrite_commit_date () {
     git branch -d "$temp_branch"
 }		
 ```
+1
