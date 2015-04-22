@@ -4,8 +4,8 @@ perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->s
 perl -Ilib -MIO::All -E 'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/perlre/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'  
 
 ```
-https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod  2562 541  21%    +/-  
-perl -E "say sprintf('%02d%%',1/(2562/541)*100)"  
+https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod  2562 649  25%    +/-  
+perl -E "say sprintf('%02d%%',1/(2562/649)*100)"  
 perl -E "say 1/(2562/514)*100"  
 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlreguts.pod 886 112/886     +/-  
