@@ -1,7 +1,11 @@
-=head1 NAME
+
+=encoding UTF-8
+
+=head1 NAME/НАИМЕНОВАНИЕ
+
 X<data structure> X<complex data structure> X<struct>
 
-perldsc - Perl Data Structures Cookbook
+perldsc - Структуры данных Perl  Книга рецептов (Cookbook)
 
 =head1 DESCRIPTION
 
@@ -828,3 +832,12 @@ L<perlref>, L<perllol>, L<perldata>, L<perlobj>
 =head1 AUTHOR
 
 Tom Christiansen <F<tchrist@perl.com>>
+
+
+=head1 ПЕРЕВОДЧИКИ
+ 
+=over
+ 
+=item * Николай Мишин C<< <mi@ya.ru> >>
+ 
+=back
