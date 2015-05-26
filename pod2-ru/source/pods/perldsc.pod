@@ -5,7 +5,7 @@
 
 X<data structure> X<complex data structure> X<struct>
 
-perldsc - Структуры данных Perl  Книга рецептов (Cookbook)
+perldsc - Структуры данных Perl. Книга рецептов (Cookbook).
 
 =head1 DESCRIPTION
 
