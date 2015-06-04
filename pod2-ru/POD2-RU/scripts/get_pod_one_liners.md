@@ -4,6 +4,7 @@ perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->s
 perl -Ilib -MIO::All -E 'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/perlre/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'  
 ```
 https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod  2562 1647  64%    +/-  
+https://metacpan.org/pod/POD2::RU  
 ```perl
 perl -E "say sprintf('%02d%%',1/(2562/1647)*100)"  
 perl -E "say 1/(2562/514)*100"  
@@ -13,7 +14,7 @@ https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlre.pod 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlretut.pod 2928 2607  93%    +/-  
 
 https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod
-https://metacpan.org/pod/POD2::RU
+
 perl -E "say 1/(2928/2746)"
 
 __NUMBER2__
