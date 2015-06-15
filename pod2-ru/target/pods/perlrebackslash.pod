@@ -143,13 +143,13 @@ C<\n> соответствует логической новой строке. P
 
  $str =~ /\t/;   # Найдет, если $str содержит (горизонтальный) символ табуляции.
 
-=head3 Control characters
+=head3 Управляющие символы (Control characters)
 
-C<\c> is used to denote a control character; the character following C<\c>
-determines the value of the construct.  For example the value of C<\cA> is
-C<chr(1)>, and the value of C<\cb> is C<chr(2)>, etc.
-The gory details are in L<perlop/"Regexp Quote-Like Operators">.  A complete
-list of what C<chr(1)>, etc. means for ASCII and EBCDIC platforms is in
+C<\c> используется для обозначения символа управления; символ следующий после C<\c>,
+определяет значение конструкции. Например значение C<\cA>
+C<chr(1)> и значение C<\cb> – C<chr(2)> и др.
+Подробные детали находятся в L<perlop/"Regexp операторы заключения в кавычки">. Полный
+cписок элементов C<chr(1)>, и т.д. средства для ASCII и EBCDIC платформ находится в
 L<perlebcdic/OPERATOR DIFFERENCES>.
 
 Note that C<\c\> alone at the end of a regular expression (or doubled-quoted
