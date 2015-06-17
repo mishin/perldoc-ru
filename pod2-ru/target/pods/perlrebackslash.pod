@@ -167,48 +167,46 @@ C<\N{ESCAPE}> или C<\N{U+001B}>, см. L<charnames>.
 
 =head3 Именованные или нумерованные символы и последовательности символов
 
-Unicode characters have a Unicode name and numeric code point (ordinal)
-value.  Use the
-C<\N{}> construct to specify a character by either of these values.
-Certain sequences of characters also have names.
+Символы Юникода имеют Юникодное имя и числовой код (порядковый). 
+Используйте конструкцию C<\N{}> для указания символа по одному из этих значений.
+Некоторые последовательности символов также имеют имена.
 
-To specify by name, the name of the character or character sequence goes
-between the curly braces.
+Чтобы задать имя, имя символ символа или последовательности символов нужно писать
+между фигурными скобками.
 
-To specify a character by Unicode code point, use the form C<\N{U+I<code
-point>}>, where I<code point> is a number in hexadecimal that gives the
-code point that Unicode has assigned to the desired character.  It is
-customary but not required to use leading zeros to pad the number to 4
-digits.  Thus C<\N{U+0041}> means C<LATIN CAPITAL LETTER A>, and you will
-rarely see it written without the two leading zeros.  C<\N{U+0041}> means
-"A" even on EBCDIC machines (where the ordinal value of "A" is not 0x41).
+Чтобы указать символ с помощью Юникодного кода (Unicode code point) используйте форму  C<\N{U+I<код символа>}>, где I<код символа> — число в шестнадцатеричной форме, которое указывает на код символа Юникода,
+ которому в Юникоде присвоен соответствующий символ. 
+ Обычно, но не обязательно использовать нули в начале числа размером в 4 цифры. 
+ Таким образом C<\N{U+0041}> означает C<LATIN CAPITAL LETTER A>, и вы 
+редко сможете увидеть это написание без двух ведущих нулей. C<\N{U+0041}> означает
+"A" даже на машинах EBCDIC (где порядковое значение  "A" не является 0x41).
 
-It is even possible to give your own names to characters and character
-sequences.  For details, see L<charnames>.
+Возможно даже дать ваши собственные имена для символов и символьных
+последовательностей. Для подробностей см. L<charnames>.
 
-(There is an expanded internal form that you may see in debug output:
-C<\N{U+I<code point>.I<code point>...}>.
-The C<...> means any number of these I<code point>s separated by dots.
-This represents the sequence formed by the characters.  This is an internal
-form only, subject to change, and you should not try to use it yourself.)
+(Есть расширение внутренней формы, которое вы можете увидеть в выводе отладки:
+C<\N{U+I<кодовая точка>.I<кодовая точка>...}>.
+C<... > означает любое количество этих I<кодовых точек>, разделенных точками.
+Это представляет собой последовательность, образованную символами. Это только внутренняя
+ форма, она может меняться, и вы не должны пытаться использовать ее самостоятельно).
 
-Mnemonic: I<N>amed character.
+Mnemonic: I<И>менованные символы.
 
-Note that a character or character sequence expressed as a named
-or numbered character is considered a character without special
-meaning by the regex engine, and will match "as is".
+Обратите внимание, что символ или последовательность символов в виде именованного
+или пронумерованного символа рассматривается как символ без специального
+ смысла для движка регекс и будет искаться "как есть".
 
-=head4 Example
+=head4 Например
 
- $str =~ /\N{THAI CHARACTER SO SO}/;  # Matches the Thai SO SO character
+ $str =~ /\N{THAI CHARACTER SO SO}/;  # Найдет тайский смивол SO SO
 
- use charnames 'Cyrillic';            # Loads Cyrillic names.
- $str =~ /\N{ZHE}\N{KA}/;             # Match "ZHE" followed by "KA".
+ use charnames 'Cyrillic';            # Загружает кириллические имена.
+ $str =~ /\N{ZHE}\N{KA}/;             # Найдет "ZHE" следующис за "KA".
 
-=head3 Octal escapes
+=head3 Восьмеричные эскейп-последовательности
 
-There are two forms of octal escapes.  Each is used to specify a character by
-its code point specified in octal notation.
+Существует две формы Восьмеричной эскейп-последовательности. Каждая используется для указания символа
+его кодовой точкой, указанной в восьмеричной системе счисления.
 
 One form, available starting in Perl 5.14 looks like C<\o{...}>, where the dots
 represent one or more octal digits.  It can be used for any Unicode character.
