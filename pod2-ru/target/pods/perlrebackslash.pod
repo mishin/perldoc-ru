@@ -208,16 +208,25 @@ Mnemonic: I<И>менованные символы.
 Существует две формы Восьмеричной эскейп-последовательности. Каждая используется для указания символа
 его кодовой точкой, указанной в восьмеричной системе счисления.
 
-One form, available starting in Perl 5.14 looks like C<\o{...}>, where the dots
-represent one or more octal digits.  It can be used for any Unicode character.
+Одна из форм доступных начиная в Perl 5.14 выглядит как C<\o{...}>, где точки
+представляют собой один или несколько восьмеричных цифр. Она может использоваться для любого символа Юникода.
 
-It was introduced to avoid the potential problems with the other form,
-available in all Perls.  That form consists of a backslash followed by three
-octal digits.  One problem with this form is that it can look exactly like an
-old-style backreference (see
-L</Disambiguation rules between old-style octal escapes and backreferences>
-below.)  You can avoid this by making the first of the three digits always a
-zero, but that makes \077 the largest code point specifiable.
+Он был введен, чтобы избежать потенциальных проблем с другой формой,
+имеющейся в всех версия языка Перл. Эта форма состоит из косой черты за которой следуют три
+восьмеричные цифры. Одна из проблем с этой формой является то, что она может выглядеть так же, как
+старый стиль обратной ссылки (см.
+L</Разрешение неоднозначности правил между восьмеричным написанием в старинном стиле и обратной ссылкой>
+(L</Disambiguation rules between old-style octal escapes and backreferences>)
+ниже.) Этого можно избежать, сделав первый из трех цифр всегда
+ноль, но что делает \077 самой большой кодовой точкой в спецификации.
+
+В некоторых контекстах косая черта, два или даже один восьмеричные цифры могут быть
+интерпретируется как восьмеричное побега, иногда с предупреждением и из-за некоторых
+ошибки, иногда с неожиданные результаты. Кроме того если вы создаете regex
+из небольших фрагментов объединяются вместе, и вы используете меньше, чем три
+цифры, начала один фрагмент может быть истолковано как добавление цифр
+Окончание в фрагменте представлен. Смотреть L < / Абсолютные ссылки > для более
+обсуждение и примеры фрагмент проблемы.
 
 In some contexts, a backslash followed by two or even one octal digits may be
 interpreted as an octal escape, sometimes with a warning, and because of some
