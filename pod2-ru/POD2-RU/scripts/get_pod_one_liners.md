@@ -3,7 +3,8 @@ perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->s
 
 perl -Ilib -MIO::All -E 'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/perlre/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'  
 ```
-https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod  2562 2070  80%    +/-  
+https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod  2562 2070  80%    +/-
+https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlrebackslash.pod  2562 2070  80%    +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebackslash.pod  
 https://metacpan.org/pod/POD2::RU  
 ```perl
