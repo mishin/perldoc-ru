@@ -1,12 +1,91 @@
 ```perl
-perl -Ilib -MIO::All -E"say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/lre[^fp]/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all"  
-
-perl -Ilib -MIO::All -E 'say$_->name.q{ }.$_->getlines for sort {$a->size<=>$b->size}grep{/perlre/}io->dir((`perldoc -l perl`=~/(.+?)[\w.]+$/))->all'  
+use strict;
+use warnings;
+use 5.010;
+ 
+use Carp;
+use English qw(-no_match_vars);
+use FindBin '$RealBin';
+use Log::Log4perl qw(:easy);
+use open qw/:std :utf8/;
+use Path::Iterator::Rule;
+use IO::All;
+use File::Spec::Functions qw(catdir splitdir);
+use IPC::Open3;
+ 
+exit main();
+ 
+sub main {
+ 
+    my $log_file = $RealBin . "/$0.log";
+ 
+    #Init logging
+    Log::Log4perl->easy_init(
+        {   level  => $DEBUG,
+            file   => ":utf8>>$log_file",
+            layout => '%d %p> - %m%n'
+        }
+    );
+ 
+    $ENV{PATH} = $ENV{PATH} . q{;C:/Dwimperl/perl/bin};
+    my $cmd             = q{C:/Dwimperl/perl/bin/perldoc.bat -l perldoc};
+    my @pod_path        = splitdir(run_shell($cmd));
+    my $pod_path = catdir(@pod_path[0 .. $#pod_path - 1]);
+ 
+    my $rule = Path::Iterator::Rule->new;
+ 
+    $rule->name("*.pod");
+    my $it = $rule->iter($pod_path);
+ 
+    my %pod_files = ();
+    while (my $file = $it->()) {
+        my $io  = io $file;
+        my $cnt = scalar $io->getlines;
+        $pod_files{$file} = $cnt;
+    }
+ 
+    foreach
+      my $name (sort { $pod_files{$a} <=> $pod_files{$b} } keys %pod_files)
+    {
+        INFO(sprintf "%-8s %s  \n", $name, $pod_files{$name});
+        printf "%-8s %s  \n", $name, $pod_files{$name};
+    }
+ 
+    return 0;
+}
+ 
+sub run_shell {
+    my ($cmd) = @_;
+    my $EMPTY = q{};
+    my ($HIS_IN, $HIS_OUT, $HIS_ERR) = ($EMPTY, $EMPTY, $EMPTY);
+    my (@outlines, @errlines,@args) = ((), ());
+    my $childpid = open3($HIS_IN, $HIS_OUT, $HIS_ERR, $cmd, @args);
+    $ret = print {$HIS_IN} "stuff\n";
+    close $HIS_IN or croak "unable to close: $HIS_IN $ERRNO";
+    ;    # Give end of file to kid.
+ 
+    if ($HIS_OUT) {
+        @outlines = <$HIS_OUT>;    # Read till EOF.
+        INFO(" STDOUT:\n" . (join "\n", grep { defined; } @outlines));
+    }
+    if ($HIS_ERR) {
+        @errlines = <$HIS_ERR>;    # XXX: block potential if massive
+        ERROR(" STDERR:\n" . (join "\n", grep { defined; } @errlines));
+    }
+    close $HIS_OUT or croak "unable to close: $HIS_OUT $ERRNO";
+ 
+    waitpid $childpid, 0;
+    if ($CHILD_ERROR) {
+        ERROR("That child exited with wait status of $CHILD_ERROR\n");
+    }
+    return @outlines;
+}
 ```
 https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlre.pod  2562 2070  80%    +/-
 https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlreftut.pod  2562 2070  80%    +/-
 https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlrebackslash.pod  2562 2070  80%    +/-  
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebackslash.pod  
+https://github.com/mishin/POD-to-RU/blob/master/lib/POD2/RU/perlreguts.pod  
 https://metacpan.org/pod/POD2::RU  
 ```perl
 perl -e "printf('%02d%%',1/(2562/2070)*100)" 
