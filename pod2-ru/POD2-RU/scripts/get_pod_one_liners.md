@@ -5,6 +5,10 @@ https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlrebackslash.pod 
 https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebackslash.pod  
 https://github.com/mishin/POD-to-RU/blob/master/lib/POD2/RU/perlreguts.pod  
 https://metacpan.org/pod/POD2::RU  
+
+https://github.com/mishin/presentation/blob/master/idea_for_develop.md
+
+
 ```perl
 perl -e "printf('%02d%%',1/(2562/2070)*100)" 
 perl -E "say 1/(2562/514)*100"  
