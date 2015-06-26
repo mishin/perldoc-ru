@@ -6,8 +6,8 @@ https://github.com/mishin/perldoc-ru/edit/master/pod2-ru/target/pods/perlrebacks
 https://github.com/mishin/POD-to-RU/blob/master/lib/POD2/RU/perlreguts.pod  
 https://metacpan.org/pod/POD2::RU  
 
-https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlootut.pod
-http://search.cpan.org/~rjbs/perl-5.22.0/pod/perlootut.pod
+https://github.com/mishin/POD-to-RU/edit/master/lib/POD2/RU/perlootut.pod  
+http://search.cpan.org/~rjbs/perl-5.22.0/pod/perlootut.pod  
 
 https://github.com/mishin/presentation/blob/master/idea_for_develop.md
 
